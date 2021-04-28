@@ -1,5 +1,5 @@
 {
-  "Bounds": "574,383,452,158",
+  "Bounds": "174,233,452,158",
   "Padding": "0,0,0,0",
   "AlignmentEdgeDistances": "0,0,0,0",
   "AlignmentTransform": "0,12",
@@ -50,10 +50,10 @@
       "TextPadding": "25,9,0,0",
       "AutoSizeToContents": false,
       "Font": "sourcesansproblack,12",
-      "TextScale": 0.0
+      "TextScale": 1.0
     },
     "UsernamePanel": {
-      "Bounds": "14,35,308,35",
+      "Bounds": "14,54,308,28",
       "Padding": "0,0,0,0",
       "AlignmentEdgeDistances": "0,0,0,0",
       "AlignmentTransform": "0,0",
@@ -107,7 +107,7 @@
           "TextScale": 1.0
         },
         "UsernameField": {
-          "Bounds": "7,14,302,16",
+          "Bounds": "4,10,302,16",
           "Padding": "4,0,4,2",
           "AlignmentEdgeDistances": "0,0,0,0",
           "AlignmentTransform": "0,0",
@@ -141,7 +141,7 @@
       }
     },
     "PasswordPanel": {
-      "Bounds": "14,80,308,33",
+      "Bounds": "14,90,308,28",
       "Padding": "0,0,0,0",
       "AlignmentEdgeDistances": "0,0,0,0",
       "AlignmentTransform": "0,0",
@@ -195,7 +195,7 @@
           "TextScale": 1.0
         },
         "PasswordField": {
-          "Bounds": "4,14,302,16",
+          "Bounds": "4,10,302,16",
           "Padding": "4,0,4,2",
           "AlignmentEdgeDistances": "0,0,0,0",
           "AlignmentTransform": "0,0",
@@ -278,7 +278,7 @@
         "TextScale": 1.0
       },
       "Checkbox": {
-        "Bounds": "92,0,24,24",
+        "Bounds": "92,0,24,25",
         "Padding": "3,3,3,3",
         "AlignmentEdgeDistances": "0,0,0,0",
         "AlignmentTransform": "0,0",
@@ -357,7 +357,7 @@
       "ClickSound": ""
     },
     "LoginButton": {
-      "Bounds": "338,35,96,35",
+      "Bounds": "338,54,96,35",
       "Padding": "3,3,3,3",
       "AlignmentEdgeDistances": "50,0,0,0",
       "AlignmentTransform": "0,0",
@@ -395,7 +395,7 @@
       "ClickSound": ""
     },
     "BackButton": {
-      "Bounds": "427,5,14,14",
+      "Bounds": "338,89,96,35",
       "Padding": "0,0,0,0",
       "AlignmentEdgeDistances": "0,0,0,0",
       "AlignmentTransform": "0,0",
@@ -421,11 +421,11 @@
       "TextPadding": "3,3,3,3",
       "AutoSizeToContents": false,
       "Font": "sourcesansproblack,12",
-      "TextScale": 0.0,
-      "NormalImage": "mainmenu_exit.png",
-      "HoveredImage": "mainmenu_exit.png_hovered.png",
-      "ClickedImage": "mainmenu_exit.png_clicked.png",
-      "DisabledImage": "mainmenu_exit.png_disabled.png",
+      "TextScale": 1.0,
+      "NormalImage": "smallbutton.png",
+      "HoveredImage": "smallbutton_hovered.png",
+      "ClickedImage": "smallbutton_clicked.png",
+      "DisabledImage": "smallbutton_disabled.png",
       "CenterImage": false,
       "HoverSound": "octave-tap-resonant.wav",
       "MouseUpSound": "",

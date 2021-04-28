@@ -1,5 +1,5 @@
 {
-  "Bounds": "1374,502,220,338",
+  "Bounds": "574,202,220,338",
   "Padding": "0,0,0,0",
   "AlignmentEdgeDistances": "0,0,6,60",
   "AlignmentTransform": "0,0",
@@ -24,7 +24,7 @@
   "InactiveColor": "",
   "Closable": true,
   "Titlebar": {
-    "Bounds": "60,0,220,29",
+    "Bounds": "0,0,220,29",
     "Padding": "0,0,0,0",
     "AlignmentEdgeDistances": "0,0,0,0",
     "AlignmentTransform": "0,0",
@@ -51,8 +51,8 @@
     "MouseDownSound": ""
   },
   "Title": {
-    "Bounds": "66,0,137,29",
-    "Padding": "62,5,4,4",
+    "Bounds": "0,0,115,29",
+    "Padding": "40,5,4,4",
     "AlignmentEdgeDistances": "0,0,0,0",
     "AlignmentTransform": "0,0",
     "Margin": "0,0,0,0",
@@ -81,13 +81,13 @@
     "TextScale": 1.0
   },
   "CloseButton": {
-    "Bounds": "195,5,14,14",
-    "Padding": "0,5,0,0",
+    "Bounds": "194,4,26,25",
+    "Padding": "3,4,0,0",
     "AlignmentEdgeDistances": "0,0,0,0",
     "AlignmentTransform": "0,0",
     "Margin": "0,0,0,0",
     "RenderColor": "255,255,255,255",
-    "Alignments": "Top",
+    "Alignments": "Top,Right",
     "DrawBackground": true,
     "MinimumSize": "1,1",
     "MaximumSize": "30,30",

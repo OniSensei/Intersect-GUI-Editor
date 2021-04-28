@@ -1,5 +1,5 @@
 {
-  "Bounds": "654,364,292,235",
+  "Bounds": "174,233,452,198",
   "Padding": "0,0,0,0",
   "AlignmentEdgeDistances": "0,0,0,0",
   "AlignmentTransform": "0,32",
@@ -50,10 +50,10 @@
       "TextPadding": "25,9,0,0",
       "AutoSizeToContents": false,
       "Font": "sourcesansproblack,12",
-      "TextScale": 0.0
+      "TextScale": 1.0
     },
     "CharacterNameLabel": {
-      "Bounds": "0,188,178,20",
+      "Bounds": "68,56,178,20",
       "Padding": "0,0,0,0",
       "AlignmentEdgeDistances": "0,0,0,0",
       "AlignmentTransform": "0,0",
@@ -83,7 +83,7 @@
       "TextScale": 1.0
     },
     "CharacterInfoLabel": {
-      "Bounds": "0,202,178,20",
+      "Bounds": "68,70,178,20",
       "Padding": "0,0,0,0",
       "AlignmentEdgeDistances": "0,0,0,0",
       "AlignmentTransform": "0,0",
@@ -113,7 +113,7 @@
       "TextScale": 1.0
     },
     "CharacterContainer": {
-      "Bounds": "26,52,130,128",
+      "Bounds": "68,94,178,79",
       "Padding": "0,0,0,0",
       "AlignmentEdgeDistances": "0,0,0,0",
       "AlignmentTransform": "0,0",
@@ -137,8 +137,8 @@
       "RightMouseClickSound": null,
       "Children": {
         "NextCharacterButton": {
-          "Bounds": "100,56,30,35",
-          "Padding": "0,0,0,0",
+          "Bounds": "148,22,30,35",
+          "Padding": "3,3,3,3",
           "AlignmentEdgeDistances": "0,0,0,0",
           "AlignmentTransform": "0,0",
           "Margin": "0,0,0,0",
@@ -175,8 +175,8 @@
           "ClickSound": ""
         },
         "PreviousCharacterButton": {
-          "Bounds": "0,56,30,35",
-          "Padding": "0,0,0,0",
+          "Bounds": "0,22,30,35",
+          "Padding": "3,3,3,3",
           "AlignmentEdgeDistances": "0,0,0,0",
           "AlignmentTransform": "0,0",
           "Margin": "0,0,0,0",
@@ -215,7 +215,7 @@
       }
     },
     "PlayButton": {
-      "Bounds": "186,56,96,35",
+      "Bounds": "288,56,96,35",
       "Padding": "3,3,3,3",
       "AlignmentEdgeDistances": "0,0,0,0",
       "AlignmentTransform": "0,0",
@@ -253,7 +253,7 @@
       "ClickSound": ""
     },
     "DeleteButton": {
-      "Bounds": "186,99,96,35",
+      "Bounds": "288,99,96,35",
       "Padding": "3,3,3,3",
       "AlignmentEdgeDistances": "0,0,0,0",
       "AlignmentTransform": "0,0",
@@ -291,7 +291,7 @@
       "ClickSound": ""
     },
     "NewButton": {
-      "Bounds": "186,56,96,35",
+      "Bounds": "288,56,96,35",
       "Padding": "3,3,3,3",
       "AlignmentEdgeDistances": "0,0,0,0",
       "AlignmentTransform": "0,0",
@@ -329,7 +329,7 @@
       "ClickSound": ""
     },
     "LogoutButton": {
-      "Bounds": "267,5,14,14",
+      "Bounds": "288,142,96,35",
       "Padding": "3,3,3,3",
       "AlignmentEdgeDistances": "0,0,0,0",
       "AlignmentTransform": "0,0",
@@ -355,11 +355,11 @@
       "TextPadding": "3,3,3,3",
       "AutoSizeToContents": false,
       "Font": "sourcesansproblack,12",
-      "TextScale": 0.0,
-      "NormalImage": "mainmenu_exit.png",
-      "HoveredImage": "mainmenu_exit_hovered.png",
-      "ClickedImage": "mainmenu_exit_clicked.png",
-      "DisabledImage": "mainmenu_exit_disabled.png",
+      "TextScale": 1.0,
+      "NormalImage": "smallbutton.png",
+      "HoveredImage": "smallbutton_hovered.png",
+      "ClickedImage": "smallbutton_clicked.png",
+      "DisabledImage": "smallbutton_disabled.png",
       "CenterImage": false,
       "HoverSound": "octave-tap-resonant.wav",
       "MouseUpSound": "",

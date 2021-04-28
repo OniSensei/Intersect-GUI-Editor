@@ -184,8 +184,7 @@
       "HideToolTip": false,
       "ToolTipBackground": null,
       "ToolTipFont": null,
-      "ToolTipTextColor": "",
-      "Font": null
+      "ToolTipTextColor": ""
     },
     "ItemDescText": {
       "Bounds": "177,0,1,16",
@@ -265,8 +264,7 @@
       "HideToolTip": false,
       "ToolTipBackground": null,
       "ToolTipFont": null,
-      "ToolTipTextColor": "",
-      "Font": null
+      "ToolTipTextColor": ""
     }
   }
 }

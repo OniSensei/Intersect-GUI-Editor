@@ -1,5 +1,5 @@
 {
-  "Bounds": "574,383,452,198",
+  "Bounds": "174,233,452,198",
   "Padding": "0,0,0,0",
   "AlignmentEdgeDistances": "0,0,0,0",
   "AlignmentTransform": "0,32",
@@ -50,10 +50,10 @@
       "TextPadding": "25,9,0,0",
       "AutoSizeToContents": false,
       "Font": "sourcesansproblack,12",
-      "TextScale": 0.0
+      "TextScale": 1.0
     },
     "CharacterNamePanel": {
-      "Bounds": "188,45,216,43",
+      "Bounds": "228,56,216,28",
       "Padding": "0,0,0,0",
       "AlignmentEdgeDistances": "0,0,0,0",
       "AlignmentTransform": "0,0",
@@ -107,7 +107,7 @@
           "TextScale": 1.0
         },
         "CharacterNameField": {
-          "Bounds": "4,18,216,16",
+          "Bounds": "4,10,216,16",
           "Padding": "4,0,4,2",
           "AlignmentEdgeDistances": "0,0,0,0",
           "AlignmentTransform": "0,0",
@@ -141,7 +141,7 @@
       }
     },
     "ClassPanel": {
-      "Bounds": "190,92,216,43",
+      "Bounds": "228,92,216,28",
       "Padding": "0,0,0,0",
       "AlignmentEdgeDistances": "0,0,0,0",
       "AlignmentTransform": "0,0",
@@ -195,7 +195,7 @@
           "TextScale": 1.0
         },
         "ClassCombobox": {
-          "Bounds": "4,18,216,16",
+          "Bounds": "0,10,216,16",
           "Padding": "0,0,0,0",
           "AlignmentEdgeDistances": "0,0,0,0",
           "AlignmentTransform": "0,0",
@@ -612,7 +612,7 @@
       "TextScale": 1.0
     },
     "CharacterContainer": {
-      "Bounds": "20,45,130,128",
+      "Bounds": "16,100,178,79",
       "Padding": "0,0,0,0",
       "AlignmentEdgeDistances": "0,0,0,0",
       "AlignmentTransform": "0,0",
@@ -636,7 +636,7 @@
       "RightMouseClickSound": null,
       "Children": {
         "CharacterPortait": {
-          "Bounds": "41,40,48,48",
+          "Bounds": "65,15,48,48",
           "Padding": "0,0,0,0",
           "AlignmentEdgeDistances": "0,0,0,0",
           "AlignmentTransform": "0,0",
@@ -738,7 +738,7 @@
       }
     },
     "GenderPanel": {
-      "Bounds": "190,137,459,30",
+      "Bounds": "228,124,459,30",
       "Padding": "0,0,0,0",
       "AlignmentEdgeDistances": "0,0,0,0",
       "AlignmentTransform": "0,0",
@@ -974,7 +974,7 @@
       }
     },
     "CreateButton": {
-      "Bounds": "306,160,96,35",
+      "Bounds": "223,158,96,35",
       "Padding": "3,3,3,3",
       "AlignmentEdgeDistances": "0,0,0,0",
       "AlignmentTransform": "0,0",
@@ -1012,8 +1012,8 @@
       "ClickSound": ""
     },
     "BackButton": {
-      "Bounds": "427,5,14,14",
-      "Padding": "0,0,0,0",
+      "Bounds": "353,158,96,35",
+      "Padding": "3,3,3,3",
       "AlignmentEdgeDistances": "0,0,0,0",
       "AlignmentTransform": "0,0",
       "Margin": "0,0,0,0",
@@ -1038,11 +1038,11 @@
       "TextPadding": "3,3,3,3",
       "AutoSizeToContents": false,
       "Font": "sourcesansproblack,12",
-      "TextScale": 0.0,
-      "NormalImage": "mainmenu_exit.png",
-      "HoveredImage": "mainmenu_exit_hovered.png",
-      "ClickedImage": "mainmenu_exit_clicked.png",
-      "DisabledImage": "mainmenu_exit_disabled.png",
+      "TextScale": 1.0,
+      "NormalImage": "smallbutton.png",
+      "HoveredImage": "smallbutton_hovered.png",
+      "ClickedImage": "smallbutton_clicked.png",
+      "DisabledImage": "smallbutton_disabled.png",
       "CenterImage": false,
       "HoverSound": "octave-tap-resonant.wav",
       "MouseUpSound": "",

@@ -1,5 +1,5 @@
 {
-  "Bounds": "574,383,452,198",
+  "Bounds": "174,262,452,198",
   "Padding": "0,262,0,0",
   "AlignmentEdgeDistances": "0,0,0,0",
   "AlignmentTransform": "0,32",
@@ -50,10 +50,10 @@
       "TextPadding": "25,9,0,0",
       "AutoSizeToContents": false,
       "Font": "sourcesansproblack,12",
-      "TextScale": 0.0
+      "TextScale": 1.0
     },
     "UsernamePanel": {
-      "Bounds": "14,49,308,28",
+      "Bounds": "14,54,308,28",
       "Padding": "0,0,0,0",
       "AlignmentEdgeDistances": "0,0,0,0",
       "AlignmentTransform": "0,0",
@@ -141,7 +141,7 @@
       }
     },
     "EmailPanel": {
-      "Bounds": "14,85,308,28",
+      "Bounds": "14,90,308,28",
       "Padding": "0,0,0,0",
       "AlignmentEdgeDistances": "0,0,0,0",
       "AlignmentTransform": "0,0",
@@ -229,7 +229,7 @@
       }
     },
     "Password1Panel": {
-      "Bounds": "14,121,308,28",
+      "Bounds": "14,126,308,28",
       "Padding": "0,0,0,0",
       "AlignmentEdgeDistances": "0,0,0,0",
       "AlignmentTransform": "0,0",
@@ -317,7 +317,7 @@
       }
     },
     "Password2Panel": {
-      "Bounds": "14,157,308,28",
+      "Bounds": "14,162,308,28",
       "Padding": "0,0,0,0",
       "AlignmentEdgeDistances": "0,0,0,0",
       "AlignmentTransform": "0,0",
@@ -405,7 +405,7 @@
       }
     },
     "RegisterButton": {
-      "Bounds": "338,49,96,35",
+      "Bounds": "338,54,96,35",
       "Padding": "3,3,3,3",
       "AlignmentEdgeDistances": "0,0,0,0",
       "AlignmentTransform": "0,0",
@@ -443,8 +443,8 @@
       "ClickSound": ""
     },
     "BackButton": {
-      "Bounds": "427,5,14,14",
-      "Padding": "0,0,0,0",
+      "Bounds": "338,89,96,35",
+      "Padding": "3,3,3,3",
       "AlignmentEdgeDistances": "0,0,0,0",
       "AlignmentTransform": "0,0",
       "Margin": "0,0,0,0",
@@ -469,11 +469,11 @@
       "TextPadding": "3,3,3,3",
       "AutoSizeToContents": false,
       "Font": "sourcesansproblack,12",
-      "TextScale": 0.0,
-      "NormalImage": "mainmenu_exit.png",
-      "HoveredImage": "mainmenu_exit_hovered.png",
-      "ClickedImage": "mainmenu_exit_clicked.png",
-      "DisabledImage": "mainmenu_exit_disabled.png",
+      "TextScale": 1.0,
+      "NormalImage": "smallbutton.png",
+      "HoveredImage": "smallbutton_hovered.png",
+      "ClickedImage": "smallbutton_clicked.png",
+      "DisabledImage": "smallbutton_disabled.png",
       "CenterImage": false,
       "HoverSound": "octave-tap-resonant.wav",
       "MouseUpSound": "",

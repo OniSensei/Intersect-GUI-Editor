@@ -1,5 +1,5 @@
 {
-  "Bounds": "574,383,452,213",
+  "Bounds": "174,233,452,213",
   "Padding": "0,0,0,0",
   "AlignmentEdgeDistances": "0,0,0,0",
   "AlignmentTransform": "0,40",
@@ -50,10 +50,10 @@
       "TextPadding": "25,9,0,0",
       "AutoSizeToContents": false,
       "Font": "sourcesansproblack,12",
-      "TextScale": 0.0
+      "TextScale": 1.0
     },
     "OptionsContainer": {
-      "Bounds": "0,0,452,213",
+      "Bounds": "0,34,452,179",
       "Padding": "0,0,0,0",
       "AlignmentEdgeDistances": "0,0,0,0",
       "AlignmentTransform": "0,0",
@@ -75,7 +75,7 @@
       "CanScrollV": false,
       "AutoHideBars": false,
       "InnerPanel": {
-        "Bounds": "0,40,10,10",
+        "Bounds": "0,0,10,10",
         "Padding": "0,0,0,0",
         "AlignmentEdgeDistances": "0,0,0,0",
         "AlignmentTransform": "0,0",
@@ -95,7 +95,7 @@
         "ToolTipTextColor": "",
         "Children": {
           "ResolutionPanel": {
-            "Bounds": "14,40,200,35",
+            "Bounds": "14,20,200,29",
             "Padding": "0,0,0,0",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -149,7 +149,7 @@
                 "TextScale": 1.0
               },
               "ResolutionCombobox": {
-                "Bounds": "4,14,200,16",
+                "Bounds": "0,10,200,16",
                 "Padding": "0,0,0,0",
                 "AlignmentEdgeDistances": "0,0,0,0",
                 "AlignmentTransform": "0,0",
@@ -369,7 +369,7 @@
                     "ToolTipTextColor": "",
                     "BackgroundTemplate": "scrollbarbg.png",
                     "UpOrLeftButton": {
-                      "Bounds": "0,0,24,27",
+                      "Bounds": "0,0,100,20",
                       "Padding": "3,3,3,3",
                       "AlignmentEdgeDistances": "0,0,0,0",
                       "AlignmentTransform": "0,0",
@@ -407,7 +407,7 @@
                       "ClickSound": ""
                     },
                     "Bar": {
-                      "Bounds": "0,0,15,12",
+                      "Bounds": "0,0,10,10",
                       "Padding": "0,0,0,0",
                       "AlignmentEdgeDistances": "0,0,0,0",
                       "AlignmentTransform": "0,0",
@@ -483,13 +483,13 @@
                   "AlignmentEdgeDistances": "0,0,0,0",
                   "AlignmentTransform": "0,0",
                   "Margin": "0,0,0,0",
-                  "RenderColor": "0,255,255,255",
+                  "RenderColor": "255,255,255,255",
                   "Alignments": "",
                   "DrawBackground": true,
                   "MinimumSize": "1,1",
                   "MaximumSize": "4096,4096",
                   "Disabled": false,
-                  "Hidden": true,
+                  "Hidden": false,
                   "RestrictToParent": false,
                   "MouseInputEnabled": false,
                   "HideToolTip": false,
@@ -506,7 +506,7 @@
             }
           },
           "FPSPanel": {
-            "Bounds": "238,40,200,35",
+            "Bounds": "238,20,200,29",
             "Padding": "0,0,0,0",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -560,7 +560,7 @@
                 "TextScale": 1.0
               },
               "FPSCombobox": {
-                "Bounds": "4,14,200,16",
+                "Bounds": "0,10,200,16",
                 "Padding": "0,0,0,0",
                 "AlignmentEdgeDistances": "0,0,0,0",
                 "AlignmentTransform": "0,0",
@@ -894,13 +894,13 @@
                   "AlignmentEdgeDistances": "0,0,0,0",
                   "AlignmentTransform": "0,0",
                   "Margin": "0,0,0,0",
-                  "RenderColor": "0,255,255,255",
+                  "RenderColor": "255,255,255,255",
                   "Alignments": "",
                   "DrawBackground": true,
                   "MinimumSize": "1,1",
                   "MaximumSize": "4096,4096",
                   "Disabled": false,
-                  "Hidden": true,
+                  "Hidden": false,
                   "RestrictToParent": false,
                   "MouseInputEnabled": false,
                   "HideToolTip": false,
@@ -917,7 +917,7 @@
             }
           },
           "FullscreenCheckbox": {
-            "Bounds": "14,119,200,24",
+            "Bounds": "14,99,200,24",
             "Padding": "0,0,0,0",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -966,7 +966,7 @@
               "TextScale": 1.0
             },
             "Checkbox": {
-              "Bounds": "172,0,24,25",
+              "Bounds": "179,0,24,25",
               "Padding": "3,3,3,3",
               "AlignmentEdgeDistances": "0,0,0,0",
               "AlignmentTransform": "0,0",
@@ -1007,7 +1007,7 @@
             }
           },
           "AutocloseWindowsCheckbox": {
-            "Bounds": "14,145,200,24",
+            "Bounds": "14,125,200,24",
             "Padding": "0,0,0,0",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -1056,7 +1056,7 @@
               "TextScale": 1.0
             },
             "Checkbox": {
-              "Bounds": "172,0,24,25",
+              "Bounds": "179,0,24,25",
               "Padding": "0,0,0,0",
               "AlignmentEdgeDistances": "0,0,0,0",
               "AlignmentTransform": "0,0",
@@ -1097,7 +1097,7 @@
             }
           },
           "KeybindingsButton": {
-            "Bounds": "238,122,200,26",
+            "Bounds": "238,102,200,26",
             "Padding": "0,0,0,0",
             "AlignmentEdgeDistances": "50,0,0,0",
             "AlignmentTransform": "0,0",
@@ -1135,7 +1135,7 @@
             "ClickSound": ""
           },
           "SoundLabel": {
-            "Bounds": "14,76,210,32",
+            "Bounds": "14,56,210,32",
             "Padding": "0,0,0,0",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -1165,7 +1165,7 @@
             "TextScale": 1.0
           },
           "SoundSlider": {
-            "Bounds": "14,82,200,35",
+            "Bounds": "14,62,200,35",
             "Padding": "0,0,0,0",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -1215,7 +1215,7 @@
             }
           },
           "MusicLabel": {
-            "Bounds": "238,76,210,32",
+            "Bounds": "238,56,210,32",
             "Padding": "0,0,0,0",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -1245,7 +1245,7 @@
             "TextScale": 1.0
           },
           "MusicSlider": {
-            "Bounds": "238,82,200,35",
+            "Bounds": "238,62,200,35",
             "Padding": "0,0,0,0",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -1295,7 +1295,7 @@
             }
           },
           "ApplyButton": {
-            "Bounds": "345,160,96,35",
+            "Bounds": "238,140,96,35",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "50,0,0,0",
             "AlignmentTransform": "0,0",
@@ -1333,8 +1333,8 @@
             "ClickSound": ""
           },
           "CancelButton": {
-            "Bounds": "427,5,14,14",
-            "Padding": "0,0,0,0",
+            "Bounds": "342,140,96,35",
+            "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "50,0,0,0",
             "AlignmentTransform": "0,0",
             "Margin": "0,0,0,0",
@@ -1359,11 +1359,11 @@
             "TextPadding": "3,3,3,3",
             "AutoSizeToContents": false,
             "Font": "sourcesansproblack,12",
-            "TextScale": 0.0,
-            "NormalImage": "mainmenu_exit.png",
-            "HoveredImage": "mainmenu_exit.png_hovered.png",
-            "ClickedImage": "mainmenu_exit.png_clicked.png",
-            "DisabledImage": "mainmenu_exit.png_disabled.png",
+            "TextScale": 1.0,
+            "NormalImage": "smallbutton.png",
+            "HoveredImage": "smallbutton_hovered.png",
+            "ClickedImage": "smallbutton_clicked.png",
+            "DisabledImage": "smallbutton_disabled.png",
             "CenterImage": false,
             "HoverSound": "octave-tap-resonant.wav",
             "MouseUpSound": "",
@@ -1622,7 +1622,7 @@
       }
     },
     "ControlsContainer": {
-      "Bounds": "0,35,441,132",
+      "Bounds": "0,40,451,132",
       "Padding": "0,0,0,0",
       "AlignmentEdgeDistances": "0,0,0,0",
       "AlignmentTransform": "0,0",
@@ -1694,7 +1694,7 @@
             "TextScale": 1.0
           },
           "ControlMoveUpButton1": {
-            "Bounds": "161,6,120,28",
+            "Bounds": "181,6,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -1732,7 +1732,7 @@
             "ClickSound": ""
           },
           "ControlMoveUpButton2": {
-            "Bounds": "289,6,120,28",
+            "Bounds": "309,6,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -1800,7 +1800,7 @@
             "TextScale": 1.0
           },
           "ControlMoveLeftButton1": {
-            "Bounds": "161,38,120,28",
+            "Bounds": "181,38,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -1838,7 +1838,7 @@
             "ClickSound": ""
           },
           "ControlMoveLeftButton2": {
-            "Bounds": "289,38,120,28",
+            "Bounds": "309,38,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -1906,7 +1906,7 @@
             "TextScale": 1.0
           },
           "ControlMoveDownButton1": {
-            "Bounds": "161,70,120,28",
+            "Bounds": "181,70,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -1944,7 +1944,7 @@
             "ClickSound": ""
           },
           "ControlMoveDownButton2": {
-            "Bounds": "289,70,120,28",
+            "Bounds": "309,70,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -2012,7 +2012,7 @@
             "TextScale": 1.0
           },
           "ControlMoveRightButton1": {
-            "Bounds": "161,102,120,28",
+            "Bounds": "181,102,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -2050,7 +2050,7 @@
             "ClickSound": ""
           },
           "ControlMoveRightButton2": {
-            "Bounds": "289,102,120,28",
+            "Bounds": "309,102,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -2118,7 +2118,7 @@
             "TextScale": 1.0
           },
           "ControlAttackInteractButton1": {
-            "Bounds": "161,134,120,28",
+            "Bounds": "181,134,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -2156,7 +2156,7 @@
             "ClickSound": ""
           },
           "ControlAttackInteractButton2": {
-            "Bounds": "289,134,120,28",
+            "Bounds": "309,134,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -2224,7 +2224,7 @@
             "TextScale": 1.0
           },
           "ControlBlockButton1": {
-            "Bounds": "161,166,120,28",
+            "Bounds": "181,166,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -2262,7 +2262,7 @@
             "ClickSound": ""
           },
           "ControlBlockButton2": {
-            "Bounds": "289,166,120,28",
+            "Bounds": "309,166,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -2330,7 +2330,7 @@
             "TextScale": 1.0
           },
           "ControlAutoTargetButton1": {
-            "Bounds": "161,198,120,28",
+            "Bounds": "181,198,120,28",
             "Padding": "0,0,0,0",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -2368,7 +2368,7 @@
             "ClickSound": ""
           },
           "ControlAutoTargetButton2": {
-            "Bounds": "289,198,120,28",
+            "Bounds": "309,198,120,28",
             "Padding": "0,0,0,0",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -2436,7 +2436,7 @@
             "TextScale": 1.0
           },
           "ControlPickUpButton1": {
-            "Bounds": "161,230,120,28",
+            "Bounds": "181,230,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -2474,7 +2474,7 @@
             "ClickSound": ""
           },
           "ControlPickUpButton2": {
-            "Bounds": "289,230,120,28",
+            "Bounds": "309,230,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -2542,7 +2542,7 @@
             "TextScale": 1.0
           },
           "ControlEnterButton1": {
-            "Bounds": "161,262,120,28",
+            "Bounds": "181,262,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -2580,7 +2580,7 @@
             "ClickSound": ""
           },
           "ControlEnterButton2": {
-            "Bounds": "289,262,120,28",
+            "Bounds": "309,262,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -2648,7 +2648,7 @@
             "TextScale": 1.0
           },
           "ControlHotkey1Button1": {
-            "Bounds": "161,294,120,28",
+            "Bounds": "181,294,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -2686,7 +2686,7 @@
             "ClickSound": ""
           },
           "ControlHotkey1Button2": {
-            "Bounds": "289,294,120,28",
+            "Bounds": "309,294,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -2754,7 +2754,7 @@
             "TextScale": 1.0
           },
           "ControlHotkey2Button1": {
-            "Bounds": "161,326,120,28",
+            "Bounds": "181,326,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -2792,7 +2792,7 @@
             "ClickSound": ""
           },
           "ControlHotkey2Button2": {
-            "Bounds": "289,326,120,28",
+            "Bounds": "309,326,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -2860,7 +2860,7 @@
             "TextScale": 1.0
           },
           "ControlHotkey3Button1": {
-            "Bounds": "161,358,120,28",
+            "Bounds": "181,358,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -2898,7 +2898,7 @@
             "ClickSound": ""
           },
           "ControlHotkey3Button2": {
-            "Bounds": "289,358,120,28",
+            "Bounds": "309,358,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -2966,7 +2966,7 @@
             "TextScale": 1.0
           },
           "ControlHotkey4Button1": {
-            "Bounds": "161,390,120,28",
+            "Bounds": "181,390,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -3004,7 +3004,7 @@
             "ClickSound": ""
           },
           "ControlHotkey4Button2": {
-            "Bounds": "289,390,120,28",
+            "Bounds": "309,390,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -3072,7 +3072,7 @@
             "TextScale": 1.0
           },
           "ControlHotkey5Button1": {
-            "Bounds": "161,422,120,28",
+            "Bounds": "181,422,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -3110,7 +3110,7 @@
             "ClickSound": ""
           },
           "ControlHotkey5Button2": {
-            "Bounds": "289,422,120,28",
+            "Bounds": "309,422,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -3178,7 +3178,7 @@
             "TextScale": 1.0
           },
           "ControlHotkey6Button1": {
-            "Bounds": "161,454,120,28",
+            "Bounds": "181,454,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -3216,7 +3216,7 @@
             "ClickSound": ""
           },
           "ControlHotkey6Button2": {
-            "Bounds": "289,454,120,28",
+            "Bounds": "309,454,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -3284,7 +3284,7 @@
             "TextScale": 1.0
           },
           "ControlHotkey7Button1": {
-            "Bounds": "161,486,120,28",
+            "Bounds": "181,486,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -3322,7 +3322,7 @@
             "ClickSound": ""
           },
           "ControlHotkey7Button2": {
-            "Bounds": "289,486,120,28",
+            "Bounds": "309,486,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -3390,7 +3390,7 @@
             "TextScale": 1.0
           },
           "ControlHotkey8Button1": {
-            "Bounds": "161,518,120,28",
+            "Bounds": "181,518,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -3428,7 +3428,7 @@
             "ClickSound": ""
           },
           "ControlHotkey8Button2": {
-            "Bounds": "289,518,120,28",
+            "Bounds": "309,518,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -3496,7 +3496,7 @@
             "TextScale": 1.0
           },
           "ControlHotkey9Button1": {
-            "Bounds": "161,550,120,28",
+            "Bounds": "181,550,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -3534,7 +3534,7 @@
             "ClickSound": ""
           },
           "ControlHotkey9Button2": {
-            "Bounds": "289,550,120,28",
+            "Bounds": "309,550,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -3602,7 +3602,7 @@
             "TextScale": 1.0
           },
           "ControlHotkey0Button1": {
-            "Bounds": "161,582,120,28",
+            "Bounds": "181,582,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -3640,7 +3640,7 @@
             "ClickSound": ""
           },
           "ControlHotkey0Button2": {
-            "Bounds": "289,582,120,28",
+            "Bounds": "309,582,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -3708,7 +3708,7 @@
             "TextScale": 1.0
           },
           "ControlScreenshotButton1": {
-            "Bounds": "161,614,120,28",
+            "Bounds": "181,614,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -3746,7 +3746,7 @@
             "ClickSound": ""
           },
           "ControlScreenshotButton2": {
-            "Bounds": "289,614,120,28",
+            "Bounds": "309,614,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -3814,7 +3814,7 @@
             "TextScale": 1.0
           },
           "ControlOpenMenuButton1": {
-            "Bounds": "161,646,120,28",
+            "Bounds": "181,646,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -3852,7 +3852,7 @@
             "ClickSound": ""
           },
           "ControlOpenMenuButton2": {
-            "Bounds": "289,646,120,28",
+            "Bounds": "309,646,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -3920,7 +3920,7 @@
             "TextScale": 1.0
           },
           "ControlOpenInventoryButton1": {
-            "Bounds": "161,678,120,28",
+            "Bounds": "181,678,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -3958,7 +3958,7 @@
             "ClickSound": ""
           },
           "ControlOpenInventoryButton2": {
-            "Bounds": "289,678,120,28",
+            "Bounds": "309,678,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -4026,7 +4026,7 @@
             "TextScale": 1.0
           },
           "ControlOpenQuestsButton1": {
-            "Bounds": "161,710,120,28",
+            "Bounds": "181,710,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -4064,7 +4064,7 @@
             "ClickSound": ""
           },
           "ControlOpenQuestsButton2": {
-            "Bounds": "289,710,120,28",
+            "Bounds": "309,710,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -4132,7 +4132,7 @@
             "TextScale": 1.0
           },
           "ControlOpenCharacterInfoButton1": {
-            "Bounds": "161,742,120,28",
+            "Bounds": "181,742,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -4170,7 +4170,7 @@
             "ClickSound": ""
           },
           "ControlOpenCharacterInfoButton2": {
-            "Bounds": "289,742,120,28",
+            "Bounds": "309,742,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -4238,7 +4238,7 @@
             "TextScale": 1.0
           },
           "ControlOpenPartiesButton1": {
-            "Bounds": "161,774,120,28",
+            "Bounds": "181,774,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -4276,7 +4276,7 @@
             "ClickSound": ""
           },
           "ControlOpenPartiesButton2": {
-            "Bounds": "289,774,120,28",
+            "Bounds": "309,774,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -4344,7 +4344,7 @@
             "TextScale": 1.0
           },
           "ControlOpenSpellsButton1": {
-            "Bounds": "161,806,120,28",
+            "Bounds": "181,806,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -4382,7 +4382,7 @@
             "ClickSound": ""
           },
           "ControlOpenSpellsButton2": {
-            "Bounds": "289,806,120,28",
+            "Bounds": "309,806,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -4450,7 +4450,7 @@
             "TextScale": 1.0
           },
           "ControlOpenFriendsButton1": {
-            "Bounds": "161,838,120,28",
+            "Bounds": "181,838,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -4488,7 +4488,7 @@
             "ClickSound": ""
           },
           "ControlOpenFriendsButton2": {
-            "Bounds": "289,838,120,28",
+            "Bounds": "309,838,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -4556,7 +4556,7 @@
             "TextScale": 1.0
           },
           "ControlOpenSettingsButton1": {
-            "Bounds": "161,870,120,28",
+            "Bounds": "181,870,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -4594,7 +4594,7 @@
             "ClickSound": ""
           },
           "ControlOpenSettingsButton2": {
-            "Bounds": "289,870,120,28",
+            "Bounds": "309,870,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -4662,7 +4662,7 @@
             "TextScale": 1.0
           },
           "ControlOpenDebuggerButton1": {
-            "Bounds": "161,902,120,28",
+            "Bounds": "181,902,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -4700,7 +4700,7 @@
             "ClickSound": ""
           },
           "ControlOpenDebuggerButton2": {
-            "Bounds": "289,902,120,28",
+            "Bounds": "309,902,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -4768,7 +4768,7 @@
             "TextScale": 1.0
           },
           "ControlOpenAdminPanelButton1": {
-            "Bounds": "161,934,120,28",
+            "Bounds": "181,934,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -4806,7 +4806,7 @@
             "ClickSound": ""
           },
           "ControlOpenAdminPanelButton2": {
-            "Bounds": "289,934,120,28",
+            "Bounds": "309,934,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -4874,7 +4874,7 @@
             "TextScale": 1.0
           },
           "ControlToggleGuiButton1": {
-            "Bounds": "161,966,120,28",
+            "Bounds": "181,966,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -4912,7 +4912,7 @@
             "ClickSound": ""
           },
           "ControlToggleGuiButton2": {
-            "Bounds": "289,966,120,28",
+            "Bounds": "309,966,120,28",
             "Padding": "3,3,3,3",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -5201,7 +5201,7 @@
       }
     },
     "ExitControlsButton": {
-      "Bounds": "345,174,96,35",
+      "Bounds": "238,174,96,35",
       "Padding": "0,0,0,0",
       "AlignmentEdgeDistances": "0,0,0,0",
       "AlignmentTransform": "0,0",
@@ -5239,7 +5239,7 @@
       "ClickSound": ""
     },
     "CancelControlsButton": {
-      "Bounds": "427,5,14,14",
+      "Bounds": "342,174,96,35",
       "Padding": "0,0,0,0",
       "AlignmentEdgeDistances": "0,0,0,0",
       "AlignmentTransform": "0,0",
@@ -5265,11 +5265,11 @@
       "TextPadding": "3,3,3,3",
       "AutoSizeToContents": false,
       "Font": "sourcesansproblack,12",
-      "TextScale": 0.0,
-      "NormalImage": "mainmenu_exit.png",
-      "HoveredImage": "mainmenu_exit.png_hovered.png",
-      "ClickedImage": "mainmenu_exit.png_clicked.png",
-      "DisabledImage": "mainmenu_exit.png_disabled.png",
+      "TextScale": 1.0,
+      "NormalImage": "smallbutton.png",
+      "HoveredImage": "smallbutton_hovered.png",
+      "ClickedImage": "smallbutton_clicked.png",
+      "DisabledImage": "smallbutton_disabled.png",
       "CenterImage": false,
       "HoverSound": "octave-tap-resonant.wav",
       "MouseUpSound": "",

@@ -1,5 +1,5 @@
 {
-  "Bounds": "574,383,452,262",
+  "Bounds": "174,233,452,262",
   "Padding": "0,0,0,0",
   "AlignmentEdgeDistances": "0,0,0,0",
   "AlignmentTransform": "0,64",
@@ -23,7 +23,7 @@
   "RightMouseClickSound": null,
   "Children": {
     "CreditsHeader": {
-      "Bounds": "0,0,442,393",
+      "Bounds": "0,0,452,393",
       "Padding": "0,0,0,0",
       "AlignmentEdgeDistances": "0,0,0,0",
       "AlignmentTransform": "0,0",
@@ -50,10 +50,10 @@
       "TextPadding": "25,9,0,0",
       "AutoSizeToContents": false,
       "Font": "sourcesansproblack,12",
-      "TextScale": 0.0
+      "TextScale": 1.0
     },
     "CreditsScrollview": {
-      "Bounds": "0,40,441,169",
+      "Bounds": "0,40,451,169",
       "Padding": "0,0,0,0",
       "AlignmentEdgeDistances": "0,0,0,0",
       "AlignmentTransform": "0,0",
@@ -367,11 +367,11 @@
       }
     },
     "BackButton": {
-      "Bounds": "219,5,14,14",
-      "Padding": "208,0,0,0",
-      "AlignmentEdgeDistances": "208,0,0,0",
+      "Bounds": "166,228,120,28",
+      "Padding": "3,3,3,3",
+      "AlignmentEdgeDistances": "0,0,0,0",
       "AlignmentTransform": "0,0",
-      "Margin": "208,0,0,0",
+      "Margin": "0,0,0,0",
       "RenderColor": "255,255,255,255",
       "Alignments": "CenterH",
       "DrawBackground": true,
@@ -393,11 +393,11 @@
       "TextPadding": "3,3,3,3",
       "AutoSizeToContents": false,
       "Font": "sourcesansproblack,10",
-      "TextScale": 0.0,
-      "NormalImage": "mainmenu_exit.png",
-      "HoveredImage": "mainmenu_exit_hovered.png",
-      "ClickedImage": "mainmenu_exit_clicked.png",
-      "DisabledImage": "mainmenu_exit_disabled.png",
+      "TextScale": 1.0,
+      "NormalImage": "control_button.png",
+      "HoveredImage": "control_button_hovered.png",
+      "ClickedImage": "control_button_clicked.png",
+      "DisabledImage": "",
       "CenterImage": false,
       "HoverSound": "octave-tap-resonant.wav",
       "MouseUpSound": "",

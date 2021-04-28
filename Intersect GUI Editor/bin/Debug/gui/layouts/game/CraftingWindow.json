@@ -1,5 +1,5 @@
 {
-  "Bounds": "579,215,442,469",
+  "Bounds": "462,149,442,469",
   "Padding": "0,0,0,0",
   "AlignmentEdgeDistances": "0,0,0,0",
   "AlignmentTransform": "0,0",
@@ -51,8 +51,8 @@
     "MouseDownSound": ""
   },
   "Title": {
-    "Bounds": "66,5,167,25",
-    "Padding": "62,5,0,0",
+    "Bounds": "76,7,135,26",
+    "Padding": "32,6,0,0",
     "AlignmentEdgeDistances": "0,0,0,0",
     "AlignmentTransform": "0,0",
     "Margin": "0,0,0,0",
@@ -81,13 +81,13 @@
     "TextScale": 1.0
   },
   "CloseButton": {
-    "Bounds": "417,5,14,14",
-    "Padding": "0,0,0,0",
+    "Bounds": "408,0,34,32",
+    "Padding": "3,0,0,0",
     "AlignmentEdgeDistances": "0,0,0,0",
     "AlignmentTransform": "0,0",
     "Margin": "0,0,0,0",
     "RenderColor": "255,255,255,255",
-    "Alignments": "",
+    "Alignments": "Top,Right",
     "DrawBackground": true,
     "MinimumSize": "1,1",
     "MaximumSize": "40,40",
@@ -108,10 +108,10 @@
     "AutoSizeToContents": false,
     "Font": "arial,10",
     "TextScale": 1.0,
-    "NormalImage": "closenormal.png",
-    "HoveredImage": "closehover.png",
-    "ClickedImage": "closeclicked.png",
-    "DisabledImage": "closedisabled.png",
+    "NormalImage": "closelargenormal.png",
+    "HoveredImage": "closelargehover.png",
+    "ClickedImage": "closelargeclicked.png",
+    "DisabledImage": "",
     "CenterImage": false,
     "HoverSound": "octave-tap-resonant.wav",
     "MouseUpSound": "",
@@ -818,7 +818,7 @@
         "ItemRightClickSound": null
       },
       "ProgressBarContainer": {
-        "Bounds": "194,422,247,14",
+        "Bounds": "194,431,247,5",
         "Padding": "0,0,0,0",
         "AlignmentEdgeDistances": "0,0,0,0",
         "AlignmentTransform": "0,0",
@@ -842,7 +842,7 @@
         "RightMouseClickSound": null,
         "Children": {
           "ProgressBar": {
-            "Bounds": "0,0,0,14",
+            "Bounds": "0,0,0,5",
             "Padding": "0,0,0,0",
             "AlignmentEdgeDistances": "0,0,0,0",
             "AlignmentTransform": "0,0",
@@ -868,7 +868,7 @@
         }
       },
       "CraftButton": {
-        "Bounds": "330,384,96,35",
+        "Bounds": "330,394,96,35",
         "Padding": "3,3,3,3",
         "AlignmentEdgeDistances": "0,0,0,0",
         "AlignmentTransform": "0,0",

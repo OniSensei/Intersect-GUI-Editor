@@ -1,5 +1,5 @@
 {
-  "Bounds": "1374,501,220,339",
+  "Bounds": "574,200,220,340",
   "Padding": "0,0,0,0",
   "AlignmentEdgeDistances": "0,0,6,60",
   "AlignmentTransform": "0,0",
@@ -51,8 +51,8 @@
     "MouseDownSound": ""
   },
   "Title": {
-    "Bounds": "66,5,109,29",
-    "Padding": "62,5,4,4",
+    "Bounds": "0,0,87,31",
+    "Padding": "40,7,4,4",
     "AlignmentEdgeDistances": "0,0,0,0",
     "AlignmentTransform": "0,0",
     "Margin": "0,0,0,0",
@@ -81,16 +81,16 @@
     "TextScale": 1.0
   },
   "CloseButton": {
-    "Bounds": "195,5,14,14",
-    "Padding": "0,0,0,0",
+    "Bounds": "194,6,26,25",
+    "Padding": "3,6,0,0",
     "AlignmentEdgeDistances": "0,0,0,0",
     "AlignmentTransform": "0,0",
     "Margin": "0,0,0,0",
     "RenderColor": "255,255,255,255",
-    "Alignments": "",
+    "Alignments": "Top,Right",
     "DrawBackground": true,
     "MinimumSize": "1,1",
-    "MaximumSize": "40,40",
+    "MaximumSize": "30,30",
     "Disabled": false,
     "Hidden": false,
     "RestrictToParent": true,

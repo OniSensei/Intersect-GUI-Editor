@@ -1,8 +1,8 @@
 {
-  "Bounds": "650,153,300,154",
+  "Bounds": "110,27,580,186",
   "Padding": "0,0,0,0",
   "AlignmentEdgeDistances": "0,0,0,0",
-  "AlignmentTransform": "0,-220",
+  "AlignmentTransform": "0,-180",
   "Margin": "0,0,0,0",
   "RenderColor": "255,255,255,255",
   "Alignments": "Center",
