@@ -93,6 +93,8 @@
     </Compile>
     <Compile Include="JSON Deserializers\menu\CharacterSelectionWindowGUI.vb" />
     <Compile Include="JSON Deserializers\menu\CreditsWindowGUI.vb" />
+    <Compile Include="JSON Deserializers\menu\ForgotPasswordWindowGUI.vb" />
+    <Compile Include="JSON Deserializers\menu\InputBoxGUI.vb" />
     <Compile Include="JSON Deserializers\menu\LoginWindowGUI.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">

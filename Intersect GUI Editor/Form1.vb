@@ -34,6 +34,8 @@ Public Class Form1
         MainCharacterCreationPanel.Visible = False
         MainCharSelectionPanel.Visible = False
         MainCreditsPanel.Visible = False
+        MainForgotPasswordWindowPanel.Visible = False
+        MainInputBoxPanel.Visible = False
 
         LoadLoginGUI(menuGuiPath & "LoginWindow.json")
         openFile = menuGuiPath & "LoginWindow.json"
@@ -43,6 +45,8 @@ Public Class Form1
         MainLoginWindowPanel.Visible = False
         MainCharSelectionPanel.Visible = False
         MainCreditsPanel.Visible = False
+        MainForgotPasswordWindowPanel.Visible = False
+        MainInputBoxPanel.Visible = False
 
         LoadCharacterCreationGUI(menuGuiPath & "CharacterCreationWindow.json")
         openFile = menuGuiPath & "CharacterCreationWindow.json"
@@ -52,6 +56,8 @@ Public Class Form1
         MainLoginWindowPanel.Visible = False
         MainCharacterCreationPanel.Visible = False
         MainCreditsPanel.Visible = False
+        MainForgotPasswordWindowPanel.Visible = False
+        MainInputBoxPanel.Visible = False
 
         LoadCharacterSelectionGUI(menuGuiPath & "CharacterSelectionWindow.json")
         openFile = menuGuiPath & "CharacterSelectionWindow.json"
@@ -61,9 +67,33 @@ Public Class Form1
         MainLoginWindowPanel.Visible = False
         MainCharacterCreationPanel.Visible = False
         MainCharSelectionPanel.Visible = False
+        MainForgotPasswordWindowPanel.Visible = False
+        MainInputBoxPanel.Visible = False
 
         LoadCreditsGUI(menuGuiPath & "CreditsWindow.json")
         openFile = menuGuiPath & "CreditsWindow.json"
+    End Sub
+
+    Private Sub ForgotPasswordWindowToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ForgotPasswordWindowToolStripMenuItem.Click
+        MainLoginWindowPanel.Visible = False
+        MainCharacterCreationPanel.Visible = False
+        MainCharSelectionPanel.Visible = False
+        MainCreditsPanel.Visible = False
+        MainInputBoxPanel.Visible = False
+
+        LoadForgotPasswordGUI(menuGuiPath & "ForgotPasswordWindow.json")
+        openFile = menuGuiPath & "ForgotPasswordWindow.json"
+    End Sub
+
+    Private Sub InputBoxToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InputBoxToolStripMenuItem.Click
+        MainLoginWindowPanel.Visible = False
+        MainCharacterCreationPanel.Visible = False
+        MainCharSelectionPanel.Visible = False
+        MainCreditsPanel.Visible = False
+        MainForgotPasswordWindowPanel.Visible = False
+
+        LoadInputBoxGUI(menuGuiPath & "InputBox.json")
+        openFile = menuGuiPath & "InputBox.json"
     End Sub
 
     Private Sub JTokenTreeUserControl1_AfterSelect(sender As Object, e As ZTn.Json.JsonTreeView.AfterSelectEventArgs) Handles JTokenTreeUserControl1.AfterSelect
@@ -101,6 +131,10 @@ Public Class Form1
                     LoadCharacterSelectionGUI(tempPath & "tmp_" & tempFileName & ".json")
                 ElseIf openFile.Contains("CreditsWindow") Then
                     LoadCreditsGUI(tempPath & "tmp_" & tempFileName & ".json")
+                ElseIf openFile.Contains("ForgotPasswordWindow") Then
+                    LoadForgotPasswordGUI(tempPath & "tmp_" & tempFileName & ".json")
+                ElseIf openFile.Contains("InputBox") Then
+                    LoadInputBoxGUI(tempPath & "tmp_" & tempFileName & ".json")
                 End If
             End Using
 
@@ -341,6 +375,10 @@ Public Class Form1
             LoadCharacterSelectionGUI(openFile)
         ElseIf openFile.Contains("CreditsWindow") Then
             LoadCreditsGUI(openFile)
+        ElseIf openFile.Contains("ForgotPasswordWindow") Then
+            LoadForgotPasswordGUI(openFile)
+        ElseIf openFile.Contains("InputBox") Then
+            LoadInputBoxGUI(openFile)
         End If
     End Sub
 
@@ -352,5 +390,275 @@ Public Class Form1
             gridoverlay = True
             toolSplitContainer.Panel2.BackgroundImage = Image.FromFile(Application.StartupPath & "\resources\grid_overlay.png")
         End If
+    End Sub
+
+    Private Sub NewButton_Click(sender As Object, e As EventArgs) Handles NewButton.Click
+        Dim infoPull As CharacterSelectionWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterSelectionWindow)(fullJson.Text)
+        NewButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.NewButton.ClickedImage)
+    End Sub
+
+    Private Sub NewButton_MouseDown(sender As Object, e As MouseEventArgs) Handles NewButton.MouseDown
+        Dim infoPull As CharacterSelectionWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterSelectionWindow)(fullJson.Text)
+        NewButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.NewButton.ClickedImage)
+    End Sub
+
+    Private Sub NewButton_MouseUp(sender As Object, e As MouseEventArgs) Handles NewButton.MouseUp
+        Dim infoPull As CharacterSelectionWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterSelectionWindow)(fullJson.Text)
+        NewButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.NewButton.HoveredImage)
+    End Sub
+
+    Private Sub NewButton_MouseHover(sender As Object, e As EventArgs) Handles NewButton.MouseHover
+        Dim infoPull As CharacterSelectionWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterSelectionWindow)(fullJson.Text)
+        NewButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.NewButton.HoveredImage)
+    End Sub
+
+    Private Sub NewButton_MouseLeave(sender As Object, e As EventArgs) Handles NewButton.MouseLeave
+        Dim infoPull As CharacterSelectionWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterSelectionWindow)(fullJson.Text)
+        NewButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.NewButton.NormalImage)
+    End Sub
+
+    Private Sub PlayButton_Click(sender As Object, e As EventArgs) Handles PlayButton.Click
+        Dim infoPull As CharacterSelectionWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterSelectionWindow)(fullJson.Text)
+        PlayButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.PlayButton.ClickedImage)
+    End Sub
+
+    Private Sub PlayButton_MouseDown(sender As Object, e As MouseEventArgs) Handles PlayButton.MouseDown
+        Dim infoPull As CharacterSelectionWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterSelectionWindow)(fullJson.Text)
+        PlayButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.PlayButton.ClickedImage)
+    End Sub
+
+    Private Sub PlayButton_MouseUp(sender As Object, e As MouseEventArgs) Handles PlayButton.MouseUp
+        Dim infoPull As CharacterSelectionWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterSelectionWindow)(fullJson.Text)
+        PlayButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.PlayButton.HoveredImage)
+    End Sub
+
+    Private Sub PlayButton_MouseHover(sender As Object, e As EventArgs) Handles PlayButton.MouseHover
+        Dim infoPull As CharacterSelectionWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterSelectionWindow)(fullJson.Text)
+        PlayButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.PlayButton.HoveredImage)
+    End Sub
+
+    Private Sub PlayButton_MouseLeave(sender As Object, e As EventArgs) Handles PlayButton.MouseLeave
+        Dim infoPull As CharacterSelectionWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterSelectionWindow)(fullJson.Text)
+        PlayButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.PlayButton.NormalImage)
+    End Sub
+
+    Private Sub DeleteButton_Click(sender As Object, e As EventArgs) Handles DeleteButton.Click
+        Dim infoPull As CharacterSelectionWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterSelectionWindow)(fullJson.Text)
+        DeleteButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.DeleteButton.ClickedImage)
+    End Sub
+
+    Private Sub DeleteButton_MouseDown(sender As Object, e As MouseEventArgs) Handles DeleteButton.MouseDown
+        Dim infoPull As CharacterSelectionWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterSelectionWindow)(fullJson.Text)
+        DeleteButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.DeleteButton.ClickedImage)
+    End Sub
+
+    Private Sub DeleteButton_MouseUp(sender As Object, e As MouseEventArgs) Handles DeleteButton.MouseUp
+        Dim infoPull As CharacterSelectionWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterSelectionWindow)(fullJson.Text)
+        DeleteButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.DeleteButton.HoveredImage)
+    End Sub
+
+    Private Sub DeleteButton_MouseHover(sender As Object, e As EventArgs) Handles DeleteButton.MouseHover
+        Dim infoPull As CharacterSelectionWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterSelectionWindow)(fullJson.Text)
+        DeleteButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.DeleteButton.HoveredImage)
+    End Sub
+
+    Private Sub DeleteButton_MouseLeave(sender As Object, e As EventArgs) Handles DeleteButton.MouseLeave
+        Dim infoPull As CharacterSelectionWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterSelectionWindow)(fullJson.Text)
+        DeleteButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.DeleteButton.NormalImage)
+    End Sub
+
+    Private Sub LogoutButton_Click(sender As Object, e As EventArgs) Handles LogoutButton.Click
+        Dim infoPull As CharacterSelectionWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterSelectionWindow)(fullJson.Text)
+        LogoutButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.LogoutButton.ClickedImage)
+    End Sub
+
+    Private Sub LogoutButton_MouseDown(sender As Object, e As MouseEventArgs) Handles LogoutButton.MouseDown
+        Dim infoPull As CharacterSelectionWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterSelectionWindow)(fullJson.Text)
+        LogoutButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.LogoutButton.ClickedImage)
+    End Sub
+
+    Private Sub LogoutButton_MouseUp(sender As Object, e As MouseEventArgs) Handles LogoutButton.MouseUp
+        Dim infoPull As CharacterSelectionWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterSelectionWindow)(fullJson.Text)
+        LogoutButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.LogoutButton.HoveredImage)
+    End Sub
+
+    Private Sub LogoutButton_MouseHover(sender As Object, e As EventArgs) Handles LogoutButton.MouseHover
+        Dim infoPull As CharacterSelectionWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterSelectionWindow)(fullJson.Text)
+        LogoutButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.LogoutButton.HoveredImage)
+    End Sub
+
+    Private Sub LogoutButton_MouseLeave(sender As Object, e As EventArgs) Handles LogoutButton.MouseLeave
+        Dim infoPull As CharacterSelectionWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterSelectionWindow)(fullJson.Text)
+        LogoutButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.LogoutButton.NormalImage)
+    End Sub
+
+    Private Sub NextCharacterButton_Click(sender As Object, e As EventArgs) Handles NextCharacterButton.Click
+        Dim infoPull As CharacterSelectionWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterSelectionWindow)(fullJson.Text)
+        NextCharacterButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.CharacterContainer.Children.NextCharacterButton.ClickedImage)
+    End Sub
+
+    Private Sub NextCharacterButton_MouseDown(sender As Object, e As MouseEventArgs) Handles NextCharacterButton.MouseDown
+        Dim infoPull As CharacterSelectionWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterSelectionWindow)(fullJson.Text)
+        NextCharacterButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.CharacterContainer.Children.NextCharacterButton.ClickedImage)
+    End Sub
+
+    Private Sub NextCharacterButton_MouseUp(sender As Object, e As MouseEventArgs) Handles NextCharacterButton.MouseUp
+        Dim infoPull As CharacterSelectionWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterSelectionWindow)(fullJson.Text)
+        NextCharacterButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.CharacterContainer.Children.NextCharacterButton.HoveredImage)
+    End Sub
+
+    Private Sub NextCharacterButton_MouseHover(sender As Object, e As EventArgs) Handles NextCharacterButton.MouseHover
+        Dim infoPull As CharacterSelectionWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterSelectionWindow)(fullJson.Text)
+        NextCharacterButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.CharacterContainer.Children.NextCharacterButton.HoveredImage)
+    End Sub
+
+    Private Sub NextCharacterButton_MouseLeave(sender As Object, e As EventArgs) Handles NextCharacterButton.MouseLeave
+        Dim infoPull As CharacterSelectionWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterSelectionWindow)(fullJson.Text)
+        NextCharacterButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.CharacterContainer.Children.NextCharacterButton.NormalImage)
+    End Sub
+
+    Private Sub PreviousCharacterButton_Click(sender As Object, e As EventArgs) Handles PreviousCharacterButton.Click
+        Dim infoPull As CharacterSelectionWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterSelectionWindow)(fullJson.Text)
+        PreviousCharacterButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.CharacterContainer.Children.PreviousCharacterButton.ClickedImage)
+    End Sub
+
+    Private Sub PreviousCharacterButton_MouseDown(sender As Object, e As MouseEventArgs) Handles PreviousCharacterButton.MouseDown
+        Dim infoPull As CharacterSelectionWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterSelectionWindow)(fullJson.Text)
+        PreviousCharacterButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.CharacterContainer.Children.PreviousCharacterButton.ClickedImage)
+    End Sub
+
+    Private Sub PreviousCharacterButton_MouseUp(sender As Object, e As MouseEventArgs) Handles PreviousCharacterButton.MouseUp
+        Dim infoPull As CharacterSelectionWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterSelectionWindow)(fullJson.Text)
+        PreviousCharacterButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.CharacterContainer.Children.PreviousCharacterButton.HoveredImage)
+    End Sub
+
+    Private Sub PreviousCharacterButton_MouseHover(sender As Object, e As EventArgs) Handles PreviousCharacterButton.MouseHover
+        Dim infoPull As CharacterSelectionWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterSelectionWindow)(fullJson.Text)
+        PreviousCharacterButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.CharacterContainer.Children.PreviousCharacterButton.HoveredImage)
+    End Sub
+
+    Private Sub PreviousCharacterButton_MouseLeave(sender As Object, e As EventArgs) Handles PreviousCharacterButton.MouseLeave
+        Dim infoPull As CharacterSelectionWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterSelectionWindow)(fullJson.Text)
+        PreviousCharacterButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.CharacterContainer.Children.PreviousCharacterButton.NormalImage)
+    End Sub
+
+    Private Sub CreditsBackButton_Click(sender As Object, e As EventArgs) Handles CreditsBackButton.Click
+        Dim infoPull As CreditsWindow
+        infoPull = JsonConvert.DeserializeObject(Of CreditsWindow)(fullJson.Text)
+        CreditsBackButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.BackButton.ClickedImage)
+    End Sub
+
+    Private Sub CreditsBackButton_MouseDown(sender As Object, e As MouseEventArgs) Handles CreditsBackButton.MouseDown
+        Dim infoPull As CreditsWindow
+        infoPull = JsonConvert.DeserializeObject(Of CreditsWindow)(fullJson.Text)
+        CreditsBackButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.BackButton.ClickedImage)
+    End Sub
+
+    Private Sub CreditsBackButton_MouseUp(sender As Object, e As MouseEventArgs) Handles CreditsBackButton.MouseUp
+        Dim infoPull As CreditsWindow
+        infoPull = JsonConvert.DeserializeObject(Of CreditsWindow)(fullJson.Text)
+        CreditsBackButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.BackButton.HoveredImage)
+    End Sub
+
+    Private Sub CreditsBackButton_MouseHover(sender As Object, e As EventArgs) Handles CreditsBackButton.MouseHover
+        Dim infoPull As CreditsWindow
+        infoPull = JsonConvert.DeserializeObject(Of CreditsWindow)(fullJson.Text)
+        CreditsBackButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.BackButton.HoveredImage)
+    End Sub
+
+    Private Sub CreditsBackButton_MouseLeave(sender As Object, e As EventArgs) Handles CreditsBackButton.MouseLeave
+        Dim infoPull As CreditsWindow
+        infoPull = JsonConvert.DeserializeObject(Of CreditsWindow)(fullJson.Text)
+        CreditsBackButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.BackButton.NormalImage)
+    End Sub
+
+    Private Sub ForgotPasswordSubmitButton_Click(sender As Object, e As EventArgs) Handles ForgotPasswordSubmitButton.Click
+        Dim infoPull As ForgotPasswordWindow
+        infoPull = JsonConvert.DeserializeObject(Of ForgotPasswordWindow)(fullJson.Text)
+        ForgotPasswordSubmitButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.SubmitButton.ClickedImage)
+    End Sub
+
+    Private Sub ForgotPasswordSubmitButton_MouseDown(sender As Object, e As MouseEventArgs) Handles ForgotPasswordSubmitButton.MouseDown
+        Dim infoPull As ForgotPasswordWindow
+        infoPull = JsonConvert.DeserializeObject(Of ForgotPasswordWindow)(fullJson.Text)
+        ForgotPasswordSubmitButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.SubmitButton.ClickedImage)
+    End Sub
+
+    Private Sub ForgotPasswordSubmitButton_MouseUp(sender As Object, e As MouseEventArgs) Handles ForgotPasswordSubmitButton.MouseUp
+        Dim infoPull As ForgotPasswordWindow
+        infoPull = JsonConvert.DeserializeObject(Of ForgotPasswordWindow)(fullJson.Text)
+        ForgotPasswordSubmitButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.SubmitButton.HoveredImage)
+    End Sub
+
+    Private Sub ForgotPasswordSubmitButton_MouseHover(sender As Object, e As EventArgs) Handles ForgotPasswordSubmitButton.MouseHover
+        Dim infoPull As ForgotPasswordWindow
+        infoPull = JsonConvert.DeserializeObject(Of ForgotPasswordWindow)(fullJson.Text)
+        ForgotPasswordSubmitButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.SubmitButton.HoveredImage)
+    End Sub
+
+    Private Sub ForgotPasswordSubmitButton_MouseLeave(sender As Object, e As EventArgs) Handles ForgotPasswordSubmitButton.MouseLeave
+        Dim infoPull As ForgotPasswordWindow
+        infoPull = JsonConvert.DeserializeObject(Of ForgotPasswordWindow)(fullJson.Text)
+        ForgotPasswordSubmitButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.SubmitButton.NormalImage)
+    End Sub
+
+    Private Sub ForgotPasswordBackButton_Click(sender As Object, e As EventArgs) Handles ForgotPasswordBackButton.Click
+        Dim infoPull As ForgotPasswordWindow
+        infoPull = JsonConvert.DeserializeObject(Of ForgotPasswordWindow)(fullJson.Text)
+        ForgotPasswordBackButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.BackButton.ClickedImage)
+    End Sub
+
+    Private Sub ForgotPasswordBackButton_MouseDown(sender As Object, e As MouseEventArgs) Handles ForgotPasswordBackButton.MouseDown
+        Dim infoPull As ForgotPasswordWindow
+        infoPull = JsonConvert.DeserializeObject(Of ForgotPasswordWindow)(fullJson.Text)
+        ForgotPasswordBackButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.BackButton.ClickedImage)
+    End Sub
+
+    Private Sub ForgotPasswordBackButton_MouseUp(sender As Object, e As MouseEventArgs) Handles ForgotPasswordBackButton.MouseUp
+        Dim infoPull As ForgotPasswordWindow
+        infoPull = JsonConvert.DeserializeObject(Of ForgotPasswordWindow)(fullJson.Text)
+        ForgotPasswordBackButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.BackButton.HoveredImage)
+    End Sub
+
+    Private Sub ForgotPasswordBackButton_MouseHover(sender As Object, e As EventArgs) Handles ForgotPasswordBackButton.MouseHover
+        Dim infoPull As ForgotPasswordWindow
+        infoPull = JsonConvert.DeserializeObject(Of ForgotPasswordWindow)(fullJson.Text)
+        ForgotPasswordBackButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.BackButton.HoveredImage)
+    End Sub
+
+    Private Sub ForgotPasswordBackButton_MouseLeave(sender As Object, e As EventArgs) Handles ForgotPasswordBackButton.MouseLeave
+        Dim infoPull As ForgotPasswordWindow
+        infoPull = JsonConvert.DeserializeObject(Of ForgotPasswordWindow)(fullJson.Text)
+        ForgotPasswordBackButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.BackButton.NormalImage)
     End Sub
 End Class
