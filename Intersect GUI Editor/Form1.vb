@@ -36,6 +36,8 @@ Public Class Form1
         MainCreditsPanel.Visible = False
         MainForgotPasswordWindowPanel.Visible = False
         MainInputBoxPanel.Visible = False
+        MainLogoPanel.Visible = False
+        MainMenuWindowPanel.Visible = False
 
         LoadLoginGUI(menuGuiPath & "LoginWindow.json")
         openFile = menuGuiPath & "LoginWindow.json"
@@ -47,6 +49,8 @@ Public Class Form1
         MainCreditsPanel.Visible = False
         MainForgotPasswordWindowPanel.Visible = False
         MainInputBoxPanel.Visible = False
+        MainLogoPanel.Visible = False
+        MainMenuWindowPanel.Visible = False
 
         LoadCharacterCreationGUI(menuGuiPath & "CharacterCreationWindow.json")
         openFile = menuGuiPath & "CharacterCreationWindow.json"
@@ -58,6 +62,8 @@ Public Class Form1
         MainCreditsPanel.Visible = False
         MainForgotPasswordWindowPanel.Visible = False
         MainInputBoxPanel.Visible = False
+        MainLogoPanel.Visible = False
+        MainMenuWindowPanel.Visible = False
 
         LoadCharacterSelectionGUI(menuGuiPath & "CharacterSelectionWindow.json")
         openFile = menuGuiPath & "CharacterSelectionWindow.json"
@@ -69,6 +75,8 @@ Public Class Form1
         MainCharSelectionPanel.Visible = False
         MainForgotPasswordWindowPanel.Visible = False
         MainInputBoxPanel.Visible = False
+        MainLogoPanel.Visible = False
+        MainMenuWindowPanel.Visible = False
 
         LoadCreditsGUI(menuGuiPath & "CreditsWindow.json")
         openFile = menuGuiPath & "CreditsWindow.json"
@@ -80,6 +88,8 @@ Public Class Form1
         MainCharSelectionPanel.Visible = False
         MainCreditsPanel.Visible = False
         MainInputBoxPanel.Visible = False
+        MainLogoPanel.Visible = False
+        MainMenuWindowPanel.Visible = False
 
         LoadForgotPasswordGUI(menuGuiPath & "ForgotPasswordWindow.json")
         openFile = menuGuiPath & "ForgotPasswordWindow.json"
@@ -91,9 +101,37 @@ Public Class Form1
         MainCharSelectionPanel.Visible = False
         MainCreditsPanel.Visible = False
         MainForgotPasswordWindowPanel.Visible = False
+        MainLogoPanel.Visible = False
+        MainMenuWindowPanel.Visible = False
 
         LoadInputBoxGUI(menuGuiPath & "InputBox.json")
         openFile = menuGuiPath & "InputBox.json"
+    End Sub
+
+    Private Sub LogoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LogoToolStripMenuItem.Click
+        MainLoginWindowPanel.Visible = False
+        MainCharacterCreationPanel.Visible = False
+        MainCharSelectionPanel.Visible = False
+        MainCreditsPanel.Visible = False
+        MainForgotPasswordWindowPanel.Visible = False
+        MainInputBoxPanel.Visible = False
+        MainMenuWindowPanel.Visible = False
+
+        LoadLogoGUI(menuGuiPath & "Logo.json")
+        openFile = menuGuiPath & "Logo.json"
+    End Sub
+
+    Private Sub MenuWindowToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MenuWindowToolStripMenuItem.Click
+        MainLoginWindowPanel.Visible = False
+        MainCharacterCreationPanel.Visible = False
+        MainCharSelectionPanel.Visible = False
+        MainCreditsPanel.Visible = False
+        MainForgotPasswordWindowPanel.Visible = False
+        MainLogoPanel.Visible = False
+        MainInputBoxPanel.Visible = False
+
+        LoadMenuWindow(menuGuiPath & "MenuWindow.json")
+        openFile = menuGuiPath & "MenuWindow.json"
     End Sub
 
     Private Sub JTokenTreeUserControl1_AfterSelect(sender As Object, e As ZTn.Json.JsonTreeView.AfterSelectEventArgs) Handles JTokenTreeUserControl1.AfterSelect
@@ -135,6 +173,10 @@ Public Class Form1
                     LoadForgotPasswordGUI(tempPath & "tmp_" & tempFileName & ".json")
                 ElseIf openFile.Contains("InputBox") Then
                     LoadInputBoxGUI(tempPath & "tmp_" & tempFileName & ".json")
+                ElseIf openFile.Contains("Logo") Then
+                    LoadLogoGUI(tempPath & "tmp_" & tempFileName & ".json")
+                ElseIf openFile.Contains("MenuWindow") Then
+                    LoadMenuWindow(tempPath & "tmp_" & tempFileName & ".json")
                 End If
             End Using
 
@@ -379,6 +421,10 @@ Public Class Form1
             LoadForgotPasswordGUI(openFile)
         ElseIf openFile.Contains("InputBox") Then
             LoadInputBoxGUI(openFile)
+        ElseIf openFile.Contains("Logo") Then
+            LoadLogoGUI(openFile)
+        ElseIf openFile.Contains("MenuWindow") Then
+            LoadMenuWindow(openFile)
         End If
     End Sub
 
@@ -660,5 +706,155 @@ Public Class Form1
         Dim infoPull As ForgotPasswordWindow
         infoPull = JsonConvert.DeserializeObject(Of ForgotPasswordWindow)(fullJson.Text)
         ForgotPasswordBackButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.BackButton.NormalImage)
+    End Sub
+
+    Private Sub MainMenuLoginButton_Click(sender As Object, e As EventArgs) Handles MainMenuLoginButton.Click
+        Dim infoPull As MenuWindow
+        infoPull = JsonConvert.DeserializeObject(Of MenuWindow)(fullJson.Text)
+        MainMenuLoginButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.LoginButton.ClickedImage)
+    End Sub
+
+    Private Sub MainMenuLoginButton_MouseDown(sender As Object, e As MouseEventArgs) Handles MainMenuLoginButton.MouseDown
+        Dim infoPull As MenuWindow
+        infoPull = JsonConvert.DeserializeObject(Of MenuWindow)(fullJson.Text)
+        MainMenuLoginButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.LoginButton.ClickedImage)
+    End Sub
+
+    Private Sub MainMenuLoginButton_MouseUp(sender As Object, e As MouseEventArgs) Handles MainMenuLoginButton.MouseUp
+        Dim infoPull As MenuWindow
+        infoPull = JsonConvert.DeserializeObject(Of MenuWindow)(fullJson.Text)
+        MainMenuLoginButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.LoginButton.HoveredImage)
+    End Sub
+
+    Private Sub MainMenuLoginButton_MouseHover(sender As Object, e As EventArgs) Handles MainMenuLoginButton.MouseHover
+        Dim infoPull As MenuWindow
+        infoPull = JsonConvert.DeserializeObject(Of MenuWindow)(fullJson.Text)
+        MainMenuLoginButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.LoginButton.HoveredImage)
+    End Sub
+
+    Private Sub MainMenuLoginButton_MouseLeave(sender As Object, e As EventArgs) Handles MainMenuLoginButton.MouseLeave
+        Dim infoPull As MenuWindow
+        infoPull = JsonConvert.DeserializeObject(Of MenuWindow)(fullJson.Text)
+        MainMenuLoginButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.LoginButton.NormalImage)
+    End Sub
+
+    Private Sub MainMenuRegisterButton_Click(sender As Object, e As EventArgs) Handles MainMenuRegisterButton.Click
+        Dim infoPull As MenuWindow
+        infoPull = JsonConvert.DeserializeObject(Of MenuWindow)(fullJson.Text)
+        MainMenuRegisterButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.RegisterButton.ClickedImage)
+    End Sub
+
+    Private Sub MainMenuRegisterButton_MouseDown(sender As Object, e As MouseEventArgs) Handles MainMenuRegisterButton.MouseDown
+        Dim infoPull As MenuWindow
+        infoPull = JsonConvert.DeserializeObject(Of MenuWindow)(fullJson.Text)
+        MainMenuRegisterButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.RegisterButton.ClickedImage)
+    End Sub
+
+    Private Sub MainMenuRegisterButton_MouseUp(sender As Object, e As MouseEventArgs) Handles MainMenuRegisterButton.MouseUp
+        Dim infoPull As MenuWindow
+        infoPull = JsonConvert.DeserializeObject(Of MenuWindow)(fullJson.Text)
+        MainMenuRegisterButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.RegisterButton.HoveredImage)
+    End Sub
+
+    Private Sub MainMenuRegisterButton_MouseHover(sender As Object, e As EventArgs) Handles MainMenuRegisterButton.MouseHover
+        Dim infoPull As MenuWindow
+        infoPull = JsonConvert.DeserializeObject(Of MenuWindow)(fullJson.Text)
+        MainMenuRegisterButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.RegisterButton.HoveredImage)
+    End Sub
+
+    Private Sub MainMenuRegisterButton_MouseLeave(sender As Object, e As EventArgs) Handles MainMenuRegisterButton.MouseLeave
+        Dim infoPull As MenuWindow
+        infoPull = JsonConvert.DeserializeObject(Of MenuWindow)(fullJson.Text)
+        MainMenuRegisterButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.RegisterButton.NormalImage)
+    End Sub
+
+    Private Sub MainMenuOptionsButton_Click(sender As Object, e As EventArgs) Handles MainMenuOptionsButton.Click
+        Dim infoPull As MenuWindow
+        infoPull = JsonConvert.DeserializeObject(Of MenuWindow)(fullJson.Text)
+        MainMenuOptionsButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.OptionsButton.ClickedImage)
+    End Sub
+
+    Private Sub MainMenuOptionsButton_MouseDown(sender As Object, e As MouseEventArgs) Handles MainMenuOptionsButton.MouseDown
+        Dim infoPull As MenuWindow
+        infoPull = JsonConvert.DeserializeObject(Of MenuWindow)(fullJson.Text)
+        MainMenuOptionsButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.OptionsButton.ClickedImage)
+    End Sub
+
+    Private Sub MainMenuOptionsButton_MouseUp(sender As Object, e As MouseEventArgs) Handles MainMenuOptionsButton.MouseUp
+        Dim infoPull As MenuWindow
+        infoPull = JsonConvert.DeserializeObject(Of MenuWindow)(fullJson.Text)
+        MainMenuOptionsButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.OptionsButton.HoveredImage)
+    End Sub
+
+    Private Sub MainMenuOptionsButton_MouseHover(sender As Object, e As EventArgs) Handles MainMenuOptionsButton.MouseHover
+        Dim infoPull As MenuWindow
+        infoPull = JsonConvert.DeserializeObject(Of MenuWindow)(fullJson.Text)
+        MainMenuOptionsButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.OptionsButton.HoveredImage)
+    End Sub
+
+    Private Sub MainMenuOptionsButton_MouseLeave(sender As Object, e As EventArgs) Handles MainMenuOptionsButton.MouseLeave
+        Dim infoPull As MenuWindow
+        infoPull = JsonConvert.DeserializeObject(Of MenuWindow)(fullJson.Text)
+        MainMenuOptionsButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.OptionsButton.NormalImage)
+    End Sub
+
+    Private Sub MainMenuCreditsButton_Click(sender As Object, e As EventArgs) Handles MainMenuCreditsButton.Click
+        Dim infoPull As MenuWindow
+        infoPull = JsonConvert.DeserializeObject(Of MenuWindow)(fullJson.Text)
+        MainMenuCreditsButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.CreditsButton.ClickedImage)
+    End Sub
+
+    Private Sub MainMenuCreditsButton_MouseDown(sender As Object, e As MouseEventArgs) Handles MainMenuCreditsButton.MouseDown
+        Dim infoPull As MenuWindow
+        infoPull = JsonConvert.DeserializeObject(Of MenuWindow)(fullJson.Text)
+        MainMenuCreditsButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.CreditsButton.ClickedImage)
+    End Sub
+
+    Private Sub MainMenuCreditsButton_MouseUp(sender As Object, e As MouseEventArgs) Handles MainMenuCreditsButton.MouseUp
+        Dim infoPull As MenuWindow
+        infoPull = JsonConvert.DeserializeObject(Of MenuWindow)(fullJson.Text)
+        MainMenuCreditsButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.CreditsButton.HoveredImage)
+    End Sub
+
+    Private Sub MainMenuCreditsButton_MouseHover(sender As Object, e As EventArgs) Handles MainMenuCreditsButton.MouseHover
+        Dim infoPull As MenuWindow
+        infoPull = JsonConvert.DeserializeObject(Of MenuWindow)(fullJson.Text)
+        MainMenuCreditsButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.CreditsButton.HoveredImage)
+    End Sub
+
+    Private Sub MainMenuCreditsButton_MouseLeave(sender As Object, e As EventArgs) Handles MainMenuCreditsButton.MouseLeave
+        Dim infoPull As MenuWindow
+        infoPull = JsonConvert.DeserializeObject(Of MenuWindow)(fullJson.Text)
+        MainMenuCreditsButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.CreditsButton.NormalImage)
+    End Sub
+
+    Private Sub MainMenuExitButton_Click(sender As Object, e As EventArgs) Handles MainMenuExitButton.Click
+        Dim infoPull As MenuWindow
+        infoPull = JsonConvert.DeserializeObject(Of MenuWindow)(fullJson.Text)
+        MainMenuExitButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.ExitButton.ClickedImage)
+    End Sub
+
+    Private Sub MainMenuExitButton_MouseDown(sender As Object, e As MouseEventArgs) Handles MainMenuExitButton.MouseDown
+        Dim infoPull As MenuWindow
+        infoPull = JsonConvert.DeserializeObject(Of MenuWindow)(fullJson.Text)
+        MainMenuExitButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.ExitButton.ClickedImage)
+    End Sub
+
+    Private Sub MainMenuExitButton_MouseUp(sender As Object, e As MouseEventArgs) Handles MainMenuExitButton.MouseUp
+        Dim infoPull As MenuWindow
+        infoPull = JsonConvert.DeserializeObject(Of MenuWindow)(fullJson.Text)
+        MainMenuExitButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.ExitButton.HoveredImage)
+    End Sub
+
+    Private Sub MainMenuExitButton_MouseHover(sender As Object, e As EventArgs) Handles MainMenuExitButton.MouseHover
+        Dim infoPull As MenuWindow
+        infoPull = JsonConvert.DeserializeObject(Of MenuWindow)(fullJson.Text)
+        MainMenuExitButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.ExitButton.HoveredImage)
+    End Sub
+
+    Private Sub MainMenuExitButton_MouseLeave(sender As Object, e As EventArgs) Handles MainMenuExitButton.MouseLeave
+        Dim infoPull As MenuWindow
+        infoPull = JsonConvert.DeserializeObject(Of MenuWindow)(fullJson.Text)
+        MainMenuExitButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.ExitButton.NormalImage)
     End Sub
 End Class

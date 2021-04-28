@@ -35,6 +35,26 @@ Partial Class Form1
         Me.jsonType = New System.Windows.Forms.TextBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.fullJson = New System.Windows.Forms.RichTextBox()
+        Me.MainMenuWindowPanel = New System.Windows.Forms.Panel()
+        Me.MainMenuOptionsButton = New System.Windows.Forms.PictureBox()
+        Me.MainMenuExitButton = New System.Windows.Forms.PictureBox()
+        Me.MainMenuCreditsButton = New System.Windows.Forms.PictureBox()
+        Me.MainMenuRegisterButton = New System.Windows.Forms.PictureBox()
+        Me.MainMenuLoginButton = New System.Windows.Forms.PictureBox()
+        Me.ServerStatusLabel = New System.Windows.Forms.Label()
+        Me.MainMenuTitle = New System.Windows.Forms.Label()
+        Me.MainLogoPanel = New System.Windows.Forms.PictureBox()
+        Me.MainInputBoxPanel = New System.Windows.Forms.Panel()
+        Me.InputBoxInnerPanel = New System.Windows.Forms.Panel()
+        Me.OkayButton = New System.Windows.Forms.PictureBox()
+        Me.InputBoxTextBox = New System.Windows.Forms.Panel()
+        Me.InputBoxTextboxText = New System.Windows.Forms.PictureBox()
+        Me.NoButton = New System.Windows.Forms.PictureBox()
+        Me.PromptLabel = New System.Windows.Forms.Label()
+        Me.YesButton = New System.Windows.Forms.PictureBox()
+        Me.TitleBar = New System.Windows.Forms.Panel()
+        Me.InputBoxCloseButton = New System.Windows.Forms.PictureBox()
+        Me.InputBoxTitle = New System.Windows.Forms.Label()
         Me.MainForgotPasswordWindowPanel = New System.Windows.Forms.Panel()
         Me.ForgotPasswordHintLabel = New System.Windows.Forms.Label()
         Me.ForgotPasswordBackButton = New System.Windows.Forms.PictureBox()
@@ -158,17 +178,6 @@ Partial Class Form1
         Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RefreshBtn = New System.Windows.Forms.ToolStripMenuItem()
         Me.gridToggle = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MainInputBoxPanel = New System.Windows.Forms.Panel()
-        Me.PromptLabel = New System.Windows.Forms.Label()
-        Me.YesButton = New System.Windows.Forms.PictureBox()
-        Me.InputBoxCloseButton = New System.Windows.Forms.PictureBox()
-        Me.InputBoxTextBox = New System.Windows.Forms.Panel()
-        Me.InputBoxTextboxText = New System.Windows.Forms.PictureBox()
-        Me.InputBoxTitle = New System.Windows.Forms.Label()
-        Me.TitleBar = New System.Windows.Forms.Panel()
-        Me.InputBoxInnerPanel = New System.Windows.Forms.Panel()
-        Me.NoButton = New System.Windows.Forms.PictureBox()
-        Me.OkayButton = New System.Windows.Forms.PictureBox()
         CType(Me.mainSplitContainer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.mainSplitContainer.Panel1.SuspendLayout()
         Me.mainSplitContainer.Panel2.SuspendLayout()
@@ -184,6 +193,21 @@ Partial Class Form1
         Me.SplitContainer1.Panel2.SuspendLayout()
         Me.SplitContainer1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
+        Me.MainMenuWindowPanel.SuspendLayout()
+        CType(Me.MainMenuOptionsButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MainMenuExitButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MainMenuCreditsButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MainMenuRegisterButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MainMenuLoginButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MainLogoPanel, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MainInputBoxPanel.SuspendLayout()
+        Me.InputBoxInnerPanel.SuspendLayout()
+        CType(Me.OkayButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.InputBoxTextBox.SuspendLayout()
+        CType(Me.InputBoxTextboxText, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NoButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.YesButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.InputBoxCloseButton, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MainForgotPasswordWindowPanel.SuspendLayout()
         CType(Me.ForgotPasswordBackButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ForgotPasswordSubmitButton, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -228,14 +252,6 @@ Partial Class Form1
         Me.UsernamePanel.SuspendLayout()
         CType(Me.UsernameFieldPB, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
-        Me.MainInputBoxPanel.SuspendLayout()
-        CType(Me.YesButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.InputBoxCloseButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.InputBoxTextBox.SuspendLayout()
-        CType(Me.InputBoxTextboxText, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.InputBoxInnerPanel.SuspendLayout()
-        CType(Me.NoButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.OkayButton, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'mainSplitContainer
@@ -269,6 +285,8 @@ Partial Class Form1
         'toolSplitContainer.Panel2
         '
         Me.toolSplitContainer.Panel2.AutoScroll = True
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainMenuWindowPanel)
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainLogoPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainInputBoxPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainForgotPasswordWindowPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainCreditsPanel)
@@ -398,6 +416,239 @@ Partial Class Form1
         Me.fullJson.TabIndex = 0
         Me.fullJson.Text = ""
         '
+        'MainMenuWindowPanel
+        '
+        Me.MainMenuWindowPanel.BackgroundImage = CType(resources.GetObject("MainMenuWindowPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainMenuWindowPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainMenuWindowPanel.Controls.Add(Me.MainMenuOptionsButton)
+        Me.MainMenuWindowPanel.Controls.Add(Me.MainMenuExitButton)
+        Me.MainMenuWindowPanel.Controls.Add(Me.MainMenuCreditsButton)
+        Me.MainMenuWindowPanel.Controls.Add(Me.MainMenuRegisterButton)
+        Me.MainMenuWindowPanel.Controls.Add(Me.MainMenuLoginButton)
+        Me.MainMenuWindowPanel.Controls.Add(Me.ServerStatusLabel)
+        Me.MainMenuWindowPanel.Controls.Add(Me.MainMenuTitle)
+        Me.MainMenuWindowPanel.Location = New System.Drawing.Point(258, 432)
+        Me.MainMenuWindowPanel.Name = "MainMenuWindowPanel"
+        Me.MainMenuWindowPanel.Size = New System.Drawing.Size(452, 213)
+        Me.MainMenuWindowPanel.TabIndex = 19
+        Me.MainMenuWindowPanel.Visible = False
+        '
+        'MainMenuOptionsButton
+        '
+        Me.MainMenuOptionsButton.BackColor = System.Drawing.Color.Transparent
+        Me.MainMenuOptionsButton.BackgroundImage = CType(resources.GetObject("MainMenuOptionsButton.BackgroundImage"), System.Drawing.Image)
+        Me.MainMenuOptionsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainMenuOptionsButton.Location = New System.Drawing.Point(182, 48)
+        Me.MainMenuOptionsButton.Name = "MainMenuOptionsButton"
+        Me.MainMenuOptionsButton.Size = New System.Drawing.Size(87, 154)
+        Me.MainMenuOptionsButton.TabIndex = 14
+        Me.MainMenuOptionsButton.TabStop = False
+        '
+        'MainMenuExitButton
+        '
+        Me.MainMenuExitButton.BackColor = System.Drawing.Color.Transparent
+        Me.MainMenuExitButton.BackgroundImage = CType(resources.GetObject("MainMenuExitButton.BackgroundImage"), System.Drawing.Image)
+        Me.MainMenuExitButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainMenuExitButton.Location = New System.Drawing.Point(358, 48)
+        Me.MainMenuExitButton.Name = "MainMenuExitButton"
+        Me.MainMenuExitButton.Size = New System.Drawing.Size(87, 154)
+        Me.MainMenuExitButton.TabIndex = 13
+        Me.MainMenuExitButton.TabStop = False
+        '
+        'MainMenuCreditsButton
+        '
+        Me.MainMenuCreditsButton.BackColor = System.Drawing.Color.Transparent
+        Me.MainMenuCreditsButton.BackgroundImage = CType(resources.GetObject("MainMenuCreditsButton.BackgroundImage"), System.Drawing.Image)
+        Me.MainMenuCreditsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainMenuCreditsButton.Location = New System.Drawing.Point(270, 48)
+        Me.MainMenuCreditsButton.Name = "MainMenuCreditsButton"
+        Me.MainMenuCreditsButton.Size = New System.Drawing.Size(87, 154)
+        Me.MainMenuCreditsButton.TabIndex = 12
+        Me.MainMenuCreditsButton.TabStop = False
+        '
+        'MainMenuRegisterButton
+        '
+        Me.MainMenuRegisterButton.BackColor = System.Drawing.Color.Transparent
+        Me.MainMenuRegisterButton.BackgroundImage = CType(resources.GetObject("MainMenuRegisterButton.BackgroundImage"), System.Drawing.Image)
+        Me.MainMenuRegisterButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainMenuRegisterButton.Location = New System.Drawing.Point(94, 48)
+        Me.MainMenuRegisterButton.Name = "MainMenuRegisterButton"
+        Me.MainMenuRegisterButton.Size = New System.Drawing.Size(87, 154)
+        Me.MainMenuRegisterButton.TabIndex = 11
+        Me.MainMenuRegisterButton.TabStop = False
+        '
+        'MainMenuLoginButton
+        '
+        Me.MainMenuLoginButton.BackColor = System.Drawing.Color.Transparent
+        Me.MainMenuLoginButton.BackgroundImage = CType(resources.GetObject("MainMenuLoginButton.BackgroundImage"), System.Drawing.Image)
+        Me.MainMenuLoginButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainMenuLoginButton.Location = New System.Drawing.Point(7, 48)
+        Me.MainMenuLoginButton.Name = "MainMenuLoginButton"
+        Me.MainMenuLoginButton.Size = New System.Drawing.Size(87, 154)
+        Me.MainMenuLoginButton.TabIndex = 10
+        Me.MainMenuLoginButton.TabStop = False
+        '
+        'ServerStatusLabel
+        '
+        Me.ServerStatusLabel.AutoSize = True
+        Me.ServerStatusLabel.BackColor = System.Drawing.Color.Transparent
+        Me.ServerStatusLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ServerStatusLabel.ForeColor = System.Drawing.Color.White
+        Me.ServerStatusLabel.Location = New System.Drawing.Point(0, 198)
+        Me.ServerStatusLabel.Name = "ServerStatusLabel"
+        Me.ServerStatusLabel.Size = New System.Drawing.Size(74, 13)
+        Me.ServerStatusLabel.TabIndex = 4
+        Me.ServerStatusLabel.Text = "Server Status:"
+        '
+        'MainMenuTitle
+        '
+        Me.MainMenuTitle.AutoSize = True
+        Me.MainMenuTitle.BackColor = System.Drawing.Color.Transparent
+        Me.MainMenuTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MainMenuTitle.ForeColor = System.Drawing.Color.White
+        Me.MainMenuTitle.Location = New System.Drawing.Point(25, 9)
+        Me.MainMenuTitle.Name = "MainMenuTitle"
+        Me.MainMenuTitle.Size = New System.Drawing.Size(87, 20)
+        Me.MainMenuTitle.TabIndex = 3
+        Me.MainMenuTitle.Text = "Main Menu"
+        '
+        'MainLogoPanel
+        '
+        Me.MainLogoPanel.BackColor = System.Drawing.Color.Transparent
+        Me.MainLogoPanel.BackgroundImage = CType(resources.GetObject("MainLogoPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainLogoPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainLogoPanel.Location = New System.Drawing.Point(-330, 570)
+        Me.MainLogoPanel.Name = "MainLogoPanel"
+        Me.MainLogoPanel.Size = New System.Drawing.Size(580, 186)
+        Me.MainLogoPanel.TabIndex = 18
+        Me.MainLogoPanel.TabStop = False
+        Me.MainLogoPanel.Visible = False
+        '
+        'MainInputBoxPanel
+        '
+        Me.MainInputBoxPanel.BackgroundImage = CType(resources.GetObject("MainInputBoxPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainInputBoxPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainInputBoxPanel.Controls.Add(Me.InputBoxInnerPanel)
+        Me.MainInputBoxPanel.Controls.Add(Me.TitleBar)
+        Me.MainInputBoxPanel.Controls.Add(Me.InputBoxCloseButton)
+        Me.MainInputBoxPanel.Controls.Add(Me.InputBoxTitle)
+        Me.MainInputBoxPanel.Location = New System.Drawing.Point(256, 651)
+        Me.MainInputBoxPanel.Name = "MainInputBoxPanel"
+        Me.MainInputBoxPanel.Size = New System.Drawing.Size(452, 198)
+        Me.MainInputBoxPanel.TabIndex = 17
+        Me.MainInputBoxPanel.Visible = False
+        '
+        'InputBoxInnerPanel
+        '
+        Me.InputBoxInnerPanel.BackColor = System.Drawing.Color.Transparent
+        Me.InputBoxInnerPanel.Controls.Add(Me.OkayButton)
+        Me.InputBoxInnerPanel.Controls.Add(Me.InputBoxTextBox)
+        Me.InputBoxInnerPanel.Controls.Add(Me.NoButton)
+        Me.InputBoxInnerPanel.Controls.Add(Me.PromptLabel)
+        Me.InputBoxInnerPanel.Controls.Add(Me.YesButton)
+        Me.InputBoxInnerPanel.Location = New System.Drawing.Point(0, 0)
+        Me.InputBoxInnerPanel.Name = "InputBoxInnerPanel"
+        Me.InputBoxInnerPanel.Size = New System.Drawing.Size(10, 10)
+        Me.InputBoxInnerPanel.TabIndex = 12
+        '
+        'OkayButton
+        '
+        Me.OkayButton.BackColor = System.Drawing.Color.Transparent
+        Me.OkayButton.BackgroundImage = CType(resources.GetObject("OkayButton.BackgroundImage"), System.Drawing.Image)
+        Me.OkayButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.OkayButton.Location = New System.Drawing.Point(174, 94)
+        Me.OkayButton.Name = "OkayButton"
+        Me.OkayButton.Size = New System.Drawing.Size(96, 35)
+        Me.OkayButton.TabIndex = 14
+        Me.OkayButton.TabStop = False
+        '
+        'InputBoxTextBox
+        '
+        Me.InputBoxTextBox.BackColor = System.Drawing.Color.Transparent
+        Me.InputBoxTextBox.BackgroundImage = CType(resources.GetObject("InputBoxTextBox.BackgroundImage"), System.Drawing.Image)
+        Me.InputBoxTextBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.InputBoxTextBox.Controls.Add(Me.InputBoxTextboxText)
+        Me.InputBoxTextBox.ImeMode = System.Windows.Forms.ImeMode.Off
+        Me.InputBoxTextBox.Location = New System.Drawing.Point(76, 60)
+        Me.InputBoxTextBox.Name = "InputBoxTextBox"
+        Me.InputBoxTextBox.Size = New System.Drawing.Size(308, 22)
+        Me.InputBoxTextBox.TabIndex = 5
+        '
+        'InputBoxTextboxText
+        '
+        Me.InputBoxTextboxText.BackgroundImage = CType(resources.GetObject("InputBoxTextboxText.BackgroundImage"), System.Drawing.Image)
+        Me.InputBoxTextboxText.Location = New System.Drawing.Point(0, 2)
+        Me.InputBoxTextboxText.Name = "InputBoxTextboxText"
+        Me.InputBoxTextboxText.Size = New System.Drawing.Size(308, 20)
+        Me.InputBoxTextboxText.TabIndex = 0
+        Me.InputBoxTextboxText.TabStop = False
+        '
+        'NoButton
+        '
+        Me.NoButton.BackColor = System.Drawing.Color.Transparent
+        Me.NoButton.BackgroundImage = CType(resources.GetObject("NoButton.BackgroundImage"), System.Drawing.Image)
+        Me.NoButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.NoButton.Location = New System.Drawing.Point(266, 100)
+        Me.NoButton.Name = "NoButton"
+        Me.NoButton.Size = New System.Drawing.Size(96, 35)
+        Me.NoButton.TabIndex = 13
+        Me.NoButton.TabStop = False
+        '
+        'PromptLabel
+        '
+        Me.PromptLabel.AutoSize = True
+        Me.PromptLabel.BackColor = System.Drawing.Color.Transparent
+        Me.PromptLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PromptLabel.ForeColor = System.Drawing.Color.White
+        Me.PromptLabel.Location = New System.Drawing.Point(36, 12)
+        Me.PromptLabel.Name = "PromptLabel"
+        Me.PromptLabel.Size = New System.Drawing.Size(84, 16)
+        Me.PromptLabel.TabIndex = 4
+        Me.PromptLabel.Text = "HINT LABEL"
+        '
+        'YesButton
+        '
+        Me.YesButton.BackColor = System.Drawing.Color.Transparent
+        Me.YesButton.BackgroundImage = CType(resources.GetObject("YesButton.BackgroundImage"), System.Drawing.Image)
+        Me.YesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.YesButton.Location = New System.Drawing.Point(90, 100)
+        Me.YesButton.Name = "YesButton"
+        Me.YesButton.Size = New System.Drawing.Size(96, 35)
+        Me.YesButton.TabIndex = 10
+        Me.YesButton.TabStop = False
+        '
+        'TitleBar
+        '
+        Me.TitleBar.BackColor = System.Drawing.Color.Transparent
+        Me.TitleBar.Location = New System.Drawing.Point(0, 0)
+        Me.TitleBar.Name = "TitleBar"
+        Me.TitleBar.Size = New System.Drawing.Size(70, 29)
+        Me.TitleBar.TabIndex = 11
+        '
+        'InputBoxCloseButton
+        '
+        Me.InputBoxCloseButton.BackColor = System.Drawing.Color.Transparent
+        Me.InputBoxCloseButton.BackgroundImage = CType(resources.GetObject("InputBoxCloseButton.BackgroundImage"), System.Drawing.Image)
+        Me.InputBoxCloseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.InputBoxCloseButton.InitialImage = Nothing
+        Me.InputBoxCloseButton.Location = New System.Drawing.Point(0, 0)
+        Me.InputBoxCloseButton.Name = "InputBoxCloseButton"
+        Me.InputBoxCloseButton.Size = New System.Drawing.Size(20, 20)
+        Me.InputBoxCloseButton.TabIndex = 9
+        Me.InputBoxCloseButton.TabStop = False
+        '
+        'InputBoxTitle
+        '
+        Me.InputBoxTitle.AutoSize = True
+        Me.InputBoxTitle.BackColor = System.Drawing.Color.Transparent
+        Me.InputBoxTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.InputBoxTitle.ForeColor = System.Drawing.Color.White
+        Me.InputBoxTitle.Location = New System.Drawing.Point(25, 9)
+        Me.InputBoxTitle.Name = "InputBoxTitle"
+        Me.InputBoxTitle.Size = New System.Drawing.Size(141, 20)
+        Me.InputBoxTitle.TabIndex = 3
+        Me.InputBoxTitle.Text = "INPUT BOX TITLE"
+        '
         'MainForgotPasswordWindowPanel
         '
         Me.MainForgotPasswordWindowPanel.BackgroundImage = CType(resources.GetObject("MainForgotPasswordWindowPanel.BackgroundImage"), System.Drawing.Image)
@@ -407,7 +658,7 @@ Partial Class Form1
         Me.MainForgotPasswordWindowPanel.Controls.Add(Me.ForgotPasswordSubmitButton)
         Me.MainForgotPasswordWindowPanel.Controls.Add(Me.ForgotPasswordInputPanel)
         Me.MainForgotPasswordWindowPanel.Controls.Add(Me.ForgotPasswordHeader)
-        Me.MainForgotPasswordWindowPanel.Location = New System.Drawing.Point(423, 272)
+        Me.MainForgotPasswordWindowPanel.Location = New System.Drawing.Point(258, 268)
         Me.MainForgotPasswordWindowPanel.Name = "MainForgotPasswordWindowPanel"
         Me.MainForgotPasswordWindowPanel.Size = New System.Drawing.Size(452, 158)
         Me.MainForgotPasswordWindowPanel.TabIndex = 16
@@ -500,7 +751,7 @@ Partial Class Form1
         Me.MainCreditsPanel.Controls.Add(Me.CreditsBackButton)
         Me.MainCreditsPanel.Controls.Add(Me.CreditsScrollview)
         Me.MainCreditsPanel.Controls.Add(Me.CreditsHeader)
-        Me.MainCreditsPanel.Location = New System.Drawing.Point(423, 4)
+        Me.MainCreditsPanel.Location = New System.Drawing.Point(258, 0)
         Me.MainCreditsPanel.Name = "MainCreditsPanel"
         Me.MainCreditsPanel.Size = New System.Drawing.Size(452, 262)
         Me.MainCreditsPanel.TabIndex = 15
@@ -573,7 +824,7 @@ Partial Class Form1
         Me.MainCharSelectionPanel.Controls.Add(Me.PlayButton)
         Me.MainCharSelectionPanel.Controls.Add(Me.SelectCharCharacterContainer)
         Me.MainCharSelectionPanel.Controls.Add(Me.CharacterSelectionHeader)
-        Me.MainCharSelectionPanel.Location = New System.Drawing.Point(-52, 368)
+        Me.MainCharSelectionPanel.Location = New System.Drawing.Point(-200, 365)
         Me.MainCharSelectionPanel.Name = "MainCharSelectionPanel"
         Me.MainCharSelectionPanel.Size = New System.Drawing.Size(452, 198)
         Me.MainCharSelectionPanel.TabIndex = 12
@@ -715,7 +966,7 @@ Partial Class Form1
         Me.MainCharacterCreationPanel.Controls.Add(Me.ClassPanel)
         Me.MainCharacterCreationPanel.Controls.Add(Me.CharacterNamePanel)
         Me.MainCharacterCreationPanel.Controls.Add(Me.CharacterCreationHeader)
-        Me.MainCharacterCreationPanel.Location = New System.Drawing.Point(-52, 167)
+        Me.MainCharacterCreationPanel.Location = New System.Drawing.Point(-200, 161)
         Me.MainCharacterCreationPanel.Name = "MainCharacterCreationPanel"
         Me.MainCharacterCreationPanel.Size = New System.Drawing.Size(452, 198)
         Me.MainCharacterCreationPanel.TabIndex = 11
@@ -987,7 +1238,7 @@ Partial Class Form1
         Me.MainLoginWindowPanel.Controls.Add(Me.PasswordPanel)
         Me.MainLoginWindowPanel.Controls.Add(Me.UsernamePanel)
         Me.MainLoginWindowPanel.Controls.Add(Me.LoginHeaderLabel)
-        Me.MainLoginWindowPanel.Location = New System.Drawing.Point(-52, 3)
+        Me.MainLoginWindowPanel.Location = New System.Drawing.Point(-200, 0)
         Me.MainLoginWindowPanel.Name = "MainLoginWindowPanel"
         Me.MainLoginWindowPanel.Size = New System.Drawing.Size(452, 158)
         Me.MainLoginWindowPanel.TabIndex = 3
@@ -1405,7 +1656,7 @@ Partial Class Form1
         '
         Me.MenuToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CharacterCreationWindowToolStripMenuItem, Me.CharacterSelectionWindowToolStripMenuItem, Me.CreditsWindowToolStripMenuItem, Me.ForgotPasswordWindowToolStripMenuItem, Me.InputBoxToolStripMenuItem, Me.LoginWindowToolStripMenuItem, Me.LogoToolStripMenuItem, Me.MenuWindowToolStripMenuItem, Me.OptionsWindowToolStripMenuItem, Me.RegistrationWindowToolStripMenuItem, Me.ResetPasswordWindowToolStripMenuItem, Me.ServerStatusAreaToolStripMenuItem})
         Me.MenuToolStripMenuItem.Name = "MenuToolStripMenuItem"
-        Me.MenuToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.MenuToolStripMenuItem.Size = New System.Drawing.Size(105, 22)
         Me.MenuToolStripMenuItem.Text = "menu"
         '
         'CharacterCreationWindowToolStripMenuItem
@@ -1502,131 +1753,6 @@ Partial Class Form1
         Me.gridToggle.Size = New System.Drawing.Size(28, 20)
         Me.gridToggle.Visible = False
         '
-        'MainInputBoxPanel
-        '
-        Me.MainInputBoxPanel.BackgroundImage = CType(resources.GetObject("MainInputBoxPanel.BackgroundImage"), System.Drawing.Image)
-        Me.MainInputBoxPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.MainInputBoxPanel.Controls.Add(Me.InputBoxInnerPanel)
-        Me.MainInputBoxPanel.Controls.Add(Me.TitleBar)
-        Me.MainInputBoxPanel.Controls.Add(Me.InputBoxCloseButton)
-        Me.MainInputBoxPanel.Controls.Add(Me.InputBoxTitle)
-        Me.MainInputBoxPanel.Location = New System.Drawing.Point(423, 436)
-        Me.MainInputBoxPanel.Name = "MainInputBoxPanel"
-        Me.MainInputBoxPanel.Size = New System.Drawing.Size(452, 198)
-        Me.MainInputBoxPanel.TabIndex = 17
-        Me.MainInputBoxPanel.Visible = False
-        '
-        'PromptLabel
-        '
-        Me.PromptLabel.AutoSize = True
-        Me.PromptLabel.BackColor = System.Drawing.Color.Transparent
-        Me.PromptLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PromptLabel.ForeColor = System.Drawing.Color.White
-        Me.PromptLabel.Location = New System.Drawing.Point(36, 12)
-        Me.PromptLabel.Name = "PromptLabel"
-        Me.PromptLabel.Size = New System.Drawing.Size(84, 16)
-        Me.PromptLabel.TabIndex = 4
-        Me.PromptLabel.Text = "HINT LABEL"
-        '
-        'YesButton
-        '
-        Me.YesButton.BackColor = System.Drawing.Color.Transparent
-        Me.YesButton.BackgroundImage = CType(resources.GetObject("YesButton.BackgroundImage"), System.Drawing.Image)
-        Me.YesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.YesButton.Location = New System.Drawing.Point(90, 100)
-        Me.YesButton.Name = "YesButton"
-        Me.YesButton.Size = New System.Drawing.Size(96, 35)
-        Me.YesButton.TabIndex = 10
-        Me.YesButton.TabStop = False
-        '
-        'InputBoxCloseButton
-        '
-        Me.InputBoxCloseButton.BackColor = System.Drawing.Color.Transparent
-        Me.InputBoxCloseButton.BackgroundImage = CType(resources.GetObject("InputBoxCloseButton.BackgroundImage"), System.Drawing.Image)
-        Me.InputBoxCloseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.InputBoxCloseButton.InitialImage = Nothing
-        Me.InputBoxCloseButton.Location = New System.Drawing.Point(0, 0)
-        Me.InputBoxCloseButton.Name = "InputBoxCloseButton"
-        Me.InputBoxCloseButton.Size = New System.Drawing.Size(20, 20)
-        Me.InputBoxCloseButton.TabIndex = 9
-        Me.InputBoxCloseButton.TabStop = False
-        '
-        'InputBoxTextBox
-        '
-        Me.InputBoxTextBox.BackColor = System.Drawing.Color.Transparent
-        Me.InputBoxTextBox.BackgroundImage = CType(resources.GetObject("InputBoxTextBox.BackgroundImage"), System.Drawing.Image)
-        Me.InputBoxTextBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.InputBoxTextBox.Controls.Add(Me.InputBoxTextboxText)
-        Me.InputBoxTextBox.ImeMode = System.Windows.Forms.ImeMode.Off
-        Me.InputBoxTextBox.Location = New System.Drawing.Point(76, 60)
-        Me.InputBoxTextBox.Name = "InputBoxTextBox"
-        Me.InputBoxTextBox.Size = New System.Drawing.Size(308, 22)
-        Me.InputBoxTextBox.TabIndex = 5
-        '
-        'InputBoxTextboxText
-        '
-        Me.InputBoxTextboxText.BackgroundImage = CType(resources.GetObject("InputBoxTextboxText.BackgroundImage"), System.Drawing.Image)
-        Me.InputBoxTextboxText.Location = New System.Drawing.Point(0, 2)
-        Me.InputBoxTextboxText.Name = "InputBoxTextboxText"
-        Me.InputBoxTextboxText.Size = New System.Drawing.Size(308, 20)
-        Me.InputBoxTextboxText.TabIndex = 0
-        Me.InputBoxTextboxText.TabStop = False
-        '
-        'InputBoxTitle
-        '
-        Me.InputBoxTitle.AutoSize = True
-        Me.InputBoxTitle.BackColor = System.Drawing.Color.Transparent
-        Me.InputBoxTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.InputBoxTitle.ForeColor = System.Drawing.Color.White
-        Me.InputBoxTitle.Location = New System.Drawing.Point(25, 9)
-        Me.InputBoxTitle.Name = "InputBoxTitle"
-        Me.InputBoxTitle.Size = New System.Drawing.Size(141, 20)
-        Me.InputBoxTitle.TabIndex = 3
-        Me.InputBoxTitle.Text = "INPUT BOX TITLE"
-        '
-        'TitleBar
-        '
-        Me.TitleBar.BackColor = System.Drawing.Color.Transparent
-        Me.TitleBar.Location = New System.Drawing.Point(0, 0)
-        Me.TitleBar.Name = "TitleBar"
-        Me.TitleBar.Size = New System.Drawing.Size(70, 29)
-        Me.TitleBar.TabIndex = 11
-        '
-        'InputBoxInnerPanel
-        '
-        Me.InputBoxInnerPanel.BackColor = System.Drawing.Color.Transparent
-        Me.InputBoxInnerPanel.Controls.Add(Me.OkayButton)
-        Me.InputBoxInnerPanel.Controls.Add(Me.InputBoxTextBox)
-        Me.InputBoxInnerPanel.Controls.Add(Me.NoButton)
-        Me.InputBoxInnerPanel.Controls.Add(Me.PromptLabel)
-        Me.InputBoxInnerPanel.Controls.Add(Me.YesButton)
-        Me.InputBoxInnerPanel.Location = New System.Drawing.Point(0, 0)
-        Me.InputBoxInnerPanel.Name = "InputBoxInnerPanel"
-        Me.InputBoxInnerPanel.Size = New System.Drawing.Size(10, 10)
-        Me.InputBoxInnerPanel.TabIndex = 12
-        '
-        'NoButton
-        '
-        Me.NoButton.BackColor = System.Drawing.Color.Transparent
-        Me.NoButton.BackgroundImage = CType(resources.GetObject("NoButton.BackgroundImage"), System.Drawing.Image)
-        Me.NoButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.NoButton.Location = New System.Drawing.Point(266, 100)
-        Me.NoButton.Name = "NoButton"
-        Me.NoButton.Size = New System.Drawing.Size(96, 35)
-        Me.NoButton.TabIndex = 13
-        Me.NoButton.TabStop = False
-        '
-        'OkayButton
-        '
-        Me.OkayButton.BackColor = System.Drawing.Color.Transparent
-        Me.OkayButton.BackgroundImage = CType(resources.GetObject("OkayButton.BackgroundImage"), System.Drawing.Image)
-        Me.OkayButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.OkayButton.Location = New System.Drawing.Point(174, 94)
-        Me.OkayButton.Name = "OkayButton"
-        Me.OkayButton.Size = New System.Drawing.Size(96, 35)
-        Me.OkayButton.TabIndex = 14
-        Me.OkayButton.TabStop = False
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1655,6 +1781,24 @@ Partial Class Form1
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainer1.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
+        Me.MainMenuWindowPanel.ResumeLayout(False)
+        Me.MainMenuWindowPanel.PerformLayout()
+        CType(Me.MainMenuOptionsButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MainMenuExitButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MainMenuCreditsButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MainMenuRegisterButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MainMenuLoginButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MainLogoPanel, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainInputBoxPanel.ResumeLayout(False)
+        Me.MainInputBoxPanel.PerformLayout()
+        Me.InputBoxInnerPanel.ResumeLayout(False)
+        Me.InputBoxInnerPanel.PerformLayout()
+        CType(Me.OkayButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.InputBoxTextBox.ResumeLayout(False)
+        CType(Me.InputBoxTextboxText, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NoButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.YesButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.InputBoxCloseButton, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MainForgotPasswordWindowPanel.ResumeLayout(False)
         Me.MainForgotPasswordWindowPanel.PerformLayout()
         CType(Me.ForgotPasswordBackButton, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1715,16 +1859,6 @@ Partial Class Form1
         CType(Me.UsernameFieldPB, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
-        Me.MainInputBoxPanel.ResumeLayout(False)
-        Me.MainInputBoxPanel.PerformLayout()
-        CType(Me.YesButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.InputBoxCloseButton, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.InputBoxTextBox.ResumeLayout(False)
-        CType(Me.InputBoxTextboxText, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.InputBoxInnerPanel.ResumeLayout(False)
-        Me.InputBoxInnerPanel.PerformLayout()
-        CType(Me.NoButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.OkayButton, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1876,4 +2010,13 @@ Partial Class Form1
     Friend WithEvents TitleBar As Panel
     Friend WithEvents InputBoxCloseButton As PictureBox
     Friend WithEvents InputBoxTitle As Label
+    Friend WithEvents MainLogoPanel As PictureBox
+    Friend WithEvents MainMenuWindowPanel As Panel
+    Friend WithEvents MainMenuOptionsButton As PictureBox
+    Friend WithEvents MainMenuExitButton As PictureBox
+    Friend WithEvents MainMenuCreditsButton As PictureBox
+    Friend WithEvents MainMenuRegisterButton As PictureBox
+    Friend WithEvents MainMenuLoginButton As PictureBox
+    Friend WithEvents ServerStatusLabel As Label
+    Friend WithEvents MainMenuTitle As Label
 End Class
