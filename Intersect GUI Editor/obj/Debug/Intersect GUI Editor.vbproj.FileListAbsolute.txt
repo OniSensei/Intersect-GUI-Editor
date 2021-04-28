@@ -1,0 +1,16 @@
+C:\Users\Oni\source\repos\Intersect GUI Editor\Intersect GUI Editor\bin\Debug\Intersect GUI Editor.exe.config
+C:\Users\Oni\source\repos\Intersect GUI Editor\Intersect GUI Editor\bin\Debug\Intersect GUI Editor.exe
+C:\Users\Oni\source\repos\Intersect GUI Editor\Intersect GUI Editor\bin\Debug\Intersect GUI Editor.pdb
+C:\Users\Oni\source\repos\Intersect GUI Editor\Intersect GUI Editor\bin\Debug\Intersect GUI Editor.xml
+C:\Users\Oni\source\repos\Intersect GUI Editor\Intersect GUI Editor\obj\Debug\Intersect GUI Editor.vbprojAssemblyReference.cache
+C:\Users\Oni\source\repos\Intersect GUI Editor\Intersect GUI Editor\obj\Debug\Intersect_GUI_Editor.Form1.resources
+C:\Users\Oni\source\repos\Intersect GUI Editor\Intersect GUI Editor\obj\Debug\Intersect_GUI_Editor.Resources.resources
+C:\Users\Oni\source\repos\Intersect GUI Editor\Intersect GUI Editor\obj\Debug\Intersect GUI Editor.vbproj.GenerateResource.cache
+C:\Users\Oni\source\repos\Intersect GUI Editor\Intersect GUI Editor\obj\Debug\Intersect GUI Editor.vbproj.CoreCompileInputs.cache
+C:\Users\Oni\source\repos\Intersect GUI Editor\Intersect GUI Editor\obj\Debug\Intersect GUI Editor.exe
+C:\Users\Oni\source\repos\Intersect GUI Editor\Intersect GUI Editor\obj\Debug\Intersect GUI Editor.xml
+C:\Users\Oni\source\repos\Intersect GUI Editor\Intersect GUI Editor\obj\Debug\Intersect GUI Editor.pdb
+C:\Users\Oni\source\repos\Intersect GUI Editor\Intersect GUI Editor\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Oni\source\repos\Intersect GUI Editor\Intersect GUI Editor\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Oni\source\repos\Intersect GUI Editor\Intersect GUI Editor\obj\Debug\Intersect GUI Editor.vbproj.CopyComplete
+C:\Users\Oni\source\repos\Intersect GUI Editor\Intersect GUI Editor\bin\Debug\ZTn.Json.JsonTreeView.dll
