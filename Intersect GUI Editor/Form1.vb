@@ -33,6 +33,7 @@ Public Class Form1
     Private Sub LoginWindowToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LoginWindowToolStripMenuItem.Click
         MainCharacterCreationPanel.Visible = False
         MainCharSelectionPanel.Visible = False
+        MainCreditsPanel.Visible = False
 
         LoadLoginGUI(menuGuiPath & "LoginWindow.json")
         openFile = menuGuiPath & "LoginWindow.json"
@@ -41,6 +42,7 @@ Public Class Form1
     Private Sub CharacterCreationWindowToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CharacterCreationWindowToolStripMenuItem.Click
         MainLoginWindowPanel.Visible = False
         MainCharSelectionPanel.Visible = False
+        MainCreditsPanel.Visible = False
 
         LoadCharacterCreationGUI(menuGuiPath & "CharacterCreationWindow.json")
         openFile = menuGuiPath & "CharacterCreationWindow.json"
@@ -49,9 +51,19 @@ Public Class Form1
     Private Sub CharacterSelectionWindowToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CharacterSelectionWindowToolStripMenuItem.Click
         MainLoginWindowPanel.Visible = False
         MainCharacterCreationPanel.Visible = False
+        MainCreditsPanel.Visible = False
 
         LoadCharacterSelectionGUI(menuGuiPath & "CharacterSelectionWindow.json")
         openFile = menuGuiPath & "CharacterSelectionWindow.json"
+    End Sub
+
+    Private Sub CreditsWindowToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CreditsWindowToolStripMenuItem.Click
+        MainLoginWindowPanel.Visible = False
+        MainCharacterCreationPanel.Visible = False
+        MainCharSelectionPanel.Visible = False
+
+        LoadCreditsGUI(menuGuiPath & "CreditsWindow.json")
+        openFile = menuGuiPath & "CreditsWindow.json"
     End Sub
 
     Private Sub JTokenTreeUserControl1_AfterSelect(sender As Object, e As ZTn.Json.JsonTreeView.AfterSelectEventArgs) Handles JTokenTreeUserControl1.AfterSelect
@@ -85,6 +97,10 @@ Public Class Form1
                     LoadLoginGUI(tempPath & "tmp_" & tempFileName & ".json")
                 ElseIf openFile.Contains("CharacterCreationWindow") Then
                     LoadCharacterCreationGUI(tempPath & "tmp_" & tempFileName & ".json")
+                ElseIf openFile.Contains("CharacterSelectionWindow") Then
+                    LoadCharacterSelectionGUI(tempPath & "tmp_" & tempFileName & ".json")
+                ElseIf openFile.Contains("CreditsWindow") Then
+                    LoadCreditsGUI(tempPath & "tmp_" & tempFileName & ".json")
                 End If
             End Using
 
@@ -323,6 +339,8 @@ Public Class Form1
             LoadCharacterCreationGUI(openFile)
         ElseIf openFile.Contains("CharacterSelectionWindow") Then
             LoadCharacterSelectionGUI(openFile)
+        ElseIf openFile.Contains("CreditsWindow") Then
+            LoadCreditsGUI(openFile)
         End If
     End Sub
 

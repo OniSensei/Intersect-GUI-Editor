@@ -144,6 +144,12 @@ Partial Class Form1
         Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RefreshBtn = New System.Windows.Forms.ToolStripMenuItem()
         Me.gridToggle = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MainCreditsPanel = New System.Windows.Forms.Panel()
+        Me.CreditsBackButton = New System.Windows.Forms.PictureBox()
+        Me.CreditsHeader = New System.Windows.Forms.Label()
+        Me.CreditsInnerPanel = New System.Windows.Forms.Panel()
+        Me.CreditsLabel = New System.Windows.Forms.Label()
+        Me.CreditsScrollview = New System.Windows.Forms.Panel()
         CType(Me.mainSplitContainer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.mainSplitContainer.Panel1.SuspendLayout()
         Me.mainSplitContainer.Panel2.SuspendLayout()
@@ -194,6 +200,10 @@ Partial Class Form1
         Me.UsernamePanel.SuspendLayout()
         CType(Me.UsernameFieldPB, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
+        Me.MainCreditsPanel.SuspendLayout()
+        CType(Me.CreditsBackButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.CreditsInnerPanel.SuspendLayout()
+        Me.CreditsScrollview.SuspendLayout()
         Me.SuspendLayout()
         '
         'mainSplitContainer
@@ -227,6 +237,7 @@ Partial Class Form1
         'toolSplitContainer.Panel2
         '
         Me.toolSplitContainer.Panel2.AutoScroll = True
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainCreditsPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainCharSelectionPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainCharacterCreationPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainLoginWindowPanel)
@@ -1294,6 +1305,74 @@ Partial Class Form1
         Me.gridToggle.Size = New System.Drawing.Size(28, 20)
         Me.gridToggle.Visible = False
         '
+        'MainCreditsPanel
+        '
+        Me.MainCreditsPanel.BackgroundImage = CType(resources.GetObject("MainCreditsPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainCreditsPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainCreditsPanel.Controls.Add(Me.CreditsBackButton)
+        Me.MainCreditsPanel.Controls.Add(Me.CreditsScrollview)
+        Me.MainCreditsPanel.Controls.Add(Me.CreditsHeader)
+        Me.MainCreditsPanel.Location = New System.Drawing.Point(461, 4)
+        Me.MainCreditsPanel.Name = "MainCreditsPanel"
+        Me.MainCreditsPanel.Size = New System.Drawing.Size(452, 262)
+        Me.MainCreditsPanel.TabIndex = 15
+        Me.MainCreditsPanel.Visible = False
+        '
+        'CreditsBackButton
+        '
+        Me.CreditsBackButton.BackColor = System.Drawing.Color.Transparent
+        Me.CreditsBackButton.BackgroundImage = CType(resources.GetObject("CreditsBackButton.BackgroundImage"), System.Drawing.Image)
+        Me.CreditsBackButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.CreditsBackButton.Location = New System.Drawing.Point(166, 228)
+        Me.CreditsBackButton.Name = "CreditsBackButton"
+        Me.CreditsBackButton.Size = New System.Drawing.Size(120, 28)
+        Me.CreditsBackButton.TabIndex = 14
+        Me.CreditsBackButton.TabStop = False
+        '
+        'CreditsHeader
+        '
+        Me.CreditsHeader.AutoSize = True
+        Me.CreditsHeader.BackColor = System.Drawing.Color.Transparent
+        Me.CreditsHeader.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CreditsHeader.ForeColor = System.Drawing.Color.White
+        Me.CreditsHeader.Location = New System.Drawing.Point(25, 9)
+        Me.CreditsHeader.Name = "CreditsHeader"
+        Me.CreditsHeader.Size = New System.Drawing.Size(59, 20)
+        Me.CreditsHeader.TabIndex = 3
+        Me.CreditsHeader.Text = "Credits"
+        '
+        'CreditsInnerPanel
+        '
+        Me.CreditsInnerPanel.BackColor = System.Drawing.Color.Transparent
+        Me.CreditsInnerPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.CreditsInnerPanel.Controls.Add(Me.CreditsLabel)
+        Me.CreditsInnerPanel.Location = New System.Drawing.Point(0, 0)
+        Me.CreditsInnerPanel.Name = "CreditsInnerPanel"
+        Me.CreditsInnerPanel.Size = New System.Drawing.Size(10, 10)
+        Me.CreditsInnerPanel.TabIndex = 8
+        '
+        'CreditsLabel
+        '
+        Me.CreditsLabel.AutoSize = True
+        Me.CreditsLabel.BackColor = System.Drawing.Color.Transparent
+        Me.CreditsLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CreditsLabel.ForeColor = System.Drawing.Color.White
+        Me.CreditsLabel.Location = New System.Drawing.Point(14, 4)
+        Me.CreditsLabel.Name = "CreditsLabel"
+        Me.CreditsLabel.Size = New System.Drawing.Size(98, 20)
+        Me.CreditsLabel.TabIndex = 4
+        Me.CreditsLabel.Text = "CreditsLabel"
+        '
+        'CreditsScrollview
+        '
+        Me.CreditsScrollview.BackColor = System.Drawing.Color.Transparent
+        Me.CreditsScrollview.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.CreditsScrollview.Controls.Add(Me.CreditsInnerPanel)
+        Me.CreditsScrollview.Location = New System.Drawing.Point(0, 40)
+        Me.CreditsScrollview.Name = "CreditsScrollview"
+        Me.CreditsScrollview.Size = New System.Drawing.Size(451, 169)
+        Me.CreditsScrollview.TabIndex = 7
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1369,6 +1448,12 @@ Partial Class Form1
         CType(Me.UsernameFieldPB, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        Me.MainCreditsPanel.ResumeLayout(False)
+        Me.MainCreditsPanel.PerformLayout()
+        CType(Me.CreditsBackButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.CreditsInnerPanel.ResumeLayout(False)
+        Me.CreditsInnerPanel.PerformLayout()
+        Me.CreditsScrollview.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1495,4 +1580,10 @@ Partial Class Form1
     Friend WithEvents NextCharacterButton As PictureBox
     Friend WithEvents SelectCharCharacterPortrait As PictureBox
     Friend WithEvents CharacterSelectionHeader As Label
+    Friend WithEvents MainCreditsPanel As Panel
+    Friend WithEvents CreditsBackButton As PictureBox
+    Friend WithEvents CreditsHeader As Label
+    Friend WithEvents CreditsScrollview As Panel
+    Friend WithEvents CreditsInnerPanel As Panel
+    Friend WithEvents CreditsLabel As Label
 End Class
