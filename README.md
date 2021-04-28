@@ -14,3 +14,44 @@ Todo:
   - [ ] RegistrationWindow.json
   - [ ] ResetPasswordWindow.json
   - [ ] ServerStatusArea.json
+- Game
+  - [ ] BagItem.json
+  - [ ] BagWindow.json
+  - [ ] BankItem.json
+  - [ ] BankWindow.json
+  - [ ] CharacterWindow.json
+  - [ ] ChatboxWindow.json
+  - [ ] CraftedItem.json
+  - [ ] CraftingIngredient.json
+  - [ ] CraftingWindow.json
+  - [ ] Draggable.json
+  - [ ] EquipmentItem.json
+  - [ ] EscapeMenu.json
+  - [ ] EventDialogWindow_1Response.json
+  - [ ] EventDialogWindow_2Response.json
+  - [ ] EventDialogWindow_3Response.json
+  - [ ] EventDialogWindow_4Response.json
+  - [ ] FriendsWindow.json
+  - [ ] HotbarWindow.json
+  - [ ] InputBox.json
+  - [ ] InventoryItem.json
+  - [ ] InventoryWindow.json
+  - [ ] ItemDescWindow.json
+  - [ ] ItemDescWindowExpanded.json
+  - [ ] MenuContainer.json
+  - [ ] OptionsWindow.json
+  - [ ] PartyWindow.json
+  - [ ] PlayerBox.json
+  - [ ] PlayerStatusIcon.json
+  - [ ] QuestOfferWindow.json
+  - [ ] QuestWindow.json
+  - [ ] ShopItem.json
+  - [ ] Spell.json
+  - [ ] SpellDescWindow.json
+  - [ ] SpellDescWindowExtended.json
+  - [ ] SpellsWindow.json
+  - [ ] TargetBox.json
+  - [ ] TargetStatusIcon.json
+  - [ ] TheirTradeItem.json
+  - [ ] TradeWindow.json
+  - [ ] YourTradeItem.json
