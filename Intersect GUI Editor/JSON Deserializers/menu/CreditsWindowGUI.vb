@@ -28,40 +28,9 @@ Module CreditsWindowGUI
     End Class
 
     Public Class Children
-        Public Property CreditsHeader As CreditsHeader
+        Public Property CreditsHeader As IntersectLabel
         Public Property CreditsScrollview As CreditsScrollview
-        Public Property BackButton As CreditsWindowBackButton
-    End Class
-
-    Public Class CreditsHeader
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
+        Public Property BackButton As IntersectButton
     End Class
 
     Public Class CreditsScrollview
@@ -114,37 +83,7 @@ Module CreditsWindowGUI
     End Class
 
     Public Class CreditsWindowInnerPanelChildren
-        Public Property CreditsLabel As CreditsLabel
-    End Class
-
-    Public Class CreditsLabel
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
+        Public Property CreditsLabel As IntersectLabel
     End Class
 
     Public Class CreditsWindowHorizontalScrollBar
@@ -167,109 +106,9 @@ Module CreditsWindowGUI
         Public Property ToolTipFont As String
         Public Property ToolTipTextColor As String
         Public Property BackgroundTemplate As String
-        Public Property CreditsWindowHorizontalScrollBarUpOrLeftButton As CreditsWindowHorizontalScrollBarUpOrLeftButton
-        Public Property CreditsWindowHorizontalScrollBarBar As CreditsWindowHorizontalScrollBarBar
-        Public Property CreditsWindowHorizontalScrollBarDownOrRightButton As CreditsWindowHorizontalScrollBarDownOrRightButton
-    End Class
-
-    Public Class CreditsWindowHorizontalScrollBarUpOrLeftButton
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
-        Public Property CenterImage As Boolean
-        Public Property HoverSound As String
-        Public Property MouseUpSound As String
-        Public Property MouseDownSound As String
-        Public Property ClickSound As String
-    End Class
-
-    Public Class CreditsWindowHorizontalScrollBarBar
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property NormalImage As String
-        Public Property HoveredImage As String
-        Public Property ClickedImage As String
-        Public Property DisabledImage As String
-        Public Property HoverSound As String
-        Public Property MouseUpSound As String
-        Public Property MouseDownSound As String
-    End Class
-
-    Public Class CreditsWindowHorizontalScrollBarDownOrRightButton
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
-        Public Property CenterImage As Boolean
-        Public Property HoverSound As String
-        Public Property MouseUpSound As String
-        Public Property MouseDownSound As String
-        Public Property ClickSound As String
+        Public Property UpOrLeftButton As IntersectUpOrLeftButton
+        Public Property Bar As IntersectBar
+        Public Property DownOrRightButton As IntersectDownOrRightButton
     End Class
 
     Public Class CreditsWindowVerticalScrollBar
@@ -292,149 +131,9 @@ Module CreditsWindowGUI
         Public Property ToolTipFont As String
         Public Property ToolTipTextColor As String
         Public Property BackgroundTemplate As String
-        Public Property CreditsWindowVerticalScrollBarUpOrLeftButton As CreditsWindowVerticalScrollBarUpOrLeftButton
-        Public Property CreditsWindowVerticalScrollBarBar As CreditsWindowVerticalScrollBarBar
-        Public Property CreditsWindowVerticalScrollBarDownOrRightButton As CreditsWindowVerticalScrollBarDownOrRightButton
-    End Class
-
-    Public Class CreditsWindowVerticalScrollBarUpOrLeftButton
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
-        Public Property CenterImage As Boolean
-        Public Property HoverSound As String
-        Public Property MouseUpSound As String
-        Public Property MouseDownSound As String
-        Public Property ClickSound As String
-    End Class
-
-    Public Class CreditsWindowVerticalScrollBarBar
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property NormalImage As String
-        Public Property HoveredImage As String
-        Public Property ClickedImage As String
-        Public Property DisabledImage As String
-        Public Property HoverSound As String
-        Public Property MouseUpSound As String
-        Public Property MouseDownSound As String
-    End Class
-
-    Public Class CreditsWindowVerticalScrollBarDownOrRightButton
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
-        Public Property CenterImage As Boolean
-        Public Property HoverSound As String
-        Public Property MouseUpSound As String
-        Public Property MouseDownSound As String
-        Public Property ClickSound As String
-    End Class
-
-    Public Class CreditsWindowBackButton
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
-        Public Property NormalImage As String
-        Public Property HoveredImage As String
-        Public Property ClickedImage As String
-        Public Property DisabledImage As String
-        Public Property CenterImage As Boolean
-        Public Property HoverSound As String
-        Public Property MouseUpSound As String
-        Public Property MouseDownSound As String
-        Public Property ClickSound As String
+        Public Property UpOrLeftButton As IntersectUpOrLeftButton
+        Public Property Bar As IntersectBar
+        Public Property DownOrRightButton As IntersectDownOrRightButton
     End Class
 
     Public Sub LoadCreditsGUI(ByVal jsonfile As String)

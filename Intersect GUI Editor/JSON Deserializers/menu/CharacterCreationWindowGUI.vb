@@ -29,47 +29,16 @@ Module CharacterCreationWindowGUI
     End Class
 
     Public Class Children
-        Public Property CharacterCreationheader As CharacterCreationheader
+        Public Property CharacterCreationheader As IntersectLabel
         Public Property CharacterNamePanel As CharacterNamePanel
         Public Property ClassPanel As CharWindowClassPanel
-        Public Property HintLabel As HintLabel
-        Public Property Hint2Label As Hint2Label
+        Public Property HintLabel As IntersectLabel
+        Public Property Hint2Label As IntersectLabel
         Public Property CharacterContainer As CharacterContainer
         Public Property GenderPanel As GenderPanel
-        Public Property CreateButton As CreateButton
-        Public Property BackButton As CharacterCreationBackButton
+        Public Property CreateButton As IntersectButton
+        Public Property BackButton As IntersectButton
 
-    End Class
-
-    Public Class CharacterCreationheader
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
     End Class
 
     Public Class CharacterNamePanel
@@ -99,73 +68,8 @@ Module CharacterCreationWindowGUI
     End Class
 
     Public Class CharacterNamePanelChildren
-        Public Property CharacterNameLabel As CharacterNameLabel
-        Public Property CharacterNameField As CharacterNameField
-    End Class
-
-    Public Class CharacterNameLabel
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
-    End Class
-
-    Public Class CharacterNameField
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
-        Public Property AddTextSound As String
-        Public Property RemoveTextSound As String
-        Public Property SubmitSound As String
+        Public Property CharacterNameLabel As IntersectLabel
+        Public Property CharacterNameField As IntersectField
     End Class
 
     Public Class CharWindowClassPanel
@@ -195,39 +99,8 @@ Module CharacterCreationWindowGUI
     End Class
 
     Public Class ClassPanelChildren
-        Public Property ClassLabel As ClassLabel
+        Public Property ClassLabel As IntersectLabel
         Public Property ClassCombobox As ClassCombobox
-    End Class
-
-    Public Class ClassLabel
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
     End Class
 
     Public Class ClassCombobox
@@ -347,109 +220,9 @@ Module CharacterCreationWindowGUI
         Public Property ToolTipFont As String
         Public Property ToolTipTextColor As String
         Public Property BackgroundTemplate As String
-        Public Property ClassComboboxMenuHorizontalScrollBarUpOrLeftButton As ClassComboboxMenuHorizontalScrollBarUpOrLeftButton
-        Public Property ClassComboboxMenuHorizontalScrollBarBar As ClassComboboxMenuHorizontalScrollBarBar
-        Public Property ClassComboboxMenuHorizontalScrollBarDownOrRightButton As ClassComboboxMenuHorizontalScrollBarDownOrRightButton
-    End Class
-
-    Public Class ClassComboboxMenuHorizontalScrollBarUpOrLeftButton
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
-        Public Property CenterImage As Boolean
-        Public Property HoverSound As String
-        Public Property MouseUpSound As String
-        Public Property MouseDownSound As String
-        Public Property ClickSound As String
-    End Class
-
-    Public Class ClassComboboxMenuHorizontalScrollBarBar
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property NormalImage As String
-        Public Property HoveredImage As String
-        Public Property ClickedImage As String
-        Public Property DisabledImage As String
-        Public Property HoverSound As String
-        Public Property MouseUpSound As String
-        Public Property MouseDownSound As String
-    End Class
-
-    Public Class ClassComboboxMenuHorizontalScrollBarDownOrRightButton
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
-        Public Property CenterImage As Boolean
-        Public Property HoverSound As String
-        Public Property MouseUpSound As String
-        Public Property MouseDownSound As String
-        Public Property ClickSound As String
+        Public Property ClassComboboxMenuHorizontalScrollBarUpOrLeftButton As IntersectUpOrLeftButton
+        Public Property ClassComboboxMenuHorizontalScrollBarBar As IntersectBar
+        Public Property ClassComboboxMenuHorizontalScrollBarDownOrRightButton As IntersectDownOrRightButton
     End Class
 
     Public Class ClassComboboxMenuVerticalScrollBar
@@ -472,111 +245,12 @@ Module CharacterCreationWindowGUI
         Public Property ToolTipFont As String
         Public Property ToolTipTextColor As String
         Public Property BackgroundTemplate As String
-        Public Property ClassComboboxMenuVerticalScrollBarUpOrLeftButton As ClassComboboxMenuVerticalScrollBarUpOrLeftButton
-        Public Property ClassComboboxMenuVerticalScrollBarBar As ClassComboboxMenuVerticalScrollBarBar
-        Public Property ClassComboboxMenuVerticalScrollBarDownOrRightButton As ClassComboboxMenuVerticalScrollBarDownOrRightButton
+        Public Property ClassComboboxMenuVerticalScrollBarUpOrLeftButton As IntersectUpOrLeftButton
+        Public Property ClassComboboxMenuVerticalScrollBarBar As IntersectBar
+        Public Property ClassComboboxMenuVerticalScrollBarDownOrRightButton As IntersectDownOrRightButton
 
     End Class
 
-    Public Class ClassComboboxMenuVerticalScrollBarUpOrLeftButton
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
-        Public Property CenterImage As Boolean
-        Public Property HoverSound As String
-        Public Property MouseUpSound As String
-        Public Property MouseDownSound As String
-        Public Property ClickSound As String
-    End Class
-
-    Public Class ClassComboboxMenuVerticalScrollBarBar
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property NormalImage As String
-        Public Property HoveredImage As String
-        Public Property ClickedImage As String
-        Public Property DisabledImage As String
-        Public Property HoverSound As String
-        Public Property MouseUpSound As String
-        Public Property MouseDownSound As String
-    End Class
-
-    Public Class ClassComboboxMenuVerticalScrollBarDownOrRightButton
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
-        Public Property CenterImage As Boolean
-        Public Property HoverSound As String
-        Public Property MouseUpSound As String
-        Public Property MouseDownSound As String
-        Public Property ClickSound As String
-    End Class
     Public Class ClassComboboxDropDownButton
         Public Property Bounds As String
         Public Property Padding As String
@@ -596,68 +270,6 @@ Module CharacterCreationWindowGUI
         Public Property ToolTipBackground As String
         Public Property ToolTipFont As String
         Public Property ToolTipTextColor As String
-    End Class
-
-    Public Class HintLabel
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
-    End Class
-
-    Public Class Hint2Label
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
     End Class
 
     Public Class CharacterContainer
@@ -688,8 +300,8 @@ Module CharacterCreationWindowGUI
 
     Public Class CharacterContainerChildren
         Public Property CharacterPortait As CharacterPortait
-        Public Property NextSpriteButton As NextSpriteButton
-        Public Property PreviousSpriteButton As PreviousSpriteButton
+        Public Property NextSpriteButton As IntersectButton
+        Public Property PreviousSpriteButton As IntersectButton
     End Class
 
     Public Class CharacterPortait
@@ -715,86 +327,6 @@ Module CharacterCreationWindowGUI
         Public Property HoverSound As String
         Public Property LeftMouseClickSound As String
         Public Property RightMouseClickSound As String
-    End Class
-
-    Public Class NextSpriteButton
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
-        Public Property NormalImage As String
-        Public Property HoveredImage As String
-        Public Property ClickedImage As String
-        Public Property DisabledImage As String
-        Public Property CenterImage As Boolean
-        Public Property HoverSound As String
-        Public Property MouseUpSound As String
-        Public Property MouseDownSound As String
-        Public Property ClickSound As String
-    End Class
-
-    Public Class PreviousSpriteButton
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
-        Public Property NormalImage As String
-        Public Property HoveredImage As String
-        Public Property ClickedImage As String
-        Public Property DisabledImage As String
-        Public Property CenterImage As Boolean
-        Public Property HoverSound As String
-        Public Property MouseUpSound As String
-        Public Property MouseDownSound As String
-        Public Property ClickSound As String
     End Class
 
     Public Class GenderPanel
@@ -824,40 +356,9 @@ Module CharacterCreationWindowGUI
     End Class
 
     Public Class GenderPanelChildren
-        Public Property GenderLabel As GenderLabel
+        Public Property GenderLabel As IntersectLabel
         Public Property MaleCheckbox As MaleCheckbox
         Public Property FemaleCheckBox As FemaleCheckbox
-    End Class
-
-    Public Class GenderLabel
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
     End Class
 
     Public Class MaleCheckbox
@@ -879,76 +380,8 @@ Module CharacterCreationWindowGUI
         Public Property ToolTipBackground As String
         Public Property ToolTipFont As String
         Public Property ToolTipTextColor As String
-        Public Property Label As MaleCheckboxLabel
-        Public Property Checkbox As MaleCheckboxCheckbox
-    End Class
-
-    Public Class MaleCheckboxLabel
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
-    End Class
-
-    Public Class MaleCheckboxCheckbox
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
-        Public Property NormalImage As String
-        Public Property CheckedImage As String
-        Public Property ClickedImage As String
-        Public Property DisabledImage As String
-        Public Property CheckedDisabledImage As String
-        Public Property CheckedSound As String
-        Public Property UncheckedSound As String
+        Public Property Label As IntersectLabel
+        Public Property Checkbox As IntersectCheckbox
     End Class
 
     Public Class FemaleCheckbox
@@ -970,156 +403,8 @@ Module CharacterCreationWindowGUI
         Public Property ToolTipBackground As String
         Public Property ToolTipFont As String
         Public Property ToolTipTextColor As String
-        Public Property Label As FemaleCheckboxLabel
-        Public Property Checkbox As FemaleCheckboxCheckbox
-    End Class
-
-    Public Class FemaleCheckboxLabel
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
-    End Class
-
-    Public Class FemaleCheckboxCheckbox
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
-        Public Property NormalImage As String
-        Public Property CheckedImage As String
-        Public Property ClickedImage As String
-        Public Property DisabledImage As String
-        Public Property CheckedDisabledImage As String
-        Public Property CheckedSound As String
-        Public Property UncheckedSound As String
-    End Class
-
-    Public Class CreateButton
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
-        Public Property NormalImage As String
-        Public Property HoveredImage As String
-        Public Property ClickedImage As String
-        Public Property DisabledImage As String
-        Public Property CenterImage As Boolean
-        Public Property HoverSound As String
-        Public Property MouseUpSound As String
-        Public Property MouseDownSound As String
-        Public Property ClickSound As String
-    End Class
-
-    Public Class CharacterCreationBackButton
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
-        Public Property NormalImage As String
-        Public Property HoveredImage As String
-        Public Property ClickedImage As String
-        Public Property DisabledImage As String
-        Public Property CenterImage As Boolean
-        Public Property HoverSound As String
-        Public Property MouseUpSound As String
-        Public Property MouseDownSound As String
-        Public Property ClickSound As String
+        Public Property Label As IntersectLabel
+        Public Property Checkbox As IntersectCheckbox
     End Class
 
     Public Sub LoadCharacterCreationGUI(ByVal jsonfile As String)

@@ -83,6 +83,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="JSON Deserializers\CommonControlsGUI.vb" />
     <Compile Include="JSON Deserializers\menu\CharacterCreationWindowGUI.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
@@ -98,6 +99,8 @@
     <Compile Include="JSON Deserializers\menu\LoginWindowGUI.vb" />
     <Compile Include="JSON Deserializers\menu\LogoGUI.vb" />
     <Compile Include="JSON Deserializers\menu\MenuWindowGUI.vb" />
+    <Compile Include="JSON Deserializers\menu\OptionsWindowGUI.vb" />
+    <Compile Include="JSON Deserializers\menu\RegistrationWindowGUI.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>

@@ -29,45 +29,14 @@ Module LoginWindowGUI
     End Class
 
     Public Class Children
-        Public Property LoginHeader As LoginHeader
+        Public Property LoginHeader As IntersectLabel
         Public Property UsernamePanel As UsernamePanel
         Public Property PasswordPanel As PasswordPanel
         Public Property SavePassCheckbox As SavePassCheckbox
-        Public Property ForgotPasswordButton As ForgotPasswordButton
-        Public Property LoginButton As LoginButton
-        Public Property BackButton As BackButton
+        Public Property ForgotPasswordButton As IntersectButton
+        Public Property LoginButton As IntersectButton
+        Public Property BackButton As IntersectButton
 
-    End Class
-
-    Public Class LoginHeader
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
     End Class
 
     Public Class UsernamePanel
@@ -97,73 +66,8 @@ Module LoginWindowGUI
     End Class
 
     Public Class UserPanelChildren
-        Public Property UsernameLabel As UsernameLabel
-        Public Property UsernameField As UsernameField
-    End Class
-
-    Public Class UsernameLabel
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
-    End Class
-
-    Public Class UsernameField
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
-        Public Property AddTextSound As String
-        Public Property RemoveTextSound As String
-        Public Property SubmitSound As String
+        Public Property UsernameLabel As IntersectLabel
+        Public Property UsernameField As IntersectField
     End Class
 
     Public Class PasswordPanel
@@ -193,73 +97,8 @@ Module LoginWindowGUI
     End Class
 
     Public Class PasswordPanelChildren
-        Public Property PasswordLabel As PasswordLabel
-        Public Property PasswordField As PasswordField
-    End Class
-
-    Public Class PasswordLabel
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
-    End Class
-
-    Public Class PasswordField
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
-        Public Property AddTextSound As String
-        Public Property RemoveTextSound As String
-        Public Property SubmitSound As String
+        Public Property PasswordLabel As IntersectLabel
+        Public Property PasswordField As IntersectField
     End Class
 
     Public Class SavePassCheckbox
@@ -281,201 +120,8 @@ Module LoginWindowGUI
         Public Property ToolTipBackground As String
         Public Property ToolTipFont As String
         Public Property ToolTipTextColor As String
-        Public Property Label As SaveLabel
-        Public Property Checkbox As SaveCheckbox
-    End Class
-
-    Public Class SaveLabel
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
-    End Class
-
-    Public Class SaveCheckbox
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
-        Public Property CenterImage As Boolean
-        Public Property HoverSound As String
-        Public Property MouseUpSound As String
-        Public Property MouseDownSound As String
-        Public Property ClickSound As String
-        Public Property NormalImage As String
-        Public Property CheckedImage As String
-        Public Property DisabledImage As String
-        Public Property CheckedDisabledImage As String
-        Public Property CheckedSound As String
-        Public Property UncheckedSound As String
-    End Class
-
-    Public Class ForgotPasswordButton
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
-        Public Property NormalImage As String
-        Public Property HoveredImage As String
-        Public Property ClickedImage As String
-        Public Property DisabledImage As String
-        Public Property CenterImage As Boolean
-        Public Property HoverSound As String
-        Public Property MouseUpSound As String
-        Public Property MouseDownSound As String
-        Public Property ClickSound As String
-    End Class
-
-    Public Class LoginButton
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
-        Public Property NormalImage As String
-        Public Property HoveredImage As String
-        Public Property ClickedImage As String
-        Public Property DisabledImage As String
-        Public Property CenterImage As Boolean
-        Public Property HoverSound As String
-        Public Property MouseUpSound As String
-        Public Property MouseDownSound As String
-        Public Property ClickSound As String
-    End Class
-
-    Public Class BackButton
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
-        Public Property NormalImage As String
-        Public Property HoveredImage As String
-        Public Property ClickedImage As String
-        Public Property DisabledImage As String
-        Public Property CenterImage As Boolean
-        Public Property HoverSound As String
-        Public Property MouseUpSound As String
-        Public Property MouseDownSound As String
-        Public Property ClickSound As String
+        Public Property Label As IntersectLabel
+        Public Property Checkbox As IntersectCheckbox
     End Class
 
     Public Sub LoadLoginGUI(ByVal jsonfile As String)

@@ -27,8 +27,8 @@ Module InputBoxGUI
         Public Property InactiveColor As String
         Public Property Closeable As Boolean
         Public Property Titlebar As Titlebar
-        Public Property Title As Title
-        Public Property Closebutton As CloseButton
+        Public Property Title As IntersectLabel
+        Public Property Closebutton As IntersectButton
         Public Property InnerPanel As InnerPanel
     End Class
 
@@ -71,77 +71,6 @@ Module InputBoxGUI
         Public Property MouseDownSound As String
     End Class
 
-    Public Class Title
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
-    End Class
-
-    Public Class CloseButton
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
-        Public Property NormalImage As String
-        Public Property HoveredImage As String
-        Public Property ClickedImage As String
-        Public Property DisabledImage As String
-        Public Property CenterImage As Boolean
-        Public Property HoverSound As String
-        Public Property MouseUpSound As String
-        Public Property MouseDownSound As String
-        Public Property ClickSound As String
-    End Class
-
     Public Class InnerPanel
         Public Property Bounds As String
         Public Property Padding As String
@@ -166,10 +95,10 @@ Module InputBoxGUI
 
     Public Class InnerPanelChildren
         Public Property Textbox As InputBoxInnerPanelTextBox
-        Public Property YesButton As YesButton
-        Public Property NoButton As NoButton
-        Public Property OkayButton As OkayButton
-        Public Property PromptLabel As PromptLabel
+        Public Property YesButton As IntersectButton
+        Public Property NoButton As IntersectButton
+        Public Property OkayButton As IntersectButton
+        Public Property PromptLabel As IntersectLabel
     End Class
 
     Public Class InputBoxInnerPanelTextBox
@@ -196,193 +125,9 @@ Module InputBoxGUI
     End Class
 
     Public Class InputFieldTextboxChildren
-        Public Property TextboxText As TextboxText
+        Public Property TextboxText As IntersectField
     End Class
 
-    Public Class TextboxText
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
-        Public Property AddTextSound As String
-        Public Property RemoveTextSound As String
-        Public Property SubmitSound As String
-    End Class
-
-    Public Class YesButton
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
-        Public Property NormalImage As String
-        Public Property HoveredImage As String
-        Public Property ClickedImage As String
-        Public Property DisabledImage As String
-        Public Property CenterImage As Boolean
-        Public Property HoverSound As String
-        Public Property MouseUpSound As String
-        Public Property MouseDownSound As String
-        Public Property ClickSound As String
-    End Class
-
-    Public Class NoButton
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
-        Public Property NormalImage As String
-        Public Property HoveredImage As String
-        Public Property ClickedImage As String
-        Public Property DisabledImage As String
-        Public Property CenterImage As Boolean
-        Public Property HoverSound As String
-        Public Property MouseUpSound As String
-        Public Property MouseDownSound As String
-        Public Property ClickSound As String
-    End Class
-
-    Public Class OkayButton
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
-        Public Property NormalImage As String
-        Public Property HoveredImage As String
-        Public Property ClickedImage As String
-        Public Property DisabledImage As String
-        Public Property CenterImage As Boolean
-        Public Property HoverSound As String
-        Public Property MouseUpSound As String
-        Public Property MouseDownSound As String
-        Public Property ClickSound As String
-    End Class
-
-    Public Class PromptLabel
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
-    End Class
 
     Public Sub LoadInputBoxGUI(ByVal jsonfile As String)
         Form1.StatusText("[MAIN]     Opening " & jsonfile)

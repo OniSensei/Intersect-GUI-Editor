@@ -35,6 +35,47 @@ Partial Class Form1
         Me.jsonType = New System.Windows.Forms.TextBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.fullJson = New System.Windows.Forms.RichTextBox()
+        Me.MainRegistrationWindowPanel = New System.Windows.Forms.Panel()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Password2Panel = New System.Windows.Forms.Panel()
+        Me.Password2Field = New System.Windows.Forms.PictureBox()
+        Me.Password2Label = New System.Windows.Forms.Label()
+        Me.Password1Panel = New System.Windows.Forms.Panel()
+        Me.Password1Field = New System.Windows.Forms.PictureBox()
+        Me.Password1Label = New System.Windows.Forms.Label()
+        Me.RegistrationBackButton = New System.Windows.Forms.PictureBox()
+        Me.RegistrationRegisterButton = New System.Windows.Forms.PictureBox()
+        Me.EmailPanel = New System.Windows.Forms.Panel()
+        Me.EmailField = New System.Windows.Forms.PictureBox()
+        Me.EmailLabel = New System.Windows.Forms.Label()
+        Me.RegistrationUsernamePanel = New System.Windows.Forms.Panel()
+        Me.RegistrationUsernameField = New System.Windows.Forms.PictureBox()
+        Me.RegistrationUsernameLabel = New System.Windows.Forms.Label()
+        Me.RegistrationLabel = New System.Windows.Forms.Label()
+        Me.MainOptionsWindowPanel = New System.Windows.Forms.Panel()
+        Me.OptionsContainer = New System.Windows.Forms.Panel()
+        Me.OptionsCancelButton = New System.Windows.Forms.PictureBox()
+        Me.OptionsApplyButton = New System.Windows.Forms.PictureBox()
+        Me.MusicSlider = New System.Windows.Forms.Panel()
+        Me.MusicSliderBar = New System.Windows.Forms.PictureBox()
+        Me.MusicLabel = New System.Windows.Forms.Label()
+        Me.SoundSlider = New System.Windows.Forms.Panel()
+        Me.SoundSliderBar = New System.Windows.Forms.PictureBox()
+        Me.SoundLabel = New System.Windows.Forms.Label()
+        Me.KeybindingsButton = New System.Windows.Forms.PictureBox()
+        Me.AutocloseWindowsCheckboxPanel = New System.Windows.Forms.Panel()
+        Me.AutocloseWindowsCheckboxCheckbox = New System.Windows.Forms.PictureBox()
+        Me.AutocloseWindowsCheckboxLabel = New System.Windows.Forms.Label()
+        Me.FullscreenCheckboxPanel = New System.Windows.Forms.Panel()
+        Me.FullscreenCheckboxCheckbox = New System.Windows.Forms.PictureBox()
+        Me.FullscreenCheckboxLabel = New System.Windows.Forms.Label()
+        Me.FPSPanel = New System.Windows.Forms.Panel()
+        Me.FPSCombobox = New System.Windows.Forms.PictureBox()
+        Me.FPSLabel = New System.Windows.Forms.Label()
+        Me.ResolutionPanel = New System.Windows.Forms.Panel()
+        Me.ResolutionCombobox = New System.Windows.Forms.PictureBox()
+        Me.ResolutionLabel = New System.Windows.Forms.Label()
+        Me.OptionsHeader = New System.Windows.Forms.Label()
         Me.MainMenuWindowPanel = New System.Windows.Forms.Panel()
         Me.MainMenuOptionsButton = New System.Windows.Forms.PictureBox()
         Me.MainMenuExitButton = New System.Windows.Forms.PictureBox()
@@ -118,7 +159,8 @@ Partial Class Form1
         Me.UsernameFieldPB = New System.Windows.Forms.PictureBox()
         Me.UsernameLabel = New System.Windows.Forms.Label()
         Me.LoginHeaderLabel = New System.Windows.Forms.Label()
-        Me.statusTxtBox = New System.Windows.Forms.TextBox()
+        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
+        Me.statusTxtBox = New System.Windows.Forms.ToolStripStatusLabel()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GameToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -193,6 +235,35 @@ Partial Class Form1
         Me.SplitContainer1.Panel2.SuspendLayout()
         Me.SplitContainer1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
+        Me.MainRegistrationWindowPanel.SuspendLayout()
+        Me.Panel2.SuspendLayout()
+        Me.Password2Panel.SuspendLayout()
+        CType(Me.Password2Field, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Password1Panel.SuspendLayout()
+        CType(Me.Password1Field, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RegistrationBackButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RegistrationRegisterButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.EmailPanel.SuspendLayout()
+        CType(Me.EmailField, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.RegistrationUsernamePanel.SuspendLayout()
+        CType(Me.RegistrationUsernameField, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MainOptionsWindowPanel.SuspendLayout()
+        Me.OptionsContainer.SuspendLayout()
+        CType(Me.OptionsCancelButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.OptionsApplyButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MusicSlider.SuspendLayout()
+        CType(Me.MusicSliderBar, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SoundSlider.SuspendLayout()
+        CType(Me.SoundSliderBar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.KeybindingsButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.AutocloseWindowsCheckboxPanel.SuspendLayout()
+        CType(Me.AutocloseWindowsCheckboxCheckbox, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.FullscreenCheckboxPanel.SuspendLayout()
+        CType(Me.FullscreenCheckboxCheckbox, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.FPSPanel.SuspendLayout()
+        CType(Me.FPSCombobox, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ResolutionPanel.SuspendLayout()
+        CType(Me.ResolutionCombobox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MainMenuWindowPanel.SuspendLayout()
         CType(Me.MainMenuOptionsButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MainMenuExitButton, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -251,6 +322,7 @@ Partial Class Form1
         CType(Me.PasswordField, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.UsernamePanel.SuspendLayout()
         CType(Me.UsernameFieldPB, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.StatusStrip1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -267,9 +339,9 @@ Partial Class Form1
         '
         'mainSplitContainer.Panel2
         '
-        Me.mainSplitContainer.Panel2.Controls.Add(Me.statusTxtBox)
+        Me.mainSplitContainer.Panel2.Controls.Add(Me.StatusStrip1)
         Me.mainSplitContainer.Size = New System.Drawing.Size(1175, 662)
-        Me.mainSplitContainer.SplitterDistance = 551
+        Me.mainSplitContainer.SplitterDistance = 633
         Me.mainSplitContainer.TabIndex = 0
         '
         'toolSplitContainer
@@ -285,6 +357,8 @@ Partial Class Form1
         'toolSplitContainer.Panel2
         '
         Me.toolSplitContainer.Panel2.AutoScroll = True
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainRegistrationWindowPanel)
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainOptionsWindowPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainMenuWindowPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainLogoPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainInputBoxPanel)
@@ -293,7 +367,7 @@ Partial Class Form1
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainCharSelectionPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainCharacterCreationPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainLoginWindowPanel)
-        Me.toolSplitContainer.Size = New System.Drawing.Size(1175, 551)
+        Me.toolSplitContainer.Size = New System.Drawing.Size(1175, 633)
         Me.toolSplitContainer.SplitterDistance = 296
         Me.toolSplitContainer.TabIndex = 0
         '
@@ -306,7 +380,7 @@ Partial Class Form1
         Me.TabControl1.Location = New System.Drawing.Point(0, 0)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(296, 551)
+        Me.TabControl1.Size = New System.Drawing.Size(296, 633)
         Me.TabControl1.TabIndex = 1
         '
         'TabPage1
@@ -315,7 +389,7 @@ Partial Class Form1
         Me.TabPage1.Location = New System.Drawing.Point(4, 4)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(288, 525)
+        Me.TabPage1.Size = New System.Drawing.Size(288, 607)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Tree"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -337,8 +411,8 @@ Partial Class Form1
         Me.SplitContainer1.Panel2.Controls.Add(Me.jsonValue)
         Me.SplitContainer1.Panel2.Controls.Add(Me.jsonTypeCombo)
         Me.SplitContainer1.Panel2.Controls.Add(Me.jsonType)
-        Me.SplitContainer1.Size = New System.Drawing.Size(282, 519)
-        Me.SplitContainer1.SplitterDistance = 338
+        Me.SplitContainer1.Size = New System.Drawing.Size(282, 601)
+        Me.SplitContainer1.SplitterDistance = 391
         Me.SplitContainer1.TabIndex = 1
         '
         'JTokenTreeUserControl1
@@ -349,14 +423,14 @@ Partial Class Form1
         Me.JTokenTreeUserControl1.Location = New System.Drawing.Point(0, 0)
         Me.JTokenTreeUserControl1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.JTokenTreeUserControl1.Name = "JTokenTreeUserControl1"
-        Me.JTokenTreeUserControl1.Size = New System.Drawing.Size(282, 338)
+        Me.JTokenTreeUserControl1.Size = New System.Drawing.Size(282, 391)
         Me.JTokenTreeUserControl1.TabIndex = 1
         '
         'updateBtn
         '
         Me.updateBtn.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.updateBtn.Location = New System.Drawing.Point(5, 151)
+        Me.updateBtn.Location = New System.Drawing.Point(5, 180)
         Me.updateBtn.Name = "updateBtn"
         Me.updateBtn.Size = New System.Drawing.Size(274, 23)
         Me.updateBtn.TabIndex = 3
@@ -370,7 +444,7 @@ Partial Class Form1
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.jsonValue.Location = New System.Drawing.Point(5, 57)
         Me.jsonValue.Name = "jsonValue"
-        Me.jsonValue.Size = New System.Drawing.Size(274, 88)
+        Me.jsonValue.Size = New System.Drawing.Size(274, 117)
         Me.jsonValue.TabIndex = 2
         Me.jsonValue.Text = ""
         '
@@ -401,7 +475,7 @@ Partial Class Form1
         Me.TabPage2.Location = New System.Drawing.Point(4, 4)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(288, 525)
+        Me.TabPage2.Size = New System.Drawing.Size(288, 607)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Text"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -412,9 +486,472 @@ Partial Class Form1
         Me.fullJson.Location = New System.Drawing.Point(3, 3)
         Me.fullJson.Name = "fullJson"
         Me.fullJson.ReadOnly = True
-        Me.fullJson.Size = New System.Drawing.Size(282, 519)
+        Me.fullJson.Size = New System.Drawing.Size(282, 601)
         Me.fullJson.TabIndex = 0
         Me.fullJson.Text = ""
+        '
+        'MainRegistrationWindowPanel
+        '
+        Me.MainRegistrationWindowPanel.BackgroundImage = CType(resources.GetObject("MainRegistrationWindowPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainRegistrationWindowPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainRegistrationWindowPanel.Controls.Add(Me.Panel2)
+        Me.MainRegistrationWindowPanel.Controls.Add(Me.RegistrationLabel)
+        Me.MainRegistrationWindowPanel.Location = New System.Drawing.Point(716, 219)
+        Me.MainRegistrationWindowPanel.Name = "MainRegistrationWindowPanel"
+        Me.MainRegistrationWindowPanel.Size = New System.Drawing.Size(452, 198)
+        Me.MainRegistrationWindowPanel.TabIndex = 21
+        Me.MainRegistrationWindowPanel.Visible = False
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.Transparent
+        Me.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel2.Controls.Add(Me.Password2Panel)
+        Me.Panel2.Controls.Add(Me.Password1Panel)
+        Me.Panel2.Controls.Add(Me.RegistrationBackButton)
+        Me.Panel2.Controls.Add(Me.RegistrationRegisterButton)
+        Me.Panel2.Controls.Add(Me.EmailPanel)
+        Me.Panel2.Controls.Add(Me.RegistrationUsernamePanel)
+        Me.Panel2.Location = New System.Drawing.Point(0, 34)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(452, 179)
+        Me.Panel2.TabIndex = 7
+        '
+        'Password2Panel
+        '
+        Me.Password2Panel.BackColor = System.Drawing.Color.Transparent
+        Me.Password2Panel.BackgroundImage = CType(resources.GetObject("Password2Panel.BackgroundImage"), System.Drawing.Image)
+        Me.Password2Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Password2Panel.Controls.Add(Me.Password2Field)
+        Me.Password2Panel.Controls.Add(Me.Password2Label)
+        Me.Password2Panel.Location = New System.Drawing.Point(14, 162)
+        Me.Password2Panel.Name = "Password2Panel"
+        Me.Password2Panel.Size = New System.Drawing.Size(308, 28)
+        Me.Password2Panel.TabIndex = 20
+        '
+        'Password2Field
+        '
+        Me.Password2Field.BackgroundImage = CType(resources.GetObject("Password2Field.BackgroundImage"), System.Drawing.Image)
+        Me.Password2Field.Location = New System.Drawing.Point(4, 10)
+        Me.Password2Field.Name = "Password2Field"
+        Me.Password2Field.Size = New System.Drawing.Size(302, 16)
+        Me.Password2Field.TabIndex = 9
+        Me.Password2Field.TabStop = False
+        '
+        'Password2Label
+        '
+        Me.Password2Label.AutoSize = True
+        Me.Password2Label.BackColor = System.Drawing.Color.Transparent
+        Me.Password2Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Password2Label.ForeColor = System.Drawing.Color.White
+        Me.Password2Label.Location = New System.Drawing.Point(0, -4)
+        Me.Password2Label.Name = "Password2Label"
+        Me.Password2Label.Size = New System.Drawing.Size(119, 16)
+        Me.Password2Label.TabIndex = 5
+        Me.Password2Label.Text = "Confirm Password:"
+        '
+        'Password1Panel
+        '
+        Me.Password1Panel.BackColor = System.Drawing.Color.Transparent
+        Me.Password1Panel.BackgroundImage = CType(resources.GetObject("Password1Panel.BackgroundImage"), System.Drawing.Image)
+        Me.Password1Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Password1Panel.Controls.Add(Me.Password1Field)
+        Me.Password1Panel.Controls.Add(Me.Password1Label)
+        Me.Password1Panel.Location = New System.Drawing.Point(14, 126)
+        Me.Password1Panel.Name = "Password1Panel"
+        Me.Password1Panel.Size = New System.Drawing.Size(308, 28)
+        Me.Password1Panel.TabIndex = 19
+        '
+        'Password1Field
+        '
+        Me.Password1Field.BackgroundImage = CType(resources.GetObject("Password1Field.BackgroundImage"), System.Drawing.Image)
+        Me.Password1Field.Location = New System.Drawing.Point(4, 10)
+        Me.Password1Field.Name = "Password1Field"
+        Me.Password1Field.Size = New System.Drawing.Size(302, 16)
+        Me.Password1Field.TabIndex = 9
+        Me.Password1Field.TabStop = False
+        '
+        'Password1Label
+        '
+        Me.Password1Label.AutoSize = True
+        Me.Password1Label.BackColor = System.Drawing.Color.Transparent
+        Me.Password1Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Password1Label.ForeColor = System.Drawing.Color.White
+        Me.Password1Label.Location = New System.Drawing.Point(0, -4)
+        Me.Password1Label.Name = "Password1Label"
+        Me.Password1Label.Size = New System.Drawing.Size(71, 16)
+        Me.Password1Label.TabIndex = 5
+        Me.Password1Label.Text = "Password:"
+        '
+        'RegistrationBackButton
+        '
+        Me.RegistrationBackButton.BackColor = System.Drawing.Color.Transparent
+        Me.RegistrationBackButton.BackgroundImage = CType(resources.GetObject("RegistrationBackButton.BackgroundImage"), System.Drawing.Image)
+        Me.RegistrationBackButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.RegistrationBackButton.Location = New System.Drawing.Point(338, 89)
+        Me.RegistrationBackButton.Name = "RegistrationBackButton"
+        Me.RegistrationBackButton.Size = New System.Drawing.Size(96, 35)
+        Me.RegistrationBackButton.TabIndex = 18
+        Me.RegistrationBackButton.TabStop = False
+        '
+        'RegistrationRegisterButton
+        '
+        Me.RegistrationRegisterButton.BackColor = System.Drawing.Color.Transparent
+        Me.RegistrationRegisterButton.BackgroundImage = CType(resources.GetObject("RegistrationRegisterButton.BackgroundImage"), System.Drawing.Image)
+        Me.RegistrationRegisterButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.RegistrationRegisterButton.Location = New System.Drawing.Point(338, 54)
+        Me.RegistrationRegisterButton.Name = "RegistrationRegisterButton"
+        Me.RegistrationRegisterButton.Size = New System.Drawing.Size(96, 35)
+        Me.RegistrationRegisterButton.TabIndex = 17
+        Me.RegistrationRegisterButton.TabStop = False
+        '
+        'EmailPanel
+        '
+        Me.EmailPanel.BackColor = System.Drawing.Color.Transparent
+        Me.EmailPanel.BackgroundImage = CType(resources.GetObject("EmailPanel.BackgroundImage"), System.Drawing.Image)
+        Me.EmailPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.EmailPanel.Controls.Add(Me.EmailField)
+        Me.EmailPanel.Controls.Add(Me.EmailLabel)
+        Me.EmailPanel.Location = New System.Drawing.Point(14, 90)
+        Me.EmailPanel.Name = "EmailPanel"
+        Me.EmailPanel.Size = New System.Drawing.Size(308, 28)
+        Me.EmailPanel.TabIndex = 9
+        '
+        'EmailField
+        '
+        Me.EmailField.BackgroundImage = CType(resources.GetObject("EmailField.BackgroundImage"), System.Drawing.Image)
+        Me.EmailField.Location = New System.Drawing.Point(4, 10)
+        Me.EmailField.Name = "EmailField"
+        Me.EmailField.Size = New System.Drawing.Size(302, 16)
+        Me.EmailField.TabIndex = 9
+        Me.EmailField.TabStop = False
+        '
+        'EmailLabel
+        '
+        Me.EmailLabel.AutoSize = True
+        Me.EmailLabel.BackColor = System.Drawing.Color.Transparent
+        Me.EmailLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EmailLabel.ForeColor = System.Drawing.Color.White
+        Me.EmailLabel.Location = New System.Drawing.Point(0, -4)
+        Me.EmailLabel.Name = "EmailLabel"
+        Me.EmailLabel.Size = New System.Drawing.Size(45, 16)
+        Me.EmailLabel.TabIndex = 5
+        Me.EmailLabel.Text = "Email:"
+        '
+        'RegistrationUsernamePanel
+        '
+        Me.RegistrationUsernamePanel.BackColor = System.Drawing.Color.Transparent
+        Me.RegistrationUsernamePanel.BackgroundImage = CType(resources.GetObject("RegistrationUsernamePanel.BackgroundImage"), System.Drawing.Image)
+        Me.RegistrationUsernamePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.RegistrationUsernamePanel.Controls.Add(Me.RegistrationUsernameField)
+        Me.RegistrationUsernamePanel.Controls.Add(Me.RegistrationUsernameLabel)
+        Me.RegistrationUsernamePanel.Location = New System.Drawing.Point(14, 54)
+        Me.RegistrationUsernamePanel.Name = "RegistrationUsernamePanel"
+        Me.RegistrationUsernamePanel.Size = New System.Drawing.Size(308, 28)
+        Me.RegistrationUsernamePanel.TabIndex = 8
+        '
+        'RegistrationUsernameField
+        '
+        Me.RegistrationUsernameField.BackgroundImage = CType(resources.GetObject("RegistrationUsernameField.BackgroundImage"), System.Drawing.Image)
+        Me.RegistrationUsernameField.Location = New System.Drawing.Point(4, 10)
+        Me.RegistrationUsernameField.Name = "RegistrationUsernameField"
+        Me.RegistrationUsernameField.Size = New System.Drawing.Size(302, 16)
+        Me.RegistrationUsernameField.TabIndex = 9
+        Me.RegistrationUsernameField.TabStop = False
+        '
+        'RegistrationUsernameLabel
+        '
+        Me.RegistrationUsernameLabel.AutoSize = True
+        Me.RegistrationUsernameLabel.BackColor = System.Drawing.Color.Transparent
+        Me.RegistrationUsernameLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RegistrationUsernameLabel.ForeColor = System.Drawing.Color.White
+        Me.RegistrationUsernameLabel.Location = New System.Drawing.Point(0, -4)
+        Me.RegistrationUsernameLabel.Name = "RegistrationUsernameLabel"
+        Me.RegistrationUsernameLabel.Size = New System.Drawing.Size(74, 16)
+        Me.RegistrationUsernameLabel.TabIndex = 5
+        Me.RegistrationUsernameLabel.Text = "Username:"
+        '
+        'RegistrationLabel
+        '
+        Me.RegistrationLabel.AutoSize = True
+        Me.RegistrationLabel.BackColor = System.Drawing.Color.Transparent
+        Me.RegistrationLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RegistrationLabel.ForeColor = System.Drawing.Color.White
+        Me.RegistrationLabel.Location = New System.Drawing.Point(25, 9)
+        Me.RegistrationLabel.Name = "RegistrationLabel"
+        Me.RegistrationLabel.Size = New System.Drawing.Size(69, 20)
+        Me.RegistrationLabel.TabIndex = 3
+        Me.RegistrationLabel.Text = "Register"
+        '
+        'MainOptionsWindowPanel
+        '
+        Me.MainOptionsWindowPanel.BackgroundImage = CType(resources.GetObject("MainOptionsWindowPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainOptionsWindowPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainOptionsWindowPanel.Controls.Add(Me.OptionsContainer)
+        Me.MainOptionsWindowPanel.Controls.Add(Me.OptionsHeader)
+        Me.MainOptionsWindowPanel.Location = New System.Drawing.Point(715, 0)
+        Me.MainOptionsWindowPanel.Name = "MainOptionsWindowPanel"
+        Me.MainOptionsWindowPanel.Size = New System.Drawing.Size(452, 213)
+        Me.MainOptionsWindowPanel.TabIndex = 20
+        Me.MainOptionsWindowPanel.Visible = False
+        '
+        'OptionsContainer
+        '
+        Me.OptionsContainer.BackColor = System.Drawing.Color.Transparent
+        Me.OptionsContainer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.OptionsContainer.Controls.Add(Me.OptionsCancelButton)
+        Me.OptionsContainer.Controls.Add(Me.OptionsApplyButton)
+        Me.OptionsContainer.Controls.Add(Me.MusicSlider)
+        Me.OptionsContainer.Controls.Add(Me.MusicLabel)
+        Me.OptionsContainer.Controls.Add(Me.SoundSlider)
+        Me.OptionsContainer.Controls.Add(Me.SoundLabel)
+        Me.OptionsContainer.Controls.Add(Me.KeybindingsButton)
+        Me.OptionsContainer.Controls.Add(Me.AutocloseWindowsCheckboxPanel)
+        Me.OptionsContainer.Controls.Add(Me.FullscreenCheckboxPanel)
+        Me.OptionsContainer.Controls.Add(Me.FPSPanel)
+        Me.OptionsContainer.Controls.Add(Me.ResolutionPanel)
+        Me.OptionsContainer.Location = New System.Drawing.Point(0, 34)
+        Me.OptionsContainer.Name = "OptionsContainer"
+        Me.OptionsContainer.Size = New System.Drawing.Size(452, 179)
+        Me.OptionsContainer.TabIndex = 7
+        '
+        'OptionsCancelButton
+        '
+        Me.OptionsCancelButton.BackColor = System.Drawing.Color.Transparent
+        Me.OptionsCancelButton.BackgroundImage = CType(resources.GetObject("OptionsCancelButton.BackgroundImage"), System.Drawing.Image)
+        Me.OptionsCancelButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.OptionsCancelButton.Location = New System.Drawing.Point(342, 140)
+        Me.OptionsCancelButton.Name = "OptionsCancelButton"
+        Me.OptionsCancelButton.Size = New System.Drawing.Size(96, 35)
+        Me.OptionsCancelButton.TabIndex = 18
+        Me.OptionsCancelButton.TabStop = False
+        '
+        'OptionsApplyButton
+        '
+        Me.OptionsApplyButton.BackColor = System.Drawing.Color.Transparent
+        Me.OptionsApplyButton.BackgroundImage = CType(resources.GetObject("OptionsApplyButton.BackgroundImage"), System.Drawing.Image)
+        Me.OptionsApplyButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.OptionsApplyButton.Location = New System.Drawing.Point(238, 140)
+        Me.OptionsApplyButton.Name = "OptionsApplyButton"
+        Me.OptionsApplyButton.Size = New System.Drawing.Size(96, 35)
+        Me.OptionsApplyButton.TabIndex = 17
+        Me.OptionsApplyButton.TabStop = False
+        '
+        'MusicSlider
+        '
+        Me.MusicSlider.BackColor = System.Drawing.Color.Transparent
+        Me.MusicSlider.BackgroundImage = CType(resources.GetObject("MusicSlider.BackgroundImage"), System.Drawing.Image)
+        Me.MusicSlider.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MusicSlider.Controls.Add(Me.MusicSliderBar)
+        Me.MusicSlider.Location = New System.Drawing.Point(238, 62)
+        Me.MusicSlider.Name = "MusicSlider"
+        Me.MusicSlider.Size = New System.Drawing.Size(200, 35)
+        Me.MusicSlider.TabIndex = 16
+        '
+        'MusicSliderBar
+        '
+        Me.MusicSliderBar.BackgroundImage = CType(resources.GetObject("MusicSliderBar.BackgroundImage"), System.Drawing.Image)
+        Me.MusicSliderBar.Location = New System.Drawing.Point(0, 0)
+        Me.MusicSliderBar.Name = "MusicSliderBar"
+        Me.MusicSliderBar.Size = New System.Drawing.Size(9, 35)
+        Me.MusicSliderBar.TabIndex = 0
+        Me.MusicSliderBar.TabStop = False
+        '
+        'MusicLabel
+        '
+        Me.MusicLabel.AutoSize = True
+        Me.MusicLabel.BackColor = System.Drawing.Color.Transparent
+        Me.MusicLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MusicLabel.ForeColor = System.Drawing.Color.White
+        Me.MusicLabel.Location = New System.Drawing.Point(238, 56)
+        Me.MusicLabel.Name = "MusicLabel"
+        Me.MusicLabel.Size = New System.Drawing.Size(95, 16)
+        Me.MusicLabel.TabIndex = 15
+        Me.MusicLabel.Text = "Music Volume:"
+        '
+        'SoundSlider
+        '
+        Me.SoundSlider.BackColor = System.Drawing.Color.Transparent
+        Me.SoundSlider.BackgroundImage = CType(resources.GetObject("SoundSlider.BackgroundImage"), System.Drawing.Image)
+        Me.SoundSlider.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.SoundSlider.Controls.Add(Me.SoundSliderBar)
+        Me.SoundSlider.Location = New System.Drawing.Point(14, 62)
+        Me.SoundSlider.Name = "SoundSlider"
+        Me.SoundSlider.Size = New System.Drawing.Size(200, 35)
+        Me.SoundSlider.TabIndex = 14
+        '
+        'SoundSliderBar
+        '
+        Me.SoundSliderBar.BackgroundImage = CType(resources.GetObject("SoundSliderBar.BackgroundImage"), System.Drawing.Image)
+        Me.SoundSliderBar.Location = New System.Drawing.Point(0, 0)
+        Me.SoundSliderBar.Name = "SoundSliderBar"
+        Me.SoundSliderBar.Size = New System.Drawing.Size(9, 35)
+        Me.SoundSliderBar.TabIndex = 0
+        Me.SoundSliderBar.TabStop = False
+        '
+        'SoundLabel
+        '
+        Me.SoundLabel.AutoSize = True
+        Me.SoundLabel.BackColor = System.Drawing.Color.Transparent
+        Me.SoundLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SoundLabel.ForeColor = System.Drawing.Color.White
+        Me.SoundLabel.Location = New System.Drawing.Point(14, 56)
+        Me.SoundLabel.Name = "SoundLabel"
+        Me.SoundLabel.Size = New System.Drawing.Size(99, 16)
+        Me.SoundLabel.TabIndex = 13
+        Me.SoundLabel.Text = "Sound Volume:"
+        '
+        'KeybindingsButton
+        '
+        Me.KeybindingsButton.BackgroundImage = CType(resources.GetObject("KeybindingsButton.BackgroundImage"), System.Drawing.Image)
+        Me.KeybindingsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.KeybindingsButton.Location = New System.Drawing.Point(238, 102)
+        Me.KeybindingsButton.Name = "KeybindingsButton"
+        Me.KeybindingsButton.Size = New System.Drawing.Size(200, 26)
+        Me.KeybindingsButton.TabIndex = 12
+        Me.KeybindingsButton.TabStop = False
+        '
+        'AutocloseWindowsCheckboxPanel
+        '
+        Me.AutocloseWindowsCheckboxPanel.BackColor = System.Drawing.Color.Transparent
+        Me.AutocloseWindowsCheckboxPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.AutocloseWindowsCheckboxPanel.Controls.Add(Me.AutocloseWindowsCheckboxCheckbox)
+        Me.AutocloseWindowsCheckboxPanel.Controls.Add(Me.AutocloseWindowsCheckboxLabel)
+        Me.AutocloseWindowsCheckboxPanel.Location = New System.Drawing.Point(14, 125)
+        Me.AutocloseWindowsCheckboxPanel.Name = "AutocloseWindowsCheckboxPanel"
+        Me.AutocloseWindowsCheckboxPanel.Size = New System.Drawing.Size(200, 24)
+        Me.AutocloseWindowsCheckboxPanel.TabIndex = 11
+        '
+        'AutocloseWindowsCheckboxCheckbox
+        '
+        Me.AutocloseWindowsCheckboxCheckbox.BackgroundImage = CType(resources.GetObject("AutocloseWindowsCheckboxCheckbox.BackgroundImage"), System.Drawing.Image)
+        Me.AutocloseWindowsCheckboxCheckbox.Location = New System.Drawing.Point(179, 0)
+        Me.AutocloseWindowsCheckboxCheckbox.Name = "AutocloseWindowsCheckboxCheckbox"
+        Me.AutocloseWindowsCheckboxCheckbox.Size = New System.Drawing.Size(24, 25)
+        Me.AutocloseWindowsCheckboxCheckbox.TabIndex = 9
+        Me.AutocloseWindowsCheckboxCheckbox.TabStop = False
+        '
+        'AutocloseWindowsCheckboxLabel
+        '
+        Me.AutocloseWindowsCheckboxLabel.AutoSize = True
+        Me.AutocloseWindowsCheckboxLabel.BackColor = System.Drawing.Color.Transparent
+        Me.AutocloseWindowsCheckboxLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AutocloseWindowsCheckboxLabel.ForeColor = System.Drawing.Color.White
+        Me.AutocloseWindowsCheckboxLabel.Location = New System.Drawing.Point(0, 6)
+        Me.AutocloseWindowsCheckboxLabel.Name = "AutocloseWindowsCheckboxLabel"
+        Me.AutocloseWindowsCheckboxLabel.Size = New System.Drawing.Size(126, 16)
+        Me.AutocloseWindowsCheckboxLabel.TabIndex = 5
+        Me.AutocloseWindowsCheckboxLabel.Text = "Auto-close windows"
+        '
+        'FullscreenCheckboxPanel
+        '
+        Me.FullscreenCheckboxPanel.BackColor = System.Drawing.Color.Transparent
+        Me.FullscreenCheckboxPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.FullscreenCheckboxPanel.Controls.Add(Me.FullscreenCheckboxCheckbox)
+        Me.FullscreenCheckboxPanel.Controls.Add(Me.FullscreenCheckboxLabel)
+        Me.FullscreenCheckboxPanel.Location = New System.Drawing.Point(14, 99)
+        Me.FullscreenCheckboxPanel.Name = "FullscreenCheckboxPanel"
+        Me.FullscreenCheckboxPanel.Size = New System.Drawing.Size(200, 24)
+        Me.FullscreenCheckboxPanel.TabIndex = 10
+        '
+        'FullscreenCheckboxCheckbox
+        '
+        Me.FullscreenCheckboxCheckbox.BackgroundImage = CType(resources.GetObject("FullscreenCheckboxCheckbox.BackgroundImage"), System.Drawing.Image)
+        Me.FullscreenCheckboxCheckbox.Location = New System.Drawing.Point(179, 0)
+        Me.FullscreenCheckboxCheckbox.Name = "FullscreenCheckboxCheckbox"
+        Me.FullscreenCheckboxCheckbox.Size = New System.Drawing.Size(24, 25)
+        Me.FullscreenCheckboxCheckbox.TabIndex = 9
+        Me.FullscreenCheckboxCheckbox.TabStop = False
+        '
+        'FullscreenCheckboxLabel
+        '
+        Me.FullscreenCheckboxLabel.AutoSize = True
+        Me.FullscreenCheckboxLabel.BackColor = System.Drawing.Color.Transparent
+        Me.FullscreenCheckboxLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FullscreenCheckboxLabel.ForeColor = System.Drawing.Color.White
+        Me.FullscreenCheckboxLabel.Location = New System.Drawing.Point(0, 6)
+        Me.FullscreenCheckboxLabel.Name = "FullscreenCheckboxLabel"
+        Me.FullscreenCheckboxLabel.Size = New System.Drawing.Size(70, 16)
+        Me.FullscreenCheckboxLabel.TabIndex = 5
+        Me.FullscreenCheckboxLabel.Text = "Fullscreen"
+        '
+        'FPSPanel
+        '
+        Me.FPSPanel.BackColor = System.Drawing.Color.Transparent
+        Me.FPSPanel.BackgroundImage = CType(resources.GetObject("FPSPanel.BackgroundImage"), System.Drawing.Image)
+        Me.FPSPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.FPSPanel.Controls.Add(Me.FPSCombobox)
+        Me.FPSPanel.Controls.Add(Me.FPSLabel)
+        Me.FPSPanel.Location = New System.Drawing.Point(238, 20)
+        Me.FPSPanel.Name = "FPSPanel"
+        Me.FPSPanel.Size = New System.Drawing.Size(200, 29)
+        Me.FPSPanel.TabIndex = 9
+        '
+        'FPSCombobox
+        '
+        Me.FPSCombobox.BackgroundImage = CType(resources.GetObject("FPSCombobox.BackgroundImage"), System.Drawing.Image)
+        Me.FPSCombobox.Location = New System.Drawing.Point(0, 10)
+        Me.FPSCombobox.Name = "FPSCombobox"
+        Me.FPSCombobox.Size = New System.Drawing.Size(200, 16)
+        Me.FPSCombobox.TabIndex = 9
+        Me.FPSCombobox.TabStop = False
+        '
+        'FPSLabel
+        '
+        Me.FPSLabel.AutoSize = True
+        Me.FPSLabel.BackColor = System.Drawing.Color.Transparent
+        Me.FPSLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FPSLabel.ForeColor = System.Drawing.Color.White
+        Me.FPSLabel.Location = New System.Drawing.Point(0, -4)
+        Me.FPSLabel.Name = "FPSLabel"
+        Me.FPSLabel.Size = New System.Drawing.Size(80, 16)
+        Me.FPSLabel.TabIndex = 5
+        Me.FPSLabel.Text = "Target FPS:"
+        '
+        'ResolutionPanel
+        '
+        Me.ResolutionPanel.BackColor = System.Drawing.Color.Transparent
+        Me.ResolutionPanel.BackgroundImage = CType(resources.GetObject("ResolutionPanel.BackgroundImage"), System.Drawing.Image)
+        Me.ResolutionPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ResolutionPanel.Controls.Add(Me.ResolutionCombobox)
+        Me.ResolutionPanel.Controls.Add(Me.ResolutionLabel)
+        Me.ResolutionPanel.Location = New System.Drawing.Point(14, 20)
+        Me.ResolutionPanel.Name = "ResolutionPanel"
+        Me.ResolutionPanel.Size = New System.Drawing.Size(200, 29)
+        Me.ResolutionPanel.TabIndex = 8
+        '
+        'ResolutionCombobox
+        '
+        Me.ResolutionCombobox.BackgroundImage = CType(resources.GetObject("ResolutionCombobox.BackgroundImage"), System.Drawing.Image)
+        Me.ResolutionCombobox.Location = New System.Drawing.Point(0, 10)
+        Me.ResolutionCombobox.Name = "ResolutionCombobox"
+        Me.ResolutionCombobox.Size = New System.Drawing.Size(200, 16)
+        Me.ResolutionCombobox.TabIndex = 9
+        Me.ResolutionCombobox.TabStop = False
+        '
+        'ResolutionLabel
+        '
+        Me.ResolutionLabel.AutoSize = True
+        Me.ResolutionLabel.BackColor = System.Drawing.Color.Transparent
+        Me.ResolutionLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ResolutionLabel.ForeColor = System.Drawing.Color.White
+        Me.ResolutionLabel.Location = New System.Drawing.Point(0, -4)
+        Me.ResolutionLabel.Name = "ResolutionLabel"
+        Me.ResolutionLabel.Size = New System.Drawing.Size(75, 16)
+        Me.ResolutionLabel.TabIndex = 5
+        Me.ResolutionLabel.Text = "Resolution:"
+        '
+        'OptionsHeader
+        '
+        Me.OptionsHeader.AutoSize = True
+        Me.OptionsHeader.BackColor = System.Drawing.Color.Transparent
+        Me.OptionsHeader.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.OptionsHeader.ForeColor = System.Drawing.Color.White
+        Me.OptionsHeader.Location = New System.Drawing.Point(25, 9)
+        Me.OptionsHeader.Name = "OptionsHeader"
+        Me.OptionsHeader.Size = New System.Drawing.Size(64, 20)
+        Me.OptionsHeader.TabIndex = 3
+        Me.OptionsHeader.Text = "Options"
         '
         'MainMenuWindowPanel
         '
@@ -1378,16 +1915,21 @@ Partial Class Form1
         Me.LoginHeaderLabel.TabIndex = 3
         Me.LoginHeaderLabel.Text = "Login"
         '
+        'StatusStrip1
+        '
+        Me.StatusStrip1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.statusTxtBox})
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.StatusStrip1.Name = "StatusStrip1"
+        Me.StatusStrip1.Size = New System.Drawing.Size(1175, 25)
+        Me.StatusStrip1.TabIndex = 0
+        Me.StatusStrip1.Text = "StatusStrip1"
+        '
         'statusTxtBox
         '
-        Me.statusTxtBox.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.statusTxtBox.Location = New System.Drawing.Point(0, 0)
-        Me.statusTxtBox.Multiline = True
         Me.statusTxtBox.Name = "statusTxtBox"
-        Me.statusTxtBox.ReadOnly = True
-        Me.statusTxtBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.statusTxtBox.Size = New System.Drawing.Size(1175, 107)
-        Me.statusTxtBox.TabIndex = 0
+        Me.statusTxtBox.Size = New System.Drawing.Size(51, 20)
+        Me.statusTxtBox.Text = "Ready...."
         '
         'MenuStrip1
         '
@@ -1781,6 +2323,46 @@ Partial Class Form1
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainer1.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
+        Me.MainRegistrationWindowPanel.ResumeLayout(False)
+        Me.MainRegistrationWindowPanel.PerformLayout()
+        Me.Panel2.ResumeLayout(False)
+        Me.Password2Panel.ResumeLayout(False)
+        Me.Password2Panel.PerformLayout()
+        CType(Me.Password2Field, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Password1Panel.ResumeLayout(False)
+        Me.Password1Panel.PerformLayout()
+        CType(Me.Password1Field, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RegistrationBackButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RegistrationRegisterButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.EmailPanel.ResumeLayout(False)
+        Me.EmailPanel.PerformLayout()
+        CType(Me.EmailField, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.RegistrationUsernamePanel.ResumeLayout(False)
+        Me.RegistrationUsernamePanel.PerformLayout()
+        CType(Me.RegistrationUsernameField, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainOptionsWindowPanel.ResumeLayout(False)
+        Me.MainOptionsWindowPanel.PerformLayout()
+        Me.OptionsContainer.ResumeLayout(False)
+        Me.OptionsContainer.PerformLayout()
+        CType(Me.OptionsCancelButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.OptionsApplyButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MusicSlider.ResumeLayout(False)
+        CType(Me.MusicSliderBar, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.SoundSlider.ResumeLayout(False)
+        CType(Me.SoundSliderBar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.KeybindingsButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.AutocloseWindowsCheckboxPanel.ResumeLayout(False)
+        Me.AutocloseWindowsCheckboxPanel.PerformLayout()
+        CType(Me.AutocloseWindowsCheckboxCheckbox, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.FullscreenCheckboxPanel.ResumeLayout(False)
+        Me.FullscreenCheckboxPanel.PerformLayout()
+        CType(Me.FullscreenCheckboxCheckbox, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.FPSPanel.ResumeLayout(False)
+        Me.FPSPanel.PerformLayout()
+        CType(Me.FPSCombobox, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResolutionPanel.ResumeLayout(False)
+        Me.ResolutionPanel.PerformLayout()
+        CType(Me.ResolutionCombobox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MainMenuWindowPanel.ResumeLayout(False)
         Me.MainMenuWindowPanel.PerformLayout()
         CType(Me.MainMenuOptionsButton, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1857,6 +2439,8 @@ Partial Class Form1
         Me.UsernamePanel.ResumeLayout(False)
         Me.UsernamePanel.PerformLayout()
         CType(Me.UsernameFieldPB, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.StatusStrip1.ResumeLayout(False)
+        Me.StatusStrip1.PerformLayout()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
@@ -1866,7 +2450,6 @@ Partial Class Form1
 
     Friend WithEvents mainSplitContainer As SplitContainer
     Friend WithEvents toolSplitContainer As SplitContainer
-    Friend WithEvents statusTxtBox As TextBox
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents MainLoginWindowPanel As Panel
@@ -2019,4 +2602,47 @@ Partial Class Form1
     Friend WithEvents MainMenuLoginButton As PictureBox
     Friend WithEvents ServerStatusLabel As Label
     Friend WithEvents MainMenuTitle As Label
+    Friend WithEvents MainOptionsWindowPanel As Panel
+    Friend WithEvents OptionsContainer As Panel
+    Friend WithEvents OptionsCancelButton As PictureBox
+    Friend WithEvents OptionsApplyButton As PictureBox
+    Friend WithEvents MusicSlider As Panel
+    Friend WithEvents MusicSliderBar As PictureBox
+    Friend WithEvents MusicLabel As Label
+    Friend WithEvents SoundSlider As Panel
+    Friend WithEvents SoundSliderBar As PictureBox
+    Friend WithEvents SoundLabel As Label
+    Friend WithEvents KeybindingsButton As PictureBox
+    Friend WithEvents AutocloseWindowsCheckboxPanel As Panel
+    Friend WithEvents AutocloseWindowsCheckboxCheckbox As PictureBox
+    Friend WithEvents AutocloseWindowsCheckboxLabel As Label
+    Friend WithEvents FullscreenCheckboxPanel As Panel
+    Friend WithEvents FullscreenCheckboxCheckbox As PictureBox
+    Friend WithEvents FullscreenCheckboxLabel As Label
+    Friend WithEvents FPSPanel As Panel
+    Friend WithEvents FPSCombobox As PictureBox
+    Friend WithEvents FPSLabel As Label
+    Friend WithEvents ResolutionPanel As Panel
+    Friend WithEvents ResolutionCombobox As PictureBox
+    Friend WithEvents ResolutionLabel As Label
+    Friend WithEvents OptionsHeader As Label
+    Friend WithEvents StatusStrip1 As StatusStrip
+    Friend WithEvents statusTxtBox As ToolStripStatusLabel
+    Friend WithEvents MainRegistrationWindowPanel As Panel
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents Password2Panel As Panel
+    Friend WithEvents Password2Field As PictureBox
+    Friend WithEvents Password2Label As Label
+    Friend WithEvents Password1Panel As Panel
+    Friend WithEvents Password1Field As PictureBox
+    Friend WithEvents Password1Label As Label
+    Friend WithEvents RegistrationBackButton As PictureBox
+    Friend WithEvents RegistrationRegisterButton As PictureBox
+    Friend WithEvents EmailPanel As Panel
+    Friend WithEvents EmailField As PictureBox
+    Friend WithEvents EmailLabel As Label
+    Friend WithEvents RegistrationUsernamePanel As Panel
+    Friend WithEvents RegistrationUsernameField As PictureBox
+    Friend WithEvents RegistrationUsernameLabel As Label
+    Friend WithEvents RegistrationLabel As Label
 End Class
