@@ -35,6 +35,21 @@ Partial Class Form1
         Me.jsonType = New System.Windows.Forms.TextBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.fullJson = New System.Windows.Forms.RichTextBox()
+        Me.MainServerStatusAreaPanel = New System.Windows.Forms.Panel()
+        Me.ServerStatusAreaServerStatusLabel = New System.Windows.Forms.Label()
+        Me.MainResetPasswordWindowPanel = New System.Windows.Forms.Panel()
+        Me.ResetPassword2Panel = New System.Windows.Forms.Panel()
+        Me.ResetPassword2Field = New System.Windows.Forms.PictureBox()
+        Me.ResetPassword2Label = New System.Windows.Forms.Label()
+        Me.ResetPassword1Panel = New System.Windows.Forms.Panel()
+        Me.ResetPassword1Field = New System.Windows.Forms.PictureBox()
+        Me.ResetPassword1Label = New System.Windows.Forms.Label()
+        Me.ResetBackButton = New System.Windows.Forms.PictureBox()
+        Me.ResetSubmitButton = New System.Windows.Forms.PictureBox()
+        Me.CodePanel = New System.Windows.Forms.Panel()
+        Me.CodeField = New System.Windows.Forms.PictureBox()
+        Me.CodeLabel = New System.Windows.Forms.Label()
+        Me.ResetPassHeader = New System.Windows.Forms.Label()
         Me.MainRegistrationWindowPanel = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Password2Panel = New System.Windows.Forms.Panel()
@@ -235,6 +250,16 @@ Partial Class Form1
         Me.SplitContainer1.Panel2.SuspendLayout()
         Me.SplitContainer1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
+        Me.MainServerStatusAreaPanel.SuspendLayout()
+        Me.MainResetPasswordWindowPanel.SuspendLayout()
+        Me.ResetPassword2Panel.SuspendLayout()
+        CType(Me.ResetPassword2Field, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ResetPassword1Panel.SuspendLayout()
+        CType(Me.ResetPassword1Field, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ResetBackButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ResetSubmitButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.CodePanel.SuspendLayout()
+        CType(Me.CodeField, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MainRegistrationWindowPanel.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Password2Panel.SuspendLayout()
@@ -340,8 +365,8 @@ Partial Class Form1
         'mainSplitContainer.Panel2
         '
         Me.mainSplitContainer.Panel2.Controls.Add(Me.StatusStrip1)
-        Me.mainSplitContainer.Size = New System.Drawing.Size(1175, 662)
-        Me.mainSplitContainer.SplitterDistance = 633
+        Me.mainSplitContainer.Size = New System.Drawing.Size(1084, 631)
+        Me.mainSplitContainer.SplitterDistance = 603
         Me.mainSplitContainer.TabIndex = 0
         '
         'toolSplitContainer
@@ -357,6 +382,8 @@ Partial Class Form1
         'toolSplitContainer.Panel2
         '
         Me.toolSplitContainer.Panel2.AutoScroll = True
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainServerStatusAreaPanel)
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainResetPasswordWindowPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainRegistrationWindowPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainOptionsWindowPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainMenuWindowPanel)
@@ -367,8 +394,8 @@ Partial Class Form1
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainCharSelectionPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainCharacterCreationPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainLoginWindowPanel)
-        Me.toolSplitContainer.Size = New System.Drawing.Size(1175, 633)
-        Me.toolSplitContainer.SplitterDistance = 296
+        Me.toolSplitContainer.Size = New System.Drawing.Size(1084, 603)
+        Me.toolSplitContainer.SplitterDistance = 273
         Me.toolSplitContainer.TabIndex = 0
         '
         'TabControl1
@@ -380,7 +407,7 @@ Partial Class Form1
         Me.TabControl1.Location = New System.Drawing.Point(0, 0)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(296, 633)
+        Me.TabControl1.Size = New System.Drawing.Size(273, 603)
         Me.TabControl1.TabIndex = 1
         '
         'TabPage1
@@ -389,7 +416,7 @@ Partial Class Form1
         Me.TabPage1.Location = New System.Drawing.Point(4, 4)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(288, 607)
+        Me.TabPage1.Size = New System.Drawing.Size(265, 577)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Tree"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -411,8 +438,8 @@ Partial Class Form1
         Me.SplitContainer1.Panel2.Controls.Add(Me.jsonValue)
         Me.SplitContainer1.Panel2.Controls.Add(Me.jsonTypeCombo)
         Me.SplitContainer1.Panel2.Controls.Add(Me.jsonType)
-        Me.SplitContainer1.Size = New System.Drawing.Size(282, 601)
-        Me.SplitContainer1.SplitterDistance = 391
+        Me.SplitContainer1.Size = New System.Drawing.Size(259, 571)
+        Me.SplitContainer1.SplitterDistance = 371
         Me.SplitContainer1.TabIndex = 1
         '
         'JTokenTreeUserControl1
@@ -423,16 +450,16 @@ Partial Class Form1
         Me.JTokenTreeUserControl1.Location = New System.Drawing.Point(0, 0)
         Me.JTokenTreeUserControl1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.JTokenTreeUserControl1.Name = "JTokenTreeUserControl1"
-        Me.JTokenTreeUserControl1.Size = New System.Drawing.Size(282, 391)
+        Me.JTokenTreeUserControl1.Size = New System.Drawing.Size(259, 371)
         Me.JTokenTreeUserControl1.TabIndex = 1
         '
         'updateBtn
         '
         Me.updateBtn.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.updateBtn.Location = New System.Drawing.Point(5, 180)
+        Me.updateBtn.Location = New System.Drawing.Point(5, 170)
         Me.updateBtn.Name = "updateBtn"
-        Me.updateBtn.Size = New System.Drawing.Size(274, 23)
+        Me.updateBtn.Size = New System.Drawing.Size(251, 23)
         Me.updateBtn.TabIndex = 3
         Me.updateBtn.Text = "Update"
         Me.updateBtn.UseVisualStyleBackColor = True
@@ -444,7 +471,7 @@ Partial Class Form1
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.jsonValue.Location = New System.Drawing.Point(5, 57)
         Me.jsonValue.Name = "jsonValue"
-        Me.jsonValue.Size = New System.Drawing.Size(274, 117)
+        Me.jsonValue.Size = New System.Drawing.Size(251, 107)
         Me.jsonValue.TabIndex = 2
         Me.jsonValue.Text = ""
         '
@@ -456,7 +483,7 @@ Partial Class Form1
         Me.jsonTypeCombo.FormattingEnabled = True
         Me.jsonTypeCombo.Location = New System.Drawing.Point(5, 30)
         Me.jsonTypeCombo.Name = "jsonTypeCombo"
-        Me.jsonTypeCombo.Size = New System.Drawing.Size(274, 21)
+        Me.jsonTypeCombo.Size = New System.Drawing.Size(251, 21)
         Me.jsonTypeCombo.TabIndex = 1
         '
         'jsonType
@@ -466,7 +493,7 @@ Partial Class Form1
         Me.jsonType.Location = New System.Drawing.Point(5, 4)
         Me.jsonType.Name = "jsonType"
         Me.jsonType.ReadOnly = True
-        Me.jsonType.Size = New System.Drawing.Size(274, 20)
+        Me.jsonType.Size = New System.Drawing.Size(251, 20)
         Me.jsonType.TabIndex = 0
         '
         'TabPage2
@@ -489,6 +516,182 @@ Partial Class Form1
         Me.fullJson.Size = New System.Drawing.Size(282, 601)
         Me.fullJson.TabIndex = 0
         Me.fullJson.Text = ""
+        '
+        'MainServerStatusAreaPanel
+        '
+        Me.MainServerStatusAreaPanel.BackColor = System.Drawing.Color.Transparent
+        Me.MainServerStatusAreaPanel.BackgroundImage = CType(resources.GetObject("MainServerStatusAreaPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainServerStatusAreaPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainServerStatusAreaPanel.Controls.Add(Me.ServerStatusAreaServerStatusLabel)
+        Me.MainServerStatusAreaPanel.Location = New System.Drawing.Point(16, 341)
+        Me.MainServerStatusAreaPanel.Name = "MainServerStatusAreaPanel"
+        Me.MainServerStatusAreaPanel.Size = New System.Drawing.Size(200, 24)
+        Me.MainServerStatusAreaPanel.TabIndex = 23
+        Me.MainServerStatusAreaPanel.Visible = False
+        '
+        'ServerStatusAreaServerStatusLabel
+        '
+        Me.ServerStatusAreaServerStatusLabel.AutoSize = True
+        Me.ServerStatusAreaServerStatusLabel.BackColor = System.Drawing.Color.Transparent
+        Me.ServerStatusAreaServerStatusLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ServerStatusAreaServerStatusLabel.ForeColor = System.Drawing.Color.White
+        Me.ServerStatusAreaServerStatusLabel.Location = New System.Drawing.Point(0, 4)
+        Me.ServerStatusAreaServerStatusLabel.Name = "ServerStatusAreaServerStatusLabel"
+        Me.ServerStatusAreaServerStatusLabel.Size = New System.Drawing.Size(91, 16)
+        Me.ServerStatusAreaServerStatusLabel.TabIndex = 5
+        Me.ServerStatusAreaServerStatusLabel.Text = "Server Status:"
+        '
+        'MainResetPasswordWindowPanel
+        '
+        Me.MainResetPasswordWindowPanel.BackgroundImage = CType(resources.GetObject("MainResetPasswordWindowPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainResetPasswordWindowPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainResetPasswordWindowPanel.Controls.Add(Me.ResetPassword2Panel)
+        Me.MainResetPasswordWindowPanel.Controls.Add(Me.ResetPassword1Panel)
+        Me.MainResetPasswordWindowPanel.Controls.Add(Me.ResetBackButton)
+        Me.MainResetPasswordWindowPanel.Controls.Add(Me.ResetSubmitButton)
+        Me.MainResetPasswordWindowPanel.Controls.Add(Me.CodePanel)
+        Me.MainResetPasswordWindowPanel.Controls.Add(Me.ResetPassHeader)
+        Me.MainResetPasswordWindowPanel.Location = New System.Drawing.Point(716, 425)
+        Me.MainResetPasswordWindowPanel.Name = "MainResetPasswordWindowPanel"
+        Me.MainResetPasswordWindowPanel.Size = New System.Drawing.Size(452, 158)
+        Me.MainResetPasswordWindowPanel.TabIndex = 22
+        Me.MainResetPasswordWindowPanel.Visible = False
+        '
+        'ResetPassword2Panel
+        '
+        Me.ResetPassword2Panel.BackColor = System.Drawing.Color.Transparent
+        Me.ResetPassword2Panel.BackgroundImage = CType(resources.GetObject("ResetPassword2Panel.BackgroundImage"), System.Drawing.Image)
+        Me.ResetPassword2Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ResetPassword2Panel.Controls.Add(Me.ResetPassword2Field)
+        Me.ResetPassword2Panel.Controls.Add(Me.ResetPassword2Label)
+        Me.ResetPassword2Panel.ImeMode = System.Windows.Forms.ImeMode.Off
+        Me.ResetPassword2Panel.Location = New System.Drawing.Point(14, 126)
+        Me.ResetPassword2Panel.Name = "ResetPassword2Panel"
+        Me.ResetPassword2Panel.Size = New System.Drawing.Size(308, 28)
+        Me.ResetPassword2Panel.TabIndex = 12
+        '
+        'ResetPassword2Field
+        '
+        Me.ResetPassword2Field.BackgroundImage = CType(resources.GetObject("ResetPassword2Field.BackgroundImage"), System.Drawing.Image)
+        Me.ResetPassword2Field.Location = New System.Drawing.Point(4, 10)
+        Me.ResetPassword2Field.Name = "ResetPassword2Field"
+        Me.ResetPassword2Field.Size = New System.Drawing.Size(302, 16)
+        Me.ResetPassword2Field.TabIndex = 0
+        Me.ResetPassword2Field.TabStop = False
+        '
+        'ResetPassword2Label
+        '
+        Me.ResetPassword2Label.AutoSize = True
+        Me.ResetPassword2Label.BackColor = System.Drawing.Color.Transparent
+        Me.ResetPassword2Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ResetPassword2Label.ForeColor = System.Drawing.Color.White
+        Me.ResetPassword2Label.Location = New System.Drawing.Point(0, -4)
+        Me.ResetPassword2Label.Name = "ResetPassword2Label"
+        Me.ResetPassword2Label.Size = New System.Drawing.Size(119, 16)
+        Me.ResetPassword2Label.TabIndex = 4
+        Me.ResetPassword2Label.Text = "Confirm Password:"
+        '
+        'ResetPassword1Panel
+        '
+        Me.ResetPassword1Panel.BackColor = System.Drawing.Color.Transparent
+        Me.ResetPassword1Panel.BackgroundImage = CType(resources.GetObject("ResetPassword1Panel.BackgroundImage"), System.Drawing.Image)
+        Me.ResetPassword1Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ResetPassword1Panel.Controls.Add(Me.ResetPassword1Field)
+        Me.ResetPassword1Panel.Controls.Add(Me.ResetPassword1Label)
+        Me.ResetPassword1Panel.ImeMode = System.Windows.Forms.ImeMode.Off
+        Me.ResetPassword1Panel.Location = New System.Drawing.Point(14, 90)
+        Me.ResetPassword1Panel.Name = "ResetPassword1Panel"
+        Me.ResetPassword1Panel.Size = New System.Drawing.Size(308, 28)
+        Me.ResetPassword1Panel.TabIndex = 11
+        '
+        'ResetPassword1Field
+        '
+        Me.ResetPassword1Field.BackgroundImage = CType(resources.GetObject("ResetPassword1Field.BackgroundImage"), System.Drawing.Image)
+        Me.ResetPassword1Field.Location = New System.Drawing.Point(4, 10)
+        Me.ResetPassword1Field.Name = "ResetPassword1Field"
+        Me.ResetPassword1Field.Size = New System.Drawing.Size(302, 16)
+        Me.ResetPassword1Field.TabIndex = 0
+        Me.ResetPassword1Field.TabStop = False
+        '
+        'ResetPassword1Label
+        '
+        Me.ResetPassword1Label.AutoSize = True
+        Me.ResetPassword1Label.BackColor = System.Drawing.Color.Transparent
+        Me.ResetPassword1Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ResetPassword1Label.ForeColor = System.Drawing.Color.White
+        Me.ResetPassword1Label.Location = New System.Drawing.Point(0, -4)
+        Me.ResetPassword1Label.Name = "ResetPassword1Label"
+        Me.ResetPassword1Label.Size = New System.Drawing.Size(71, 16)
+        Me.ResetPassword1Label.TabIndex = 4
+        Me.ResetPassword1Label.Text = "Password:"
+        '
+        'ResetBackButton
+        '
+        Me.ResetBackButton.BackColor = System.Drawing.Color.Transparent
+        Me.ResetBackButton.BackgroundImage = CType(resources.GetObject("ResetBackButton.BackgroundImage"), System.Drawing.Image)
+        Me.ResetBackButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ResetBackButton.Location = New System.Drawing.Point(338, 89)
+        Me.ResetBackButton.Name = "ResetBackButton"
+        Me.ResetBackButton.Size = New System.Drawing.Size(96, 35)
+        Me.ResetBackButton.TabIndex = 10
+        Me.ResetBackButton.TabStop = False
+        '
+        'ResetSubmitButton
+        '
+        Me.ResetSubmitButton.BackColor = System.Drawing.Color.Transparent
+        Me.ResetSubmitButton.BackgroundImage = CType(resources.GetObject("ResetSubmitButton.BackgroundImage"), System.Drawing.Image)
+        Me.ResetSubmitButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ResetSubmitButton.Location = New System.Drawing.Point(338, 54)
+        Me.ResetSubmitButton.Name = "ResetSubmitButton"
+        Me.ResetSubmitButton.Size = New System.Drawing.Size(96, 35)
+        Me.ResetSubmitButton.TabIndex = 9
+        Me.ResetSubmitButton.TabStop = False
+        '
+        'CodePanel
+        '
+        Me.CodePanel.BackColor = System.Drawing.Color.Transparent
+        Me.CodePanel.BackgroundImage = CType(resources.GetObject("CodePanel.BackgroundImage"), System.Drawing.Image)
+        Me.CodePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.CodePanel.Controls.Add(Me.CodeField)
+        Me.CodePanel.Controls.Add(Me.CodeLabel)
+        Me.CodePanel.ImeMode = System.Windows.Forms.ImeMode.Off
+        Me.CodePanel.Location = New System.Drawing.Point(14, 54)
+        Me.CodePanel.Name = "CodePanel"
+        Me.CodePanel.Size = New System.Drawing.Size(308, 28)
+        Me.CodePanel.TabIndex = 5
+        '
+        'CodeField
+        '
+        Me.CodeField.BackgroundImage = CType(resources.GetObject("CodeField.BackgroundImage"), System.Drawing.Image)
+        Me.CodeField.Location = New System.Drawing.Point(4, 10)
+        Me.CodeField.Name = "CodeField"
+        Me.CodeField.Size = New System.Drawing.Size(302, 16)
+        Me.CodeField.TabIndex = 0
+        Me.CodeField.TabStop = False
+        '
+        'CodeLabel
+        '
+        Me.CodeLabel.AutoSize = True
+        Me.CodeLabel.BackColor = System.Drawing.Color.Transparent
+        Me.CodeLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CodeLabel.ForeColor = System.Drawing.Color.White
+        Me.CodeLabel.Location = New System.Drawing.Point(0, -4)
+        Me.CodeLabel.Name = "CodeLabel"
+        Me.CodeLabel.Size = New System.Drawing.Size(83, 16)
+        Me.CodeLabel.TabIndex = 4
+        Me.CodeLabel.Text = "Reset Code:"
+        '
+        'ResetPassHeader
+        '
+        Me.ResetPassHeader.AutoSize = True
+        Me.ResetPassHeader.BackColor = System.Drawing.Color.Transparent
+        Me.ResetPassHeader.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ResetPassHeader.ForeColor = System.Drawing.Color.White
+        Me.ResetPassHeader.Location = New System.Drawing.Point(25, 9)
+        Me.ResetPassHeader.Name = "ResetPassHeader"
+        Me.ResetPassHeader.Size = New System.Drawing.Size(125, 20)
+        Me.ResetPassHeader.TabIndex = 3
+        Me.ResetPassHeader.Text = "Reset Password"
         '
         'MainRegistrationWindowPanel
         '
@@ -964,7 +1167,7 @@ Partial Class Form1
         Me.MainMenuWindowPanel.Controls.Add(Me.MainMenuLoginButton)
         Me.MainMenuWindowPanel.Controls.Add(Me.ServerStatusLabel)
         Me.MainMenuWindowPanel.Controls.Add(Me.MainMenuTitle)
-        Me.MainMenuWindowPanel.Location = New System.Drawing.Point(258, 432)
+        Me.MainMenuWindowPanel.Location = New System.Drawing.Point(258, 199)
         Me.MainMenuWindowPanel.Name = "MainMenuWindowPanel"
         Me.MainMenuWindowPanel.Size = New System.Drawing.Size(452, 213)
         Me.MainMenuWindowPanel.TabIndex = 19
@@ -1035,7 +1238,7 @@ Partial Class Form1
         Me.ServerStatusLabel.Name = "ServerStatusLabel"
         Me.ServerStatusLabel.Size = New System.Drawing.Size(74, 13)
         Me.ServerStatusLabel.TabIndex = 4
-        Me.ServerStatusLabel.Text = "Server Status:"
+        Me.ServerStatusLabel.Text = "ServerStatus?"
         '
         'MainMenuTitle
         '
@@ -1054,7 +1257,7 @@ Partial Class Form1
         Me.MainLogoPanel.BackColor = System.Drawing.Color.Transparent
         Me.MainLogoPanel.BackgroundImage = CType(resources.GetObject("MainLogoPanel.BackgroundImage"), System.Drawing.Image)
         Me.MainLogoPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.MainLogoPanel.Location = New System.Drawing.Point(-330, 570)
+        Me.MainLogoPanel.Location = New System.Drawing.Point(-330, 430)
         Me.MainLogoPanel.Name = "MainLogoPanel"
         Me.MainLogoPanel.Size = New System.Drawing.Size(580, 186)
         Me.MainLogoPanel.TabIndex = 18
@@ -1069,7 +1272,7 @@ Partial Class Form1
         Me.MainInputBoxPanel.Controls.Add(Me.TitleBar)
         Me.MainInputBoxPanel.Controls.Add(Me.InputBoxCloseButton)
         Me.MainInputBoxPanel.Controls.Add(Me.InputBoxTitle)
-        Me.MainInputBoxPanel.Location = New System.Drawing.Point(256, 651)
+        Me.MainInputBoxPanel.Location = New System.Drawing.Point(256, 418)
         Me.MainInputBoxPanel.Name = "MainInputBoxPanel"
         Me.MainInputBoxPanel.Size = New System.Drawing.Size(452, 198)
         Me.MainInputBoxPanel.TabIndex = 17
@@ -1195,7 +1398,7 @@ Partial Class Form1
         Me.MainForgotPasswordWindowPanel.Controls.Add(Me.ForgotPasswordSubmitButton)
         Me.MainForgotPasswordWindowPanel.Controls.Add(Me.ForgotPasswordInputPanel)
         Me.MainForgotPasswordWindowPanel.Controls.Add(Me.ForgotPasswordHeader)
-        Me.MainForgotPasswordWindowPanel.Location = New System.Drawing.Point(258, 268)
+        Me.MainForgotPasswordWindowPanel.Location = New System.Drawing.Point(258, 35)
         Me.MainForgotPasswordWindowPanel.Name = "MainForgotPasswordWindowPanel"
         Me.MainForgotPasswordWindowPanel.Size = New System.Drawing.Size(452, 158)
         Me.MainForgotPasswordWindowPanel.TabIndex = 16
@@ -1288,7 +1491,7 @@ Partial Class Form1
         Me.MainCreditsPanel.Controls.Add(Me.CreditsBackButton)
         Me.MainCreditsPanel.Controls.Add(Me.CreditsScrollview)
         Me.MainCreditsPanel.Controls.Add(Me.CreditsHeader)
-        Me.MainCreditsPanel.Location = New System.Drawing.Point(258, 0)
+        Me.MainCreditsPanel.Location = New System.Drawing.Point(258, -233)
         Me.MainCreditsPanel.Name = "MainCreditsPanel"
         Me.MainCreditsPanel.Size = New System.Drawing.Size(452, 262)
         Me.MainCreditsPanel.TabIndex = 15
@@ -1361,7 +1564,7 @@ Partial Class Form1
         Me.MainCharSelectionPanel.Controls.Add(Me.PlayButton)
         Me.MainCharSelectionPanel.Controls.Add(Me.SelectCharCharacterContainer)
         Me.MainCharSelectionPanel.Controls.Add(Me.CharacterSelectionHeader)
-        Me.MainCharSelectionPanel.Location = New System.Drawing.Point(-200, 365)
+        Me.MainCharSelectionPanel.Location = New System.Drawing.Point(-200, 132)
         Me.MainCharSelectionPanel.Name = "MainCharSelectionPanel"
         Me.MainCharSelectionPanel.Size = New System.Drawing.Size(452, 198)
         Me.MainCharSelectionPanel.TabIndex = 12
@@ -1503,7 +1706,7 @@ Partial Class Form1
         Me.MainCharacterCreationPanel.Controls.Add(Me.ClassPanel)
         Me.MainCharacterCreationPanel.Controls.Add(Me.CharacterNamePanel)
         Me.MainCharacterCreationPanel.Controls.Add(Me.CharacterCreationHeader)
-        Me.MainCharacterCreationPanel.Location = New System.Drawing.Point(-200, 161)
+        Me.MainCharacterCreationPanel.Location = New System.Drawing.Point(-200, -72)
         Me.MainCharacterCreationPanel.Name = "MainCharacterCreationPanel"
         Me.MainCharacterCreationPanel.Size = New System.Drawing.Size(452, 198)
         Me.MainCharacterCreationPanel.TabIndex = 11
@@ -1775,7 +1978,7 @@ Partial Class Form1
         Me.MainLoginWindowPanel.Controls.Add(Me.PasswordPanel)
         Me.MainLoginWindowPanel.Controls.Add(Me.UsernamePanel)
         Me.MainLoginWindowPanel.Controls.Add(Me.LoginHeaderLabel)
-        Me.MainLoginWindowPanel.Location = New System.Drawing.Point(-200, 0)
+        Me.MainLoginWindowPanel.Location = New System.Drawing.Point(-200, -233)
         Me.MainLoginWindowPanel.Name = "MainLoginWindowPanel"
         Me.MainLoginWindowPanel.Size = New System.Drawing.Size(452, 158)
         Me.MainLoginWindowPanel.TabIndex = 3
@@ -1921,7 +2124,7 @@ Partial Class Form1
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.statusTxtBox})
         Me.StatusStrip1.Location = New System.Drawing.Point(0, 0)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(1175, 25)
+        Me.StatusStrip1.Size = New System.Drawing.Size(1084, 25)
         Me.StatusStrip1.TabIndex = 0
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -1936,7 +2139,7 @@ Partial Class Form1
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.SaveToolStripMenuItem, Me.RefreshBtn, Me.gridToggle})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1175, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1084, 24)
         Me.MenuStrip1.TabIndex = 1
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -2299,13 +2502,12 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1175, 686)
+        Me.ClientSize = New System.Drawing.Size(1084, 655)
         Me.Controls.Add(Me.mainSplitContainer)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form1"
         Me.Text = "IGE"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.mainSplitContainer.Panel1.ResumeLayout(False)
         Me.mainSplitContainer.Panel2.ResumeLayout(False)
         Me.mainSplitContainer.Panel2.PerformLayout()
@@ -2323,6 +2525,21 @@ Partial Class Form1
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainer1.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
+        Me.MainServerStatusAreaPanel.ResumeLayout(False)
+        Me.MainServerStatusAreaPanel.PerformLayout()
+        Me.MainResetPasswordWindowPanel.ResumeLayout(False)
+        Me.MainResetPasswordWindowPanel.PerformLayout()
+        Me.ResetPassword2Panel.ResumeLayout(False)
+        Me.ResetPassword2Panel.PerformLayout()
+        CType(Me.ResetPassword2Field, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResetPassword1Panel.ResumeLayout(False)
+        Me.ResetPassword1Panel.PerformLayout()
+        CType(Me.ResetPassword1Field, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ResetBackButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ResetSubmitButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.CodePanel.ResumeLayout(False)
+        Me.CodePanel.PerformLayout()
+        CType(Me.CodeField, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MainRegistrationWindowPanel.ResumeLayout(False)
         Me.MainRegistrationWindowPanel.PerformLayout()
         Me.Panel2.ResumeLayout(False)
@@ -2645,4 +2862,19 @@ Partial Class Form1
     Friend WithEvents RegistrationUsernameField As PictureBox
     Friend WithEvents RegistrationUsernameLabel As Label
     Friend WithEvents RegistrationLabel As Label
+    Friend WithEvents MainResetPasswordWindowPanel As Panel
+    Friend WithEvents ResetPassword2Panel As Panel
+    Friend WithEvents ResetPassword2Field As PictureBox
+    Friend WithEvents ResetPassword2Label As Label
+    Friend WithEvents ResetPassword1Panel As Panel
+    Friend WithEvents ResetPassword1Field As PictureBox
+    Friend WithEvents ResetPassword1Label As Label
+    Friend WithEvents ResetBackButton As PictureBox
+    Friend WithEvents ResetSubmitButton As PictureBox
+    Friend WithEvents CodePanel As Panel
+    Friend WithEvents CodeField As PictureBox
+    Friend WithEvents CodeLabel As Label
+    Friend WithEvents ResetPassHeader As Label
+    Friend WithEvents MainServerStatusAreaPanel As Panel
+    Friend WithEvents ServerStatusAreaServerStatusLabel As Label
 End Class

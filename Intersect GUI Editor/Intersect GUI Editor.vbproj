@@ -101,6 +101,8 @@
     <Compile Include="JSON Deserializers\menu\MenuWindowGUI.vb" />
     <Compile Include="JSON Deserializers\menu\OptionsWindowGUI.vb" />
     <Compile Include="JSON Deserializers\menu\RegistrationWindowGUI.vb" />
+    <Compile Include="JSON Deserializers\menu\ResetPasswordWindowGUI.vb" />
+    <Compile Include="JSON Deserializers\menu\ServerStatusAreaGUI.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
