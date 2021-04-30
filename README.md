@@ -14,7 +14,7 @@ Todo (30%):
   - [x] RegistrationWindow.json
   - [x] ResetPasswordWindow.json
   - [x] ServerStatusArea.json
-- Game (0%)
+- Game (9.75%)
   - [x] BagItem.json
   - [x] BagWindow.json
   - [x] BankItem.json
