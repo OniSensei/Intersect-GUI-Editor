@@ -56,8 +56,8 @@ Module CreditsWindowGUI
         Public Property CanScrollV As Boolean
         Public Property AutoHideBars As Boolean
         Public Property InnerPanel As CreditsWindowInnerPanel
-        Public Property HorizontalScrollBar As CreditsWindowHorizontalScrollBar
-        Public Property VerticalScrollBar As CreditsWindowVerticalScrollBar
+        Public Property HorizontalScrollBar As IntersectScrollBar
+        Public Property VerticalScrollBar As IntersectScrollBar
     End Class
 
     Public Class CreditsWindowInnerPanel
@@ -84,56 +84,6 @@ Module CreditsWindowGUI
 
     Public Class CreditsWindowInnerPanelChildren
         Public Property CreditsLabel As IntersectLabel
-    End Class
-
-    Public Class CreditsWindowHorizontalScrollBar
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property UpOrLeftButton As IntersectUpOrLeftButton
-        Public Property Bar As IntersectBar
-        Public Property DownOrRightButton As IntersectDownOrRightButton
-    End Class
-
-    Public Class CreditsWindowVerticalScrollBar
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property UpOrLeftButton As IntersectUpOrLeftButton
-        Public Property Bar As IntersectBar
-        Public Property DownOrRightButton As IntersectDownOrRightButton
     End Class
 
     Public Sub LoadCreditsGUI(ByVal jsonfile As String)

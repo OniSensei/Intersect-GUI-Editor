@@ -70,6 +70,31 @@
         Public Property ClickSound As String
     End Class
 
+    Public Class IntersectScrollBar
+        Public Property Bounds As String
+        Public Property Padding As String
+        Public Property AlignmentEdgeDistances As String
+        Public Property AlignmentTransform As String
+        Public Property Margin As String
+        Public Property RenderColor As String
+        Public Property Alignments As String
+        Public Property DrawBackground As Boolean
+        Public Property MinimumSize As String
+        Public Property MaximumSize As String
+        Public Property Disabled As Boolean
+        Public Property Hidden As Boolean
+        Public Property RestrictToParent As Boolean
+        Public Property MouseInputEnabled As Boolean
+        Public Property HideToolTip As Boolean
+        Public Property ToolTipBackground As String
+        Public Property ToolTipFont As String
+        Public Property ToolTipTextColor As String
+        Public Property BackgroundTemplate As String
+        Public Property UpOrLeftButton As IntersectUpOrLeftButton
+        Public Property Bar As IntersectBar
+        Public Property DownOrRightButton As IntersectDownOrRightButton
+    End Class
+
     Public Class IntersectUpOrLeftButton
         Public Property Bounds As String
         Public Property Padding As String
@@ -264,5 +289,26 @@
         Public Property HoverSound As String
         Public Property LeftMouseClickSound As String
         Public Property RightMouseClickSound As String
+    End Class
+
+    Public Class IntersectInnerPanel
+        Public Property Bounds As String
+        Public Property Padding As String
+        Public Property AlignmentEdgeDistances As String
+        Public Property AlignmentTransform As String
+        Public Property Margin As String
+        Public Property RenderColor As String
+        Public Property Alignments As String
+        Public Property DrawBackground As Boolean
+        Public Property MinimumSize As String
+        Public Property MaximumSize As String
+        Public Property Disabled As Boolean
+        Public Property Hidden As Boolean
+        Public Property RestrictToParent As Boolean
+        Public Property MouseInputEnabled As Boolean
+        Public Property HideToolTip As Boolean
+        Public Property ToolTipBackground As String
+        Public Property ToolTipFont As String
+        Public Property ToolTipTextColor As String
     End Class
 End Module

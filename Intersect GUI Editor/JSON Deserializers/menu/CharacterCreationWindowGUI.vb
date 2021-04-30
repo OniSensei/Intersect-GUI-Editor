@@ -169,85 +169,13 @@ Module CharacterCreationWindowGUI
         Public Property CanScrollH As Boolean
         Public Property CanScrollV As Boolean
         Public Property AutoHideBars As Boolean
-        Public Property InnerPanel As ClassComboboxMenuInnerPanel
-        Public Property HorizontalScrollBar As ClassComboboxMenuHorizontalScrollBar
-        Public Property VerticalScrollBar As ClassComboboxMenuVerticalScrollBar
+        Public Property InnerPanel As IntersectInnerPanel
+        Public Property HorizontalScrollBar As IntersectScrollBar
+        Public Property VerticalScrollBar As IntersectScrollBar
         Public Property BackgroundTemplate As String
         Public Property ItemTextColor As String
         Public Property ItemHoveredTextColor As String
         Public Property ItemFont As String
-
-    End Class
-
-    Public Class ClassComboboxMenuInnerPanel
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-    End Class
-
-    Public Class ClassComboboxMenuHorizontalScrollBar
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property ClassComboboxMenuHorizontalScrollBarUpOrLeftButton As IntersectUpOrLeftButton
-        Public Property ClassComboboxMenuHorizontalScrollBarBar As IntersectBar
-        Public Property ClassComboboxMenuHorizontalScrollBarDownOrRightButton As IntersectDownOrRightButton
-    End Class
-
-    Public Class ClassComboboxMenuVerticalScrollBar
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property ClassComboboxMenuVerticalScrollBarUpOrLeftButton As IntersectUpOrLeftButton
-        Public Property ClassComboboxMenuVerticalScrollBarBar As IntersectBar
-        Public Property ClassComboboxMenuVerticalScrollBarDownOrRightButton As IntersectDownOrRightButton
 
     End Class
 

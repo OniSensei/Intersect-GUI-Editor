@@ -14,3 +14,4 @@ C:\Users\Oni\source\repos\Intersect GUI Editor\Intersect GUI Editor\bin\Debug\Ne
 C:\Users\Oni\source\repos\Intersect GUI Editor\Intersect GUI Editor\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Oni\source\repos\Intersect GUI Editor\Intersect GUI Editor\obj\Debug\Intersect GUI Editor.vbproj.CopyComplete
 C:\Users\Oni\source\repos\Intersect GUI Editor\Intersect GUI Editor\bin\Debug\ZTn.Json.JsonTreeView.dll
+C:\Users\Oni\source\repos\Intersect GUI Editor\Intersect GUI Editor\obj\Debug\Intersect_GUI_Editor.SettingsForm.resources

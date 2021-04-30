@@ -282,6 +282,11 @@ Partial Class Form1
         Me.RefreshBtn = New System.Windows.Forms.ToolStripMenuItem()
         Me.gridToggle = New System.Windows.Forms.ToolStripMenuItem()
         Me.AppSettings = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MainChatboxWindowPanel = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.ChatboxTitle = New System.Windows.Forms.Label()
+        Me.Chatbar = New System.Windows.Forms.Panel()
+        Me.ChatboxInputField = New System.Windows.Forms.PictureBox()
         CType(Me.mainSplitContainer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.mainSplitContainer.Panel1.SuspendLayout()
         Me.mainSplitContainer.Panel2.SuspendLayout()
@@ -426,6 +431,9 @@ Partial Class Form1
         CType(Me.UsernameFieldPB, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.StatusStrip1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
+        Me.MainChatboxWindowPanel.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ChatboxInputField, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'mainSplitContainer
@@ -442,7 +450,7 @@ Partial Class Form1
         'mainSplitContainer.Panel2
         '
         Me.mainSplitContainer.Panel2.Controls.Add(Me.StatusStrip1)
-        Me.mainSplitContainer.Size = New System.Drawing.Size(1085, 637)
+        Me.mainSplitContainer.Size = New System.Drawing.Size(1984, 637)
         Me.mainSplitContainer.SplitterDistance = 607
         Me.mainSplitContainer.TabIndex = 0
         '
@@ -459,6 +467,7 @@ Partial Class Form1
         'toolSplitContainer.Panel2
         '
         Me.toolSplitContainer.Panel2.AutoScroll = True
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainChatboxWindowPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainCharacterWindowPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainBankWindowPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainBankItemPanel)
@@ -477,8 +486,8 @@ Partial Class Form1
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainCharSelectionPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainCharacterCreationPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainLoginWindowPanel)
-        Me.toolSplitContainer.Size = New System.Drawing.Size(1085, 607)
-        Me.toolSplitContainer.SplitterDistance = 273
+        Me.toolSplitContainer.Size = New System.Drawing.Size(1984, 607)
+        Me.toolSplitContainer.SplitterDistance = 499
         Me.toolSplitContainer.TabIndex = 0
         '
         'TabControl1
@@ -490,7 +499,7 @@ Partial Class Form1
         Me.TabControl1.Location = New System.Drawing.Point(0, 0)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(273, 607)
+        Me.TabControl1.Size = New System.Drawing.Size(499, 607)
         Me.TabControl1.TabIndex = 1
         '
         'TabPage1
@@ -499,7 +508,7 @@ Partial Class Form1
         Me.TabPage1.Location = New System.Drawing.Point(4, 4)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(265, 581)
+        Me.TabPage1.Size = New System.Drawing.Size(491, 581)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Tree"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -521,7 +530,7 @@ Partial Class Form1
         Me.SplitContainer1.Panel2.Controls.Add(Me.jsonValue)
         Me.SplitContainer1.Panel2.Controls.Add(Me.jsonTypeCombo)
         Me.SplitContainer1.Panel2.Controls.Add(Me.jsonType)
-        Me.SplitContainer1.Size = New System.Drawing.Size(259, 575)
+        Me.SplitContainer1.Size = New System.Drawing.Size(485, 575)
         Me.SplitContainer1.SplitterDistance = 373
         Me.SplitContainer1.TabIndex = 1
         '
@@ -533,7 +542,7 @@ Partial Class Form1
         Me.JTokenTreeUserControl1.Location = New System.Drawing.Point(0, 0)
         Me.JTokenTreeUserControl1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.JTokenTreeUserControl1.Name = "JTokenTreeUserControl1"
-        Me.JTokenTreeUserControl1.Size = New System.Drawing.Size(259, 373)
+        Me.JTokenTreeUserControl1.Size = New System.Drawing.Size(485, 373)
         Me.JTokenTreeUserControl1.TabIndex = 1
         '
         'updateBtn
@@ -542,7 +551,7 @@ Partial Class Form1
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.updateBtn.Location = New System.Drawing.Point(5, 172)
         Me.updateBtn.Name = "updateBtn"
-        Me.updateBtn.Size = New System.Drawing.Size(251, 23)
+        Me.updateBtn.Size = New System.Drawing.Size(477, 23)
         Me.updateBtn.TabIndex = 3
         Me.updateBtn.Text = "Update"
         Me.updateBtn.UseVisualStyleBackColor = True
@@ -554,7 +563,7 @@ Partial Class Form1
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.jsonValue.Location = New System.Drawing.Point(5, 57)
         Me.jsonValue.Name = "jsonValue"
-        Me.jsonValue.Size = New System.Drawing.Size(251, 109)
+        Me.jsonValue.Size = New System.Drawing.Size(477, 109)
         Me.jsonValue.TabIndex = 2
         Me.jsonValue.Text = ""
         '
@@ -566,7 +575,7 @@ Partial Class Form1
         Me.jsonTypeCombo.FormattingEnabled = True
         Me.jsonTypeCombo.Location = New System.Drawing.Point(5, 30)
         Me.jsonTypeCombo.Name = "jsonTypeCombo"
-        Me.jsonTypeCombo.Size = New System.Drawing.Size(251, 21)
+        Me.jsonTypeCombo.Size = New System.Drawing.Size(477, 21)
         Me.jsonTypeCombo.TabIndex = 1
         '
         'jsonType
@@ -576,7 +585,7 @@ Partial Class Form1
         Me.jsonType.Location = New System.Drawing.Point(5, 4)
         Me.jsonType.Name = "jsonType"
         Me.jsonType.ReadOnly = True
-        Me.jsonType.Size = New System.Drawing.Size(251, 20)
+        Me.jsonType.Size = New System.Drawing.Size(477, 20)
         Me.jsonType.TabIndex = 0
         '
         'TabPage2
@@ -2737,7 +2746,7 @@ Partial Class Form1
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.statusTxtBox})
         Me.StatusStrip1.Location = New System.Drawing.Point(0, 0)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(1085, 26)
+        Me.StatusStrip1.Size = New System.Drawing.Size(1984, 26)
         Me.StatusStrip1.TabIndex = 0
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -2752,7 +2761,7 @@ Partial Class Form1
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.SaveToolStripMenuItem, Me.RefreshBtn, Me.gridToggle, Me.AppSettings})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1085, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1984, 24)
         Me.MenuStrip1.TabIndex = 1
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -3125,11 +3134,68 @@ Partial Class Form1
         Me.AppSettings.Name = "AppSettings"
         Me.AppSettings.Size = New System.Drawing.Size(28, 20)
         '
+        'MainChatboxWindowPanel
+        '
+        Me.MainChatboxWindowPanel.BackgroundImage = CType(resources.GetObject("MainChatboxWindowPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainChatboxWindowPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainChatboxWindowPanel.Controls.Add(Me.ChatboxInputField)
+        Me.MainChatboxWindowPanel.Controls.Add(Me.Chatbar)
+        Me.MainChatboxWindowPanel.Controls.Add(Me.PictureBox1)
+        Me.MainChatboxWindowPanel.Controls.Add(Me.ChatboxTitle)
+        Me.MainChatboxWindowPanel.Location = New System.Drawing.Point(1270, 0)
+        Me.MainChatboxWindowPanel.Name = "MainChatboxWindowPanel"
+        Me.MainChatboxWindowPanel.Size = New System.Drawing.Size(386, 162)
+        Me.MainChatboxWindowPanel.TabIndex = 27
+        Me.MainChatboxWindowPanel.Visible = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(408, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(34, 32)
+        Me.PictureBox1.TabIndex = 19
+        Me.PictureBox1.TabStop = False
+        '
+        'ChatboxTitle
+        '
+        Me.ChatboxTitle.AutoSize = True
+        Me.ChatboxTitle.BackColor = System.Drawing.Color.Transparent
+        Me.ChatboxTitle.Font = New System.Drawing.Font("Source Sans Pro SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ChatboxTitle.ForeColor = System.Drawing.Color.White
+        Me.ChatboxTitle.Location = New System.Drawing.Point(32, 8)
+        Me.ChatboxTitle.Name = "ChatboxTitle"
+        Me.ChatboxTitle.Size = New System.Drawing.Size(41, 20)
+        Me.ChatboxTitle.TabIndex = 3
+        Me.ChatboxTitle.Text = "Chat"
+        Me.ChatboxTitle.Visible = False
+        '
+        'Chatbar
+        '
+        Me.Chatbar.BackColor = System.Drawing.Color.Transparent
+        Me.Chatbar.BackgroundImage = CType(resources.GetObject("Chatbar.BackgroundImage"), System.Drawing.Image)
+        Me.Chatbar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Chatbar.Location = New System.Drawing.Point(0, 136)
+        Me.Chatbar.Name = "Chatbar"
+        Me.Chatbar.Size = New System.Drawing.Size(386, 25)
+        Me.Chatbar.TabIndex = 20
+        '
+        'ChatboxInputField
+        '
+        Me.ChatboxInputField.BackgroundImage = CType(resources.GetObject("ChatboxInputField.BackgroundImage"), System.Drawing.Image)
+        Me.ChatboxInputField.Location = New System.Drawing.Point(2, 141)
+        Me.ChatboxInputField.Name = "ChatboxInputField"
+        Me.ChatboxInputField.Size = New System.Drawing.Size(312, 16)
+        Me.ChatboxInputField.TabIndex = 10
+        Me.ChatboxInputField.TabStop = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1085, 661)
+        Me.ClientSize = New System.Drawing.Size(1984, 661)
         Me.Controls.Add(Me.mainSplitContainer)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -3325,6 +3391,10 @@ Partial Class Form1
         Me.StatusStrip1.PerformLayout()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        Me.MainChatboxWindowPanel.ResumeLayout(False)
+        Me.MainChatboxWindowPanel.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ChatboxInputField, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -3589,4 +3659,9 @@ Partial Class Form1
     Friend WithEvents IncreaseAbilityPowerButton As PictureBox
     Friend WithEvents AbilityPowerLabel As Label
     Friend WithEvents AppSettings As ToolStripMenuItem
+    Friend WithEvents MainChatboxWindowPanel As Panel
+    Friend WithEvents ChatboxInputField As PictureBox
+    Friend WithEvents Chatbar As Panel
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents ChatboxTitle As Label
 End Class

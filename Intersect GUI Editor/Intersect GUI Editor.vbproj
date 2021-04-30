@@ -92,6 +92,7 @@
     <Compile Include="JSON Deserializers\game\BankItemGUI.vb" />
     <Compile Include="JSON Deserializers\game\BankWindowGUI.vb" />
     <Compile Include="JSON Deserializers\game\CharacterWindowGUI.vb" />
+    <Compile Include="JSON Deserializers\game\ChatboxWindowGUI.vb" />
     <Compile Include="JSON Deserializers\menu\CharacterCreationWindowGUI.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
@@ -136,6 +137,7 @@
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

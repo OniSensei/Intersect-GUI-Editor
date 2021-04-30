@@ -91,8 +91,8 @@ Module OptionsWindowGUI
         Public Property CanScrollV As Boolean
         Public Property AutoHideBars As Boolean
         Public Property InnerPanel As OptionsInnerPanel
-        Public Property HorizontalScrollBar As OptionsHorizontalScrollBar
-        Public Property VerticalScrollBar As OptionsVerticalScrollBar
+        Public Property HorizontalScrollBar As IntersectScrollBar
+        Public Property VerticalScrollBar As IntersectScrollBar
     End Class
 
     Public Class OptionsInnerPanel
@@ -122,7 +122,7 @@ Module OptionsWindowGUI
         Public Property FPSPanel As FPSPanel
         Public Property FullscreenCheckbox As FullscreenCheckbox
         Public Property AutocloseWindowsCheckbox As AutocloseWindowsCheckbox
-        Public Property KeybindingsButton As KeybindingsButton
+        Public Property KeybindingsButton As IntersectButton
         Public Property SoundLabel As IntersectLabel
         Public Property SoundSlider As SoundSlider
         Public Property MusicLabel As IntersectLabel
@@ -199,7 +199,7 @@ Module OptionsWindowGUI
         Public Property CenterImage As Boolean
         Public Property MenuAbove As Boolean
         Public Property Menu As ResolutionComboboxMenu
-        Public Property DropDownmButton As ResolutionDropDownButton
+        Public Property DropDownmButton As IntersectButton
         Public Property OpenMenuSound As String
         Public Property CloseMenuSound As String
         Public Property HoverMenuSound As String
@@ -229,101 +229,9 @@ Module OptionsWindowGUI
         Public Property CanScrollH As Boolean
         Public Property CanScrollV As Boolean
         Public Property AutoHideBars As Boolean
-        Public Property InnerPanel As ResolutionComboboxMenuInnerPanel
-        Public Property HorizontalScrollBar As ResolutionComboboxMenuHorizontalScrollBar
-        Public Property VerticalScrollBar As ResolutionComboboxMenuVerticalScrollBar
-    End Class
-
-    Public Class ResolutionComboboxMenuInnerPanel
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-    End Class
-
-    Public Class ResolutionComboboxMenuHorizontalScrollBar
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property UpOrLeftButton As IntersectUpOrLeftButton
-        Public Property Bar As IntersectBar
-        Public Property DownOrRightButton As IntersectDownOrRightButton
-    End Class
-
-    Public Class ResolutionComboboxMenuVerticalScrollBar
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property UpOrLeftButton As IntersectUpOrLeftButton
-        Public Property Bar As IntersectBar
-        Public Property DownOrRightButton As IntersectDownOrRightButton
-    End Class
-
-    Public Class ResolutionDropDownButton
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
+        Public Property InnerPanel As IntersectInnerPanel
+        Public Property HorizontalScrollBar As IntersectScrollBar
+        Public Property VerticalScrollBar As IntersectScrollBar
     End Class
 
     Public Class FPSPanel
@@ -394,7 +302,7 @@ Module OptionsWindowGUI
         Public Property CenterImage As Boolean
         Public Property MenuAbove As Boolean
         Public Property Menu As FPSComboboxMenu
-        Public Property DropDownmButton As FPSComboboxButton
+        Public Property DropDownmButton As IntersectButton
         Public Property OpenMenuSound As String
         Public Property CloseMenuSound As String
         Public Property HoverMenuSound As String
@@ -424,102 +332,11 @@ Module OptionsWindowGUI
         Public Property CanScrollH As Boolean
         Public Property CanScrollV As Boolean
         Public Property AutoHideBars As Boolean
-        Public Property InnerPanel As FPSComboboxMenuInnerPanel
-        Public Property HorizontalScrollBar As FPSComboboxMenuHorizontalScrollBar
-        Public Property VerticalScrollBar As FPSComboboxMenuVerticalScrollBar
+        Public Property InnerPanel As IntersectInnerPanel
+        Public Property HorizontalScrollBar As IntersectScrollBar
+        Public Property VerticalScrollBar As IntersectScrollBar
     End Class
 
-    Public Class FPSComboboxMenuInnerPanel
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-    End Class
-
-    Public Class FPSComboboxMenuHorizontalScrollBar
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property UpOrLeftButton As IntersectUpOrLeftButton
-        Public Property Bar As IntersectBar
-        Public Property DownOrRightButton As IntersectDownOrRightButton
-    End Class
-
-    Public Class FPSComboboxMenuVerticalScrollBar
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property UpOrLeftButton As IntersectUpOrLeftButton
-        Public Property Bar As IntersectBar
-        Public Property DownOrRightButton As IntersectDownOrRightButton
-    End Class
-
-    Public Class FPSComboboxButton
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-    End Class
 
     Public Class FullscreenCheckbox
         Public Property Bounds As String
@@ -567,46 +384,6 @@ Module OptionsWindowGUI
         Public Property Checkbox As IntersectCheckbox
     End Class
 
-    Public Class KeybindingsButton
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property TextColor As String
-        Public Property HoverTextColor As String
-        Public Property ClickedTextColor As String
-        Public Property DisabledTextColor As String
-        Public Property TextAlign As String
-        Public Property TextPadding As String
-        Public Property AutoSizeToContents As Boolean
-        Public Property Font As String
-        Public Property TextScale As Double
-        Public Property NormalImage As String
-        Public Property HoveredImage As String
-        Public Property ClickedImage As String
-        Public Property DisabledImage As String
-        Public Property CenterImage As Boolean
-        Public Property HoverSound As String
-        Public Property MouseUpSound As String
-        Public Property MouseDownSound As String
-        Public Property ClickSound As String
-    End Class
-
     Public Class SoundSlider
         Public Property Bounds As String
         Public Property Padding As String
@@ -629,36 +406,7 @@ Module OptionsWindowGUI
         Public Property BackgroundImage As String
         Public Property SnapToNotchs As Boolean
         Public Property NotchCount As Integer
-        Public Property SliderBar As SoundSliderBar
-    End Class
-
-    Public Class SoundSliderBar
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property NormalImage As String
-        Public Property HoveredImage As String
-        Public Property ClickedImage As String
-        Public Property DisabledImage As String
-        Public Property CenterImage As Boolean
-        Public Property HoverSound As String
-        Public Property MouseUpSound As String
-        Public Property MouseDownSound As String
+        Public Property SliderBar As IntersectButton
     End Class
 
     Public Class MusicSlider
@@ -683,86 +431,7 @@ Module OptionsWindowGUI
         Public Property BackgroundImage As String
         Public Property SnapToNotchs As Boolean
         Public Property NotchCount As Integer
-        Public Property SliderBar As MusicSliderBar
-    End Class
-
-    Public Class MusicSliderBar
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property NormalImage As String
-        Public Property HoveredImage As String
-        Public Property ClickedImage As String
-        Public Property DisabledImage As String
-        Public Property CenterImage As Boolean
-        Public Property HoverSound As String
-        Public Property MouseUpSound As String
-        Public Property MouseDownSound As String
-    End Class
-
-    Public Class OptionsHorizontalScrollBar
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property UpOrLeftButton As IntersectUpOrLeftButton
-        Public Property Bar As IntersectBar
-        Public Property DownOrRightButton As IntersectDownOrRightButton
-    End Class
-
-    Public Class OptionsVerticalScrollBar
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property UpOrLeftButton As IntersectUpOrLeftButton
-        Public Property Bar As IntersectBar
-        Public Property DownOrRightButton As IntersectDownOrRightButton
+        Public Property SliderBar As IntersectButton
     End Class
 
     Public Class ControlsContainer
@@ -788,8 +457,8 @@ Module OptionsWindowGUI
         Public Property CanScrollV As Boolean
         Public Property AutoHideBars As Boolean
         Public Property InnerPanel As ControlsInnerPanel
-        Public Property HorizontalScrollBar As ControlsHorizontalScrollBar
-        Public Property VerticalScrollBar As ControlsVerticalScrollBar
+        Public Property HorizontalScrollBar As IntersectScrollBar
+        Public Property VerticalScrollBar As IntersectScrollBar
     End Class
 
     Public Class ControlsInnerPanel
@@ -908,56 +577,6 @@ Module OptionsWindowGUI
         Public Property ControlToggleGuiLabel As IntersectLabel
         Public Property ControlToggleGuiButton1 As IntersectButton
         Public Property ControlToggleGuiButton2 As IntersectButton
-    End Class
-
-    Public Class ControlsHorizontalScrollBar
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property UpOrLeftButton As IntersectUpOrLeftButton
-        Public Property Bar As IntersectBar
-        Public Property DownOrRightButton As IntersectDownOrRightButton
-    End Class
-
-    Public Class ControlsVerticalScrollBar
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property BackgroundTemplate As String
-        Public Property UpOrLeftButton As IntersectUpOrLeftButton
-        Public Property Bar As IntersectBar
-        Public Property DownOrRightButton As IntersectDownOrRightButton
     End Class
 
     Public Sub LoadOptionsWindowGUI(ByVal jsonfile As String)

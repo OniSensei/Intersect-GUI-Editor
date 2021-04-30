@@ -44,6 +44,7 @@ Public Class Form1
         MainBankItemPanel.Visible = False
         MainBankWindowPanel.Visible = False
         MainCharacterWindowPanel.Visible = False
+        MainChatboxWindowPanel.Visible = False
 
         LoadLoginGUI(menuGuiPath & "LoginWindow.json")
         openFile = menuGuiPath & "LoginWindow.json"
@@ -68,6 +69,7 @@ Public Class Form1
         MainBankItemPanel.Visible = False
         MainBankWindowPanel.Visible = False
         MainCharacterWindowPanel.Visible = False
+        MainChatboxWindowPanel.Visible = False
 
         LoadCharacterCreationGUI(menuGuiPath & "CharacterCreationWindow.json")
         openFile = menuGuiPath & "CharacterCreationWindow.json"
@@ -92,6 +94,7 @@ Public Class Form1
         MainBankItemPanel.Visible = False
         MainBankWindowPanel.Visible = False
         MainCharacterWindowPanel.Visible = False
+        MainChatboxWindowPanel.Visible = False
 
         LoadCharacterSelectionGUI(menuGuiPath & "CharacterSelectionWindow.json")
         openFile = menuGuiPath & "CharacterSelectionWindow.json"
@@ -116,6 +119,7 @@ Public Class Form1
         MainBankItemPanel.Visible = False
         MainBankWindowPanel.Visible = False
         MainCharacterWindowPanel.Visible = False
+        MainChatboxWindowPanel.Visible = False
 
         LoadCreditsGUI(menuGuiPath & "CreditsWindow.json")
         openFile = menuGuiPath & "CreditsWindow.json"
@@ -140,6 +144,7 @@ Public Class Form1
         MainBankItemPanel.Visible = False
         MainBankWindowPanel.Visible = False
         MainCharacterWindowPanel.Visible = False
+        MainChatboxWindowPanel.Visible = False
 
         LoadForgotPasswordGUI(menuGuiPath & "ForgotPasswordWindow.json")
         openFile = menuGuiPath & "ForgotPasswordWindow.json"
@@ -164,6 +169,7 @@ Public Class Form1
         MainBankItemPanel.Visible = False
         MainBankWindowPanel.Visible = False
         MainCharacterWindowPanel.Visible = False
+        MainChatboxWindowPanel.Visible = False
 
         LoadInputBoxGUI(menuGuiPath & "InputBox.json")
         openFile = menuGuiPath & "InputBox.json"
@@ -188,6 +194,7 @@ Public Class Form1
         MainBankItemPanel.Visible = False
         MainBankWindowPanel.Visible = False
         MainCharacterWindowPanel.Visible = False
+        MainChatboxWindowPanel.Visible = False
 
         LoadLogoGUI(menuGuiPath & "Logo.json")
         openFile = menuGuiPath & "Logo.json"
@@ -212,6 +219,7 @@ Public Class Form1
         MainBankItemPanel.Visible = False
         MainBankWindowPanel.Visible = False
         MainCharacterWindowPanel.Visible = False
+        MainChatboxWindowPanel.Visible = False
 
         LoadMenuWindow(menuGuiPath & "MenuWindow.json")
         openFile = menuGuiPath & "MenuWindow.json"
@@ -236,6 +244,7 @@ Public Class Form1
         MainBankItemPanel.Visible = False
         MainBankWindowPanel.Visible = False
         MainCharacterWindowPanel.Visible = False
+        MainChatboxWindowPanel.Visible = False
 
         LoadOptionsWindowGUI(menuGuiPath & "OptionsWindow.json")
         openFile = menuGuiPath & "OptionsWindow.json"
@@ -260,6 +269,7 @@ Public Class Form1
         MainBankItemPanel.Visible = False
         MainBankWindowPanel.Visible = False
         MainCharacterWindowPanel.Visible = False
+        MainChatboxWindowPanel.Visible = False
 
         LoadRegistrationWindowGUI(menuGuiPath & "RegistrationWindow.json")
         openFile = menuGuiPath & "RegistrationWindow.json"
@@ -284,6 +294,7 @@ Public Class Form1
         MainBankItemPanel.Visible = False
         MainBankWindowPanel.Visible = False
         MainCharacterWindowPanel.Visible = False
+        MainChatboxWindowPanel.Visible = False
 
         LoadResetPasswordWindowGUI(menuGuiPath & "ResetPasswordWindow.json")
         openFile = menuGuiPath & "ResetPasswordWindow.json"
@@ -308,6 +319,7 @@ Public Class Form1
         MainBankItemPanel.Visible = False
         MainBankWindowPanel.Visible = False
         MainCharacterWindowPanel.Visible = False
+        MainChatboxWindowPanel.Visible = False
 
         LoadServerStatusAreaGUI(menuGuiPath & "ServerStatusArea.json")
         openFile = menuGuiPath & "ServerStatusArea.json"
@@ -332,6 +344,7 @@ Public Class Form1
         MainBankItemPanel.Visible = False
         MainBankWindowPanel.Visible = False
         MainCharacterWindowPanel.Visible = False
+        MainChatboxWindowPanel.Visible = False
 
         LoadBagItemGUI(gameGuiPath & "BagItem.json")
         openFile = gameGuiPath & "BagItem.json"
@@ -356,6 +369,7 @@ Public Class Form1
         MainBankItemPanel.Visible = False
         MainBankWindowPanel.Visible = False
         MainCharacterWindowPanel.Visible = False
+        MainChatboxWindowPanel.Visible = False
 
         LoadBagWindowGUI(gameGuiPath & "BagWindow.json")
         openFile = gameGuiPath & "BagWindow.json"
@@ -380,6 +394,7 @@ Public Class Form1
         MainBagWindowPanel.Visible = False
         MainBankWindowPanel.Visible = False
         MainCharacterWindowPanel.Visible = False
+        MainChatboxWindowPanel.Visible = False
 
         LoadBankItemGUI(gameGuiPath & "BankItem.json")
         openFile = gameGuiPath & "BankItem.json"
@@ -404,6 +419,7 @@ Public Class Form1
         MainBagWindowPanel.Visible = False
         MainBankItemPanel.Visible = False
         MainCharacterWindowPanel.Visible = False
+        MainChatboxWindowPanel.Visible = False
 
         LoadBankWindowGUI(gameGuiPath & "BankWindow.json")
         openFile = gameGuiPath & "BankWindow.json"
@@ -428,9 +444,35 @@ Public Class Form1
         MainBagWindowPanel.Visible = False
         MainBankItemPanel.Visible = False
         MainBankWindowPanel.Visible = False
+        MainChatboxWindowPanel.Visible = False
 
         LoadCharacterWindowGUI(gameGuiPath & "CharacterWindow.json")
         openFile = gameGuiPath & "CharacterWindow.json"
+    End Sub
+
+    Private Sub ChatboxWindowToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ChatboxWindowToolStripMenuItem.Click
+        gridoverlay = False
+        guitype = "game"
+        MainLoginWindowPanel.Visible = False
+        MainCharacterCreationPanel.Visible = False
+        MainCharSelectionPanel.Visible = False
+        MainCreditsPanel.Visible = False
+        MainForgotPasswordWindowPanel.Visible = False
+        MainLogoPanel.Visible = False
+        MainInputBoxPanel.Visible = False
+        MainMenuWindowPanel.Visible = False
+        MainOptionsWindowPanel.Visible = False
+        MainRegistrationWindowPanel.Visible = False
+        MainResetPasswordWindowPanel.Visible = False
+        MainServerStatusAreaPanel.Visible = False
+        MainBagItemPanel.Visible = False
+        MainBagWindowPanel.Visible = False
+        MainBankItemPanel.Visible = False
+        MainBankWindowPanel.Visible = False
+        MainCharacterWindowPanel.Visible = False
+
+        LoadChatboxWindowGUI(gameGuiPath & "ChatboxWindow.json")
+        openFile = gameGuiPath & "ChatboxWindow.json"
     End Sub
 
     Private Sub JTokenTreeUserControl1_AfterSelect(sender As Object, e As ZTn.Json.JsonTreeView.AfterSelectEventArgs) Handles JTokenTreeUserControl1.AfterSelect
@@ -496,6 +538,8 @@ Public Class Form1
                     LoadBankWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
                 ElseIf openFile.Contains("CharacterWindow") Then
                     LoadCharacterWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
+                ElseIf openFile.Contains("ChatboxWindow") Then
+                    LoadChatboxWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
                 End If
             End Using
 
@@ -540,6 +584,8 @@ Public Class Form1
             LoadBankWindowGUI(openFile)
         ElseIf openFile.Contains("CharacterWindow") Then
             LoadCharacterWindowGUI(openFile)
+        ElseIf openFile.Contains("ChatboxWindow") Then
+            LoadChatboxWindowGUI(openFile)
         End If
     End Sub
 
