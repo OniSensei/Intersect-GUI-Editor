@@ -35,6 +35,24 @@ Partial Class Form1
         Me.jsonType = New System.Windows.Forms.TextBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.fullJson = New System.Windows.Forms.RichTextBox()
+        Me.MainBankWindowPanel = New System.Windows.Forms.Panel()
+        Me.BankWindowCloseButton = New System.Windows.Forms.PictureBox()
+        Me.BankWindowTitle = New System.Windows.Forms.Label()
+        Me.MainBankItemPanel = New System.Windows.Forms.Panel()
+        Me.BankItemValue = New System.Windows.Forms.Label()
+        Me.BankItemIcon = New System.Windows.Forms.PictureBox()
+        Me.MainBagWindowPanel = New System.Windows.Forms.Panel()
+        Me.BagWindowCloseButton = New System.Windows.Forms.PictureBox()
+        Me.BagWindowTitle = New System.Windows.Forms.Label()
+        Me.MainBagItemPanel = New System.Windows.Forms.Panel()
+        Me.BagItemValue = New System.Windows.Forms.Label()
+        Me.BagItemIcon = New System.Windows.Forms.PictureBox()
+        Me.MainControlPanelsWindow = New System.Windows.Forms.Panel()
+        Me.RestoreControlsButton = New System.Windows.Forms.PictureBox()
+        Me.ExitControlsButton = New System.Windows.Forms.PictureBox()
+        Me.CancelControlsButton = New System.Windows.Forms.PictureBox()
+        Me.ControlsPanelInnerPanel = New System.Windows.Forms.Panel()
+        Me.ControlsHeader = New System.Windows.Forms.Label()
         Me.MainServerStatusAreaPanel = New System.Windows.Forms.Panel()
         Me.ServerStatusAreaServerStatusLabel = New System.Windows.Forms.Label()
         Me.MainResetPasswordWindowPanel = New System.Windows.Forms.Panel()
@@ -51,22 +69,21 @@ Partial Class Form1
         Me.CodeLabel = New System.Windows.Forms.Label()
         Me.ResetPassHeader = New System.Windows.Forms.Label()
         Me.MainRegistrationWindowPanel = New System.Windows.Forms.Panel()
-        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Password2Panel = New System.Windows.Forms.Panel()
         Me.Password2Field = New System.Windows.Forms.PictureBox()
         Me.Password2Label = New System.Windows.Forms.Label()
         Me.Password1Panel = New System.Windows.Forms.Panel()
         Me.Password1Field = New System.Windows.Forms.PictureBox()
         Me.Password1Label = New System.Windows.Forms.Label()
+        Me.RegistrationLabel = New System.Windows.Forms.Label()
         Me.RegistrationBackButton = New System.Windows.Forms.PictureBox()
+        Me.RegistrationUsernamePanel = New System.Windows.Forms.Panel()
+        Me.RegistrationUsernameField = New System.Windows.Forms.PictureBox()
+        Me.RegistrationUsernameLabel = New System.Windows.Forms.Label()
         Me.RegistrationRegisterButton = New System.Windows.Forms.PictureBox()
         Me.EmailPanel = New System.Windows.Forms.Panel()
         Me.EmailField = New System.Windows.Forms.PictureBox()
         Me.EmailLabel = New System.Windows.Forms.Label()
-        Me.RegistrationUsernamePanel = New System.Windows.Forms.Panel()
-        Me.RegistrationUsernameField = New System.Windows.Forms.PictureBox()
-        Me.RegistrationUsernameLabel = New System.Windows.Forms.Label()
-        Me.RegistrationLabel = New System.Windows.Forms.Label()
         Me.MainOptionsWindowPanel = New System.Windows.Forms.Panel()
         Me.OptionsContainer = New System.Windows.Forms.Panel()
         Me.OptionsCancelButton = New System.Windows.Forms.PictureBox()
@@ -97,7 +114,6 @@ Partial Class Form1
         Me.MainMenuCreditsButton = New System.Windows.Forms.PictureBox()
         Me.MainMenuRegisterButton = New System.Windows.Forms.PictureBox()
         Me.MainMenuLoginButton = New System.Windows.Forms.PictureBox()
-        Me.ServerStatusLabel = New System.Windows.Forms.Label()
         Me.MainMenuTitle = New System.Windows.Forms.Label()
         Me.MainLogoPanel = New System.Windows.Forms.PictureBox()
         Me.MainInputBoxPanel = New System.Windows.Forms.Panel()
@@ -108,7 +124,6 @@ Partial Class Form1
         Me.NoButton = New System.Windows.Forms.PictureBox()
         Me.PromptLabel = New System.Windows.Forms.Label()
         Me.YesButton = New System.Windows.Forms.PictureBox()
-        Me.TitleBar = New System.Windows.Forms.Panel()
         Me.InputBoxCloseButton = New System.Windows.Forms.PictureBox()
         Me.InputBoxTitle = New System.Windows.Forms.Label()
         Me.MainForgotPasswordWindowPanel = New System.Windows.Forms.Panel()
@@ -182,6 +197,7 @@ Partial Class Form1
         Me.BagItemToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BagWindowToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BankItemToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BankWindowToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CharacterWindowToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ChatboxWindowToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CraftedItemToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -250,6 +266,18 @@ Partial Class Form1
         Me.SplitContainer1.Panel2.SuspendLayout()
         Me.SplitContainer1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
+        Me.MainBankWindowPanel.SuspendLayout()
+        CType(Me.BankWindowCloseButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MainBankItemPanel.SuspendLayout()
+        CType(Me.BankItemIcon, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MainBagWindowPanel.SuspendLayout()
+        CType(Me.BagWindowCloseButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MainBagItemPanel.SuspendLayout()
+        CType(Me.BagItemIcon, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MainControlPanelsWindow.SuspendLayout()
+        CType(Me.RestoreControlsButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ExitControlsButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CancelControlsButton, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MainServerStatusAreaPanel.SuspendLayout()
         Me.MainResetPasswordWindowPanel.SuspendLayout()
         Me.ResetPassword2Panel.SuspendLayout()
@@ -261,17 +289,16 @@ Partial Class Form1
         Me.CodePanel.SuspendLayout()
         CType(Me.CodeField, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MainRegistrationWindowPanel.SuspendLayout()
-        Me.Panel2.SuspendLayout()
         Me.Password2Panel.SuspendLayout()
         CType(Me.Password2Field, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Password1Panel.SuspendLayout()
         CType(Me.Password1Field, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RegistrationBackButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.RegistrationUsernamePanel.SuspendLayout()
+        CType(Me.RegistrationUsernameField, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RegistrationRegisterButton, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.EmailPanel.SuspendLayout()
         CType(Me.EmailField, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.RegistrationUsernamePanel.SuspendLayout()
-        CType(Me.RegistrationUsernameField, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MainOptionsWindowPanel.SuspendLayout()
         Me.OptionsContainer.SuspendLayout()
         CType(Me.OptionsCancelButton, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -365,8 +392,8 @@ Partial Class Form1
         'mainSplitContainer.Panel2
         '
         Me.mainSplitContainer.Panel2.Controls.Add(Me.StatusStrip1)
-        Me.mainSplitContainer.Size = New System.Drawing.Size(1084, 631)
-        Me.mainSplitContainer.SplitterDistance = 603
+        Me.mainSplitContainer.Size = New System.Drawing.Size(1085, 637)
+        Me.mainSplitContainer.SplitterDistance = 607
         Me.mainSplitContainer.TabIndex = 0
         '
         'toolSplitContainer
@@ -382,6 +409,11 @@ Partial Class Form1
         'toolSplitContainer.Panel2
         '
         Me.toolSplitContainer.Panel2.AutoScroll = True
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainBankWindowPanel)
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainBankItemPanel)
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainBagWindowPanel)
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainBagItemPanel)
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainControlPanelsWindow)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainServerStatusAreaPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainResetPasswordWindowPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainRegistrationWindowPanel)
@@ -394,7 +426,7 @@ Partial Class Form1
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainCharSelectionPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainCharacterCreationPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainLoginWindowPanel)
-        Me.toolSplitContainer.Size = New System.Drawing.Size(1084, 603)
+        Me.toolSplitContainer.Size = New System.Drawing.Size(1085, 607)
         Me.toolSplitContainer.SplitterDistance = 273
         Me.toolSplitContainer.TabIndex = 0
         '
@@ -407,7 +439,7 @@ Partial Class Form1
         Me.TabControl1.Location = New System.Drawing.Point(0, 0)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(273, 603)
+        Me.TabControl1.Size = New System.Drawing.Size(273, 607)
         Me.TabControl1.TabIndex = 1
         '
         'TabPage1
@@ -416,7 +448,7 @@ Partial Class Form1
         Me.TabPage1.Location = New System.Drawing.Point(4, 4)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(265, 577)
+        Me.TabPage1.Size = New System.Drawing.Size(265, 581)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Tree"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -438,8 +470,8 @@ Partial Class Form1
         Me.SplitContainer1.Panel2.Controls.Add(Me.jsonValue)
         Me.SplitContainer1.Panel2.Controls.Add(Me.jsonTypeCombo)
         Me.SplitContainer1.Panel2.Controls.Add(Me.jsonType)
-        Me.SplitContainer1.Size = New System.Drawing.Size(259, 571)
-        Me.SplitContainer1.SplitterDistance = 371
+        Me.SplitContainer1.Size = New System.Drawing.Size(259, 575)
+        Me.SplitContainer1.SplitterDistance = 373
         Me.SplitContainer1.TabIndex = 1
         '
         'JTokenTreeUserControl1
@@ -450,14 +482,14 @@ Partial Class Form1
         Me.JTokenTreeUserControl1.Location = New System.Drawing.Point(0, 0)
         Me.JTokenTreeUserControl1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.JTokenTreeUserControl1.Name = "JTokenTreeUserControl1"
-        Me.JTokenTreeUserControl1.Size = New System.Drawing.Size(259, 371)
+        Me.JTokenTreeUserControl1.Size = New System.Drawing.Size(259, 373)
         Me.JTokenTreeUserControl1.TabIndex = 1
         '
         'updateBtn
         '
         Me.updateBtn.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.updateBtn.Location = New System.Drawing.Point(5, 170)
+        Me.updateBtn.Location = New System.Drawing.Point(5, 172)
         Me.updateBtn.Name = "updateBtn"
         Me.updateBtn.Size = New System.Drawing.Size(251, 23)
         Me.updateBtn.TabIndex = 3
@@ -471,7 +503,7 @@ Partial Class Form1
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.jsonValue.Location = New System.Drawing.Point(5, 57)
         Me.jsonValue.Name = "jsonValue"
-        Me.jsonValue.Size = New System.Drawing.Size(251, 107)
+        Me.jsonValue.Size = New System.Drawing.Size(251, 109)
         Me.jsonValue.TabIndex = 2
         Me.jsonValue.Text = ""
         '
@@ -502,7 +534,7 @@ Partial Class Form1
         Me.TabPage2.Location = New System.Drawing.Point(4, 4)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(288, 607)
+        Me.TabPage2.Size = New System.Drawing.Size(526, 963)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Text"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -513,9 +545,218 @@ Partial Class Form1
         Me.fullJson.Location = New System.Drawing.Point(3, 3)
         Me.fullJson.Name = "fullJson"
         Me.fullJson.ReadOnly = True
-        Me.fullJson.Size = New System.Drawing.Size(282, 601)
+        Me.fullJson.Size = New System.Drawing.Size(520, 957)
         Me.fullJson.TabIndex = 0
         Me.fullJson.Text = ""
+        '
+        'MainBankWindowPanel
+        '
+        Me.MainBankWindowPanel.BackgroundImage = CType(resources.GetObject("MainBankWindowPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainBankWindowPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainBankWindowPanel.Controls.Add(Me.BankWindowCloseButton)
+        Me.MainBankWindowPanel.Controls.Add(Me.BankWindowTitle)
+        Me.MainBankWindowPanel.Location = New System.Drawing.Point(853, 479)
+        Me.MainBankWindowPanel.Name = "MainBankWindowPanel"
+        Me.MainBankWindowPanel.Size = New System.Drawing.Size(442, 469)
+        Me.MainBankWindowPanel.TabIndex = 26
+        Me.MainBankWindowPanel.Visible = False
+        '
+        'BankWindowCloseButton
+        '
+        Me.BankWindowCloseButton.BackColor = System.Drawing.Color.Transparent
+        Me.BankWindowCloseButton.BackgroundImage = CType(resources.GetObject("BankWindowCloseButton.BackgroundImage"), System.Drawing.Image)
+        Me.BankWindowCloseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BankWindowCloseButton.Location = New System.Drawing.Point(408, 0)
+        Me.BankWindowCloseButton.Name = "BankWindowCloseButton"
+        Me.BankWindowCloseButton.Size = New System.Drawing.Size(34, 32)
+        Me.BankWindowCloseButton.TabIndex = 19
+        Me.BankWindowCloseButton.TabStop = False
+        '
+        'BankWindowTitle
+        '
+        Me.BankWindowTitle.AutoSize = True
+        Me.BankWindowTitle.BackColor = System.Drawing.Color.Transparent
+        Me.BankWindowTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BankWindowTitle.ForeColor = System.Drawing.Color.White
+        Me.BankWindowTitle.Location = New System.Drawing.Point(32, 6)
+        Me.BankWindowTitle.Name = "BankWindowTitle"
+        Me.BankWindowTitle.Size = New System.Drawing.Size(46, 20)
+        Me.BankWindowTitle.TabIndex = 3
+        Me.BankWindowTitle.Text = "Bank"
+        '
+        'MainBankItemPanel
+        '
+        Me.MainBankItemPanel.BackColor = System.Drawing.Color.Transparent
+        Me.MainBankItemPanel.BackgroundImage = CType(resources.GetObject("MainBankItemPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainBankItemPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainBankItemPanel.Controls.Add(Me.BankItemValue)
+        Me.MainBankItemPanel.Controls.Add(Me.BankItemIcon)
+        Me.MainBankItemPanel.Location = New System.Drawing.Point(814, 258)
+        Me.MainBankItemPanel.Name = "MainBankItemPanel"
+        Me.MainBankItemPanel.Size = New System.Drawing.Size(34, 35)
+        Me.MainBankItemPanel.TabIndex = 26
+        Me.MainBankItemPanel.Visible = False
+        '
+        'BankItemValue
+        '
+        Me.BankItemValue.AutoSize = True
+        Me.BankItemValue.BackColor = System.Drawing.Color.Transparent
+        Me.BankItemValue.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BankItemValue.ForeColor = System.Drawing.Color.White
+        Me.BankItemValue.Location = New System.Drawing.Point(27, 24)
+        Me.BankItemValue.Name = "BankItemValue"
+        Me.BankItemValue.Size = New System.Drawing.Size(15, 16)
+        Me.BankItemValue.TabIndex = 6
+        Me.BankItemValue.Text = "0"
+        '
+        'BankItemIcon
+        '
+        Me.BankItemIcon.BackgroundImage = CType(resources.GetObject("BankItemIcon.BackgroundImage"), System.Drawing.Image)
+        Me.BankItemIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BankItemIcon.Location = New System.Drawing.Point(1, 1)
+        Me.BankItemIcon.Name = "BankItemIcon"
+        Me.BankItemIcon.Size = New System.Drawing.Size(32, 32)
+        Me.BankItemIcon.TabIndex = 0
+        Me.BankItemIcon.TabStop = False
+        '
+        'MainBagWindowPanel
+        '
+        Me.MainBagWindowPanel.BackgroundImage = CType(resources.GetObject("MainBagWindowPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainBagWindowPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainBagWindowPanel.Controls.Add(Me.BagWindowCloseButton)
+        Me.MainBagWindowPanel.Controls.Add(Me.BagWindowTitle)
+        Me.MainBagWindowPanel.Location = New System.Drawing.Point(853, 219)
+        Me.MainBagWindowPanel.Name = "MainBagWindowPanel"
+        Me.MainBagWindowPanel.Size = New System.Drawing.Size(192, 254)
+        Me.MainBagWindowPanel.TabIndex = 25
+        Me.MainBagWindowPanel.Visible = False
+        '
+        'BagWindowCloseButton
+        '
+        Me.BagWindowCloseButton.BackColor = System.Drawing.Color.Transparent
+        Me.BagWindowCloseButton.BackgroundImage = CType(resources.GetObject("BagWindowCloseButton.BackgroundImage"), System.Drawing.Image)
+        Me.BagWindowCloseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BagWindowCloseButton.Location = New System.Drawing.Point(166, 4)
+        Me.BagWindowCloseButton.Name = "BagWindowCloseButton"
+        Me.BagWindowCloseButton.Size = New System.Drawing.Size(26, 24)
+        Me.BagWindowCloseButton.TabIndex = 19
+        Me.BagWindowCloseButton.TabStop = False
+        '
+        'BagWindowTitle
+        '
+        Me.BagWindowTitle.AutoSize = True
+        Me.BagWindowTitle.BackColor = System.Drawing.Color.Transparent
+        Me.BagWindowTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BagWindowTitle.ForeColor = System.Drawing.Color.White
+        Me.BagWindowTitle.Location = New System.Drawing.Point(40, 5)
+        Me.BagWindowTitle.Name = "BagWindowTitle"
+        Me.BagWindowTitle.Size = New System.Drawing.Size(74, 20)
+        Me.BagWindowTitle.TabIndex = 3
+        Me.BagWindowTitle.Text = "Inventory"
+        '
+        'MainBagItemPanel
+        '
+        Me.MainBagItemPanel.BackColor = System.Drawing.Color.Transparent
+        Me.MainBagItemPanel.BackgroundImage = CType(resources.GetObject("MainBagItemPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainBagItemPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainBagItemPanel.Controls.Add(Me.BagItemValue)
+        Me.MainBagItemPanel.Controls.Add(Me.BagItemIcon)
+        Me.MainBagItemPanel.Location = New System.Drawing.Point(813, 219)
+        Me.MainBagItemPanel.Name = "MainBagItemPanel"
+        Me.MainBagItemPanel.Size = New System.Drawing.Size(34, 35)
+        Me.MainBagItemPanel.TabIndex = 24
+        Me.MainBagItemPanel.Visible = False
+        '
+        'BagItemValue
+        '
+        Me.BagItemValue.AutoSize = True
+        Me.BagItemValue.BackColor = System.Drawing.Color.Transparent
+        Me.BagItemValue.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BagItemValue.ForeColor = System.Drawing.Color.White
+        Me.BagItemValue.Location = New System.Drawing.Point(27, 24)
+        Me.BagItemValue.Name = "BagItemValue"
+        Me.BagItemValue.Size = New System.Drawing.Size(15, 16)
+        Me.BagItemValue.TabIndex = 6
+        Me.BagItemValue.Text = "0"
+        '
+        'BagItemIcon
+        '
+        Me.BagItemIcon.BackgroundImage = CType(resources.GetObject("BagItemIcon.BackgroundImage"), System.Drawing.Image)
+        Me.BagItemIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BagItemIcon.Location = New System.Drawing.Point(1, 1)
+        Me.BagItemIcon.Name = "BagItemIcon"
+        Me.BagItemIcon.Size = New System.Drawing.Size(32, 32)
+        Me.BagItemIcon.TabIndex = 0
+        Me.BagItemIcon.TabStop = False
+        '
+        'MainControlPanelsWindow
+        '
+        Me.MainControlPanelsWindow.BackgroundImage = CType(resources.GetObject("MainControlPanelsWindow.BackgroundImage"), System.Drawing.Image)
+        Me.MainControlPanelsWindow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainControlPanelsWindow.Controls.Add(Me.RestoreControlsButton)
+        Me.MainControlPanelsWindow.Controls.Add(Me.ExitControlsButton)
+        Me.MainControlPanelsWindow.Controls.Add(Me.CancelControlsButton)
+        Me.MainControlPanelsWindow.Controls.Add(Me.ControlsPanelInnerPanel)
+        Me.MainControlPanelsWindow.Controls.Add(Me.ControlsHeader)
+        Me.MainControlPanelsWindow.Location = New System.Drawing.Point(812, 0)
+        Me.MainControlPanelsWindow.Name = "MainControlPanelsWindow"
+        Me.MainControlPanelsWindow.Size = New System.Drawing.Size(452, 213)
+        Me.MainControlPanelsWindow.TabIndex = 21
+        Me.MainControlPanelsWindow.Visible = False
+        '
+        'RestoreControlsButton
+        '
+        Me.RestoreControlsButton.BackColor = System.Drawing.Color.Transparent
+        Me.RestoreControlsButton.BackgroundImage = CType(resources.GetObject("RestoreControlsButton.BackgroundImage"), System.Drawing.Image)
+        Me.RestoreControlsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.RestoreControlsButton.Location = New System.Drawing.Point(8, 178)
+        Me.RestoreControlsButton.Name = "RestoreControlsButton"
+        Me.RestoreControlsButton.Size = New System.Drawing.Size(120, 28)
+        Me.RestoreControlsButton.TabIndex = 19
+        Me.RestoreControlsButton.TabStop = False
+        '
+        'ExitControlsButton
+        '
+        Me.ExitControlsButton.BackColor = System.Drawing.Color.Transparent
+        Me.ExitControlsButton.BackgroundImage = CType(resources.GetObject("ExitControlsButton.BackgroundImage"), System.Drawing.Image)
+        Me.ExitControlsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ExitControlsButton.Location = New System.Drawing.Point(238, 174)
+        Me.ExitControlsButton.Name = "ExitControlsButton"
+        Me.ExitControlsButton.Size = New System.Drawing.Size(96, 35)
+        Me.ExitControlsButton.TabIndex = 17
+        Me.ExitControlsButton.TabStop = False
+        '
+        'CancelControlsButton
+        '
+        Me.CancelControlsButton.BackColor = System.Drawing.Color.Transparent
+        Me.CancelControlsButton.BackgroundImage = CType(resources.GetObject("CancelControlsButton.BackgroundImage"), System.Drawing.Image)
+        Me.CancelControlsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.CancelControlsButton.Location = New System.Drawing.Point(342, 174)
+        Me.CancelControlsButton.Name = "CancelControlsButton"
+        Me.CancelControlsButton.Size = New System.Drawing.Size(96, 35)
+        Me.CancelControlsButton.TabIndex = 18
+        Me.CancelControlsButton.TabStop = False
+        '
+        'ControlsPanelInnerPanel
+        '
+        Me.ControlsPanelInnerPanel.BackColor = System.Drawing.Color.Transparent
+        Me.ControlsPanelInnerPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ControlsPanelInnerPanel.Location = New System.Drawing.Point(0, 40)
+        Me.ControlsPanelInnerPanel.Name = "ControlsPanelInnerPanel"
+        Me.ControlsPanelInnerPanel.Size = New System.Drawing.Size(451, 132)
+        Me.ControlsPanelInnerPanel.TabIndex = 7
+        '
+        'ControlsHeader
+        '
+        Me.ControlsHeader.AutoSize = True
+        Me.ControlsHeader.BackColor = System.Drawing.Color.Transparent
+        Me.ControlsHeader.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ControlsHeader.ForeColor = System.Drawing.Color.White
+        Me.ControlsHeader.Location = New System.Drawing.Point(25, 9)
+        Me.ControlsHeader.Name = "ControlsHeader"
+        Me.ControlsHeader.Size = New System.Drawing.Size(68, 20)
+        Me.ControlsHeader.TabIndex = 3
+        Me.ControlsHeader.Text = "Controls"
         '
         'MainServerStatusAreaPanel
         '
@@ -523,7 +764,7 @@ Partial Class Form1
         Me.MainServerStatusAreaPanel.BackgroundImage = CType(resources.GetObject("MainServerStatusAreaPanel.BackgroundImage"), System.Drawing.Image)
         Me.MainServerStatusAreaPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.MainServerStatusAreaPanel.Controls.Add(Me.ServerStatusAreaServerStatusLabel)
-        Me.MainServerStatusAreaPanel.Location = New System.Drawing.Point(16, 341)
+        Me.MainServerStatusAreaPanel.Location = New System.Drawing.Point(355, 589)
         Me.MainServerStatusAreaPanel.Name = "MainServerStatusAreaPanel"
         Me.MainServerStatusAreaPanel.Size = New System.Drawing.Size(200, 24)
         Me.MainServerStatusAreaPanel.TabIndex = 23
@@ -551,7 +792,7 @@ Partial Class Form1
         Me.MainResetPasswordWindowPanel.Controls.Add(Me.ResetSubmitButton)
         Me.MainResetPasswordWindowPanel.Controls.Add(Me.CodePanel)
         Me.MainResetPasswordWindowPanel.Controls.Add(Me.ResetPassHeader)
-        Me.MainResetPasswordWindowPanel.Location = New System.Drawing.Point(716, 425)
+        Me.MainResetPasswordWindowPanel.Location = New System.Drawing.Point(355, 425)
         Me.MainResetPasswordWindowPanel.Name = "MainResetPasswordWindowPanel"
         Me.MainResetPasswordWindowPanel.Size = New System.Drawing.Size(452, 158)
         Me.MainResetPasswordWindowPanel.TabIndex = 22
@@ -697,28 +938,18 @@ Partial Class Form1
         '
         Me.MainRegistrationWindowPanel.BackgroundImage = CType(resources.GetObject("MainRegistrationWindowPanel.BackgroundImage"), System.Drawing.Image)
         Me.MainRegistrationWindowPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.MainRegistrationWindowPanel.Controls.Add(Me.Panel2)
+        Me.MainRegistrationWindowPanel.Controls.Add(Me.Password2Panel)
+        Me.MainRegistrationWindowPanel.Controls.Add(Me.Password1Panel)
         Me.MainRegistrationWindowPanel.Controls.Add(Me.RegistrationLabel)
-        Me.MainRegistrationWindowPanel.Location = New System.Drawing.Point(716, 219)
+        Me.MainRegistrationWindowPanel.Controls.Add(Me.RegistrationBackButton)
+        Me.MainRegistrationWindowPanel.Controls.Add(Me.RegistrationUsernamePanel)
+        Me.MainRegistrationWindowPanel.Controls.Add(Me.RegistrationRegisterButton)
+        Me.MainRegistrationWindowPanel.Controls.Add(Me.EmailPanel)
+        Me.MainRegistrationWindowPanel.Location = New System.Drawing.Point(355, 219)
         Me.MainRegistrationWindowPanel.Name = "MainRegistrationWindowPanel"
         Me.MainRegistrationWindowPanel.Size = New System.Drawing.Size(452, 198)
         Me.MainRegistrationWindowPanel.TabIndex = 21
         Me.MainRegistrationWindowPanel.Visible = False
-        '
-        'Panel2
-        '
-        Me.Panel2.BackColor = System.Drawing.Color.Transparent
-        Me.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel2.Controls.Add(Me.Password2Panel)
-        Me.Panel2.Controls.Add(Me.Password1Panel)
-        Me.Panel2.Controls.Add(Me.RegistrationBackButton)
-        Me.Panel2.Controls.Add(Me.RegistrationRegisterButton)
-        Me.Panel2.Controls.Add(Me.EmailPanel)
-        Me.Panel2.Controls.Add(Me.RegistrationUsernamePanel)
-        Me.Panel2.Location = New System.Drawing.Point(0, 34)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(452, 179)
-        Me.Panel2.TabIndex = 7
         '
         'Password2Panel
         '
@@ -786,6 +1017,18 @@ Partial Class Form1
         Me.Password1Label.TabIndex = 5
         Me.Password1Label.Text = "Password:"
         '
+        'RegistrationLabel
+        '
+        Me.RegistrationLabel.AutoSize = True
+        Me.RegistrationLabel.BackColor = System.Drawing.Color.Transparent
+        Me.RegistrationLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RegistrationLabel.ForeColor = System.Drawing.Color.White
+        Me.RegistrationLabel.Location = New System.Drawing.Point(25, 9)
+        Me.RegistrationLabel.Name = "RegistrationLabel"
+        Me.RegistrationLabel.Size = New System.Drawing.Size(69, 20)
+        Me.RegistrationLabel.TabIndex = 3
+        Me.RegistrationLabel.Text = "Register"
+        '
         'RegistrationBackButton
         '
         Me.RegistrationBackButton.BackColor = System.Drawing.Color.Transparent
@@ -796,6 +1039,39 @@ Partial Class Form1
         Me.RegistrationBackButton.Size = New System.Drawing.Size(96, 35)
         Me.RegistrationBackButton.TabIndex = 18
         Me.RegistrationBackButton.TabStop = False
+        '
+        'RegistrationUsernamePanel
+        '
+        Me.RegistrationUsernamePanel.BackColor = System.Drawing.Color.Transparent
+        Me.RegistrationUsernamePanel.BackgroundImage = CType(resources.GetObject("RegistrationUsernamePanel.BackgroundImage"), System.Drawing.Image)
+        Me.RegistrationUsernamePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.RegistrationUsernamePanel.Controls.Add(Me.RegistrationUsernameField)
+        Me.RegistrationUsernamePanel.Controls.Add(Me.RegistrationUsernameLabel)
+        Me.RegistrationUsernamePanel.Location = New System.Drawing.Point(14, 54)
+        Me.RegistrationUsernamePanel.Name = "RegistrationUsernamePanel"
+        Me.RegistrationUsernamePanel.Size = New System.Drawing.Size(308, 28)
+        Me.RegistrationUsernamePanel.TabIndex = 8
+        '
+        'RegistrationUsernameField
+        '
+        Me.RegistrationUsernameField.BackgroundImage = CType(resources.GetObject("RegistrationUsernameField.BackgroundImage"), System.Drawing.Image)
+        Me.RegistrationUsernameField.Location = New System.Drawing.Point(4, 10)
+        Me.RegistrationUsernameField.Name = "RegistrationUsernameField"
+        Me.RegistrationUsernameField.Size = New System.Drawing.Size(302, 16)
+        Me.RegistrationUsernameField.TabIndex = 9
+        Me.RegistrationUsernameField.TabStop = False
+        '
+        'RegistrationUsernameLabel
+        '
+        Me.RegistrationUsernameLabel.AutoSize = True
+        Me.RegistrationUsernameLabel.BackColor = System.Drawing.Color.Transparent
+        Me.RegistrationUsernameLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RegistrationUsernameLabel.ForeColor = System.Drawing.Color.White
+        Me.RegistrationUsernameLabel.Location = New System.Drawing.Point(0, -4)
+        Me.RegistrationUsernameLabel.Name = "RegistrationUsernameLabel"
+        Me.RegistrationUsernameLabel.Size = New System.Drawing.Size(74, 16)
+        Me.RegistrationUsernameLabel.TabIndex = 5
+        Me.RegistrationUsernameLabel.Text = "Username:"
         '
         'RegistrationRegisterButton
         '
@@ -841,58 +1117,13 @@ Partial Class Form1
         Me.EmailLabel.TabIndex = 5
         Me.EmailLabel.Text = "Email:"
         '
-        'RegistrationUsernamePanel
-        '
-        Me.RegistrationUsernamePanel.BackColor = System.Drawing.Color.Transparent
-        Me.RegistrationUsernamePanel.BackgroundImage = CType(resources.GetObject("RegistrationUsernamePanel.BackgroundImage"), System.Drawing.Image)
-        Me.RegistrationUsernamePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.RegistrationUsernamePanel.Controls.Add(Me.RegistrationUsernameField)
-        Me.RegistrationUsernamePanel.Controls.Add(Me.RegistrationUsernameLabel)
-        Me.RegistrationUsernamePanel.Location = New System.Drawing.Point(14, 54)
-        Me.RegistrationUsernamePanel.Name = "RegistrationUsernamePanel"
-        Me.RegistrationUsernamePanel.Size = New System.Drawing.Size(308, 28)
-        Me.RegistrationUsernamePanel.TabIndex = 8
-        '
-        'RegistrationUsernameField
-        '
-        Me.RegistrationUsernameField.BackgroundImage = CType(resources.GetObject("RegistrationUsernameField.BackgroundImage"), System.Drawing.Image)
-        Me.RegistrationUsernameField.Location = New System.Drawing.Point(4, 10)
-        Me.RegistrationUsernameField.Name = "RegistrationUsernameField"
-        Me.RegistrationUsernameField.Size = New System.Drawing.Size(302, 16)
-        Me.RegistrationUsernameField.TabIndex = 9
-        Me.RegistrationUsernameField.TabStop = False
-        '
-        'RegistrationUsernameLabel
-        '
-        Me.RegistrationUsernameLabel.AutoSize = True
-        Me.RegistrationUsernameLabel.BackColor = System.Drawing.Color.Transparent
-        Me.RegistrationUsernameLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RegistrationUsernameLabel.ForeColor = System.Drawing.Color.White
-        Me.RegistrationUsernameLabel.Location = New System.Drawing.Point(0, -4)
-        Me.RegistrationUsernameLabel.Name = "RegistrationUsernameLabel"
-        Me.RegistrationUsernameLabel.Size = New System.Drawing.Size(74, 16)
-        Me.RegistrationUsernameLabel.TabIndex = 5
-        Me.RegistrationUsernameLabel.Text = "Username:"
-        '
-        'RegistrationLabel
-        '
-        Me.RegistrationLabel.AutoSize = True
-        Me.RegistrationLabel.BackColor = System.Drawing.Color.Transparent
-        Me.RegistrationLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RegistrationLabel.ForeColor = System.Drawing.Color.White
-        Me.RegistrationLabel.Location = New System.Drawing.Point(25, 9)
-        Me.RegistrationLabel.Name = "RegistrationLabel"
-        Me.RegistrationLabel.Size = New System.Drawing.Size(69, 20)
-        Me.RegistrationLabel.TabIndex = 3
-        Me.RegistrationLabel.Text = "Register"
-        '
         'MainOptionsWindowPanel
         '
         Me.MainOptionsWindowPanel.BackgroundImage = CType(resources.GetObject("MainOptionsWindowPanel.BackgroundImage"), System.Drawing.Image)
         Me.MainOptionsWindowPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.MainOptionsWindowPanel.Controls.Add(Me.OptionsContainer)
         Me.MainOptionsWindowPanel.Controls.Add(Me.OptionsHeader)
-        Me.MainOptionsWindowPanel.Location = New System.Drawing.Point(715, 0)
+        Me.MainOptionsWindowPanel.Location = New System.Drawing.Point(354, 0)
         Me.MainOptionsWindowPanel.Name = "MainOptionsWindowPanel"
         Me.MainOptionsWindowPanel.Size = New System.Drawing.Size(452, 213)
         Me.MainOptionsWindowPanel.TabIndex = 20
@@ -1165,9 +1396,8 @@ Partial Class Form1
         Me.MainMenuWindowPanel.Controls.Add(Me.MainMenuCreditsButton)
         Me.MainMenuWindowPanel.Controls.Add(Me.MainMenuRegisterButton)
         Me.MainMenuWindowPanel.Controls.Add(Me.MainMenuLoginButton)
-        Me.MainMenuWindowPanel.Controls.Add(Me.ServerStatusLabel)
         Me.MainMenuWindowPanel.Controls.Add(Me.MainMenuTitle)
-        Me.MainMenuWindowPanel.Location = New System.Drawing.Point(258, 199)
+        Me.MainMenuWindowPanel.Location = New System.Drawing.Point(-103, 199)
         Me.MainMenuWindowPanel.Name = "MainMenuWindowPanel"
         Me.MainMenuWindowPanel.Size = New System.Drawing.Size(452, 213)
         Me.MainMenuWindowPanel.TabIndex = 19
@@ -1228,18 +1458,6 @@ Partial Class Form1
         Me.MainMenuLoginButton.TabIndex = 10
         Me.MainMenuLoginButton.TabStop = False
         '
-        'ServerStatusLabel
-        '
-        Me.ServerStatusLabel.AutoSize = True
-        Me.ServerStatusLabel.BackColor = System.Drawing.Color.Transparent
-        Me.ServerStatusLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ServerStatusLabel.ForeColor = System.Drawing.Color.White
-        Me.ServerStatusLabel.Location = New System.Drawing.Point(0, 198)
-        Me.ServerStatusLabel.Name = "ServerStatusLabel"
-        Me.ServerStatusLabel.Size = New System.Drawing.Size(74, 13)
-        Me.ServerStatusLabel.TabIndex = 4
-        Me.ServerStatusLabel.Text = "ServerStatus?"
-        '
         'MainMenuTitle
         '
         Me.MainMenuTitle.AutoSize = True
@@ -1257,7 +1475,7 @@ Partial Class Form1
         Me.MainLogoPanel.BackColor = System.Drawing.Color.Transparent
         Me.MainLogoPanel.BackgroundImage = CType(resources.GetObject("MainLogoPanel.BackgroundImage"), System.Drawing.Image)
         Me.MainLogoPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.MainLogoPanel.Location = New System.Drawing.Point(-330, 430)
+        Me.MainLogoPanel.Location = New System.Drawing.Point(-714, 525)
         Me.MainLogoPanel.Name = "MainLogoPanel"
         Me.MainLogoPanel.Size = New System.Drawing.Size(580, 186)
         Me.MainLogoPanel.TabIndex = 18
@@ -1269,10 +1487,9 @@ Partial Class Form1
         Me.MainInputBoxPanel.BackgroundImage = CType(resources.GetObject("MainInputBoxPanel.BackgroundImage"), System.Drawing.Image)
         Me.MainInputBoxPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.MainInputBoxPanel.Controls.Add(Me.InputBoxInnerPanel)
-        Me.MainInputBoxPanel.Controls.Add(Me.TitleBar)
         Me.MainInputBoxPanel.Controls.Add(Me.InputBoxCloseButton)
         Me.MainInputBoxPanel.Controls.Add(Me.InputBoxTitle)
-        Me.MainInputBoxPanel.Location = New System.Drawing.Point(256, 418)
+        Me.MainInputBoxPanel.Location = New System.Drawing.Point(-122, 418)
         Me.MainInputBoxPanel.Name = "MainInputBoxPanel"
         Me.MainInputBoxPanel.Size = New System.Drawing.Size(452, 198)
         Me.MainInputBoxPanel.TabIndex = 17
@@ -1286,9 +1503,9 @@ Partial Class Form1
         Me.InputBoxInnerPanel.Controls.Add(Me.NoButton)
         Me.InputBoxInnerPanel.Controls.Add(Me.PromptLabel)
         Me.InputBoxInnerPanel.Controls.Add(Me.YesButton)
-        Me.InputBoxInnerPanel.Location = New System.Drawing.Point(0, 0)
+        Me.InputBoxInnerPanel.Location = New System.Drawing.Point(3, 39)
         Me.InputBoxInnerPanel.Name = "InputBoxInnerPanel"
-        Me.InputBoxInnerPanel.Size = New System.Drawing.Size(10, 10)
+        Me.InputBoxInnerPanel.Size = New System.Drawing.Size(449, 156)
         Me.InputBoxInnerPanel.TabIndex = 12
         '
         'OkayButton
@@ -1342,9 +1559,9 @@ Partial Class Form1
         Me.PromptLabel.ForeColor = System.Drawing.Color.White
         Me.PromptLabel.Location = New System.Drawing.Point(36, 12)
         Me.PromptLabel.Name = "PromptLabel"
-        Me.PromptLabel.Size = New System.Drawing.Size(84, 16)
+        Me.PromptLabel.Size = New System.Drawing.Size(110, 16)
         Me.PromptLabel.TabIndex = 4
-        Me.PromptLabel.Text = "HINT LABEL"
+        Me.PromptLabel.Text = "PROMPT LABEL"
         '
         'YesButton
         '
@@ -1357,21 +1574,13 @@ Partial Class Form1
         Me.YesButton.TabIndex = 10
         Me.YesButton.TabStop = False
         '
-        'TitleBar
-        '
-        Me.TitleBar.BackColor = System.Drawing.Color.Transparent
-        Me.TitleBar.Location = New System.Drawing.Point(0, 0)
-        Me.TitleBar.Name = "TitleBar"
-        Me.TitleBar.Size = New System.Drawing.Size(70, 29)
-        Me.TitleBar.TabIndex = 11
-        '
         'InputBoxCloseButton
         '
         Me.InputBoxCloseButton.BackColor = System.Drawing.Color.Transparent
         Me.InputBoxCloseButton.BackgroundImage = CType(resources.GetObject("InputBoxCloseButton.BackgroundImage"), System.Drawing.Image)
         Me.InputBoxCloseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.InputBoxCloseButton.InitialImage = Nothing
-        Me.InputBoxCloseButton.Location = New System.Drawing.Point(0, 0)
+        Me.InputBoxCloseButton.Location = New System.Drawing.Point(432, 0)
         Me.InputBoxCloseButton.Name = "InputBoxCloseButton"
         Me.InputBoxCloseButton.Size = New System.Drawing.Size(20, 20)
         Me.InputBoxCloseButton.TabIndex = 9
@@ -1398,7 +1607,7 @@ Partial Class Form1
         Me.MainForgotPasswordWindowPanel.Controls.Add(Me.ForgotPasswordSubmitButton)
         Me.MainForgotPasswordWindowPanel.Controls.Add(Me.ForgotPasswordInputPanel)
         Me.MainForgotPasswordWindowPanel.Controls.Add(Me.ForgotPasswordHeader)
-        Me.MainForgotPasswordWindowPanel.Location = New System.Drawing.Point(258, 35)
+        Me.MainForgotPasswordWindowPanel.Location = New System.Drawing.Point(-120, 35)
         Me.MainForgotPasswordWindowPanel.Name = "MainForgotPasswordWindowPanel"
         Me.MainForgotPasswordWindowPanel.Size = New System.Drawing.Size(452, 158)
         Me.MainForgotPasswordWindowPanel.TabIndex = 16
@@ -1491,7 +1700,7 @@ Partial Class Form1
         Me.MainCreditsPanel.Controls.Add(Me.CreditsBackButton)
         Me.MainCreditsPanel.Controls.Add(Me.CreditsScrollview)
         Me.MainCreditsPanel.Controls.Add(Me.CreditsHeader)
-        Me.MainCreditsPanel.Location = New System.Drawing.Point(258, -233)
+        Me.MainCreditsPanel.Location = New System.Drawing.Point(-120, -233)
         Me.MainCreditsPanel.Name = "MainCreditsPanel"
         Me.MainCreditsPanel.Size = New System.Drawing.Size(452, 262)
         Me.MainCreditsPanel.TabIndex = 15
@@ -1564,7 +1773,7 @@ Partial Class Form1
         Me.MainCharSelectionPanel.Controls.Add(Me.PlayButton)
         Me.MainCharSelectionPanel.Controls.Add(Me.SelectCharCharacterContainer)
         Me.MainCharSelectionPanel.Controls.Add(Me.CharacterSelectionHeader)
-        Me.MainCharSelectionPanel.Location = New System.Drawing.Point(-200, 132)
+        Me.MainCharSelectionPanel.Location = New System.Drawing.Point(-578, 132)
         Me.MainCharSelectionPanel.Name = "MainCharSelectionPanel"
         Me.MainCharSelectionPanel.Size = New System.Drawing.Size(452, 198)
         Me.MainCharSelectionPanel.TabIndex = 12
@@ -1706,7 +1915,7 @@ Partial Class Form1
         Me.MainCharacterCreationPanel.Controls.Add(Me.ClassPanel)
         Me.MainCharacterCreationPanel.Controls.Add(Me.CharacterNamePanel)
         Me.MainCharacterCreationPanel.Controls.Add(Me.CharacterCreationHeader)
-        Me.MainCharacterCreationPanel.Location = New System.Drawing.Point(-200, -72)
+        Me.MainCharacterCreationPanel.Location = New System.Drawing.Point(-578, -72)
         Me.MainCharacterCreationPanel.Name = "MainCharacterCreationPanel"
         Me.MainCharacterCreationPanel.Size = New System.Drawing.Size(452, 198)
         Me.MainCharacterCreationPanel.TabIndex = 11
@@ -1978,7 +2187,7 @@ Partial Class Form1
         Me.MainLoginWindowPanel.Controls.Add(Me.PasswordPanel)
         Me.MainLoginWindowPanel.Controls.Add(Me.UsernamePanel)
         Me.MainLoginWindowPanel.Controls.Add(Me.LoginHeaderLabel)
-        Me.MainLoginWindowPanel.Location = New System.Drawing.Point(-200, -233)
+        Me.MainLoginWindowPanel.Location = New System.Drawing.Point(-578, -233)
         Me.MainLoginWindowPanel.Name = "MainLoginWindowPanel"
         Me.MainLoginWindowPanel.Size = New System.Drawing.Size(452, 158)
         Me.MainLoginWindowPanel.TabIndex = 3
@@ -2124,14 +2333,14 @@ Partial Class Form1
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.statusTxtBox})
         Me.StatusStrip1.Location = New System.Drawing.Point(0, 0)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(1084, 25)
+        Me.StatusStrip1.Size = New System.Drawing.Size(1085, 26)
         Me.StatusStrip1.TabIndex = 0
         Me.StatusStrip1.Text = "StatusStrip1"
         '
         'statusTxtBox
         '
         Me.statusTxtBox.Name = "statusTxtBox"
-        Me.statusTxtBox.Size = New System.Drawing.Size(51, 20)
+        Me.statusTxtBox.Size = New System.Drawing.Size(51, 21)
         Me.statusTxtBox.Text = "Ready...."
         '
         'MenuStrip1
@@ -2139,7 +2348,7 @@ Partial Class Form1
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.SaveToolStripMenuItem, Me.RefreshBtn, Me.gridToggle})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1084, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1085, 24)
         Me.MenuStrip1.TabIndex = 1
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -2152,9 +2361,9 @@ Partial Class Form1
         '
         'GameToolStripMenuItem
         '
-        Me.GameToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BagItemToolStripMenuItem, Me.BagWindowToolStripMenuItem, Me.BankItemToolStripMenuItem, Me.CharacterWindowToolStripMenuItem, Me.ChatboxWindowToolStripMenuItem, Me.CraftedItemToolStripMenuItem, Me.CraftingIngredientToolStripMenuItem, Me.CraftingWindowToolStripMenuItem, Me.DraggableToolStripMenuItem, Me.EquipmentItemToolStripMenuItem, Me.EscapeMenuToolStripMenuItem, Me.EventDialogWindow1ResponseToolStripMenuItem, Me.EventDialogWindow2ResponseToolStripMenuItem, Me.EventDialogWindow3ResponseToolStripMenuItem, Me.EventDialogWindow4ResponseToolStripMenuItem, Me.FriendsWindowToolStripMenuItem, Me.HotbarWindowToolStripMenuItem, Me.InputBoxToolStripMenuItem1, Me.InventoryItemToolStripMenuItem, Me.InventoryWindowToolStripMenuItem, Me.ItemDescWindowToolStripMenuItem, Me.ItemDescWindowExpandedToolStripMenuItem, Me.MenuContainerToolStripMenuItem, Me.OptionsWindowToolStripMenuItem1, Me.PartyWindowToolStripMenuItem, Me.PlayerBoxToolStripMenuItem, Me.PlayerStatusIconToolStripMenuItem, Me.QuestOfferWindowToolStripMenuItem, Me.QuestWindowToolStripMenuItem, Me.ShopItemToolStripMenuItem, Me.ShopWindowToolStripMenuItem, Me.SpellMenuItem, Me.SpellDescWindowMenuItem, Me.SpellDescWindowExpandedMenuItem, Me.SpellsWindowMenuItem, Me.TargetBoxMenuItem, Me.TargetStatusIconMenuItem, Me.TheirTradeItemMenuItem, Me.TradeWindowMenuItem, Me.YourTradeItemMenuItem})
+        Me.GameToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BagItemToolStripMenuItem, Me.BagWindowToolStripMenuItem, Me.BankItemToolStripMenuItem, Me.BankWindowToolStripMenuItem, Me.CharacterWindowToolStripMenuItem, Me.ChatboxWindowToolStripMenuItem, Me.CraftedItemToolStripMenuItem, Me.CraftingIngredientToolStripMenuItem, Me.CraftingWindowToolStripMenuItem, Me.DraggableToolStripMenuItem, Me.EquipmentItemToolStripMenuItem, Me.EscapeMenuToolStripMenuItem, Me.EventDialogWindow1ResponseToolStripMenuItem, Me.EventDialogWindow2ResponseToolStripMenuItem, Me.EventDialogWindow3ResponseToolStripMenuItem, Me.EventDialogWindow4ResponseToolStripMenuItem, Me.FriendsWindowToolStripMenuItem, Me.HotbarWindowToolStripMenuItem, Me.InputBoxToolStripMenuItem1, Me.InventoryItemToolStripMenuItem, Me.InventoryWindowToolStripMenuItem, Me.ItemDescWindowToolStripMenuItem, Me.ItemDescWindowExpandedToolStripMenuItem, Me.MenuContainerToolStripMenuItem, Me.OptionsWindowToolStripMenuItem1, Me.PartyWindowToolStripMenuItem, Me.PlayerBoxToolStripMenuItem, Me.PlayerStatusIconToolStripMenuItem, Me.QuestOfferWindowToolStripMenuItem, Me.QuestWindowToolStripMenuItem, Me.ShopItemToolStripMenuItem, Me.ShopWindowToolStripMenuItem, Me.SpellMenuItem, Me.SpellDescWindowMenuItem, Me.SpellDescWindowExpandedMenuItem, Me.SpellsWindowMenuItem, Me.TargetBoxMenuItem, Me.TargetStatusIconMenuItem, Me.TheirTradeItemMenuItem, Me.TradeWindowMenuItem, Me.YourTradeItemMenuItem})
         Me.GameToolStripMenuItem.Name = "GameToolStripMenuItem"
-        Me.GameToolStripMenuItem.Size = New System.Drawing.Size(105, 22)
+        Me.GameToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.GameToolStripMenuItem.Text = "game"
         '
         'BagItemToolStripMenuItem
@@ -2174,6 +2383,12 @@ Partial Class Form1
         Me.BankItemToolStripMenuItem.Name = "BankItemToolStripMenuItem"
         Me.BankItemToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
         Me.BankItemToolStripMenuItem.Text = "BankItem"
+        '
+        'BankWindowToolStripMenuItem
+        '
+        Me.BankWindowToolStripMenuItem.Name = "BankWindowToolStripMenuItem"
+        Me.BankWindowToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.BankWindowToolStripMenuItem.Text = "BankWindow"
         '
         'CharacterWindowToolStripMenuItem
         '
@@ -2401,7 +2616,7 @@ Partial Class Form1
         '
         Me.MenuToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CharacterCreationWindowToolStripMenuItem, Me.CharacterSelectionWindowToolStripMenuItem, Me.CreditsWindowToolStripMenuItem, Me.ForgotPasswordWindowToolStripMenuItem, Me.InputBoxToolStripMenuItem, Me.LoginWindowToolStripMenuItem, Me.LogoToolStripMenuItem, Me.MenuWindowToolStripMenuItem, Me.OptionsWindowToolStripMenuItem, Me.RegistrationWindowToolStripMenuItem, Me.ResetPasswordWindowToolStripMenuItem, Me.ServerStatusAreaToolStripMenuItem})
         Me.MenuToolStripMenuItem.Name = "MenuToolStripMenuItem"
-        Me.MenuToolStripMenuItem.Size = New System.Drawing.Size(105, 22)
+        Me.MenuToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.MenuToolStripMenuItem.Text = "menu"
         '
         'CharacterCreationWindowToolStripMenuItem
@@ -2502,9 +2717,10 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1084, 655)
+        Me.ClientSize = New System.Drawing.Size(1085, 661)
         Me.Controls.Add(Me.mainSplitContainer)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form1"
         Me.Text = "IGE"
@@ -2525,6 +2741,23 @@ Partial Class Form1
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainer1.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
+        Me.MainBankWindowPanel.ResumeLayout(False)
+        Me.MainBankWindowPanel.PerformLayout()
+        CType(Me.BankWindowCloseButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainBankItemPanel.ResumeLayout(False)
+        Me.MainBankItemPanel.PerformLayout()
+        CType(Me.BankItemIcon, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainBagWindowPanel.ResumeLayout(False)
+        Me.MainBagWindowPanel.PerformLayout()
+        CType(Me.BagWindowCloseButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainBagItemPanel.ResumeLayout(False)
+        Me.MainBagItemPanel.PerformLayout()
+        CType(Me.BagItemIcon, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainControlPanelsWindow.ResumeLayout(False)
+        Me.MainControlPanelsWindow.PerformLayout()
+        CType(Me.RestoreControlsButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ExitControlsButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CancelControlsButton, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MainServerStatusAreaPanel.ResumeLayout(False)
         Me.MainServerStatusAreaPanel.PerformLayout()
         Me.MainResetPasswordWindowPanel.ResumeLayout(False)
@@ -2542,7 +2775,6 @@ Partial Class Form1
         CType(Me.CodeField, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MainRegistrationWindowPanel.ResumeLayout(False)
         Me.MainRegistrationWindowPanel.PerformLayout()
-        Me.Panel2.ResumeLayout(False)
         Me.Password2Panel.ResumeLayout(False)
         Me.Password2Panel.PerformLayout()
         CType(Me.Password2Field, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2550,13 +2782,13 @@ Partial Class Form1
         Me.Password1Panel.PerformLayout()
         CType(Me.Password1Field, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RegistrationBackButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.RegistrationUsernamePanel.ResumeLayout(False)
+        Me.RegistrationUsernamePanel.PerformLayout()
+        CType(Me.RegistrationUsernameField, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RegistrationRegisterButton, System.ComponentModel.ISupportInitialize).EndInit()
         Me.EmailPanel.ResumeLayout(False)
         Me.EmailPanel.PerformLayout()
         CType(Me.EmailField, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.RegistrationUsernamePanel.ResumeLayout(False)
-        Me.RegistrationUsernamePanel.PerformLayout()
-        CType(Me.RegistrationUsernameField, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MainOptionsWindowPanel.ResumeLayout(False)
         Me.MainOptionsWindowPanel.PerformLayout()
         Me.OptionsContainer.ResumeLayout(False)
@@ -2807,7 +3039,6 @@ Partial Class Form1
     Friend WithEvents NoButton As PictureBox
     Friend WithEvents PromptLabel As Label
     Friend WithEvents YesButton As PictureBox
-    Friend WithEvents TitleBar As Panel
     Friend WithEvents InputBoxCloseButton As PictureBox
     Friend WithEvents InputBoxTitle As Label
     Friend WithEvents MainLogoPanel As PictureBox
@@ -2817,7 +3048,6 @@ Partial Class Form1
     Friend WithEvents MainMenuCreditsButton As PictureBox
     Friend WithEvents MainMenuRegisterButton As PictureBox
     Friend WithEvents MainMenuLoginButton As PictureBox
-    Friend WithEvents ServerStatusLabel As Label
     Friend WithEvents MainMenuTitle As Label
     Friend WithEvents MainOptionsWindowPanel As Panel
     Friend WithEvents OptionsContainer As Panel
@@ -2846,7 +3076,6 @@ Partial Class Form1
     Friend WithEvents StatusStrip1 As StatusStrip
     Friend WithEvents statusTxtBox As ToolStripStatusLabel
     Friend WithEvents MainRegistrationWindowPanel As Panel
-    Friend WithEvents Panel2 As Panel
     Friend WithEvents Password2Panel As Panel
     Friend WithEvents Password2Field As PictureBox
     Friend WithEvents Password2Label As Label
@@ -2877,4 +3106,23 @@ Partial Class Form1
     Friend WithEvents ResetPassHeader As Label
     Friend WithEvents MainServerStatusAreaPanel As Panel
     Friend WithEvents ServerStatusAreaServerStatusLabel As Label
+    Friend WithEvents MainControlPanelsWindow As Panel
+    Friend WithEvents ControlsPanelInnerPanel As Panel
+    Friend WithEvents CancelControlsButton As PictureBox
+    Friend WithEvents ExitControlsButton As PictureBox
+    Friend WithEvents ControlsHeader As Label
+    Friend WithEvents RestoreControlsButton As PictureBox
+    Friend WithEvents MainBagItemPanel As Panel
+    Friend WithEvents BagItemValue As Label
+    Friend WithEvents BagItemIcon As PictureBox
+    Friend WithEvents MainBagWindowPanel As Panel
+    Friend WithEvents BagWindowCloseButton As PictureBox
+    Friend WithEvents BagWindowTitle As Label
+    Friend WithEvents MainBankItemPanel As Panel
+    Friend WithEvents BankItemValue As Label
+    Friend WithEvents BankItemIcon As PictureBox
+    Friend WithEvents MainBankWindowPanel As Panel
+    Friend WithEvents BankWindowCloseButton As PictureBox
+    Friend WithEvents BankWindowTitle As Label
+    Friend WithEvents BankWindowToolStripMenuItem As ToolStripMenuItem
 End Class

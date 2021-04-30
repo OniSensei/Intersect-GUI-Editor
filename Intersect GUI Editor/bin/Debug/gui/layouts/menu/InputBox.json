@@ -81,7 +81,7 @@
     "TextScale": 1.0
   },
   "CloseButton": {
-    "Bounds": "0,0,20,20",
+    "Bounds": "416,13,20,20",
     "Padding": "3,3,3,3",
     "AlignmentEdgeDistances": "0,0,0,0",
     "AlignmentTransform": "0,0",
@@ -119,7 +119,7 @@
     "ClickSound": ""
   },
   "InnerPanel": {
-    "Bounds": "0,0,10,10",
+    "Bounds": "0,39,449,156",
     "Padding": "0,0,0,0",
     "AlignmentEdgeDistances": "0,0,0,0",
     "AlignmentTransform": "0,0",

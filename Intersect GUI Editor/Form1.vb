@@ -19,6 +19,7 @@ Public Class Form1
     Dim fullscreenchecked As Boolean = False
     Dim autoclosewindowschecked As Boolean = True
     Dim gridoverlay As Boolean = False
+    Dim guitype As String = "game"
 
     Public Sub StatusText(ByVal text As String)
         statusTxtBox.Text = text
@@ -26,6 +27,7 @@ Public Class Form1
 
     Private Sub LoginWindowToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LoginWindowToolStripMenuItem.Click
         gridoverlay = False
+        guitype = "menu"
         MainCharacterCreationPanel.Visible = False
         MainCharSelectionPanel.Visible = False
         MainCreditsPanel.Visible = False
@@ -37,6 +39,10 @@ Public Class Form1
         MainRegistrationWindowPanel.Visible = False
         MainResetPasswordWindowPanel.Visible = False
         MainServerStatusAreaPanel.Visible = False
+        MainBagItemPanel.Visible = False
+        MainBagWindowPanel.Visible = False
+        MainBankItemPanel.Visible = False
+        MainBankWindowPanel.Visible = False
 
         LoadLoginGUI(menuGuiPath & "LoginWindow.json")
         openFile = menuGuiPath & "LoginWindow.json"
@@ -44,6 +50,7 @@ Public Class Form1
 
     Private Sub CharacterCreationWindowToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CharacterCreationWindowToolStripMenuItem.Click
         gridoverlay = False
+        guitype = "menu"
         MainLoginWindowPanel.Visible = False
         MainCharSelectionPanel.Visible = False
         MainCreditsPanel.Visible = False
@@ -55,6 +62,10 @@ Public Class Form1
         MainRegistrationWindowPanel.Visible = False
         MainResetPasswordWindowPanel.Visible = False
         MainServerStatusAreaPanel.Visible = False
+        MainBagItemPanel.Visible = False
+        MainBagWindowPanel.Visible = False
+        MainBankItemPanel.Visible = False
+        MainBankWindowPanel.Visible = False
 
         LoadCharacterCreationGUI(menuGuiPath & "CharacterCreationWindow.json")
         openFile = menuGuiPath & "CharacterCreationWindow.json"
@@ -62,6 +73,7 @@ Public Class Form1
 
     Private Sub CharacterSelectionWindowToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CharacterSelectionWindowToolStripMenuItem.Click
         gridoverlay = False
+        guitype = "menu"
         MainLoginWindowPanel.Visible = False
         MainCharacterCreationPanel.Visible = False
         MainCreditsPanel.Visible = False
@@ -73,6 +85,10 @@ Public Class Form1
         MainRegistrationWindowPanel.Visible = False
         MainResetPasswordWindowPanel.Visible = False
         MainServerStatusAreaPanel.Visible = False
+        MainBagItemPanel.Visible = False
+        MainBagWindowPanel.Visible = False
+        MainBankItemPanel.Visible = False
+        MainBankWindowPanel.Visible = False
 
         LoadCharacterSelectionGUI(menuGuiPath & "CharacterSelectionWindow.json")
         openFile = menuGuiPath & "CharacterSelectionWindow.json"
@@ -80,6 +96,7 @@ Public Class Form1
 
     Private Sub CreditsWindowToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CreditsWindowToolStripMenuItem.Click
         gridoverlay = False
+        guitype = "menu"
         MainLoginWindowPanel.Visible = False
         MainCharacterCreationPanel.Visible = False
         MainCharSelectionPanel.Visible = False
@@ -91,6 +108,10 @@ Public Class Form1
         MainRegistrationWindowPanel.Visible = False
         MainResetPasswordWindowPanel.Visible = False
         MainServerStatusAreaPanel.Visible = False
+        MainBagItemPanel.Visible = False
+        MainBagWindowPanel.Visible = False
+        MainBankItemPanel.Visible = False
+        MainBankWindowPanel.Visible = False
 
         LoadCreditsGUI(menuGuiPath & "CreditsWindow.json")
         openFile = menuGuiPath & "CreditsWindow.json"
@@ -98,6 +119,7 @@ Public Class Form1
 
     Private Sub ForgotPasswordWindowToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ForgotPasswordWindowToolStripMenuItem.Click
         gridoverlay = False
+        guitype = "menu"
         MainLoginWindowPanel.Visible = False
         MainCharacterCreationPanel.Visible = False
         MainCharSelectionPanel.Visible = False
@@ -109,6 +131,10 @@ Public Class Form1
         MainRegistrationWindowPanel.Visible = False
         MainResetPasswordWindowPanel.Visible = False
         MainServerStatusAreaPanel.Visible = False
+        MainBagItemPanel.Visible = False
+        MainBagWindowPanel.Visible = False
+        MainBankItemPanel.Visible = False
+        MainBankWindowPanel.Visible = False
 
         LoadForgotPasswordGUI(menuGuiPath & "ForgotPasswordWindow.json")
         openFile = menuGuiPath & "ForgotPasswordWindow.json"
@@ -116,6 +142,7 @@ Public Class Form1
 
     Private Sub InputBoxToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InputBoxToolStripMenuItem.Click
         gridoverlay = False
+        guitype = "menu"
         MainLoginWindowPanel.Visible = False
         MainCharacterCreationPanel.Visible = False
         MainCharSelectionPanel.Visible = False
@@ -127,6 +154,10 @@ Public Class Form1
         MainRegistrationWindowPanel.Visible = False
         MainResetPasswordWindowPanel.Visible = False
         MainServerStatusAreaPanel.Visible = False
+        MainBagItemPanel.Visible = False
+        MainBagWindowPanel.Visible = False
+        MainBankItemPanel.Visible = False
+        MainBankWindowPanel.Visible = False
 
         LoadInputBoxGUI(menuGuiPath & "InputBox.json")
         openFile = menuGuiPath & "InputBox.json"
@@ -134,6 +165,7 @@ Public Class Form1
 
     Private Sub LogoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LogoToolStripMenuItem.Click
         gridoverlay = False
+        guitype = "menu"
         MainLoginWindowPanel.Visible = False
         MainCharacterCreationPanel.Visible = False
         MainCharSelectionPanel.Visible = False
@@ -145,6 +177,10 @@ Public Class Form1
         MainRegistrationWindowPanel.Visible = False
         MainResetPasswordWindowPanel.Visible = False
         MainServerStatusAreaPanel.Visible = False
+        MainBagItemPanel.Visible = False
+        MainBagWindowPanel.Visible = False
+        MainBankItemPanel.Visible = False
+        MainBankWindowPanel.Visible = False
 
         LoadLogoGUI(menuGuiPath & "Logo.json")
         openFile = menuGuiPath & "Logo.json"
@@ -152,6 +188,7 @@ Public Class Form1
 
     Private Sub MenuWindowToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MenuWindowToolStripMenuItem.Click
         gridoverlay = False
+        guitype = "menu"
         MainLoginWindowPanel.Visible = False
         MainCharacterCreationPanel.Visible = False
         MainCharSelectionPanel.Visible = False
@@ -163,6 +200,10 @@ Public Class Form1
         MainRegistrationWindowPanel.Visible = False
         MainResetPasswordWindowPanel.Visible = False
         MainServerStatusAreaPanel.Visible = False
+        MainBagItemPanel.Visible = False
+        MainBagWindowPanel.Visible = False
+        MainBankItemPanel.Visible = False
+        MainBankWindowPanel.Visible = False
 
         LoadMenuWindow(menuGuiPath & "MenuWindow.json")
         openFile = menuGuiPath & "MenuWindow.json"
@@ -170,6 +211,7 @@ Public Class Form1
 
     Private Sub OptionsWindowToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OptionsWindowToolStripMenuItem.Click
         gridoverlay = False
+        guitype = "menu"
         MainLoginWindowPanel.Visible = False
         MainCharacterCreationPanel.Visible = False
         MainCharSelectionPanel.Visible = False
@@ -181,6 +223,10 @@ Public Class Form1
         MainRegistrationWindowPanel.Visible = False
         MainResetPasswordWindowPanel.Visible = False
         MainServerStatusAreaPanel.Visible = False
+        MainBagItemPanel.Visible = False
+        MainBagWindowPanel.Visible = False
+        MainBankItemPanel.Visible = False
+        MainBankWindowPanel.Visible = False
 
         LoadOptionsWindowGUI(menuGuiPath & "OptionsWindow.json")
         openFile = menuGuiPath & "OptionsWindow.json"
@@ -188,6 +234,7 @@ Public Class Form1
 
     Private Sub RegistrationWindowToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RegistrationWindowToolStripMenuItem.Click
         gridoverlay = False
+        guitype = "menu"
         MainLoginWindowPanel.Visible = False
         MainCharacterCreationPanel.Visible = False
         MainCharSelectionPanel.Visible = False
@@ -199,6 +246,10 @@ Public Class Form1
         MainOptionsWindowPanel.Visible = False
         MainResetPasswordWindowPanel.Visible = False
         MainServerStatusAreaPanel.Visible = False
+        MainBagItemPanel.Visible = False
+        MainBagWindowPanel.Visible = False
+        MainBankItemPanel.Visible = False
+        MainBankWindowPanel.Visible = False
 
         LoadRegistrationWindowGUI(menuGuiPath & "RegistrationWindow.json")
         openFile = menuGuiPath & "RegistrationWindow.json"
@@ -206,6 +257,7 @@ Public Class Form1
 
     Private Sub ResetPasswordWindowToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ResetPasswordWindowToolStripMenuItem.Click
         gridoverlay = False
+        guitype = "menu"
         MainLoginWindowPanel.Visible = False
         MainCharacterCreationPanel.Visible = False
         MainCharSelectionPanel.Visible = False
@@ -217,6 +269,10 @@ Public Class Form1
         MainOptionsWindowPanel.Visible = False
         MainRegistrationWindowPanel.Visible = False
         MainServerStatusAreaPanel.Visible = False
+        MainBagItemPanel.Visible = False
+        MainBagWindowPanel.Visible = False
+        MainBankItemPanel.Visible = False
+        MainBankWindowPanel.Visible = False
 
         LoadResetPasswordWindowGUI(menuGuiPath & "ResetPasswordWindow.json")
         openFile = menuGuiPath & "ResetPasswordWindow.json"
@@ -224,6 +280,7 @@ Public Class Form1
 
     Private Sub ServerStatusAreaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ServerStatusAreaToolStripMenuItem.Click
         gridoverlay = False
+        guitype = "menu"
         MainLoginWindowPanel.Visible = False
         MainCharacterCreationPanel.Visible = False
         MainCharSelectionPanel.Visible = False
@@ -235,9 +292,105 @@ Public Class Form1
         MainOptionsWindowPanel.Visible = False
         MainRegistrationWindowPanel.Visible = False
         MainResetPasswordWindowPanel.Visible = False
+        MainBagItemPanel.Visible = False
+        MainBagWindowPanel.Visible = False
+        MainBankItemPanel.Visible = False
+        MainBankWindowPanel.Visible = False
 
         LoadServerStatusAreaGUI(menuGuiPath & "ServerStatusArea.json")
         openFile = menuGuiPath & "ServerStatusArea.json"
+    End Sub
+
+    Private Sub BagItemToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BagItemToolStripMenuItem.Click
+        gridoverlay = False
+        guitype = "game"
+        MainLoginWindowPanel.Visible = False
+        MainCharacterCreationPanel.Visible = False
+        MainCharSelectionPanel.Visible = False
+        MainCreditsPanel.Visible = False
+        MainForgotPasswordWindowPanel.Visible = False
+        MainLogoPanel.Visible = False
+        MainInputBoxPanel.Visible = False
+        MainMenuWindowPanel.Visible = False
+        MainOptionsWindowPanel.Visible = False
+        MainRegistrationWindowPanel.Visible = False
+        MainResetPasswordWindowPanel.Visible = False
+        MainServerStatusAreaPanel.Visible = False
+        MainBagWindowPanel.Visible = False
+        MainBankItemPanel.Visible = False
+        MainBankWindowPanel.Visible = False
+
+        LoadBagItemGUI(gameGuiPath & "BagItem.json")
+        openFile = gameGuiPath & "BagItem.json"
+    End Sub
+
+    Private Sub BagWindowToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BagWindowToolStripMenuItem.Click
+        gridoverlay = False
+        guitype = "game"
+        MainLoginWindowPanel.Visible = False
+        MainCharacterCreationPanel.Visible = False
+        MainCharSelectionPanel.Visible = False
+        MainCreditsPanel.Visible = False
+        MainForgotPasswordWindowPanel.Visible = False
+        MainLogoPanel.Visible = False
+        MainInputBoxPanel.Visible = False
+        MainMenuWindowPanel.Visible = False
+        MainOptionsWindowPanel.Visible = False
+        MainRegistrationWindowPanel.Visible = False
+        MainResetPasswordWindowPanel.Visible = False
+        MainServerStatusAreaPanel.Visible = False
+        MainBagItemPanel.Visible = False
+        MainBankItemPanel.Visible = False
+        MainBankWindowPanel.Visible = False
+
+        LoadBagWindowGUI(gameGuiPath & "BagWindow.json")
+        openFile = gameGuiPath & "BagWindow.json"
+    End Sub
+
+    Private Sub BankItemToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BankItemToolStripMenuItem.Click
+        gridoverlay = False
+        guitype = "game"
+        MainLoginWindowPanel.Visible = False
+        MainCharacterCreationPanel.Visible = False
+        MainCharSelectionPanel.Visible = False
+        MainCreditsPanel.Visible = False
+        MainForgotPasswordWindowPanel.Visible = False
+        MainLogoPanel.Visible = False
+        MainInputBoxPanel.Visible = False
+        MainMenuWindowPanel.Visible = False
+        MainOptionsWindowPanel.Visible = False
+        MainRegistrationWindowPanel.Visible = False
+        MainResetPasswordWindowPanel.Visible = False
+        MainServerStatusAreaPanel.Visible = False
+        MainBagItemPanel.Visible = False
+        MainBagWindowPanel.Visible = False
+        MainBankWindowPanel.Visible = False
+
+        LoadBankItemGUI(gameGuiPath & "BankItem.json")
+        openFile = gameGuiPath & "BankItem.json"
+    End Sub
+
+    Private Sub BankWindowToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BankWindowToolStripMenuItem.Click
+        gridoverlay = False
+        guitype = "game"
+        MainLoginWindowPanel.Visible = False
+        MainCharacterCreationPanel.Visible = False
+        MainCharSelectionPanel.Visible = False
+        MainCreditsPanel.Visible = False
+        MainForgotPasswordWindowPanel.Visible = False
+        MainLogoPanel.Visible = False
+        MainInputBoxPanel.Visible = False
+        MainMenuWindowPanel.Visible = False
+        MainOptionsWindowPanel.Visible = False
+        MainRegistrationWindowPanel.Visible = False
+        MainResetPasswordWindowPanel.Visible = False
+        MainServerStatusAreaPanel.Visible = False
+        MainBagItemPanel.Visible = False
+        MainBagWindowPanel.Visible = False
+        MainBankItemPanel.Visible = False
+
+        LoadBankWindowGUI(gameGuiPath & "BankWindow.json")
+        openFile = gameGuiPath & "BankWindow.json"
     End Sub
 
     Private Sub JTokenTreeUserControl1_AfterSelect(sender As Object, e As ZTn.Json.JsonTreeView.AfterSelectEventArgs) Handles JTokenTreeUserControl1.AfterSelect
@@ -293,6 +446,14 @@ Public Class Form1
                     LoadResetPasswordWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
                 ElseIf openFile.Contains("ServerStatusArea") Then
                     LoadServerStatusAreaGUI(tempPath & "tmp_" & tempFileName & ".json")
+                ElseIf openFile.Contains("BagItem") Then
+                    LoadBagItemGUI(tempPath & "tmp_" & tempFileName & ".json")
+                ElseIf openFile.Contains("BagWindow") Then
+                    LoadBagWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
+                ElseIf openFile.Contains("BankItem") Then
+                    LoadBankItemGUI(tempPath & "tmp_" & tempFileName & ".json")
+                ElseIf openFile.Contains("BankWindow") Then
+                    LoadBankWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
                 End If
             End Using
 
@@ -327,6 +488,14 @@ Public Class Form1
             LoadResetPasswordWindowGUI(openFile)
         ElseIf openFile.Contains("ServerStatusArea") Then
             LoadServerStatusAreaGUI(openFile)
+        ElseIf openFile.Contains("BagItem") Then
+            LoadBagItemGUI(openFile)
+        ElseIf openFile.Contains("BagWindow") Then
+            LoadBagWindowGUI(openFile)
+        ElseIf openFile.Contains("BankItem") Then
+            LoadBankItemGUI(openFile)
+        ElseIf openFile.Contains("BankWindow") Then
+            LoadBankWindowGUI(openFile)
         End If
     End Sub
 
@@ -557,7 +726,13 @@ Public Class Form1
     Private Sub MeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles gridToggle.Click
         If gridoverlay Then
             gridoverlay = False
-            toolSplitContainer.Panel2.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\background.png")
+            Select Case guitype
+                Case "menu"
+                    toolSplitContainer.Panel2.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\background.png")
+                Case "game"
+                    toolSplitContainer.Panel2.BackColor = Color.Gray
+                    toolSplitContainer.Panel2.BackgroundImage = Nothing
+            End Select
         Else
             gridoverlay = True
             toolSplitContainer.Panel2.BackgroundImage = Image.FromFile(Application.StartupPath & "\resources\grid_overlay.png")
@@ -1048,6 +1223,7 @@ Public Class Form1
         Dim infoPull As OptionsWindow
         infoPull = JsonConvert.DeserializeObject(Of OptionsWindow)(fullJson.Text)
         KeybindingsButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.OptionsContainer.InnerPanel.Children.KeybindingsButton.ClickedImage)
+        MainControlPanelsWindow.Visible = True
     End Sub
 
     Private Sub KeybindingsButton_MouseDown(sender As Object, e As MouseEventArgs) Handles KeybindingsButton.MouseDown
@@ -1276,5 +1452,156 @@ Public Class Form1
         Dim infoPull As ResetPasswordWindow
         infoPull = JsonConvert.DeserializeObject(Of ResetPasswordWindow)(fullJson.Text)
         ResetBackButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.BackButton.NormalImage)
+    End Sub
+
+    Private Sub CancelControlsButton_Click(sender As Object, e As EventArgs) Handles CancelControlsButton.Click
+        Dim infoPull As OptionsWindow
+        infoPull = JsonConvert.DeserializeObject(Of OptionsWindow)(fullJson.Text)
+        CancelControlsButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.CancelControlsButton.ClickedImage)
+        MainControlPanelsWindow.Visible = False
+    End Sub
+
+    Private Sub CancelControlsButton_MouseDown(sender As Object, e As MouseEventArgs) Handles CancelControlsButton.MouseDown
+        Dim infoPull As OptionsWindow
+        infoPull = JsonConvert.DeserializeObject(Of OptionsWindow)(fullJson.Text)
+        CancelControlsButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.CancelControlsButton.ClickedImage)
+    End Sub
+
+    Private Sub CancelControlsButton_MouseUp(sender As Object, e As MouseEventArgs) Handles CancelControlsButton.MouseUp
+        Dim infoPull As OptionsWindow
+        infoPull = JsonConvert.DeserializeObject(Of OptionsWindow)(fullJson.Text)
+        CancelControlsButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.CancelControlsButton.HoveredImage)
+    End Sub
+
+    Private Sub CancelControlsButton_MouseHover(sender As Object, e As EventArgs) Handles CancelControlsButton.MouseHover
+        Dim infoPull As OptionsWindow
+        infoPull = JsonConvert.DeserializeObject(Of OptionsWindow)(fullJson.Text)
+        CancelControlsButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.CancelControlsButton.HoveredImage)
+    End Sub
+
+    Private Sub CancelControlsButton_MouseLeave(sender As Object, e As EventArgs) Handles CancelControlsButton.MouseLeave
+        Dim infoPull As OptionsWindow
+        infoPull = JsonConvert.DeserializeObject(Of OptionsWindow)(fullJson.Text)
+        CancelControlsButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.CancelControlsButton.NormalImage)
+    End Sub
+
+    Private Sub ExitControlsButton_Click(sender As Object, e As EventArgs) Handles ExitControlsButton.Click
+        Dim infoPull As OptionsWindow
+        infoPull = JsonConvert.DeserializeObject(Of OptionsWindow)(fullJson.Text)
+        ExitControlsButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.ExitControlsButton.ClickedImage)
+    End Sub
+
+    Private Sub ExitControlsButton_MouseDown(sender As Object, e As MouseEventArgs) Handles ExitControlsButton.MouseDown
+        Dim infoPull As OptionsWindow
+        infoPull = JsonConvert.DeserializeObject(Of OptionsWindow)(fullJson.Text)
+        ExitControlsButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.ExitControlsButton.ClickedImage)
+    End Sub
+
+    Private Sub ExitControlsButton_MouseUp(sender As Object, e As MouseEventArgs) Handles ExitControlsButton.MouseUp
+        Dim infoPull As OptionsWindow
+        infoPull = JsonConvert.DeserializeObject(Of OptionsWindow)(fullJson.Text)
+        ExitControlsButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.ExitControlsButton.HoveredImage)
+    End Sub
+
+    Private Sub ExitControlsButton_MouseHover(sender As Object, e As EventArgs) Handles ExitControlsButton.MouseHover
+        Dim infoPull As OptionsWindow
+        infoPull = JsonConvert.DeserializeObject(Of OptionsWindow)(fullJson.Text)
+        ExitControlsButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.ExitControlsButton.HoveredImage)
+    End Sub
+
+    Private Sub ExitControlsButton_MouseLeave(sender As Object, e As EventArgs) Handles ExitControlsButton.MouseLeave
+        Dim infoPull As OptionsWindow
+        infoPull = JsonConvert.DeserializeObject(Of OptionsWindow)(fullJson.Text)
+        ExitControlsButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.ExitControlsButton.NormalImage)
+    End Sub
+
+    Private Sub RestoreControlsButton_Click(sender As Object, e As EventArgs) Handles RestoreControlsButton.Click
+        Dim infoPull As OptionsWindow
+        infoPull = JsonConvert.DeserializeObject(Of OptionsWindow)(fullJson.Text)
+        RestoreControlsButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.RestoreControlsButton.ClickedImage)
+    End Sub
+
+    Private Sub RestoreControlsButton_MouseDown(sender As Object, e As MouseEventArgs) Handles RestoreControlsButton.MouseDown
+        Dim infoPull As OptionsWindow
+        infoPull = JsonConvert.DeserializeObject(Of OptionsWindow)(fullJson.Text)
+        RestoreControlsButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.RestoreControlsButton.ClickedImage)
+    End Sub
+
+    Private Sub RestoreControlsButton_MouseUp(sender As Object, e As MouseEventArgs) Handles RestoreControlsButton.MouseUp
+        Dim infoPull As OptionsWindow
+        infoPull = JsonConvert.DeserializeObject(Of OptionsWindow)(fullJson.Text)
+        RestoreControlsButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.RestoreControlsButton.HoveredImage)
+    End Sub
+
+    Private Sub RestoreControlsButton_MouseHover(sender As Object, e As EventArgs) Handles RestoreControlsButton.MouseHover
+        Dim infoPull As OptionsWindow
+        infoPull = JsonConvert.DeserializeObject(Of OptionsWindow)(fullJson.Text)
+        RestoreControlsButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.RestoreControlsButton.HoveredImage)
+    End Sub
+
+    Private Sub RestoreControlsButton_MouseLeave(sender As Object, e As EventArgs) Handles RestoreControlsButton.MouseLeave
+        Dim infoPull As OptionsWindow
+        infoPull = JsonConvert.DeserializeObject(Of OptionsWindow)(fullJson.Text)
+        RestoreControlsButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.RestoreControlsButton.NormalImage)
+    End Sub
+
+    Private Sub InputBoxCloseButton_Click(sender As Object, e As EventArgs) Handles InputBoxCloseButton.Click
+        Dim infoPull As InputBox
+        infoPull = JsonConvert.DeserializeObject(Of InputBox)(fullJson.Text)
+        InputBoxCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Closebutton.ClickedImage)
+    End Sub
+
+    Private Sub InputBoxCloseButton_MouseDown(sender As Object, e As MouseEventArgs) Handles InputBoxCloseButton.MouseDown
+        Dim infoPull As InputBox
+        infoPull = JsonConvert.DeserializeObject(Of InputBox)(fullJson.Text)
+        InputBoxCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Closebutton.ClickedImage)
+    End Sub
+
+    Private Sub InputBoxCloseButton_MouseUp(sender As Object, e As MouseEventArgs) Handles InputBoxCloseButton.MouseUp
+        Dim infoPull As InputBox
+        infoPull = JsonConvert.DeserializeObject(Of InputBox)(fullJson.Text)
+        InputBoxCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Closebutton.HoveredImage)
+    End Sub
+
+    Private Sub InputBoxCloseButton_MouseHover(sender As Object, e As EventArgs) Handles InputBoxCloseButton.MouseHover
+        Dim infoPull As InputBox
+        infoPull = JsonConvert.DeserializeObject(Of InputBox)(fullJson.Text)
+        InputBoxCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Closebutton.HoveredImage)
+    End Sub
+
+    Private Sub InputBoxCloseButton_MouseLeave(sender As Object, e As EventArgs) Handles InputBoxCloseButton.MouseLeave
+        Dim infoPull As InputBox
+        infoPull = JsonConvert.DeserializeObject(Of InputBox)(fullJson.Text)
+        InputBoxCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Closebutton.NormalImage)
+    End Sub
+
+    Private Sub BagWindowCloseButton_Click(sender As Object, e As EventArgs) Handles BagWindowCloseButton.Click
+        Dim infoPull As BagWindow
+        infoPull = JsonConvert.DeserializeObject(Of BagWindow)(fullJson.Text)
+        BagWindowCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.CloseButton.ClickedImage)
+    End Sub
+
+    Private Sub BagWindowCloseButton_MouseDown(sender As Object, e As MouseEventArgs) Handles BagWindowCloseButton.MouseDown
+        Dim infoPull As BagWindow
+        infoPull = JsonConvert.DeserializeObject(Of BagWindow)(fullJson.Text)
+        BagWindowCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.CloseButton.ClickedImage)
+    End Sub
+
+    Private Sub BagWindowCloseButton_MouseUp(sender As Object, e As MouseEventArgs) Handles BagWindowCloseButton.MouseUp
+        Dim infoPull As BagWindow
+        infoPull = JsonConvert.DeserializeObject(Of BagWindow)(fullJson.Text)
+        BagWindowCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.CloseButton.HoveredImage)
+    End Sub
+
+    Private Sub BagWindowCloseButton_MouseHover(sender As Object, e As EventArgs) Handles BagWindowCloseButton.MouseHover
+        Dim infoPull As BagWindow
+        infoPull = JsonConvert.DeserializeObject(Of BagWindow)(fullJson.Text)
+        BagWindowCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.CloseButton.HoveredImage)
+    End Sub
+
+    Private Sub BagWindowCloseButton_MouseLeave(sender As Object, e As EventArgs) Handles BagWindowCloseButton.MouseLeave
+        Dim infoPull As BagWindow
+        infoPull = JsonConvert.DeserializeObject(Of BagWindow)(fullJson.Text)
+        BagWindowCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.CloseButton.NormalImage)
     End Sub
 End Class

@@ -70,7 +70,6 @@ Module MenuWindowGUI
         Form1.MainMenuWindowPanel.Width = mainwindowbounds(2)
         Form1.MainMenuWindowPanel.Height = mainwindowbounds(3)
         Form1.MainMenuWindowPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.Texture)
-        Form1.ServerStatusLabel.Location = New Point(ServerStatusLabelBounds(0), ServerStatusLabelBounds(1))
         Form1.MainMenuTitle.Location = New Point(MenuWindowTitleBounds(0), MenuWindowTitleBounds(1))
         Form1.MainMenuLoginButton.Location = New Point(MenuWindowLoginButtonBounds(0), MenuWindowLoginButtonBounds(1))
         Form1.MainMenuLoginButton.Width = MenuWindowLoginButtonBounds(2)

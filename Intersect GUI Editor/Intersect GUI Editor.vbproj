@@ -50,6 +50,9 @@
   <PropertyGroup>
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon%285%29.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -84,6 +87,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="JSON Deserializers\CommonControlsGUI.vb" />
+    <Compile Include="JSON Deserializers\game\BagItemGUI.vb" />
+    <Compile Include="JSON Deserializers\game\BagWindowGUI.vb" />
+    <Compile Include="JSON Deserializers\game\BankItemGUI.vb" />
+    <Compile Include="JSON Deserializers\game\BankWindowGUI.vb" />
     <Compile Include="JSON Deserializers\menu\CharacterCreationWindowGUI.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
@@ -145,7 +152,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="JSON Deserializers\game\" />
+    <Content Include="favicon%285%29.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
