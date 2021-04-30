@@ -1,0 +1,1 @@
+Only TreuType Fonts (TTF) are supported.

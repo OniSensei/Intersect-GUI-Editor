@@ -91,6 +91,7 @@
     <Compile Include="JSON Deserializers\game\BagWindowGUI.vb" />
     <Compile Include="JSON Deserializers\game\BankItemGUI.vb" />
     <Compile Include="JSON Deserializers\game\BankWindowGUI.vb" />
+    <Compile Include="JSON Deserializers\game\CharacterWindowGUI.vb" />
     <Compile Include="JSON Deserializers\menu\CharacterCreationWindowGUI.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
@@ -125,6 +126,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="SettingsForm.Designer.vb">
+      <DependentUpon>SettingsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
@@ -135,6 +142,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsForm.resx">
+      <DependentUpon>SettingsForm.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

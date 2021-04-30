@@ -35,6 +35,36 @@ Partial Class Form1
         Me.jsonType = New System.Windows.Forms.TextBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.fullJson = New System.Windows.Forms.RichTextBox()
+        Me.MainCharacterWindowPanel = New System.Windows.Forms.Panel()
+        Me.CharacterWindowInnerPanel = New System.Windows.Forms.Panel()
+        Me.EquipmentItem4 = New System.Windows.Forms.Panel()
+        Me.Equipment4Icon = New System.Windows.Forms.PictureBox()
+        Me.EquipmentItem3 = New System.Windows.Forms.Panel()
+        Me.Equipment3Icon = New System.Windows.Forms.PictureBox()
+        Me.EquipmentItem2 = New System.Windows.Forms.Panel()
+        Me.Equipment2Icon = New System.Windows.Forms.PictureBox()
+        Me.EquipmentItem1 = New System.Windows.Forms.Panel()
+        Me.Equipment1Icon = New System.Windows.Forms.PictureBox()
+        Me.EquipmentItem0 = New System.Windows.Forms.Panel()
+        Me.Equipment0Icon = New System.Windows.Forms.PictureBox()
+        Me.PointsLabel = New System.Windows.Forms.Label()
+        Me.IncreaseMagicResistButton = New System.Windows.Forms.PictureBox()
+        Me.MagicResistLabel = New System.Windows.Forms.Label()
+        Me.IncreaseAbilityPowerButton = New System.Windows.Forms.PictureBox()
+        Me.AbilityPowerLabel = New System.Windows.Forms.Label()
+        Me.IncreaseSpeedButton = New System.Windows.Forms.PictureBox()
+        Me.SpeedLabel = New System.Windows.Forms.Label()
+        Me.IncreaseDefenseButton = New System.Windows.Forms.PictureBox()
+        Me.IncreaseAttackButton = New System.Windows.Forms.PictureBox()
+        Me.CharacterWindowDefenseLabel = New System.Windows.Forms.Label()
+        Me.CharacterWindowAttackLabel = New System.Windows.Forms.Label()
+        Me.CharacterWindowStatsLabel = New System.Windows.Forms.Label()
+        Me.CharacterWindowEquipmentLabel = New System.Windows.Forms.Label()
+        Me.CharacterWindowCharacterContainer = New System.Windows.Forms.PictureBox()
+        Me.ChatacterInfoLabel = New System.Windows.Forms.Label()
+        Me.CharacterWindowCharacterNameLabel = New System.Windows.Forms.Label()
+        Me.CharacterWindowCloseButton = New System.Windows.Forms.PictureBox()
+        Me.CharacterWindowTitle = New System.Windows.Forms.Label()
         Me.MainBankWindowPanel = New System.Windows.Forms.Panel()
         Me.BankWindowCloseButton = New System.Windows.Forms.PictureBox()
         Me.BankWindowTitle = New System.Windows.Forms.Label()
@@ -251,6 +281,7 @@ Partial Class Form1
         Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RefreshBtn = New System.Windows.Forms.ToolStripMenuItem()
         Me.gridToggle = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AppSettings = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.mainSplitContainer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.mainSplitContainer.Panel1.SuspendLayout()
         Me.mainSplitContainer.Panel2.SuspendLayout()
@@ -266,6 +297,25 @@ Partial Class Form1
         Me.SplitContainer1.Panel2.SuspendLayout()
         Me.SplitContainer1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
+        Me.MainCharacterWindowPanel.SuspendLayout()
+        Me.CharacterWindowInnerPanel.SuspendLayout()
+        Me.EquipmentItem4.SuspendLayout()
+        CType(Me.Equipment4Icon, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.EquipmentItem3.SuspendLayout()
+        CType(Me.Equipment3Icon, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.EquipmentItem2.SuspendLayout()
+        CType(Me.Equipment2Icon, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.EquipmentItem1.SuspendLayout()
+        CType(Me.Equipment1Icon, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.EquipmentItem0.SuspendLayout()
+        CType(Me.Equipment0Icon, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.IncreaseMagicResistButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.IncreaseAbilityPowerButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.IncreaseSpeedButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.IncreaseDefenseButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.IncreaseAttackButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CharacterWindowCharacterContainer, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CharacterWindowCloseButton, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MainBankWindowPanel.SuspendLayout()
         CType(Me.BankWindowCloseButton, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MainBankItemPanel.SuspendLayout()
@@ -409,6 +459,7 @@ Partial Class Form1
         'toolSplitContainer.Panel2
         '
         Me.toolSplitContainer.Panel2.AutoScroll = True
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainCharacterWindowPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainBankWindowPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainBankItemPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainBagWindowPanel)
@@ -534,7 +585,7 @@ Partial Class Form1
         Me.TabPage2.Location = New System.Drawing.Point(4, 4)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(526, 963)
+        Me.TabPage2.Size = New System.Drawing.Size(265, 581)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Text"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -545,9 +596,362 @@ Partial Class Form1
         Me.fullJson.Location = New System.Drawing.Point(3, 3)
         Me.fullJson.Name = "fullJson"
         Me.fullJson.ReadOnly = True
-        Me.fullJson.Size = New System.Drawing.Size(520, 957)
+        Me.fullJson.Size = New System.Drawing.Size(259, 575)
         Me.fullJson.TabIndex = 0
         Me.fullJson.Text = ""
+        '
+        'MainCharacterWindowPanel
+        '
+        Me.MainCharacterWindowPanel.BackgroundImage = CType(resources.GetObject("MainCharacterWindowPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainCharacterWindowPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainCharacterWindowPanel.Controls.Add(Me.CharacterWindowInnerPanel)
+        Me.MainCharacterWindowPanel.Controls.Add(Me.CharacterWindowCloseButton)
+        Me.MainCharacterWindowPanel.Controls.Add(Me.CharacterWindowTitle)
+        Me.MainCharacterWindowPanel.Location = New System.Drawing.Point(825, 476)
+        Me.MainCharacterWindowPanel.Name = "MainCharacterWindowPanel"
+        Me.MainCharacterWindowPanel.Size = New System.Drawing.Size(220, 340)
+        Me.MainCharacterWindowPanel.TabIndex = 27
+        Me.MainCharacterWindowPanel.Visible = False
+        '
+        'CharacterWindowInnerPanel
+        '
+        Me.CharacterWindowInnerPanel.BackColor = System.Drawing.Color.Transparent
+        Me.CharacterWindowInnerPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.CharacterWindowInnerPanel.Controls.Add(Me.EquipmentItem4)
+        Me.CharacterWindowInnerPanel.Controls.Add(Me.EquipmentItem3)
+        Me.CharacterWindowInnerPanel.Controls.Add(Me.EquipmentItem2)
+        Me.CharacterWindowInnerPanel.Controls.Add(Me.EquipmentItem1)
+        Me.CharacterWindowInnerPanel.Controls.Add(Me.EquipmentItem0)
+        Me.CharacterWindowInnerPanel.Controls.Add(Me.PointsLabel)
+        Me.CharacterWindowInnerPanel.Controls.Add(Me.IncreaseMagicResistButton)
+        Me.CharacterWindowInnerPanel.Controls.Add(Me.MagicResistLabel)
+        Me.CharacterWindowInnerPanel.Controls.Add(Me.IncreaseAbilityPowerButton)
+        Me.CharacterWindowInnerPanel.Controls.Add(Me.AbilityPowerLabel)
+        Me.CharacterWindowInnerPanel.Controls.Add(Me.IncreaseSpeedButton)
+        Me.CharacterWindowInnerPanel.Controls.Add(Me.SpeedLabel)
+        Me.CharacterWindowInnerPanel.Controls.Add(Me.IncreaseDefenseButton)
+        Me.CharacterWindowInnerPanel.Controls.Add(Me.IncreaseAttackButton)
+        Me.CharacterWindowInnerPanel.Controls.Add(Me.CharacterWindowDefenseLabel)
+        Me.CharacterWindowInnerPanel.Controls.Add(Me.CharacterWindowAttackLabel)
+        Me.CharacterWindowInnerPanel.Controls.Add(Me.CharacterWindowStatsLabel)
+        Me.CharacterWindowInnerPanel.Controls.Add(Me.CharacterWindowEquipmentLabel)
+        Me.CharacterWindowInnerPanel.Controls.Add(Me.CharacterWindowCharacterContainer)
+        Me.CharacterWindowInnerPanel.Controls.Add(Me.ChatacterInfoLabel)
+        Me.CharacterWindowInnerPanel.Controls.Add(Me.CharacterWindowCharacterNameLabel)
+        Me.CharacterWindowInnerPanel.Location = New System.Drawing.Point(0, 30)
+        Me.CharacterWindowInnerPanel.Name = "CharacterWindowInnerPanel"
+        Me.CharacterWindowInnerPanel.Size = New System.Drawing.Size(220, 307)
+        Me.CharacterWindowInnerPanel.TabIndex = 21
+        '
+        'EquipmentItem4
+        '
+        Me.EquipmentItem4.BackgroundImage = CType(resources.GetObject("EquipmentItem4.BackgroundImage"), System.Drawing.Image)
+        Me.EquipmentItem4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.EquipmentItem4.Controls.Add(Me.Equipment4Icon)
+        Me.EquipmentItem4.Location = New System.Drawing.Point(176, 144)
+        Me.EquipmentItem4.Name = "EquipmentItem4"
+        Me.EquipmentItem4.Size = New System.Drawing.Size(36, 36)
+        Me.EquipmentItem4.TabIndex = 40
+        '
+        'Equipment4Icon
+        '
+        Me.Equipment4Icon.BackgroundImage = CType(resources.GetObject("Equipment4Icon.BackgroundImage"), System.Drawing.Image)
+        Me.Equipment4Icon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Equipment4Icon.Location = New System.Drawing.Point(2, 2)
+        Me.Equipment4Icon.Name = "Equipment4Icon"
+        Me.Equipment4Icon.Size = New System.Drawing.Size(32, 32)
+        Me.Equipment4Icon.TabIndex = 0
+        Me.Equipment4Icon.TabStop = False
+        '
+        'EquipmentItem3
+        '
+        Me.EquipmentItem3.BackgroundImage = CType(resources.GetObject("EquipmentItem3.BackgroundImage"), System.Drawing.Image)
+        Me.EquipmentItem3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.EquipmentItem3.Controls.Add(Me.Equipment3Icon)
+        Me.EquipmentItem3.Location = New System.Drawing.Point(134, 144)
+        Me.EquipmentItem3.Name = "EquipmentItem3"
+        Me.EquipmentItem3.Size = New System.Drawing.Size(36, 36)
+        Me.EquipmentItem3.TabIndex = 39
+        '
+        'Equipment3Icon
+        '
+        Me.Equipment3Icon.BackgroundImage = CType(resources.GetObject("Equipment3Icon.BackgroundImage"), System.Drawing.Image)
+        Me.Equipment3Icon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Equipment3Icon.Location = New System.Drawing.Point(2, 2)
+        Me.Equipment3Icon.Name = "Equipment3Icon"
+        Me.Equipment3Icon.Size = New System.Drawing.Size(32, 32)
+        Me.Equipment3Icon.TabIndex = 0
+        Me.Equipment3Icon.TabStop = False
+        '
+        'EquipmentItem2
+        '
+        Me.EquipmentItem2.BackgroundImage = CType(resources.GetObject("EquipmentItem2.BackgroundImage"), System.Drawing.Image)
+        Me.EquipmentItem2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.EquipmentItem2.Controls.Add(Me.Equipment2Icon)
+        Me.EquipmentItem2.Location = New System.Drawing.Point(92, 144)
+        Me.EquipmentItem2.Name = "EquipmentItem2"
+        Me.EquipmentItem2.Size = New System.Drawing.Size(36, 36)
+        Me.EquipmentItem2.TabIndex = 38
+        '
+        'Equipment2Icon
+        '
+        Me.Equipment2Icon.BackgroundImage = CType(resources.GetObject("Equipment2Icon.BackgroundImage"), System.Drawing.Image)
+        Me.Equipment2Icon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Equipment2Icon.Location = New System.Drawing.Point(2, 2)
+        Me.Equipment2Icon.Name = "Equipment2Icon"
+        Me.Equipment2Icon.Size = New System.Drawing.Size(32, 32)
+        Me.Equipment2Icon.TabIndex = 0
+        Me.Equipment2Icon.TabStop = False
+        '
+        'EquipmentItem1
+        '
+        Me.EquipmentItem1.BackgroundImage = CType(resources.GetObject("EquipmentItem1.BackgroundImage"), System.Drawing.Image)
+        Me.EquipmentItem1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.EquipmentItem1.Controls.Add(Me.Equipment1Icon)
+        Me.EquipmentItem1.Location = New System.Drawing.Point(50, 144)
+        Me.EquipmentItem1.Name = "EquipmentItem1"
+        Me.EquipmentItem1.Size = New System.Drawing.Size(36, 36)
+        Me.EquipmentItem1.TabIndex = 37
+        '
+        'Equipment1Icon
+        '
+        Me.Equipment1Icon.BackgroundImage = CType(resources.GetObject("Equipment1Icon.BackgroundImage"), System.Drawing.Image)
+        Me.Equipment1Icon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Equipment1Icon.Location = New System.Drawing.Point(2, 2)
+        Me.Equipment1Icon.Name = "Equipment1Icon"
+        Me.Equipment1Icon.Size = New System.Drawing.Size(32, 32)
+        Me.Equipment1Icon.TabIndex = 0
+        Me.Equipment1Icon.TabStop = False
+        '
+        'EquipmentItem0
+        '
+        Me.EquipmentItem0.BackgroundImage = CType(resources.GetObject("EquipmentItem0.BackgroundImage"), System.Drawing.Image)
+        Me.EquipmentItem0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.EquipmentItem0.Controls.Add(Me.Equipment0Icon)
+        Me.EquipmentItem0.Location = New System.Drawing.Point(8, 144)
+        Me.EquipmentItem0.Name = "EquipmentItem0"
+        Me.EquipmentItem0.Size = New System.Drawing.Size(36, 36)
+        Me.EquipmentItem0.TabIndex = 36
+        '
+        'Equipment0Icon
+        '
+        Me.Equipment0Icon.BackgroundImage = CType(resources.GetObject("Equipment0Icon.BackgroundImage"), System.Drawing.Image)
+        Me.Equipment0Icon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Equipment0Icon.Location = New System.Drawing.Point(2, 2)
+        Me.Equipment0Icon.Name = "Equipment0Icon"
+        Me.Equipment0Icon.Size = New System.Drawing.Size(32, 32)
+        Me.Equipment0Icon.TabIndex = 0
+        Me.Equipment0Icon.TabStop = False
+        '
+        'PointsLabel
+        '
+        Me.PointsLabel.AutoSize = True
+        Me.PointsLabel.BackColor = System.Drawing.Color.Transparent
+        Me.PointsLabel.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PointsLabel.ForeColor = System.Drawing.Color.White
+        Me.PointsLabel.Location = New System.Drawing.Point(4, 292)
+        Me.PointsLabel.Name = "PointsLabel"
+        Me.PointsLabel.Size = New System.Drawing.Size(62, 14)
+        Me.PointsLabel.TabIndex = 35
+        Me.PointsLabel.Text = "Points: 1000"
+        '
+        'IncreaseMagicResistButton
+        '
+        Me.IncreaseMagicResistButton.BackColor = System.Drawing.Color.Transparent
+        Me.IncreaseMagicResistButton.BackgroundImage = CType(resources.GetObject("IncreaseMagicResistButton.BackgroundImage"), System.Drawing.Image)
+        Me.IncreaseMagicResistButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.IncreaseMagicResistButton.Location = New System.Drawing.Point(202, 278)
+        Me.IncreaseMagicResistButton.Name = "IncreaseMagicResistButton"
+        Me.IncreaseMagicResistButton.Size = New System.Drawing.Size(9, 9)
+        Me.IncreaseMagicResistButton.TabIndex = 34
+        Me.IncreaseMagicResistButton.TabStop = False
+        '
+        'MagicResistLabel
+        '
+        Me.MagicResistLabel.AutoSize = True
+        Me.MagicResistLabel.BackColor = System.Drawing.Color.Transparent
+        Me.MagicResistLabel.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MagicResistLabel.ForeColor = System.Drawing.Color.White
+        Me.MagicResistLabel.Location = New System.Drawing.Point(4, 275)
+        Me.MagicResistLabel.Name = "MagicResistLabel"
+        Me.MagicResistLabel.Size = New System.Drawing.Size(90, 14)
+        Me.MagicResistLabel.TabIndex = 33
+        Me.MagicResistLabel.Text = "Magic Resist: 1000"
+        '
+        'IncreaseAbilityPowerButton
+        '
+        Me.IncreaseAbilityPowerButton.BackColor = System.Drawing.Color.Transparent
+        Me.IncreaseAbilityPowerButton.BackgroundImage = CType(resources.GetObject("IncreaseAbilityPowerButton.BackgroundImage"), System.Drawing.Image)
+        Me.IncreaseAbilityPowerButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.IncreaseAbilityPowerButton.Location = New System.Drawing.Point(202, 261)
+        Me.IncreaseAbilityPowerButton.Name = "IncreaseAbilityPowerButton"
+        Me.IncreaseAbilityPowerButton.Size = New System.Drawing.Size(9, 9)
+        Me.IncreaseAbilityPowerButton.TabIndex = 32
+        Me.IncreaseAbilityPowerButton.TabStop = False
+        '
+        'AbilityPowerLabel
+        '
+        Me.AbilityPowerLabel.AutoSize = True
+        Me.AbilityPowerLabel.BackColor = System.Drawing.Color.Transparent
+        Me.AbilityPowerLabel.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AbilityPowerLabel.ForeColor = System.Drawing.Color.White
+        Me.AbilityPowerLabel.Location = New System.Drawing.Point(4, 258)
+        Me.AbilityPowerLabel.Name = "AbilityPowerLabel"
+        Me.AbilityPowerLabel.Size = New System.Drawing.Size(93, 14)
+        Me.AbilityPowerLabel.TabIndex = 31
+        Me.AbilityPowerLabel.Text = "Ability Power: 1000"
+        '
+        'IncreaseSpeedButton
+        '
+        Me.IncreaseSpeedButton.BackColor = System.Drawing.Color.Transparent
+        Me.IncreaseSpeedButton.BackgroundImage = CType(resources.GetObject("IncreaseSpeedButton.BackgroundImage"), System.Drawing.Image)
+        Me.IncreaseSpeedButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.IncreaseSpeedButton.Location = New System.Drawing.Point(202, 243)
+        Me.IncreaseSpeedButton.Name = "IncreaseSpeedButton"
+        Me.IncreaseSpeedButton.Size = New System.Drawing.Size(9, 9)
+        Me.IncreaseSpeedButton.TabIndex = 30
+        Me.IncreaseSpeedButton.TabStop = False
+        '
+        'SpeedLabel
+        '
+        Me.SpeedLabel.AutoSize = True
+        Me.SpeedLabel.BackColor = System.Drawing.Color.Transparent
+        Me.SpeedLabel.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SpeedLabel.ForeColor = System.Drawing.Color.White
+        Me.SpeedLabel.Location = New System.Drawing.Point(4, 240)
+        Me.SpeedLabel.Name = "SpeedLabel"
+        Me.SpeedLabel.Size = New System.Drawing.Size(60, 14)
+        Me.SpeedLabel.TabIndex = 29
+        Me.SpeedLabel.Text = "Speed: 1000"
+        '
+        'IncreaseDefenseButton
+        '
+        Me.IncreaseDefenseButton.BackColor = System.Drawing.Color.Transparent
+        Me.IncreaseDefenseButton.BackgroundImage = CType(resources.GetObject("IncreaseDefenseButton.BackgroundImage"), System.Drawing.Image)
+        Me.IncreaseDefenseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.IncreaseDefenseButton.Location = New System.Drawing.Point(202, 227)
+        Me.IncreaseDefenseButton.Name = "IncreaseDefenseButton"
+        Me.IncreaseDefenseButton.Size = New System.Drawing.Size(9, 9)
+        Me.IncreaseDefenseButton.TabIndex = 28
+        Me.IncreaseDefenseButton.TabStop = False
+        '
+        'IncreaseAttackButton
+        '
+        Me.IncreaseAttackButton.BackColor = System.Drawing.Color.Transparent
+        Me.IncreaseAttackButton.BackgroundImage = CType(resources.GetObject("IncreaseAttackButton.BackgroundImage"), System.Drawing.Image)
+        Me.IncreaseAttackButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.IncreaseAttackButton.Location = New System.Drawing.Point(202, 211)
+        Me.IncreaseAttackButton.Name = "IncreaseAttackButton"
+        Me.IncreaseAttackButton.Size = New System.Drawing.Size(9, 9)
+        Me.IncreaseAttackButton.TabIndex = 27
+        Me.IncreaseAttackButton.TabStop = False
+        '
+        'CharacterWindowDefenseLabel
+        '
+        Me.CharacterWindowDefenseLabel.AutoSize = True
+        Me.CharacterWindowDefenseLabel.BackColor = System.Drawing.Color.Transparent
+        Me.CharacterWindowDefenseLabel.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CharacterWindowDefenseLabel.ForeColor = System.Drawing.Color.White
+        Me.CharacterWindowDefenseLabel.Location = New System.Drawing.Point(4, 224)
+        Me.CharacterWindowDefenseLabel.Name = "CharacterWindowDefenseLabel"
+        Me.CharacterWindowDefenseLabel.Size = New System.Drawing.Size(68, 14)
+        Me.CharacterWindowDefenseLabel.TabIndex = 26
+        Me.CharacterWindowDefenseLabel.Text = "Defense: 1000"
+        '
+        'CharacterWindowAttackLabel
+        '
+        Me.CharacterWindowAttackLabel.AutoSize = True
+        Me.CharacterWindowAttackLabel.BackColor = System.Drawing.Color.Transparent
+        Me.CharacterWindowAttackLabel.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CharacterWindowAttackLabel.ForeColor = System.Drawing.Color.White
+        Me.CharacterWindowAttackLabel.Location = New System.Drawing.Point(4, 208)
+        Me.CharacterWindowAttackLabel.Name = "CharacterWindowAttackLabel"
+        Me.CharacterWindowAttackLabel.Size = New System.Drawing.Size(62, 14)
+        Me.CharacterWindowAttackLabel.TabIndex = 25
+        Me.CharacterWindowAttackLabel.Text = "Attack: 1000"
+        '
+        'CharacterWindowStatsLabel
+        '
+        Me.CharacterWindowStatsLabel.AutoSize = True
+        Me.CharacterWindowStatsLabel.BackColor = System.Drawing.Color.Transparent
+        Me.CharacterWindowStatsLabel.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CharacterWindowStatsLabel.ForeColor = System.Drawing.Color.White
+        Me.CharacterWindowStatsLabel.Location = New System.Drawing.Point(4, 188)
+        Me.CharacterWindowStatsLabel.Name = "CharacterWindowStatsLabel"
+        Me.CharacterWindowStatsLabel.Size = New System.Drawing.Size(38, 17)
+        Me.CharacterWindowStatsLabel.TabIndex = 24
+        Me.CharacterWindowStatsLabel.Text = "Stats:"
+        Me.CharacterWindowStatsLabel.Visible = False
+        '
+        'CharacterWindowEquipmentLabel
+        '
+        Me.CharacterWindowEquipmentLabel.AutoSize = True
+        Me.CharacterWindowEquipmentLabel.BackColor = System.Drawing.Color.Transparent
+        Me.CharacterWindowEquipmentLabel.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CharacterWindowEquipmentLabel.ForeColor = System.Drawing.Color.White
+        Me.CharacterWindowEquipmentLabel.Location = New System.Drawing.Point(4, 126)
+        Me.CharacterWindowEquipmentLabel.Name = "CharacterWindowEquipmentLabel"
+        Me.CharacterWindowEquipmentLabel.Size = New System.Drawing.Size(70, 17)
+        Me.CharacterWindowEquipmentLabel.TabIndex = 23
+        Me.CharacterWindowEquipmentLabel.Text = "Equipment:"
+        Me.CharacterWindowEquipmentLabel.Visible = False
+        '
+        'CharacterWindowCharacterContainer
+        '
+        Me.CharacterWindowCharacterContainer.BackgroundImage = CType(resources.GetObject("CharacterWindowCharacterContainer.BackgroundImage"), System.Drawing.Image)
+        Me.CharacterWindowCharacterContainer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.CharacterWindowCharacterContainer.Location = New System.Drawing.Point(60, 18)
+        Me.CharacterWindowCharacterContainer.Name = "CharacterWindowCharacterContainer"
+        Me.CharacterWindowCharacterContainer.Size = New System.Drawing.Size(100, 100)
+        Me.CharacterWindowCharacterContainer.TabIndex = 22
+        Me.CharacterWindowCharacterContainer.TabStop = False
+        '
+        'ChatacterInfoLabel
+        '
+        Me.ChatacterInfoLabel.AutoSize = True
+        Me.ChatacterInfoLabel.BackColor = System.Drawing.Color.Transparent
+        Me.ChatacterInfoLabel.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ChatacterInfoLabel.ForeColor = System.Drawing.Color.White
+        Me.ChatacterInfoLabel.Location = New System.Drawing.Point(4, 116)
+        Me.ChatacterInfoLabel.Name = "ChatacterInfoLabel"
+        Me.ChatacterInfoLabel.Size = New System.Drawing.Size(111, 17)
+        Me.ChatacterInfoLabel.TabIndex = 21
+        Me.ChatacterInfoLabel.Text = "Level: 99 GUI Editor"
+        '
+        'CharacterWindowCharacterNameLabel
+        '
+        Me.CharacterWindowCharacterNameLabel.AutoSize = True
+        Me.CharacterWindowCharacterNameLabel.BackColor = System.Drawing.Color.Transparent
+        Me.CharacterWindowCharacterNameLabel.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CharacterWindowCharacterNameLabel.ForeColor = System.Drawing.Color.White
+        Me.CharacterWindowCharacterNameLabel.Location = New System.Drawing.Point(4, 4)
+        Me.CharacterWindowCharacterNameLabel.Name = "CharacterWindowCharacterNameLabel"
+        Me.CharacterWindowCharacterNameLabel.Size = New System.Drawing.Size(94, 17)
+        Me.CharacterWindowCharacterNameLabel.TabIndex = 20
+        Me.CharacterWindowCharacterNameLabel.Text = "CharacterName"
+        '
+        'CharacterWindowCloseButton
+        '
+        Me.CharacterWindowCloseButton.BackColor = System.Drawing.Color.Transparent
+        Me.CharacterWindowCloseButton.BackgroundImage = CType(resources.GetObject("CharacterWindowCloseButton.BackgroundImage"), System.Drawing.Image)
+        Me.CharacterWindowCloseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.CharacterWindowCloseButton.Location = New System.Drawing.Point(194, 6)
+        Me.CharacterWindowCloseButton.Name = "CharacterWindowCloseButton"
+        Me.CharacterWindowCloseButton.Size = New System.Drawing.Size(26, 25)
+        Me.CharacterWindowCloseButton.TabIndex = 19
+        Me.CharacterWindowCloseButton.TabStop = False
+        '
+        'CharacterWindowTitle
+        '
+        Me.CharacterWindowTitle.AutoSize = True
+        Me.CharacterWindowTitle.BackColor = System.Drawing.Color.Transparent
+        Me.CharacterWindowTitle.Font = New System.Drawing.Font("Source Sans Pro SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CharacterWindowTitle.ForeColor = System.Drawing.Color.White
+        Me.CharacterWindowTitle.Location = New System.Drawing.Point(40, 7)
+        Me.CharacterWindowTitle.Name = "CharacterWindowTitle"
+        Me.CharacterWindowTitle.Size = New System.Drawing.Size(76, 20)
+        Me.CharacterWindowTitle.TabIndex = 3
+        Me.CharacterWindowTitle.Text = "Character"
         '
         'MainBankWindowPanel
         '
@@ -555,7 +959,7 @@ Partial Class Form1
         Me.MainBankWindowPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.MainBankWindowPanel.Controls.Add(Me.BankWindowCloseButton)
         Me.MainBankWindowPanel.Controls.Add(Me.BankWindowTitle)
-        Me.MainBankWindowPanel.Location = New System.Drawing.Point(853, 479)
+        Me.MainBankWindowPanel.Location = New System.Drawing.Point(1051, 219)
         Me.MainBankWindowPanel.Name = "MainBankWindowPanel"
         Me.MainBankWindowPanel.Size = New System.Drawing.Size(442, 469)
         Me.MainBankWindowPanel.TabIndex = 26
@@ -576,11 +980,11 @@ Partial Class Form1
         '
         Me.BankWindowTitle.AutoSize = True
         Me.BankWindowTitle.BackColor = System.Drawing.Color.Transparent
-        Me.BankWindowTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BankWindowTitle.Font = New System.Drawing.Font("Source Sans Pro SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BankWindowTitle.ForeColor = System.Drawing.Color.White
         Me.BankWindowTitle.Location = New System.Drawing.Point(32, 6)
         Me.BankWindowTitle.Name = "BankWindowTitle"
-        Me.BankWindowTitle.Size = New System.Drawing.Size(46, 20)
+        Me.BankWindowTitle.Size = New System.Drawing.Size(44, 20)
         Me.BankWindowTitle.TabIndex = 3
         Me.BankWindowTitle.Text = "Bank"
         '
@@ -601,11 +1005,11 @@ Partial Class Form1
         '
         Me.BankItemValue.AutoSize = True
         Me.BankItemValue.BackColor = System.Drawing.Color.Transparent
-        Me.BankItemValue.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BankItemValue.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BankItemValue.ForeColor = System.Drawing.Color.White
         Me.BankItemValue.Location = New System.Drawing.Point(27, 24)
         Me.BankItemValue.Name = "BankItemValue"
-        Me.BankItemValue.Size = New System.Drawing.Size(15, 16)
+        Me.BankItemValue.Size = New System.Drawing.Size(12, 14)
         Me.BankItemValue.TabIndex = 6
         Me.BankItemValue.Text = "0"
         '
@@ -646,11 +1050,11 @@ Partial Class Form1
         '
         Me.BagWindowTitle.AutoSize = True
         Me.BagWindowTitle.BackColor = System.Drawing.Color.Transparent
-        Me.BagWindowTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BagWindowTitle.Font = New System.Drawing.Font("Source Sans Pro SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BagWindowTitle.ForeColor = System.Drawing.Color.White
         Me.BagWindowTitle.Location = New System.Drawing.Point(40, 5)
         Me.BagWindowTitle.Name = "BagWindowTitle"
-        Me.BagWindowTitle.Size = New System.Drawing.Size(74, 20)
+        Me.BagWindowTitle.Size = New System.Drawing.Size(77, 20)
         Me.BagWindowTitle.TabIndex = 3
         Me.BagWindowTitle.Text = "Inventory"
         '
@@ -671,11 +1075,11 @@ Partial Class Form1
         '
         Me.BagItemValue.AutoSize = True
         Me.BagItemValue.BackColor = System.Drawing.Color.Transparent
-        Me.BagItemValue.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BagItemValue.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BagItemValue.ForeColor = System.Drawing.Color.White
         Me.BagItemValue.Location = New System.Drawing.Point(27, 24)
         Me.BagItemValue.Name = "BagItemValue"
-        Me.BagItemValue.Size = New System.Drawing.Size(15, 16)
+        Me.BagItemValue.Size = New System.Drawing.Size(12, 14)
         Me.BagItemValue.TabIndex = 6
         Me.BagItemValue.Text = "0"
         '
@@ -750,7 +1154,7 @@ Partial Class Form1
         '
         Me.ControlsHeader.AutoSize = True
         Me.ControlsHeader.BackColor = System.Drawing.Color.Transparent
-        Me.ControlsHeader.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ControlsHeader.Font = New System.Drawing.Font("Source Sans Pro SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ControlsHeader.ForeColor = System.Drawing.Color.White
         Me.ControlsHeader.Location = New System.Drawing.Point(25, 9)
         Me.ControlsHeader.Name = "ControlsHeader"
@@ -774,11 +1178,11 @@ Partial Class Form1
         '
         Me.ServerStatusAreaServerStatusLabel.AutoSize = True
         Me.ServerStatusAreaServerStatusLabel.BackColor = System.Drawing.Color.Transparent
-        Me.ServerStatusAreaServerStatusLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ServerStatusAreaServerStatusLabel.Font = New System.Drawing.Font("Source Sans Pro SemiBold", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ServerStatusAreaServerStatusLabel.ForeColor = System.Drawing.Color.White
         Me.ServerStatusAreaServerStatusLabel.Location = New System.Drawing.Point(0, 4)
         Me.ServerStatusAreaServerStatusLabel.Name = "ServerStatusAreaServerStatusLabel"
-        Me.ServerStatusAreaServerStatusLabel.Size = New System.Drawing.Size(91, 16)
+        Me.ServerStatusAreaServerStatusLabel.Size = New System.Drawing.Size(89, 17)
         Me.ServerStatusAreaServerStatusLabel.TabIndex = 5
         Me.ServerStatusAreaServerStatusLabel.Text = "Server Status:"
         '
@@ -824,11 +1228,11 @@ Partial Class Form1
         '
         Me.ResetPassword2Label.AutoSize = True
         Me.ResetPassword2Label.BackColor = System.Drawing.Color.Transparent
-        Me.ResetPassword2Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ResetPassword2Label.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ResetPassword2Label.ForeColor = System.Drawing.Color.White
         Me.ResetPassword2Label.Location = New System.Drawing.Point(0, -4)
         Me.ResetPassword2Label.Name = "ResetPassword2Label"
-        Me.ResetPassword2Label.Size = New System.Drawing.Size(119, 16)
+        Me.ResetPassword2Label.Size = New System.Drawing.Size(109, 17)
         Me.ResetPassword2Label.TabIndex = 4
         Me.ResetPassword2Label.Text = "Confirm Password:"
         '
@@ -858,11 +1262,11 @@ Partial Class Form1
         '
         Me.ResetPassword1Label.AutoSize = True
         Me.ResetPassword1Label.BackColor = System.Drawing.Color.Transparent
-        Me.ResetPassword1Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ResetPassword1Label.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ResetPassword1Label.ForeColor = System.Drawing.Color.White
         Me.ResetPassword1Label.Location = New System.Drawing.Point(0, -4)
         Me.ResetPassword1Label.Name = "ResetPassword1Label"
-        Me.ResetPassword1Label.Size = New System.Drawing.Size(71, 16)
+        Me.ResetPassword1Label.Size = New System.Drawing.Size(62, 17)
         Me.ResetPassword1Label.TabIndex = 4
         Me.ResetPassword1Label.Text = "Password:"
         '
@@ -914,11 +1318,11 @@ Partial Class Form1
         '
         Me.CodeLabel.AutoSize = True
         Me.CodeLabel.BackColor = System.Drawing.Color.Transparent
-        Me.CodeLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CodeLabel.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CodeLabel.ForeColor = System.Drawing.Color.White
         Me.CodeLabel.Location = New System.Drawing.Point(0, -4)
         Me.CodeLabel.Name = "CodeLabel"
-        Me.CodeLabel.Size = New System.Drawing.Size(83, 16)
+        Me.CodeLabel.Size = New System.Drawing.Size(69, 17)
         Me.CodeLabel.TabIndex = 4
         Me.CodeLabel.Text = "Reset Code:"
         '
@@ -926,11 +1330,11 @@ Partial Class Form1
         '
         Me.ResetPassHeader.AutoSize = True
         Me.ResetPassHeader.BackColor = System.Drawing.Color.Transparent
-        Me.ResetPassHeader.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ResetPassHeader.Font = New System.Drawing.Font("Source Sans Pro SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ResetPassHeader.ForeColor = System.Drawing.Color.White
         Me.ResetPassHeader.Location = New System.Drawing.Point(25, 9)
         Me.ResetPassHeader.Name = "ResetPassHeader"
-        Me.ResetPassHeader.Size = New System.Drawing.Size(125, 20)
+        Me.ResetPassHeader.Size = New System.Drawing.Size(116, 20)
         Me.ResetPassHeader.TabIndex = 3
         Me.ResetPassHeader.Text = "Reset Password"
         '
@@ -976,11 +1380,11 @@ Partial Class Form1
         '
         Me.Password2Label.AutoSize = True
         Me.Password2Label.BackColor = System.Drawing.Color.Transparent
-        Me.Password2Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Password2Label.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Password2Label.ForeColor = System.Drawing.Color.White
         Me.Password2Label.Location = New System.Drawing.Point(0, -4)
         Me.Password2Label.Name = "Password2Label"
-        Me.Password2Label.Size = New System.Drawing.Size(119, 16)
+        Me.Password2Label.Size = New System.Drawing.Size(109, 17)
         Me.Password2Label.TabIndex = 5
         Me.Password2Label.Text = "Confirm Password:"
         '
@@ -1009,11 +1413,11 @@ Partial Class Form1
         '
         Me.Password1Label.AutoSize = True
         Me.Password1Label.BackColor = System.Drawing.Color.Transparent
-        Me.Password1Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Password1Label.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Password1Label.ForeColor = System.Drawing.Color.White
         Me.Password1Label.Location = New System.Drawing.Point(0, -4)
         Me.Password1Label.Name = "Password1Label"
-        Me.Password1Label.Size = New System.Drawing.Size(71, 16)
+        Me.Password1Label.Size = New System.Drawing.Size(62, 17)
         Me.Password1Label.TabIndex = 5
         Me.Password1Label.Text = "Password:"
         '
@@ -1021,11 +1425,11 @@ Partial Class Form1
         '
         Me.RegistrationLabel.AutoSize = True
         Me.RegistrationLabel.BackColor = System.Drawing.Color.Transparent
-        Me.RegistrationLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RegistrationLabel.Font = New System.Drawing.Font("Source Sans Pro SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RegistrationLabel.ForeColor = System.Drawing.Color.White
         Me.RegistrationLabel.Location = New System.Drawing.Point(25, 9)
         Me.RegistrationLabel.Name = "RegistrationLabel"
-        Me.RegistrationLabel.Size = New System.Drawing.Size(69, 20)
+        Me.RegistrationLabel.Size = New System.Drawing.Size(65, 20)
         Me.RegistrationLabel.TabIndex = 3
         Me.RegistrationLabel.Text = "Register"
         '
@@ -1065,11 +1469,11 @@ Partial Class Form1
         '
         Me.RegistrationUsernameLabel.AutoSize = True
         Me.RegistrationUsernameLabel.BackColor = System.Drawing.Color.Transparent
-        Me.RegistrationUsernameLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RegistrationUsernameLabel.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RegistrationUsernameLabel.ForeColor = System.Drawing.Color.White
         Me.RegistrationUsernameLabel.Location = New System.Drawing.Point(0, -4)
         Me.RegistrationUsernameLabel.Name = "RegistrationUsernameLabel"
-        Me.RegistrationUsernameLabel.Size = New System.Drawing.Size(74, 16)
+        Me.RegistrationUsernameLabel.Size = New System.Drawing.Size(66, 17)
         Me.RegistrationUsernameLabel.TabIndex = 5
         Me.RegistrationUsernameLabel.Text = "Username:"
         '
@@ -1109,11 +1513,11 @@ Partial Class Form1
         '
         Me.EmailLabel.AutoSize = True
         Me.EmailLabel.BackColor = System.Drawing.Color.Transparent
-        Me.EmailLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EmailLabel.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EmailLabel.ForeColor = System.Drawing.Color.White
         Me.EmailLabel.Location = New System.Drawing.Point(0, -4)
         Me.EmailLabel.Name = "EmailLabel"
-        Me.EmailLabel.Size = New System.Drawing.Size(45, 16)
+        Me.EmailLabel.Size = New System.Drawing.Size(42, 17)
         Me.EmailLabel.TabIndex = 5
         Me.EmailLabel.Text = "Email:"
         '
@@ -1195,11 +1599,11 @@ Partial Class Form1
         '
         Me.MusicLabel.AutoSize = True
         Me.MusicLabel.BackColor = System.Drawing.Color.Transparent
-        Me.MusicLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MusicLabel.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MusicLabel.ForeColor = System.Drawing.Color.White
         Me.MusicLabel.Location = New System.Drawing.Point(238, 56)
         Me.MusicLabel.Name = "MusicLabel"
-        Me.MusicLabel.Size = New System.Drawing.Size(95, 16)
+        Me.MusicLabel.Size = New System.Drawing.Size(85, 17)
         Me.MusicLabel.TabIndex = 15
         Me.MusicLabel.Text = "Music Volume:"
         '
@@ -1227,11 +1631,11 @@ Partial Class Form1
         '
         Me.SoundLabel.AutoSize = True
         Me.SoundLabel.BackColor = System.Drawing.Color.Transparent
-        Me.SoundLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SoundLabel.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SoundLabel.ForeColor = System.Drawing.Color.White
         Me.SoundLabel.Location = New System.Drawing.Point(14, 56)
         Me.SoundLabel.Name = "SoundLabel"
-        Me.SoundLabel.Size = New System.Drawing.Size(99, 16)
+        Me.SoundLabel.Size = New System.Drawing.Size(90, 17)
         Me.SoundLabel.TabIndex = 13
         Me.SoundLabel.Text = "Sound Volume:"
         '
@@ -1269,11 +1673,11 @@ Partial Class Form1
         '
         Me.AutocloseWindowsCheckboxLabel.AutoSize = True
         Me.AutocloseWindowsCheckboxLabel.BackColor = System.Drawing.Color.Transparent
-        Me.AutocloseWindowsCheckboxLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AutocloseWindowsCheckboxLabel.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AutocloseWindowsCheckboxLabel.ForeColor = System.Drawing.Color.White
         Me.AutocloseWindowsCheckboxLabel.Location = New System.Drawing.Point(0, 6)
         Me.AutocloseWindowsCheckboxLabel.Name = "AutocloseWindowsCheckboxLabel"
-        Me.AutocloseWindowsCheckboxLabel.Size = New System.Drawing.Size(126, 16)
+        Me.AutocloseWindowsCheckboxLabel.Size = New System.Drawing.Size(114, 17)
         Me.AutocloseWindowsCheckboxLabel.TabIndex = 5
         Me.AutocloseWindowsCheckboxLabel.Text = "Auto-close windows"
         '
@@ -1301,11 +1705,11 @@ Partial Class Form1
         '
         Me.FullscreenCheckboxLabel.AutoSize = True
         Me.FullscreenCheckboxLabel.BackColor = System.Drawing.Color.Transparent
-        Me.FullscreenCheckboxLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FullscreenCheckboxLabel.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FullscreenCheckboxLabel.ForeColor = System.Drawing.Color.White
         Me.FullscreenCheckboxLabel.Location = New System.Drawing.Point(0, 6)
         Me.FullscreenCheckboxLabel.Name = "FullscreenCheckboxLabel"
-        Me.FullscreenCheckboxLabel.Size = New System.Drawing.Size(70, 16)
+        Me.FullscreenCheckboxLabel.Size = New System.Drawing.Size(62, 17)
         Me.FullscreenCheckboxLabel.TabIndex = 5
         Me.FullscreenCheckboxLabel.Text = "Fullscreen"
         '
@@ -1334,11 +1738,11 @@ Partial Class Form1
         '
         Me.FPSLabel.AutoSize = True
         Me.FPSLabel.BackColor = System.Drawing.Color.Transparent
-        Me.FPSLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FPSLabel.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FPSLabel.ForeColor = System.Drawing.Color.White
         Me.FPSLabel.Location = New System.Drawing.Point(0, -4)
         Me.FPSLabel.Name = "FPSLabel"
-        Me.FPSLabel.Size = New System.Drawing.Size(80, 16)
+        Me.FPSLabel.Size = New System.Drawing.Size(69, 17)
         Me.FPSLabel.TabIndex = 5
         Me.FPSLabel.Text = "Target FPS:"
         '
@@ -1367,11 +1771,11 @@ Partial Class Form1
         '
         Me.ResolutionLabel.AutoSize = True
         Me.ResolutionLabel.BackColor = System.Drawing.Color.Transparent
-        Me.ResolutionLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ResolutionLabel.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ResolutionLabel.ForeColor = System.Drawing.Color.White
         Me.ResolutionLabel.Location = New System.Drawing.Point(0, -4)
         Me.ResolutionLabel.Name = "ResolutionLabel"
-        Me.ResolutionLabel.Size = New System.Drawing.Size(75, 16)
+        Me.ResolutionLabel.Size = New System.Drawing.Size(67, 17)
         Me.ResolutionLabel.TabIndex = 5
         Me.ResolutionLabel.Text = "Resolution:"
         '
@@ -1379,7 +1783,7 @@ Partial Class Form1
         '
         Me.OptionsHeader.AutoSize = True
         Me.OptionsHeader.BackColor = System.Drawing.Color.Transparent
-        Me.OptionsHeader.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.OptionsHeader.Font = New System.Drawing.Font("Source Sans Pro SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.OptionsHeader.ForeColor = System.Drawing.Color.White
         Me.OptionsHeader.Location = New System.Drawing.Point(25, 9)
         Me.OptionsHeader.Name = "OptionsHeader"
@@ -1462,11 +1866,11 @@ Partial Class Form1
         '
         Me.MainMenuTitle.AutoSize = True
         Me.MainMenuTitle.BackColor = System.Drawing.Color.Transparent
-        Me.MainMenuTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MainMenuTitle.Font = New System.Drawing.Font("Source Sans Pro SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MainMenuTitle.ForeColor = System.Drawing.Color.White
         Me.MainMenuTitle.Location = New System.Drawing.Point(25, 9)
         Me.MainMenuTitle.Name = "MainMenuTitle"
-        Me.MainMenuTitle.Size = New System.Drawing.Size(87, 20)
+        Me.MainMenuTitle.Size = New System.Drawing.Size(83, 20)
         Me.MainMenuTitle.TabIndex = 3
         Me.MainMenuTitle.Text = "Main Menu"
         '
@@ -1555,11 +1959,11 @@ Partial Class Form1
         '
         Me.PromptLabel.AutoSize = True
         Me.PromptLabel.BackColor = System.Drawing.Color.Transparent
-        Me.PromptLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PromptLabel.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PromptLabel.ForeColor = System.Drawing.Color.White
         Me.PromptLabel.Location = New System.Drawing.Point(36, 12)
         Me.PromptLabel.Name = "PromptLabel"
-        Me.PromptLabel.Size = New System.Drawing.Size(110, 16)
+        Me.PromptLabel.Size = New System.Drawing.Size(91, 17)
         Me.PromptLabel.TabIndex = 4
         Me.PromptLabel.Text = "PROMPT LABEL"
         '
@@ -1590,11 +1994,11 @@ Partial Class Form1
         '
         Me.InputBoxTitle.AutoSize = True
         Me.InputBoxTitle.BackColor = System.Drawing.Color.Transparent
-        Me.InputBoxTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.InputBoxTitle.Font = New System.Drawing.Font("Source Sans Pro SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.InputBoxTitle.ForeColor = System.Drawing.Color.White
         Me.InputBoxTitle.Location = New System.Drawing.Point(25, 9)
         Me.InputBoxTitle.Name = "InputBoxTitle"
-        Me.InputBoxTitle.Size = New System.Drawing.Size(141, 20)
+        Me.InputBoxTitle.Size = New System.Drawing.Size(129, 20)
         Me.InputBoxTitle.TabIndex = 3
         Me.InputBoxTitle.Text = "INPUT BOX TITLE"
         '
@@ -1685,11 +2089,11 @@ Partial Class Form1
         '
         Me.ForgotPasswordHeader.AutoSize = True
         Me.ForgotPasswordHeader.BackColor = System.Drawing.Color.Transparent
-        Me.ForgotPasswordHeader.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ForgotPasswordHeader.Font = New System.Drawing.Font("Source Sans Pro SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForgotPasswordHeader.ForeColor = System.Drawing.Color.White
         Me.ForgotPasswordHeader.Location = New System.Drawing.Point(25, 9)
         Me.ForgotPasswordHeader.Name = "ForgotPasswordHeader"
-        Me.ForgotPasswordHeader.Size = New System.Drawing.Size(129, 20)
+        Me.ForgotPasswordHeader.Size = New System.Drawing.Size(124, 20)
         Me.ForgotPasswordHeader.TabIndex = 3
         Me.ForgotPasswordHeader.Text = "Forgot Password"
         '
@@ -2345,7 +2749,7 @@ Partial Class Form1
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.SaveToolStripMenuItem, Me.RefreshBtn, Me.gridToggle})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.SaveToolStripMenuItem, Me.RefreshBtn, Me.gridToggle, Me.AppSettings})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(1085, 24)
@@ -2363,7 +2767,7 @@ Partial Class Form1
         '
         Me.GameToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BagItemToolStripMenuItem, Me.BagWindowToolStripMenuItem, Me.BankItemToolStripMenuItem, Me.BankWindowToolStripMenuItem, Me.CharacterWindowToolStripMenuItem, Me.ChatboxWindowToolStripMenuItem, Me.CraftedItemToolStripMenuItem, Me.CraftingIngredientToolStripMenuItem, Me.CraftingWindowToolStripMenuItem, Me.DraggableToolStripMenuItem, Me.EquipmentItemToolStripMenuItem, Me.EscapeMenuToolStripMenuItem, Me.EventDialogWindow1ResponseToolStripMenuItem, Me.EventDialogWindow2ResponseToolStripMenuItem, Me.EventDialogWindow3ResponseToolStripMenuItem, Me.EventDialogWindow4ResponseToolStripMenuItem, Me.FriendsWindowToolStripMenuItem, Me.HotbarWindowToolStripMenuItem, Me.InputBoxToolStripMenuItem1, Me.InventoryItemToolStripMenuItem, Me.InventoryWindowToolStripMenuItem, Me.ItemDescWindowToolStripMenuItem, Me.ItemDescWindowExpandedToolStripMenuItem, Me.MenuContainerToolStripMenuItem, Me.OptionsWindowToolStripMenuItem1, Me.PartyWindowToolStripMenuItem, Me.PlayerBoxToolStripMenuItem, Me.PlayerStatusIconToolStripMenuItem, Me.QuestOfferWindowToolStripMenuItem, Me.QuestWindowToolStripMenuItem, Me.ShopItemToolStripMenuItem, Me.ShopWindowToolStripMenuItem, Me.SpellMenuItem, Me.SpellDescWindowMenuItem, Me.SpellDescWindowExpandedMenuItem, Me.SpellsWindowMenuItem, Me.TargetBoxMenuItem, Me.TargetStatusIconMenuItem, Me.TheirTradeItemMenuItem, Me.TradeWindowMenuItem, Me.YourTradeItemMenuItem})
         Me.GameToolStripMenuItem.Name = "GameToolStripMenuItem"
-        Me.GameToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.GameToolStripMenuItem.Size = New System.Drawing.Size(105, 22)
         Me.GameToolStripMenuItem.Text = "game"
         '
         'BagItemToolStripMenuItem
@@ -2616,7 +3020,7 @@ Partial Class Form1
         '
         Me.MenuToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CharacterCreationWindowToolStripMenuItem, Me.CharacterSelectionWindowToolStripMenuItem, Me.CreditsWindowToolStripMenuItem, Me.ForgotPasswordWindowToolStripMenuItem, Me.InputBoxToolStripMenuItem, Me.LoginWindowToolStripMenuItem, Me.LogoToolStripMenuItem, Me.MenuWindowToolStripMenuItem, Me.OptionsWindowToolStripMenuItem, Me.RegistrationWindowToolStripMenuItem, Me.ResetPasswordWindowToolStripMenuItem, Me.ServerStatusAreaToolStripMenuItem})
         Me.MenuToolStripMenuItem.Name = "MenuToolStripMenuItem"
-        Me.MenuToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.MenuToolStripMenuItem.Size = New System.Drawing.Size(105, 22)
         Me.MenuToolStripMenuItem.Text = "menu"
         '
         'CharacterCreationWindowToolStripMenuItem
@@ -2713,6 +3117,14 @@ Partial Class Form1
         Me.gridToggle.Size = New System.Drawing.Size(28, 20)
         Me.gridToggle.Visible = False
         '
+        'AppSettings
+        '
+        Me.AppSettings.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.AppSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.AppSettings.Image = CType(resources.GetObject("AppSettings.Image"), System.Drawing.Image)
+        Me.AppSettings.Name = "AppSettings"
+        Me.AppSettings.Size = New System.Drawing.Size(28, 20)
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -2741,6 +3153,27 @@ Partial Class Form1
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainer1.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
+        Me.MainCharacterWindowPanel.ResumeLayout(False)
+        Me.MainCharacterWindowPanel.PerformLayout()
+        Me.CharacterWindowInnerPanel.ResumeLayout(False)
+        Me.CharacterWindowInnerPanel.PerformLayout()
+        Me.EquipmentItem4.ResumeLayout(False)
+        CType(Me.Equipment4Icon, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.EquipmentItem3.ResumeLayout(False)
+        CType(Me.Equipment3Icon, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.EquipmentItem2.ResumeLayout(False)
+        CType(Me.Equipment2Icon, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.EquipmentItem1.ResumeLayout(False)
+        CType(Me.Equipment1Icon, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.EquipmentItem0.ResumeLayout(False)
+        CType(Me.Equipment0Icon, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.IncreaseMagicResistButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.IncreaseAbilityPowerButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.IncreaseSpeedButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.IncreaseDefenseButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.IncreaseAttackButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CharacterWindowCharacterContainer, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CharacterWindowCloseButton, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MainBankWindowPanel.ResumeLayout(False)
         Me.MainBankWindowPanel.PerformLayout()
         CType(Me.BankWindowCloseButton, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3125,4 +3558,35 @@ Partial Class Form1
     Friend WithEvents BankWindowCloseButton As PictureBox
     Friend WithEvents BankWindowTitle As Label
     Friend WithEvents BankWindowToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MainCharacterWindowPanel As Panel
+    Friend WithEvents CharacterWindowInnerPanel As Panel
+    Friend WithEvents IncreaseSpeedButton As PictureBox
+    Friend WithEvents SpeedLabel As Label
+    Friend WithEvents IncreaseDefenseButton As PictureBox
+    Friend WithEvents IncreaseAttackButton As PictureBox
+    Friend WithEvents CharacterWindowDefenseLabel As Label
+    Friend WithEvents CharacterWindowAttackLabel As Label
+    Friend WithEvents CharacterWindowStatsLabel As Label
+    Friend WithEvents CharacterWindowEquipmentLabel As Label
+    Friend WithEvents CharacterWindowCharacterContainer As PictureBox
+    Friend WithEvents ChatacterInfoLabel As Label
+    Friend WithEvents CharacterWindowCharacterNameLabel As Label
+    Friend WithEvents CharacterWindowCloseButton As PictureBox
+    Friend WithEvents CharacterWindowTitle As Label
+    Friend WithEvents EquipmentItem4 As Panel
+    Friend WithEvents Equipment4Icon As PictureBox
+    Friend WithEvents EquipmentItem3 As Panel
+    Friend WithEvents Equipment3Icon As PictureBox
+    Friend WithEvents EquipmentItem2 As Panel
+    Friend WithEvents Equipment2Icon As PictureBox
+    Friend WithEvents EquipmentItem1 As Panel
+    Friend WithEvents Equipment1Icon As PictureBox
+    Friend WithEvents EquipmentItem0 As Panel
+    Friend WithEvents Equipment0Icon As PictureBox
+    Friend WithEvents PointsLabel As Label
+    Friend WithEvents IncreaseMagicResistButton As PictureBox
+    Friend WithEvents MagicResistLabel As Label
+    Friend WithEvents IncreaseAbilityPowerButton As PictureBox
+    Friend WithEvents AbilityPowerLabel As Label
+    Friend WithEvents AppSettings As ToolStripMenuItem
 End Class

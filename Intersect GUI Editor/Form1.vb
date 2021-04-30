@@ -43,6 +43,7 @@ Public Class Form1
         MainBagWindowPanel.Visible = False
         MainBankItemPanel.Visible = False
         MainBankWindowPanel.Visible = False
+        MainCharacterWindowPanel.Visible = False
 
         LoadLoginGUI(menuGuiPath & "LoginWindow.json")
         openFile = menuGuiPath & "LoginWindow.json"
@@ -66,6 +67,7 @@ Public Class Form1
         MainBagWindowPanel.Visible = False
         MainBankItemPanel.Visible = False
         MainBankWindowPanel.Visible = False
+        MainCharacterWindowPanel.Visible = False
 
         LoadCharacterCreationGUI(menuGuiPath & "CharacterCreationWindow.json")
         openFile = menuGuiPath & "CharacterCreationWindow.json"
@@ -89,6 +91,7 @@ Public Class Form1
         MainBagWindowPanel.Visible = False
         MainBankItemPanel.Visible = False
         MainBankWindowPanel.Visible = False
+        MainCharacterWindowPanel.Visible = False
 
         LoadCharacterSelectionGUI(menuGuiPath & "CharacterSelectionWindow.json")
         openFile = menuGuiPath & "CharacterSelectionWindow.json"
@@ -112,6 +115,7 @@ Public Class Form1
         MainBagWindowPanel.Visible = False
         MainBankItemPanel.Visible = False
         MainBankWindowPanel.Visible = False
+        MainCharacterWindowPanel.Visible = False
 
         LoadCreditsGUI(menuGuiPath & "CreditsWindow.json")
         openFile = menuGuiPath & "CreditsWindow.json"
@@ -135,6 +139,7 @@ Public Class Form1
         MainBagWindowPanel.Visible = False
         MainBankItemPanel.Visible = False
         MainBankWindowPanel.Visible = False
+        MainCharacterWindowPanel.Visible = False
 
         LoadForgotPasswordGUI(menuGuiPath & "ForgotPasswordWindow.json")
         openFile = menuGuiPath & "ForgotPasswordWindow.json"
@@ -158,6 +163,7 @@ Public Class Form1
         MainBagWindowPanel.Visible = False
         MainBankItemPanel.Visible = False
         MainBankWindowPanel.Visible = False
+        MainCharacterWindowPanel.Visible = False
 
         LoadInputBoxGUI(menuGuiPath & "InputBox.json")
         openFile = menuGuiPath & "InputBox.json"
@@ -181,6 +187,7 @@ Public Class Form1
         MainBagWindowPanel.Visible = False
         MainBankItemPanel.Visible = False
         MainBankWindowPanel.Visible = False
+        MainCharacterWindowPanel.Visible = False
 
         LoadLogoGUI(menuGuiPath & "Logo.json")
         openFile = menuGuiPath & "Logo.json"
@@ -204,6 +211,7 @@ Public Class Form1
         MainBagWindowPanel.Visible = False
         MainBankItemPanel.Visible = False
         MainBankWindowPanel.Visible = False
+        MainCharacterWindowPanel.Visible = False
 
         LoadMenuWindow(menuGuiPath & "MenuWindow.json")
         openFile = menuGuiPath & "MenuWindow.json"
@@ -227,6 +235,7 @@ Public Class Form1
         MainBagWindowPanel.Visible = False
         MainBankItemPanel.Visible = False
         MainBankWindowPanel.Visible = False
+        MainCharacterWindowPanel.Visible = False
 
         LoadOptionsWindowGUI(menuGuiPath & "OptionsWindow.json")
         openFile = menuGuiPath & "OptionsWindow.json"
@@ -250,6 +259,7 @@ Public Class Form1
         MainBagWindowPanel.Visible = False
         MainBankItemPanel.Visible = False
         MainBankWindowPanel.Visible = False
+        MainCharacterWindowPanel.Visible = False
 
         LoadRegistrationWindowGUI(menuGuiPath & "RegistrationWindow.json")
         openFile = menuGuiPath & "RegistrationWindow.json"
@@ -273,6 +283,7 @@ Public Class Form1
         MainBagWindowPanel.Visible = False
         MainBankItemPanel.Visible = False
         MainBankWindowPanel.Visible = False
+        MainCharacterWindowPanel.Visible = False
 
         LoadResetPasswordWindowGUI(menuGuiPath & "ResetPasswordWindow.json")
         openFile = menuGuiPath & "ResetPasswordWindow.json"
@@ -296,6 +307,7 @@ Public Class Form1
         MainBagWindowPanel.Visible = False
         MainBankItemPanel.Visible = False
         MainBankWindowPanel.Visible = False
+        MainCharacterWindowPanel.Visible = False
 
         LoadServerStatusAreaGUI(menuGuiPath & "ServerStatusArea.json")
         openFile = menuGuiPath & "ServerStatusArea.json"
@@ -319,6 +331,7 @@ Public Class Form1
         MainBagWindowPanel.Visible = False
         MainBankItemPanel.Visible = False
         MainBankWindowPanel.Visible = False
+        MainCharacterWindowPanel.Visible = False
 
         LoadBagItemGUI(gameGuiPath & "BagItem.json")
         openFile = gameGuiPath & "BagItem.json"
@@ -342,6 +355,7 @@ Public Class Form1
         MainBagItemPanel.Visible = False
         MainBankItemPanel.Visible = False
         MainBankWindowPanel.Visible = False
+        MainCharacterWindowPanel.Visible = False
 
         LoadBagWindowGUI(gameGuiPath & "BagWindow.json")
         openFile = gameGuiPath & "BagWindow.json"
@@ -365,6 +379,7 @@ Public Class Form1
         MainBagItemPanel.Visible = False
         MainBagWindowPanel.Visible = False
         MainBankWindowPanel.Visible = False
+        MainCharacterWindowPanel.Visible = False
 
         LoadBankItemGUI(gameGuiPath & "BankItem.json")
         openFile = gameGuiPath & "BankItem.json"
@@ -388,9 +403,34 @@ Public Class Form1
         MainBagItemPanel.Visible = False
         MainBagWindowPanel.Visible = False
         MainBankItemPanel.Visible = False
+        MainCharacterWindowPanel.Visible = False
 
         LoadBankWindowGUI(gameGuiPath & "BankWindow.json")
         openFile = gameGuiPath & "BankWindow.json"
+    End Sub
+
+    Private Sub CharacterWindowToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CharacterWindowToolStripMenuItem.Click
+        gridoverlay = False
+        guitype = "game"
+        MainLoginWindowPanel.Visible = False
+        MainCharacterCreationPanel.Visible = False
+        MainCharSelectionPanel.Visible = False
+        MainCreditsPanel.Visible = False
+        MainForgotPasswordWindowPanel.Visible = False
+        MainLogoPanel.Visible = False
+        MainInputBoxPanel.Visible = False
+        MainMenuWindowPanel.Visible = False
+        MainOptionsWindowPanel.Visible = False
+        MainRegistrationWindowPanel.Visible = False
+        MainResetPasswordWindowPanel.Visible = False
+        MainServerStatusAreaPanel.Visible = False
+        MainBagItemPanel.Visible = False
+        MainBagWindowPanel.Visible = False
+        MainBankItemPanel.Visible = False
+        MainBankWindowPanel.Visible = False
+
+        LoadCharacterWindowGUI(gameGuiPath & "CharacterWindow.json")
+        openFile = gameGuiPath & "CharacterWindow.json"
     End Sub
 
     Private Sub JTokenTreeUserControl1_AfterSelect(sender As Object, e As ZTn.Json.JsonTreeView.AfterSelectEventArgs) Handles JTokenTreeUserControl1.AfterSelect
@@ -454,6 +494,8 @@ Public Class Form1
                     LoadBankItemGUI(tempPath & "tmp_" & tempFileName & ".json")
                 ElseIf openFile.Contains("BankWindow") Then
                     LoadBankWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
+                ElseIf openFile.Contains("CharacterWindow") Then
+                    LoadCharacterWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
                 End If
             End Using
 
@@ -496,6 +538,8 @@ Public Class Form1
             LoadBankItemGUI(openFile)
         ElseIf openFile.Contains("BankWindow") Then
             LoadBankWindowGUI(openFile)
+        ElseIf openFile.Contains("CharacterWindow") Then
+            LoadCharacterWindowGUI(openFile)
         End If
     End Sub
 
@@ -1603,5 +1647,200 @@ Public Class Form1
         Dim infoPull As BagWindow
         infoPull = JsonConvert.DeserializeObject(Of BagWindow)(fullJson.Text)
         BagWindowCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.CloseButton.NormalImage)
+    End Sub
+
+    Private Sub CharacterWindowCloseButton_Click(sender As Object, e As EventArgs) Handles CharacterWindowCloseButton.Click
+        Dim infoPull As CharacterWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterWindow)(fullJson.Text)
+        CharacterWindowCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.CloseButton.ClickedImage)
+    End Sub
+
+    Private Sub CharacterWindowCloseButton_MouseDown(sender As Object, e As MouseEventArgs) Handles CharacterWindowCloseButton.MouseDown
+        Dim infoPull As CharacterWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterWindow)(fullJson.Text)
+        CharacterWindowCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.CloseButton.ClickedImage)
+    End Sub
+
+    Private Sub CharacterWindowCloseButton_MouseUp(sender As Object, e As MouseEventArgs) Handles CharacterWindowCloseButton.MouseUp
+        Dim infoPull As CharacterWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterWindow)(fullJson.Text)
+        CharacterWindowCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.CloseButton.HoveredImage)
+    End Sub
+
+    Private Sub CharacterWindowCloseButton_MouseHover(sender As Object, e As EventArgs) Handles CharacterWindowCloseButton.MouseHover
+        Dim infoPull As CharacterWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterWindow)(fullJson.Text)
+        CharacterWindowCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.CloseButton.HoveredImage)
+    End Sub
+
+    Private Sub CharacterWindowCloseButton_MouseLeave(sender As Object, e As EventArgs) Handles CharacterWindowCloseButton.MouseLeave
+        Dim infoPull As CharacterWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterWindow)(fullJson.Text)
+        CharacterWindowCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.CloseButton.NormalImage)
+    End Sub
+
+    Private Sub IncreaseAttackButton_Click(sender As Object, e As EventArgs) Handles IncreaseAttackButton.Click
+        Dim infoPull As CharacterWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterWindow)(fullJson.Text)
+        IncreaseAttackButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.IncreaseAttackButton.ClickedImage)
+    End Sub
+
+    Private Sub IncreaseAttackButton_MouseDown(sender As Object, e As MouseEventArgs) Handles IncreaseAttackButton.MouseDown
+        Dim infoPull As CharacterWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterWindow)(fullJson.Text)
+        IncreaseAttackButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.IncreaseAttackButton.ClickedImage)
+    End Sub
+
+    Private Sub IncreaseAttackButton_MouseUp(sender As Object, e As MouseEventArgs) Handles IncreaseAttackButton.MouseUp
+        Dim infoPull As CharacterWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterWindow)(fullJson.Text)
+        IncreaseAttackButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.IncreaseAttackButton.HoveredImage)
+    End Sub
+
+    Private Sub IncreaseAttackButton_MouseHover(sender As Object, e As EventArgs) Handles IncreaseAttackButton.MouseHover
+        Dim infoPull As CharacterWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterWindow)(fullJson.Text)
+        IncreaseAttackButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.IncreaseAttackButton.HoveredImage)
+    End Sub
+
+    Private Sub IncreaseAttackButton_MouseLeave(sender As Object, e As EventArgs) Handles IncreaseAttackButton.MouseLeave
+        Dim infoPull As CharacterWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterWindow)(fullJson.Text)
+        IncreaseAttackButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.IncreaseAttackButton.NormalImage)
+    End Sub
+
+    Private Sub IncreaseDefenseButton_Click(sender As Object, e As EventArgs) Handles IncreaseDefenseButton.Click
+        Dim infoPull As CharacterWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterWindow)(fullJson.Text)
+        IncreaseDefenseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.IncreaseDefenseButton.ClickedImage)
+    End Sub
+
+    Private Sub IncreaseDefenseButton_MouseDown(sender As Object, e As MouseEventArgs) Handles IncreaseDefenseButton.MouseDown
+        Dim infoPull As CharacterWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterWindow)(fullJson.Text)
+        IncreaseDefenseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.IncreaseDefenseButton.ClickedImage)
+    End Sub
+
+    Private Sub IncreaseDefenseButton_MouseUp(sender As Object, e As MouseEventArgs) Handles IncreaseDefenseButton.MouseUp
+        Dim infoPull As CharacterWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterWindow)(fullJson.Text)
+        IncreaseDefenseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.IncreaseDefenseButton.HoveredImage)
+    End Sub
+
+    Private Sub IncreaseDefenseButton_MouseHover(sender As Object, e As EventArgs) Handles IncreaseDefenseButton.MouseHover
+        Dim infoPull As CharacterWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterWindow)(fullJson.Text)
+        IncreaseDefenseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.IncreaseDefenseButton.HoveredImage)
+    End Sub
+
+    Private Sub IncreaseDefenseButton_MouseLeave(sender As Object, e As EventArgs) Handles IncreaseDefenseButton.MouseLeave
+        Dim infoPull As CharacterWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterWindow)(fullJson.Text)
+        IncreaseDefenseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.IncreaseDefenseButton.NormalImage)
+    End Sub
+
+    Private Sub IncreaseSpeedButton_Click(sender As Object, e As EventArgs) Handles IncreaseSpeedButton.Click
+        Dim infoPull As CharacterWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterWindow)(fullJson.Text)
+        IncreaseSpeedButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.IncreaseSpeedButton.ClickedImage)
+    End Sub
+
+    Private Sub IncreaseSpeedButton_MouseDown(sender As Object, e As MouseEventArgs) Handles IncreaseSpeedButton.MouseDown
+        Dim infoPull As CharacterWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterWindow)(fullJson.Text)
+        IncreaseSpeedButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.IncreaseSpeedButton.ClickedImage)
+    End Sub
+
+    Private Sub IncreaseSpeedButton_MouseUp(sender As Object, e As MouseEventArgs) Handles IncreaseSpeedButton.MouseUp
+        Dim infoPull As CharacterWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterWindow)(fullJson.Text)
+        IncreaseSpeedButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.IncreaseSpeedButton.HoveredImage)
+    End Sub
+
+    Private Sub IncreaseSpeedButton_MouseHover(sender As Object, e As EventArgs) Handles IncreaseSpeedButton.MouseHover
+        Dim infoPull As CharacterWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterWindow)(fullJson.Text)
+        IncreaseSpeedButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.IncreaseSpeedButton.HoveredImage)
+    End Sub
+
+    Private Sub IncreaseSpeedButton_MouseLeave(sender As Object, e As EventArgs) Handles IncreaseSpeedButton.MouseLeave
+        Dim infoPull As CharacterWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterWindow)(fullJson.Text)
+        IncreaseSpeedButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.IncreaseSpeedButton.NormalImage)
+    End Sub
+
+    Private Sub IncreaseAbilityPowerButton_Click(sender As Object, e As EventArgs) Handles IncreaseAbilityPowerButton.Click
+        Dim infoPull As CharacterWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterWindow)(fullJson.Text)
+        IncreaseAbilityPowerButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.IncreaseAbilityPowerButton.ClickedImage)
+    End Sub
+
+    Private Sub IncreaseAbilityPowerButton_MouseDown(sender As Object, e As MouseEventArgs) Handles IncreaseAbilityPowerButton.MouseDown
+        Dim infoPull As CharacterWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterWindow)(fullJson.Text)
+        IncreaseAbilityPowerButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.IncreaseAbilityPowerButton.ClickedImage)
+    End Sub
+
+    Private Sub IncreaseAbilityPowerButton_MouseUp(sender As Object, e As MouseEventArgs) Handles IncreaseAbilityPowerButton.MouseUp
+        Dim infoPull As CharacterWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterWindow)(fullJson.Text)
+        IncreaseAbilityPowerButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.IncreaseAbilityPowerButton.HoveredImage)
+    End Sub
+
+    Private Sub IncreaseAbilityPowerButton_MouseHover(sender As Object, e As EventArgs) Handles IncreaseAbilityPowerButton.MouseHover
+        Dim infoPull As CharacterWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterWindow)(fullJson.Text)
+        IncreaseAbilityPowerButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.IncreaseAbilityPowerButton.HoveredImage)
+    End Sub
+
+    Private Sub IncreaseAbilityPowerButton_MouseLeave(sender As Object, e As EventArgs) Handles IncreaseAbilityPowerButton.MouseLeave
+        Dim infoPull As CharacterWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterWindow)(fullJson.Text)
+        IncreaseAbilityPowerButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.IncreaseAbilityPowerButton.NormalImage)
+    End Sub
+
+    Private Sub IncreaseMagicResistButton_Click(sender As Object, e As EventArgs) Handles IncreaseMagicResistButton.Click
+        Dim infoPull As CharacterWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterWindow)(fullJson.Text)
+        IncreaseMagicResistButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.IncreaseMagicResistButton.ClickedImage)
+    End Sub
+
+    Private Sub IncreaseMagicResistButton_MouseDown(sender As Object, e As MouseEventArgs) Handles IncreaseMagicResistButton.MouseDown
+        Dim infoPull As CharacterWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterWindow)(fullJson.Text)
+        IncreaseMagicResistButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.IncreaseMagicResistButton.ClickedImage)
+    End Sub
+
+    Private Sub IncreaseMagicResistButton_MouseUp(sender As Object, e As MouseEventArgs) Handles IncreaseMagicResistButton.MouseUp
+        Dim infoPull As CharacterWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterWindow)(fullJson.Text)
+        IncreaseMagicResistButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.IncreaseMagicResistButton.HoveredImage)
+    End Sub
+
+    Private Sub IncreaseMagicResistButton_MouseHover(sender As Object, e As EventArgs) Handles IncreaseMagicResistButton.MouseHover
+        Dim infoPull As CharacterWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterWindow)(fullJson.Text)
+        IncreaseMagicResistButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.IncreaseMagicResistButton.HoveredImage)
+    End Sub
+
+    Private Sub IncreaseMagicResistButton_MouseLeave(sender As Object, e As EventArgs) Handles IncreaseMagicResistButton.MouseLeave
+        Dim infoPull As CharacterWindow
+        infoPull = JsonConvert.DeserializeObject(Of CharacterWindow)(fullJson.Text)
+        IncreaseMagicResistButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.IncreaseMagicResistButton.NormalImage)
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim privateFonts As New Text.PrivateFontCollection()
+        privateFonts.AddFontFile(Application.StartupPath & "\font\" & My.Settings.ApplicationFont)
+        Dim sysfont As New Font(privateFonts.Families(0), 10)
+        For Each objCtrl As Control In Me.Controls
+            If TypeOf objCtrl Is Label Then
+                objCtrl.Font = sysfont
+            End If
+        Next
+    End Sub
+
+    Private Sub AppSettings_Click(sender As Object, e As EventArgs) Handles AppSettings.Click
+        SettingsForm.Show()
     End Sub
 End Class
