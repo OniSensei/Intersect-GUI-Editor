@@ -1,6 +1,6 @@
 Intersect GUI Editor is a visual editor for the [Intersect Game Engine](https://www.ascensiongamedev.com). This software was developed in Visual Basic .NET and using [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework/net472). With special thanks to @zetoken for their [TreeView Control](https://github.com/zetoken/JSon-Editor).
 
-Todo (30%):
+Todo (34%):
 - Menu (100%)
   - [x] CharacterCreationWindow.json
   - [x] CharacterSelectionWindow.json
@@ -14,13 +14,13 @@ Todo (30%):
   - [x] RegistrationWindow.json
   - [x] ResetPasswordWindow.json
   - [x] ServerStatusArea.json
-- Game (9.75%)
+- Game (14.5%)
   - [x] BagItem.json
   - [x] BagWindow.json
   - [x] BankItem.json
   - [x] BankWindow.json
-  - [ ] CharacterWindow.json
-  - [ ] ChatboxWindow.json
+  - [x] CharacterWindow.json
+  - [x] ChatboxWindow.json
   - [ ] CraftedItem.json
   - [ ] CraftingIngredient.json
   - [ ] CraftingWindow.json
