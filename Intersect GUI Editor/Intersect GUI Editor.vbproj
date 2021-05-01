@@ -93,6 +93,13 @@
     <Compile Include="JSON Deserializers\game\BankWindowGUI.vb" />
     <Compile Include="JSON Deserializers\game\CharacterWindowGUI.vb" />
     <Compile Include="JSON Deserializers\game\ChatboxWindowGUI.vb" />
+    <Compile Include="JSON Deserializers\game\CraftedItemGUI.vb" />
+    <Compile Include="JSON Deserializers\game\CraftingIngredientGUI.vb" />
+    <Compile Include="JSON Deserializers\game\CraftingWindowGUI.vb" />
+    <Compile Include="JSON Deserializers\game\DraggableGUI.vb" />
+    <Compile Include="JSON Deserializers\game\EquipmentItemGUI.vb" />
+    <Compile Include="JSON Deserializers\game\EscapeMenuGUI.vb" />
+    <Compile Include="JSON Deserializers\game\EventDialogWindow1ResonseGUI.vb" />
     <Compile Include="JSON Deserializers\menu\CharacterCreationWindowGUI.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>

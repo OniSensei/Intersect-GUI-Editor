@@ -29,33 +29,8 @@ Module BagItemGUI
     End Class
 
     Public Class Children
-        Public Property BagItemIcon As BagItemIcon
+        Public Property BagItemIcon As IntersectIcon
         Public Property BagItemValue As IntersectLabel
-    End Class
-
-    Public Class BagItemIcon
-        Public Property Bounds As String
-        Public Property Padding As String
-        Public Property AlignmentEdgeDistances As String
-        Public Property AlignmentTransform As String
-        Public Property Margin As String
-        Public Property RenderColor As String
-        Public Property Alignments As String
-        Public Property DrawBackground As Boolean
-        Public Property MinimumSize As String
-        Public Property MaximumSize As String
-        Public Property Disabled As Boolean
-        Public Property Hidden As Boolean
-        Public Property RestrictToParent As Boolean
-        Public Property MouseInputEnabled As Boolean
-        Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
-        Public Property Texture As String
-        Public Property HoverSound As String
-        Public Property LeftMouseClickSound As String
-        Public Property RightMouseClickSound As String
     End Class
 
     Public Sub LoadBagItemGUI(ByVal jsonfile As String)
@@ -91,8 +66,6 @@ Module BagItemGUI
         Form1.BagItemIcon.Height = BagItemIconBounds(3)
         Form1.BagItemIcon.BackgroundImage = Image.FromFile(Application.StartupPath & "\resources\itemIcon.png")
         Form1.BagItemValue.Location = New Point(BagItemValueBounds(0), BagItemValueBounds(1))
-        Form1.BagItemValue.Width = BagItemValueBounds(2)
-        Form1.BagItemValue.Height = BagItemValueBounds(3)
 
         Form1.StatusText("[MAIN]     Visual Window Updated")
     End Sub

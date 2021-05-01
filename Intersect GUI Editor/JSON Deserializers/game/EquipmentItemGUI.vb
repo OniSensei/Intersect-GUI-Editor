@@ -1,8 +1,8 @@
 ﻿Imports System.IO
 Imports Newtonsoft.Json
 
-Module BankItemGUI
-    Public Class BankItem
+Module EquipmentItemGUI
+    Public Class EquipmentItem
         Public Property Bounds As String
         Public Property Padding As String
         Public Property AlignmentEdgeDistances As String
@@ -18,27 +18,20 @@ Module BankItemGUI
         Public Property RestrictToParent As Boolean
         Public Property MouseInputEnabled As Boolean
         Public Property HideToolTip As Boolean
-        Public Property ToolTipBackground As String
-        Public Property ToolTipFont As String
-        Public Property ToolTipTextColor As String
         Public Property Texture As String
-        Public Property HoverSound As String
-        Public Property LeftMouseClickSound As String
-        Public Property RightMouseClickSound As String
         Public Property Children As Children
     End Class
 
     Public Class Children
-        Public Property BankItemIcon As IntersectIcon
-        Public Property BankItemValue As IntersectLabel
+        Public Property EquipmentIcon As IntersectIcon
     End Class
 
-    Public Sub LoadBankItemGUI(ByVal jsonfile As String)
+    Public Sub LoadEquipmentItemGUI(ByVal jsonfile As String)
         Form1.StatusText("[MAIN]     Opening " & jsonfile)
         Form1.jsonValue.Text = ""
         Form1.jsonType.Text = ""
         Form1.jsonTypeCombo.Text = ""
-        Form1.MainBankItemPanel.Visible = True
+        Form1.MainEquipmentItemPanel.Visible = True
         Form1.RefreshBtn.Visible = True
         Form1.gridToggle.Visible = True
         Form1.toolSplitContainer.Panel2.BackColor = Color.Gray
@@ -49,23 +42,21 @@ Module BankItemGUI
         Form1.JTokenTreeUserControl1.SetJsonSource(Form1.fullJson.Text)
         sr.Close()
         Dim imgResources As String = Application.StartupPath & "\gui\"
-        Dim infoPull As New BankItem
-        infoPull = JsonConvert.DeserializeObject(Of BankItem)(Form1.fullJson.Text)
-        Form1.StatusText("[MAIN]     BankItem.json Deserialized")
+        Dim infoPull As New EquipmentItem
+        infoPull = JsonConvert.DeserializeObject(Of EquipmentItem)(Form1.fullJson.Text)
+        Form1.StatusText("[MAIN]     EquipmentItem.json Deserialized")
 
         Dim mainwindowbounds As String() = infoPull.Bounds.Split(",")
-        Dim BankItemIconBounds As String() = infoPull.Children.BankItemIcon.Bounds.Split(",")
-        Dim BankItemValueBounds As String() = infoPull.Children.BankItemValue.Bounds.Split(",")
+        Dim EquipmentIconBounds As String() = infoPull.Children.EquipmentIcon.Bounds.Split(",")
 
-        Form1.MainBankItemPanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
-        Form1.MainBankItemPanel.Width = mainwindowbounds(2)
-        Form1.MainBankItemPanel.Height = mainwindowbounds(3)
-        Form1.MainBankItemPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.Texture)
-        Form1.BankItemIcon.Location = New Point(BankItemIconBounds(0), BankItemIconBounds(1))
-        Form1.BankItemIcon.Width = BankItemIconBounds(2)
-        Form1.BankItemIcon.Height = BankItemIconBounds(3)
-        Form1.BankItemIcon.BackgroundImage = Image.FromFile(Application.StartupPath & "\resources\itemIcon.png")
-        Form1.BankItemValue.Location = New Point(BankItemValueBounds(0), BankItemValueBounds(1))
+        Form1.MainEquipmentItemPanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
+        Form1.MainEquipmentItemPanel.Width = mainwindowbounds(2)
+        Form1.MainEquipmentItemPanel.Height = mainwindowbounds(3)
+        Form1.MainEquipmentItemPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.Texture)
+        Form1.EquipmentIcon.Location = New Point(EquipmentIconBounds(0), EquipmentIconBounds(1))
+        Form1.EquipmentIcon.Width = EquipmentIconBounds(2)
+        Form1.EquipmentIcon.Height = EquipmentIconBounds(3)
+        Form1.EquipmentIcon.BackgroundImage = Image.FromFile(Application.StartupPath & "\resources\weapon.png")
 
         Form1.StatusText("[MAIN]     Visual Window Updated")
     End Sub

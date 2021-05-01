@@ -1,8 +1,8 @@
 ﻿Imports System.IO
 Imports Newtonsoft.Json
 
-Module BankItemGUI
-    Public Class BankItem
+Module CraftingIngredientGUI
+    Public Class CraftingIngredient
         Public Property Bounds As String
         Public Property Padding As String
         Public Property AlignmentEdgeDistances As String
@@ -29,16 +29,16 @@ Module BankItemGUI
     End Class
 
     Public Class Children
-        Public Property BankItemIcon As IntersectIcon
-        Public Property BankItemValue As IntersectLabel
+        Public Property IngredientItemIcon As IntersectIcon
+        Public Property IngredientItemValue As IntersectLabel
     End Class
 
-    Public Sub LoadBankItemGUI(ByVal jsonfile As String)
+    Public Sub LoadCraftingIngredientGUI(ByVal jsonfile As String)
         Form1.StatusText("[MAIN]     Opening " & jsonfile)
         Form1.jsonValue.Text = ""
         Form1.jsonType.Text = ""
         Form1.jsonTypeCombo.Text = ""
-        Form1.MainBankItemPanel.Visible = True
+        Form1.MainCraftingIngredientPanel.Visible = True
         Form1.RefreshBtn.Visible = True
         Form1.gridToggle.Visible = True
         Form1.toolSplitContainer.Panel2.BackColor = Color.Gray
@@ -49,23 +49,25 @@ Module BankItemGUI
         Form1.JTokenTreeUserControl1.SetJsonSource(Form1.fullJson.Text)
         sr.Close()
         Dim imgResources As String = Application.StartupPath & "\gui\"
-        Dim infoPull As New BankItem
-        infoPull = JsonConvert.DeserializeObject(Of BankItem)(Form1.fullJson.Text)
-        Form1.StatusText("[MAIN]     BankItem.json Deserialized")
+        Dim infoPull As New CraftingIngredient
+        infoPull = JsonConvert.DeserializeObject(Of CraftingIngredient)(Form1.fullJson.Text)
+        Form1.StatusText("[MAIN]     CraftingIngredient.json Deserialized")
 
         Dim mainwindowbounds As String() = infoPull.Bounds.Split(",")
-        Dim BankItemIconBounds As String() = infoPull.Children.BankItemIcon.Bounds.Split(",")
-        Dim BankItemValueBounds As String() = infoPull.Children.BankItemValue.Bounds.Split(",")
+        Dim IngredientItemIconBounds As String() = infoPull.Children.IngredientItemIcon.Bounds.Split(",")
+        Dim IngredientItemValueBounds As String() = infoPull.Children.IngredientItemValue.Bounds.Split(",")
 
-        Form1.MainBankItemPanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
-        Form1.MainBankItemPanel.Width = mainwindowbounds(2)
-        Form1.MainBankItemPanel.Height = mainwindowbounds(3)
-        Form1.MainBankItemPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.Texture)
-        Form1.BankItemIcon.Location = New Point(BankItemIconBounds(0), BankItemIconBounds(1))
-        Form1.BankItemIcon.Width = BankItemIconBounds(2)
-        Form1.BankItemIcon.Height = BankItemIconBounds(3)
-        Form1.BankItemIcon.BackgroundImage = Image.FromFile(Application.StartupPath & "\resources\itemIcon.png")
-        Form1.BankItemValue.Location = New Point(BankItemValueBounds(0), BankItemValueBounds(1))
+        Form1.MainCraftingIngredientPanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
+        Form1.MainCraftingIngredientPanel.Width = mainwindowbounds(2)
+        Form1.MainCraftingIngredientPanel.Height = mainwindowbounds(3)
+        Form1.MainCraftingIngredientPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.Texture)
+        Form1.IngredientItemIcon.Location = New Point(IngredientItemIconBounds(0), IngredientItemIconBounds(1))
+        Form1.IngredientItemIcon.Width = IngredientItemIconBounds(2)
+        Form1.IngredientItemIcon.Height = IngredientItemIconBounds(3)
+        Form1.IngredientItemIcon.BackgroundImage = Image.FromFile(Application.StartupPath & "\resources\itemIcon.png")
+        Form1.IngredientItemValue.Location = New Point(IngredientItemValueBounds(0), IngredientItemValueBounds(1))
+        Form1.IngredientItemValue.Width = IngredientItemValueBounds(2)
+        Form1.IngredientItemValue.Height = IngredientItemValueBounds(3)
 
         Form1.StatusText("[MAIN]     Visual Window Updated")
     End Sub

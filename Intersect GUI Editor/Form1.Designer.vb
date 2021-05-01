@@ -35,6 +35,41 @@ Partial Class Form1
         Me.jsonType = New System.Windows.Forms.TextBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.fullJson = New System.Windows.Forms.RichTextBox()
+        Me.MainEventDialogWindow1ResponsePanel = New System.Windows.Forms.Panel()
+        Me.Dialog1EventDialogArea = New System.Windows.Forms.Panel()
+        Me.Dialog1EventDialogAreaInnerPanel = New System.Windows.Forms.Panel()
+        Me.Dialog1EventDialogLabel = New System.Windows.Forms.Label()
+        Me.Dialog1Response1Button = New System.Windows.Forms.PictureBox()
+        Me.Dialog1EventFacePanel = New System.Windows.Forms.Panel()
+        Me.MainEscapeMenuPanel = New System.Windows.Forms.Panel()
+        Me.EscapeMenuLogoutButton = New System.Windows.Forms.PictureBox()
+        Me.EscapeMenuCloseButton = New System.Windows.Forms.PictureBox()
+        Me.EscapeMenuExitToDesktopButton = New System.Windows.Forms.PictureBox()
+        Me.EscapeMenuCharacterSelectButton = New System.Windows.Forms.PictureBox()
+        Me.EscapeMenuOptionsButton = New System.Windows.Forms.PictureBox()
+        Me.EscapeMenuTitleLabel = New System.Windows.Forms.Label()
+        Me.MainEquipmentItemPanel = New System.Windows.Forms.Panel()
+        Me.EquipmentIcon = New System.Windows.Forms.PictureBox()
+        Me.MainCraftingWindowPanel = New System.Windows.Forms.Panel()
+        Me.CraftButton = New System.Windows.Forms.PictureBox()
+        Me.CraftingWindowProgressBar = New System.Windows.Forms.Panel()
+        Me.ProductLabel = New System.Windows.Forms.Label()
+        Me.IngredientsTitle = New System.Windows.Forms.Label()
+        Me.RecipesTitle = New System.Windows.Forms.Label()
+        Me.IngredientsContainer = New System.Windows.Forms.Panel()
+        Me.CraftingWindowCloseButton = New System.Windows.Forms.PictureBox()
+        Me.CraftingWindowTitle = New System.Windows.Forms.Label()
+        Me.MainCraftingIngredientPanel = New System.Windows.Forms.Panel()
+        Me.IngredientItemValue = New System.Windows.Forms.Label()
+        Me.IngredientItemIcon = New System.Windows.Forms.PictureBox()
+        Me.MainCraftedItemPanel = New System.Windows.Forms.Panel()
+        Me.CraftedItemQuantity = New System.Windows.Forms.Label()
+        Me.CraftedItemIcon = New System.Windows.Forms.PictureBox()
+        Me.MainChatboxWindowPanel = New System.Windows.Forms.Panel()
+        Me.ChatboxInputField = New System.Windows.Forms.PictureBox()
+        Me.Chatbar = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.ChatboxTitle = New System.Windows.Forms.Label()
         Me.MainCharacterWindowPanel = New System.Windows.Forms.Panel()
         Me.CharacterWindowInnerPanel = New System.Windows.Forms.Panel()
         Me.EquipmentItem4 = New System.Windows.Forms.Panel()
@@ -282,11 +317,6 @@ Partial Class Form1
         Me.RefreshBtn = New System.Windows.Forms.ToolStripMenuItem()
         Me.gridToggle = New System.Windows.Forms.ToolStripMenuItem()
         Me.AppSettings = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MainChatboxWindowPanel = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.ChatboxTitle = New System.Windows.Forms.Label()
-        Me.Chatbar = New System.Windows.Forms.Panel()
-        Me.ChatboxInputField = New System.Windows.Forms.PictureBox()
         CType(Me.mainSplitContainer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.mainSplitContainer.Panel1.SuspendLayout()
         Me.mainSplitContainer.Panel2.SuspendLayout()
@@ -302,6 +332,28 @@ Partial Class Form1
         Me.SplitContainer1.Panel2.SuspendLayout()
         Me.SplitContainer1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
+        Me.MainEventDialogWindow1ResponsePanel.SuspendLayout()
+        Me.Dialog1EventDialogArea.SuspendLayout()
+        Me.Dialog1EventDialogAreaInnerPanel.SuspendLayout()
+        CType(Me.Dialog1Response1Button, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MainEscapeMenuPanel.SuspendLayout()
+        CType(Me.EscapeMenuLogoutButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EscapeMenuCloseButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EscapeMenuExitToDesktopButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EscapeMenuCharacterSelectButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EscapeMenuOptionsButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MainEquipmentItemPanel.SuspendLayout()
+        CType(Me.EquipmentIcon, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MainCraftingWindowPanel.SuspendLayout()
+        CType(Me.CraftButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CraftingWindowCloseButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MainCraftingIngredientPanel.SuspendLayout()
+        CType(Me.IngredientItemIcon, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MainCraftedItemPanel.SuspendLayout()
+        CType(Me.CraftedItemIcon, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MainChatboxWindowPanel.SuspendLayout()
+        CType(Me.ChatboxInputField, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MainCharacterWindowPanel.SuspendLayout()
         Me.CharacterWindowInnerPanel.SuspendLayout()
         Me.EquipmentItem4.SuspendLayout()
@@ -431,9 +483,6 @@ Partial Class Form1
         CType(Me.UsernameFieldPB, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.StatusStrip1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
-        Me.MainChatboxWindowPanel.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ChatboxInputField, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'mainSplitContainer
@@ -450,7 +499,7 @@ Partial Class Form1
         'mainSplitContainer.Panel2
         '
         Me.mainSplitContainer.Panel2.Controls.Add(Me.StatusStrip1)
-        Me.mainSplitContainer.Size = New System.Drawing.Size(1984, 637)
+        Me.mainSplitContainer.Size = New System.Drawing.Size(1125, 637)
         Me.mainSplitContainer.SplitterDistance = 607
         Me.mainSplitContainer.TabIndex = 0
         '
@@ -467,6 +516,12 @@ Partial Class Form1
         'toolSplitContainer.Panel2
         '
         Me.toolSplitContainer.Panel2.AutoScroll = True
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainEventDialogWindow1ResponsePanel)
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainEscapeMenuPanel)
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainEquipmentItemPanel)
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainCraftingWindowPanel)
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainCraftingIngredientPanel)
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainCraftedItemPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainChatboxWindowPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainCharacterWindowPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainBankWindowPanel)
@@ -486,8 +541,8 @@ Partial Class Form1
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainCharSelectionPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainCharacterCreationPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainLoginWindowPanel)
-        Me.toolSplitContainer.Size = New System.Drawing.Size(1984, 607)
-        Me.toolSplitContainer.SplitterDistance = 499
+        Me.toolSplitContainer.Size = New System.Drawing.Size(1125, 607)
+        Me.toolSplitContainer.SplitterDistance = 282
         Me.toolSplitContainer.TabIndex = 0
         '
         'TabControl1
@@ -499,7 +554,7 @@ Partial Class Form1
         Me.TabControl1.Location = New System.Drawing.Point(0, 0)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(499, 607)
+        Me.TabControl1.Size = New System.Drawing.Size(282, 607)
         Me.TabControl1.TabIndex = 1
         '
         'TabPage1
@@ -508,7 +563,7 @@ Partial Class Form1
         Me.TabPage1.Location = New System.Drawing.Point(4, 4)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(491, 581)
+        Me.TabPage1.Size = New System.Drawing.Size(274, 581)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Tree"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -530,7 +585,7 @@ Partial Class Form1
         Me.SplitContainer1.Panel2.Controls.Add(Me.jsonValue)
         Me.SplitContainer1.Panel2.Controls.Add(Me.jsonTypeCombo)
         Me.SplitContainer1.Panel2.Controls.Add(Me.jsonType)
-        Me.SplitContainer1.Size = New System.Drawing.Size(485, 575)
+        Me.SplitContainer1.Size = New System.Drawing.Size(268, 575)
         Me.SplitContainer1.SplitterDistance = 373
         Me.SplitContainer1.TabIndex = 1
         '
@@ -542,7 +597,7 @@ Partial Class Form1
         Me.JTokenTreeUserControl1.Location = New System.Drawing.Point(0, 0)
         Me.JTokenTreeUserControl1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.JTokenTreeUserControl1.Name = "JTokenTreeUserControl1"
-        Me.JTokenTreeUserControl1.Size = New System.Drawing.Size(485, 373)
+        Me.JTokenTreeUserControl1.Size = New System.Drawing.Size(268, 373)
         Me.JTokenTreeUserControl1.TabIndex = 1
         '
         'updateBtn
@@ -551,7 +606,7 @@ Partial Class Form1
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.updateBtn.Location = New System.Drawing.Point(5, 172)
         Me.updateBtn.Name = "updateBtn"
-        Me.updateBtn.Size = New System.Drawing.Size(477, 23)
+        Me.updateBtn.Size = New System.Drawing.Size(260, 23)
         Me.updateBtn.TabIndex = 3
         Me.updateBtn.Text = "Update"
         Me.updateBtn.UseVisualStyleBackColor = True
@@ -563,7 +618,7 @@ Partial Class Form1
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.jsonValue.Location = New System.Drawing.Point(5, 57)
         Me.jsonValue.Name = "jsonValue"
-        Me.jsonValue.Size = New System.Drawing.Size(477, 109)
+        Me.jsonValue.Size = New System.Drawing.Size(260, 109)
         Me.jsonValue.TabIndex = 2
         Me.jsonValue.Text = ""
         '
@@ -575,7 +630,7 @@ Partial Class Form1
         Me.jsonTypeCombo.FormattingEnabled = True
         Me.jsonTypeCombo.Location = New System.Drawing.Point(5, 30)
         Me.jsonTypeCombo.Name = "jsonTypeCombo"
-        Me.jsonTypeCombo.Size = New System.Drawing.Size(477, 21)
+        Me.jsonTypeCombo.Size = New System.Drawing.Size(260, 21)
         Me.jsonTypeCombo.TabIndex = 1
         '
         'jsonType
@@ -585,7 +640,7 @@ Partial Class Form1
         Me.jsonType.Location = New System.Drawing.Point(5, 4)
         Me.jsonType.Name = "jsonType"
         Me.jsonType.ReadOnly = True
-        Me.jsonType.Size = New System.Drawing.Size(477, 20)
+        Me.jsonType.Size = New System.Drawing.Size(260, 20)
         Me.jsonType.TabIndex = 0
         '
         'TabPage2
@@ -594,7 +649,7 @@ Partial Class Form1
         Me.TabPage2.Location = New System.Drawing.Point(4, 4)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(265, 581)
+        Me.TabPage2.Size = New System.Drawing.Size(274, 581)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Text"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -605,9 +660,417 @@ Partial Class Form1
         Me.fullJson.Location = New System.Drawing.Point(3, 3)
         Me.fullJson.Name = "fullJson"
         Me.fullJson.ReadOnly = True
-        Me.fullJson.Size = New System.Drawing.Size(259, 575)
+        Me.fullJson.Size = New System.Drawing.Size(268, 575)
         Me.fullJson.TabIndex = 0
         Me.fullJson.Text = ""
+        '
+        'MainEventDialogWindow1ResponsePanel
+        '
+        Me.MainEventDialogWindow1ResponsePanel.BackgroundImage = CType(resources.GetObject("MainEventDialogWindow1ResponsePanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainEventDialogWindow1ResponsePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainEventDialogWindow1ResponsePanel.Controls.Add(Me.Dialog1EventDialogArea)
+        Me.MainEventDialogWindow1ResponsePanel.Controls.Add(Me.Dialog1Response1Button)
+        Me.MainEventDialogWindow1ResponsePanel.Controls.Add(Me.Dialog1EventFacePanel)
+        Me.MainEventDialogWindow1ResponsePanel.Location = New System.Drawing.Point(1508, 168)
+        Me.MainEventDialogWindow1ResponsePanel.Name = "MainEventDialogWindow1ResponsePanel"
+        Me.MainEventDialogWindow1ResponsePanel.Size = New System.Drawing.Size(520, 162)
+        Me.MainEventDialogWindow1ResponsePanel.TabIndex = 33
+        Me.MainEventDialogWindow1ResponsePanel.Visible = False
+        '
+        'Dialog1EventDialogArea
+        '
+        Me.Dialog1EventDialogArea.BackColor = System.Drawing.Color.Transparent
+        Me.Dialog1EventDialogArea.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Dialog1EventDialogArea.Controls.Add(Me.Dialog1EventDialogAreaInnerPanel)
+        Me.Dialog1EventDialogArea.Location = New System.Drawing.Point(106, 14)
+        Me.Dialog1EventDialogArea.Name = "Dialog1EventDialogArea"
+        Me.Dialog1EventDialogArea.Size = New System.Drawing.Size(402, 80)
+        Me.Dialog1EventDialogArea.TabIndex = 19
+        '
+        'Dialog1EventDialogAreaInnerPanel
+        '
+        Me.Dialog1EventDialogAreaInnerPanel.BackColor = System.Drawing.Color.Transparent
+        Me.Dialog1EventDialogAreaInnerPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Dialog1EventDialogAreaInnerPanel.Controls.Add(Me.Dialog1EventDialogLabel)
+        Me.Dialog1EventDialogAreaInnerPanel.Location = New System.Drawing.Point(0, 0)
+        Me.Dialog1EventDialogAreaInnerPanel.Name = "Dialog1EventDialogAreaInnerPanel"
+        Me.Dialog1EventDialogAreaInnerPanel.Size = New System.Drawing.Size(387, 900)
+        Me.Dialog1EventDialogAreaInnerPanel.TabIndex = 20
+        '
+        'Dialog1EventDialogLabel
+        '
+        Me.Dialog1EventDialogLabel.AutoSize = True
+        Me.Dialog1EventDialogLabel.BackColor = System.Drawing.Color.Transparent
+        Me.Dialog1EventDialogLabel.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Dialog1EventDialogLabel.ForeColor = System.Drawing.Color.White
+        Me.Dialog1EventDialogLabel.Location = New System.Drawing.Point(0, 0)
+        Me.Dialog1EventDialogLabel.Name = "Dialog1EventDialogLabel"
+        Me.Dialog1EventDialogLabel.Size = New System.Drawing.Size(102, 17)
+        Me.Dialog1EventDialogLabel.TabIndex = 22
+        Me.Dialog1EventDialogLabel.Text = "EventDialogLabel"
+        '
+        'Dialog1Response1Button
+        '
+        Me.Dialog1Response1Button.BackColor = System.Drawing.Color.Transparent
+        Me.Dialog1Response1Button.BackgroundImage = CType(resources.GetObject("Dialog1Response1Button.BackgroundImage"), System.Drawing.Image)
+        Me.Dialog1Response1Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Dialog1Response1Button.Location = New System.Drawing.Point(12, 107)
+        Me.Dialog1Response1Button.Name = "Dialog1Response1Button"
+        Me.Dialog1Response1Button.Size = New System.Drawing.Size(496, 44)
+        Me.Dialog1Response1Button.TabIndex = 18
+        Me.Dialog1Response1Button.TabStop = False
+        '
+        'Dialog1EventFacePanel
+        '
+        Me.Dialog1EventFacePanel.BackColor = System.Drawing.Color.Transparent
+        Me.Dialog1EventFacePanel.BackgroundImage = CType(resources.GetObject("Dialog1EventFacePanel.BackgroundImage"), System.Drawing.Image)
+        Me.Dialog1EventFacePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Dialog1EventFacePanel.Location = New System.Drawing.Point(16, 14)
+        Me.Dialog1EventFacePanel.Name = "Dialog1EventFacePanel"
+        Me.Dialog1EventFacePanel.Size = New System.Drawing.Size(80, 80)
+        Me.Dialog1EventFacePanel.TabIndex = 7
+        '
+        'MainEscapeMenuPanel
+        '
+        Me.MainEscapeMenuPanel.BackgroundImage = CType(resources.GetObject("MainEscapeMenuPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainEscapeMenuPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainEscapeMenuPanel.Controls.Add(Me.EscapeMenuLogoutButton)
+        Me.MainEscapeMenuPanel.Controls.Add(Me.EscapeMenuCloseButton)
+        Me.MainEscapeMenuPanel.Controls.Add(Me.EscapeMenuExitToDesktopButton)
+        Me.MainEscapeMenuPanel.Controls.Add(Me.EscapeMenuCharacterSelectButton)
+        Me.MainEscapeMenuPanel.Controls.Add(Me.EscapeMenuOptionsButton)
+        Me.MainEscapeMenuPanel.Controls.Add(Me.EscapeMenuTitleLabel)
+        Me.MainEscapeMenuPanel.Location = New System.Drawing.Point(825, 822)
+        Me.MainEscapeMenuPanel.Name = "MainEscapeMenuPanel"
+        Me.MainEscapeMenuPanel.Size = New System.Drawing.Size(452, 213)
+        Me.MainEscapeMenuPanel.TabIndex = 32
+        Me.MainEscapeMenuPanel.Visible = False
+        '
+        'EscapeMenuLogoutButton
+        '
+        Me.EscapeMenuLogoutButton.BackColor = System.Drawing.Color.Transparent
+        Me.EscapeMenuLogoutButton.BackgroundImage = CType(resources.GetObject("EscapeMenuLogoutButton.BackgroundImage"), System.Drawing.Image)
+        Me.EscapeMenuLogoutButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.EscapeMenuLogoutButton.Location = New System.Drawing.Point(182, 48)
+        Me.EscapeMenuLogoutButton.Name = "EscapeMenuLogoutButton"
+        Me.EscapeMenuLogoutButton.Size = New System.Drawing.Size(87, 154)
+        Me.EscapeMenuLogoutButton.TabIndex = 14
+        Me.EscapeMenuLogoutButton.TabStop = False
+        '
+        'EscapeMenuCloseButton
+        '
+        Me.EscapeMenuCloseButton.BackColor = System.Drawing.Color.Transparent
+        Me.EscapeMenuCloseButton.BackgroundImage = CType(resources.GetObject("EscapeMenuCloseButton.BackgroundImage"), System.Drawing.Image)
+        Me.EscapeMenuCloseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.EscapeMenuCloseButton.Location = New System.Drawing.Point(358, 48)
+        Me.EscapeMenuCloseButton.Name = "EscapeMenuCloseButton"
+        Me.EscapeMenuCloseButton.Size = New System.Drawing.Size(87, 154)
+        Me.EscapeMenuCloseButton.TabIndex = 13
+        Me.EscapeMenuCloseButton.TabStop = False
+        '
+        'EscapeMenuExitToDesktopButton
+        '
+        Me.EscapeMenuExitToDesktopButton.BackColor = System.Drawing.Color.Transparent
+        Me.EscapeMenuExitToDesktopButton.BackgroundImage = CType(resources.GetObject("EscapeMenuExitToDesktopButton.BackgroundImage"), System.Drawing.Image)
+        Me.EscapeMenuExitToDesktopButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.EscapeMenuExitToDesktopButton.Location = New System.Drawing.Point(270, 48)
+        Me.EscapeMenuExitToDesktopButton.Name = "EscapeMenuExitToDesktopButton"
+        Me.EscapeMenuExitToDesktopButton.Size = New System.Drawing.Size(87, 154)
+        Me.EscapeMenuExitToDesktopButton.TabIndex = 12
+        Me.EscapeMenuExitToDesktopButton.TabStop = False
+        '
+        'EscapeMenuCharacterSelectButton
+        '
+        Me.EscapeMenuCharacterSelectButton.BackColor = System.Drawing.Color.Transparent
+        Me.EscapeMenuCharacterSelectButton.BackgroundImage = CType(resources.GetObject("EscapeMenuCharacterSelectButton.BackgroundImage"), System.Drawing.Image)
+        Me.EscapeMenuCharacterSelectButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.EscapeMenuCharacterSelectButton.Location = New System.Drawing.Point(94, 48)
+        Me.EscapeMenuCharacterSelectButton.Name = "EscapeMenuCharacterSelectButton"
+        Me.EscapeMenuCharacterSelectButton.Size = New System.Drawing.Size(87, 154)
+        Me.EscapeMenuCharacterSelectButton.TabIndex = 11
+        Me.EscapeMenuCharacterSelectButton.TabStop = False
+        '
+        'EscapeMenuOptionsButton
+        '
+        Me.EscapeMenuOptionsButton.BackColor = System.Drawing.Color.Transparent
+        Me.EscapeMenuOptionsButton.BackgroundImage = CType(resources.GetObject("EscapeMenuOptionsButton.BackgroundImage"), System.Drawing.Image)
+        Me.EscapeMenuOptionsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.EscapeMenuOptionsButton.Location = New System.Drawing.Point(7, 48)
+        Me.EscapeMenuOptionsButton.Name = "EscapeMenuOptionsButton"
+        Me.EscapeMenuOptionsButton.Size = New System.Drawing.Size(87, 154)
+        Me.EscapeMenuOptionsButton.TabIndex = 10
+        Me.EscapeMenuOptionsButton.TabStop = False
+        '
+        'EscapeMenuTitleLabel
+        '
+        Me.EscapeMenuTitleLabel.AutoSize = True
+        Me.EscapeMenuTitleLabel.BackColor = System.Drawing.Color.Transparent
+        Me.EscapeMenuTitleLabel.Font = New System.Drawing.Font("Source Sans Pro SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EscapeMenuTitleLabel.ForeColor = System.Drawing.Color.White
+        Me.EscapeMenuTitleLabel.Location = New System.Drawing.Point(25, 8)
+        Me.EscapeMenuTitleLabel.Name = "EscapeMenuTitleLabel"
+        Me.EscapeMenuTitleLabel.Size = New System.Drawing.Size(47, 20)
+        Me.EscapeMenuTitleLabel.TabIndex = 3
+        Me.EscapeMenuTitleLabel.Text = "Menu"
+        '
+        'MainEquipmentItemPanel
+        '
+        Me.MainEquipmentItemPanel.BackColor = System.Drawing.Color.Transparent
+        Me.MainEquipmentItemPanel.BackgroundImage = CType(resources.GetObject("MainEquipmentItemPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainEquipmentItemPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainEquipmentItemPanel.Controls.Add(Me.EquipmentIcon)
+        Me.MainEquipmentItemPanel.Location = New System.Drawing.Point(814, 374)
+        Me.MainEquipmentItemPanel.Name = "MainEquipmentItemPanel"
+        Me.MainEquipmentItemPanel.Size = New System.Drawing.Size(34, 34)
+        Me.MainEquipmentItemPanel.TabIndex = 31
+        Me.MainEquipmentItemPanel.Visible = False
+        '
+        'EquipmentIcon
+        '
+        Me.EquipmentIcon.BackgroundImage = CType(resources.GetObject("EquipmentIcon.BackgroundImage"), System.Drawing.Image)
+        Me.EquipmentIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.EquipmentIcon.Location = New System.Drawing.Point(1, 1)
+        Me.EquipmentIcon.Name = "EquipmentIcon"
+        Me.EquipmentIcon.Size = New System.Drawing.Size(32, 32)
+        Me.EquipmentIcon.TabIndex = 0
+        Me.EquipmentIcon.TabStop = False
+        '
+        'MainCraftingWindowPanel
+        '
+        Me.MainCraftingWindowPanel.BackgroundImage = CType(resources.GetObject("MainCraftingWindowPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainCraftingWindowPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainCraftingWindowPanel.Controls.Add(Me.CraftButton)
+        Me.MainCraftingWindowPanel.Controls.Add(Me.CraftingWindowProgressBar)
+        Me.MainCraftingWindowPanel.Controls.Add(Me.ProductLabel)
+        Me.MainCraftingWindowPanel.Controls.Add(Me.IngredientsTitle)
+        Me.MainCraftingWindowPanel.Controls.Add(Me.RecipesTitle)
+        Me.MainCraftingWindowPanel.Controls.Add(Me.IngredientsContainer)
+        Me.MainCraftingWindowPanel.Controls.Add(Me.CraftingWindowCloseButton)
+        Me.MainCraftingWindowPanel.Controls.Add(Me.CraftingWindowTitle)
+        Me.MainCraftingWindowPanel.Location = New System.Drawing.Point(354, 619)
+        Me.MainCraftingWindowPanel.Name = "MainCraftingWindowPanel"
+        Me.MainCraftingWindowPanel.Size = New System.Drawing.Size(442, 469)
+        Me.MainCraftingWindowPanel.TabIndex = 30
+        Me.MainCraftingWindowPanel.Visible = False
+        '
+        'CraftButton
+        '
+        Me.CraftButton.BackColor = System.Drawing.Color.Transparent
+        Me.CraftButton.BackgroundImage = CType(resources.GetObject("CraftButton.BackgroundImage"), System.Drawing.Image)
+        Me.CraftButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.CraftButton.Location = New System.Drawing.Point(330, 394)
+        Me.CraftButton.Name = "CraftButton"
+        Me.CraftButton.Size = New System.Drawing.Size(96, 35)
+        Me.CraftButton.TabIndex = 25
+        Me.CraftButton.TabStop = False
+        '
+        'CraftingWindowProgressBar
+        '
+        Me.CraftingWindowProgressBar.BackColor = System.Drawing.Color.Transparent
+        Me.CraftingWindowProgressBar.BackgroundImage = CType(resources.GetObject("CraftingWindowProgressBar.BackgroundImage"), System.Drawing.Image)
+        Me.CraftingWindowProgressBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.CraftingWindowProgressBar.Location = New System.Drawing.Point(194, 431)
+        Me.CraftingWindowProgressBar.Name = "CraftingWindowProgressBar"
+        Me.CraftingWindowProgressBar.Size = New System.Drawing.Size(247, 5)
+        Me.CraftingWindowProgressBar.TabIndex = 24
+        '
+        'ProductLabel
+        '
+        Me.ProductLabel.AutoSize = True
+        Me.ProductLabel.BackColor = System.Drawing.Color.Transparent
+        Me.ProductLabel.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ProductLabel.ForeColor = System.Drawing.Color.White
+        Me.ProductLabel.Location = New System.Drawing.Point(216, 20)
+        Me.ProductLabel.Name = "ProductLabel"
+        Me.ProductLabel.Size = New System.Drawing.Size(54, 17)
+        Me.ProductLabel.TabIndex = 23
+        Me.ProductLabel.Text = "Product:"
+        Me.ProductLabel.Visible = False
+        '
+        'IngredientsTitle
+        '
+        Me.IngredientsTitle.AutoSize = True
+        Me.IngredientsTitle.BackColor = System.Drawing.Color.Transparent
+        Me.IngredientsTitle.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.IngredientsTitle.ForeColor = System.Drawing.Color.White
+        Me.IngredientsTitle.Location = New System.Drawing.Point(216, 62)
+        Me.IngredientsTitle.Name = "IngredientsTitle"
+        Me.IngredientsTitle.Size = New System.Drawing.Size(71, 17)
+        Me.IngredientsTitle.TabIndex = 22
+        Me.IngredientsTitle.Text = "Ingredients:"
+        Me.IngredientsTitle.Visible = False
+        '
+        'RecipesTitle
+        '
+        Me.RecipesTitle.AutoSize = True
+        Me.RecipesTitle.BackColor = System.Drawing.Color.Transparent
+        Me.RecipesTitle.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RecipesTitle.ForeColor = System.Drawing.Color.White
+        Me.RecipesTitle.Location = New System.Drawing.Point(4, 4)
+        Me.RecipesTitle.Name = "RecipesTitle"
+        Me.RecipesTitle.Size = New System.Drawing.Size(51, 17)
+        Me.RecipesTitle.TabIndex = 21
+        Me.RecipesTitle.Text = "Recipes:"
+        Me.RecipesTitle.Visible = False
+        '
+        'IngredientsContainer
+        '
+        Me.IngredientsContainer.BackColor = System.Drawing.Color.Transparent
+        Me.IngredientsContainer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.IngredientsContainer.Location = New System.Drawing.Point(210, 82)
+        Me.IngredientsContainer.Name = "IngredientsContainer"
+        Me.IngredientsContainer.Size = New System.Drawing.Size(215, 301)
+        Me.IngredientsContainer.TabIndex = 20
+        '
+        'CraftingWindowCloseButton
+        '
+        Me.CraftingWindowCloseButton.BackColor = System.Drawing.Color.Transparent
+        Me.CraftingWindowCloseButton.BackgroundImage = CType(resources.GetObject("CraftingWindowCloseButton.BackgroundImage"), System.Drawing.Image)
+        Me.CraftingWindowCloseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.CraftingWindowCloseButton.Location = New System.Drawing.Point(408, 0)
+        Me.CraftingWindowCloseButton.Name = "CraftingWindowCloseButton"
+        Me.CraftingWindowCloseButton.Size = New System.Drawing.Size(34, 32)
+        Me.CraftingWindowCloseButton.TabIndex = 19
+        Me.CraftingWindowCloseButton.TabStop = False
+        '
+        'CraftingWindowTitle
+        '
+        Me.CraftingWindowTitle.AutoSize = True
+        Me.CraftingWindowTitle.BackColor = System.Drawing.Color.Transparent
+        Me.CraftingWindowTitle.Font = New System.Drawing.Font("Source Sans Pro SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CraftingWindowTitle.ForeColor = System.Drawing.Color.White
+        Me.CraftingWindowTitle.Location = New System.Drawing.Point(32, 6)
+        Me.CraftingWindowTitle.Name = "CraftingWindowTitle"
+        Me.CraftingWindowTitle.Size = New System.Drawing.Size(63, 20)
+        Me.CraftingWindowTitle.TabIndex = 3
+        Me.CraftingWindowTitle.Text = "Crafting"
+        '
+        'MainCraftingIngredientPanel
+        '
+        Me.MainCraftingIngredientPanel.BackColor = System.Drawing.Color.Transparent
+        Me.MainCraftingIngredientPanel.BackgroundImage = CType(resources.GetObject("MainCraftingIngredientPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainCraftingIngredientPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainCraftingIngredientPanel.Controls.Add(Me.IngredientItemValue)
+        Me.MainCraftingIngredientPanel.Controls.Add(Me.IngredientItemIcon)
+        Me.MainCraftingIngredientPanel.Location = New System.Drawing.Point(813, 336)
+        Me.MainCraftingIngredientPanel.Name = "MainCraftingIngredientPanel"
+        Me.MainCraftingIngredientPanel.Size = New System.Drawing.Size(34, 35)
+        Me.MainCraftingIngredientPanel.TabIndex = 29
+        Me.MainCraftingIngredientPanel.Visible = False
+        '
+        'IngredientItemValue
+        '
+        Me.IngredientItemValue.AutoSize = True
+        Me.IngredientItemValue.BackColor = System.Drawing.Color.Transparent
+        Me.IngredientItemValue.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.IngredientItemValue.ForeColor = System.Drawing.Color.White
+        Me.IngredientItemValue.Location = New System.Drawing.Point(27, 24)
+        Me.IngredientItemValue.Name = "IngredientItemValue"
+        Me.IngredientItemValue.Size = New System.Drawing.Size(12, 14)
+        Me.IngredientItemValue.TabIndex = 6
+        Me.IngredientItemValue.Text = "0"
+        '
+        'IngredientItemIcon
+        '
+        Me.IngredientItemIcon.BackgroundImage = CType(resources.GetObject("IngredientItemIcon.BackgroundImage"), System.Drawing.Image)
+        Me.IngredientItemIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.IngredientItemIcon.Location = New System.Drawing.Point(1, 1)
+        Me.IngredientItemIcon.Name = "IngredientItemIcon"
+        Me.IngredientItemIcon.Size = New System.Drawing.Size(32, 32)
+        Me.IngredientItemIcon.TabIndex = 0
+        Me.IngredientItemIcon.TabStop = False
+        '
+        'MainCraftedItemPanel
+        '
+        Me.MainCraftedItemPanel.BackColor = System.Drawing.Color.Transparent
+        Me.MainCraftedItemPanel.BackgroundImage = CType(resources.GetObject("MainCraftedItemPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainCraftedItemPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainCraftedItemPanel.Controls.Add(Me.CraftedItemQuantity)
+        Me.MainCraftedItemPanel.Controls.Add(Me.CraftedItemIcon)
+        Me.MainCraftedItemPanel.Location = New System.Drawing.Point(814, 297)
+        Me.MainCraftedItemPanel.Name = "MainCraftedItemPanel"
+        Me.MainCraftedItemPanel.Size = New System.Drawing.Size(34, 35)
+        Me.MainCraftedItemPanel.TabIndex = 28
+        Me.MainCraftedItemPanel.Visible = False
+        '
+        'CraftedItemQuantity
+        '
+        Me.CraftedItemQuantity.AutoSize = True
+        Me.CraftedItemQuantity.BackColor = System.Drawing.Color.Transparent
+        Me.CraftedItemQuantity.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CraftedItemQuantity.ForeColor = System.Drawing.Color.White
+        Me.CraftedItemQuantity.Location = New System.Drawing.Point(27, 24)
+        Me.CraftedItemQuantity.Name = "CraftedItemQuantity"
+        Me.CraftedItemQuantity.Size = New System.Drawing.Size(12, 14)
+        Me.CraftedItemQuantity.TabIndex = 6
+        Me.CraftedItemQuantity.Text = "0"
+        '
+        'CraftedItemIcon
+        '
+        Me.CraftedItemIcon.BackgroundImage = CType(resources.GetObject("CraftedItemIcon.BackgroundImage"), System.Drawing.Image)
+        Me.CraftedItemIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.CraftedItemIcon.Location = New System.Drawing.Point(1, 1)
+        Me.CraftedItemIcon.Name = "CraftedItemIcon"
+        Me.CraftedItemIcon.Size = New System.Drawing.Size(32, 32)
+        Me.CraftedItemIcon.TabIndex = 0
+        Me.CraftedItemIcon.TabStop = False
+        '
+        'MainChatboxWindowPanel
+        '
+        Me.MainChatboxWindowPanel.BackgroundImage = CType(resources.GetObject("MainChatboxWindowPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainChatboxWindowPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainChatboxWindowPanel.Controls.Add(Me.ChatboxInputField)
+        Me.MainChatboxWindowPanel.Controls.Add(Me.Chatbar)
+        Me.MainChatboxWindowPanel.Controls.Add(Me.PictureBox1)
+        Me.MainChatboxWindowPanel.Controls.Add(Me.ChatboxTitle)
+        Me.MainChatboxWindowPanel.Location = New System.Drawing.Point(1270, 0)
+        Me.MainChatboxWindowPanel.Name = "MainChatboxWindowPanel"
+        Me.MainChatboxWindowPanel.Size = New System.Drawing.Size(386, 162)
+        Me.MainChatboxWindowPanel.TabIndex = 27
+        Me.MainChatboxWindowPanel.Visible = False
+        '
+        'ChatboxInputField
+        '
+        Me.ChatboxInputField.BackgroundImage = CType(resources.GetObject("ChatboxInputField.BackgroundImage"), System.Drawing.Image)
+        Me.ChatboxInputField.Location = New System.Drawing.Point(2, 141)
+        Me.ChatboxInputField.Name = "ChatboxInputField"
+        Me.ChatboxInputField.Size = New System.Drawing.Size(312, 16)
+        Me.ChatboxInputField.TabIndex = 10
+        Me.ChatboxInputField.TabStop = False
+        '
+        'Chatbar
+        '
+        Me.Chatbar.BackColor = System.Drawing.Color.Transparent
+        Me.Chatbar.BackgroundImage = CType(resources.GetObject("Chatbar.BackgroundImage"), System.Drawing.Image)
+        Me.Chatbar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Chatbar.Location = New System.Drawing.Point(0, 136)
+        Me.Chatbar.Name = "Chatbar"
+        Me.Chatbar.Size = New System.Drawing.Size(386, 25)
+        Me.Chatbar.TabIndex = 20
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(408, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(34, 32)
+        Me.PictureBox1.TabIndex = 19
+        Me.PictureBox1.TabStop = False
+        '
+        'ChatboxTitle
+        '
+        Me.ChatboxTitle.AutoSize = True
+        Me.ChatboxTitle.BackColor = System.Drawing.Color.Transparent
+        Me.ChatboxTitle.Font = New System.Drawing.Font("Source Sans Pro SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ChatboxTitle.ForeColor = System.Drawing.Color.White
+        Me.ChatboxTitle.Location = New System.Drawing.Point(32, 8)
+        Me.ChatboxTitle.Name = "ChatboxTitle"
+        Me.ChatboxTitle.Size = New System.Drawing.Size(41, 20)
+        Me.ChatboxTitle.TabIndex = 3
+        Me.ChatboxTitle.Text = "Chat"
+        Me.ChatboxTitle.Visible = False
         '
         'MainCharacterWindowPanel
         '
@@ -2746,7 +3209,7 @@ Partial Class Form1
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.statusTxtBox})
         Me.StatusStrip1.Location = New System.Drawing.Point(0, 0)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(1984, 26)
+        Me.StatusStrip1.Size = New System.Drawing.Size(1125, 26)
         Me.StatusStrip1.TabIndex = 0
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -2761,7 +3224,7 @@ Partial Class Form1
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.SaveToolStripMenuItem, Me.RefreshBtn, Me.gridToggle, Me.AppSettings})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1984, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1125, 24)
         Me.MenuStrip1.TabIndex = 1
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -3134,68 +3597,11 @@ Partial Class Form1
         Me.AppSettings.Name = "AppSettings"
         Me.AppSettings.Size = New System.Drawing.Size(28, 20)
         '
-        'MainChatboxWindowPanel
-        '
-        Me.MainChatboxWindowPanel.BackgroundImage = CType(resources.GetObject("MainChatboxWindowPanel.BackgroundImage"), System.Drawing.Image)
-        Me.MainChatboxWindowPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.MainChatboxWindowPanel.Controls.Add(Me.ChatboxInputField)
-        Me.MainChatboxWindowPanel.Controls.Add(Me.Chatbar)
-        Me.MainChatboxWindowPanel.Controls.Add(Me.PictureBox1)
-        Me.MainChatboxWindowPanel.Controls.Add(Me.ChatboxTitle)
-        Me.MainChatboxWindowPanel.Location = New System.Drawing.Point(1270, 0)
-        Me.MainChatboxWindowPanel.Name = "MainChatboxWindowPanel"
-        Me.MainChatboxWindowPanel.Size = New System.Drawing.Size(386, 162)
-        Me.MainChatboxWindowPanel.TabIndex = 27
-        Me.MainChatboxWindowPanel.Visible = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(408, 0)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(34, 32)
-        Me.PictureBox1.TabIndex = 19
-        Me.PictureBox1.TabStop = False
-        '
-        'ChatboxTitle
-        '
-        Me.ChatboxTitle.AutoSize = True
-        Me.ChatboxTitle.BackColor = System.Drawing.Color.Transparent
-        Me.ChatboxTitle.Font = New System.Drawing.Font("Source Sans Pro SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ChatboxTitle.ForeColor = System.Drawing.Color.White
-        Me.ChatboxTitle.Location = New System.Drawing.Point(32, 8)
-        Me.ChatboxTitle.Name = "ChatboxTitle"
-        Me.ChatboxTitle.Size = New System.Drawing.Size(41, 20)
-        Me.ChatboxTitle.TabIndex = 3
-        Me.ChatboxTitle.Text = "Chat"
-        Me.ChatboxTitle.Visible = False
-        '
-        'Chatbar
-        '
-        Me.Chatbar.BackColor = System.Drawing.Color.Transparent
-        Me.Chatbar.BackgroundImage = CType(resources.GetObject("Chatbar.BackgroundImage"), System.Drawing.Image)
-        Me.Chatbar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Chatbar.Location = New System.Drawing.Point(0, 136)
-        Me.Chatbar.Name = "Chatbar"
-        Me.Chatbar.Size = New System.Drawing.Size(386, 25)
-        Me.Chatbar.TabIndex = 20
-        '
-        'ChatboxInputField
-        '
-        Me.ChatboxInputField.BackgroundImage = CType(resources.GetObject("ChatboxInputField.BackgroundImage"), System.Drawing.Image)
-        Me.ChatboxInputField.Location = New System.Drawing.Point(2, 141)
-        Me.ChatboxInputField.Name = "ChatboxInputField"
-        Me.ChatboxInputField.Size = New System.Drawing.Size(312, 16)
-        Me.ChatboxInputField.TabIndex = 10
-        Me.ChatboxInputField.TabStop = False
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1984, 661)
+        Me.ClientSize = New System.Drawing.Size(1125, 661)
         Me.Controls.Add(Me.mainSplitContainer)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -3219,6 +3625,34 @@ Partial Class Form1
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainer1.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
+        Me.MainEventDialogWindow1ResponsePanel.ResumeLayout(False)
+        Me.Dialog1EventDialogArea.ResumeLayout(False)
+        Me.Dialog1EventDialogAreaInnerPanel.ResumeLayout(False)
+        Me.Dialog1EventDialogAreaInnerPanel.PerformLayout()
+        CType(Me.Dialog1Response1Button, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainEscapeMenuPanel.ResumeLayout(False)
+        Me.MainEscapeMenuPanel.PerformLayout()
+        CType(Me.EscapeMenuLogoutButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EscapeMenuCloseButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EscapeMenuExitToDesktopButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EscapeMenuCharacterSelectButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EscapeMenuOptionsButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainEquipmentItemPanel.ResumeLayout(False)
+        CType(Me.EquipmentIcon, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainCraftingWindowPanel.ResumeLayout(False)
+        Me.MainCraftingWindowPanel.PerformLayout()
+        CType(Me.CraftButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CraftingWindowCloseButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainCraftingIngredientPanel.ResumeLayout(False)
+        Me.MainCraftingIngredientPanel.PerformLayout()
+        CType(Me.IngredientItemIcon, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainCraftedItemPanel.ResumeLayout(False)
+        Me.MainCraftedItemPanel.PerformLayout()
+        CType(Me.CraftedItemIcon, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainChatboxWindowPanel.ResumeLayout(False)
+        Me.MainChatboxWindowPanel.PerformLayout()
+        CType(Me.ChatboxInputField, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MainCharacterWindowPanel.ResumeLayout(False)
         Me.MainCharacterWindowPanel.PerformLayout()
         Me.CharacterWindowInnerPanel.ResumeLayout(False)
@@ -3391,10 +3825,6 @@ Partial Class Form1
         Me.StatusStrip1.PerformLayout()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
-        Me.MainChatboxWindowPanel.ResumeLayout(False)
-        Me.MainChatboxWindowPanel.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ChatboxInputField, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -3664,4 +4094,34 @@ Partial Class Form1
     Friend WithEvents Chatbar As Panel
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents ChatboxTitle As Label
+    Friend WithEvents MainCraftedItemPanel As Panel
+    Friend WithEvents CraftedItemQuantity As Label
+    Friend WithEvents CraftedItemIcon As PictureBox
+    Friend WithEvents MainCraftingIngredientPanel As Panel
+    Friend WithEvents IngredientItemValue As Label
+    Friend WithEvents IngredientItemIcon As PictureBox
+    Friend WithEvents MainCraftingWindowPanel As Panel
+    Friend WithEvents CraftButton As PictureBox
+    Friend WithEvents CraftingWindowProgressBar As Panel
+    Friend WithEvents ProductLabel As Label
+    Friend WithEvents IngredientsTitle As Label
+    Friend WithEvents RecipesTitle As Label
+    Friend WithEvents IngredientsContainer As Panel
+    Friend WithEvents CraftingWindowCloseButton As PictureBox
+    Friend WithEvents CraftingWindowTitle As Label
+    Friend WithEvents MainEquipmentItemPanel As Panel
+    Friend WithEvents EquipmentIcon As PictureBox
+    Friend WithEvents MainEscapeMenuPanel As Panel
+    Friend WithEvents EscapeMenuLogoutButton As PictureBox
+    Friend WithEvents EscapeMenuCloseButton As PictureBox
+    Friend WithEvents EscapeMenuExitToDesktopButton As PictureBox
+    Friend WithEvents EscapeMenuCharacterSelectButton As PictureBox
+    Friend WithEvents EscapeMenuOptionsButton As PictureBox
+    Friend WithEvents EscapeMenuTitleLabel As Label
+    Friend WithEvents MainEventDialogWindow1ResponsePanel As Panel
+    Friend WithEvents Dialog1EventDialogArea As Panel
+    Friend WithEvents Dialog1EventDialogAreaInnerPanel As Panel
+    Friend WithEvents Dialog1EventDialogLabel As Label
+    Friend WithEvents Dialog1Response1Button As PictureBox
+    Friend WithEvents Dialog1EventFacePanel As Panel
 End Class
