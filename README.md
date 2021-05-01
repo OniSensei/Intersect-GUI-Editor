@@ -16,7 +16,6 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 [![Issues][issues-shield]][issues-url]
-[![Watchers][watchers-shield]][watchers-url]
 [![Stars][stars-shield]][stars-url]
 [![Forks][forks-shield]][forks-url]
 
@@ -25,7 +24,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/OniSensei/Intersect-GUI-Editor">
-    <img src="https://imgur.com/fXO74DV.png" alt="Logo" width="80" height="80">
+    <img src="https://imgur.com/fXO74DV.png" alt="Logo" width="580" height="176">
   </a>
 
   <h3 align="center">Intersect GUI Editor</h3>
@@ -114,8 +113,6 @@ OniSensei - [OniSensei#0420](https://discord.com/users/542094478513668176/)
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [issues-shield]: https://img.shields.io/github/issues-raw/OniSensei/Intersect-GUI-Editor?style=for-the-badge
 [issues-url]: https://github.com/OniSensei/Intersect-GUI-Editor/issues
-[watchers-shield]: https://img.shields.io/github/watchers/OniSensei/Intersect-GUI-Editor?style=for-the-badge
-[watcher-url]: https://github.com/OniSensei/Intersect-GUI-Editor/watchers
 [stars-shield]: https://img.shields.io/github/stars/OniSensei/Intersect-GUI-Editor?style=for-the-badge
 [stars-url]: https://github.com/OniSensei/Intersect-GUI-Editor/stargazers
 [forks-shield]: https://img.shields.io/github/forks/OniSensei/Intersect-GUI-Editor?style=for-the-badge
