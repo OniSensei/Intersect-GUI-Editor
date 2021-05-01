@@ -16,7 +16,6 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 [![Issues][issues-shield]][issues-url]
-[![Commits][commits-shield]][commits-url]
 [![Watchers][watchers-shield]][watchers-url]
 [![Stars][stars-shield]][stars-url]
 [![Forks][forks-shield]][forks-url]
@@ -115,8 +114,6 @@ OniSensei - [OniSensei#0420](https://discord.com/users/542094478513668176/)
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [issues-shield]: https://img.shields.io/github/issues-raw/OniSensei/Intersect-GUI-Editor?style=for-the-badge
 [issues-url]: https://github.com/OniSensei/Intersect-GUI-Editor/issues
-[commits-shield]: https://img.shields.io/github/commit-activity/m/OniSensei/Intersect-GUI-Editor?style=for-the-badge
-[commits-url]: https://github.com/OniSensei/Intersect-GUI-Editor/commits/master
 [watchers-shield]: https://img.shields.io/github/watchers/OniSensei/Intersect-GUI-Editor?style=for-the-badge
 [watcher-url]: https://github.com/OniSensei/Intersect-GUI-Editor/watchers
 [stars-shield]: https://img.shields.io/github/stars/OniSensei/Intersect-GUI-Editor?style=for-the-badge
