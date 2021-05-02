@@ -129,6 +129,6 @@ Module CreditsWindowGUI
         Form1.CreditsBackButton.Height = BackButtonBounds(3)
         Form1.CreditsBackButton.BackgroundImage = Image.FromFile(imgResources & infoPull.Children.BackButton.NormalImage)
 
-        Form1.StatusText("[MAIN]     Visual Window Updated")
+        
     End Sub
 End Module

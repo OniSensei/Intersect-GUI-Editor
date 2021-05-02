@@ -385,6 +385,6 @@ Module CharacterWindowGUI
         Form1.Equipment4Icon.Height = EquipmentIcon4Bounds(3)
         Form1.Equipment4Icon.BackgroundImage = Image.FromFile(Application.StartupPath & "\resources\boots.png")
 
-        Form1.StatusText("[MAIN]     Visual Window Updated")
+        
     End Sub
 End Module

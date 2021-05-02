@@ -92,6 +92,6 @@ Module MenuWindowGUI
         Form1.MainMenuOptionsButton.Height = MenuWindowOptionsButtonBounds(3)
         Form1.MainMenuOptionsButton.BackgroundImage = Image.FromFile(imgResources & infoPull.Children.OptionsButton.NormalImage)
 
-        Form1.StatusText("[MAIN]     Visual Window Updated")
+        
     End Sub
 End Module

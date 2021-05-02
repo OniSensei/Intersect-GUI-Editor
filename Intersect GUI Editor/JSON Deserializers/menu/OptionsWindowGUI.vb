@@ -718,6 +718,6 @@ Module OptionsWindowGUI
         Form1.ControlsHeader.Width = OptionsHeaderBounds(2)
         Form1.ControlsHeader.Height = OptionsHeaderBounds(3)
 
-        Form1.StatusText("[MAIN]     Visual Window Updated")
+        
     End Sub
 End Module

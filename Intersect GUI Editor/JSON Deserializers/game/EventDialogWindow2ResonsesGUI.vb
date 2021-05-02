@@ -213,6 +213,6 @@ Module EventDialogWindow2ResonsesGUI
         Form1.Dialog2EventDialogAreaInnerPanel.Width = InnerPanelBounds(2)
         Form1.Dialog2EventDialogAreaInnerPanel.Height = InnerPanelBounds(3)
 
-        Form1.StatusText("[MAIN]     Visual Window Updated")
+        
     End Sub
 End Module

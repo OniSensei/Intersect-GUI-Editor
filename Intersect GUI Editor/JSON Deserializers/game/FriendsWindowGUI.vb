@@ -1,8 +1,8 @@
 ﻿Imports System.IO
 Imports Newtonsoft.Json
 
-Module BankWindowGUI
-    Public Class BankWindow
+Module FriendsWindowGUI
+    Public Class FriendsWindow
         Public Property Bounds As String
         Public Property Padding As String
         Public Property AlignmentEdgeDistances As String
@@ -27,13 +27,13 @@ Module BankWindowGUI
         Public Property ActiveColor As String
         Public Property InactiveColor As String
         Public Property Closable As Boolean
-        Public Property Titlebar As BankWindowTitlebar
+        Public Property Titlebar As FriendsWindowTitlebar
         Public Property Title As IntersectLabel
         Public Property CloseButton As IntersectButton
-        Public Property InnerPanel As BankWindowInnerPanel
+        Public Property InnerPanel As FriendsWindowInnerPanel
     End Class
 
-    Public Class BankWindowTitlebar
+    Public Class FriendsWindowTitlebar
         Public Property Bounds As String
         Public Property Padding As String
         Public Property AlignmentEdgeDistances As String
@@ -72,7 +72,7 @@ Module BankWindowGUI
         Public Property MouseDownSound As String
     End Class
 
-    Public Class BankWindowInnerPanel
+    Public Class FriendsWindowInnerPanel
         Public Property Bounds As String
         Public Property Padding As String
         Public Property AlignmentEdgeDistances As String
@@ -91,14 +91,47 @@ Module BankWindowGUI
         Public Property ToolTipBackground As String
         Public Property ToolTipFont As String
         Public Property ToolTipTextColor As String
-        Public Property Children As BankWindowInnerPanelChildren
+        Public Property Children As FriendsWindowInnerPanelChildren
     End Class
 
-    Public Class BankWindowInnerPanelChildren
-        Public Property Children As ItemContainer
+    Public Class FriendsWindowInnerPanelChildren
+        Public Property SearchContainer As SearchContainer
+        Public Property FriendsList As FriendsList
+        Public Property AddFriendButton As IntersectButton
+        Public Property AddFriendPopupButton As IntersectButton
     End Class
 
-    Public Class ItemContainer
+    Public Class SearchContainer
+        Public Property Bounds As String
+        Public Property Padding As String
+        Public Property AlignmentEdgeDistances As String
+        Public Property AlignmentTransform As String
+        Public Property Margin As String
+        Public Property RenderColor As String
+        Public Property Alignments As String
+        Public Property DrawBackground As Boolean
+        Public Property MinimumSize As String
+        Public Property MaximumSize As String
+        Public Property Disabled As Boolean
+        Public Property Hidden As Boolean
+        Public Property RestrictToParent As Boolean
+        Public Property MouseInputEnabled As Boolean
+        Public Property HideToolTip As Boolean
+        Public Property ToolTipBackground As String
+        Public Property ToolTipFont As String
+        Public Property ToolTipTextColor As String
+        Public Property Texture As String
+        Public Property HoverSound As String
+        Public Property LeftMouseClickSound As String
+        Public Property RightMouseClickSound As String
+        Public Property Children As SearchContainerChildren
+    End Class
+
+    Public Class SearchContainerChildren
+        Public Property SearchTextbox As IntersectField
+    End Class
+
+    Public Class FriendsList
         Public Property Bounds As String
         Public Property Padding As String
         Public Property AlignmentEdgeDistances As String
@@ -123,14 +156,21 @@ Module BankWindowGUI
         Public Property InnerPanel As IntersectInnerPanel
         Public Property HorizontalScrollBar As IntersectScrollBar
         Public Property VerticalScrollBar As IntersectScrollBar
+        Public Property SizeToContents As Boolean
+        Public Property MultiSelect As Boolean
+        Public Property IsToggle As Boolean
+        Public Property Font As String
+        Public Property ItemHoverSound As String
+        Public Property ItemClickSound As String
+        Public Property ItemRightClickSound As String
     End Class
 
-    Public Sub LoadBankWindowGUI(ByVal jsonfile As String)
+    Public Sub LoadFriendsWindowGUI(ByVal jsonfile As String)
         Form1.StatusText("[MAIN]     Opening " & jsonfile)
         Form1.jsonValue.Text = ""
         Form1.jsonType.Text = ""
         Form1.jsonTypeCombo.Text = ""
-        Form1.MainBankWindowPanel.Visible = True
+        Form1.MainFriendsWindowPanel.Visible = True
         Form1.RefreshBtn.Visible = True
         Form1.gridToggle.Visible = True
         Form1.toolSplitContainer.Panel2.BackColor = Color.Gray
@@ -141,23 +181,29 @@ Module BankWindowGUI
         Form1.JTokenTreeUserControl1.SetJsonSource(Form1.fullJson.Text)
         sr.Close()
         Dim imgResources As String = Application.StartupPath & "\gui\"
-        Dim infoPull As New BankWindow
-        infoPull = JsonConvert.DeserializeObject(Of BankWindow)(Form1.fullJson.Text)
-        Form1.StatusText("[MAIN]     BankWindow.json Deserialized")
+        Dim infoPull As New FriendsWindow
+        infoPull = JsonConvert.DeserializeObject(Of FriendsWindow)(Form1.fullJson.Text)
+        Form1.StatusText("[MAIN]     FriendsWindow.json Deserialized")
 
         Dim mainwindowbounds As String() = infoPull.Bounds.Split(",")
         Dim TitleBounds As String() = infoPull.Title.Padding.Split(",")
         Dim CloseButtonBounds As String() = infoPull.CloseButton.Bounds.Split(",")
+        Dim AddFriendPopupButtonBounds As String() = infoPull.InnerPanel.Children.AddFriendPopupButton.Bounds.Split(",")
 
-        Form1.MainBankWindowPanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
-        Form1.MainBankWindowPanel.Width = mainwindowbounds(2)
-        Form1.MainBankWindowPanel.Height = mainwindowbounds(3)
-        Form1.MainBankWindowPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.ActiveImage)
-        Form1.BankWindowTitle.Location = New Point(TitleBounds(0), TitleBounds(1))
-        Form1.BankWindowCloseButton.Location = New Point(CloseButtonBounds(0), CloseButtonBounds(1))
-        Form1.BankWindowCloseButton.Width = CloseButtonBounds(2)
-        Form1.BankWindowCloseButton.Height = CloseButtonBounds(3)
-        Form1.BankWindowCloseButton.BackgroundImage = Image.FromFile(imgResources & infoPull.CloseButton.NormalImage)
+        Form1.MainFriendsWindowPanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
+        Form1.MainFriendsWindowPanel.Width = mainwindowbounds(2)
+        Form1.MainFriendsWindowPanel.Height = mainwindowbounds(3)
+        Form1.MainFriendsWindowPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.ActiveImage)
+        Form1.FriendsWindowTitle.Location = New Point(TitleBounds(0), TitleBounds(1))
+        Form1.FriendsWindowCloseButton.Location = New Point(CloseButtonBounds(0), CloseButtonBounds(1))
+        Form1.FriendsWindowCloseButton.Width = CloseButtonBounds(2)
+        Form1.FriendsWindowCloseButton.Height = CloseButtonBounds(3)
+        Form1.FriendsWindowCloseButton.BackgroundImage = Image.FromFile(imgResources & infoPull.CloseButton.NormalImage)
+        Form1.AddFriendPopupButton.Location = New Point(AddFriendPopupButtonBounds(0), AddFriendPopupButtonBounds(1))
+        Form1.AddFriendPopupButton.Width = AddFriendPopupButtonBounds(2)
+        Form1.AddFriendPopupButton.Height = AddFriendPopupButtonBounds(3)
+        Form1.AddFriendPopupButton.BackgroundImage = Image.FromFile(imgResources & infoPull.InnerPanel.Children.AddFriendPopupButton.NormalImage)
+
         
     End Sub
 End Module

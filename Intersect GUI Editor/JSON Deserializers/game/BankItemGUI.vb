@@ -67,6 +67,6 @@ Module BankItemGUI
         Form1.BankItemIcon.BackgroundImage = Image.FromFile(Application.StartupPath & "\resources\itemIcon.png")
         Form1.BankItemValue.Location = New Point(BankItemValueBounds(0), BankItemValueBounds(1))
 
-        Form1.StatusText("[MAIN]     Visual Window Updated")
+        
     End Sub
 End Module

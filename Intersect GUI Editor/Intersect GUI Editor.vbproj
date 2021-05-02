@@ -103,6 +103,10 @@
     <Compile Include="JSON Deserializers\game\EventDialogWindow2ResonsesGUI.vb" />
     <Compile Include="JSON Deserializers\game\EventDialogWindow3ResponsesGUI.vb" />
     <Compile Include="JSON Deserializers\game\EventDialogWindow4ResponsesGUI.vb" />
+    <Compile Include="JSON Deserializers\game\FriendsWindowGUI.vb" />
+    <Compile Include="JSON Deserializers\game\HotbarWindowGUI.vb" />
+    <Compile Include="JSON Deserializers\game\GameInputBoxGUI.vb" />
+    <Compile Include="JSON Deserializers\game\InventoryItemGUI.vb" />
     <Compile Include="JSON Deserializers\menu\CharacterCreationWindowGUI.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>

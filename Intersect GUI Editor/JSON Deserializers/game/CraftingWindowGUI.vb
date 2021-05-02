@@ -208,6 +208,6 @@ Module CraftingWindowGUI
         Form1.CraftingWindowProgressBar.Height = ProgressBarContainerBounds(3)
         Form1.CraftingWindowProgressBar.BackgroundImage = Image.FromFile(imgResources & infoPull.InnerPanel.Children.ProgressBarContainer.Children.ProgressBar.Texture)
 
-        Form1.StatusText("[MAIN]     Visual Window Updated")
+        
     End Sub
 End Module

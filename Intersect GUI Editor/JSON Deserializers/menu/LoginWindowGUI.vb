@@ -196,6 +196,6 @@ Module LoginWindowGUI
         Form1.BackButton.Height = backbuttonbounds(3)
         Form1.BackButton.BackgroundImage = Image.FromFile(imgResources & infoPull.Children.BackButton.NormalImage)
 
-        Form1.StatusText("[MAIN]     Visual Window Updated")
+        
     End Sub
 End Module

@@ -91,6 +91,6 @@ Module EscapeMenuGUI
         Form1.EscapeMenuCloseButton.Height = CloseButtonBounds(3)
         Form1.EscapeMenuCloseButton.BackgroundImage = Image.FromFile(imgResources & infoPull.Children.CloseButton.NormalImage)
 
-        Form1.StatusText("[MAIN]     Visual Window Updated")
+        
     End Sub
 End Module

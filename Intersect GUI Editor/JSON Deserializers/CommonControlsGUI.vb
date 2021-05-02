@@ -338,4 +338,100 @@
         Public Property ToolTipFont As String
         Public Property ToolTipTextColor As String
     End Class
+
+    Public Class IntersectHotbarContainer
+        Public Property Bounds As String
+        Public Property Padding As String
+        Public Property AlignmentEdgeDistances As String
+        Public Property AlignmentTransform As String
+        Public Property Margin As String
+        Public Property RenderColor As String
+        Public Property Alignments As String
+        Public Property DrawBackground As Boolean
+        Public Property MinimumSize As String
+        Public Property MaximumSize As String
+        Public Property Disabled As Boolean
+        Public Property Hidden As Boolean
+        Public Property RestrictToParent As Boolean
+        Public Property MouseInputEnabled As Boolean
+        Public Property HideToolTip As Boolean
+        Public Property ToolTipBackground As String
+        Public Property ToolTipFont As String
+        Public Property ToolTipTextColor As String
+        Public Property Texture As String
+        Public Property HoverSound As String
+        Public Property LeftMouseClickSound As String
+        Public Property RightMouseClickSound As String
+        Public Property Children As IntersectHotbarContainerChildren
+    End Class
+
+    Public Class IntersectHotbarContainerChildren
+        Public Property HotbarIcon0 As IntersectHotbarIcon
+        Public Property HotbarIcon1 As IntersectHotbarIcon
+        Public Property HotbarIcon2 As IntersectHotbarIcon
+        Public Property HotbarIcon3 As IntersectHotbarIcon
+        Public Property HotbarIcon4 As IntersectHotbarIcon
+        Public Property HotbarIcon5 As IntersectHotbarIcon
+        Public Property HotbarIcon6 As IntersectHotbarIcon
+        Public Property HotbarIcon7 As IntersectHotbarIcon
+        Public Property HotbarIcon8 As IntersectHotbarIcon
+        Public Property HotbarIcon9 As IntersectHotbarIcon
+        Public Property HotbarEquippedLabel0 As IntersectLabel
+        Public Property HotbarEquippedLabel1 As IntersectLabel
+        Public Property HotbarEquippedLabel2 As IntersectLabel
+        Public Property HotbarEquippedLabel3 As IntersectLabel
+        Public Property HotbarEquippedLabel4 As IntersectLabel
+        Public Property HotbarEquippedLabel5 As IntersectLabel
+        Public Property HotbarEquippedLabel6 As IntersectLabel
+        Public Property HotbarEquippedLabel7 As IntersectLabel
+        Public Property HotbarEquippedLabel8 As IntersectLabel
+        Public Property HotbarEquippedLabel9 As IntersectLabel
+        Public Property HotbarCooldownLabel0 As IntersectLabel
+        Public Property HotbarCooldownLabel1 As IntersectLabel
+        Public Property HotbarCooldownLabel2 As IntersectLabel
+        Public Property HotbarCooldownLabel3 As IntersectLabel
+        Public Property HotbarCooldownLabel4 As IntersectLabel
+        Public Property HotbarCooldownLabel5 As IntersectLabel
+        Public Property HotbarCooldownLabel6 As IntersectLabel
+        Public Property HotbarCooldownLabel7 As IntersectLabel
+        Public Property HotbarCooldownLabel8 As IntersectLabel
+        Public Property HotbarCooldownLabel9 As IntersectLabel
+        Public Property HotbarLabel0 As IntersectLabel
+        Public Property HotbarLabel1 As IntersectLabel
+        Public Property HotbarLabel2 As IntersectLabel
+        Public Property HotbarLabel3 As IntersectLabel
+        Public Property HotbarLabel4 As IntersectLabel
+        Public Property HotbarLabel5 As IntersectLabel
+        Public Property HotbarLabel6 As IntersectLabel
+        Public Property HotbarLabel7 As IntersectLabel
+        Public Property HotbarLabel8 As IntersectLabel
+        Public Property HotbarLabel9 As IntersectLabel
+
+    End Class
+
+    Public Class IntersectHotbarIcon
+        Public Property Bounds As String
+        Public Property Padding As String
+        Public Property AlignmentEdgeDistances As String
+        Public Property AlignmentTransform As String
+        Public Property Margin As String
+        Public Property RenderColor As String
+        Public Property Alignments As String
+        Public Property DrawBackground As Boolean
+        Public Property MinimumSize As String
+        Public Property MaximumSize As String
+        Public Property Disabled As Boolean
+        Public Property Hidden As Boolean
+        Public Property RestrictToParent As Boolean
+        Public Property MouseInputEnabled As Boolean
+        Public Property HideToolTip As Boolean
+        Public Property ToolTipBackground As String
+        Public Property ToolTipFont As String
+        Public Property ToolTipTextColor As String
+        Public Property Texture As String
+        Public Property HoverSound As String
+        Public Property LeftMouseClickSound As String
+        Public Property RightMouseClickSound As String
+        Public Property HotbarEquipedIcon As IntersectIcon
+    End Class
 End Module

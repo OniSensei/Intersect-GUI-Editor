@@ -35,6 +35,71 @@ Partial Class Form1
         Me.jsonType = New System.Windows.Forms.TextBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.fullJson = New System.Windows.Forms.RichTextBox()
+        Me.MainGameInputBoxPanel = New System.Windows.Forms.Panel()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.GameInputOkayButton = New System.Windows.Forms.PictureBox()
+        Me.GameInputBoxTextBox = New System.Windows.Forms.Panel()
+        Me.GameInputBoxTextboxText = New System.Windows.Forms.PictureBox()
+        Me.GameInputNoButton = New System.Windows.Forms.PictureBox()
+        Me.GameInputPromptLabel = New System.Windows.Forms.Label()
+        Me.GameInputYesButton = New System.Windows.Forms.PictureBox()
+        Me.GameInputBoxCloseButton = New System.Windows.Forms.PictureBox()
+        Me.GameInputboxTitle = New System.Windows.Forms.Label()
+        Me.MainHotbarWindowPanel = New System.Windows.Forms.Panel()
+        Me.HotbarContainer9 = New System.Windows.Forms.Panel()
+        Me.HotbarLabel9 = New System.Windows.Forms.Label()
+        Me.HotbarCooldownLabel9 = New System.Windows.Forms.Label()
+        Me.HotbarEquippedLabel9 = New System.Windows.Forms.Label()
+        Me.HotbarIcon9 = New System.Windows.Forms.PictureBox()
+        Me.HotbarContainer8 = New System.Windows.Forms.Panel()
+        Me.HotbarLabel8 = New System.Windows.Forms.Label()
+        Me.HotbarCooldownLabel8 = New System.Windows.Forms.Label()
+        Me.HotbarEquippedLabel8 = New System.Windows.Forms.Label()
+        Me.HotbarIcon8 = New System.Windows.Forms.PictureBox()
+        Me.HotbarContainer7 = New System.Windows.Forms.Panel()
+        Me.HotbarLabel7 = New System.Windows.Forms.Label()
+        Me.HotbarCooldownLabel7 = New System.Windows.Forms.Label()
+        Me.HotbarEquippedLabel7 = New System.Windows.Forms.Label()
+        Me.HotbarIcon7 = New System.Windows.Forms.PictureBox()
+        Me.HotbarContainer6 = New System.Windows.Forms.Panel()
+        Me.HotbarLabel6 = New System.Windows.Forms.Label()
+        Me.HotbarCooldownLabel6 = New System.Windows.Forms.Label()
+        Me.HotbarEquippedLabel6 = New System.Windows.Forms.Label()
+        Me.HotbarIcon6 = New System.Windows.Forms.PictureBox()
+        Me.HotbarContainer5 = New System.Windows.Forms.Panel()
+        Me.HotbarLabel5 = New System.Windows.Forms.Label()
+        Me.HotbarCooldownLabel5 = New System.Windows.Forms.Label()
+        Me.HotbarEquippedLabel5 = New System.Windows.Forms.Label()
+        Me.HotbarIcon5 = New System.Windows.Forms.PictureBox()
+        Me.HotbarContainer4 = New System.Windows.Forms.Panel()
+        Me.HotbarLabel4 = New System.Windows.Forms.Label()
+        Me.HotbarCooldownLabel4 = New System.Windows.Forms.Label()
+        Me.HotbarEquippedLabel4 = New System.Windows.Forms.Label()
+        Me.HotbarIcon4 = New System.Windows.Forms.PictureBox()
+        Me.HotbarContainer3 = New System.Windows.Forms.Panel()
+        Me.HotbarLabel3 = New System.Windows.Forms.Label()
+        Me.HotbarCooldownLabel3 = New System.Windows.Forms.Label()
+        Me.HotbarEquippedLabel3 = New System.Windows.Forms.Label()
+        Me.HotbarIcon3 = New System.Windows.Forms.PictureBox()
+        Me.HotbarContainer2 = New System.Windows.Forms.Panel()
+        Me.HotbarLabel2 = New System.Windows.Forms.Label()
+        Me.HotbarCooldownLabel2 = New System.Windows.Forms.Label()
+        Me.HotbarEquippedLabel2 = New System.Windows.Forms.Label()
+        Me.HotbarIcon2 = New System.Windows.Forms.PictureBox()
+        Me.HotbarContainer1 = New System.Windows.Forms.Panel()
+        Me.HotbarLabel1 = New System.Windows.Forms.Label()
+        Me.HotbarCooldownLabel1 = New System.Windows.Forms.Label()
+        Me.HotbarEquippedLabel1 = New System.Windows.Forms.Label()
+        Me.HotbarIcon1 = New System.Windows.Forms.PictureBox()
+        Me.HotbarContainer0 = New System.Windows.Forms.Panel()
+        Me.HotbarLabel0 = New System.Windows.Forms.Label()
+        Me.HotbarCooldownLabel0 = New System.Windows.Forms.Label()
+        Me.HotbarEquippedLabel0 = New System.Windows.Forms.Label()
+        Me.HotbarIcon0 = New System.Windows.Forms.PictureBox()
+        Me.MainFriendsWindowPanel = New System.Windows.Forms.Panel()
+        Me.AddFriendPopupButton = New System.Windows.Forms.PictureBox()
+        Me.FriendsWindowCloseButton = New System.Windows.Forms.PictureBox()
+        Me.FriendsWindowTitle = New System.Windows.Forms.Label()
         Me.MainEventDialogWindow4ResponsePanel = New System.Windows.Forms.Panel()
         Me.Dialog4Response4Button = New System.Windows.Forms.PictureBox()
         Me.Dialog4Response3Button = New System.Windows.Forms.PictureBox()
@@ -341,10 +406,11 @@ Partial Class Form1
         Me.RefreshBtn = New System.Windows.Forms.ToolStripMenuItem()
         Me.gridToggle = New System.Windows.Forms.ToolStripMenuItem()
         Me.AppSettings = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.MainInventoryItemPanel = New System.Windows.Forms.Panel()
+        Me.InventoryItemValue = New System.Windows.Forms.Label()
+        Me.InventoryItemIcon = New System.Windows.Forms.PictureBox()
+        Me.InventoryItemEquippedLabel = New System.Windows.Forms.Label()
+        Me.InventoryItemCooldownLabel = New System.Windows.Forms.Label()
         CType(Me.mainSplitContainer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.mainSplitContainer.Panel1.SuspendLayout()
         Me.mainSplitContainer.Panel2.SuspendLayout()
@@ -360,6 +426,38 @@ Partial Class Form1
         Me.SplitContainer1.Panel2.SuspendLayout()
         Me.SplitContainer1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
+        Me.MainGameInputBoxPanel.SuspendLayout()
+        Me.Panel2.SuspendLayout()
+        CType(Me.GameInputOkayButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GameInputBoxTextBox.SuspendLayout()
+        CType(Me.GameInputBoxTextboxText, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GameInputNoButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GameInputYesButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GameInputBoxCloseButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MainHotbarWindowPanel.SuspendLayout()
+        Me.HotbarContainer9.SuspendLayout()
+        CType(Me.HotbarIcon9, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.HotbarContainer8.SuspendLayout()
+        CType(Me.HotbarIcon8, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.HotbarContainer7.SuspendLayout()
+        CType(Me.HotbarIcon7, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.HotbarContainer6.SuspendLayout()
+        CType(Me.HotbarIcon6, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.HotbarContainer5.SuspendLayout()
+        CType(Me.HotbarIcon5, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.HotbarContainer4.SuspendLayout()
+        CType(Me.HotbarIcon4, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.HotbarContainer3.SuspendLayout()
+        CType(Me.HotbarIcon3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.HotbarContainer2.SuspendLayout()
+        CType(Me.HotbarIcon2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.HotbarContainer1.SuspendLayout()
+        CType(Me.HotbarIcon1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.HotbarContainer0.SuspendLayout()
+        CType(Me.HotbarIcon0, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MainFriendsWindowPanel.SuspendLayout()
+        CType(Me.AddFriendPopupButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.FriendsWindowCloseButton, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MainEventDialogWindow4ResponsePanel.SuspendLayout()
         CType(Me.Dialog4Response4Button, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Dialog4Response3Button, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -529,9 +627,8 @@ Partial Class Form1
         CType(Me.UsernameFieldPB, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.StatusStrip1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
-        Me.Panel1.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MainInventoryItemPanel.SuspendLayout()
+        CType(Me.InventoryItemIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'mainSplitContainer
@@ -565,7 +662,10 @@ Partial Class Form1
         'toolSplitContainer.Panel2
         '
         Me.toolSplitContainer.Panel2.AutoScroll = True
-        Me.toolSplitContainer.Panel2.Controls.Add(Me.Panel1)
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainInventoryItemPanel)
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainGameInputBoxPanel)
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainHotbarWindowPanel)
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainFriendsWindowPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainEventDialogWindow4ResponsePanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainEventDialogWindow3ResponsePanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainEventDialogWindow2ResponsePanel)
@@ -716,6 +816,789 @@ Partial Class Form1
         Me.fullJson.Size = New System.Drawing.Size(268, 575)
         Me.fullJson.TabIndex = 0
         Me.fullJson.Text = ""
+        '
+        'MainGameInputBoxPanel
+        '
+        Me.MainGameInputBoxPanel.BackgroundImage = CType(resources.GetObject("MainGameInputBoxPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainGameInputBoxPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainGameInputBoxPanel.Controls.Add(Me.Panel2)
+        Me.MainGameInputBoxPanel.Controls.Add(Me.GameInputBoxCloseButton)
+        Me.MainGameInputBoxPanel.Controls.Add(Me.GameInputboxTitle)
+        Me.MainGameInputBoxPanel.Location = New System.Drawing.Point(-122, 619)
+        Me.MainGameInputBoxPanel.Name = "MainGameInputBoxPanel"
+        Me.MainGameInputBoxPanel.Size = New System.Drawing.Size(452, 198)
+        Me.MainGameInputBoxPanel.TabIndex = 39
+        Me.MainGameInputBoxPanel.Visible = False
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.Transparent
+        Me.Panel2.Controls.Add(Me.GameInputOkayButton)
+        Me.Panel2.Controls.Add(Me.GameInputBoxTextBox)
+        Me.Panel2.Controls.Add(Me.GameInputNoButton)
+        Me.Panel2.Controls.Add(Me.GameInputPromptLabel)
+        Me.Panel2.Controls.Add(Me.GameInputYesButton)
+        Me.Panel2.Location = New System.Drawing.Point(3, 39)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(449, 156)
+        Me.Panel2.TabIndex = 12
+        '
+        'GameInputOkayButton
+        '
+        Me.GameInputOkayButton.BackColor = System.Drawing.Color.Transparent
+        Me.GameInputOkayButton.BackgroundImage = CType(resources.GetObject("GameInputOkayButton.BackgroundImage"), System.Drawing.Image)
+        Me.GameInputOkayButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.GameInputOkayButton.Location = New System.Drawing.Point(174, 94)
+        Me.GameInputOkayButton.Name = "GameInputOkayButton"
+        Me.GameInputOkayButton.Size = New System.Drawing.Size(96, 35)
+        Me.GameInputOkayButton.TabIndex = 14
+        Me.GameInputOkayButton.TabStop = False
+        '
+        'GameInputBoxTextBox
+        '
+        Me.GameInputBoxTextBox.BackColor = System.Drawing.Color.Transparent
+        Me.GameInputBoxTextBox.BackgroundImage = CType(resources.GetObject("GameInputBoxTextBox.BackgroundImage"), System.Drawing.Image)
+        Me.GameInputBoxTextBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.GameInputBoxTextBox.Controls.Add(Me.GameInputBoxTextboxText)
+        Me.GameInputBoxTextBox.ImeMode = System.Windows.Forms.ImeMode.Off
+        Me.GameInputBoxTextBox.Location = New System.Drawing.Point(76, 60)
+        Me.GameInputBoxTextBox.Name = "GameInputBoxTextBox"
+        Me.GameInputBoxTextBox.Size = New System.Drawing.Size(308, 22)
+        Me.GameInputBoxTextBox.TabIndex = 5
+        '
+        'GameInputBoxTextboxText
+        '
+        Me.GameInputBoxTextboxText.BackgroundImage = CType(resources.GetObject("GameInputBoxTextboxText.BackgroundImage"), System.Drawing.Image)
+        Me.GameInputBoxTextboxText.Location = New System.Drawing.Point(0, 2)
+        Me.GameInputBoxTextboxText.Name = "GameInputBoxTextboxText"
+        Me.GameInputBoxTextboxText.Size = New System.Drawing.Size(308, 20)
+        Me.GameInputBoxTextboxText.TabIndex = 0
+        Me.GameInputBoxTextboxText.TabStop = False
+        '
+        'GameInputNoButton
+        '
+        Me.GameInputNoButton.BackColor = System.Drawing.Color.Transparent
+        Me.GameInputNoButton.BackgroundImage = CType(resources.GetObject("GameInputNoButton.BackgroundImage"), System.Drawing.Image)
+        Me.GameInputNoButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.GameInputNoButton.Location = New System.Drawing.Point(266, 100)
+        Me.GameInputNoButton.Name = "GameInputNoButton"
+        Me.GameInputNoButton.Size = New System.Drawing.Size(96, 35)
+        Me.GameInputNoButton.TabIndex = 13
+        Me.GameInputNoButton.TabStop = False
+        '
+        'GameInputPromptLabel
+        '
+        Me.GameInputPromptLabel.AutoSize = True
+        Me.GameInputPromptLabel.BackColor = System.Drawing.Color.Transparent
+        Me.GameInputPromptLabel.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GameInputPromptLabel.ForeColor = System.Drawing.Color.White
+        Me.GameInputPromptLabel.Location = New System.Drawing.Point(36, 12)
+        Me.GameInputPromptLabel.Name = "GameInputPromptLabel"
+        Me.GameInputPromptLabel.Size = New System.Drawing.Size(91, 17)
+        Me.GameInputPromptLabel.TabIndex = 4
+        Me.GameInputPromptLabel.Text = "PROMPT LABEL"
+        '
+        'GameInputYesButton
+        '
+        Me.GameInputYesButton.BackColor = System.Drawing.Color.Transparent
+        Me.GameInputYesButton.BackgroundImage = CType(resources.GetObject("GameInputYesButton.BackgroundImage"), System.Drawing.Image)
+        Me.GameInputYesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.GameInputYesButton.Location = New System.Drawing.Point(90, 100)
+        Me.GameInputYesButton.Name = "GameInputYesButton"
+        Me.GameInputYesButton.Size = New System.Drawing.Size(96, 35)
+        Me.GameInputYesButton.TabIndex = 10
+        Me.GameInputYesButton.TabStop = False
+        '
+        'GameInputBoxCloseButton
+        '
+        Me.GameInputBoxCloseButton.BackColor = System.Drawing.Color.Transparent
+        Me.GameInputBoxCloseButton.BackgroundImage = CType(resources.GetObject("GameInputBoxCloseButton.BackgroundImage"), System.Drawing.Image)
+        Me.GameInputBoxCloseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.GameInputBoxCloseButton.InitialImage = Nothing
+        Me.GameInputBoxCloseButton.Location = New System.Drawing.Point(432, 0)
+        Me.GameInputBoxCloseButton.Name = "GameInputBoxCloseButton"
+        Me.GameInputBoxCloseButton.Size = New System.Drawing.Size(20, 20)
+        Me.GameInputBoxCloseButton.TabIndex = 9
+        Me.GameInputBoxCloseButton.TabStop = False
+        '
+        'GameInputboxTitle
+        '
+        Me.GameInputboxTitle.AutoSize = True
+        Me.GameInputboxTitle.BackColor = System.Drawing.Color.Transparent
+        Me.GameInputboxTitle.Font = New System.Drawing.Font("Source Sans Pro SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GameInputboxTitle.ForeColor = System.Drawing.Color.White
+        Me.GameInputboxTitle.Location = New System.Drawing.Point(25, 9)
+        Me.GameInputboxTitle.Name = "GameInputboxTitle"
+        Me.GameInputboxTitle.Size = New System.Drawing.Size(129, 20)
+        Me.GameInputboxTitle.TabIndex = 3
+        Me.GameInputboxTitle.Text = "INPUT BOX TITLE"
+        '
+        'MainHotbarWindowPanel
+        '
+        Me.MainHotbarWindowPanel.BackgroundImage = CType(resources.GetObject("MainHotbarWindowPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainHotbarWindowPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainHotbarWindowPanel.Controls.Add(Me.HotbarContainer9)
+        Me.MainHotbarWindowPanel.Controls.Add(Me.HotbarContainer8)
+        Me.MainHotbarWindowPanel.Controls.Add(Me.HotbarContainer7)
+        Me.MainHotbarWindowPanel.Controls.Add(Me.HotbarContainer6)
+        Me.MainHotbarWindowPanel.Controls.Add(Me.HotbarContainer5)
+        Me.MainHotbarWindowPanel.Controls.Add(Me.HotbarContainer4)
+        Me.MainHotbarWindowPanel.Controls.Add(Me.HotbarContainer3)
+        Me.MainHotbarWindowPanel.Controls.Add(Me.HotbarContainer2)
+        Me.MainHotbarWindowPanel.Controls.Add(Me.HotbarContainer1)
+        Me.MainHotbarWindowPanel.Controls.Add(Me.HotbarContainer0)
+        Me.MainHotbarWindowPanel.Location = New System.Drawing.Point(825, 1041)
+        Me.MainHotbarWindowPanel.Name = "MainHotbarWindowPanel"
+        Me.MainHotbarWindowPanel.Size = New System.Drawing.Size(409, 42)
+        Me.MainHotbarWindowPanel.TabIndex = 38
+        Me.MainHotbarWindowPanel.Visible = False
+        '
+        'HotbarContainer9
+        '
+        Me.HotbarContainer9.BackgroundImage = CType(resources.GetObject("HotbarContainer9.BackgroundImage"), System.Drawing.Image)
+        Me.HotbarContainer9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.HotbarContainer9.Controls.Add(Me.HotbarLabel9)
+        Me.HotbarContainer9.Controls.Add(Me.HotbarCooldownLabel9)
+        Me.HotbarContainer9.Controls.Add(Me.HotbarEquippedLabel9)
+        Me.HotbarContainer9.Controls.Add(Me.HotbarIcon9)
+        Me.HotbarContainer9.Location = New System.Drawing.Point(368, 4)
+        Me.HotbarContainer9.Name = "HotbarContainer9"
+        Me.HotbarContainer9.Size = New System.Drawing.Size(34, 35)
+        Me.HotbarContainer9.TabIndex = 46
+        '
+        'HotbarLabel9
+        '
+        Me.HotbarLabel9.AutoSize = True
+        Me.HotbarLabel9.BackColor = System.Drawing.Color.Transparent
+        Me.HotbarLabel9.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HotbarLabel9.ForeColor = System.Drawing.Color.White
+        Me.HotbarLabel9.Location = New System.Drawing.Point(24, 24)
+        Me.HotbarLabel9.Name = "HotbarLabel9"
+        Me.HotbarLabel9.Size = New System.Drawing.Size(12, 14)
+        Me.HotbarLabel9.TabIndex = 9
+        Me.HotbarLabel9.Text = "0"
+        '
+        'HotbarCooldownLabel9
+        '
+        Me.HotbarCooldownLabel9.AutoSize = True
+        Me.HotbarCooldownLabel9.BackColor = System.Drawing.Color.Transparent
+        Me.HotbarCooldownLabel9.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HotbarCooldownLabel9.ForeColor = System.Drawing.Color.White
+        Me.HotbarCooldownLabel9.Location = New System.Drawing.Point(14, 12)
+        Me.HotbarCooldownLabel9.Name = "HotbarCooldownLabel9"
+        Me.HotbarCooldownLabel9.Size = New System.Drawing.Size(12, 14)
+        Me.HotbarCooldownLabel9.TabIndex = 8
+        Me.HotbarCooldownLabel9.Text = "0"
+        '
+        'HotbarEquippedLabel9
+        '
+        Me.HotbarEquippedLabel9.AutoSize = True
+        Me.HotbarEquippedLabel9.BackColor = System.Drawing.Color.Transparent
+        Me.HotbarEquippedLabel9.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HotbarEquippedLabel9.ForeColor = System.Drawing.Color.White
+        Me.HotbarEquippedLabel9.Location = New System.Drawing.Point(24, 0)
+        Me.HotbarEquippedLabel9.Name = "HotbarEquippedLabel9"
+        Me.HotbarEquippedLabel9.Size = New System.Drawing.Size(12, 14)
+        Me.HotbarEquippedLabel9.TabIndex = 7
+        Me.HotbarEquippedLabel9.Text = "0"
+        '
+        'HotbarIcon9
+        '
+        Me.HotbarIcon9.BackColor = System.Drawing.Color.Transparent
+        Me.HotbarIcon9.BackgroundImage = CType(resources.GetObject("HotbarIcon9.BackgroundImage"), System.Drawing.Image)
+        Me.HotbarIcon9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.HotbarIcon9.Location = New System.Drawing.Point(1, 1)
+        Me.HotbarIcon9.Name = "HotbarIcon9"
+        Me.HotbarIcon9.Size = New System.Drawing.Size(32, 32)
+        Me.HotbarIcon9.TabIndex = 0
+        Me.HotbarIcon9.TabStop = False
+        '
+        'HotbarContainer8
+        '
+        Me.HotbarContainer8.BackgroundImage = CType(resources.GetObject("HotbarContainer8.BackgroundImage"), System.Drawing.Image)
+        Me.HotbarContainer8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.HotbarContainer8.Controls.Add(Me.HotbarLabel8)
+        Me.HotbarContainer8.Controls.Add(Me.HotbarCooldownLabel8)
+        Me.HotbarContainer8.Controls.Add(Me.HotbarEquippedLabel8)
+        Me.HotbarContainer8.Controls.Add(Me.HotbarIcon8)
+        Me.HotbarContainer8.Location = New System.Drawing.Point(328, 4)
+        Me.HotbarContainer8.Name = "HotbarContainer8"
+        Me.HotbarContainer8.Size = New System.Drawing.Size(34, 35)
+        Me.HotbarContainer8.TabIndex = 45
+        '
+        'HotbarLabel8
+        '
+        Me.HotbarLabel8.AutoSize = True
+        Me.HotbarLabel8.BackColor = System.Drawing.Color.Transparent
+        Me.HotbarLabel8.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HotbarLabel8.ForeColor = System.Drawing.Color.White
+        Me.HotbarLabel8.Location = New System.Drawing.Point(24, 24)
+        Me.HotbarLabel8.Name = "HotbarLabel8"
+        Me.HotbarLabel8.Size = New System.Drawing.Size(12, 14)
+        Me.HotbarLabel8.TabIndex = 9
+        Me.HotbarLabel8.Text = "0"
+        '
+        'HotbarCooldownLabel8
+        '
+        Me.HotbarCooldownLabel8.AutoSize = True
+        Me.HotbarCooldownLabel8.BackColor = System.Drawing.Color.Transparent
+        Me.HotbarCooldownLabel8.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HotbarCooldownLabel8.ForeColor = System.Drawing.Color.White
+        Me.HotbarCooldownLabel8.Location = New System.Drawing.Point(14, 12)
+        Me.HotbarCooldownLabel8.Name = "HotbarCooldownLabel8"
+        Me.HotbarCooldownLabel8.Size = New System.Drawing.Size(12, 14)
+        Me.HotbarCooldownLabel8.TabIndex = 8
+        Me.HotbarCooldownLabel8.Text = "0"
+        '
+        'HotbarEquippedLabel8
+        '
+        Me.HotbarEquippedLabel8.AutoSize = True
+        Me.HotbarEquippedLabel8.BackColor = System.Drawing.Color.Transparent
+        Me.HotbarEquippedLabel8.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HotbarEquippedLabel8.ForeColor = System.Drawing.Color.White
+        Me.HotbarEquippedLabel8.Location = New System.Drawing.Point(24, 0)
+        Me.HotbarEquippedLabel8.Name = "HotbarEquippedLabel8"
+        Me.HotbarEquippedLabel8.Size = New System.Drawing.Size(12, 14)
+        Me.HotbarEquippedLabel8.TabIndex = 7
+        Me.HotbarEquippedLabel8.Text = "0"
+        '
+        'HotbarIcon8
+        '
+        Me.HotbarIcon8.BackColor = System.Drawing.Color.Transparent
+        Me.HotbarIcon8.BackgroundImage = CType(resources.GetObject("HotbarIcon8.BackgroundImage"), System.Drawing.Image)
+        Me.HotbarIcon8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.HotbarIcon8.Location = New System.Drawing.Point(1, 1)
+        Me.HotbarIcon8.Name = "HotbarIcon8"
+        Me.HotbarIcon8.Size = New System.Drawing.Size(32, 32)
+        Me.HotbarIcon8.TabIndex = 0
+        Me.HotbarIcon8.TabStop = False
+        '
+        'HotbarContainer7
+        '
+        Me.HotbarContainer7.BackgroundImage = CType(resources.GetObject("HotbarContainer7.BackgroundImage"), System.Drawing.Image)
+        Me.HotbarContainer7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.HotbarContainer7.Controls.Add(Me.HotbarLabel7)
+        Me.HotbarContainer7.Controls.Add(Me.HotbarCooldownLabel7)
+        Me.HotbarContainer7.Controls.Add(Me.HotbarEquippedLabel7)
+        Me.HotbarContainer7.Controls.Add(Me.HotbarIcon7)
+        Me.HotbarContainer7.Location = New System.Drawing.Point(288, 4)
+        Me.HotbarContainer7.Name = "HotbarContainer7"
+        Me.HotbarContainer7.Size = New System.Drawing.Size(34, 35)
+        Me.HotbarContainer7.TabIndex = 44
+        '
+        'HotbarLabel7
+        '
+        Me.HotbarLabel7.AutoSize = True
+        Me.HotbarLabel7.BackColor = System.Drawing.Color.Transparent
+        Me.HotbarLabel7.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HotbarLabel7.ForeColor = System.Drawing.Color.White
+        Me.HotbarLabel7.Location = New System.Drawing.Point(24, 24)
+        Me.HotbarLabel7.Name = "HotbarLabel7"
+        Me.HotbarLabel7.Size = New System.Drawing.Size(12, 14)
+        Me.HotbarLabel7.TabIndex = 9
+        Me.HotbarLabel7.Text = "0"
+        '
+        'HotbarCooldownLabel7
+        '
+        Me.HotbarCooldownLabel7.AutoSize = True
+        Me.HotbarCooldownLabel7.BackColor = System.Drawing.Color.Transparent
+        Me.HotbarCooldownLabel7.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HotbarCooldownLabel7.ForeColor = System.Drawing.Color.White
+        Me.HotbarCooldownLabel7.Location = New System.Drawing.Point(14, 12)
+        Me.HotbarCooldownLabel7.Name = "HotbarCooldownLabel7"
+        Me.HotbarCooldownLabel7.Size = New System.Drawing.Size(12, 14)
+        Me.HotbarCooldownLabel7.TabIndex = 8
+        Me.HotbarCooldownLabel7.Text = "0"
+        '
+        'HotbarEquippedLabel7
+        '
+        Me.HotbarEquippedLabel7.AutoSize = True
+        Me.HotbarEquippedLabel7.BackColor = System.Drawing.Color.Transparent
+        Me.HotbarEquippedLabel7.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HotbarEquippedLabel7.ForeColor = System.Drawing.Color.White
+        Me.HotbarEquippedLabel7.Location = New System.Drawing.Point(24, 0)
+        Me.HotbarEquippedLabel7.Name = "HotbarEquippedLabel7"
+        Me.HotbarEquippedLabel7.Size = New System.Drawing.Size(12, 14)
+        Me.HotbarEquippedLabel7.TabIndex = 7
+        Me.HotbarEquippedLabel7.Text = "0"
+        '
+        'HotbarIcon7
+        '
+        Me.HotbarIcon7.BackColor = System.Drawing.Color.Transparent
+        Me.HotbarIcon7.BackgroundImage = CType(resources.GetObject("HotbarIcon7.BackgroundImage"), System.Drawing.Image)
+        Me.HotbarIcon7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.HotbarIcon7.Location = New System.Drawing.Point(1, 1)
+        Me.HotbarIcon7.Name = "HotbarIcon7"
+        Me.HotbarIcon7.Size = New System.Drawing.Size(32, 32)
+        Me.HotbarIcon7.TabIndex = 0
+        Me.HotbarIcon7.TabStop = False
+        '
+        'HotbarContainer6
+        '
+        Me.HotbarContainer6.BackgroundImage = CType(resources.GetObject("HotbarContainer6.BackgroundImage"), System.Drawing.Image)
+        Me.HotbarContainer6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.HotbarContainer6.Controls.Add(Me.HotbarLabel6)
+        Me.HotbarContainer6.Controls.Add(Me.HotbarCooldownLabel6)
+        Me.HotbarContainer6.Controls.Add(Me.HotbarEquippedLabel6)
+        Me.HotbarContainer6.Controls.Add(Me.HotbarIcon6)
+        Me.HotbarContainer6.Location = New System.Drawing.Point(248, 4)
+        Me.HotbarContainer6.Name = "HotbarContainer6"
+        Me.HotbarContainer6.Size = New System.Drawing.Size(34, 35)
+        Me.HotbarContainer6.TabIndex = 43
+        '
+        'HotbarLabel6
+        '
+        Me.HotbarLabel6.AutoSize = True
+        Me.HotbarLabel6.BackColor = System.Drawing.Color.Transparent
+        Me.HotbarLabel6.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HotbarLabel6.ForeColor = System.Drawing.Color.White
+        Me.HotbarLabel6.Location = New System.Drawing.Point(24, 24)
+        Me.HotbarLabel6.Name = "HotbarLabel6"
+        Me.HotbarLabel6.Size = New System.Drawing.Size(12, 14)
+        Me.HotbarLabel6.TabIndex = 9
+        Me.HotbarLabel6.Text = "0"
+        '
+        'HotbarCooldownLabel6
+        '
+        Me.HotbarCooldownLabel6.AutoSize = True
+        Me.HotbarCooldownLabel6.BackColor = System.Drawing.Color.Transparent
+        Me.HotbarCooldownLabel6.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HotbarCooldownLabel6.ForeColor = System.Drawing.Color.White
+        Me.HotbarCooldownLabel6.Location = New System.Drawing.Point(14, 12)
+        Me.HotbarCooldownLabel6.Name = "HotbarCooldownLabel6"
+        Me.HotbarCooldownLabel6.Size = New System.Drawing.Size(12, 14)
+        Me.HotbarCooldownLabel6.TabIndex = 8
+        Me.HotbarCooldownLabel6.Text = "0"
+        '
+        'HotbarEquippedLabel6
+        '
+        Me.HotbarEquippedLabel6.AutoSize = True
+        Me.HotbarEquippedLabel6.BackColor = System.Drawing.Color.Transparent
+        Me.HotbarEquippedLabel6.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HotbarEquippedLabel6.ForeColor = System.Drawing.Color.White
+        Me.HotbarEquippedLabel6.Location = New System.Drawing.Point(24, 0)
+        Me.HotbarEquippedLabel6.Name = "HotbarEquippedLabel6"
+        Me.HotbarEquippedLabel6.Size = New System.Drawing.Size(12, 14)
+        Me.HotbarEquippedLabel6.TabIndex = 7
+        Me.HotbarEquippedLabel6.Text = "0"
+        '
+        'HotbarIcon6
+        '
+        Me.HotbarIcon6.BackColor = System.Drawing.Color.Transparent
+        Me.HotbarIcon6.BackgroundImage = CType(resources.GetObject("HotbarIcon6.BackgroundImage"), System.Drawing.Image)
+        Me.HotbarIcon6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.HotbarIcon6.Location = New System.Drawing.Point(1, 1)
+        Me.HotbarIcon6.Name = "HotbarIcon6"
+        Me.HotbarIcon6.Size = New System.Drawing.Size(32, 32)
+        Me.HotbarIcon6.TabIndex = 0
+        Me.HotbarIcon6.TabStop = False
+        '
+        'HotbarContainer5
+        '
+        Me.HotbarContainer5.BackgroundImage = CType(resources.GetObject("HotbarContainer5.BackgroundImage"), System.Drawing.Image)
+        Me.HotbarContainer5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.HotbarContainer5.Controls.Add(Me.HotbarLabel5)
+        Me.HotbarContainer5.Controls.Add(Me.HotbarCooldownLabel5)
+        Me.HotbarContainer5.Controls.Add(Me.HotbarEquippedLabel5)
+        Me.HotbarContainer5.Controls.Add(Me.HotbarIcon5)
+        Me.HotbarContainer5.Location = New System.Drawing.Point(208, 4)
+        Me.HotbarContainer5.Name = "HotbarContainer5"
+        Me.HotbarContainer5.Size = New System.Drawing.Size(34, 35)
+        Me.HotbarContainer5.TabIndex = 42
+        '
+        'HotbarLabel5
+        '
+        Me.HotbarLabel5.AutoSize = True
+        Me.HotbarLabel5.BackColor = System.Drawing.Color.Transparent
+        Me.HotbarLabel5.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HotbarLabel5.ForeColor = System.Drawing.Color.White
+        Me.HotbarLabel5.Location = New System.Drawing.Point(24, 24)
+        Me.HotbarLabel5.Name = "HotbarLabel5"
+        Me.HotbarLabel5.Size = New System.Drawing.Size(12, 14)
+        Me.HotbarLabel5.TabIndex = 9
+        Me.HotbarLabel5.Text = "0"
+        '
+        'HotbarCooldownLabel5
+        '
+        Me.HotbarCooldownLabel5.AutoSize = True
+        Me.HotbarCooldownLabel5.BackColor = System.Drawing.Color.Transparent
+        Me.HotbarCooldownLabel5.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HotbarCooldownLabel5.ForeColor = System.Drawing.Color.White
+        Me.HotbarCooldownLabel5.Location = New System.Drawing.Point(14, 12)
+        Me.HotbarCooldownLabel5.Name = "HotbarCooldownLabel5"
+        Me.HotbarCooldownLabel5.Size = New System.Drawing.Size(12, 14)
+        Me.HotbarCooldownLabel5.TabIndex = 8
+        Me.HotbarCooldownLabel5.Text = "0"
+        '
+        'HotbarEquippedLabel5
+        '
+        Me.HotbarEquippedLabel5.AutoSize = True
+        Me.HotbarEquippedLabel5.BackColor = System.Drawing.Color.Transparent
+        Me.HotbarEquippedLabel5.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HotbarEquippedLabel5.ForeColor = System.Drawing.Color.White
+        Me.HotbarEquippedLabel5.Location = New System.Drawing.Point(24, 0)
+        Me.HotbarEquippedLabel5.Name = "HotbarEquippedLabel5"
+        Me.HotbarEquippedLabel5.Size = New System.Drawing.Size(12, 14)
+        Me.HotbarEquippedLabel5.TabIndex = 7
+        Me.HotbarEquippedLabel5.Text = "0"
+        '
+        'HotbarIcon5
+        '
+        Me.HotbarIcon5.BackColor = System.Drawing.Color.Transparent
+        Me.HotbarIcon5.BackgroundImage = CType(resources.GetObject("HotbarIcon5.BackgroundImage"), System.Drawing.Image)
+        Me.HotbarIcon5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.HotbarIcon5.Location = New System.Drawing.Point(1, 1)
+        Me.HotbarIcon5.Name = "HotbarIcon5"
+        Me.HotbarIcon5.Size = New System.Drawing.Size(32, 32)
+        Me.HotbarIcon5.TabIndex = 0
+        Me.HotbarIcon5.TabStop = False
+        '
+        'HotbarContainer4
+        '
+        Me.HotbarContainer4.BackgroundImage = CType(resources.GetObject("HotbarContainer4.BackgroundImage"), System.Drawing.Image)
+        Me.HotbarContainer4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.HotbarContainer4.Controls.Add(Me.HotbarLabel4)
+        Me.HotbarContainer4.Controls.Add(Me.HotbarCooldownLabel4)
+        Me.HotbarContainer4.Controls.Add(Me.HotbarEquippedLabel4)
+        Me.HotbarContainer4.Controls.Add(Me.HotbarIcon4)
+        Me.HotbarContainer4.Location = New System.Drawing.Point(168, 4)
+        Me.HotbarContainer4.Name = "HotbarContainer4"
+        Me.HotbarContainer4.Size = New System.Drawing.Size(34, 35)
+        Me.HotbarContainer4.TabIndex = 41
+        '
+        'HotbarLabel4
+        '
+        Me.HotbarLabel4.AutoSize = True
+        Me.HotbarLabel4.BackColor = System.Drawing.Color.Transparent
+        Me.HotbarLabel4.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HotbarLabel4.ForeColor = System.Drawing.Color.White
+        Me.HotbarLabel4.Location = New System.Drawing.Point(24, 24)
+        Me.HotbarLabel4.Name = "HotbarLabel4"
+        Me.HotbarLabel4.Size = New System.Drawing.Size(12, 14)
+        Me.HotbarLabel4.TabIndex = 9
+        Me.HotbarLabel4.Text = "0"
+        '
+        'HotbarCooldownLabel4
+        '
+        Me.HotbarCooldownLabel4.AutoSize = True
+        Me.HotbarCooldownLabel4.BackColor = System.Drawing.Color.Transparent
+        Me.HotbarCooldownLabel4.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HotbarCooldownLabel4.ForeColor = System.Drawing.Color.White
+        Me.HotbarCooldownLabel4.Location = New System.Drawing.Point(14, 12)
+        Me.HotbarCooldownLabel4.Name = "HotbarCooldownLabel4"
+        Me.HotbarCooldownLabel4.Size = New System.Drawing.Size(12, 14)
+        Me.HotbarCooldownLabel4.TabIndex = 8
+        Me.HotbarCooldownLabel4.Text = "0"
+        '
+        'HotbarEquippedLabel4
+        '
+        Me.HotbarEquippedLabel4.AutoSize = True
+        Me.HotbarEquippedLabel4.BackColor = System.Drawing.Color.Transparent
+        Me.HotbarEquippedLabel4.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HotbarEquippedLabel4.ForeColor = System.Drawing.Color.White
+        Me.HotbarEquippedLabel4.Location = New System.Drawing.Point(24, 0)
+        Me.HotbarEquippedLabel4.Name = "HotbarEquippedLabel4"
+        Me.HotbarEquippedLabel4.Size = New System.Drawing.Size(12, 14)
+        Me.HotbarEquippedLabel4.TabIndex = 7
+        Me.HotbarEquippedLabel4.Text = "0"
+        '
+        'HotbarIcon4
+        '
+        Me.HotbarIcon4.BackColor = System.Drawing.Color.Transparent
+        Me.HotbarIcon4.BackgroundImage = CType(resources.GetObject("HotbarIcon4.BackgroundImage"), System.Drawing.Image)
+        Me.HotbarIcon4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.HotbarIcon4.Location = New System.Drawing.Point(1, 1)
+        Me.HotbarIcon4.Name = "HotbarIcon4"
+        Me.HotbarIcon4.Size = New System.Drawing.Size(32, 32)
+        Me.HotbarIcon4.TabIndex = 0
+        Me.HotbarIcon4.TabStop = False
+        '
+        'HotbarContainer3
+        '
+        Me.HotbarContainer3.BackgroundImage = CType(resources.GetObject("HotbarContainer3.BackgroundImage"), System.Drawing.Image)
+        Me.HotbarContainer3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.HotbarContainer3.Controls.Add(Me.HotbarLabel3)
+        Me.HotbarContainer3.Controls.Add(Me.HotbarCooldownLabel3)
+        Me.HotbarContainer3.Controls.Add(Me.HotbarEquippedLabel3)
+        Me.HotbarContainer3.Controls.Add(Me.HotbarIcon3)
+        Me.HotbarContainer3.Location = New System.Drawing.Point(128, 4)
+        Me.HotbarContainer3.Name = "HotbarContainer3"
+        Me.HotbarContainer3.Size = New System.Drawing.Size(34, 35)
+        Me.HotbarContainer3.TabIndex = 40
+        '
+        'HotbarLabel3
+        '
+        Me.HotbarLabel3.AutoSize = True
+        Me.HotbarLabel3.BackColor = System.Drawing.Color.Transparent
+        Me.HotbarLabel3.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HotbarLabel3.ForeColor = System.Drawing.Color.White
+        Me.HotbarLabel3.Location = New System.Drawing.Point(24, 24)
+        Me.HotbarLabel3.Name = "HotbarLabel3"
+        Me.HotbarLabel3.Size = New System.Drawing.Size(12, 14)
+        Me.HotbarLabel3.TabIndex = 9
+        Me.HotbarLabel3.Text = "0"
+        '
+        'HotbarCooldownLabel3
+        '
+        Me.HotbarCooldownLabel3.AutoSize = True
+        Me.HotbarCooldownLabel3.BackColor = System.Drawing.Color.Transparent
+        Me.HotbarCooldownLabel3.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HotbarCooldownLabel3.ForeColor = System.Drawing.Color.White
+        Me.HotbarCooldownLabel3.Location = New System.Drawing.Point(14, 12)
+        Me.HotbarCooldownLabel3.Name = "HotbarCooldownLabel3"
+        Me.HotbarCooldownLabel3.Size = New System.Drawing.Size(12, 14)
+        Me.HotbarCooldownLabel3.TabIndex = 8
+        Me.HotbarCooldownLabel3.Text = "0"
+        '
+        'HotbarEquippedLabel3
+        '
+        Me.HotbarEquippedLabel3.AutoSize = True
+        Me.HotbarEquippedLabel3.BackColor = System.Drawing.Color.Transparent
+        Me.HotbarEquippedLabel3.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HotbarEquippedLabel3.ForeColor = System.Drawing.Color.White
+        Me.HotbarEquippedLabel3.Location = New System.Drawing.Point(24, 0)
+        Me.HotbarEquippedLabel3.Name = "HotbarEquippedLabel3"
+        Me.HotbarEquippedLabel3.Size = New System.Drawing.Size(12, 14)
+        Me.HotbarEquippedLabel3.TabIndex = 7
+        Me.HotbarEquippedLabel3.Text = "0"
+        '
+        'HotbarIcon3
+        '
+        Me.HotbarIcon3.BackColor = System.Drawing.Color.Transparent
+        Me.HotbarIcon3.BackgroundImage = CType(resources.GetObject("HotbarIcon3.BackgroundImage"), System.Drawing.Image)
+        Me.HotbarIcon3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.HotbarIcon3.Location = New System.Drawing.Point(1, 1)
+        Me.HotbarIcon3.Name = "HotbarIcon3"
+        Me.HotbarIcon3.Size = New System.Drawing.Size(32, 32)
+        Me.HotbarIcon3.TabIndex = 0
+        Me.HotbarIcon3.TabStop = False
+        '
+        'HotbarContainer2
+        '
+        Me.HotbarContainer2.BackgroundImage = CType(resources.GetObject("HotbarContainer2.BackgroundImage"), System.Drawing.Image)
+        Me.HotbarContainer2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.HotbarContainer2.Controls.Add(Me.HotbarLabel2)
+        Me.HotbarContainer2.Controls.Add(Me.HotbarCooldownLabel2)
+        Me.HotbarContainer2.Controls.Add(Me.HotbarEquippedLabel2)
+        Me.HotbarContainer2.Controls.Add(Me.HotbarIcon2)
+        Me.HotbarContainer2.Location = New System.Drawing.Point(88, 4)
+        Me.HotbarContainer2.Name = "HotbarContainer2"
+        Me.HotbarContainer2.Size = New System.Drawing.Size(34, 35)
+        Me.HotbarContainer2.TabIndex = 39
+        '
+        'HotbarLabel2
+        '
+        Me.HotbarLabel2.AutoSize = True
+        Me.HotbarLabel2.BackColor = System.Drawing.Color.Transparent
+        Me.HotbarLabel2.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HotbarLabel2.ForeColor = System.Drawing.Color.White
+        Me.HotbarLabel2.Location = New System.Drawing.Point(24, 24)
+        Me.HotbarLabel2.Name = "HotbarLabel2"
+        Me.HotbarLabel2.Size = New System.Drawing.Size(12, 14)
+        Me.HotbarLabel2.TabIndex = 9
+        Me.HotbarLabel2.Text = "0"
+        '
+        'HotbarCooldownLabel2
+        '
+        Me.HotbarCooldownLabel2.AutoSize = True
+        Me.HotbarCooldownLabel2.BackColor = System.Drawing.Color.Transparent
+        Me.HotbarCooldownLabel2.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HotbarCooldownLabel2.ForeColor = System.Drawing.Color.White
+        Me.HotbarCooldownLabel2.Location = New System.Drawing.Point(14, 12)
+        Me.HotbarCooldownLabel2.Name = "HotbarCooldownLabel2"
+        Me.HotbarCooldownLabel2.Size = New System.Drawing.Size(12, 14)
+        Me.HotbarCooldownLabel2.TabIndex = 8
+        Me.HotbarCooldownLabel2.Text = "0"
+        '
+        'HotbarEquippedLabel2
+        '
+        Me.HotbarEquippedLabel2.AutoSize = True
+        Me.HotbarEquippedLabel2.BackColor = System.Drawing.Color.Transparent
+        Me.HotbarEquippedLabel2.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HotbarEquippedLabel2.ForeColor = System.Drawing.Color.White
+        Me.HotbarEquippedLabel2.Location = New System.Drawing.Point(24, 0)
+        Me.HotbarEquippedLabel2.Name = "HotbarEquippedLabel2"
+        Me.HotbarEquippedLabel2.Size = New System.Drawing.Size(12, 14)
+        Me.HotbarEquippedLabel2.TabIndex = 7
+        Me.HotbarEquippedLabel2.Text = "0"
+        '
+        'HotbarIcon2
+        '
+        Me.HotbarIcon2.BackColor = System.Drawing.Color.Transparent
+        Me.HotbarIcon2.BackgroundImage = CType(resources.GetObject("HotbarIcon2.BackgroundImage"), System.Drawing.Image)
+        Me.HotbarIcon2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.HotbarIcon2.Location = New System.Drawing.Point(1, 1)
+        Me.HotbarIcon2.Name = "HotbarIcon2"
+        Me.HotbarIcon2.Size = New System.Drawing.Size(32, 32)
+        Me.HotbarIcon2.TabIndex = 0
+        Me.HotbarIcon2.TabStop = False
+        '
+        'HotbarContainer1
+        '
+        Me.HotbarContainer1.BackgroundImage = CType(resources.GetObject("HotbarContainer1.BackgroundImage"), System.Drawing.Image)
+        Me.HotbarContainer1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.HotbarContainer1.Controls.Add(Me.HotbarLabel1)
+        Me.HotbarContainer1.Controls.Add(Me.HotbarCooldownLabel1)
+        Me.HotbarContainer1.Controls.Add(Me.HotbarEquippedLabel1)
+        Me.HotbarContainer1.Controls.Add(Me.HotbarIcon1)
+        Me.HotbarContainer1.Location = New System.Drawing.Point(48, 4)
+        Me.HotbarContainer1.Name = "HotbarContainer1"
+        Me.HotbarContainer1.Size = New System.Drawing.Size(34, 35)
+        Me.HotbarContainer1.TabIndex = 38
+        '
+        'HotbarLabel1
+        '
+        Me.HotbarLabel1.AutoSize = True
+        Me.HotbarLabel1.BackColor = System.Drawing.Color.Transparent
+        Me.HotbarLabel1.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HotbarLabel1.ForeColor = System.Drawing.Color.White
+        Me.HotbarLabel1.Location = New System.Drawing.Point(24, 24)
+        Me.HotbarLabel1.Name = "HotbarLabel1"
+        Me.HotbarLabel1.Size = New System.Drawing.Size(12, 14)
+        Me.HotbarLabel1.TabIndex = 9
+        Me.HotbarLabel1.Text = "0"
+        '
+        'HotbarCooldownLabel1
+        '
+        Me.HotbarCooldownLabel1.AutoSize = True
+        Me.HotbarCooldownLabel1.BackColor = System.Drawing.Color.Transparent
+        Me.HotbarCooldownLabel1.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HotbarCooldownLabel1.ForeColor = System.Drawing.Color.White
+        Me.HotbarCooldownLabel1.Location = New System.Drawing.Point(14, 12)
+        Me.HotbarCooldownLabel1.Name = "HotbarCooldownLabel1"
+        Me.HotbarCooldownLabel1.Size = New System.Drawing.Size(12, 14)
+        Me.HotbarCooldownLabel1.TabIndex = 8
+        Me.HotbarCooldownLabel1.Text = "0"
+        '
+        'HotbarEquippedLabel1
+        '
+        Me.HotbarEquippedLabel1.AutoSize = True
+        Me.HotbarEquippedLabel1.BackColor = System.Drawing.Color.Transparent
+        Me.HotbarEquippedLabel1.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HotbarEquippedLabel1.ForeColor = System.Drawing.Color.White
+        Me.HotbarEquippedLabel1.Location = New System.Drawing.Point(24, 0)
+        Me.HotbarEquippedLabel1.Name = "HotbarEquippedLabel1"
+        Me.HotbarEquippedLabel1.Size = New System.Drawing.Size(12, 14)
+        Me.HotbarEquippedLabel1.TabIndex = 7
+        Me.HotbarEquippedLabel1.Text = "0"
+        '
+        'HotbarIcon1
+        '
+        Me.HotbarIcon1.BackColor = System.Drawing.Color.Transparent
+        Me.HotbarIcon1.BackgroundImage = CType(resources.GetObject("HotbarIcon1.BackgroundImage"), System.Drawing.Image)
+        Me.HotbarIcon1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.HotbarIcon1.Location = New System.Drawing.Point(1, 1)
+        Me.HotbarIcon1.Name = "HotbarIcon1"
+        Me.HotbarIcon1.Size = New System.Drawing.Size(32, 32)
+        Me.HotbarIcon1.TabIndex = 0
+        Me.HotbarIcon1.TabStop = False
+        '
+        'HotbarContainer0
+        '
+        Me.HotbarContainer0.BackgroundImage = CType(resources.GetObject("HotbarContainer0.BackgroundImage"), System.Drawing.Image)
+        Me.HotbarContainer0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.HotbarContainer0.Controls.Add(Me.HotbarLabel0)
+        Me.HotbarContainer0.Controls.Add(Me.HotbarCooldownLabel0)
+        Me.HotbarContainer0.Controls.Add(Me.HotbarEquippedLabel0)
+        Me.HotbarContainer0.Controls.Add(Me.HotbarIcon0)
+        Me.HotbarContainer0.Location = New System.Drawing.Point(8, 4)
+        Me.HotbarContainer0.Name = "HotbarContainer0"
+        Me.HotbarContainer0.Size = New System.Drawing.Size(34, 35)
+        Me.HotbarContainer0.TabIndex = 37
+        '
+        'HotbarLabel0
+        '
+        Me.HotbarLabel0.AutoSize = True
+        Me.HotbarLabel0.BackColor = System.Drawing.Color.Transparent
+        Me.HotbarLabel0.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HotbarLabel0.ForeColor = System.Drawing.Color.White
+        Me.HotbarLabel0.Location = New System.Drawing.Point(24, 24)
+        Me.HotbarLabel0.Name = "HotbarLabel0"
+        Me.HotbarLabel0.Size = New System.Drawing.Size(12, 14)
+        Me.HotbarLabel0.TabIndex = 9
+        Me.HotbarLabel0.Text = "0"
+        '
+        'HotbarCooldownLabel0
+        '
+        Me.HotbarCooldownLabel0.AutoSize = True
+        Me.HotbarCooldownLabel0.BackColor = System.Drawing.Color.Transparent
+        Me.HotbarCooldownLabel0.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HotbarCooldownLabel0.ForeColor = System.Drawing.Color.White
+        Me.HotbarCooldownLabel0.Location = New System.Drawing.Point(14, 12)
+        Me.HotbarCooldownLabel0.Name = "HotbarCooldownLabel0"
+        Me.HotbarCooldownLabel0.Size = New System.Drawing.Size(12, 14)
+        Me.HotbarCooldownLabel0.TabIndex = 8
+        Me.HotbarCooldownLabel0.Text = "0"
+        '
+        'HotbarEquippedLabel0
+        '
+        Me.HotbarEquippedLabel0.AutoSize = True
+        Me.HotbarEquippedLabel0.BackColor = System.Drawing.Color.Transparent
+        Me.HotbarEquippedLabel0.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HotbarEquippedLabel0.ForeColor = System.Drawing.Color.White
+        Me.HotbarEquippedLabel0.Location = New System.Drawing.Point(24, 0)
+        Me.HotbarEquippedLabel0.Name = "HotbarEquippedLabel0"
+        Me.HotbarEquippedLabel0.Size = New System.Drawing.Size(12, 14)
+        Me.HotbarEquippedLabel0.TabIndex = 7
+        Me.HotbarEquippedLabel0.Text = "0"
+        '
+        'HotbarIcon0
+        '
+        Me.HotbarIcon0.BackColor = System.Drawing.Color.Transparent
+        Me.HotbarIcon0.BackgroundImage = CType(resources.GetObject("HotbarIcon0.BackgroundImage"), System.Drawing.Image)
+        Me.HotbarIcon0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.HotbarIcon0.Location = New System.Drawing.Point(1, 1)
+        Me.HotbarIcon0.Name = "HotbarIcon0"
+        Me.HotbarIcon0.Size = New System.Drawing.Size(32, 32)
+        Me.HotbarIcon0.TabIndex = 0
+        Me.HotbarIcon0.TabStop = False
+        '
+        'MainFriendsWindowPanel
+        '
+        Me.MainFriendsWindowPanel.BackgroundImage = CType(resources.GetObject("MainFriendsWindowPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainFriendsWindowPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainFriendsWindowPanel.Controls.Add(Me.AddFriendPopupButton)
+        Me.MainFriendsWindowPanel.Controls.Add(Me.FriendsWindowCloseButton)
+        Me.MainFriendsWindowPanel.Controls.Add(Me.FriendsWindowTitle)
+        Me.MainFriendsWindowPanel.Location = New System.Drawing.Point(1283, 694)
+        Me.MainFriendsWindowPanel.Name = "MainFriendsWindowPanel"
+        Me.MainFriendsWindowPanel.Size = New System.Drawing.Size(220, 339)
+        Me.MainFriendsWindowPanel.TabIndex = 37
+        Me.MainFriendsWindowPanel.Visible = False
+        '
+        'AddFriendPopupButton
+        '
+        Me.AddFriendPopupButton.BackColor = System.Drawing.Color.Transparent
+        Me.AddFriendPopupButton.BackgroundImage = CType(resources.GetObject("AddFriendPopupButton.BackgroundImage"), System.Drawing.Image)
+        Me.AddFriendPopupButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.AddFriendPopupButton.Location = New System.Drawing.Point(50, 268)
+        Me.AddFriendPopupButton.Name = "AddFriendPopupButton"
+        Me.AddFriendPopupButton.Size = New System.Drawing.Size(120, 28)
+        Me.AddFriendPopupButton.TabIndex = 20
+        Me.AddFriendPopupButton.TabStop = False
+        '
+        'FriendsWindowCloseButton
+        '
+        Me.FriendsWindowCloseButton.BackColor = System.Drawing.Color.Transparent
+        Me.FriendsWindowCloseButton.BackgroundImage = CType(resources.GetObject("FriendsWindowCloseButton.BackgroundImage"), System.Drawing.Image)
+        Me.FriendsWindowCloseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.FriendsWindowCloseButton.Location = New System.Drawing.Point(194, 5)
+        Me.FriendsWindowCloseButton.Name = "FriendsWindowCloseButton"
+        Me.FriendsWindowCloseButton.Size = New System.Drawing.Size(26, 25)
+        Me.FriendsWindowCloseButton.TabIndex = 19
+        Me.FriendsWindowCloseButton.TabStop = False
+        '
+        'FriendsWindowTitle
+        '
+        Me.FriendsWindowTitle.AutoSize = True
+        Me.FriendsWindowTitle.BackColor = System.Drawing.Color.Transparent
+        Me.FriendsWindowTitle.Font = New System.Drawing.Font("Source Sans Pro SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FriendsWindowTitle.ForeColor = System.Drawing.Color.White
+        Me.FriendsWindowTitle.Location = New System.Drawing.Point(40, 7)
+        Me.FriendsWindowTitle.Name = "FriendsWindowTitle"
+        Me.FriendsWindowTitle.Size = New System.Drawing.Size(60, 20)
+        Me.FriendsWindowTitle.TabIndex = 3
+        Me.FriendsWindowTitle.Text = "Friends"
         '
         'MainEventDialogWindow4ResponsePanel
         '
@@ -3920,52 +4803,66 @@ Partial Class Form1
         Me.AppSettings.Name = "AppSettings"
         Me.AppSettings.Size = New System.Drawing.Size(28, 20)
         '
-        'Panel1
+        'MainInventoryItemPanel
         '
-        Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
-        Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel1.Controls.Add(Me.PictureBox3)
-        Me.Panel1.Controls.Add(Me.PictureBox2)
-        Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Location = New System.Drawing.Point(1283, 694)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(220, 339)
-        Me.Panel1.TabIndex = 37
-        Me.Panel1.Visible = False
+        Me.MainInventoryItemPanel.BackColor = System.Drawing.Color.Transparent
+        Me.MainInventoryItemPanel.BackgroundImage = CType(resources.GetObject("MainInventoryItemPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainInventoryItemPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainInventoryItemPanel.Controls.Add(Me.InventoryItemCooldownLabel)
+        Me.MainInventoryItemPanel.Controls.Add(Me.InventoryItemEquippedLabel)
+        Me.MainInventoryItemPanel.Controls.Add(Me.InventoryItemValue)
+        Me.MainInventoryItemPanel.Controls.Add(Me.InventoryItemIcon)
+        Me.MainInventoryItemPanel.Location = New System.Drawing.Point(813, 412)
+        Me.MainInventoryItemPanel.Name = "MainInventoryItemPanel"
+        Me.MainInventoryItemPanel.Size = New System.Drawing.Size(34, 35)
+        Me.MainInventoryItemPanel.TabIndex = 30
+        Me.MainInventoryItemPanel.Visible = False
         '
-        'PictureBox2
+        'InventoryItemValue
         '
-        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox2.BackgroundImage = CType(resources.GetObject("PictureBox2.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox2.Location = New System.Drawing.Point(194, 5)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(26, 25)
-        Me.PictureBox2.TabIndex = 19
-        Me.PictureBox2.TabStop = False
+        Me.InventoryItemValue.AutoSize = True
+        Me.InventoryItemValue.BackColor = System.Drawing.Color.Transparent
+        Me.InventoryItemValue.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.InventoryItemValue.ForeColor = System.Drawing.Color.White
+        Me.InventoryItemValue.Location = New System.Drawing.Point(29, 24)
+        Me.InventoryItemValue.Name = "InventoryItemValue"
+        Me.InventoryItemValue.Size = New System.Drawing.Size(12, 14)
+        Me.InventoryItemValue.TabIndex = 6
+        Me.InventoryItemValue.Text = "0"
         '
-        'Label1
+        'InventoryItemIcon
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Source Sans Pro SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(40, 7)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(60, 20)
-        Me.Label1.TabIndex = 3
-        Me.Label1.Text = "Friends"
+        Me.InventoryItemIcon.BackgroundImage = CType(resources.GetObject("InventoryItemIcon.BackgroundImage"), System.Drawing.Image)
+        Me.InventoryItemIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.InventoryItemIcon.Location = New System.Drawing.Point(1, 1)
+        Me.InventoryItemIcon.Name = "InventoryItemIcon"
+        Me.InventoryItemIcon.Size = New System.Drawing.Size(32, 32)
+        Me.InventoryItemIcon.TabIndex = 0
+        Me.InventoryItemIcon.TabStop = False
         '
-        'PictureBox3
+        'InventoryItemEquippedLabel
         '
-        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox3.BackgroundImage = CType(resources.GetObject("PictureBox3.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox3.Location = New System.Drawing.Point(50, 268)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(120, 28)
-        Me.PictureBox3.TabIndex = 20
-        Me.PictureBox3.TabStop = False
+        Me.InventoryItemEquippedLabel.AutoSize = True
+        Me.InventoryItemEquippedLabel.BackColor = System.Drawing.Color.Transparent
+        Me.InventoryItemEquippedLabel.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.InventoryItemEquippedLabel.ForeColor = System.Drawing.Color.White
+        Me.InventoryItemEquippedLabel.Location = New System.Drawing.Point(22, 0)
+        Me.InventoryItemEquippedLabel.Name = "InventoryItemEquippedLabel"
+        Me.InventoryItemEquippedLabel.Size = New System.Drawing.Size(12, 14)
+        Me.InventoryItemEquippedLabel.TabIndex = 7
+        Me.InventoryItemEquippedLabel.Text = "0"
+        '
+        'InventoryItemCooldownLabel
+        '
+        Me.InventoryItemCooldownLabel.AutoSize = True
+        Me.InventoryItemCooldownLabel.BackColor = System.Drawing.Color.Transparent
+        Me.InventoryItemCooldownLabel.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.InventoryItemCooldownLabel.ForeColor = System.Drawing.Color.White
+        Me.InventoryItemCooldownLabel.Location = New System.Drawing.Point(13, 10)
+        Me.InventoryItemCooldownLabel.Name = "InventoryItemCooldownLabel"
+        Me.InventoryItemCooldownLabel.Size = New System.Drawing.Size(12, 14)
+        Me.InventoryItemCooldownLabel.TabIndex = 8
+        Me.InventoryItemCooldownLabel.Text = "0"
         '
         'Form1
         '
@@ -3995,6 +4892,51 @@ Partial Class Form1
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainer1.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
+        Me.MainGameInputBoxPanel.ResumeLayout(False)
+        Me.MainGameInputBoxPanel.PerformLayout()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
+        CType(Me.GameInputOkayButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GameInputBoxTextBox.ResumeLayout(False)
+        CType(Me.GameInputBoxTextboxText, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GameInputNoButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GameInputYesButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GameInputBoxCloseButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainHotbarWindowPanel.ResumeLayout(False)
+        Me.HotbarContainer9.ResumeLayout(False)
+        Me.HotbarContainer9.PerformLayout()
+        CType(Me.HotbarIcon9, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.HotbarContainer8.ResumeLayout(False)
+        Me.HotbarContainer8.PerformLayout()
+        CType(Me.HotbarIcon8, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.HotbarContainer7.ResumeLayout(False)
+        Me.HotbarContainer7.PerformLayout()
+        CType(Me.HotbarIcon7, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.HotbarContainer6.ResumeLayout(False)
+        Me.HotbarContainer6.PerformLayout()
+        CType(Me.HotbarIcon6, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.HotbarContainer5.ResumeLayout(False)
+        Me.HotbarContainer5.PerformLayout()
+        CType(Me.HotbarIcon5, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.HotbarContainer4.ResumeLayout(False)
+        Me.HotbarContainer4.PerformLayout()
+        CType(Me.HotbarIcon4, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.HotbarContainer3.ResumeLayout(False)
+        Me.HotbarContainer3.PerformLayout()
+        CType(Me.HotbarIcon3, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.HotbarContainer2.ResumeLayout(False)
+        Me.HotbarContainer2.PerformLayout()
+        CType(Me.HotbarIcon2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.HotbarContainer1.ResumeLayout(False)
+        Me.HotbarContainer1.PerformLayout()
+        CType(Me.HotbarIcon1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.HotbarContainer0.ResumeLayout(False)
+        Me.HotbarContainer0.PerformLayout()
+        CType(Me.HotbarIcon0, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainFriendsWindowPanel.ResumeLayout(False)
+        Me.MainFriendsWindowPanel.PerformLayout()
+        CType(Me.AddFriendPopupButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.FriendsWindowCloseButton, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MainEventDialogWindow4ResponsePanel.ResumeLayout(False)
         CType(Me.Dialog4Response4Button, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Dialog4Response3Button, System.ComponentModel.ISupportInitialize).EndInit()
@@ -4216,10 +5158,9 @@ Partial Class Form1
         Me.StatusStrip1.PerformLayout()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainInventoryItemPanel.ResumeLayout(False)
+        Me.MainInventoryItemPanel.PerformLayout()
+        CType(Me.InventoryItemIcon, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -4543,8 +5484,74 @@ Partial Class Form1
     Friend WithEvents Dialog4EventDialogLabel As Label
     Friend WithEvents Dialog4Response1Button As PictureBox
     Friend WithEvents Dialog4EventFacePanel As Panel
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents Label1 As Label
+    Friend WithEvents MainFriendsWindowPanel As Panel
+    Friend WithEvents AddFriendPopupButton As PictureBox
+    Friend WithEvents FriendsWindowCloseButton As PictureBox
+    Friend WithEvents FriendsWindowTitle As Label
+    Friend WithEvents MainHotbarWindowPanel As Panel
+    Friend WithEvents HotbarContainer9 As Panel
+    Friend WithEvents HotbarLabel9 As Label
+    Friend WithEvents HotbarCooldownLabel9 As Label
+    Friend WithEvents HotbarEquippedLabel9 As Label
+    Friend WithEvents HotbarIcon9 As PictureBox
+    Friend WithEvents HotbarContainer8 As Panel
+    Friend WithEvents HotbarLabel8 As Label
+    Friend WithEvents HotbarCooldownLabel8 As Label
+    Friend WithEvents HotbarEquippedLabel8 As Label
+    Friend WithEvents HotbarIcon8 As PictureBox
+    Friend WithEvents HotbarContainer7 As Panel
+    Friend WithEvents HotbarLabel7 As Label
+    Friend WithEvents HotbarCooldownLabel7 As Label
+    Friend WithEvents HotbarEquippedLabel7 As Label
+    Friend WithEvents HotbarIcon7 As PictureBox
+    Friend WithEvents HotbarContainer6 As Panel
+    Friend WithEvents HotbarLabel6 As Label
+    Friend WithEvents HotbarCooldownLabel6 As Label
+    Friend WithEvents HotbarEquippedLabel6 As Label
+    Friend WithEvents HotbarIcon6 As PictureBox
+    Friend WithEvents HotbarContainer5 As Panel
+    Friend WithEvents HotbarLabel5 As Label
+    Friend WithEvents HotbarCooldownLabel5 As Label
+    Friend WithEvents HotbarEquippedLabel5 As Label
+    Friend WithEvents HotbarIcon5 As PictureBox
+    Friend WithEvents HotbarContainer4 As Panel
+    Friend WithEvents HotbarLabel4 As Label
+    Friend WithEvents HotbarCooldownLabel4 As Label
+    Friend WithEvents HotbarEquippedLabel4 As Label
+    Friend WithEvents HotbarIcon4 As PictureBox
+    Friend WithEvents HotbarContainer3 As Panel
+    Friend WithEvents HotbarLabel3 As Label
+    Friend WithEvents HotbarCooldownLabel3 As Label
+    Friend WithEvents HotbarEquippedLabel3 As Label
+    Friend WithEvents HotbarIcon3 As PictureBox
+    Friend WithEvents HotbarContainer2 As Panel
+    Friend WithEvents HotbarLabel2 As Label
+    Friend WithEvents HotbarCooldownLabel2 As Label
+    Friend WithEvents HotbarEquippedLabel2 As Label
+    Friend WithEvents HotbarIcon2 As PictureBox
+    Friend WithEvents HotbarContainer1 As Panel
+    Friend WithEvents HotbarLabel1 As Label
+    Friend WithEvents HotbarCooldownLabel1 As Label
+    Friend WithEvents HotbarEquippedLabel1 As Label
+    Friend WithEvents HotbarIcon1 As PictureBox
+    Friend WithEvents HotbarContainer0 As Panel
+    Friend WithEvents HotbarLabel0 As Label
+    Friend WithEvents HotbarCooldownLabel0 As Label
+    Friend WithEvents HotbarEquippedLabel0 As Label
+    Friend WithEvents HotbarIcon0 As PictureBox
+    Friend WithEvents MainGameInputBoxPanel As Panel
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents GameInputOkayButton As PictureBox
+    Friend WithEvents GameInputBoxTextBox As Panel
+    Friend WithEvents GameInputBoxTextboxText As PictureBox
+    Friend WithEvents GameInputNoButton As PictureBox
+    Friend WithEvents GameInputPromptLabel As Label
+    Friend WithEvents GameInputYesButton As PictureBox
+    Friend WithEvents GameInputBoxCloseButton As PictureBox
+    Friend WithEvents GameInputboxTitle As Label
+    Friend WithEvents MainInventoryItemPanel As Panel
+    Friend WithEvents InventoryItemValue As Label
+    Friend WithEvents InventoryItemIcon As PictureBox
+    Friend WithEvents InventoryItemCooldownLabel As Label
+    Friend WithEvents InventoryItemEquippedLabel As Label
 End Class

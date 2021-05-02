@@ -66,7 +66,5 @@ Module BagItemGUI
         Form1.BagItemIcon.Height = BagItemIconBounds(3)
         Form1.BagItemIcon.BackgroundImage = Image.FromFile(Application.StartupPath & "\resources\itemIcon.png")
         Form1.BagItemValue.Location = New Point(BagItemValueBounds(0), BagItemValueBounds(1))
-
-        Form1.StatusText("[MAIN]     Visual Window Updated")
     End Sub
 End Module

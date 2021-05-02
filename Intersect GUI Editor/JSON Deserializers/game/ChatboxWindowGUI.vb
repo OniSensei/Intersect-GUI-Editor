@@ -181,6 +181,6 @@ Module ChatboxWindowGUI
         Form1.ChatboxInputField.Width = ChatboxInputFieldBounds(2)
         Form1.ChatboxInputField.Height = ChatboxInputFieldBounds(3)
 
-        Form1.StatusText("[MAIN]     Visual Window Updated")
+        
     End Sub
 End Module

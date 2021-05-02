@@ -200,6 +200,6 @@ Module ResetPasswordWindowGUI
         Form1.BackButton.Width = BackButtonBounds(2)
         Form1.BackButton.Height = BackButtonBounds(3)
         Form1.BackButton.BackgroundImage = Image.FromFile(imgResources & infoPull.Children.BackButton.NormalImage)
-        Form1.StatusText("[MAIN]     Visual Window Updated")
+        
     End Sub
 End Module

@@ -149,7 +149,6 @@ Module InputBoxGUI
         Form1.StatusText("[MAIN]     InputBox.json Deserialized")
 
         Dim mainwindowbounds As String() = infoPull.Bounds.Split(",")
-        Dim InputBoxTitleBarBounds As String() = infoPull.Titlebar.Bounds.Split(",")
         Dim InputBoxTitleBounds As String() = infoPull.Title.TextPadding.Split(",")
         Dim InputBoxCloseButtonBounds As String() = infoPull.Closebutton.Bounds.Split(",")
         Dim InputBoxInnerPanelBounds As String() = infoPull.InnerPanel.Bounds.Split(",")
@@ -165,8 +164,6 @@ Module InputBoxGUI
         Form1.MainInputBoxPanel.Height = mainwindowbounds(3)
         Form1.MainInputBoxPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.ActiveImage)
         Form1.InputBoxTitle.Location = New Point(InputBoxTitleBounds(0), InputBoxTitleBounds(1))
-        Form1.InputBoxTitle.Width = InputBoxTitleBounds(2)
-        Form1.InputBoxTitle.Height = InputBoxTitleBounds(3)
         Form1.InputBoxCloseButton.Location = New Point(InputBoxCloseButtonBounds(0), InputBoxCloseButtonBounds(1))
         Form1.InputBoxCloseButton.Width = InputBoxCloseButtonBounds(2)
         Form1.InputBoxCloseButton.Height = InputBoxCloseButtonBounds(3)
@@ -196,6 +193,6 @@ Module InputBoxGUI
         Form1.PromptLabel.Location = New Point(InputBoxInnerPanelPromptLabelBounds(0), InputBoxInnerPanelPromptLabelBounds(1))
         Form1.PromptLabel.Width = InputBoxInnerPanelPromptLabelBounds(2)
         Form1.PromptLabel.Height = InputBoxInnerPanelPromptLabelBounds(3)
-        Form1.StatusText("[MAIN]     Visual Window Updated")
+        
     End Sub
 End Module

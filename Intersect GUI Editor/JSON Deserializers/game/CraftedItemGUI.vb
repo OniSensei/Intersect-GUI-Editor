@@ -67,6 +67,6 @@ Module CraftedItemGUI
         Form1.CraftedItemIcon.BackgroundImage = Image.FromFile(Application.StartupPath & "\resources\itemIcon.png")
         Form1.CraftedItemQuantity.Location = New Point(CraftedItemQuantityBounds(0), CraftedItemQuantityBounds(1))
 
-        Form1.StatusText("[MAIN]     Visual Window Updated")
+        
     End Sub
 End Module

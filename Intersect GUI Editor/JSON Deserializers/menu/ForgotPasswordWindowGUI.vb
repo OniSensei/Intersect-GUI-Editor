@@ -118,6 +118,6 @@ Module ForgotPasswordWindowGUI
         Form1.ForgotPasswordBackButton.Height = ForgotPasswordWindowBackButtonBounds(3)
         Form1.ForgotPasswordBackButton.BackgroundImage = Image.FromFile(imgResources & infoPull.Children.BackButton.NormalImage)
 
-        Form1.StatusText("[MAIN]     Visual Window Updated")
+        
     End Sub
 End Module

@@ -58,6 +58,6 @@ Module EquipmentItemGUI
         Form1.EquipmentIcon.Height = EquipmentIconBounds(3)
         Form1.EquipmentIcon.BackgroundImage = Image.FromFile(Application.StartupPath & "\resources\weapon.png")
 
-        Form1.StatusText("[MAIN]     Visual Window Updated")
+        
     End Sub
 End Module

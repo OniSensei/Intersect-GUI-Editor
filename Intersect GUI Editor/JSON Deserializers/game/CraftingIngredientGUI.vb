@@ -69,6 +69,6 @@ Module CraftingIngredientGUI
         Form1.IngredientItemValue.Width = IngredientItemValueBounds(2)
         Form1.IngredientItemValue.Height = IngredientItemValueBounds(3)
 
-        Form1.StatusText("[MAIN]     Visual Window Updated")
+        
     End Sub
 End Module

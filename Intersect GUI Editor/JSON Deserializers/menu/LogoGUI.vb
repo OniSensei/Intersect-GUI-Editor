@@ -53,6 +53,6 @@ Module LogoGUI
         Form1.MainLogoPanel.Height = mainwindowbounds(3)
         Form1.MainLogoPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.Texture)
 
-        Form1.StatusText("[MAIN]     Visual Window Updated")
+        
     End Sub
 End Module

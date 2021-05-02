@@ -158,6 +158,6 @@ Module BagWindowGUI
         Form1.BagWindowCloseButton.Width = CloseButtonBounds(2)
         Form1.BagWindowCloseButton.Height = CloseButtonBounds(3)
         Form1.BagWindowCloseButton.BackgroundImage = Image.FromFile(imgResources & infoPull.CloseButton.NormalImage)
-        Form1.StatusText("[MAIN]     Visual Window Updated")
+        
     End Sub
 End Module
