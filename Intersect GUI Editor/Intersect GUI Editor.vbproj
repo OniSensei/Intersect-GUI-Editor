@@ -100,6 +100,9 @@
     <Compile Include="JSON Deserializers\game\EquipmentItemGUI.vb" />
     <Compile Include="JSON Deserializers\game\EscapeMenuGUI.vb" />
     <Compile Include="JSON Deserializers\game\EventDialogWindow1ResonseGUI.vb" />
+    <Compile Include="JSON Deserializers\game\EventDialogWindow2ResonsesGUI.vb" />
+    <Compile Include="JSON Deserializers\game\EventDialogWindow3ResponsesGUI.vb" />
+    <Compile Include="JSON Deserializers\game\EventDialogWindow4ResponsesGUI.vb" />
     <Compile Include="JSON Deserializers\menu\CharacterCreationWindowGUI.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>

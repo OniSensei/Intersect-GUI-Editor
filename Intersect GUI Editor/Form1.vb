@@ -51,6 +51,9 @@ Public Class Form1
         MainEquipmentItemPanel.Visible = False
         MainEscapeMenuPanel.Visible = False
         MainEventDialogWindow1ResponsePanel.Visible = False
+        MainEventDialogWindow2ResponsePanel.Visible = False
+        MainEventDialogWindow3ResponsePanel.Visible = False
+        MainEventDialogWindow4ResponsePanel.Visible = False
 
         LoadLoginGUI(menuGuiPath & "LoginWindow.json")
         openFile = menuGuiPath & "LoginWindow.json"
@@ -82,6 +85,9 @@ Public Class Form1
         MainEquipmentItemPanel.Visible = False
         MainEscapeMenuPanel.Visible = False
         MainEventDialogWindow1ResponsePanel.Visible = False
+        MainEventDialogWindow2ResponsePanel.Visible = False
+        MainEventDialogWindow3ResponsePanel.Visible = False
+        MainEventDialogWindow4ResponsePanel.Visible = False
 
         LoadCharacterCreationGUI(menuGuiPath & "CharacterCreationWindow.json")
         openFile = menuGuiPath & "CharacterCreationWindow.json"
@@ -113,6 +119,9 @@ Public Class Form1
         MainEquipmentItemPanel.Visible = False
         MainEscapeMenuPanel.Visible = False
         MainEventDialogWindow1ResponsePanel.Visible = False
+        MainEventDialogWindow2ResponsePanel.Visible = False
+        MainEventDialogWindow3ResponsePanel.Visible = False
+        MainEventDialogWindow4ResponsePanel.Visible = False
 
         LoadCharacterSelectionGUI(menuGuiPath & "CharacterSelectionWindow.json")
         openFile = menuGuiPath & "CharacterSelectionWindow.json"
@@ -144,6 +153,9 @@ Public Class Form1
         MainEquipmentItemPanel.Visible = False
         MainEscapeMenuPanel.Visible = False
         MainEventDialogWindow1ResponsePanel.Visible = False
+        MainEventDialogWindow2ResponsePanel.Visible = False
+        MainEventDialogWindow3ResponsePanel.Visible = False
+        MainEventDialogWindow4ResponsePanel.Visible = False
 
         LoadCreditsGUI(menuGuiPath & "CreditsWindow.json")
         openFile = menuGuiPath & "CreditsWindow.json"
@@ -175,6 +187,9 @@ Public Class Form1
         MainEquipmentItemPanel.Visible = False
         MainEscapeMenuPanel.Visible = False
         MainEventDialogWindow1ResponsePanel.Visible = False
+        MainEventDialogWindow2ResponsePanel.Visible = False
+        MainEventDialogWindow3ResponsePanel.Visible = False
+        MainEventDialogWindow4ResponsePanel.Visible = False
 
         LoadForgotPasswordGUI(menuGuiPath & "ForgotPasswordWindow.json")
         openFile = menuGuiPath & "ForgotPasswordWindow.json"
@@ -206,6 +221,9 @@ Public Class Form1
         MainEquipmentItemPanel.Visible = False
         MainEscapeMenuPanel.Visible = False
         MainEventDialogWindow1ResponsePanel.Visible = False
+        MainEventDialogWindow2ResponsePanel.Visible = False
+        MainEventDialogWindow3ResponsePanel.Visible = False
+        MainEventDialogWindow4ResponsePanel.Visible = False
 
         LoadInputBoxGUI(menuGuiPath & "InputBox.json")
         openFile = menuGuiPath & "InputBox.json"
@@ -237,6 +255,9 @@ Public Class Form1
         MainEquipmentItemPanel.Visible = False
         MainEscapeMenuPanel.Visible = False
         MainEventDialogWindow1ResponsePanel.Visible = False
+        MainEventDialogWindow2ResponsePanel.Visible = False
+        MainEventDialogWindow3ResponsePanel.Visible = False
+        MainEventDialogWindow4ResponsePanel.Visible = False
 
         LoadLogoGUI(menuGuiPath & "Logo.json")
         openFile = menuGuiPath & "Logo.json"
@@ -268,6 +289,9 @@ Public Class Form1
         MainEquipmentItemPanel.Visible = False
         MainEscapeMenuPanel.Visible = False
         MainEventDialogWindow1ResponsePanel.Visible = False
+        MainEventDialogWindow2ResponsePanel.Visible = False
+        MainEventDialogWindow3ResponsePanel.Visible = False
+        MainEventDialogWindow4ResponsePanel.Visible = False
 
         LoadMenuWindow(menuGuiPath & "MenuWindow.json")
         openFile = menuGuiPath & "MenuWindow.json"
@@ -299,6 +323,9 @@ Public Class Form1
         MainEquipmentItemPanel.Visible = False
         MainEscapeMenuPanel.Visible = False
         MainEventDialogWindow1ResponsePanel.Visible = False
+        MainEventDialogWindow2ResponsePanel.Visible = False
+        MainEventDialogWindow3ResponsePanel.Visible = False
+        MainEventDialogWindow4ResponsePanel.Visible = False
 
         LoadOptionsWindowGUI(menuGuiPath & "OptionsWindow.json")
         openFile = menuGuiPath & "OptionsWindow.json"
@@ -330,6 +357,9 @@ Public Class Form1
         MainEquipmentItemPanel.Visible = False
         MainEscapeMenuPanel.Visible = False
         MainEventDialogWindow1ResponsePanel.Visible = False
+        MainEventDialogWindow2ResponsePanel.Visible = False
+        MainEventDialogWindow3ResponsePanel.Visible = False
+        MainEventDialogWindow4ResponsePanel.Visible = False
 
         LoadRegistrationWindowGUI(menuGuiPath & "RegistrationWindow.json")
         openFile = menuGuiPath & "RegistrationWindow.json"
@@ -361,6 +391,9 @@ Public Class Form1
         MainEquipmentItemPanel.Visible = False
         MainEscapeMenuPanel.Visible = False
         MainEventDialogWindow1ResponsePanel.Visible = False
+        MainEventDialogWindow2ResponsePanel.Visible = False
+        MainEventDialogWindow3ResponsePanel.Visible = False
+        MainEventDialogWindow4ResponsePanel.Visible = False
 
         LoadResetPasswordWindowGUI(menuGuiPath & "ResetPasswordWindow.json")
         openFile = menuGuiPath & "ResetPasswordWindow.json"
@@ -392,6 +425,9 @@ Public Class Form1
         MainEquipmentItemPanel.Visible = False
         MainEscapeMenuPanel.Visible = False
         MainEventDialogWindow1ResponsePanel.Visible = False
+        MainEventDialogWindow2ResponsePanel.Visible = False
+        MainEventDialogWindow3ResponsePanel.Visible = False
+        MainEventDialogWindow4ResponsePanel.Visible = False
 
         LoadServerStatusAreaGUI(menuGuiPath & "ServerStatusArea.json")
         openFile = menuGuiPath & "ServerStatusArea.json"
@@ -423,6 +459,9 @@ Public Class Form1
         MainEquipmentItemPanel.Visible = False
         MainEscapeMenuPanel.Visible = False
         MainEventDialogWindow1ResponsePanel.Visible = False
+        MainEventDialogWindow2ResponsePanel.Visible = False
+        MainEventDialogWindow3ResponsePanel.Visible = False
+        MainEventDialogWindow4ResponsePanel.Visible = False
 
         LoadBagItemGUI(gameGuiPath & "BagItem.json")
         openFile = gameGuiPath & "BagItem.json"
@@ -454,6 +493,9 @@ Public Class Form1
         MainEquipmentItemPanel.Visible = False
         MainEscapeMenuPanel.Visible = False
         MainEventDialogWindow1ResponsePanel.Visible = False
+        MainEventDialogWindow2ResponsePanel.Visible = False
+        MainEventDialogWindow3ResponsePanel.Visible = False
+        MainEventDialogWindow4ResponsePanel.Visible = False
 
         LoadBagWindowGUI(gameGuiPath & "BagWindow.json")
         openFile = gameGuiPath & "BagWindow.json"
@@ -485,6 +527,9 @@ Public Class Form1
         MainEquipmentItemPanel.Visible = False
         MainEscapeMenuPanel.Visible = False
         MainEventDialogWindow1ResponsePanel.Visible = False
+        MainEventDialogWindow2ResponsePanel.Visible = False
+        MainEventDialogWindow3ResponsePanel.Visible = False
+        MainEventDialogWindow4ResponsePanel.Visible = False
 
         LoadBankItemGUI(gameGuiPath & "BankItem.json")
         openFile = gameGuiPath & "BankItem.json"
@@ -516,6 +561,9 @@ Public Class Form1
         MainEquipmentItemPanel.Visible = False
         MainEscapeMenuPanel.Visible = False
         MainEventDialogWindow1ResponsePanel.Visible = False
+        MainEventDialogWindow2ResponsePanel.Visible = False
+        MainEventDialogWindow3ResponsePanel.Visible = False
+        MainEventDialogWindow4ResponsePanel.Visible = False
 
         LoadBankWindowGUI(gameGuiPath & "BankWindow.json")
         openFile = gameGuiPath & "BankWindow.json"
@@ -547,6 +595,9 @@ Public Class Form1
         MainEquipmentItemPanel.Visible = False
         MainEscapeMenuPanel.Visible = False
         MainEventDialogWindow1ResponsePanel.Visible = False
+        MainEventDialogWindow2ResponsePanel.Visible = False
+        MainEventDialogWindow3ResponsePanel.Visible = False
+        MainEventDialogWindow4ResponsePanel.Visible = False
 
         LoadCharacterWindowGUI(gameGuiPath & "CharacterWindow.json")
         openFile = gameGuiPath & "CharacterWindow.json"
@@ -578,6 +629,9 @@ Public Class Form1
         MainEquipmentItemPanel.Visible = False
         MainEscapeMenuPanel.Visible = False
         MainEventDialogWindow1ResponsePanel.Visible = False
+        MainEventDialogWindow2ResponsePanel.Visible = False
+        MainEventDialogWindow3ResponsePanel.Visible = False
+        MainEventDialogWindow4ResponsePanel.Visible = False
 
         LoadChatboxWindowGUI(gameGuiPath & "ChatboxWindow.json")
         openFile = gameGuiPath & "ChatboxWindow.json"
@@ -609,6 +663,9 @@ Public Class Form1
         MainEquipmentItemPanel.Visible = False
         MainEscapeMenuPanel.Visible = False
         MainEventDialogWindow1ResponsePanel.Visible = False
+        MainEventDialogWindow2ResponsePanel.Visible = False
+        MainEventDialogWindow3ResponsePanel.Visible = False
+        MainEventDialogWindow4ResponsePanel.Visible = False
 
         LoadCraftedItemGUI(gameGuiPath & "CraftedItem.json")
         openFile = gameGuiPath & "CraftedItem.json"
@@ -640,6 +697,9 @@ Public Class Form1
         MainEquipmentItemPanel.Visible = False
         MainEscapeMenuPanel.Visible = False
         MainEventDialogWindow1ResponsePanel.Visible = False
+        MainEventDialogWindow2ResponsePanel.Visible = False
+        MainEventDialogWindow3ResponsePanel.Visible = False
+        MainEventDialogWindow4ResponsePanel.Visible = False
 
         LoadCraftingIngredientGUI(gameGuiPath & "CraftingIngredient.json")
         openFile = gameGuiPath & "CraftingIngredient.json"
@@ -671,6 +731,9 @@ Public Class Form1
         MainEquipmentItemPanel.Visible = False
         MainEscapeMenuPanel.Visible = False
         MainEventDialogWindow1ResponsePanel.Visible = False
+        MainEventDialogWindow2ResponsePanel.Visible = False
+        MainEventDialogWindow3ResponsePanel.Visible = False
+        MainEventDialogWindow4ResponsePanel.Visible = False
 
         LoadCraftingWindowGUI(gameGuiPath & "CraftingWindow.json")
         openFile = gameGuiPath & "CraftingWindow.json"
@@ -702,6 +765,9 @@ Public Class Form1
         MainEquipmentItemPanel.Visible = False
         MainEscapeMenuPanel.Visible = False
         MainEventDialogWindow1ResponsePanel.Visible = False
+        MainEventDialogWindow2ResponsePanel.Visible = False
+        MainEventDialogWindow3ResponsePanel.Visible = False
+        MainEventDialogWindow4ResponsePanel.Visible = False
 
         LoadEquipmentItemGUI(gameGuiPath & "EquipmentItem.json")
         openFile = gameGuiPath & "EquipmentItem.json"
@@ -733,6 +799,9 @@ Public Class Form1
         MainEquipmentItemPanel.Visible = False
         MainEquipmentItemPanel.Visible = False
         MainEventDialogWindow1ResponsePanel.Visible = False
+        MainEventDialogWindow2ResponsePanel.Visible = False
+        MainEventDialogWindow3ResponsePanel.Visible = False
+        MainEventDialogWindow4ResponsePanel.Visible = False
 
         LoadEscapeMenuGUI(gameGuiPath & "EscapeMenu.json")
         openFile = gameGuiPath & "EscapeMenu.json"
@@ -764,9 +833,114 @@ Public Class Form1
         MainEquipmentItemPanel.Visible = False
         MainEquipmentItemPanel.Visible = False
         MainEscapeMenuPanel.Visible = False
+        MainEventDialogWindow2ResponsePanel.Visible = False
+        MainEventDialogWindow3ResponsePanel.Visible = False
+        MainEventDialogWindow4ResponsePanel.Visible = False
 
         LoadEventDialogWindow1ResponseGUI(gameGuiPath & "EventDialogWindow_1Response.json")
         openFile = gameGuiPath & "EventDialogWindow_1Response.json"
+    End Sub
+
+    Private Sub EventDialogWindow2ResponseToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EventDialogWindow2ResponseToolStripMenuItem.Click
+        gridoverlay = False
+        guitype = "game"
+        MainLoginWindowPanel.Visible = False
+        MainCharacterCreationPanel.Visible = False
+        MainCharSelectionPanel.Visible = False
+        MainCreditsPanel.Visible = False
+        MainForgotPasswordWindowPanel.Visible = False
+        MainLogoPanel.Visible = False
+        MainInputBoxPanel.Visible = False
+        MainMenuWindowPanel.Visible = False
+        MainOptionsWindowPanel.Visible = False
+        MainRegistrationWindowPanel.Visible = False
+        MainResetPasswordWindowPanel.Visible = False
+        MainServerStatusAreaPanel.Visible = False
+        MainBagItemPanel.Visible = False
+        MainBagWindowPanel.Visible = False
+        MainBankItemPanel.Visible = False
+        MainBankWindowPanel.Visible = False
+        MainCharacterWindowPanel.Visible = False
+        MainChatboxWindowPanel.Visible = False
+        MainCraftedItemPanel.Visible = False
+        MainCraftingWindowPanel.Visible = False
+        MainEquipmentItemPanel.Visible = False
+        MainEquipmentItemPanel.Visible = False
+        MainEscapeMenuPanel.Visible = False
+        MainEventDialogWindow1ResponsePanel.Visible = False
+        MainEventDialogWindow3ResponsePanel.Visible = False
+        MainEventDialogWindow4ResponsePanel.Visible = False
+
+        LoadEventDialogWindow2ResponseGUI(gameGuiPath & "EventDialogWindow_2Responses.json")
+        openFile = gameGuiPath & "EventDialogWindow_2Responses.json"
+    End Sub
+
+    Private Sub EventDialogWindow3ResponseToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EventDialogWindow3ResponseToolStripMenuItem.Click
+        gridoverlay = False
+        guitype = "game"
+        MainLoginWindowPanel.Visible = False
+        MainCharacterCreationPanel.Visible = False
+        MainCharSelectionPanel.Visible = False
+        MainCreditsPanel.Visible = False
+        MainForgotPasswordWindowPanel.Visible = False
+        MainLogoPanel.Visible = False
+        MainInputBoxPanel.Visible = False
+        MainMenuWindowPanel.Visible = False
+        MainOptionsWindowPanel.Visible = False
+        MainRegistrationWindowPanel.Visible = False
+        MainResetPasswordWindowPanel.Visible = False
+        MainServerStatusAreaPanel.Visible = False
+        MainBagItemPanel.Visible = False
+        MainBagWindowPanel.Visible = False
+        MainBankItemPanel.Visible = False
+        MainBankWindowPanel.Visible = False
+        MainCharacterWindowPanel.Visible = False
+        MainChatboxWindowPanel.Visible = False
+        MainCraftedItemPanel.Visible = False
+        MainCraftingWindowPanel.Visible = False
+        MainEquipmentItemPanel.Visible = False
+        MainEquipmentItemPanel.Visible = False
+        MainEscapeMenuPanel.Visible = False
+        MainEventDialogWindow1ResponsePanel.Visible = False
+        MainEventDialogWindow2ResponsePanel.Visible = False
+        MainEventDialogWindow4ResponsePanel.Visible = False
+
+        LoadEventDialogWindow3ResponseGUI(gameGuiPath & "EventDialogWindow_3Responses.json")
+        openFile = gameGuiPath & "EventDialogWindow_3Responses.json"
+    End Sub
+
+    Private Sub EventDialogWindow4ResponseToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EventDialogWindow4ResponseToolStripMenuItem.Click
+        gridoverlay = False
+        guitype = "game"
+        MainLoginWindowPanel.Visible = False
+        MainCharacterCreationPanel.Visible = False
+        MainCharSelectionPanel.Visible = False
+        MainCreditsPanel.Visible = False
+        MainForgotPasswordWindowPanel.Visible = False
+        MainLogoPanel.Visible = False
+        MainInputBoxPanel.Visible = False
+        MainMenuWindowPanel.Visible = False
+        MainOptionsWindowPanel.Visible = False
+        MainRegistrationWindowPanel.Visible = False
+        MainResetPasswordWindowPanel.Visible = False
+        MainServerStatusAreaPanel.Visible = False
+        MainBagItemPanel.Visible = False
+        MainBagWindowPanel.Visible = False
+        MainBankItemPanel.Visible = False
+        MainBankWindowPanel.Visible = False
+        MainCharacterWindowPanel.Visible = False
+        MainChatboxWindowPanel.Visible = False
+        MainCraftedItemPanel.Visible = False
+        MainCraftingWindowPanel.Visible = False
+        MainEquipmentItemPanel.Visible = False
+        MainEquipmentItemPanel.Visible = False
+        MainEscapeMenuPanel.Visible = False
+        MainEventDialogWindow1ResponsePanel.Visible = False
+        MainEventDialogWindow2ResponsePanel.Visible = False
+        MainEventDialogWindow3ResponsePanel.Visible = False
+
+        LoadEventDialogWindow4ResponseGUI(gameGuiPath & "EventDialogWindow_4Responses.json")
+        openFile = gameGuiPath & "EventDialogWindow_4Responses.json"
     End Sub
 
     Private Sub JTokenTreeUserControl1_AfterSelect(sender As Object, e As ZTn.Json.JsonTreeView.AfterSelectEventArgs) Handles JTokenTreeUserControl1.AfterSelect
@@ -846,6 +1020,12 @@ Public Class Form1
                     LoadEscapeMenuGUI(tempPath & "tmp_" & tempFileName & ".json")
                 ElseIf openFile.Contains("EventDialogWindow_1Response") Then
                     LoadEventDialogWindow1ResponseGUI(tempPath & "tmp_" & tempFileName & ".json")
+                ElseIf openFile.Contains("EventDialogWindow_2Responses") Then
+                    LoadEventDialogWindow2ResponseGUI(tempPath & "tmp_" & tempFileName & ".json")
+                ElseIf openFile.Contains("EventDialogWindow_3Responses") Then
+                    LoadEventDialogWindow3ResponseGUI(tempPath & "tmp_" & tempFileName & ".json")
+                ElseIf openFile.Contains("EventDialogWindow_4Responses") Then
+                    LoadEventDialogWindow4ResponseGUI(tempPath & "tmp_" & tempFileName & ".json")
                 End If
             End Using
 
@@ -904,6 +1084,12 @@ Public Class Form1
             LoadEscapeMenuGUI(openFile)
         ElseIf openFile.Contains("EventDialogWindow_1Response") Then
             LoadEventDialogWindow1ResponseGUI(openFile)
+        ElseIf openFile.Contains("EventDialogWindow_2Responses") Then
+            LoadEventDialogWindow2ResponseGUI(openFile)
+        ElseIf openFile.Contains("EventDialogWindow_3Responses") Then
+            LoadEventDialogWindow3ResponseGUI(openFile)
+        ElseIf openFile.Contains("EventDialogWindow_4Responses") Then
+            LoadEventDialogWindow4ResponseGUI(openFile)
         End If
     End Sub
 
@@ -2416,5 +2602,275 @@ Public Class Form1
         Dim infoPull As EventDialogWindow1Resonse
         infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow1Resonse)(fullJson.Text)
         Dialog1Response1Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response1Button.NormalImage)
+    End Sub
+
+    Private Sub Dialog2Response1Button_Click(sender As Object, e As EventArgs) Handles Dialog2Response1Button.Click
+        Dim infoPull As EventDialogWindow2Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow2Resonses)(fullJson.Text)
+        Dialog2Response1Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response1Button.ClickedImage)
+    End Sub
+
+    Private Sub Dialog2Response1Button_MouseDown(sender As Object, e As MouseEventArgs) Handles Dialog2Response1Button.MouseDown
+        Dim infoPull As EventDialogWindow2Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow2Resonses)(fullJson.Text)
+        Dialog2Response1Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response1Button.ClickedImage)
+    End Sub
+
+    Private Sub Dialog2Response1Button_MouseUp(sender As Object, e As MouseEventArgs) Handles Dialog2Response1Button.MouseUp
+        Dim infoPull As EventDialogWindow2Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow2Resonses)(fullJson.Text)
+        Dialog2Response1Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response1Button.HoveredImage)
+    End Sub
+
+    Private Sub Dialog2Response1Button_MouseHover(sender As Object, e As EventArgs) Handles Dialog2Response1Button.MouseHover
+        Dim infoPull As EventDialogWindow2Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow2Resonses)(fullJson.Text)
+        Dialog2Response1Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response1Button.HoveredImage)
+    End Sub
+
+    Private Sub Dialog2Response1Button_MouseLeave(sender As Object, e As EventArgs) Handles Dialog2Response1Button.MouseLeave
+        Dim infoPull As EventDialogWindow2Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow2Resonses)(fullJson.Text)
+        Dialog2Response1Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response1Button.NormalImage)
+    End Sub
+
+    Private Sub Dialog2Response2Button_Click(sender As Object, e As EventArgs) Handles Dialog2Response2Button.Click
+        Dim infoPull As EventDialogWindow2Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow2Resonses)(fullJson.Text)
+        Dialog2Response2Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response2Button.ClickedImage)
+    End Sub
+
+    Private Sub Dialog2Response2Button_MouseDown(sender As Object, e As MouseEventArgs) Handles Dialog2Response2Button.MouseDown
+        Dim infoPull As EventDialogWindow2Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow2Resonses)(fullJson.Text)
+        Dialog2Response2Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response2Button.ClickedImage)
+    End Sub
+
+    Private Sub Dialog2Response2Button_MouseUp(sender As Object, e As MouseEventArgs) Handles Dialog2Response2Button.MouseUp
+        Dim infoPull As EventDialogWindow2Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow2Resonses)(fullJson.Text)
+        Dialog2Response2Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response2Button.HoveredImage)
+    End Sub
+
+    Private Sub Dialog2Response2Button_MouseHover(sender As Object, e As EventArgs) Handles Dialog2Response2Button.MouseHover
+        Dim infoPull As EventDialogWindow2Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow2Resonses)(fullJson.Text)
+        Dialog2Response2Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response2Button.HoveredImage)
+    End Sub
+
+    Private Sub Dialog2Response2Button_MouseLeave(sender As Object, e As EventArgs) Handles Dialog2Response2Button.MouseLeave
+        Dim infoPull As EventDialogWindow2Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow2Resonses)(fullJson.Text)
+        Dialog2Response2Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response2Button.NormalImage)
+    End Sub
+
+    Private Sub Dialog3Response1Button_Click(sender As Object, e As EventArgs) Handles Dialog3Response1Button.Click
+        Dim infoPull As EventDialogWindow3Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow3Resonses)(fullJson.Text)
+        Dialog3Response1Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response1Button.ClickedImage)
+    End Sub
+
+    Private Sub Dialog3Response1Button_MouseDown(sender As Object, e As MouseEventArgs) Handles Dialog3Response1Button.MouseDown
+        Dim infoPull As EventDialogWindow3Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow3Resonses)(fullJson.Text)
+        Dialog3Response1Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response1Button.ClickedImage)
+    End Sub
+
+    Private Sub Dialog3Response1Button_MouseUp(sender As Object, e As MouseEventArgs) Handles Dialog3Response1Button.MouseUp
+        Dim infoPull As EventDialogWindow3Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow3Resonses)(fullJson.Text)
+        Dialog3Response1Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response1Button.HoveredImage)
+    End Sub
+
+    Private Sub Dialog3Response1Button_MouseHover(sender As Object, e As EventArgs) Handles Dialog3Response1Button.MouseHover
+        Dim infoPull As EventDialogWindow3Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow3Resonses)(fullJson.Text)
+        Dialog3Response1Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response1Button.HoveredImage)
+    End Sub
+
+    Private Sub Dialog3Response1Button_MouseLeave(sender As Object, e As EventArgs) Handles Dialog3Response1Button.MouseLeave
+        Dim infoPull As EventDialogWindow3Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow3Resonses)(fullJson.Text)
+        Dialog3Response1Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response1Button.NormalImage)
+    End Sub
+
+    Private Sub Dialog3Response2Button_Click(sender As Object, e As EventArgs) Handles Dialog3Response2Button.Click
+        Dim infoPull As EventDialogWindow3Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow3Resonses)(fullJson.Text)
+        Dialog3Response2Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response2Button.ClickedImage)
+    End Sub
+
+    Private Sub Dialog3Response2Button_MouseDown(sender As Object, e As MouseEventArgs) Handles Dialog3Response2Button.MouseDown
+        Dim infoPull As EventDialogWindow3Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow3Resonses)(fullJson.Text)
+        Dialog3Response2Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response2Button.ClickedImage)
+    End Sub
+
+    Private Sub Dialog3Response2Button_MouseUp(sender As Object, e As MouseEventArgs) Handles Dialog3Response2Button.MouseUp
+        Dim infoPull As EventDialogWindow3Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow3Resonses)(fullJson.Text)
+        Dialog3Response2Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response2Button.HoveredImage)
+    End Sub
+
+    Private Sub Dialog3Response2Button_MouseHover(sender As Object, e As EventArgs) Handles Dialog3Response2Button.MouseHover
+        Dim infoPull As EventDialogWindow3Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow3Resonses)(fullJson.Text)
+        Dialog3Response2Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response2Button.HoveredImage)
+    End Sub
+
+    Private Sub Dialog3Response2Button_MouseLeave(sender As Object, e As EventArgs) Handles Dialog3Response2Button.MouseLeave
+        Dim infoPull As EventDialogWindow3Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow3Resonses)(fullJson.Text)
+        Dialog3Response2Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response2Button.NormalImage)
+    End Sub
+
+    Private Sub Dialog3Response3Button_Click(sender As Object, e As EventArgs) Handles Dialog3Response3Button.Click
+        Dim infoPull As EventDialogWindow3Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow3Resonses)(fullJson.Text)
+        Dialog3Response3Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response3Button.ClickedImage)
+    End Sub
+
+    Private Sub Dialog3Response3Button_MouseDown(sender As Object, e As MouseEventArgs) Handles Dialog3Response3Button.MouseDown
+        Dim infoPull As EventDialogWindow3Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow3Resonses)(fullJson.Text)
+        Dialog3Response3Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response3Button.ClickedImage)
+    End Sub
+
+    Private Sub Dialog3Response3Button_MouseUp(sender As Object, e As MouseEventArgs) Handles Dialog3Response3Button.MouseUp
+        Dim infoPull As EventDialogWindow3Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow3Resonses)(fullJson.Text)
+        Dialog3Response3Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response3Button.HoveredImage)
+    End Sub
+
+    Private Sub Dialog3Response3Button_MouseHover(sender As Object, e As EventArgs) Handles Dialog3Response3Button.MouseHover
+        Dim infoPull As EventDialogWindow3Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow3Resonses)(fullJson.Text)
+        Dialog3Response3Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response3Button.HoveredImage)
+    End Sub
+
+    Private Sub Dialog3Response3Button_MouseLeave(sender As Object, e As EventArgs) Handles Dialog3Response3Button.MouseLeave
+        Dim infoPull As EventDialogWindow3Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow3Resonses)(fullJson.Text)
+        Dialog3Response3Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response3Button.NormalImage)
+    End Sub
+
+    Private Sub Dialog4Response1Button_Click(sender As Object, e As EventArgs) Handles Dialog4Response1Button.Click
+        Dim infoPull As EventDialogWindow4Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow4Resonses)(fullJson.Text)
+        Dialog4Response1Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response1Button.NormalImage)
+    End Sub
+
+    Private Sub Dialog4Response1Button_MouseDown(sender As Object, e As MouseEventArgs) Handles Dialog4Response1Button.MouseDown
+        Dim infoPull As EventDialogWindow4Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow4Resonses)(fullJson.Text)
+        Dialog4Response1Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response1Button.NormalImage)
+    End Sub
+
+    Private Sub Dialog4Response1Button_MouseUp(sender As Object, e As MouseEventArgs) Handles Dialog4Response1Button.MouseUp
+        Dim infoPull As EventDialogWindow4Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow4Resonses)(fullJson.Text)
+        Dialog4Response1Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response1Button.NormalImage)
+    End Sub
+
+    Private Sub Dialog4Response1Button_MouseHover(sender As Object, e As EventArgs) Handles Dialog4Response1Button.MouseHover
+        Dim infoPull As EventDialogWindow4Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow4Resonses)(fullJson.Text)
+        Dialog4Response1Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response1Button.NormalImage)
+    End Sub
+
+    Private Sub Dialog4Response1Button_MouseLeave(sender As Object, e As EventArgs) Handles Dialog4Response1Button.MouseLeave
+        Dim infoPull As EventDialogWindow4Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow4Resonses)(fullJson.Text)
+        Dialog4Response1Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response1Button.NormalImage)
+    End Sub
+
+    Private Sub Dialog4Response2Button_Click(sender As Object, e As EventArgs) Handles Dialog4Response2Button.Click
+        Dim infoPull As EventDialogWindow4Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow4Resonses)(fullJson.Text)
+        Dialog4Response2Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response2Button.ClickedImage)
+    End Sub
+
+    Private Sub Dialog4Response2Button_MouseDown(sender As Object, e As MouseEventArgs) Handles Dialog4Response2Button.MouseDown
+        Dim infoPull As EventDialogWindow4Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow4Resonses)(fullJson.Text)
+        Dialog4Response2Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response2Button.ClickedImage)
+    End Sub
+
+    Private Sub Dialog4Response2Button_MouseUp(sender As Object, e As MouseEventArgs) Handles Dialog4Response2Button.MouseUp
+        Dim infoPull As EventDialogWindow4Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow4Resonses)(fullJson.Text)
+        Dialog4Response2Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response2Button.HoveredImage)
+    End Sub
+
+    Private Sub Dialog4Response2Button_MouseHover(sender As Object, e As EventArgs) Handles Dialog4Response2Button.MouseHover
+        Dim infoPull As EventDialogWindow4Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow4Resonses)(fullJson.Text)
+        Dialog4Response2Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response2Button.HoveredImage)
+    End Sub
+
+    Private Sub Dialog4Response2Button_MouseLeave(sender As Object, e As EventArgs) Handles Dialog4Response2Button.MouseLeave
+        Dim infoPull As EventDialogWindow4Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow4Resonses)(fullJson.Text)
+        Dialog4Response2Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response2Button.NormalImage)
+    End Sub
+
+    Private Sub Dialog4Response3Button_Click(sender As Object, e As EventArgs) Handles Dialog4Response3Button.Click
+        Dim infoPull As EventDialogWindow4Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow4Resonses)(fullJson.Text)
+        Dialog4Response3Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response3Button.ClickedImage)
+    End Sub
+
+    Private Sub Dialog4Response3Button_MouseDown(sender As Object, e As MouseEventArgs) Handles Dialog4Response3Button.MouseDown
+        Dim infoPull As EventDialogWindow4Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow4Resonses)(fullJson.Text)
+        Dialog4Response3Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response3Button.ClickedImage)
+    End Sub
+
+    Private Sub Dialog4Response3Button_MouseUp(sender As Object, e As MouseEventArgs) Handles Dialog4Response3Button.MouseUp
+        Dim infoPull As EventDialogWindow4Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow4Resonses)(fullJson.Text)
+        Dialog4Response3Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response3Button.HoveredImage)
+    End Sub
+
+    Private Sub Dialog4Response3Button_MouseHover(sender As Object, e As EventArgs) Handles Dialog4Response3Button.MouseHover
+        Dim infoPull As EventDialogWindow4Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow4Resonses)(fullJson.Text)
+        Dialog4Response3Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response3Button.HoveredImage)
+    End Sub
+
+    Private Sub Dialog4Response3Button_MouseLeave(sender As Object, e As EventArgs) Handles Dialog4Response3Button.MouseLeave
+        Dim infoPull As EventDialogWindow4Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow4Resonses)(fullJson.Text)
+        Dialog4Response3Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response3Button.NormalImage)
+    End Sub
+
+    Private Sub Dialog4Response4Button_Click(sender As Object, e As EventArgs) Handles Dialog4Response4Button.Click
+        Dim infoPull As EventDialogWindow4Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow4Resonses)(fullJson.Text)
+        Dialog4Response4Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response4Button.ClickedImage)
+    End Sub
+
+    Private Sub Dialog4Response4Button_MouseDown(sender As Object, e As MouseEventArgs) Handles Dialog4Response4Button.MouseDown
+        Dim infoPull As EventDialogWindow4Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow4Resonses)(fullJson.Text)
+        Dialog4Response4Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response4Button.ClickedImage)
+    End Sub
+
+    Private Sub Dialog4Response4Button_MouseUp(sender As Object, e As MouseEventArgs) Handles Dialog4Response4Button.MouseUp
+        Dim infoPull As EventDialogWindow4Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow4Resonses)(fullJson.Text)
+        Dialog4Response4Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response4Button.HoveredImage)
+    End Sub
+
+    Private Sub Dialog4Response4Button_MouseHover(sender As Object, e As EventArgs) Handles Dialog4Response4Button.MouseHover
+        Dim infoPull As EventDialogWindow4Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow4Resonses)(fullJson.Text)
+        Dialog4Response4Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response4Button.HoveredImage)
+    End Sub
+
+    Private Sub Dialog4Response4Button_MouseLeave(sender As Object, e As EventArgs) Handles Dialog4Response4Button.MouseLeave
+        Dim infoPull As EventDialogWindow4Resonses
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow4Resonses)(fullJson.Text)
+        Dialog4Response4Button.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.Children.Response4Button.NormalImage)
     End Sub
 End Class

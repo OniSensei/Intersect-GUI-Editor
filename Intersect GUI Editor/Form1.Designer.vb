@@ -35,6 +35,30 @@ Partial Class Form1
         Me.jsonType = New System.Windows.Forms.TextBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.fullJson = New System.Windows.Forms.RichTextBox()
+        Me.MainEventDialogWindow4ResponsePanel = New System.Windows.Forms.Panel()
+        Me.Dialog4Response4Button = New System.Windows.Forms.PictureBox()
+        Me.Dialog4Response3Button = New System.Windows.Forms.PictureBox()
+        Me.Dialog4Response2Button = New System.Windows.Forms.PictureBox()
+        Me.Dialog4EventDialogArea = New System.Windows.Forms.Panel()
+        Me.Dialog4EventDialogAreaInnerPanel = New System.Windows.Forms.Panel()
+        Me.Dialog4EventDialogLabel = New System.Windows.Forms.Label()
+        Me.Dialog4Response1Button = New System.Windows.Forms.PictureBox()
+        Me.Dialog4EventFacePanel = New System.Windows.Forms.Panel()
+        Me.MainEventDialogWindow3ResponsePanel = New System.Windows.Forms.Panel()
+        Me.Dialog3Response3Button = New System.Windows.Forms.PictureBox()
+        Me.Dialog3Response2Button = New System.Windows.Forms.PictureBox()
+        Me.Dialog3EventDialogArea = New System.Windows.Forms.Panel()
+        Me.Dialog3EventDialogAreaInnerPanel = New System.Windows.Forms.Panel()
+        Me.Dialog3EventDialogLabel = New System.Windows.Forms.Label()
+        Me.Dialog3Response1Button = New System.Windows.Forms.PictureBox()
+        Me.Dialog3EventFacePanel = New System.Windows.Forms.Panel()
+        Me.MainEventDialogWindow2ResponsePanel = New System.Windows.Forms.Panel()
+        Me.Dialog2Response2Button = New System.Windows.Forms.PictureBox()
+        Me.Dialog2EventDialogArea = New System.Windows.Forms.Panel()
+        Me.Dialog2EventDialogAreaInnerPanel = New System.Windows.Forms.Panel()
+        Me.Dialog2EventDialogLabel = New System.Windows.Forms.Label()
+        Me.Dialog2Response1Button = New System.Windows.Forms.PictureBox()
+        Me.Dialog2EventFacePanel = New System.Windows.Forms.Panel()
         Me.MainEventDialogWindow1ResponsePanel = New System.Windows.Forms.Panel()
         Me.Dialog1EventDialogArea = New System.Windows.Forms.Panel()
         Me.Dialog1EventDialogAreaInnerPanel = New System.Windows.Forms.Panel()
@@ -317,6 +341,10 @@ Partial Class Form1
         Me.RefreshBtn = New System.Windows.Forms.ToolStripMenuItem()
         Me.gridToggle = New System.Windows.Forms.ToolStripMenuItem()
         Me.AppSettings = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         CType(Me.mainSplitContainer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.mainSplitContainer.Panel1.SuspendLayout()
         Me.mainSplitContainer.Panel2.SuspendLayout()
@@ -332,6 +360,24 @@ Partial Class Form1
         Me.SplitContainer1.Panel2.SuspendLayout()
         Me.SplitContainer1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
+        Me.MainEventDialogWindow4ResponsePanel.SuspendLayout()
+        CType(Me.Dialog4Response4Button, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Dialog4Response3Button, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Dialog4Response2Button, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Dialog4EventDialogArea.SuspendLayout()
+        Me.Dialog4EventDialogAreaInnerPanel.SuspendLayout()
+        CType(Me.Dialog4Response1Button, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MainEventDialogWindow3ResponsePanel.SuspendLayout()
+        CType(Me.Dialog3Response3Button, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Dialog3Response2Button, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Dialog3EventDialogArea.SuspendLayout()
+        Me.Dialog3EventDialogAreaInnerPanel.SuspendLayout()
+        CType(Me.Dialog3Response1Button, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MainEventDialogWindow2ResponsePanel.SuspendLayout()
+        CType(Me.Dialog2Response2Button, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Dialog2EventDialogArea.SuspendLayout()
+        Me.Dialog2EventDialogAreaInnerPanel.SuspendLayout()
+        CType(Me.Dialog2Response1Button, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MainEventDialogWindow1ResponsePanel.SuspendLayout()
         Me.Dialog1EventDialogArea.SuspendLayout()
         Me.Dialog1EventDialogAreaInnerPanel.SuspendLayout()
@@ -483,6 +529,9 @@ Partial Class Form1
         CType(Me.UsernameFieldPB, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.StatusStrip1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
+        Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'mainSplitContainer
@@ -516,6 +565,10 @@ Partial Class Form1
         'toolSplitContainer.Panel2
         '
         Me.toolSplitContainer.Panel2.AutoScroll = True
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.Panel1)
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainEventDialogWindow4ResponsePanel)
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainEventDialogWindow3ResponsePanel)
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainEventDialogWindow2ResponsePanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainEventDialogWindow1ResponsePanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainEscapeMenuPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainEquipmentItemPanel)
@@ -663,6 +716,276 @@ Partial Class Form1
         Me.fullJson.Size = New System.Drawing.Size(268, 575)
         Me.fullJson.TabIndex = 0
         Me.fullJson.Text = ""
+        '
+        'MainEventDialogWindow4ResponsePanel
+        '
+        Me.MainEventDialogWindow4ResponsePanel.BackgroundImage = CType(resources.GetObject("MainEventDialogWindow4ResponsePanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainEventDialogWindow4ResponsePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainEventDialogWindow4ResponsePanel.Controls.Add(Me.Dialog4Response4Button)
+        Me.MainEventDialogWindow4ResponsePanel.Controls.Add(Me.Dialog4Response3Button)
+        Me.MainEventDialogWindow4ResponsePanel.Controls.Add(Me.Dialog4Response2Button)
+        Me.MainEventDialogWindow4ResponsePanel.Controls.Add(Me.Dialog4EventDialogArea)
+        Me.MainEventDialogWindow4ResponsePanel.Controls.Add(Me.Dialog4Response1Button)
+        Me.MainEventDialogWindow4ResponsePanel.Controls.Add(Me.Dialog4EventFacePanel)
+        Me.MainEventDialogWindow4ResponsePanel.Location = New System.Drawing.Point(1508, 807)
+        Me.MainEventDialogWindow4ResponsePanel.Name = "MainEventDialogWindow4ResponsePanel"
+        Me.MainEventDialogWindow4ResponsePanel.Size = New System.Drawing.Size(520, 300)
+        Me.MainEventDialogWindow4ResponsePanel.TabIndex = 36
+        Me.MainEventDialogWindow4ResponsePanel.Visible = False
+        '
+        'Dialog4Response4Button
+        '
+        Me.Dialog4Response4Button.BackColor = System.Drawing.Color.Transparent
+        Me.Dialog4Response4Button.BackgroundImage = CType(resources.GetObject("Dialog4Response4Button.BackgroundImage"), System.Drawing.Image)
+        Me.Dialog4Response4Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Dialog4Response4Button.Location = New System.Drawing.Point(12, 242)
+        Me.Dialog4Response4Button.Name = "Dialog4Response4Button"
+        Me.Dialog4Response4Button.Size = New System.Drawing.Size(496, 44)
+        Me.Dialog4Response4Button.TabIndex = 22
+        Me.Dialog4Response4Button.TabStop = False
+        '
+        'Dialog4Response3Button
+        '
+        Me.Dialog4Response3Button.BackColor = System.Drawing.Color.Transparent
+        Me.Dialog4Response3Button.BackgroundImage = CType(resources.GetObject("Dialog4Response3Button.BackgroundImage"), System.Drawing.Image)
+        Me.Dialog4Response3Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Dialog4Response3Button.Location = New System.Drawing.Point(12, 197)
+        Me.Dialog4Response3Button.Name = "Dialog4Response3Button"
+        Me.Dialog4Response3Button.Size = New System.Drawing.Size(496, 44)
+        Me.Dialog4Response3Button.TabIndex = 21
+        Me.Dialog4Response3Button.TabStop = False
+        '
+        'Dialog4Response2Button
+        '
+        Me.Dialog4Response2Button.BackColor = System.Drawing.Color.Transparent
+        Me.Dialog4Response2Button.BackgroundImage = CType(resources.GetObject("Dialog4Response2Button.BackgroundImage"), System.Drawing.Image)
+        Me.Dialog4Response2Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Dialog4Response2Button.Location = New System.Drawing.Point(12, 152)
+        Me.Dialog4Response2Button.Name = "Dialog4Response2Button"
+        Me.Dialog4Response2Button.Size = New System.Drawing.Size(496, 44)
+        Me.Dialog4Response2Button.TabIndex = 20
+        Me.Dialog4Response2Button.TabStop = False
+        '
+        'Dialog4EventDialogArea
+        '
+        Me.Dialog4EventDialogArea.BackColor = System.Drawing.Color.Transparent
+        Me.Dialog4EventDialogArea.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Dialog4EventDialogArea.Controls.Add(Me.Dialog4EventDialogAreaInnerPanel)
+        Me.Dialog4EventDialogArea.Location = New System.Drawing.Point(106, 14)
+        Me.Dialog4EventDialogArea.Name = "Dialog4EventDialogArea"
+        Me.Dialog4EventDialogArea.Size = New System.Drawing.Size(402, 80)
+        Me.Dialog4EventDialogArea.TabIndex = 19
+        '
+        'Dialog4EventDialogAreaInnerPanel
+        '
+        Me.Dialog4EventDialogAreaInnerPanel.BackColor = System.Drawing.Color.Transparent
+        Me.Dialog4EventDialogAreaInnerPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Dialog4EventDialogAreaInnerPanel.Controls.Add(Me.Dialog4EventDialogLabel)
+        Me.Dialog4EventDialogAreaInnerPanel.Location = New System.Drawing.Point(0, 0)
+        Me.Dialog4EventDialogAreaInnerPanel.Name = "Dialog4EventDialogAreaInnerPanel"
+        Me.Dialog4EventDialogAreaInnerPanel.Size = New System.Drawing.Size(387, 900)
+        Me.Dialog4EventDialogAreaInnerPanel.TabIndex = 20
+        '
+        'Dialog4EventDialogLabel
+        '
+        Me.Dialog4EventDialogLabel.AutoSize = True
+        Me.Dialog4EventDialogLabel.BackColor = System.Drawing.Color.Transparent
+        Me.Dialog4EventDialogLabel.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Dialog4EventDialogLabel.ForeColor = System.Drawing.Color.White
+        Me.Dialog4EventDialogLabel.Location = New System.Drawing.Point(0, 0)
+        Me.Dialog4EventDialogLabel.Name = "Dialog4EventDialogLabel"
+        Me.Dialog4EventDialogLabel.Size = New System.Drawing.Size(102, 17)
+        Me.Dialog4EventDialogLabel.TabIndex = 22
+        Me.Dialog4EventDialogLabel.Text = "EventDialogLabel"
+        '
+        'Dialog4Response1Button
+        '
+        Me.Dialog4Response1Button.BackColor = System.Drawing.Color.Transparent
+        Me.Dialog4Response1Button.BackgroundImage = CType(resources.GetObject("Dialog4Response1Button.BackgroundImage"), System.Drawing.Image)
+        Me.Dialog4Response1Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Dialog4Response1Button.Location = New System.Drawing.Point(12, 107)
+        Me.Dialog4Response1Button.Name = "Dialog4Response1Button"
+        Me.Dialog4Response1Button.Size = New System.Drawing.Size(496, 44)
+        Me.Dialog4Response1Button.TabIndex = 18
+        Me.Dialog4Response1Button.TabStop = False
+        '
+        'Dialog4EventFacePanel
+        '
+        Me.Dialog4EventFacePanel.BackColor = System.Drawing.Color.Transparent
+        Me.Dialog4EventFacePanel.BackgroundImage = CType(resources.GetObject("Dialog4EventFacePanel.BackgroundImage"), System.Drawing.Image)
+        Me.Dialog4EventFacePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Dialog4EventFacePanel.Location = New System.Drawing.Point(16, 14)
+        Me.Dialog4EventFacePanel.Name = "Dialog4EventFacePanel"
+        Me.Dialog4EventFacePanel.Size = New System.Drawing.Size(80, 80)
+        Me.Dialog4EventFacePanel.TabIndex = 7
+        '
+        'MainEventDialogWindow3ResponsePanel
+        '
+        Me.MainEventDialogWindow3ResponsePanel.BackgroundImage = CType(resources.GetObject("MainEventDialogWindow3ResponsePanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainEventDialogWindow3ResponsePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainEventDialogWindow3ResponsePanel.Controls.Add(Me.Dialog3Response3Button)
+        Me.MainEventDialogWindow3ResponsePanel.Controls.Add(Me.Dialog3Response2Button)
+        Me.MainEventDialogWindow3ResponsePanel.Controls.Add(Me.Dialog3EventDialogArea)
+        Me.MainEventDialogWindow3ResponsePanel.Controls.Add(Me.Dialog3Response1Button)
+        Me.MainEventDialogWindow3ResponsePanel.Controls.Add(Me.Dialog3EventFacePanel)
+        Me.MainEventDialogWindow3ResponsePanel.Location = New System.Drawing.Point(1508, 547)
+        Me.MainEventDialogWindow3ResponsePanel.Name = "MainEventDialogWindow3ResponsePanel"
+        Me.MainEventDialogWindow3ResponsePanel.Size = New System.Drawing.Size(520, 254)
+        Me.MainEventDialogWindow3ResponsePanel.TabIndex = 35
+        Me.MainEventDialogWindow3ResponsePanel.Visible = False
+        '
+        'Dialog3Response3Button
+        '
+        Me.Dialog3Response3Button.BackColor = System.Drawing.Color.Transparent
+        Me.Dialog3Response3Button.BackgroundImage = CType(resources.GetObject("Dialog3Response3Button.BackgroundImage"), System.Drawing.Image)
+        Me.Dialog3Response3Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Dialog3Response3Button.Location = New System.Drawing.Point(12, 197)
+        Me.Dialog3Response3Button.Name = "Dialog3Response3Button"
+        Me.Dialog3Response3Button.Size = New System.Drawing.Size(496, 44)
+        Me.Dialog3Response3Button.TabIndex = 21
+        Me.Dialog3Response3Button.TabStop = False
+        '
+        'Dialog3Response2Button
+        '
+        Me.Dialog3Response2Button.BackColor = System.Drawing.Color.Transparent
+        Me.Dialog3Response2Button.BackgroundImage = CType(resources.GetObject("Dialog3Response2Button.BackgroundImage"), System.Drawing.Image)
+        Me.Dialog3Response2Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Dialog3Response2Button.Location = New System.Drawing.Point(12, 152)
+        Me.Dialog3Response2Button.Name = "Dialog3Response2Button"
+        Me.Dialog3Response2Button.Size = New System.Drawing.Size(496, 44)
+        Me.Dialog3Response2Button.TabIndex = 20
+        Me.Dialog3Response2Button.TabStop = False
+        '
+        'Dialog3EventDialogArea
+        '
+        Me.Dialog3EventDialogArea.BackColor = System.Drawing.Color.Transparent
+        Me.Dialog3EventDialogArea.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Dialog3EventDialogArea.Controls.Add(Me.Dialog3EventDialogAreaInnerPanel)
+        Me.Dialog3EventDialogArea.Location = New System.Drawing.Point(106, 14)
+        Me.Dialog3EventDialogArea.Name = "Dialog3EventDialogArea"
+        Me.Dialog3EventDialogArea.Size = New System.Drawing.Size(402, 80)
+        Me.Dialog3EventDialogArea.TabIndex = 19
+        '
+        'Dialog3EventDialogAreaInnerPanel
+        '
+        Me.Dialog3EventDialogAreaInnerPanel.BackColor = System.Drawing.Color.Transparent
+        Me.Dialog3EventDialogAreaInnerPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Dialog3EventDialogAreaInnerPanel.Controls.Add(Me.Dialog3EventDialogLabel)
+        Me.Dialog3EventDialogAreaInnerPanel.Location = New System.Drawing.Point(0, 0)
+        Me.Dialog3EventDialogAreaInnerPanel.Name = "Dialog3EventDialogAreaInnerPanel"
+        Me.Dialog3EventDialogAreaInnerPanel.Size = New System.Drawing.Size(387, 900)
+        Me.Dialog3EventDialogAreaInnerPanel.TabIndex = 20
+        '
+        'Dialog3EventDialogLabel
+        '
+        Me.Dialog3EventDialogLabel.AutoSize = True
+        Me.Dialog3EventDialogLabel.BackColor = System.Drawing.Color.Transparent
+        Me.Dialog3EventDialogLabel.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Dialog3EventDialogLabel.ForeColor = System.Drawing.Color.White
+        Me.Dialog3EventDialogLabel.Location = New System.Drawing.Point(0, 0)
+        Me.Dialog3EventDialogLabel.Name = "Dialog3EventDialogLabel"
+        Me.Dialog3EventDialogLabel.Size = New System.Drawing.Size(102, 17)
+        Me.Dialog3EventDialogLabel.TabIndex = 22
+        Me.Dialog3EventDialogLabel.Text = "EventDialogLabel"
+        '
+        'Dialog3Response1Button
+        '
+        Me.Dialog3Response1Button.BackColor = System.Drawing.Color.Transparent
+        Me.Dialog3Response1Button.BackgroundImage = CType(resources.GetObject("Dialog3Response1Button.BackgroundImage"), System.Drawing.Image)
+        Me.Dialog3Response1Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Dialog3Response1Button.Location = New System.Drawing.Point(12, 107)
+        Me.Dialog3Response1Button.Name = "Dialog3Response1Button"
+        Me.Dialog3Response1Button.Size = New System.Drawing.Size(496, 44)
+        Me.Dialog3Response1Button.TabIndex = 18
+        Me.Dialog3Response1Button.TabStop = False
+        '
+        'Dialog3EventFacePanel
+        '
+        Me.Dialog3EventFacePanel.BackColor = System.Drawing.Color.Transparent
+        Me.Dialog3EventFacePanel.BackgroundImage = CType(resources.GetObject("Dialog3EventFacePanel.BackgroundImage"), System.Drawing.Image)
+        Me.Dialog3EventFacePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Dialog3EventFacePanel.Location = New System.Drawing.Point(16, 14)
+        Me.Dialog3EventFacePanel.Name = "Dialog3EventFacePanel"
+        Me.Dialog3EventFacePanel.Size = New System.Drawing.Size(80, 80)
+        Me.Dialog3EventFacePanel.TabIndex = 7
+        '
+        'MainEventDialogWindow2ResponsePanel
+        '
+        Me.MainEventDialogWindow2ResponsePanel.BackgroundImage = CType(resources.GetObject("MainEventDialogWindow2ResponsePanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainEventDialogWindow2ResponsePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainEventDialogWindow2ResponsePanel.Controls.Add(Me.Dialog2Response2Button)
+        Me.MainEventDialogWindow2ResponsePanel.Controls.Add(Me.Dialog2EventDialogArea)
+        Me.MainEventDialogWindow2ResponsePanel.Controls.Add(Me.Dialog2Response1Button)
+        Me.MainEventDialogWindow2ResponsePanel.Controls.Add(Me.Dialog2EventFacePanel)
+        Me.MainEventDialogWindow2ResponsePanel.Location = New System.Drawing.Point(1508, 336)
+        Me.MainEventDialogWindow2ResponsePanel.Name = "MainEventDialogWindow2ResponsePanel"
+        Me.MainEventDialogWindow2ResponsePanel.Size = New System.Drawing.Size(520, 208)
+        Me.MainEventDialogWindow2ResponsePanel.TabIndex = 34
+        Me.MainEventDialogWindow2ResponsePanel.Visible = False
+        '
+        'Dialog2Response2Button
+        '
+        Me.Dialog2Response2Button.BackColor = System.Drawing.Color.Transparent
+        Me.Dialog2Response2Button.BackgroundImage = CType(resources.GetObject("Dialog2Response2Button.BackgroundImage"), System.Drawing.Image)
+        Me.Dialog2Response2Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Dialog2Response2Button.Location = New System.Drawing.Point(12, 152)
+        Me.Dialog2Response2Button.Name = "Dialog2Response2Button"
+        Me.Dialog2Response2Button.Size = New System.Drawing.Size(496, 44)
+        Me.Dialog2Response2Button.TabIndex = 20
+        Me.Dialog2Response2Button.TabStop = False
+        '
+        'Dialog2EventDialogArea
+        '
+        Me.Dialog2EventDialogArea.BackColor = System.Drawing.Color.Transparent
+        Me.Dialog2EventDialogArea.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Dialog2EventDialogArea.Controls.Add(Me.Dialog2EventDialogAreaInnerPanel)
+        Me.Dialog2EventDialogArea.Location = New System.Drawing.Point(106, 14)
+        Me.Dialog2EventDialogArea.Name = "Dialog2EventDialogArea"
+        Me.Dialog2EventDialogArea.Size = New System.Drawing.Size(402, 80)
+        Me.Dialog2EventDialogArea.TabIndex = 19
+        '
+        'Dialog2EventDialogAreaInnerPanel
+        '
+        Me.Dialog2EventDialogAreaInnerPanel.BackColor = System.Drawing.Color.Transparent
+        Me.Dialog2EventDialogAreaInnerPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Dialog2EventDialogAreaInnerPanel.Controls.Add(Me.Dialog2EventDialogLabel)
+        Me.Dialog2EventDialogAreaInnerPanel.Location = New System.Drawing.Point(0, 0)
+        Me.Dialog2EventDialogAreaInnerPanel.Name = "Dialog2EventDialogAreaInnerPanel"
+        Me.Dialog2EventDialogAreaInnerPanel.Size = New System.Drawing.Size(387, 900)
+        Me.Dialog2EventDialogAreaInnerPanel.TabIndex = 20
+        '
+        'Dialog2EventDialogLabel
+        '
+        Me.Dialog2EventDialogLabel.AutoSize = True
+        Me.Dialog2EventDialogLabel.BackColor = System.Drawing.Color.Transparent
+        Me.Dialog2EventDialogLabel.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Dialog2EventDialogLabel.ForeColor = System.Drawing.Color.White
+        Me.Dialog2EventDialogLabel.Location = New System.Drawing.Point(0, 0)
+        Me.Dialog2EventDialogLabel.Name = "Dialog2EventDialogLabel"
+        Me.Dialog2EventDialogLabel.Size = New System.Drawing.Size(102, 17)
+        Me.Dialog2EventDialogLabel.TabIndex = 22
+        Me.Dialog2EventDialogLabel.Text = "EventDialogLabel"
+        '
+        'Dialog2Response1Button
+        '
+        Me.Dialog2Response1Button.BackColor = System.Drawing.Color.Transparent
+        Me.Dialog2Response1Button.BackgroundImage = CType(resources.GetObject("Dialog2Response1Button.BackgroundImage"), System.Drawing.Image)
+        Me.Dialog2Response1Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Dialog2Response1Button.Location = New System.Drawing.Point(12, 107)
+        Me.Dialog2Response1Button.Name = "Dialog2Response1Button"
+        Me.Dialog2Response1Button.Size = New System.Drawing.Size(496, 44)
+        Me.Dialog2Response1Button.TabIndex = 18
+        Me.Dialog2Response1Button.TabStop = False
+        '
+        'Dialog2EventFacePanel
+        '
+        Me.Dialog2EventFacePanel.BackColor = System.Drawing.Color.Transparent
+        Me.Dialog2EventFacePanel.BackgroundImage = CType(resources.GetObject("Dialog2EventFacePanel.BackgroundImage"), System.Drawing.Image)
+        Me.Dialog2EventFacePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Dialog2EventFacePanel.Location = New System.Drawing.Point(16, 14)
+        Me.Dialog2EventFacePanel.Name = "Dialog2EventFacePanel"
+        Me.Dialog2EventFacePanel.Size = New System.Drawing.Size(80, 80)
+        Me.Dialog2EventFacePanel.TabIndex = 7
         '
         'MainEventDialogWindow1ResponsePanel
         '
@@ -3245,247 +3568,247 @@ Partial Class Form1
         'BagItemToolStripMenuItem
         '
         Me.BagItemToolStripMenuItem.Name = "BagItemToolStripMenuItem"
-        Me.BagItemToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.BagItemToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.BagItemToolStripMenuItem.Text = "BagItem"
         '
         'BagWindowToolStripMenuItem
         '
         Me.BagWindowToolStripMenuItem.Name = "BagWindowToolStripMenuItem"
-        Me.BagWindowToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.BagWindowToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.BagWindowToolStripMenuItem.Text = "BagWindow"
         '
         'BankItemToolStripMenuItem
         '
         Me.BankItemToolStripMenuItem.Name = "BankItemToolStripMenuItem"
-        Me.BankItemToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.BankItemToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.BankItemToolStripMenuItem.Text = "BankItem"
         '
         'BankWindowToolStripMenuItem
         '
         Me.BankWindowToolStripMenuItem.Name = "BankWindowToolStripMenuItem"
-        Me.BankWindowToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.BankWindowToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.BankWindowToolStripMenuItem.Text = "BankWindow"
         '
         'CharacterWindowToolStripMenuItem
         '
         Me.CharacterWindowToolStripMenuItem.Name = "CharacterWindowToolStripMenuItem"
-        Me.CharacterWindowToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.CharacterWindowToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.CharacterWindowToolStripMenuItem.Text = "CharacterWindow"
         '
         'ChatboxWindowToolStripMenuItem
         '
         Me.ChatboxWindowToolStripMenuItem.Name = "ChatboxWindowToolStripMenuItem"
-        Me.ChatboxWindowToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.ChatboxWindowToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.ChatboxWindowToolStripMenuItem.Text = "ChatboxWindow"
         '
         'CraftedItemToolStripMenuItem
         '
         Me.CraftedItemToolStripMenuItem.Name = "CraftedItemToolStripMenuItem"
-        Me.CraftedItemToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.CraftedItemToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.CraftedItemToolStripMenuItem.Text = "CraftedItem"
         '
         'CraftingIngredientToolStripMenuItem
         '
         Me.CraftingIngredientToolStripMenuItem.Name = "CraftingIngredientToolStripMenuItem"
-        Me.CraftingIngredientToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.CraftingIngredientToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.CraftingIngredientToolStripMenuItem.Text = "CraftingIngredient"
         '
         'CraftingWindowToolStripMenuItem
         '
         Me.CraftingWindowToolStripMenuItem.Name = "CraftingWindowToolStripMenuItem"
-        Me.CraftingWindowToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.CraftingWindowToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.CraftingWindowToolStripMenuItem.Text = "CraftingWindow"
         '
         'DraggableToolStripMenuItem
         '
         Me.DraggableToolStripMenuItem.Name = "DraggableToolStripMenuItem"
-        Me.DraggableToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.DraggableToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.DraggableToolStripMenuItem.Text = "Draggable"
         '
         'EquipmentItemToolStripMenuItem
         '
         Me.EquipmentItemToolStripMenuItem.Name = "EquipmentItemToolStripMenuItem"
-        Me.EquipmentItemToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.EquipmentItemToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.EquipmentItemToolStripMenuItem.Text = "EquipmentItem"
         '
         'EscapeMenuToolStripMenuItem
         '
         Me.EscapeMenuToolStripMenuItem.Name = "EscapeMenuToolStripMenuItem"
-        Me.EscapeMenuToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.EscapeMenuToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.EscapeMenuToolStripMenuItem.Text = "EscapeMenu"
         '
         'EventDialogWindow1ResponseToolStripMenuItem
         '
         Me.EventDialogWindow1ResponseToolStripMenuItem.Name = "EventDialogWindow1ResponseToolStripMenuItem"
-        Me.EventDialogWindow1ResponseToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.EventDialogWindow1ResponseToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.EventDialogWindow1ResponseToolStripMenuItem.Text = "EventDialogWindow_1Response"
         '
         'EventDialogWindow2ResponseToolStripMenuItem
         '
         Me.EventDialogWindow2ResponseToolStripMenuItem.Name = "EventDialogWindow2ResponseToolStripMenuItem"
-        Me.EventDialogWindow2ResponseToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
-        Me.EventDialogWindow2ResponseToolStripMenuItem.Text = "EventDialogWindow_2Response"
+        Me.EventDialogWindow2ResponseToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
+        Me.EventDialogWindow2ResponseToolStripMenuItem.Text = "EventDialogWindow_2Responses"
         '
         'EventDialogWindow3ResponseToolStripMenuItem
         '
         Me.EventDialogWindow3ResponseToolStripMenuItem.Name = "EventDialogWindow3ResponseToolStripMenuItem"
-        Me.EventDialogWindow3ResponseToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
-        Me.EventDialogWindow3ResponseToolStripMenuItem.Text = "EventDialogWindow_3Response"
+        Me.EventDialogWindow3ResponseToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
+        Me.EventDialogWindow3ResponseToolStripMenuItem.Text = "EventDialogWindow_3Responses"
         '
         'EventDialogWindow4ResponseToolStripMenuItem
         '
         Me.EventDialogWindow4ResponseToolStripMenuItem.Name = "EventDialogWindow4ResponseToolStripMenuItem"
-        Me.EventDialogWindow4ResponseToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
-        Me.EventDialogWindow4ResponseToolStripMenuItem.Text = "EventDialogWindow_4Response"
+        Me.EventDialogWindow4ResponseToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
+        Me.EventDialogWindow4ResponseToolStripMenuItem.Text = "EventDialogWindow_4Responses"
         '
         'FriendsWindowToolStripMenuItem
         '
         Me.FriendsWindowToolStripMenuItem.Name = "FriendsWindowToolStripMenuItem"
-        Me.FriendsWindowToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.FriendsWindowToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.FriendsWindowToolStripMenuItem.Text = "FriendsWindow"
         '
         'HotbarWindowToolStripMenuItem
         '
         Me.HotbarWindowToolStripMenuItem.Name = "HotbarWindowToolStripMenuItem"
-        Me.HotbarWindowToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.HotbarWindowToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.HotbarWindowToolStripMenuItem.Text = "HotbarWindow"
         '
         'InputBoxToolStripMenuItem1
         '
         Me.InputBoxToolStripMenuItem1.Name = "InputBoxToolStripMenuItem1"
-        Me.InputBoxToolStripMenuItem1.Size = New System.Drawing.Size(242, 22)
+        Me.InputBoxToolStripMenuItem1.Size = New System.Drawing.Size(247, 22)
         Me.InputBoxToolStripMenuItem1.Text = "InputBox"
         '
         'InventoryItemToolStripMenuItem
         '
         Me.InventoryItemToolStripMenuItem.Name = "InventoryItemToolStripMenuItem"
-        Me.InventoryItemToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.InventoryItemToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.InventoryItemToolStripMenuItem.Text = "InventoryItem"
         '
         'InventoryWindowToolStripMenuItem
         '
         Me.InventoryWindowToolStripMenuItem.Name = "InventoryWindowToolStripMenuItem"
-        Me.InventoryWindowToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.InventoryWindowToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.InventoryWindowToolStripMenuItem.Text = "InventoryWindow"
         '
         'ItemDescWindowToolStripMenuItem
         '
         Me.ItemDescWindowToolStripMenuItem.Name = "ItemDescWindowToolStripMenuItem"
-        Me.ItemDescWindowToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.ItemDescWindowToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.ItemDescWindowToolStripMenuItem.Text = "ItemDescWindow"
         '
         'ItemDescWindowExpandedToolStripMenuItem
         '
         Me.ItemDescWindowExpandedToolStripMenuItem.Name = "ItemDescWindowExpandedToolStripMenuItem"
-        Me.ItemDescWindowExpandedToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.ItemDescWindowExpandedToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.ItemDescWindowExpandedToolStripMenuItem.Text = "ItemDescWindowExpanded"
         '
         'MenuContainerToolStripMenuItem
         '
         Me.MenuContainerToolStripMenuItem.Name = "MenuContainerToolStripMenuItem"
-        Me.MenuContainerToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.MenuContainerToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.MenuContainerToolStripMenuItem.Text = "MenuContainer"
         '
         'OptionsWindowToolStripMenuItem1
         '
         Me.OptionsWindowToolStripMenuItem1.Name = "OptionsWindowToolStripMenuItem1"
-        Me.OptionsWindowToolStripMenuItem1.Size = New System.Drawing.Size(242, 22)
+        Me.OptionsWindowToolStripMenuItem1.Size = New System.Drawing.Size(247, 22)
         Me.OptionsWindowToolStripMenuItem1.Text = "OptionsWindow"
         '
         'PartyWindowToolStripMenuItem
         '
         Me.PartyWindowToolStripMenuItem.Name = "PartyWindowToolStripMenuItem"
-        Me.PartyWindowToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.PartyWindowToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.PartyWindowToolStripMenuItem.Text = "PartyWindow"
         '
         'PlayerBoxToolStripMenuItem
         '
         Me.PlayerBoxToolStripMenuItem.Name = "PlayerBoxToolStripMenuItem"
-        Me.PlayerBoxToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.PlayerBoxToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.PlayerBoxToolStripMenuItem.Text = "PlayerBox"
         '
         'PlayerStatusIconToolStripMenuItem
         '
         Me.PlayerStatusIconToolStripMenuItem.Name = "PlayerStatusIconToolStripMenuItem"
-        Me.PlayerStatusIconToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.PlayerStatusIconToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.PlayerStatusIconToolStripMenuItem.Text = "PlayerStatusIcon"
         '
         'QuestOfferWindowToolStripMenuItem
         '
         Me.QuestOfferWindowToolStripMenuItem.Name = "QuestOfferWindowToolStripMenuItem"
-        Me.QuestOfferWindowToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.QuestOfferWindowToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.QuestOfferWindowToolStripMenuItem.Text = "QuestOfferWindow"
         '
         'QuestWindowToolStripMenuItem
         '
         Me.QuestWindowToolStripMenuItem.Name = "QuestWindowToolStripMenuItem"
-        Me.QuestWindowToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.QuestWindowToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.QuestWindowToolStripMenuItem.Text = "QuestWindow"
         '
         'ShopItemToolStripMenuItem
         '
         Me.ShopItemToolStripMenuItem.Name = "ShopItemToolStripMenuItem"
-        Me.ShopItemToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.ShopItemToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.ShopItemToolStripMenuItem.Text = "ShopItem"
         '
         'ShopWindowToolStripMenuItem
         '
         Me.ShopWindowToolStripMenuItem.Name = "ShopWindowToolStripMenuItem"
-        Me.ShopWindowToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.ShopWindowToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.ShopWindowToolStripMenuItem.Text = "ShopWindow"
         '
         'SpellMenuItem
         '
         Me.SpellMenuItem.Name = "SpellMenuItem"
-        Me.SpellMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.SpellMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.SpellMenuItem.Text = "Spell"
         '
         'SpellDescWindowMenuItem
         '
         Me.SpellDescWindowMenuItem.Name = "SpellDescWindowMenuItem"
-        Me.SpellDescWindowMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.SpellDescWindowMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.SpellDescWindowMenuItem.Text = "SpellDescWindow"
         '
         'SpellDescWindowExpandedMenuItem
         '
         Me.SpellDescWindowExpandedMenuItem.Name = "SpellDescWindowExpandedMenuItem"
-        Me.SpellDescWindowExpandedMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.SpellDescWindowExpandedMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.SpellDescWindowExpandedMenuItem.Text = "SpellDescWindowExpanded"
         '
         'SpellsWindowMenuItem
         '
         Me.SpellsWindowMenuItem.Name = "SpellsWindowMenuItem"
-        Me.SpellsWindowMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.SpellsWindowMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.SpellsWindowMenuItem.Text = "SpellsWindow"
         '
         'TargetBoxMenuItem
         '
         Me.TargetBoxMenuItem.Name = "TargetBoxMenuItem"
-        Me.TargetBoxMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.TargetBoxMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.TargetBoxMenuItem.Text = "TargetBox"
         '
         'TargetStatusIconMenuItem
         '
         Me.TargetStatusIconMenuItem.Name = "TargetStatusIconMenuItem"
-        Me.TargetStatusIconMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.TargetStatusIconMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.TargetStatusIconMenuItem.Text = "TargetStatusIcon"
         '
         'TheirTradeItemMenuItem
         '
         Me.TheirTradeItemMenuItem.Name = "TheirTradeItemMenuItem"
-        Me.TheirTradeItemMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.TheirTradeItemMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.TheirTradeItemMenuItem.Text = "TheirTradeItem"
         '
         'TradeWindowMenuItem
         '
         Me.TradeWindowMenuItem.Name = "TradeWindowMenuItem"
-        Me.TradeWindowMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.TradeWindowMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.TradeWindowMenuItem.Text = "TradeWindow"
         '
         'YourTradeItemMenuItem
         '
         Me.YourTradeItemMenuItem.Name = "YourTradeItemMenuItem"
-        Me.YourTradeItemMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.YourTradeItemMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.YourTradeItemMenuItem.Text = "YourTradeItem"
         '
         'MenuToolStripMenuItem
@@ -3597,6 +3920,53 @@ Partial Class Form1
         Me.AppSettings.Name = "AppSettings"
         Me.AppSettings.Size = New System.Drawing.Size(28, 20)
         '
+        'Panel1
+        '
+        Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
+        Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel1.Controls.Add(Me.PictureBox3)
+        Me.Panel1.Controls.Add(Me.PictureBox2)
+        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Location = New System.Drawing.Point(1283, 694)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(220, 339)
+        Me.Panel1.TabIndex = 37
+        Me.Panel1.Visible = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox2.BackgroundImage = CType(resources.GetObject("PictureBox2.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox2.Location = New System.Drawing.Point(194, 5)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(26, 25)
+        Me.PictureBox2.TabIndex = 19
+        Me.PictureBox2.TabStop = False
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Source Sans Pro SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(40, 7)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(60, 20)
+        Me.Label1.TabIndex = 3
+        Me.Label1.Text = "Friends"
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox3.BackgroundImage = CType(resources.GetObject("PictureBox3.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox3.Location = New System.Drawing.Point(50, 268)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(120, 28)
+        Me.PictureBox3.TabIndex = 20
+        Me.PictureBox3.TabStop = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -3625,6 +3995,27 @@ Partial Class Form1
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainer1.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
+        Me.MainEventDialogWindow4ResponsePanel.ResumeLayout(False)
+        CType(Me.Dialog4Response4Button, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Dialog4Response3Button, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Dialog4Response2Button, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Dialog4EventDialogArea.ResumeLayout(False)
+        Me.Dialog4EventDialogAreaInnerPanel.ResumeLayout(False)
+        Me.Dialog4EventDialogAreaInnerPanel.PerformLayout()
+        CType(Me.Dialog4Response1Button, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainEventDialogWindow3ResponsePanel.ResumeLayout(False)
+        CType(Me.Dialog3Response3Button, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Dialog3Response2Button, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Dialog3EventDialogArea.ResumeLayout(False)
+        Me.Dialog3EventDialogAreaInnerPanel.ResumeLayout(False)
+        Me.Dialog3EventDialogAreaInnerPanel.PerformLayout()
+        CType(Me.Dialog3Response1Button, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainEventDialogWindow2ResponsePanel.ResumeLayout(False)
+        CType(Me.Dialog2Response2Button, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Dialog2EventDialogArea.ResumeLayout(False)
+        Me.Dialog2EventDialogAreaInnerPanel.ResumeLayout(False)
+        Me.Dialog2EventDialogAreaInnerPanel.PerformLayout()
+        CType(Me.Dialog2Response1Button, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MainEventDialogWindow1ResponsePanel.ResumeLayout(False)
         Me.Dialog1EventDialogArea.ResumeLayout(False)
         Me.Dialog1EventDialogAreaInnerPanel.ResumeLayout(False)
@@ -3825,6 +4216,10 @@ Partial Class Form1
         Me.StatusStrip1.PerformLayout()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -4124,4 +4519,32 @@ Partial Class Form1
     Friend WithEvents Dialog1EventDialogLabel As Label
     Friend WithEvents Dialog1Response1Button As PictureBox
     Friend WithEvents Dialog1EventFacePanel As Panel
+    Friend WithEvents MainEventDialogWindow2ResponsePanel As Panel
+    Friend WithEvents Dialog2Response2Button As PictureBox
+    Friend WithEvents Dialog2EventDialogArea As Panel
+    Friend WithEvents Dialog2EventDialogAreaInnerPanel As Panel
+    Friend WithEvents Dialog2EventDialogLabel As Label
+    Friend WithEvents Dialog2Response1Button As PictureBox
+    Friend WithEvents Dialog2EventFacePanel As Panel
+    Friend WithEvents MainEventDialogWindow3ResponsePanel As Panel
+    Friend WithEvents Dialog3Response3Button As PictureBox
+    Friend WithEvents Dialog3Response2Button As PictureBox
+    Friend WithEvents Dialog3EventDialogArea As Panel
+    Friend WithEvents Dialog3EventDialogAreaInnerPanel As Panel
+    Friend WithEvents Dialog3EventDialogLabel As Label
+    Friend WithEvents Dialog3Response1Button As PictureBox
+    Friend WithEvents Dialog3EventFacePanel As Panel
+    Friend WithEvents MainEventDialogWindow4ResponsePanel As Panel
+    Friend WithEvents Dialog4Response4Button As PictureBox
+    Friend WithEvents Dialog4Response3Button As PictureBox
+    Friend WithEvents Dialog4Response2Button As PictureBox
+    Friend WithEvents Dialog4EventDialogArea As Panel
+    Friend WithEvents Dialog4EventDialogAreaInnerPanel As Panel
+    Friend WithEvents Dialog4EventDialogLabel As Label
+    Friend WithEvents Dialog4Response1Button As PictureBox
+    Friend WithEvents Dialog4EventFacePanel As Panel
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents Label1 As Label
 End Class
