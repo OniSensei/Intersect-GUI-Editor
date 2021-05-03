@@ -19,7 +19,7 @@ Public Class Form1
     Dim fullscreenchecked As Boolean = False
     Dim autoclosewindowschecked As Boolean = True
     Dim gridoverlay As Boolean = False
-    Dim guitype As String = "game"
+    Public guitype As String = "game"
 
     Public Sub StatusText(ByVal text As String)
         statusTxtBox.Text = text
@@ -58,6 +58,11 @@ Public Class Form1
         MainHotbarWindowPanel.Visible = False
         MainGameInputBoxPanel.Visible = False
         MainInventoryItemPanel.Visible = False
+        MainInventoryWindowPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
 
         LoadLoginGUI(menuGuiPath & "LoginWindow.json")
         openFile = menuGuiPath & "LoginWindow.json"
@@ -96,6 +101,12 @@ Public Class Form1
         MainHotbarWindowPanel.Visible = False
         MainGameInputBoxPanel.Visible = False
         MainInventoryItemPanel.Visible = False
+        MainInventoryWindowPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
 
         LoadCharacterCreationGUI(menuGuiPath & "CharacterCreationWindow.json")
         openFile = menuGuiPath & "CharacterCreationWindow.json"
@@ -134,6 +145,12 @@ Public Class Form1
         MainHotbarWindowPanel.Visible = False
         MainGameInputBoxPanel.Visible = False
         MainInventoryItemPanel.Visible = False
+        MainInventoryWindowPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
 
         LoadCharacterSelectionGUI(menuGuiPath & "CharacterSelectionWindow.json")
         openFile = menuGuiPath & "CharacterSelectionWindow.json"
@@ -172,6 +189,12 @@ Public Class Form1
         MainHotbarWindowPanel.Visible = False
         MainGameInputBoxPanel.Visible = False
         MainInventoryItemPanel.Visible = False
+        MainInventoryWindowPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
 
         LoadCreditsGUI(menuGuiPath & "CreditsWindow.json")
         openFile = menuGuiPath & "CreditsWindow.json"
@@ -210,6 +233,12 @@ Public Class Form1
         MainHotbarWindowPanel.Visible = False
         MainGameInputBoxPanel.Visible = False
         MainInventoryItemPanel.Visible = False
+        MainInventoryWindowPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
 
         LoadForgotPasswordGUI(menuGuiPath & "ForgotPasswordWindow.json")
         openFile = menuGuiPath & "ForgotPasswordWindow.json"
@@ -248,6 +277,12 @@ Public Class Form1
         MainHotbarWindowPanel.Visible = False
         MainGameInputBoxPanel.Visible = False
         MainInventoryItemPanel.Visible = False
+        MainInventoryWindowPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
 
         LoadInputBoxGUI(menuGuiPath & "InputBox.json")
         openFile = menuGuiPath & "InputBox.json"
@@ -286,6 +321,12 @@ Public Class Form1
         MainHotbarWindowPanel.Visible = False
         MainGameInputBoxPanel.Visible = False
         MainInventoryItemPanel.Visible = False
+        MainInventoryWindowPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
 
         LoadLogoGUI(menuGuiPath & "Logo.json")
         openFile = menuGuiPath & "Logo.json"
@@ -324,6 +365,12 @@ Public Class Form1
         MainHotbarWindowPanel.Visible = False
         MainGameInputBoxPanel.Visible = False
         MainInventoryItemPanel.Visible = False
+        MainInventoryWindowPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
 
         LoadMenuWindow(menuGuiPath & "MenuWindow.json")
         openFile = menuGuiPath & "MenuWindow.json"
@@ -362,6 +409,12 @@ Public Class Form1
         MainHotbarWindowPanel.Visible = False
         MainGameInputBoxPanel.Visible = False
         MainInventoryItemPanel.Visible = False
+        MainInventoryWindowPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
 
         LoadOptionsWindowGUI(menuGuiPath & "OptionsWindow.json")
         openFile = menuGuiPath & "OptionsWindow.json"
@@ -400,6 +453,12 @@ Public Class Form1
         MainHotbarWindowPanel.Visible = False
         MainGameInputBoxPanel.Visible = False
         MainInventoryItemPanel.Visible = False
+        MainInventoryWindowPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
 
         LoadRegistrationWindowGUI(menuGuiPath & "RegistrationWindow.json")
         openFile = menuGuiPath & "RegistrationWindow.json"
@@ -438,6 +497,12 @@ Public Class Form1
         MainHotbarWindowPanel.Visible = False
         MainGameInputBoxPanel.Visible = False
         MainInventoryItemPanel.Visible = False
+        MainInventoryWindowPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
 
         LoadResetPasswordWindowGUI(menuGuiPath & "ResetPasswordWindow.json")
         openFile = menuGuiPath & "ResetPasswordWindow.json"
@@ -476,6 +541,12 @@ Public Class Form1
         MainHotbarWindowPanel.Visible = False
         MainGameInputBoxPanel.Visible = False
         MainInventoryItemPanel.Visible = False
+        MainInventoryWindowPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
 
         LoadServerStatusAreaGUI(menuGuiPath & "ServerStatusArea.json")
         openFile = menuGuiPath & "ServerStatusArea.json"
@@ -514,6 +585,12 @@ Public Class Form1
         MainHotbarWindowPanel.Visible = False
         MainGameInputBoxPanel.Visible = False
         MainInventoryItemPanel.Visible = False
+        MainInventoryWindowPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
 
         LoadBagItemGUI(gameGuiPath & "BagItem.json")
         openFile = gameGuiPath & "BagItem.json"
@@ -552,8 +629,13 @@ Public Class Form1
         MainHotbarWindowPanel.Visible = False
         MainGameInputBoxPanel.Visible = False
         MainInventoryItemPanel.Visible = False
+        MainInventoryWindowPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
 
-        LoadBagWindowGUI(gameGuiPath & "BagWindow.json")
         openFile = gameGuiPath & "BagWindow.json"
     End Sub
 
@@ -590,6 +672,12 @@ Public Class Form1
         MainHotbarWindowPanel.Visible = False
         MainGameInputBoxPanel.Visible = False
         MainInventoryItemPanel.Visible = False
+        MainInventoryWindowPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
 
         LoadBankItemGUI(gameGuiPath & "BankItem.json")
         openFile = gameGuiPath & "BankItem.json"
@@ -628,6 +716,12 @@ Public Class Form1
         MainHotbarWindowPanel.Visible = False
         MainGameInputBoxPanel.Visible = False
         MainInventoryItemPanel.Visible = False
+        MainInventoryWindowPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
 
         LoadBankWindowGUI(gameGuiPath & "BankWindow.json")
         openFile = gameGuiPath & "BankWindow.json"
@@ -666,6 +760,12 @@ Public Class Form1
         MainHotbarWindowPanel.Visible = False
         MainGameInputBoxPanel.Visible = False
         MainInventoryItemPanel.Visible = False
+        MainInventoryWindowPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
 
         LoadCharacterWindowGUI(gameGuiPath & "CharacterWindow.json")
         openFile = gameGuiPath & "CharacterWindow.json"
@@ -704,6 +804,12 @@ Public Class Form1
         MainHotbarWindowPanel.Visible = False
         MainGameInputBoxPanel.Visible = False
         MainInventoryItemPanel.Visible = False
+        MainInventoryWindowPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
 
         LoadChatboxWindowGUI(gameGuiPath & "ChatboxWindow.json")
         openFile = gameGuiPath & "ChatboxWindow.json"
@@ -742,6 +848,12 @@ Public Class Form1
         MainHotbarWindowPanel.Visible = False
         MainGameInputBoxPanel.Visible = False
         MainInventoryItemPanel.Visible = False
+        MainInventoryWindowPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
 
         LoadCraftedItemGUI(gameGuiPath & "CraftedItem.json")
         openFile = gameGuiPath & "CraftedItem.json"
@@ -780,6 +892,12 @@ Public Class Form1
         MainHotbarWindowPanel.Visible = False
         MainGameInputBoxPanel.Visible = False
         MainInventoryItemPanel.Visible = False
+        MainInventoryWindowPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
 
         LoadCraftingIngredientGUI(gameGuiPath & "CraftingIngredient.json")
         openFile = gameGuiPath & "CraftingIngredient.json"
@@ -818,6 +936,12 @@ Public Class Form1
         MainHotbarWindowPanel.Visible = False
         MainGameInputBoxPanel.Visible = False
         MainInventoryItemPanel.Visible = False
+        MainInventoryWindowPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
 
         LoadCraftingWindowGUI(gameGuiPath & "CraftingWindow.json")
         openFile = gameGuiPath & "CraftingWindow.json"
@@ -856,6 +980,12 @@ Public Class Form1
         MainHotbarWindowPanel.Visible = False
         MainGameInputBoxPanel.Visible = False
         MainInventoryItemPanel.Visible = False
+        MainInventoryWindowPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
 
         LoadEquipmentItemGUI(gameGuiPath & "EquipmentItem.json")
         openFile = gameGuiPath & "EquipmentItem.json"
@@ -894,6 +1024,12 @@ Public Class Form1
         MainHotbarWindowPanel.Visible = False
         MainGameInputBoxPanel.Visible = False
         MainInventoryItemPanel.Visible = False
+        MainInventoryWindowPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
 
         LoadEscapeMenuGUI(gameGuiPath & "EscapeMenu.json")
         openFile = gameGuiPath & "EscapeMenu.json"
@@ -932,6 +1068,12 @@ Public Class Form1
         MainHotbarWindowPanel.Visible = False
         MainGameInputBoxPanel.Visible = False
         MainInventoryItemPanel.Visible = False
+        MainInventoryWindowPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
 
         LoadEventDialogWindow1ResponseGUI(gameGuiPath & "EventDialogWindow_1Response.json")
         openFile = gameGuiPath & "EventDialogWindow_1Response.json"
@@ -970,6 +1112,12 @@ Public Class Form1
         MainHotbarWindowPanel.Visible = False
         MainGameInputBoxPanel.Visible = False
         MainInventoryItemPanel.Visible = False
+        MainInventoryWindowPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
 
         LoadEventDialogWindow2ResponseGUI(gameGuiPath & "EventDialogWindow_2Responses.json")
         openFile = gameGuiPath & "EventDialogWindow_2Responses.json"
@@ -1008,6 +1156,12 @@ Public Class Form1
         MainHotbarWindowPanel.Visible = False
         MainGameInputBoxPanel.Visible = False
         MainInventoryItemPanel.Visible = False
+        MainInventoryWindowPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
 
         LoadEventDialogWindow3ResponseGUI(gameGuiPath & "EventDialogWindow_3Responses.json")
         openFile = gameGuiPath & "EventDialogWindow_3Responses.json"
@@ -1046,6 +1200,12 @@ Public Class Form1
         MainHotbarWindowPanel.Visible = False
         MainGameInputBoxPanel.Visible = False
         MainInventoryItemPanel.Visible = False
+        MainInventoryWindowPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
 
         LoadEventDialogWindow4ResponseGUI(gameGuiPath & "EventDialogWindow_4Responses.json")
         openFile = gameGuiPath & "EventDialogWindow_4Responses.json"
@@ -1084,6 +1244,12 @@ Public Class Form1
         MainHotbarWindowPanel.Visible = False
         MainGameInputBoxPanel.Visible = False
         MainInventoryItemPanel.Visible = False
+        MainInventoryWindowPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
 
         LoadFriendsWindowGUI(gameGuiPath & "FriendsWindow.json")
         openFile = gameGuiPath & "FriendsWindow.json"
@@ -1122,6 +1288,12 @@ Public Class Form1
         MainFriendsWindowPanel.Visible = False
         MainGameInputBoxPanel.Visible = False
         MainInventoryItemPanel.Visible = False
+        MainInventoryWindowPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
 
         LoadHotbarWindowGUI(gameGuiPath & "HotbarWindow.json")
         openFile = gameGuiPath & "HotbarWindow.json"
@@ -1160,6 +1332,12 @@ Public Class Form1
         MainFriendsWindowPanel.Visible = False
         MainHotbarWindowPanel.Visible = False
         MainInventoryItemPanel.Visible = False
+        MainInventoryWindowPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
 
         LoadGameInputBoxGUI(gameGuiPath & "InputBox.json")
         openFile = gameGuiPath & "InputBox.json"
@@ -1198,9 +1376,317 @@ Public Class Form1
         MainFriendsWindowPanel.Visible = False
         MainHotbarWindowPanel.Visible = False
         MainInputBoxPanel.Visible = False
+        MainInventoryWindowPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
 
-        loadInventoryItemgui(gameGuiPath & "InventoryItem.json")
+        LoadInventoryItemGUI(gameGuiPath & "InventoryItem.json")
         openFile = gameGuiPath & "InventoryItem.json"
+    End Sub
+
+    Private Sub InventoryWindowToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InventoryWindowToolStripMenuItem.Click
+        gridoverlay = False
+        guitype = "game"
+        MainLoginWindowPanel.Visible = False
+        MainCharacterCreationPanel.Visible = False
+        MainCharSelectionPanel.Visible = False
+        MainCreditsPanel.Visible = False
+        MainForgotPasswordWindowPanel.Visible = False
+        MainLogoPanel.Visible = False
+        MainInputBoxPanel.Visible = False
+        MainMenuWindowPanel.Visible = False
+        MainOptionsWindowPanel.Visible = False
+        MainRegistrationWindowPanel.Visible = False
+        MainResetPasswordWindowPanel.Visible = False
+        MainServerStatusAreaPanel.Visible = False
+        MainBagItemPanel.Visible = False
+        MainBagWindowPanel.Visible = False
+        MainBankItemPanel.Visible = False
+        MainBankWindowPanel.Visible = False
+        MainCharacterWindowPanel.Visible = False
+        MainChatboxWindowPanel.Visible = False
+        MainCraftedItemPanel.Visible = False
+        MainCraftingWindowPanel.Visible = False
+        MainEquipmentItemPanel.Visible = False
+        MainEquipmentItemPanel.Visible = False
+        MainEscapeMenuPanel.Visible = False
+        MainEventDialogWindow1ResponsePanel.Visible = False
+        MainEventDialogWindow2ResponsePanel.Visible = False
+        MainEventDialogWindow3ResponsePanel.Visible = False
+        MainEventDialogWindow4ResponsePanel.Visible = False
+        MainFriendsWindowPanel.Visible = False
+        MainHotbarWindowPanel.Visible = False
+        MainInputBoxPanel.Visible = False
+        MainInventoryItemPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
+
+        LoadInventoryWindowGUI(gameGuiPath & "InventoryWindow.json")
+        openFile = gameGuiPath & "InventoryWindow.json"
+    End Sub
+
+    Private Sub ItemDescWindowToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ItemDescWindowToolStripMenuItem.Click
+        gridoverlay = False
+        guitype = "game"
+        MainLoginWindowPanel.Visible = False
+        MainCharacterCreationPanel.Visible = False
+        MainCharSelectionPanel.Visible = False
+        MainCreditsPanel.Visible = False
+        MainForgotPasswordWindowPanel.Visible = False
+        MainLogoPanel.Visible = False
+        MainInputBoxPanel.Visible = False
+        MainMenuWindowPanel.Visible = False
+        MainOptionsWindowPanel.Visible = False
+        MainRegistrationWindowPanel.Visible = False
+        MainResetPasswordWindowPanel.Visible = False
+        MainServerStatusAreaPanel.Visible = False
+        MainBagItemPanel.Visible = False
+        MainBagWindowPanel.Visible = False
+        MainBankItemPanel.Visible = False
+        MainBankWindowPanel.Visible = False
+        MainCharacterWindowPanel.Visible = False
+        MainChatboxWindowPanel.Visible = False
+        MainCraftedItemPanel.Visible = False
+        MainCraftingWindowPanel.Visible = False
+        MainEquipmentItemPanel.Visible = False
+        MainEquipmentItemPanel.Visible = False
+        MainEscapeMenuPanel.Visible = False
+        MainEventDialogWindow1ResponsePanel.Visible = False
+        MainEventDialogWindow2ResponsePanel.Visible = False
+        MainEventDialogWindow3ResponsePanel.Visible = False
+        MainEventDialogWindow4ResponsePanel.Visible = False
+        MainFriendsWindowPanel.Visible = False
+        MainHotbarWindowPanel.Visible = False
+        MainInputBoxPanel.Visible = False
+        MainInventoryItemPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
+
+        LoadItemDescWindowGUI(gameGuiPath & "ItemDescWindow.json")
+        openFile = gameGuiPath & "ItemDescWindow.json"
+    End Sub
+
+    Private Sub ItemDescWindowExpandedToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ItemDescWindowExpandedToolStripMenuItem.Click
+        gridoverlay = False
+        guitype = "game"
+        MainLoginWindowPanel.Visible = False
+        MainCharacterCreationPanel.Visible = False
+        MainCharSelectionPanel.Visible = False
+        MainCreditsPanel.Visible = False
+        MainForgotPasswordWindowPanel.Visible = False
+        MainLogoPanel.Visible = False
+        MainInputBoxPanel.Visible = False
+        MainMenuWindowPanel.Visible = False
+        MainOptionsWindowPanel.Visible = False
+        MainRegistrationWindowPanel.Visible = False
+        MainResetPasswordWindowPanel.Visible = False
+        MainServerStatusAreaPanel.Visible = False
+        MainBagItemPanel.Visible = False
+        MainBagWindowPanel.Visible = False
+        MainBankItemPanel.Visible = False
+        MainBankWindowPanel.Visible = False
+        MainCharacterWindowPanel.Visible = False
+        MainChatboxWindowPanel.Visible = False
+        MainCraftedItemPanel.Visible = False
+        MainCraftingWindowPanel.Visible = False
+        MainEquipmentItemPanel.Visible = False
+        MainEquipmentItemPanel.Visible = False
+        MainEscapeMenuPanel.Visible = False
+        MainEventDialogWindow1ResponsePanel.Visible = False
+        MainEventDialogWindow2ResponsePanel.Visible = False
+        MainEventDialogWindow3ResponsePanel.Visible = False
+        MainEventDialogWindow4ResponsePanel.Visible = False
+        MainFriendsWindowPanel.Visible = False
+        MainHotbarWindowPanel.Visible = False
+        MainInputBoxPanel.Visible = False
+        MainInventoryItemPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
+
+        LoadItemDescWindowExpandedGUI(gameGuiPath & "ItemDescWindowExpanded.json")
+        openFile = gameGuiPath & "ItemDescWindowExpanded.json"
+    End Sub
+
+    Private Sub MenuContainerToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MenuContainerToolStripMenuItem.Click
+        gridoverlay = False
+        guitype = "game"
+        MainLoginWindowPanel.Visible = False
+        MainCharacterCreationPanel.Visible = False
+        MainCharSelectionPanel.Visible = False
+        MainCreditsPanel.Visible = False
+        MainForgotPasswordWindowPanel.Visible = False
+        MainLogoPanel.Visible = False
+        MainInputBoxPanel.Visible = False
+        MainMenuWindowPanel.Visible = False
+        MainOptionsWindowPanel.Visible = False
+        MainRegistrationWindowPanel.Visible = False
+        MainResetPasswordWindowPanel.Visible = False
+        MainServerStatusAreaPanel.Visible = False
+        MainBagItemPanel.Visible = False
+        MainBagWindowPanel.Visible = False
+        MainBankItemPanel.Visible = False
+        MainBankWindowPanel.Visible = False
+        MainCharacterWindowPanel.Visible = False
+        MainChatboxWindowPanel.Visible = False
+        MainCraftedItemPanel.Visible = False
+        MainCraftingWindowPanel.Visible = False
+        MainEquipmentItemPanel.Visible = False
+        MainEquipmentItemPanel.Visible = False
+        MainEscapeMenuPanel.Visible = False
+        MainEventDialogWindow1ResponsePanel.Visible = False
+        MainEventDialogWindow2ResponsePanel.Visible = False
+        MainEventDialogWindow3ResponsePanel.Visible = False
+        MainEventDialogWindow4ResponsePanel.Visible = False
+        MainFriendsWindowPanel.Visible = False
+        MainHotbarWindowPanel.Visible = False
+        MainInputBoxPanel.Visible = False
+        MainInventoryItemPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
+
+        LoadMenuContainerGUI(gameGuiPath & "MenuContainer.json")
+        openFile = gameGuiPath & "MenuContainer.json"
+    End Sub
+
+    Private Sub OptionsWindowToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles OptionsWindowToolStripMenuItem1.Click
+        gridoverlay = False
+        guitype = "game"
+        MainLoginWindowPanel.Visible = False
+        MainCharacterCreationPanel.Visible = False
+        MainCharSelectionPanel.Visible = False
+        MainCreditsPanel.Visible = False
+        MainForgotPasswordWindowPanel.Visible = False
+        MainLogoPanel.Visible = False
+        MainInputBoxPanel.Visible = False
+        MainMenuWindowPanel.Visible = False
+        MainOptionsWindowPanel.Visible = False
+        MainRegistrationWindowPanel.Visible = False
+        MainResetPasswordWindowPanel.Visible = False
+        MainServerStatusAreaPanel.Visible = False
+        MainBagItemPanel.Visible = False
+        MainBagWindowPanel.Visible = False
+        MainBankItemPanel.Visible = False
+        MainBankWindowPanel.Visible = False
+        MainCharacterWindowPanel.Visible = False
+        MainChatboxWindowPanel.Visible = False
+        MainCraftedItemPanel.Visible = False
+        MainCraftingWindowPanel.Visible = False
+        MainEquipmentItemPanel.Visible = False
+        MainEquipmentItemPanel.Visible = False
+        MainEscapeMenuPanel.Visible = False
+        MainEventDialogWindow1ResponsePanel.Visible = False
+        MainEventDialogWindow2ResponsePanel.Visible = False
+        MainEventDialogWindow3ResponsePanel.Visible = False
+        MainEventDialogWindow4ResponsePanel.Visible = False
+        MainFriendsWindowPanel.Visible = False
+        MainHotbarWindowPanel.Visible = False
+        MainInputBoxPanel.Visible = False
+        MainInventoryItemPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
+
+        LoadOptionsWindowGUI(gameGuiPath & "OptionsWindow.json")
+        openFile = gameGuiPath & "OptionsWindow.json"
+    End Sub
+
+    Private Sub PartyWindowToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PartyWindowToolStripMenuItem.Click
+        gridoverlay = False
+        guitype = "game"
+        MainLoginWindowPanel.Visible = False
+        MainCharacterCreationPanel.Visible = False
+        MainCharSelectionPanel.Visible = False
+        MainCreditsPanel.Visible = False
+        MainForgotPasswordWindowPanel.Visible = False
+        MainLogoPanel.Visible = False
+        MainInputBoxPanel.Visible = False
+        MainMenuWindowPanel.Visible = False
+        MainOptionsWindowPanel.Visible = False
+        MainRegistrationWindowPanel.Visible = False
+        MainResetPasswordWindowPanel.Visible = False
+        MainServerStatusAreaPanel.Visible = False
+        MainBagItemPanel.Visible = False
+        MainBagWindowPanel.Visible = False
+        MainBankItemPanel.Visible = False
+        MainBankWindowPanel.Visible = False
+        MainCharacterWindowPanel.Visible = False
+        MainChatboxWindowPanel.Visible = False
+        MainCraftedItemPanel.Visible = False
+        MainCraftingWindowPanel.Visible = False
+        MainEquipmentItemPanel.Visible = False
+        MainEquipmentItemPanel.Visible = False
+        MainEscapeMenuPanel.Visible = False
+        MainEventDialogWindow1ResponsePanel.Visible = False
+        MainEventDialogWindow2ResponsePanel.Visible = False
+        MainEventDialogWindow3ResponsePanel.Visible = False
+        MainEventDialogWindow4ResponsePanel.Visible = False
+        MainFriendsWindowPanel.Visible = False
+        MainHotbarWindowPanel.Visible = False
+        MainInputBoxPanel.Visible = False
+        MainInventoryItemPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainOptionsWindowPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
+
+        LoadPartyWindowGUI(gameGuiPath & "PartyWindow.json")
+        openFile = gameGuiPath & "PartyWindow.json"
+    End Sub
+
+    Private Sub PlayerBoxToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PlayerBoxToolStripMenuItem.Click
+        gridoverlay = False
+        guitype = "game"
+        MainLoginWindowPanel.Visible = False
+        MainCharacterCreationPanel.Visible = False
+        MainCharSelectionPanel.Visible = False
+        MainCreditsPanel.Visible = False
+        MainForgotPasswordWindowPanel.Visible = False
+        MainLogoPanel.Visible = False
+        MainInputBoxPanel.Visible = False
+        MainMenuWindowPanel.Visible = False
+        MainOptionsWindowPanel.Visible = False
+        MainRegistrationWindowPanel.Visible = False
+        MainResetPasswordWindowPanel.Visible = False
+        MainServerStatusAreaPanel.Visible = False
+        MainBagItemPanel.Visible = False
+        MainBagWindowPanel.Visible = False
+        MainBankItemPanel.Visible = False
+        MainBankWindowPanel.Visible = False
+        MainCharacterWindowPanel.Visible = False
+        MainChatboxWindowPanel.Visible = False
+        MainCraftedItemPanel.Visible = False
+        MainCraftingWindowPanel.Visible = False
+        MainEquipmentItemPanel.Visible = False
+        MainEquipmentItemPanel.Visible = False
+        MainEscapeMenuPanel.Visible = False
+        MainEventDialogWindow1ResponsePanel.Visible = False
+        MainEventDialogWindow2ResponsePanel.Visible = False
+        MainEventDialogWindow3ResponsePanel.Visible = False
+        MainEventDialogWindow4ResponsePanel.Visible = False
+        MainFriendsWindowPanel.Visible = False
+        MainHotbarWindowPanel.Visible = False
+        MainInputBoxPanel.Visible = False
+        MainInventoryItemPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainOptionsWindowPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+
+        LoadPlayerBoxGUI(gameGuiPath & "PlayerBox.json")
+        openFile = gameGuiPath & "PlayerBox.json"
     End Sub
 
     Private Sub JTokenTreeUserControl1_AfterSelect(sender As Object, e As ZTn.Json.JsonTreeView.AfterSelectEventArgs) Handles JTokenTreeUserControl1.AfterSelect
@@ -1294,6 +1780,18 @@ Public Class Form1
                     LoadGameInputBoxGUI(tempPath & "tmp_" & tempFileName & ".json")
                 ElseIf openFile.Contains("InventoryItem") Then
                     LoadInventoryItemGUI(tempPath & "tmp_" & tempFileName & ".json")
+                ElseIf openFile.Contains("InventoryWindow") Then
+                    LoadInventoryWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
+                ElseIf openFile.Contains("ItemDescWindow") Then
+                    LoadItemDescWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
+                ElseIf openFile.Contains("ItemDescWindowExpanded") Then
+                    LoadItemDescWindowExpandedGUI(tempPath & "tmp_" & tempFileName & ".json")
+                ElseIf openFile.Contains("MenuContainer") Then
+                    LoadMenuContainerGUI(tempPath & "tmp_" & tempFileName & ".json")
+                ElseIf openFile.Contains("PartyWindow") Then
+                    LoadPartyWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
+                ElseIf openFile.Contains("PlayerBox") Then
+                    LoadPlayerBoxGUI(tempPath & "tmp_" & tempFileName & ".json")
                 End If
             End Using
 
@@ -1366,6 +1864,18 @@ Public Class Form1
             LoadGameInputBoxGUI(openFile)
         ElseIf openFile.Contains("InventoryItem") Then
             LoadInventoryItemGUI(openFile)
+        ElseIf openFile.Contains("InventoryWindow") Then
+            LoadInventoryWindowGUI(openFile)
+        ElseIf openFile.Contains("ItemDescWindow") Then
+            LoadItemDescWindowGUI(openFile)
+        ElseIf openFile.Contains("ItemDescWindowExpanded") Then
+            LoadItemDescWindowExpandedGUI(openFile)
+        ElseIf openFile.Contains("MenuContainer") Then
+            LoadMenuContainerGUI(openFile)
+        ElseIf openFile.Contains("PartyWindow") Then
+            LoadPartyWindowGUI(openFile)
+        ElseIf openFile.Contains("PlayerBox") Then
+            LoadPlayerBoxGUI(openFile)
         End If
     End Sub
 
@@ -3328,5 +3838,95 @@ Public Class Form1
         Dim infoPull As GameInputBox
         infoPull = JsonConvert.DeserializeObject(Of GameInputBox)(fullJson.Text)
         GameInputBoxCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.CloseButton.NormalImage)
+    End Sub
+
+    Private Sub InventoryWindowCloseButton_Click(sender As Object, e As EventArgs) Handles InventoryWindowCloseButton.Click
+        Dim infoPull As InventoryWindow
+        infoPull = JsonConvert.DeserializeObject(Of InventoryWindow)(fullJson.Text)
+        InventoryWindowCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.CloseButton.ClickedImage)
+    End Sub
+
+    Private Sub InventoryWindowCloseButton_MouseDown(sender As Object, e As MouseEventArgs) Handles InventoryWindowCloseButton.MouseDown
+        Dim infoPull As InventoryWindow
+        infoPull = JsonConvert.DeserializeObject(Of InventoryWindow)(fullJson.Text)
+        InventoryWindowCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.CloseButton.ClickedImage)
+    End Sub
+
+    Private Sub InventoryWindowCloseButton_MouseUp(sender As Object, e As MouseEventArgs) Handles InventoryWindowCloseButton.MouseUp
+        Dim infoPull As InventoryWindow
+        infoPull = JsonConvert.DeserializeObject(Of InventoryWindow)(fullJson.Text)
+        InventoryWindowCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.CloseButton.HoveredImage)
+    End Sub
+
+    Private Sub InventoryWindowCloseButton_MouseHover(sender As Object, e As EventArgs) Handles InventoryWindowCloseButton.MouseHover
+        Dim infoPull As InventoryWindow
+        infoPull = JsonConvert.DeserializeObject(Of InventoryWindow)(fullJson.Text)
+        InventoryWindowCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.CloseButton.HoveredImage)
+    End Sub
+
+    Private Sub InventoryWindowCloseButton_MouseLeave(sender As Object, e As EventArgs) Handles InventoryWindowCloseButton.MouseLeave
+        Dim infoPull As InventoryWindow
+        infoPull = JsonConvert.DeserializeObject(Of InventoryWindow)(fullJson.Text)
+        InventoryWindowCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.CloseButton.NormalImage)
+    End Sub
+
+    Private Sub PartyCloseButton_Click(sender As Object, e As EventArgs) Handles PartyCloseButton.Click
+        Dim infoPull As PartyWindow
+        infoPull = JsonConvert.DeserializeObject(Of PartyWindow)(fullJson.Text)
+        PartyCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.CloseButton.ClickedImage)
+    End Sub
+
+    Private Sub PartyCloseButton_MouseDown(sender As Object, e As MouseEventArgs) Handles PartyCloseButton.MouseDown
+        Dim infoPull As PartyWindow
+        infoPull = JsonConvert.DeserializeObject(Of PartyWindow)(fullJson.Text)
+        PartyCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.CloseButton.ClickedImage)
+    End Sub
+
+    Private Sub PartyCloseButton_MouseUp(sender As Object, e As MouseEventArgs) Handles PartyCloseButton.MouseUp
+        Dim infoPull As PartyWindow
+        infoPull = JsonConvert.DeserializeObject(Of PartyWindow)(fullJson.Text)
+        PartyCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.CloseButton.HoveredImage)
+    End Sub
+
+    Private Sub PartyCloseButton_MouseHover(sender As Object, e As EventArgs) Handles PartyCloseButton.MouseHover
+        Dim infoPull As PartyWindow
+        infoPull = JsonConvert.DeserializeObject(Of PartyWindow)(fullJson.Text)
+        PartyCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.CloseButton.HoveredImage)
+    End Sub
+
+    Private Sub PartyCloseButton_MouseLeave(sender As Object, e As EventArgs) Handles PartyCloseButton.MouseLeave
+        Dim infoPull As PartyWindow
+        infoPull = JsonConvert.DeserializeObject(Of PartyWindow)(fullJson.Text)
+        PartyCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.CloseButton.NormalImage)
+    End Sub
+
+    Private Sub LeavePartyButton_Click(sender As Object, e As EventArgs) Handles LeavePartyButton.Click
+        Dim infoPull As PartyWindow
+        infoPull = JsonConvert.DeserializeObject(Of PartyWindow)(fullJson.Text)
+        LeavePartyButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.LeavePartyButton.ClickedImage)
+    End Sub
+
+    Private Sub LeavePartyButton_MouseDown(sender As Object, e As MouseEventArgs) Handles LeavePartyButton.MouseDown
+        Dim infoPull As PartyWindow
+        infoPull = JsonConvert.DeserializeObject(Of PartyWindow)(fullJson.Text)
+        LeavePartyButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.LeavePartyButton.ClickedImage)
+    End Sub
+
+    Private Sub LeavePartyButton_MouseUp(sender As Object, e As MouseEventArgs) Handles LeavePartyButton.MouseUp
+        Dim infoPull As PartyWindow
+        infoPull = JsonConvert.DeserializeObject(Of PartyWindow)(fullJson.Text)
+        LeavePartyButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.LeavePartyButton.HoveredImage)
+    End Sub
+
+    Private Sub LeavePartyButton_MouseHover(sender As Object, e As EventArgs) Handles LeavePartyButton.MouseHover
+        Dim infoPull As PartyWindow
+        infoPull = JsonConvert.DeserializeObject(Of PartyWindow)(fullJson.Text)
+        LeavePartyButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.LeavePartyButton.HoveredImage)
+    End Sub
+
+    Private Sub LeavePartyButton_MouseLeave(sender As Object, e As EventArgs) Handles LeavePartyButton.MouseLeave
+        Dim infoPull As PartyWindow
+        infoPull = JsonConvert.DeserializeObject(Of PartyWindow)(fullJson.Text)
+        LeavePartyButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.LeavePartyButton.NormalImage)
     End Sub
 End Class

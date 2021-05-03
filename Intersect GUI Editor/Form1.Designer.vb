@@ -35,6 +35,91 @@ Partial Class Form1
         Me.jsonType = New System.Windows.Forms.TextBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.fullJson = New System.Windows.Forms.RichTextBox()
+        Me.MainPartyWindowPanel = New System.Windows.Forms.Panel()
+        Me.PartyInnerPanel = New System.Windows.Forms.Panel()
+        Me.KickButton3 = New System.Windows.Forms.PictureBox()
+        Me.KickButton2 = New System.Windows.Forms.PictureBox()
+        Me.KickButton1 = New System.Windows.Forms.PictureBox()
+        Me.LeavePartyButton = New System.Windows.Forms.PictureBox()
+        Me.ManaValue3 = New System.Windows.Forms.Label()
+        Me.ManaLabel3 = New System.Windows.Forms.Label()
+        Me.ManaBarContainer3 = New System.Windows.Forms.Panel()
+        Me.ManaBar3 = New System.Windows.Forms.PictureBox()
+        Me.HealthValue3 = New System.Windows.Forms.Label()
+        Me.HealthLabel3 = New System.Windows.Forms.Label()
+        Me.HealthBarContainer3 = New System.Windows.Forms.Panel()
+        Me.HealthBar3 = New System.Windows.Forms.PictureBox()
+        Me.MemberName3 = New System.Windows.Forms.Label()
+        Me.ManaValue2 = New System.Windows.Forms.Label()
+        Me.ManaLabel2 = New System.Windows.Forms.Label()
+        Me.ManaBarContainer2 = New System.Windows.Forms.Panel()
+        Me.ManaBar2 = New System.Windows.Forms.PictureBox()
+        Me.HealthValue2 = New System.Windows.Forms.Label()
+        Me.HealthLabel2 = New System.Windows.Forms.Label()
+        Me.HealthBarContainer2 = New System.Windows.Forms.Panel()
+        Me.HealthBar2 = New System.Windows.Forms.PictureBox()
+        Me.MemberName2 = New System.Windows.Forms.Label()
+        Me.ManaValue1 = New System.Windows.Forms.Label()
+        Me.ManaLabel1 = New System.Windows.Forms.Label()
+        Me.ManaBarContainer1 = New System.Windows.Forms.Panel()
+        Me.ManaBar1 = New System.Windows.Forms.PictureBox()
+        Me.HealthValue1 = New System.Windows.Forms.Label()
+        Me.HealthLabel1 = New System.Windows.Forms.Label()
+        Me.HealthBarContainer1 = New System.Windows.Forms.Panel()
+        Me.HealthBar1 = New System.Windows.Forms.PictureBox()
+        Me.MemberName1 = New System.Windows.Forms.Label()
+        Me.ManaValue0 = New System.Windows.Forms.Label()
+        Me.ManaLabel0 = New System.Windows.Forms.Label()
+        Me.ManaBarContainer0 = New System.Windows.Forms.Panel()
+        Me.ManaBar0 = New System.Windows.Forms.PictureBox()
+        Me.HealthValue0 = New System.Windows.Forms.Label()
+        Me.HealthLabel0 = New System.Windows.Forms.Label()
+        Me.LeaderText = New System.Windows.Forms.Label()
+        Me.LeaderIcon = New System.Windows.Forms.PictureBox()
+        Me.HealthBarContainer0 = New System.Windows.Forms.Panel()
+        Me.HealthBar0 = New System.Windows.Forms.PictureBox()
+        Me.MemberName0 = New System.Windows.Forms.Label()
+        Me.PartyCloseButton = New System.Windows.Forms.PictureBox()
+        Me.PartyTitle = New System.Windows.Forms.Label()
+        Me.MainMenuContainerPanel = New System.Windows.Forms.Panel()
+        Me.MenuContainer = New System.Windows.Forms.Panel()
+        Me.MenuButton = New System.Windows.Forms.PictureBox()
+        Me.PartyContainer = New System.Windows.Forms.Panel()
+        Me.PartyButton = New System.Windows.Forms.PictureBox()
+        Me.FriendsContainer = New System.Windows.Forms.Panel()
+        Me.FriendsButton = New System.Windows.Forms.PictureBox()
+        Me.QuestsContainer = New System.Windows.Forms.Panel()
+        Me.QuestsButton = New System.Windows.Forms.PictureBox()
+        Me.MenuCharacterContainer = New System.Windows.Forms.Panel()
+        Me.CharacterButton = New System.Windows.Forms.PictureBox()
+        Me.SpellsContainer = New System.Windows.Forms.Panel()
+        Me.SpellsButton = New System.Windows.Forms.PictureBox()
+        Me.InventoryContainer = New System.Windows.Forms.Panel()
+        Me.InventoryButton = New System.Windows.Forms.PictureBox()
+        Me.MainItemDescWindowExpandedPanel = New System.Windows.Forms.Panel()
+        Me.ItemDescExpandedItemStats = New System.Windows.Forms.Panel()
+        Me.ItemDescItemStatsText = New System.Windows.Forms.Label()
+        Me.ItemDescExpandedItemValueLabel = New System.Windows.Forms.Label()
+        Me.ItemDescExpandedItemTypeLabel = New System.Windows.Forms.Label()
+        Me.ItemDescExpandedItemQuantity = New System.Windows.Forms.Label()
+        Me.ItemDescExpandedItemNameLabel = New System.Windows.Forms.Label()
+        Me.ItemDescExpandedItemIcon = New System.Windows.Forms.PictureBox()
+        Me.ItemDescExpandedItemDescription = New System.Windows.Forms.Panel()
+        Me.MainItemDescWindowPanel = New System.Windows.Forms.Panel()
+        Me.ItemDescItemValueLabel = New System.Windows.Forms.Label()
+        Me.ItemDescItemTypeLabel = New System.Windows.Forms.Label()
+        Me.ItemDescItemQantityLabel = New System.Windows.Forms.Label()
+        Me.ItemDescItemNameLabel = New System.Windows.Forms.Label()
+        Me.ItemDescItemIcon = New System.Windows.Forms.PictureBox()
+        Me.ItemDescItemDescription = New System.Windows.Forms.Panel()
+        Me.MainInventoryWindowPanel = New System.Windows.Forms.Panel()
+        Me.InventoryWindowCloseButton = New System.Windows.Forms.PictureBox()
+        Me.InventoryWindowTitle = New System.Windows.Forms.Label()
+        Me.MainInventoryItemPanel = New System.Windows.Forms.Panel()
+        Me.InventoryItemCooldownLabel = New System.Windows.Forms.Label()
+        Me.InventoryItemEquippedLabel = New System.Windows.Forms.Label()
+        Me.InventoryItemValue = New System.Windows.Forms.Label()
+        Me.InventoryItemIcon = New System.Windows.Forms.PictureBox()
         Me.MainGameInputBoxPanel = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.GameInputOkayButton = New System.Windows.Forms.PictureBox()
@@ -406,11 +491,29 @@ Partial Class Form1
         Me.RefreshBtn = New System.Windows.Forms.ToolStripMenuItem()
         Me.gridToggle = New System.Windows.Forms.ToolStripMenuItem()
         Me.AppSettings = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MainInventoryItemPanel = New System.Windows.Forms.Panel()
-        Me.InventoryItemValue = New System.Windows.Forms.Label()
-        Me.InventoryItemIcon = New System.Windows.Forms.PictureBox()
-        Me.InventoryItemEquippedLabel = New System.Windows.Forms.Label()
-        Me.InventoryItemCooldownLabel = New System.Windows.Forms.Label()
+        Me.MainPlayerBoxPanel = New System.Windows.Forms.Panel()
+        Me.EntityInfoPanel = New System.Windows.Forms.Panel()
+        Me.EntityNameLabel = New System.Windows.Forms.Label()
+        Me.EntityLevelLabel = New System.Windows.Forms.Label()
+        Me.NameAndLevelLabel = New System.Windows.Forms.Label()
+        Me.EntityMapLabel = New System.Windows.Forms.Label()
+        Me.EntityGraphicContainer = New System.Windows.Forms.PictureBox()
+        Me.HPBarBackground = New System.Windows.Forms.PictureBox()
+        Me.HPBar = New System.Windows.Forms.PictureBox()
+        Me.ShieldBar = New System.Windows.Forms.PictureBox()
+        Me.HPTitle = New System.Windows.Forms.Label()
+        Me.HPLabel = New System.Windows.Forms.Label()
+        Me.MPBackground = New System.Windows.Forms.PictureBox()
+        Me.MPBar = New System.Windows.Forms.PictureBox()
+        Me.MPTitle = New System.Windows.Forms.Label()
+        Me.MPLabel = New System.Windows.Forms.Label()
+        Me.EXPBackground = New System.Windows.Forms.PictureBox()
+        Me.EXPBar = New System.Windows.Forms.PictureBox()
+        Me.EXPLabel = New System.Windows.Forms.Label()
+        Me.EXPTitle = New System.Windows.Forms.Label()
+        Me.PlayerBoxTradeButton = New System.Windows.Forms.PictureBox()
+        Me.PlayerBoxPartyButton = New System.Windows.Forms.PictureBox()
+        Me.PlayerBoxFriendButton = New System.Windows.Forms.PictureBox()
         CType(Me.mainSplitContainer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.mainSplitContainer.Panel1.SuspendLayout()
         Me.mainSplitContainer.Panel2.SuspendLayout()
@@ -426,6 +529,54 @@ Partial Class Form1
         Me.SplitContainer1.Panel2.SuspendLayout()
         Me.SplitContainer1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
+        Me.MainPartyWindowPanel.SuspendLayout()
+        Me.PartyInnerPanel.SuspendLayout()
+        CType(Me.KickButton3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.KickButton2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.KickButton1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LeavePartyButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ManaBarContainer3.SuspendLayout()
+        CType(Me.ManaBar3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.HealthBarContainer3.SuspendLayout()
+        CType(Me.HealthBar3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ManaBarContainer2.SuspendLayout()
+        CType(Me.ManaBar2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.HealthBarContainer2.SuspendLayout()
+        CType(Me.HealthBar2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ManaBarContainer1.SuspendLayout()
+        CType(Me.ManaBar1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.HealthBarContainer1.SuspendLayout()
+        CType(Me.HealthBar1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ManaBarContainer0.SuspendLayout()
+        CType(Me.ManaBar0, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LeaderIcon, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.HealthBarContainer0.SuspendLayout()
+        CType(Me.HealthBar0, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PartyCloseButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MainMenuContainerPanel.SuspendLayout()
+        Me.MenuContainer.SuspendLayout()
+        CType(Me.MenuButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PartyContainer.SuspendLayout()
+        CType(Me.PartyButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.FriendsContainer.SuspendLayout()
+        CType(Me.FriendsButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.QuestsContainer.SuspendLayout()
+        CType(Me.QuestsButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MenuCharacterContainer.SuspendLayout()
+        CType(Me.CharacterButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SpellsContainer.SuspendLayout()
+        CType(Me.SpellsButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.InventoryContainer.SuspendLayout()
+        CType(Me.InventoryButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MainItemDescWindowExpandedPanel.SuspendLayout()
+        Me.ItemDescExpandedItemStats.SuspendLayout()
+        CType(Me.ItemDescExpandedItemIcon, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MainItemDescWindowPanel.SuspendLayout()
+        CType(Me.ItemDescItemIcon, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MainInventoryWindowPanel.SuspendLayout()
+        CType(Me.InventoryWindowCloseButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MainInventoryItemPanel.SuspendLayout()
+        CType(Me.InventoryItemIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MainGameInputBoxPanel.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.GameInputOkayButton, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -627,8 +778,19 @@ Partial Class Form1
         CType(Me.UsernameFieldPB, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.StatusStrip1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
-        Me.MainInventoryItemPanel.SuspendLayout()
-        CType(Me.InventoryItemIcon, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MainPlayerBoxPanel.SuspendLayout()
+        Me.EntityInfoPanel.SuspendLayout()
+        CType(Me.EntityGraphicContainer, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.HPBarBackground, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.HPBar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ShieldBar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MPBackground, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MPBar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EXPBackground, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EXPBar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PlayerBoxTradeButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PlayerBoxPartyButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PlayerBoxFriendButton, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'mainSplitContainer
@@ -662,6 +824,12 @@ Partial Class Form1
         'toolSplitContainer.Panel2
         '
         Me.toolSplitContainer.Panel2.AutoScroll = True
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainPlayerBoxPanel)
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainPartyWindowPanel)
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainMenuContainerPanel)
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainItemDescWindowExpandedPanel)
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainItemDescWindowPanel)
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainInventoryWindowPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainInventoryItemPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainGameInputBoxPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainHotbarWindowPanel)
@@ -816,6 +984,1008 @@ Partial Class Form1
         Me.fullJson.Size = New System.Drawing.Size(268, 575)
         Me.fullJson.TabIndex = 0
         Me.fullJson.Text = ""
+        '
+        'MainPartyWindowPanel
+        '
+        Me.MainPartyWindowPanel.BackgroundImage = CType(resources.GetObject("MainPartyWindowPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainPartyWindowPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainPartyWindowPanel.Controls.Add(Me.PartyInnerPanel)
+        Me.MainPartyWindowPanel.Controls.Add(Me.PartyCloseButton)
+        Me.MainPartyWindowPanel.Controls.Add(Me.PartyTitle)
+        Me.MainPartyWindowPanel.Location = New System.Drawing.Point(2034, 500)
+        Me.MainPartyWindowPanel.Name = "MainPartyWindowPanel"
+        Me.MainPartyWindowPanel.Size = New System.Drawing.Size(220, 338)
+        Me.MainPartyWindowPanel.TabIndex = 44
+        Me.MainPartyWindowPanel.Visible = False
+        '
+        'PartyInnerPanel
+        '
+        Me.PartyInnerPanel.BackColor = System.Drawing.Color.Transparent
+        Me.PartyInnerPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PartyInnerPanel.Controls.Add(Me.KickButton3)
+        Me.PartyInnerPanel.Controls.Add(Me.KickButton2)
+        Me.PartyInnerPanel.Controls.Add(Me.KickButton1)
+        Me.PartyInnerPanel.Controls.Add(Me.LeavePartyButton)
+        Me.PartyInnerPanel.Controls.Add(Me.ManaValue3)
+        Me.PartyInnerPanel.Controls.Add(Me.ManaLabel3)
+        Me.PartyInnerPanel.Controls.Add(Me.ManaBarContainer3)
+        Me.PartyInnerPanel.Controls.Add(Me.HealthValue3)
+        Me.PartyInnerPanel.Controls.Add(Me.HealthLabel3)
+        Me.PartyInnerPanel.Controls.Add(Me.HealthBarContainer3)
+        Me.PartyInnerPanel.Controls.Add(Me.MemberName3)
+        Me.PartyInnerPanel.Controls.Add(Me.ManaValue2)
+        Me.PartyInnerPanel.Controls.Add(Me.ManaLabel2)
+        Me.PartyInnerPanel.Controls.Add(Me.ManaBarContainer2)
+        Me.PartyInnerPanel.Controls.Add(Me.HealthValue2)
+        Me.PartyInnerPanel.Controls.Add(Me.HealthLabel2)
+        Me.PartyInnerPanel.Controls.Add(Me.HealthBarContainer2)
+        Me.PartyInnerPanel.Controls.Add(Me.MemberName2)
+        Me.PartyInnerPanel.Controls.Add(Me.ManaValue1)
+        Me.PartyInnerPanel.Controls.Add(Me.ManaLabel1)
+        Me.PartyInnerPanel.Controls.Add(Me.ManaBarContainer1)
+        Me.PartyInnerPanel.Controls.Add(Me.HealthValue1)
+        Me.PartyInnerPanel.Controls.Add(Me.HealthLabel1)
+        Me.PartyInnerPanel.Controls.Add(Me.HealthBarContainer1)
+        Me.PartyInnerPanel.Controls.Add(Me.MemberName1)
+        Me.PartyInnerPanel.Controls.Add(Me.ManaValue0)
+        Me.PartyInnerPanel.Controls.Add(Me.ManaLabel0)
+        Me.PartyInnerPanel.Controls.Add(Me.ManaBarContainer0)
+        Me.PartyInnerPanel.Controls.Add(Me.HealthValue0)
+        Me.PartyInnerPanel.Controls.Add(Me.HealthLabel0)
+        Me.PartyInnerPanel.Controls.Add(Me.LeaderText)
+        Me.PartyInnerPanel.Controls.Add(Me.LeaderIcon)
+        Me.PartyInnerPanel.Controls.Add(Me.HealthBarContainer0)
+        Me.PartyInnerPanel.Controls.Add(Me.MemberName0)
+        Me.PartyInnerPanel.Location = New System.Drawing.Point(2, 29)
+        Me.PartyInnerPanel.Name = "PartyInnerPanel"
+        Me.PartyInnerPanel.Size = New System.Drawing.Size(215, 306)
+        Me.PartyInnerPanel.TabIndex = 26
+        '
+        'KickButton3
+        '
+        Me.KickButton3.BackColor = System.Drawing.Color.Transparent
+        Me.KickButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.KickButton3.Location = New System.Drawing.Point(180, 203)
+        Me.KickButton3.Name = "KickButton3"
+        Me.KickButton3.Size = New System.Drawing.Size(30, 16)
+        Me.KickButton3.TabIndex = 58
+        Me.KickButton3.TabStop = False
+        '
+        'KickButton2
+        '
+        Me.KickButton2.BackColor = System.Drawing.Color.Transparent
+        Me.KickButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.KickButton2.Location = New System.Drawing.Point(180, 137)
+        Me.KickButton2.Name = "KickButton2"
+        Me.KickButton2.Size = New System.Drawing.Size(30, 16)
+        Me.KickButton2.TabIndex = 57
+        Me.KickButton2.TabStop = False
+        '
+        'KickButton1
+        '
+        Me.KickButton1.BackColor = System.Drawing.Color.Transparent
+        Me.KickButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.KickButton1.Location = New System.Drawing.Point(180, 71)
+        Me.KickButton1.Name = "KickButton1"
+        Me.KickButton1.Size = New System.Drawing.Size(30, 16)
+        Me.KickButton1.TabIndex = 56
+        Me.KickButton1.TabStop = False
+        '
+        'LeavePartyButton
+        '
+        Me.LeavePartyButton.BackColor = System.Drawing.Color.Transparent
+        Me.LeavePartyButton.BackgroundImage = CType(resources.GetObject("LeavePartyButton.BackgroundImage"), System.Drawing.Image)
+        Me.LeavePartyButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.LeavePartyButton.Location = New System.Drawing.Point(50, 270)
+        Me.LeavePartyButton.Name = "LeavePartyButton"
+        Me.LeavePartyButton.Size = New System.Drawing.Size(120, 28)
+        Me.LeavePartyButton.TabIndex = 55
+        Me.LeavePartyButton.TabStop = False
+        '
+        'ManaValue3
+        '
+        Me.ManaValue3.AutoSize = True
+        Me.ManaValue3.BackColor = System.Drawing.Color.Transparent
+        Me.ManaValue3.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ManaValue3.ForeColor = System.Drawing.Color.White
+        Me.ManaValue3.Location = New System.Drawing.Point(42, 241)
+        Me.ManaValue3.Name = "ManaValue3"
+        Me.ManaValue3.Size = New System.Drawing.Size(67, 17)
+        Me.ManaValue3.TabIndex = 53
+        Me.ManaValue3.Text = "9999 / 9999"
+        '
+        'ManaLabel3
+        '
+        Me.ManaLabel3.AutoSize = True
+        Me.ManaLabel3.BackColor = System.Drawing.Color.Transparent
+        Me.ManaLabel3.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ManaLabel3.ForeColor = System.Drawing.Color.White
+        Me.ManaLabel3.Location = New System.Drawing.Point(10, 241)
+        Me.ManaLabel3.Name = "ManaLabel3"
+        Me.ManaLabel3.Size = New System.Drawing.Size(27, 17)
+        Me.ManaLabel3.TabIndex = 52
+        Me.ManaLabel3.Text = "MP:"
+        '
+        'ManaBarContainer3
+        '
+        Me.ManaBarContainer3.BackColor = System.Drawing.Color.Transparent
+        Me.ManaBarContainer3.BackgroundImage = CType(resources.GetObject("ManaBarContainer3.BackgroundImage"), System.Drawing.Image)
+        Me.ManaBarContainer3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ManaBarContainer3.Controls.Add(Me.ManaBar3)
+        Me.ManaBarContainer3.Location = New System.Drawing.Point(42, 243)
+        Me.ManaBarContainer3.Name = "ManaBarContainer3"
+        Me.ManaBarContainer3.Size = New System.Drawing.Size(168, 14)
+        Me.ManaBarContainer3.TabIndex = 51
+        '
+        'ManaBar3
+        '
+        Me.ManaBar3.BackgroundImage = CType(resources.GetObject("ManaBar3.BackgroundImage"), System.Drawing.Image)
+        Me.ManaBar3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ManaBar3.Location = New System.Drawing.Point(0, 0)
+        Me.ManaBar3.Name = "ManaBar3"
+        Me.ManaBar3.Size = New System.Drawing.Size(168, 14)
+        Me.ManaBar3.TabIndex = 0
+        Me.ManaBar3.TabStop = False
+        '
+        'HealthValue3
+        '
+        Me.HealthValue3.AutoSize = True
+        Me.HealthValue3.BackColor = System.Drawing.Color.Transparent
+        Me.HealthValue3.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HealthValue3.ForeColor = System.Drawing.Color.White
+        Me.HealthValue3.Location = New System.Drawing.Point(42, 221)
+        Me.HealthValue3.Name = "HealthValue3"
+        Me.HealthValue3.Size = New System.Drawing.Size(67, 17)
+        Me.HealthValue3.TabIndex = 50
+        Me.HealthValue3.Text = "9999 / 9999"
+        '
+        'HealthLabel3
+        '
+        Me.HealthLabel3.AutoSize = True
+        Me.HealthLabel3.BackColor = System.Drawing.Color.Transparent
+        Me.HealthLabel3.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HealthLabel3.ForeColor = System.Drawing.Color.White
+        Me.HealthLabel3.Location = New System.Drawing.Point(10, 221)
+        Me.HealthLabel3.Name = "HealthLabel3"
+        Me.HealthLabel3.Size = New System.Drawing.Size(26, 17)
+        Me.HealthLabel3.TabIndex = 49
+        Me.HealthLabel3.Text = "HP:"
+        '
+        'HealthBarContainer3
+        '
+        Me.HealthBarContainer3.BackColor = System.Drawing.Color.Transparent
+        Me.HealthBarContainer3.BackgroundImage = CType(resources.GetObject("HealthBarContainer3.BackgroundImage"), System.Drawing.Image)
+        Me.HealthBarContainer3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.HealthBarContainer3.Controls.Add(Me.HealthBar3)
+        Me.HealthBarContainer3.Location = New System.Drawing.Point(42, 223)
+        Me.HealthBarContainer3.Name = "HealthBarContainer3"
+        Me.HealthBarContainer3.Size = New System.Drawing.Size(168, 14)
+        Me.HealthBarContainer3.TabIndex = 48
+        '
+        'HealthBar3
+        '
+        Me.HealthBar3.BackgroundImage = CType(resources.GetObject("HealthBar3.BackgroundImage"), System.Drawing.Image)
+        Me.HealthBar3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.HealthBar3.Location = New System.Drawing.Point(0, 0)
+        Me.HealthBar3.Name = "HealthBar3"
+        Me.HealthBar3.Size = New System.Drawing.Size(168, 14)
+        Me.HealthBar3.TabIndex = 0
+        Me.HealthBar3.TabStop = False
+        '
+        'MemberName3
+        '
+        Me.MemberName3.AutoSize = True
+        Me.MemberName3.BackColor = System.Drawing.Color.Transparent
+        Me.MemberName3.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MemberName3.ForeColor = System.Drawing.Color.White
+        Me.MemberName3.Location = New System.Drawing.Point(10, 203)
+        Me.MemberName3.Name = "MemberName3"
+        Me.MemberName3.Size = New System.Drawing.Size(127, 17)
+        Me.MemberName3.TabIndex = 47
+        Me.MemberName3.Text = "MemberName - Lvl. 99"
+        '
+        'ManaValue2
+        '
+        Me.ManaValue2.AutoSize = True
+        Me.ManaValue2.BackColor = System.Drawing.Color.Transparent
+        Me.ManaValue2.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ManaValue2.ForeColor = System.Drawing.Color.White
+        Me.ManaValue2.Location = New System.Drawing.Point(42, 175)
+        Me.ManaValue2.Name = "ManaValue2"
+        Me.ManaValue2.Size = New System.Drawing.Size(67, 17)
+        Me.ManaValue2.TabIndex = 45
+        Me.ManaValue2.Text = "9999 / 9999"
+        '
+        'ManaLabel2
+        '
+        Me.ManaLabel2.AutoSize = True
+        Me.ManaLabel2.BackColor = System.Drawing.Color.Transparent
+        Me.ManaLabel2.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ManaLabel2.ForeColor = System.Drawing.Color.White
+        Me.ManaLabel2.Location = New System.Drawing.Point(10, 175)
+        Me.ManaLabel2.Name = "ManaLabel2"
+        Me.ManaLabel2.Size = New System.Drawing.Size(27, 17)
+        Me.ManaLabel2.TabIndex = 44
+        Me.ManaLabel2.Text = "MP:"
+        '
+        'ManaBarContainer2
+        '
+        Me.ManaBarContainer2.BackColor = System.Drawing.Color.Transparent
+        Me.ManaBarContainer2.BackgroundImage = CType(resources.GetObject("ManaBarContainer2.BackgroundImage"), System.Drawing.Image)
+        Me.ManaBarContainer2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ManaBarContainer2.Controls.Add(Me.ManaBar2)
+        Me.ManaBarContainer2.Location = New System.Drawing.Point(42, 177)
+        Me.ManaBarContainer2.Name = "ManaBarContainer2"
+        Me.ManaBarContainer2.Size = New System.Drawing.Size(168, 14)
+        Me.ManaBarContainer2.TabIndex = 43
+        '
+        'ManaBar2
+        '
+        Me.ManaBar2.BackgroundImage = CType(resources.GetObject("ManaBar2.BackgroundImage"), System.Drawing.Image)
+        Me.ManaBar2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ManaBar2.Location = New System.Drawing.Point(0, 0)
+        Me.ManaBar2.Name = "ManaBar2"
+        Me.ManaBar2.Size = New System.Drawing.Size(168, 14)
+        Me.ManaBar2.TabIndex = 0
+        Me.ManaBar2.TabStop = False
+        '
+        'HealthValue2
+        '
+        Me.HealthValue2.AutoSize = True
+        Me.HealthValue2.BackColor = System.Drawing.Color.Transparent
+        Me.HealthValue2.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HealthValue2.ForeColor = System.Drawing.Color.White
+        Me.HealthValue2.Location = New System.Drawing.Point(42, 155)
+        Me.HealthValue2.Name = "HealthValue2"
+        Me.HealthValue2.Size = New System.Drawing.Size(67, 17)
+        Me.HealthValue2.TabIndex = 42
+        Me.HealthValue2.Text = "9999 / 9999"
+        '
+        'HealthLabel2
+        '
+        Me.HealthLabel2.AutoSize = True
+        Me.HealthLabel2.BackColor = System.Drawing.Color.Transparent
+        Me.HealthLabel2.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HealthLabel2.ForeColor = System.Drawing.Color.White
+        Me.HealthLabel2.Location = New System.Drawing.Point(10, 155)
+        Me.HealthLabel2.Name = "HealthLabel2"
+        Me.HealthLabel2.Size = New System.Drawing.Size(26, 17)
+        Me.HealthLabel2.TabIndex = 41
+        Me.HealthLabel2.Text = "HP:"
+        '
+        'HealthBarContainer2
+        '
+        Me.HealthBarContainer2.BackColor = System.Drawing.Color.Transparent
+        Me.HealthBarContainer2.BackgroundImage = CType(resources.GetObject("HealthBarContainer2.BackgroundImage"), System.Drawing.Image)
+        Me.HealthBarContainer2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.HealthBarContainer2.Controls.Add(Me.HealthBar2)
+        Me.HealthBarContainer2.Location = New System.Drawing.Point(42, 157)
+        Me.HealthBarContainer2.Name = "HealthBarContainer2"
+        Me.HealthBarContainer2.Size = New System.Drawing.Size(168, 14)
+        Me.HealthBarContainer2.TabIndex = 40
+        '
+        'HealthBar2
+        '
+        Me.HealthBar2.BackgroundImage = CType(resources.GetObject("HealthBar2.BackgroundImage"), System.Drawing.Image)
+        Me.HealthBar2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.HealthBar2.Location = New System.Drawing.Point(0, 0)
+        Me.HealthBar2.Name = "HealthBar2"
+        Me.HealthBar2.Size = New System.Drawing.Size(168, 14)
+        Me.HealthBar2.TabIndex = 0
+        Me.HealthBar2.TabStop = False
+        '
+        'MemberName2
+        '
+        Me.MemberName2.AutoSize = True
+        Me.MemberName2.BackColor = System.Drawing.Color.Transparent
+        Me.MemberName2.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MemberName2.ForeColor = System.Drawing.Color.White
+        Me.MemberName2.Location = New System.Drawing.Point(10, 137)
+        Me.MemberName2.Name = "MemberName2"
+        Me.MemberName2.Size = New System.Drawing.Size(127, 17)
+        Me.MemberName2.TabIndex = 39
+        Me.MemberName2.Text = "MemberName - Lvl. 99"
+        '
+        'ManaValue1
+        '
+        Me.ManaValue1.AutoSize = True
+        Me.ManaValue1.BackColor = System.Drawing.Color.Transparent
+        Me.ManaValue1.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ManaValue1.ForeColor = System.Drawing.Color.White
+        Me.ManaValue1.Location = New System.Drawing.Point(42, 109)
+        Me.ManaValue1.Name = "ManaValue1"
+        Me.ManaValue1.Size = New System.Drawing.Size(67, 17)
+        Me.ManaValue1.TabIndex = 37
+        Me.ManaValue1.Text = "9999 / 9999"
+        '
+        'ManaLabel1
+        '
+        Me.ManaLabel1.AutoSize = True
+        Me.ManaLabel1.BackColor = System.Drawing.Color.Transparent
+        Me.ManaLabel1.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ManaLabel1.ForeColor = System.Drawing.Color.White
+        Me.ManaLabel1.Location = New System.Drawing.Point(10, 109)
+        Me.ManaLabel1.Name = "ManaLabel1"
+        Me.ManaLabel1.Size = New System.Drawing.Size(27, 17)
+        Me.ManaLabel1.TabIndex = 36
+        Me.ManaLabel1.Text = "MP:"
+        '
+        'ManaBarContainer1
+        '
+        Me.ManaBarContainer1.BackColor = System.Drawing.Color.Transparent
+        Me.ManaBarContainer1.BackgroundImage = CType(resources.GetObject("ManaBarContainer1.BackgroundImage"), System.Drawing.Image)
+        Me.ManaBarContainer1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ManaBarContainer1.Controls.Add(Me.ManaBar1)
+        Me.ManaBarContainer1.Location = New System.Drawing.Point(42, 111)
+        Me.ManaBarContainer1.Name = "ManaBarContainer1"
+        Me.ManaBarContainer1.Size = New System.Drawing.Size(168, 14)
+        Me.ManaBarContainer1.TabIndex = 35
+        '
+        'ManaBar1
+        '
+        Me.ManaBar1.BackgroundImage = CType(resources.GetObject("ManaBar1.BackgroundImage"), System.Drawing.Image)
+        Me.ManaBar1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ManaBar1.Location = New System.Drawing.Point(0, 0)
+        Me.ManaBar1.Name = "ManaBar1"
+        Me.ManaBar1.Size = New System.Drawing.Size(168, 14)
+        Me.ManaBar1.TabIndex = 0
+        Me.ManaBar1.TabStop = False
+        '
+        'HealthValue1
+        '
+        Me.HealthValue1.AutoSize = True
+        Me.HealthValue1.BackColor = System.Drawing.Color.Transparent
+        Me.HealthValue1.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HealthValue1.ForeColor = System.Drawing.Color.White
+        Me.HealthValue1.Location = New System.Drawing.Point(42, 89)
+        Me.HealthValue1.Name = "HealthValue1"
+        Me.HealthValue1.Size = New System.Drawing.Size(67, 17)
+        Me.HealthValue1.TabIndex = 34
+        Me.HealthValue1.Text = "9999 / 9999"
+        '
+        'HealthLabel1
+        '
+        Me.HealthLabel1.AutoSize = True
+        Me.HealthLabel1.BackColor = System.Drawing.Color.Transparent
+        Me.HealthLabel1.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HealthLabel1.ForeColor = System.Drawing.Color.White
+        Me.HealthLabel1.Location = New System.Drawing.Point(10, 89)
+        Me.HealthLabel1.Name = "HealthLabel1"
+        Me.HealthLabel1.Size = New System.Drawing.Size(26, 17)
+        Me.HealthLabel1.TabIndex = 33
+        Me.HealthLabel1.Text = "HP:"
+        '
+        'HealthBarContainer1
+        '
+        Me.HealthBarContainer1.BackColor = System.Drawing.Color.Transparent
+        Me.HealthBarContainer1.BackgroundImage = CType(resources.GetObject("HealthBarContainer1.BackgroundImage"), System.Drawing.Image)
+        Me.HealthBarContainer1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.HealthBarContainer1.Controls.Add(Me.HealthBar1)
+        Me.HealthBarContainer1.Location = New System.Drawing.Point(42, 91)
+        Me.HealthBarContainer1.Name = "HealthBarContainer1"
+        Me.HealthBarContainer1.Size = New System.Drawing.Size(168, 14)
+        Me.HealthBarContainer1.TabIndex = 32
+        '
+        'HealthBar1
+        '
+        Me.HealthBar1.BackgroundImage = CType(resources.GetObject("HealthBar1.BackgroundImage"), System.Drawing.Image)
+        Me.HealthBar1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.HealthBar1.Location = New System.Drawing.Point(0, 0)
+        Me.HealthBar1.Name = "HealthBar1"
+        Me.HealthBar1.Size = New System.Drawing.Size(168, 14)
+        Me.HealthBar1.TabIndex = 0
+        Me.HealthBar1.TabStop = False
+        '
+        'MemberName1
+        '
+        Me.MemberName1.AutoSize = True
+        Me.MemberName1.BackColor = System.Drawing.Color.Transparent
+        Me.MemberName1.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MemberName1.ForeColor = System.Drawing.Color.White
+        Me.MemberName1.Location = New System.Drawing.Point(10, 71)
+        Me.MemberName1.Name = "MemberName1"
+        Me.MemberName1.Size = New System.Drawing.Size(127, 17)
+        Me.MemberName1.TabIndex = 31
+        Me.MemberName1.Text = "MemberName - Lvl. 99"
+        '
+        'ManaValue0
+        '
+        Me.ManaValue0.AutoSize = True
+        Me.ManaValue0.BackColor = System.Drawing.Color.Transparent
+        Me.ManaValue0.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ManaValue0.ForeColor = System.Drawing.Color.White
+        Me.ManaValue0.Location = New System.Drawing.Point(42, 45)
+        Me.ManaValue0.Name = "ManaValue0"
+        Me.ManaValue0.Size = New System.Drawing.Size(67, 17)
+        Me.ManaValue0.TabIndex = 30
+        Me.ManaValue0.Text = "9999 / 9999"
+        '
+        'ManaLabel0
+        '
+        Me.ManaLabel0.AutoSize = True
+        Me.ManaLabel0.BackColor = System.Drawing.Color.Transparent
+        Me.ManaLabel0.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ManaLabel0.ForeColor = System.Drawing.Color.White
+        Me.ManaLabel0.Location = New System.Drawing.Point(10, 45)
+        Me.ManaLabel0.Name = "ManaLabel0"
+        Me.ManaLabel0.Size = New System.Drawing.Size(27, 17)
+        Me.ManaLabel0.TabIndex = 29
+        Me.ManaLabel0.Text = "MP:"
+        '
+        'ManaBarContainer0
+        '
+        Me.ManaBarContainer0.BackColor = System.Drawing.Color.Transparent
+        Me.ManaBarContainer0.BackgroundImage = CType(resources.GetObject("ManaBarContainer0.BackgroundImage"), System.Drawing.Image)
+        Me.ManaBarContainer0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ManaBarContainer0.Controls.Add(Me.ManaBar0)
+        Me.ManaBarContainer0.Location = New System.Drawing.Point(42, 45)
+        Me.ManaBarContainer0.Name = "ManaBarContainer0"
+        Me.ManaBarContainer0.Size = New System.Drawing.Size(168, 14)
+        Me.ManaBarContainer0.TabIndex = 28
+        '
+        'ManaBar0
+        '
+        Me.ManaBar0.BackgroundImage = CType(resources.GetObject("ManaBar0.BackgroundImage"), System.Drawing.Image)
+        Me.ManaBar0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ManaBar0.Location = New System.Drawing.Point(0, 0)
+        Me.ManaBar0.Name = "ManaBar0"
+        Me.ManaBar0.Size = New System.Drawing.Size(168, 14)
+        Me.ManaBar0.TabIndex = 0
+        Me.ManaBar0.TabStop = False
+        '
+        'HealthValue0
+        '
+        Me.HealthValue0.AutoSize = True
+        Me.HealthValue0.BackColor = System.Drawing.Color.Transparent
+        Me.HealthValue0.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HealthValue0.ForeColor = System.Drawing.Color.White
+        Me.HealthValue0.Location = New System.Drawing.Point(42, 23)
+        Me.HealthValue0.Name = "HealthValue0"
+        Me.HealthValue0.Size = New System.Drawing.Size(67, 17)
+        Me.HealthValue0.TabIndex = 27
+        Me.HealthValue0.Text = "9999 / 9999"
+        '
+        'HealthLabel0
+        '
+        Me.HealthLabel0.AutoSize = True
+        Me.HealthLabel0.BackColor = System.Drawing.Color.Transparent
+        Me.HealthLabel0.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HealthLabel0.ForeColor = System.Drawing.Color.White
+        Me.HealthLabel0.Location = New System.Drawing.Point(10, 23)
+        Me.HealthLabel0.Name = "HealthLabel0"
+        Me.HealthLabel0.Size = New System.Drawing.Size(26, 17)
+        Me.HealthLabel0.TabIndex = 26
+        Me.HealthLabel0.Text = "HP:"
+        '
+        'LeaderText
+        '
+        Me.LeaderText.AutoSize = True
+        Me.LeaderText.BackColor = System.Drawing.Color.Transparent
+        Me.LeaderText.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LeaderText.ForeColor = System.Drawing.Color.White
+        Me.LeaderText.Location = New System.Drawing.Point(42, 5)
+        Me.LeaderText.Name = "LeaderText"
+        Me.LeaderText.Size = New System.Drawing.Size(45, 17)
+        Me.LeaderText.TabIndex = 23
+        Me.LeaderText.Text = "Leader"
+        Me.LeaderText.Visible = False
+        '
+        'LeaderIcon
+        '
+        Me.LeaderIcon.BackColor = System.Drawing.Color.Transparent
+        Me.LeaderIcon.Location = New System.Drawing.Point(148, 4)
+        Me.LeaderIcon.Name = "LeaderIcon"
+        Me.LeaderIcon.Size = New System.Drawing.Size(34, 34)
+        Me.LeaderIcon.TabIndex = 20
+        Me.LeaderIcon.TabStop = False
+        Me.LeaderIcon.Visible = False
+        '
+        'HealthBarContainer0
+        '
+        Me.HealthBarContainer0.BackColor = System.Drawing.Color.Transparent
+        Me.HealthBarContainer0.BackgroundImage = CType(resources.GetObject("HealthBarContainer0.BackgroundImage"), System.Drawing.Image)
+        Me.HealthBarContainer0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.HealthBarContainer0.Controls.Add(Me.HealthBar0)
+        Me.HealthBarContainer0.Location = New System.Drawing.Point(42, 25)
+        Me.HealthBarContainer0.Name = "HealthBarContainer0"
+        Me.HealthBarContainer0.Size = New System.Drawing.Size(168, 14)
+        Me.HealthBarContainer0.TabIndex = 25
+        '
+        'HealthBar0
+        '
+        Me.HealthBar0.BackgroundImage = CType(resources.GetObject("HealthBar0.BackgroundImage"), System.Drawing.Image)
+        Me.HealthBar0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.HealthBar0.Location = New System.Drawing.Point(0, 0)
+        Me.HealthBar0.Name = "HealthBar0"
+        Me.HealthBar0.Size = New System.Drawing.Size(168, 14)
+        Me.HealthBar0.TabIndex = 0
+        Me.HealthBar0.TabStop = False
+        '
+        'MemberName0
+        '
+        Me.MemberName0.AutoSize = True
+        Me.MemberName0.BackColor = System.Drawing.Color.Transparent
+        Me.MemberName0.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MemberName0.ForeColor = System.Drawing.Color.White
+        Me.MemberName0.Location = New System.Drawing.Point(10, 5)
+        Me.MemberName0.Name = "MemberName0"
+        Me.MemberName0.Size = New System.Drawing.Size(127, 17)
+        Me.MemberName0.TabIndex = 24
+        Me.MemberName0.Text = "MemberName - Lvl. 99"
+        '
+        'PartyCloseButton
+        '
+        Me.PartyCloseButton.BackColor = System.Drawing.Color.Transparent
+        Me.PartyCloseButton.BackgroundImage = CType(resources.GetObject("PartyCloseButton.BackgroundImage"), System.Drawing.Image)
+        Me.PartyCloseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PartyCloseButton.Location = New System.Drawing.Point(194, 4)
+        Me.PartyCloseButton.Name = "PartyCloseButton"
+        Me.PartyCloseButton.Size = New System.Drawing.Size(26, 25)
+        Me.PartyCloseButton.TabIndex = 19
+        Me.PartyCloseButton.TabStop = False
+        '
+        'PartyTitle
+        '
+        Me.PartyTitle.AutoSize = True
+        Me.PartyTitle.BackColor = System.Drawing.Color.Transparent
+        Me.PartyTitle.Font = New System.Drawing.Font("Source Sans Pro SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PartyTitle.ForeColor = System.Drawing.Color.White
+        Me.PartyTitle.Location = New System.Drawing.Point(40, 5)
+        Me.PartyTitle.Name = "PartyTitle"
+        Me.PartyTitle.Size = New System.Drawing.Size(45, 20)
+        Me.PartyTitle.TabIndex = 3
+        Me.PartyTitle.Text = "Party"
+        '
+        'MainMenuContainerPanel
+        '
+        Me.MainMenuContainerPanel.BackgroundImage = CType(resources.GetObject("MainMenuContainerPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainMenuContainerPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainMenuContainerPanel.Controls.Add(Me.MenuContainer)
+        Me.MainMenuContainerPanel.Controls.Add(Me.PartyContainer)
+        Me.MainMenuContainerPanel.Controls.Add(Me.FriendsContainer)
+        Me.MainMenuContainerPanel.Controls.Add(Me.QuestsContainer)
+        Me.MainMenuContainerPanel.Controls.Add(Me.MenuCharacterContainer)
+        Me.MainMenuContainerPanel.Controls.Add(Me.SpellsContainer)
+        Me.MainMenuContainerPanel.Controls.Add(Me.InventoryContainer)
+        Me.MainMenuContainerPanel.Location = New System.Drawing.Point(825, 1089)
+        Me.MainMenuContainerPanel.Name = "MainMenuContainerPanel"
+        Me.MainMenuContainerPanel.Size = New System.Drawing.Size(289, 42)
+        Me.MainMenuContainerPanel.TabIndex = 43
+        Me.MainMenuContainerPanel.Visible = False
+        '
+        'MenuContainer
+        '
+        Me.MenuContainer.BackgroundImage = CType(resources.GetObject("MenuContainer.BackgroundImage"), System.Drawing.Image)
+        Me.MenuContainer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MenuContainer.Controls.Add(Me.MenuButton)
+        Me.MenuContainer.Location = New System.Drawing.Point(248, 4)
+        Me.MenuContainer.Name = "MenuContainer"
+        Me.MenuContainer.Size = New System.Drawing.Size(34, 35)
+        Me.MenuContainer.TabIndex = 46
+        '
+        'MenuButton
+        '
+        Me.MenuButton.BackColor = System.Drawing.Color.Transparent
+        Me.MenuButton.BackgroundImage = CType(resources.GetObject("MenuButton.BackgroundImage"), System.Drawing.Image)
+        Me.MenuButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MenuButton.Location = New System.Drawing.Point(1, 1)
+        Me.MenuButton.Name = "MenuButton"
+        Me.MenuButton.Size = New System.Drawing.Size(32, 32)
+        Me.MenuButton.TabIndex = 0
+        Me.MenuButton.TabStop = False
+        '
+        'PartyContainer
+        '
+        Me.PartyContainer.BackgroundImage = CType(resources.GetObject("PartyContainer.BackgroundImage"), System.Drawing.Image)
+        Me.PartyContainer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PartyContainer.Controls.Add(Me.PartyButton)
+        Me.PartyContainer.Location = New System.Drawing.Point(208, 4)
+        Me.PartyContainer.Name = "PartyContainer"
+        Me.PartyContainer.Size = New System.Drawing.Size(34, 35)
+        Me.PartyContainer.TabIndex = 45
+        '
+        'PartyButton
+        '
+        Me.PartyButton.BackColor = System.Drawing.Color.Transparent
+        Me.PartyButton.BackgroundImage = CType(resources.GetObject("PartyButton.BackgroundImage"), System.Drawing.Image)
+        Me.PartyButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PartyButton.Location = New System.Drawing.Point(2, 2)
+        Me.PartyButton.Name = "PartyButton"
+        Me.PartyButton.Size = New System.Drawing.Size(30, 30)
+        Me.PartyButton.TabIndex = 0
+        Me.PartyButton.TabStop = False
+        '
+        'FriendsContainer
+        '
+        Me.FriendsContainer.BackgroundImage = CType(resources.GetObject("FriendsContainer.BackgroundImage"), System.Drawing.Image)
+        Me.FriendsContainer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.FriendsContainer.Controls.Add(Me.FriendsButton)
+        Me.FriendsContainer.Location = New System.Drawing.Point(168, 4)
+        Me.FriendsContainer.Name = "FriendsContainer"
+        Me.FriendsContainer.Size = New System.Drawing.Size(34, 35)
+        Me.FriendsContainer.TabIndex = 44
+        '
+        'FriendsButton
+        '
+        Me.FriendsButton.BackColor = System.Drawing.Color.Transparent
+        Me.FriendsButton.BackgroundImage = CType(resources.GetObject("FriendsButton.BackgroundImage"), System.Drawing.Image)
+        Me.FriendsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.FriendsButton.Location = New System.Drawing.Point(1, 1)
+        Me.FriendsButton.Name = "FriendsButton"
+        Me.FriendsButton.Size = New System.Drawing.Size(32, 32)
+        Me.FriendsButton.TabIndex = 0
+        Me.FriendsButton.TabStop = False
+        '
+        'QuestsContainer
+        '
+        Me.QuestsContainer.BackgroundImage = CType(resources.GetObject("QuestsContainer.BackgroundImage"), System.Drawing.Image)
+        Me.QuestsContainer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.QuestsContainer.Controls.Add(Me.QuestsButton)
+        Me.QuestsContainer.Location = New System.Drawing.Point(128, 4)
+        Me.QuestsContainer.Name = "QuestsContainer"
+        Me.QuestsContainer.Size = New System.Drawing.Size(34, 35)
+        Me.QuestsContainer.TabIndex = 43
+        '
+        'QuestsButton
+        '
+        Me.QuestsButton.BackColor = System.Drawing.Color.Transparent
+        Me.QuestsButton.BackgroundImage = CType(resources.GetObject("QuestsButton.BackgroundImage"), System.Drawing.Image)
+        Me.QuestsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.QuestsButton.Location = New System.Drawing.Point(1, 1)
+        Me.QuestsButton.Name = "QuestsButton"
+        Me.QuestsButton.Size = New System.Drawing.Size(32, 32)
+        Me.QuestsButton.TabIndex = 0
+        Me.QuestsButton.TabStop = False
+        '
+        'MenuCharacterContainer
+        '
+        Me.MenuCharacterContainer.BackgroundImage = CType(resources.GetObject("MenuCharacterContainer.BackgroundImage"), System.Drawing.Image)
+        Me.MenuCharacterContainer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MenuCharacterContainer.Controls.Add(Me.CharacterButton)
+        Me.MenuCharacterContainer.Location = New System.Drawing.Point(88, 4)
+        Me.MenuCharacterContainer.Name = "MenuCharacterContainer"
+        Me.MenuCharacterContainer.Size = New System.Drawing.Size(34, 35)
+        Me.MenuCharacterContainer.TabIndex = 42
+        '
+        'CharacterButton
+        '
+        Me.CharacterButton.BackColor = System.Drawing.Color.Transparent
+        Me.CharacterButton.BackgroundImage = CType(resources.GetObject("CharacterButton.BackgroundImage"), System.Drawing.Image)
+        Me.CharacterButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.CharacterButton.Location = New System.Drawing.Point(1, 1)
+        Me.CharacterButton.Name = "CharacterButton"
+        Me.CharacterButton.Size = New System.Drawing.Size(32, 32)
+        Me.CharacterButton.TabIndex = 0
+        Me.CharacterButton.TabStop = False
+        '
+        'SpellsContainer
+        '
+        Me.SpellsContainer.BackgroundImage = CType(resources.GetObject("SpellsContainer.BackgroundImage"), System.Drawing.Image)
+        Me.SpellsContainer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.SpellsContainer.Controls.Add(Me.SpellsButton)
+        Me.SpellsContainer.Location = New System.Drawing.Point(48, 4)
+        Me.SpellsContainer.Name = "SpellsContainer"
+        Me.SpellsContainer.Size = New System.Drawing.Size(34, 35)
+        Me.SpellsContainer.TabIndex = 41
+        '
+        'SpellsButton
+        '
+        Me.SpellsButton.BackColor = System.Drawing.Color.Transparent
+        Me.SpellsButton.BackgroundImage = CType(resources.GetObject("SpellsButton.BackgroundImage"), System.Drawing.Image)
+        Me.SpellsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.SpellsButton.Location = New System.Drawing.Point(1, 1)
+        Me.SpellsButton.Name = "SpellsButton"
+        Me.SpellsButton.Size = New System.Drawing.Size(32, 32)
+        Me.SpellsButton.TabIndex = 0
+        Me.SpellsButton.TabStop = False
+        '
+        'InventoryContainer
+        '
+        Me.InventoryContainer.BackgroundImage = CType(resources.GetObject("InventoryContainer.BackgroundImage"), System.Drawing.Image)
+        Me.InventoryContainer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.InventoryContainer.Controls.Add(Me.InventoryButton)
+        Me.InventoryContainer.Location = New System.Drawing.Point(8, 4)
+        Me.InventoryContainer.Name = "InventoryContainer"
+        Me.InventoryContainer.Size = New System.Drawing.Size(34, 35)
+        Me.InventoryContainer.TabIndex = 40
+        '
+        'InventoryButton
+        '
+        Me.InventoryButton.BackColor = System.Drawing.Color.Transparent
+        Me.InventoryButton.BackgroundImage = CType(resources.GetObject("InventoryButton.BackgroundImage"), System.Drawing.Image)
+        Me.InventoryButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.InventoryButton.Location = New System.Drawing.Point(1, 1)
+        Me.InventoryButton.Name = "InventoryButton"
+        Me.InventoryButton.Size = New System.Drawing.Size(32, 32)
+        Me.InventoryButton.TabIndex = 0
+        Me.InventoryButton.TabStop = False
+        '
+        'MainItemDescWindowExpandedPanel
+        '
+        Me.MainItemDescWindowExpandedPanel.BackgroundImage = CType(resources.GetObject("MainItemDescWindowExpandedPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainItemDescWindowExpandedPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainItemDescWindowExpandedPanel.Controls.Add(Me.ItemDescExpandedItemStats)
+        Me.MainItemDescWindowExpandedPanel.Controls.Add(Me.ItemDescExpandedItemValueLabel)
+        Me.MainItemDescWindowExpandedPanel.Controls.Add(Me.ItemDescExpandedItemTypeLabel)
+        Me.MainItemDescWindowExpandedPanel.Controls.Add(Me.ItemDescExpandedItemQuantity)
+        Me.MainItemDescWindowExpandedPanel.Controls.Add(Me.ItemDescExpandedItemNameLabel)
+        Me.MainItemDescWindowExpandedPanel.Controls.Add(Me.ItemDescExpandedItemIcon)
+        Me.MainItemDescWindowExpandedPanel.Controls.Add(Me.ItemDescExpandedItemDescription)
+        Me.MainItemDescWindowExpandedPanel.Location = New System.Drawing.Point(2034, 250)
+        Me.MainItemDescWindowExpandedPanel.Name = "MainItemDescWindowExpandedPanel"
+        Me.MainItemDescWindowExpandedPanel.Size = New System.Drawing.Size(364, 244)
+        Me.MainItemDescWindowExpandedPanel.TabIndex = 42
+        Me.MainItemDescWindowExpandedPanel.Visible = False
+        '
+        'ItemDescExpandedItemStats
+        '
+        Me.ItemDescExpandedItemStats.BackColor = System.Drawing.Color.Transparent
+        Me.ItemDescExpandedItemStats.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ItemDescExpandedItemStats.Controls.Add(Me.ItemDescItemStatsText)
+        Me.ItemDescExpandedItemStats.Location = New System.Drawing.Point(192, 8)
+        Me.ItemDescExpandedItemStats.Name = "ItemDescExpandedItemStats"
+        Me.ItemDescExpandedItemStats.Size = New System.Drawing.Size(173, 228)
+        Me.ItemDescExpandedItemStats.TabIndex = 27
+        '
+        'ItemDescItemStatsText
+        '
+        Me.ItemDescItemStatsText.AutoSize = True
+        Me.ItemDescItemStatsText.BackColor = System.Drawing.Color.Transparent
+        Me.ItemDescItemStatsText.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ItemDescItemStatsText.ForeColor = System.Drawing.Color.White
+        Me.ItemDescItemStatsText.Location = New System.Drawing.Point(0, 0)
+        Me.ItemDescItemStatsText.Name = "ItemDescItemStatsText"
+        Me.ItemDescItemStatsText.Size = New System.Drawing.Size(81, 17)
+        Me.ItemDescItemStatsText.TabIndex = 28
+        Me.ItemDescItemStatsText.Text = "Stat Bonuses:"
+        '
+        'ItemDescExpandedItemValueLabel
+        '
+        Me.ItemDescExpandedItemValueLabel.AutoSize = True
+        Me.ItemDescExpandedItemValueLabel.BackColor = System.Drawing.Color.Transparent
+        Me.ItemDescExpandedItemValueLabel.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ItemDescExpandedItemValueLabel.ForeColor = System.Drawing.Color.White
+        Me.ItemDescExpandedItemValueLabel.Location = New System.Drawing.Point(4, 44)
+        Me.ItemDescExpandedItemValueLabel.Name = "ItemDescExpandedItemValueLabel"
+        Me.ItemDescExpandedItemValueLabel.Size = New System.Drawing.Size(107, 17)
+        Me.ItemDescExpandedItemValueLabel.TabIndex = 26
+        Me.ItemDescExpandedItemValueLabel.Text = "Sells for 10 Gold(s)"
+        '
+        'ItemDescExpandedItemTypeLabel
+        '
+        Me.ItemDescExpandedItemTypeLabel.AutoSize = True
+        Me.ItemDescExpandedItemTypeLabel.BackColor = System.Drawing.Color.Transparent
+        Me.ItemDescExpandedItemTypeLabel.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ItemDescExpandedItemTypeLabel.ForeColor = System.Drawing.Color.White
+        Me.ItemDescExpandedItemTypeLabel.Location = New System.Drawing.Point(4, 122)
+        Me.ItemDescExpandedItemTypeLabel.Name = "ItemDescExpandedItemTypeLabel"
+        Me.ItemDescExpandedItemTypeLabel.Size = New System.Drawing.Size(75, 17)
+        Me.ItemDescExpandedItemTypeLabel.TabIndex = 25
+        Me.ItemDescExpandedItemTypeLabel.Text = "Consumable"
+        '
+        'ItemDescExpandedItemQuantity
+        '
+        Me.ItemDescExpandedItemQuantity.AutoSize = True
+        Me.ItemDescExpandedItemQuantity.BackColor = System.Drawing.Color.Transparent
+        Me.ItemDescExpandedItemQuantity.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ItemDescExpandedItemQuantity.ForeColor = System.Drawing.Color.White
+        Me.ItemDescExpandedItemQuantity.Location = New System.Drawing.Point(4, 26)
+        Me.ItemDescExpandedItemQuantity.Name = "ItemDescExpandedItemQuantity"
+        Me.ItemDescExpandedItemQuantity.Size = New System.Drawing.Size(14, 17)
+        Me.ItemDescExpandedItemQuantity.TabIndex = 24
+        Me.ItemDescExpandedItemQuantity.Text = "1"
+        '
+        'ItemDescExpandedItemNameLabel
+        '
+        Me.ItemDescExpandedItemNameLabel.AutoSize = True
+        Me.ItemDescExpandedItemNameLabel.BackColor = System.Drawing.Color.Transparent
+        Me.ItemDescExpandedItemNameLabel.Font = New System.Drawing.Font("Source Sans Pro", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ItemDescExpandedItemNameLabel.ForeColor = System.Drawing.Color.White
+        Me.ItemDescExpandedItemNameLabel.Location = New System.Drawing.Point(4, 8)
+        Me.ItemDescExpandedItemNameLabel.Name = "ItemDescExpandedItemNameLabel"
+        Me.ItemDescExpandedItemNameLabel.Size = New System.Drawing.Size(101, 20)
+        Me.ItemDescExpandedItemNameLabel.TabIndex = 23
+        Me.ItemDescExpandedItemNameLabel.Text = "Health Potion"
+        '
+        'ItemDescExpandedItemIcon
+        '
+        Me.ItemDescExpandedItemIcon.BackColor = System.Drawing.Color.Transparent
+        Me.ItemDescExpandedItemIcon.BackgroundImage = CType(resources.GetObject("ItemDescExpandedItemIcon.BackgroundImage"), System.Drawing.Image)
+        Me.ItemDescExpandedItemIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.ItemDescExpandedItemIcon.Location = New System.Drawing.Point(68, 68)
+        Me.ItemDescExpandedItemIcon.Name = "ItemDescExpandedItemIcon"
+        Me.ItemDescExpandedItemIcon.Size = New System.Drawing.Size(48, 48)
+        Me.ItemDescExpandedItemIcon.TabIndex = 19
+        Me.ItemDescExpandedItemIcon.TabStop = False
+        '
+        'ItemDescExpandedItemDescription
+        '
+        Me.ItemDescExpandedItemDescription.BackColor = System.Drawing.Color.Transparent
+        Me.ItemDescExpandedItemDescription.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ItemDescExpandedItemDescription.Location = New System.Drawing.Point(4, 150)
+        Me.ItemDescExpandedItemDescription.Name = "ItemDescExpandedItemDescription"
+        Me.ItemDescExpandedItemDescription.Size = New System.Drawing.Size(177, 100)
+        Me.ItemDescExpandedItemDescription.TabIndex = 7
+        '
+        'MainItemDescWindowPanel
+        '
+        Me.MainItemDescWindowPanel.BackgroundImage = CType(resources.GetObject("MainItemDescWindowPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainItemDescWindowPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainItemDescWindowPanel.Controls.Add(Me.ItemDescItemValueLabel)
+        Me.MainItemDescWindowPanel.Controls.Add(Me.ItemDescItemTypeLabel)
+        Me.MainItemDescWindowPanel.Controls.Add(Me.ItemDescItemQantityLabel)
+        Me.MainItemDescWindowPanel.Controls.Add(Me.ItemDescItemNameLabel)
+        Me.MainItemDescWindowPanel.Controls.Add(Me.ItemDescItemIcon)
+        Me.MainItemDescWindowPanel.Controls.Add(Me.ItemDescItemDescription)
+        Me.MainItemDescWindowPanel.Location = New System.Drawing.Point(2034, 0)
+        Me.MainItemDescWindowPanel.Name = "MainItemDescWindowPanel"
+        Me.MainItemDescWindowPanel.Size = New System.Drawing.Size(185, 244)
+        Me.MainItemDescWindowPanel.TabIndex = 41
+        Me.MainItemDescWindowPanel.Visible = False
+        '
+        'ItemDescItemValueLabel
+        '
+        Me.ItemDescItemValueLabel.AutoSize = True
+        Me.ItemDescItemValueLabel.BackColor = System.Drawing.Color.Transparent
+        Me.ItemDescItemValueLabel.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ItemDescItemValueLabel.ForeColor = System.Drawing.Color.White
+        Me.ItemDescItemValueLabel.Location = New System.Drawing.Point(4, 44)
+        Me.ItemDescItemValueLabel.Name = "ItemDescItemValueLabel"
+        Me.ItemDescItemValueLabel.Size = New System.Drawing.Size(107, 17)
+        Me.ItemDescItemValueLabel.TabIndex = 26
+        Me.ItemDescItemValueLabel.Text = "Sells for 10 Gold(s)"
+        '
+        'ItemDescItemTypeLabel
+        '
+        Me.ItemDescItemTypeLabel.AutoSize = True
+        Me.ItemDescItemTypeLabel.BackColor = System.Drawing.Color.Transparent
+        Me.ItemDescItemTypeLabel.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ItemDescItemTypeLabel.ForeColor = System.Drawing.Color.White
+        Me.ItemDescItemTypeLabel.Location = New System.Drawing.Point(4, 122)
+        Me.ItemDescItemTypeLabel.Name = "ItemDescItemTypeLabel"
+        Me.ItemDescItemTypeLabel.Size = New System.Drawing.Size(75, 17)
+        Me.ItemDescItemTypeLabel.TabIndex = 25
+        Me.ItemDescItemTypeLabel.Text = "Consumable"
+        '
+        'ItemDescItemQantityLabel
+        '
+        Me.ItemDescItemQantityLabel.AutoSize = True
+        Me.ItemDescItemQantityLabel.BackColor = System.Drawing.Color.Transparent
+        Me.ItemDescItemQantityLabel.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ItemDescItemQantityLabel.ForeColor = System.Drawing.Color.White
+        Me.ItemDescItemQantityLabel.Location = New System.Drawing.Point(4, 26)
+        Me.ItemDescItemQantityLabel.Name = "ItemDescItemQantityLabel"
+        Me.ItemDescItemQantityLabel.Size = New System.Drawing.Size(14, 17)
+        Me.ItemDescItemQantityLabel.TabIndex = 24
+        Me.ItemDescItemQantityLabel.Text = "1"
+        '
+        'ItemDescItemNameLabel
+        '
+        Me.ItemDescItemNameLabel.AutoSize = True
+        Me.ItemDescItemNameLabel.BackColor = System.Drawing.Color.Transparent
+        Me.ItemDescItemNameLabel.Font = New System.Drawing.Font("Source Sans Pro", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ItemDescItemNameLabel.ForeColor = System.Drawing.Color.White
+        Me.ItemDescItemNameLabel.Location = New System.Drawing.Point(4, 8)
+        Me.ItemDescItemNameLabel.Name = "ItemDescItemNameLabel"
+        Me.ItemDescItemNameLabel.Size = New System.Drawing.Size(101, 20)
+        Me.ItemDescItemNameLabel.TabIndex = 23
+        Me.ItemDescItemNameLabel.Text = "Health Potion"
+        '
+        'ItemDescItemIcon
+        '
+        Me.ItemDescItemIcon.BackColor = System.Drawing.Color.Transparent
+        Me.ItemDescItemIcon.BackgroundImage = CType(resources.GetObject("ItemDescItemIcon.BackgroundImage"), System.Drawing.Image)
+        Me.ItemDescItemIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.ItemDescItemIcon.Location = New System.Drawing.Point(68, 68)
+        Me.ItemDescItemIcon.Name = "ItemDescItemIcon"
+        Me.ItemDescItemIcon.Size = New System.Drawing.Size(48, 48)
+        Me.ItemDescItemIcon.TabIndex = 19
+        Me.ItemDescItemIcon.TabStop = False
+        '
+        'ItemDescItemDescription
+        '
+        Me.ItemDescItemDescription.BackColor = System.Drawing.Color.Transparent
+        Me.ItemDescItemDescription.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ItemDescItemDescription.Location = New System.Drawing.Point(4, 150)
+        Me.ItemDescItemDescription.Name = "ItemDescItemDescription"
+        Me.ItemDescItemDescription.Size = New System.Drawing.Size(177, 100)
+        Me.ItemDescItemDescription.TabIndex = 7
+        '
+        'MainInventoryWindowPanel
+        '
+        Me.MainInventoryWindowPanel.BackgroundImage = CType(resources.GetObject("MainInventoryWindowPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainInventoryWindowPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainInventoryWindowPanel.Controls.Add(Me.InventoryWindowCloseButton)
+        Me.MainInventoryWindowPanel.Controls.Add(Me.InventoryWindowTitle)
+        Me.MainInventoryWindowPanel.Location = New System.Drawing.Point(110, 820)
+        Me.MainInventoryWindowPanel.Name = "MainInventoryWindowPanel"
+        Me.MainInventoryWindowPanel.Size = New System.Drawing.Size(220, 338)
+        Me.MainInventoryWindowPanel.TabIndex = 40
+        Me.MainInventoryWindowPanel.Visible = False
+        '
+        'InventoryWindowCloseButton
+        '
+        Me.InventoryWindowCloseButton.BackColor = System.Drawing.Color.Transparent
+        Me.InventoryWindowCloseButton.BackgroundImage = CType(resources.GetObject("InventoryWindowCloseButton.BackgroundImage"), System.Drawing.Image)
+        Me.InventoryWindowCloseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.InventoryWindowCloseButton.Location = New System.Drawing.Point(194, 4)
+        Me.InventoryWindowCloseButton.Name = "InventoryWindowCloseButton"
+        Me.InventoryWindowCloseButton.Size = New System.Drawing.Size(26, 25)
+        Me.InventoryWindowCloseButton.TabIndex = 19
+        Me.InventoryWindowCloseButton.TabStop = False
+        '
+        'InventoryWindowTitle
+        '
+        Me.InventoryWindowTitle.AutoSize = True
+        Me.InventoryWindowTitle.BackColor = System.Drawing.Color.Transparent
+        Me.InventoryWindowTitle.Font = New System.Drawing.Font("Source Sans Pro SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.InventoryWindowTitle.ForeColor = System.Drawing.Color.White
+        Me.InventoryWindowTitle.Location = New System.Drawing.Point(40, 5)
+        Me.InventoryWindowTitle.Name = "InventoryWindowTitle"
+        Me.InventoryWindowTitle.Size = New System.Drawing.Size(77, 20)
+        Me.InventoryWindowTitle.TabIndex = 3
+        Me.InventoryWindowTitle.Text = "Inventory"
+        '
+        'MainInventoryItemPanel
+        '
+        Me.MainInventoryItemPanel.BackColor = System.Drawing.Color.Transparent
+        Me.MainInventoryItemPanel.BackgroundImage = CType(resources.GetObject("MainInventoryItemPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainInventoryItemPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainInventoryItemPanel.Controls.Add(Me.InventoryItemCooldownLabel)
+        Me.MainInventoryItemPanel.Controls.Add(Me.InventoryItemEquippedLabel)
+        Me.MainInventoryItemPanel.Controls.Add(Me.InventoryItemValue)
+        Me.MainInventoryItemPanel.Controls.Add(Me.InventoryItemIcon)
+        Me.MainInventoryItemPanel.Location = New System.Drawing.Point(813, 412)
+        Me.MainInventoryItemPanel.Name = "MainInventoryItemPanel"
+        Me.MainInventoryItemPanel.Size = New System.Drawing.Size(34, 35)
+        Me.MainInventoryItemPanel.TabIndex = 30
+        Me.MainInventoryItemPanel.Visible = False
+        '
+        'InventoryItemCooldownLabel
+        '
+        Me.InventoryItemCooldownLabel.AutoSize = True
+        Me.InventoryItemCooldownLabel.BackColor = System.Drawing.Color.Transparent
+        Me.InventoryItemCooldownLabel.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.InventoryItemCooldownLabel.ForeColor = System.Drawing.Color.White
+        Me.InventoryItemCooldownLabel.Location = New System.Drawing.Point(13, 10)
+        Me.InventoryItemCooldownLabel.Name = "InventoryItemCooldownLabel"
+        Me.InventoryItemCooldownLabel.Size = New System.Drawing.Size(12, 14)
+        Me.InventoryItemCooldownLabel.TabIndex = 8
+        Me.InventoryItemCooldownLabel.Text = "0"
+        '
+        'InventoryItemEquippedLabel
+        '
+        Me.InventoryItemEquippedLabel.AutoSize = True
+        Me.InventoryItemEquippedLabel.BackColor = System.Drawing.Color.Transparent
+        Me.InventoryItemEquippedLabel.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.InventoryItemEquippedLabel.ForeColor = System.Drawing.Color.White
+        Me.InventoryItemEquippedLabel.Location = New System.Drawing.Point(22, 0)
+        Me.InventoryItemEquippedLabel.Name = "InventoryItemEquippedLabel"
+        Me.InventoryItemEquippedLabel.Size = New System.Drawing.Size(12, 14)
+        Me.InventoryItemEquippedLabel.TabIndex = 7
+        Me.InventoryItemEquippedLabel.Text = "0"
+        '
+        'InventoryItemValue
+        '
+        Me.InventoryItemValue.AutoSize = True
+        Me.InventoryItemValue.BackColor = System.Drawing.Color.Transparent
+        Me.InventoryItemValue.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.InventoryItemValue.ForeColor = System.Drawing.Color.White
+        Me.InventoryItemValue.Location = New System.Drawing.Point(29, 24)
+        Me.InventoryItemValue.Name = "InventoryItemValue"
+        Me.InventoryItemValue.Size = New System.Drawing.Size(12, 14)
+        Me.InventoryItemValue.TabIndex = 6
+        Me.InventoryItemValue.Text = "0"
+        '
+        'InventoryItemIcon
+        '
+        Me.InventoryItemIcon.BackgroundImage = CType(resources.GetObject("InventoryItemIcon.BackgroundImage"), System.Drawing.Image)
+        Me.InventoryItemIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.InventoryItemIcon.Location = New System.Drawing.Point(1, 1)
+        Me.InventoryItemIcon.Name = "InventoryItemIcon"
+        Me.InventoryItemIcon.Size = New System.Drawing.Size(32, 32)
+        Me.InventoryItemIcon.TabIndex = 0
+        Me.InventoryItemIcon.TabStop = False
         '
         'MainGameInputBoxPanel
         '
@@ -2732,9 +3902,9 @@ Partial Class Form1
         Me.BagWindowTitle.ForeColor = System.Drawing.Color.White
         Me.BagWindowTitle.Location = New System.Drawing.Point(40, 5)
         Me.BagWindowTitle.Name = "BagWindowTitle"
-        Me.BagWindowTitle.Size = New System.Drawing.Size(77, 20)
+        Me.BagWindowTitle.Size = New System.Drawing.Size(35, 20)
         Me.BagWindowTitle.TabIndex = 3
-        Me.BagWindowTitle.Text = "Inventory"
+        Me.BagWindowTitle.Text = "Bag"
         '
         'MainBagItemPanel
         '
@@ -4803,66 +5973,282 @@ Partial Class Form1
         Me.AppSettings.Name = "AppSettings"
         Me.AppSettings.Size = New System.Drawing.Size(28, 20)
         '
-        'MainInventoryItemPanel
+        'MainPlayerBoxPanel
         '
-        Me.MainInventoryItemPanel.BackColor = System.Drawing.Color.Transparent
-        Me.MainInventoryItemPanel.BackgroundImage = CType(resources.GetObject("MainInventoryItemPanel.BackgroundImage"), System.Drawing.Image)
-        Me.MainInventoryItemPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.MainInventoryItemPanel.Controls.Add(Me.InventoryItemCooldownLabel)
-        Me.MainInventoryItemPanel.Controls.Add(Me.InventoryItemEquippedLabel)
-        Me.MainInventoryItemPanel.Controls.Add(Me.InventoryItemValue)
-        Me.MainInventoryItemPanel.Controls.Add(Me.InventoryItemIcon)
-        Me.MainInventoryItemPanel.Location = New System.Drawing.Point(813, 412)
-        Me.MainInventoryItemPanel.Name = "MainInventoryItemPanel"
-        Me.MainInventoryItemPanel.Size = New System.Drawing.Size(34, 35)
-        Me.MainInventoryItemPanel.TabIndex = 30
-        Me.MainInventoryItemPanel.Visible = False
+        Me.MainPlayerBoxPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainPlayerBoxPanel.Controls.Add(Me.PlayerBoxFriendButton)
+        Me.MainPlayerBoxPanel.Controls.Add(Me.PlayerBoxPartyButton)
+        Me.MainPlayerBoxPanel.Controls.Add(Me.PlayerBoxTradeButton)
+        Me.MainPlayerBoxPanel.Controls.Add(Me.EntityInfoPanel)
+        Me.MainPlayerBoxPanel.Location = New System.Drawing.Point(2034, 844)
+        Me.MainPlayerBoxPanel.Name = "MainPlayerBoxPanel"
+        Me.MainPlayerBoxPanel.Size = New System.Drawing.Size(314, 208)
+        Me.MainPlayerBoxPanel.TabIndex = 45
+        Me.MainPlayerBoxPanel.Visible = False
         '
-        'InventoryItemValue
+        'EntityInfoPanel
         '
-        Me.InventoryItemValue.AutoSize = True
-        Me.InventoryItemValue.BackColor = System.Drawing.Color.Transparent
-        Me.InventoryItemValue.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.InventoryItemValue.ForeColor = System.Drawing.Color.White
-        Me.InventoryItemValue.Location = New System.Drawing.Point(29, 24)
-        Me.InventoryItemValue.Name = "InventoryItemValue"
-        Me.InventoryItemValue.Size = New System.Drawing.Size(12, 14)
-        Me.InventoryItemValue.TabIndex = 6
-        Me.InventoryItemValue.Text = "0"
+        Me.EntityInfoPanel.BackColor = System.Drawing.Color.Transparent
+        Me.EntityInfoPanel.BackgroundImage = CType(resources.GetObject("EntityInfoPanel.BackgroundImage"), System.Drawing.Image)
+        Me.EntityInfoPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.EntityInfoPanel.Controls.Add(Me.EXPLabel)
+        Me.EntityInfoPanel.Controls.Add(Me.EXPTitle)
+        Me.EntityInfoPanel.Controls.Add(Me.EXPBar)
+        Me.EntityInfoPanel.Controls.Add(Me.EXPBackground)
+        Me.EntityInfoPanel.Controls.Add(Me.MPLabel)
+        Me.EntityInfoPanel.Controls.Add(Me.MPTitle)
+        Me.EntityInfoPanel.Controls.Add(Me.MPBar)
+        Me.EntityInfoPanel.Controls.Add(Me.MPBackground)
+        Me.EntityInfoPanel.Controls.Add(Me.HPLabel)
+        Me.EntityInfoPanel.Controls.Add(Me.HPTitle)
+        Me.EntityInfoPanel.Controls.Add(Me.ShieldBar)
+        Me.EntityInfoPanel.Controls.Add(Me.HPBar)
+        Me.EntityInfoPanel.Controls.Add(Me.HPBarBackground)
+        Me.EntityInfoPanel.Controls.Add(Me.EntityGraphicContainer)
+        Me.EntityInfoPanel.Controls.Add(Me.EntityMapLabel)
+        Me.EntityInfoPanel.Controls.Add(Me.NameAndLevelLabel)
+        Me.EntityInfoPanel.Controls.Add(Me.EntityLevelLabel)
+        Me.EntityInfoPanel.Controls.Add(Me.EntityNameLabel)
+        Me.EntityInfoPanel.Location = New System.Drawing.Point(0, 0)
+        Me.EntityInfoPanel.Name = "EntityInfoPanel"
+        Me.EntityInfoPanel.Size = New System.Drawing.Size(314, 126)
+        Me.EntityInfoPanel.TabIndex = 7
         '
-        'InventoryItemIcon
+        'EntityNameLabel
         '
-        Me.InventoryItemIcon.BackgroundImage = CType(resources.GetObject("InventoryItemIcon.BackgroundImage"), System.Drawing.Image)
-        Me.InventoryItemIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.InventoryItemIcon.Location = New System.Drawing.Point(1, 1)
-        Me.InventoryItemIcon.Name = "InventoryItemIcon"
-        Me.InventoryItemIcon.Size = New System.Drawing.Size(32, 32)
-        Me.InventoryItemIcon.TabIndex = 0
-        Me.InventoryItemIcon.TabStop = False
+        Me.EntityNameLabel.AutoSize = True
+        Me.EntityNameLabel.BackColor = System.Drawing.Color.Transparent
+        Me.EntityNameLabel.Font = New System.Drawing.Font("Source Sans Pro SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EntityNameLabel.ForeColor = System.Drawing.Color.White
+        Me.EntityNameLabel.Location = New System.Drawing.Point(76, 7)
+        Me.EntityNameLabel.Name = "EntityNameLabel"
+        Me.EntityNameLabel.Size = New System.Drawing.Size(91, 20)
+        Me.EntityNameLabel.TabIndex = 4
+        Me.EntityNameLabel.Text = "EntityName"
+        Me.EntityNameLabel.Visible = False
         '
-        'InventoryItemEquippedLabel
+        'EntityLevelLabel
         '
-        Me.InventoryItemEquippedLabel.AutoSize = True
-        Me.InventoryItemEquippedLabel.BackColor = System.Drawing.Color.Transparent
-        Me.InventoryItemEquippedLabel.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.InventoryItemEquippedLabel.ForeColor = System.Drawing.Color.White
-        Me.InventoryItemEquippedLabel.Location = New System.Drawing.Point(22, 0)
-        Me.InventoryItemEquippedLabel.Name = "InventoryItemEquippedLabel"
-        Me.InventoryItemEquippedLabel.Size = New System.Drawing.Size(12, 14)
-        Me.InventoryItemEquippedLabel.TabIndex = 7
-        Me.InventoryItemEquippedLabel.Text = "0"
+        Me.EntityLevelLabel.AutoSize = True
+        Me.EntityLevelLabel.BackColor = System.Drawing.Color.Transparent
+        Me.EntityLevelLabel.Font = New System.Drawing.Font("Source Sans Pro SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EntityLevelLabel.ForeColor = System.Drawing.Color.White
+        Me.EntityLevelLabel.Location = New System.Drawing.Point(16, 7)
+        Me.EntityLevelLabel.Name = "EntityLevelLabel"
+        Me.EntityLevelLabel.Size = New System.Drawing.Size(46, 20)
+        Me.EntityLevelLabel.TabIndex = 5
+        Me.EntityLevelLabel.Text = "Lv. 99"
+        Me.EntityLevelLabel.Visible = False
         '
-        'InventoryItemCooldownLabel
+        'NameAndLevelLabel
         '
-        Me.InventoryItemCooldownLabel.AutoSize = True
-        Me.InventoryItemCooldownLabel.BackColor = System.Drawing.Color.Transparent
-        Me.InventoryItemCooldownLabel.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.InventoryItemCooldownLabel.ForeColor = System.Drawing.Color.White
-        Me.InventoryItemCooldownLabel.Location = New System.Drawing.Point(13, 10)
-        Me.InventoryItemCooldownLabel.Name = "InventoryItemCooldownLabel"
-        Me.InventoryItemCooldownLabel.Size = New System.Drawing.Size(12, 14)
-        Me.InventoryItemCooldownLabel.TabIndex = 8
-        Me.InventoryItemCooldownLabel.Text = "0"
+        Me.NameAndLevelLabel.AutoSize = True
+        Me.NameAndLevelLabel.BackColor = System.Drawing.Color.Transparent
+        Me.NameAndLevelLabel.Font = New System.Drawing.Font("Source Sans Pro SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NameAndLevelLabel.ForeColor = System.Drawing.Color.White
+        Me.NameAndLevelLabel.Location = New System.Drawing.Point(32, 6)
+        Me.NameAndLevelLabel.Name = "NameAndLevelLabel"
+        Me.NameAndLevelLabel.Size = New System.Drawing.Size(136, 20)
+        Me.NameAndLevelLabel.TabIndex = 6
+        Me.NameAndLevelLabel.Text = "EntityName Lvl. 99"
+        '
+        'EntityMapLabel
+        '
+        Me.EntityMapLabel.AutoSize = True
+        Me.EntityMapLabel.BackColor = System.Drawing.Color.Transparent
+        Me.EntityMapLabel.Font = New System.Drawing.Font("Source Sans Pro SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EntityMapLabel.ForeColor = System.Drawing.Color.White
+        Me.EntityMapLabel.Location = New System.Drawing.Point(100, 6)
+        Me.EntityMapLabel.Name = "EntityMapLabel"
+        Me.EntityMapLabel.Size = New System.Drawing.Size(78, 20)
+        Me.EntityMapLabel.TabIndex = 7
+        Me.EntityMapLabel.Text = "MapName"
+        '
+        'EntityGraphicContainer
+        '
+        Me.EntityGraphicContainer.BackColor = System.Drawing.Color.Transparent
+        Me.EntityGraphicContainer.BackgroundImage = CType(resources.GetObject("EntityGraphicContainer.BackgroundImage"), System.Drawing.Image)
+        Me.EntityGraphicContainer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.EntityGraphicContainer.Location = New System.Drawing.Point(18, 39)
+        Me.EntityGraphicContainer.Name = "EntityGraphicContainer"
+        Me.EntityGraphicContainer.Size = New System.Drawing.Size(64, 64)
+        Me.EntityGraphicContainer.TabIndex = 20
+        Me.EntityGraphicContainer.TabStop = False
+        '
+        'HPBarBackground
+        '
+        Me.HPBarBackground.BackgroundImage = CType(resources.GetObject("HPBarBackground.BackgroundImage"), System.Drawing.Image)
+        Me.HPBarBackground.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.HPBarBackground.Location = New System.Drawing.Point(130, 45)
+        Me.HPBarBackground.Name = "HPBarBackground"
+        Me.HPBarBackground.Size = New System.Drawing.Size(168, 14)
+        Me.HPBarBackground.TabIndex = 21
+        Me.HPBarBackground.TabStop = False
+        '
+        'HPBar
+        '
+        Me.HPBar.BackgroundImage = CType(resources.GetObject("HPBar.BackgroundImage"), System.Drawing.Image)
+        Me.HPBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.HPBar.Location = New System.Drawing.Point(130, 45)
+        Me.HPBar.Name = "HPBar"
+        Me.HPBar.Size = New System.Drawing.Size(168, 14)
+        Me.HPBar.TabIndex = 22
+        Me.HPBar.TabStop = False
+        '
+        'ShieldBar
+        '
+        Me.ShieldBar.BackgroundImage = CType(resources.GetObject("ShieldBar.BackgroundImage"), System.Drawing.Image)
+        Me.ShieldBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ShieldBar.Location = New System.Drawing.Point(130, 45)
+        Me.ShieldBar.Name = "ShieldBar"
+        Me.ShieldBar.Size = New System.Drawing.Size(168, 14)
+        Me.ShieldBar.TabIndex = 23
+        Me.ShieldBar.TabStop = False
+        '
+        'HPTitle
+        '
+        Me.HPTitle.AutoSize = True
+        Me.HPTitle.BackColor = System.Drawing.Color.Transparent
+        Me.HPTitle.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HPTitle.ForeColor = System.Drawing.Color.White
+        Me.HPTitle.Location = New System.Drawing.Point(100, 43)
+        Me.HPTitle.Name = "HPTitle"
+        Me.HPTitle.Size = New System.Drawing.Size(26, 17)
+        Me.HPTitle.TabIndex = 24
+        Me.HPTitle.Text = "HP:"
+        '
+        'HPLabel
+        '
+        Me.HPLabel.AutoSize = True
+        Me.HPLabel.BackColor = System.Drawing.Color.Transparent
+        Me.HPLabel.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HPLabel.ForeColor = System.Drawing.Color.White
+        Me.HPLabel.Location = New System.Drawing.Point(130, 43)
+        Me.HPLabel.Name = "HPLabel"
+        Me.HPLabel.Size = New System.Drawing.Size(67, 17)
+        Me.HPLabel.TabIndex = 25
+        Me.HPLabel.Text = "9999 / 9999"
+        '
+        'MPBackground
+        '
+        Me.MPBackground.BackgroundImage = CType(resources.GetObject("MPBackground.BackgroundImage"), System.Drawing.Image)
+        Me.MPBackground.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MPBackground.Location = New System.Drawing.Point(130, 70)
+        Me.MPBackground.Name = "MPBackground"
+        Me.MPBackground.Size = New System.Drawing.Size(168, 14)
+        Me.MPBackground.TabIndex = 26
+        Me.MPBackground.TabStop = False
+        '
+        'MPBar
+        '
+        Me.MPBar.BackgroundImage = CType(resources.GetObject("MPBar.BackgroundImage"), System.Drawing.Image)
+        Me.MPBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MPBar.Location = New System.Drawing.Point(130, 71)
+        Me.MPBar.Name = "MPBar"
+        Me.MPBar.Size = New System.Drawing.Size(168, 14)
+        Me.MPBar.TabIndex = 27
+        Me.MPBar.TabStop = False
+        '
+        'MPTitle
+        '
+        Me.MPTitle.AutoSize = True
+        Me.MPTitle.BackColor = System.Drawing.Color.Transparent
+        Me.MPTitle.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MPTitle.ForeColor = System.Drawing.Color.White
+        Me.MPTitle.Location = New System.Drawing.Point(100, 69)
+        Me.MPTitle.Name = "MPTitle"
+        Me.MPTitle.Size = New System.Drawing.Size(27, 17)
+        Me.MPTitle.TabIndex = 28
+        Me.MPTitle.Text = "MP:"
+        '
+        'MPLabel
+        '
+        Me.MPLabel.AutoSize = True
+        Me.MPLabel.BackColor = System.Drawing.Color.Transparent
+        Me.MPLabel.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MPLabel.ForeColor = System.Drawing.Color.White
+        Me.MPLabel.Location = New System.Drawing.Point(130, 69)
+        Me.MPLabel.Name = "MPLabel"
+        Me.MPLabel.Size = New System.Drawing.Size(67, 17)
+        Me.MPLabel.TabIndex = 29
+        Me.MPLabel.Text = "9999 / 9999"
+        '
+        'EXPBackground
+        '
+        Me.EXPBackground.BackgroundImage = CType(resources.GetObject("EXPBackground.BackgroundImage"), System.Drawing.Image)
+        Me.EXPBackground.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.EXPBackground.Location = New System.Drawing.Point(130, 96)
+        Me.EXPBackground.Name = "EXPBackground"
+        Me.EXPBackground.Size = New System.Drawing.Size(168, 14)
+        Me.EXPBackground.TabIndex = 30
+        Me.EXPBackground.TabStop = False
+        '
+        'EXPBar
+        '
+        Me.EXPBar.BackgroundImage = CType(resources.GetObject("EXPBar.BackgroundImage"), System.Drawing.Image)
+        Me.EXPBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.EXPBar.Location = New System.Drawing.Point(130, 97)
+        Me.EXPBar.Name = "EXPBar"
+        Me.EXPBar.Size = New System.Drawing.Size(168, 14)
+        Me.EXPBar.TabIndex = 31
+        Me.EXPBar.TabStop = False
+        '
+        'EXPLabel
+        '
+        Me.EXPLabel.AutoSize = True
+        Me.EXPLabel.BackColor = System.Drawing.Color.Transparent
+        Me.EXPLabel.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EXPLabel.ForeColor = System.Drawing.Color.White
+        Me.EXPLabel.Location = New System.Drawing.Point(130, 95)
+        Me.EXPLabel.Name = "EXPLabel"
+        Me.EXPLabel.Size = New System.Drawing.Size(67, 17)
+        Me.EXPLabel.TabIndex = 33
+        Me.EXPLabel.Text = "9999 / 9999"
+        '
+        'EXPTitle
+        '
+        Me.EXPTitle.AutoSize = True
+        Me.EXPTitle.BackColor = System.Drawing.Color.Transparent
+        Me.EXPTitle.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EXPTitle.ForeColor = System.Drawing.Color.White
+        Me.EXPTitle.Location = New System.Drawing.Point(95, 95)
+        Me.EXPTitle.Name = "EXPTitle"
+        Me.EXPTitle.Size = New System.Drawing.Size(32, 17)
+        Me.EXPTitle.TabIndex = 32
+        Me.EXPTitle.Text = "EXP:"
+        '
+        'PlayerBoxTradeButton
+        '
+        Me.PlayerBoxTradeButton.BackColor = System.Drawing.Color.Transparent
+        Me.PlayerBoxTradeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PlayerBoxTradeButton.Location = New System.Drawing.Point(117, 89)
+        Me.PlayerBoxTradeButton.Name = "PlayerBoxTradeButton"
+        Me.PlayerBoxTradeButton.Size = New System.Drawing.Size(100, 20)
+        Me.PlayerBoxTradeButton.TabIndex = 56
+        Me.PlayerBoxTradeButton.TabStop = False
+        Me.PlayerBoxTradeButton.Visible = False
+        '
+        'PlayerBoxPartyButton
+        '
+        Me.PlayerBoxPartyButton.BackColor = System.Drawing.Color.Transparent
+        Me.PlayerBoxPartyButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PlayerBoxPartyButton.Location = New System.Drawing.Point(165, 89)
+        Me.PlayerBoxPartyButton.Name = "PlayerBoxPartyButton"
+        Me.PlayerBoxPartyButton.Size = New System.Drawing.Size(100, 20)
+        Me.PlayerBoxPartyButton.TabIndex = 57
+        Me.PlayerBoxPartyButton.TabStop = False
+        Me.PlayerBoxPartyButton.Visible = False
+        '
+        'PlayerBoxFriendButton
+        '
+        Me.PlayerBoxFriendButton.BackColor = System.Drawing.Color.Transparent
+        Me.PlayerBoxFriendButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PlayerBoxFriendButton.Location = New System.Drawing.Point(0, 0)
+        Me.PlayerBoxFriendButton.Name = "PlayerBoxFriendButton"
+        Me.PlayerBoxFriendButton.Size = New System.Drawing.Size(100, 20)
+        Me.PlayerBoxFriendButton.TabIndex = 58
+        Me.PlayerBoxFriendButton.TabStop = False
+        Me.PlayerBoxFriendButton.Visible = False
         '
         'Form1
         '
@@ -4892,6 +6278,61 @@ Partial Class Form1
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainer1.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
+        Me.MainPartyWindowPanel.ResumeLayout(False)
+        Me.MainPartyWindowPanel.PerformLayout()
+        Me.PartyInnerPanel.ResumeLayout(False)
+        Me.PartyInnerPanel.PerformLayout()
+        CType(Me.KickButton3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.KickButton2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.KickButton1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LeavePartyButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ManaBarContainer3.ResumeLayout(False)
+        CType(Me.ManaBar3, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.HealthBarContainer3.ResumeLayout(False)
+        CType(Me.HealthBar3, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ManaBarContainer2.ResumeLayout(False)
+        CType(Me.ManaBar2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.HealthBarContainer2.ResumeLayout(False)
+        CType(Me.HealthBar2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ManaBarContainer1.ResumeLayout(False)
+        CType(Me.ManaBar1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.HealthBarContainer1.ResumeLayout(False)
+        CType(Me.HealthBar1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ManaBarContainer0.ResumeLayout(False)
+        CType(Me.ManaBar0, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LeaderIcon, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.HealthBarContainer0.ResumeLayout(False)
+        CType(Me.HealthBar0, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PartyCloseButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainMenuContainerPanel.ResumeLayout(False)
+        Me.MenuContainer.ResumeLayout(False)
+        CType(Me.MenuButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PartyContainer.ResumeLayout(False)
+        CType(Me.PartyButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.FriendsContainer.ResumeLayout(False)
+        CType(Me.FriendsButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.QuestsContainer.ResumeLayout(False)
+        CType(Me.QuestsButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MenuCharacterContainer.ResumeLayout(False)
+        CType(Me.CharacterButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.SpellsContainer.ResumeLayout(False)
+        CType(Me.SpellsButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.InventoryContainer.ResumeLayout(False)
+        CType(Me.InventoryButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainItemDescWindowExpandedPanel.ResumeLayout(False)
+        Me.MainItemDescWindowExpandedPanel.PerformLayout()
+        Me.ItemDescExpandedItemStats.ResumeLayout(False)
+        Me.ItemDescExpandedItemStats.PerformLayout()
+        CType(Me.ItemDescExpandedItemIcon, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainItemDescWindowPanel.ResumeLayout(False)
+        Me.MainItemDescWindowPanel.PerformLayout()
+        CType(Me.ItemDescItemIcon, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainInventoryWindowPanel.ResumeLayout(False)
+        Me.MainInventoryWindowPanel.PerformLayout()
+        CType(Me.InventoryWindowCloseButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainInventoryItemPanel.ResumeLayout(False)
+        Me.MainInventoryItemPanel.PerformLayout()
+        CType(Me.InventoryItemIcon, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MainGameInputBoxPanel.ResumeLayout(False)
         Me.MainGameInputBoxPanel.PerformLayout()
         Me.Panel2.ResumeLayout(False)
@@ -5158,9 +6599,20 @@ Partial Class Form1
         Me.StatusStrip1.PerformLayout()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
-        Me.MainInventoryItemPanel.ResumeLayout(False)
-        Me.MainInventoryItemPanel.PerformLayout()
-        CType(Me.InventoryItemIcon, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainPlayerBoxPanel.ResumeLayout(False)
+        Me.EntityInfoPanel.ResumeLayout(False)
+        Me.EntityInfoPanel.PerformLayout()
+        CType(Me.EntityGraphicContainer, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.HPBarBackground, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.HPBar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ShieldBar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MPBackground, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MPBar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EXPBackground, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EXPBar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PlayerBoxTradeButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PlayerBoxPartyButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PlayerBoxFriendButton, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -5554,4 +7006,107 @@ Partial Class Form1
     Friend WithEvents InventoryItemIcon As PictureBox
     Friend WithEvents InventoryItemCooldownLabel As Label
     Friend WithEvents InventoryItemEquippedLabel As Label
+    Friend WithEvents MainInventoryWindowPanel As Panel
+    Friend WithEvents InventoryWindowCloseButton As PictureBox
+    Friend WithEvents InventoryWindowTitle As Label
+    Friend WithEvents MainItemDescWindowPanel As Panel
+    Friend WithEvents ItemDescItemValueLabel As Label
+    Friend WithEvents ItemDescItemTypeLabel As Label
+    Friend WithEvents ItemDescItemQantityLabel As Label
+    Friend WithEvents ItemDescItemNameLabel As Label
+    Friend WithEvents ItemDescItemIcon As PictureBox
+    Friend WithEvents ItemDescItemDescription As Panel
+    Friend WithEvents MainItemDescWindowExpandedPanel As Panel
+    Friend WithEvents ItemDescExpandedItemStats As Panel
+    Friend WithEvents ItemDescItemStatsText As Label
+    Friend WithEvents ItemDescExpandedItemValueLabel As Label
+    Friend WithEvents ItemDescExpandedItemTypeLabel As Label
+    Friend WithEvents ItemDescExpandedItemQuantity As Label
+    Friend WithEvents ItemDescExpandedItemNameLabel As Label
+    Friend WithEvents ItemDescExpandedItemIcon As PictureBox
+    Friend WithEvents ItemDescExpandedItemDescription As Panel
+    Friend WithEvents MainMenuContainerPanel As Panel
+    Friend WithEvents MenuContainer As Panel
+    Friend WithEvents MenuButton As PictureBox
+    Friend WithEvents PartyContainer As Panel
+    Friend WithEvents PartyButton As PictureBox
+    Friend WithEvents FriendsContainer As Panel
+    Friend WithEvents FriendsButton As PictureBox
+    Friend WithEvents QuestsContainer As Panel
+    Friend WithEvents QuestsButton As PictureBox
+    Friend WithEvents MenuCharacterContainer As Panel
+    Friend WithEvents CharacterButton As PictureBox
+    Friend WithEvents SpellsContainer As Panel
+    Friend WithEvents SpellsButton As PictureBox
+    Friend WithEvents InventoryContainer As Panel
+    Friend WithEvents InventoryButton As PictureBox
+    Friend WithEvents MainPartyWindowPanel As Panel
+    Friend WithEvents PartyInnerPanel As Panel
+    Friend WithEvents LeavePartyButton As PictureBox
+    Friend WithEvents ManaValue3 As Label
+    Friend WithEvents ManaLabel3 As Label
+    Friend WithEvents ManaBarContainer3 As Panel
+    Friend WithEvents ManaBar3 As PictureBox
+    Friend WithEvents HealthValue3 As Label
+    Friend WithEvents HealthLabel3 As Label
+    Friend WithEvents HealthBarContainer3 As Panel
+    Friend WithEvents HealthBar3 As PictureBox
+    Friend WithEvents MemberName3 As Label
+    Friend WithEvents ManaValue2 As Label
+    Friend WithEvents ManaLabel2 As Label
+    Friend WithEvents ManaBarContainer2 As Panel
+    Friend WithEvents ManaBar2 As PictureBox
+    Friend WithEvents HealthValue2 As Label
+    Friend WithEvents HealthLabel2 As Label
+    Friend WithEvents HealthBarContainer2 As Panel
+    Friend WithEvents HealthBar2 As PictureBox
+    Friend WithEvents MemberName2 As Label
+    Friend WithEvents ManaValue1 As Label
+    Friend WithEvents ManaLabel1 As Label
+    Friend WithEvents ManaBarContainer1 As Panel
+    Friend WithEvents ManaBar1 As PictureBox
+    Friend WithEvents HealthValue1 As Label
+    Friend WithEvents HealthLabel1 As Label
+    Friend WithEvents HealthBarContainer1 As Panel
+    Friend WithEvents HealthBar1 As PictureBox
+    Friend WithEvents MemberName1 As Label
+    Friend WithEvents ManaValue0 As Label
+    Friend WithEvents ManaLabel0 As Label
+    Friend WithEvents ManaBarContainer0 As Panel
+    Friend WithEvents ManaBar0 As PictureBox
+    Friend WithEvents HealthValue0 As Label
+    Friend WithEvents HealthLabel0 As Label
+    Friend WithEvents LeaderText As Label
+    Friend WithEvents LeaderIcon As PictureBox
+    Friend WithEvents HealthBarContainer0 As Panel
+    Friend WithEvents HealthBar0 As PictureBox
+    Friend WithEvents MemberName0 As Label
+    Friend WithEvents PartyCloseButton As PictureBox
+    Friend WithEvents PartyTitle As Label
+    Friend WithEvents KickButton3 As PictureBox
+    Friend WithEvents KickButton2 As PictureBox
+    Friend WithEvents KickButton1 As PictureBox
+    Friend WithEvents MainPlayerBoxPanel As Panel
+    Friend WithEvents PlayerBoxFriendButton As PictureBox
+    Friend WithEvents PlayerBoxPartyButton As PictureBox
+    Friend WithEvents PlayerBoxTradeButton As PictureBox
+    Friend WithEvents EntityInfoPanel As Panel
+    Friend WithEvents EXPLabel As Label
+    Friend WithEvents EXPTitle As Label
+    Friend WithEvents EXPBar As PictureBox
+    Friend WithEvents EXPBackground As PictureBox
+    Friend WithEvents MPLabel As Label
+    Friend WithEvents MPTitle As Label
+    Friend WithEvents MPBar As PictureBox
+    Friend WithEvents MPBackground As PictureBox
+    Friend WithEvents HPLabel As Label
+    Friend WithEvents HPTitle As Label
+    Friend WithEvents ShieldBar As PictureBox
+    Friend WithEvents HPBar As PictureBox
+    Friend WithEvents HPBarBackground As PictureBox
+    Friend WithEvents EntityGraphicContainer As PictureBox
+    Friend WithEvents EntityMapLabel As Label
+    Friend WithEvents NameAndLevelLabel As Label
+    Friend WithEvents EntityLevelLabel As Label
+    Friend WithEvents EntityNameLabel As Label
 End Class

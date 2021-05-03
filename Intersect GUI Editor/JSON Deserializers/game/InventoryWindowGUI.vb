@@ -1,8 +1,8 @@
 ﻿Imports System.IO
 Imports Newtonsoft.Json
 
-Module BagWindowGUI
-    Public Class BagWindow
+Module InventoryWindowGUI
+    Public Class InventoryWindow
         Public Property Bounds As String
         Public Property Padding As String
         Public Property AlignmentEdgeDistances As String
@@ -27,13 +27,13 @@ Module BagWindowGUI
         Public Property ActiveColor As String
         Public Property InactiveColor As String
         Public Property Closable As Boolean
-        Public Property Titlebar As BagWindowTitlebar
+        Public Property Titlebar As InventoryWindowTitlebar
         Public Property Title As IntersectLabel
         Public Property CloseButton As IntersectButton
-        Public Property InnerPanel As BagWindowInnerPanel
+        Public Property InnerPanel As InventoryWindowInnerPanel
     End Class
 
-    Public Class BagWindowTitlebar
+    Public Class InventoryWindowTitlebar
         Public Property Bounds As String
         Public Property Padding As String
         Public Property AlignmentEdgeDistances As String
@@ -72,7 +72,7 @@ Module BagWindowGUI
         Public Property MouseDownSound As String
     End Class
 
-    Public Class BagWindowInnerPanel
+    Public Class InventoryWindowInnerPanel
         Public Property Bounds As String
         Public Property Padding As String
         Public Property AlignmentEdgeDistances As String
@@ -91,10 +91,10 @@ Module BagWindowGUI
         Public Property ToolTipBackground As String
         Public Property ToolTipFont As String
         Public Property ToolTipTextColor As String
-        Public Property Children As BagWindowInnerPanelChildren
+        Public Property Children As InventoryWindowInnerPanelChildren
     End Class
 
-    Public Class BagWindowInnerPanelChildren
+    Public Class InventoryWindowInnerPanelChildren
         Public Property Children As ItemContainer
     End Class
 
@@ -125,12 +125,12 @@ Module BagWindowGUI
         Public Property VerticalScrollBar As IntersectScrollBar
     End Class
 
-    Public Sub LoadBagWindowGUI(ByVal jsonfile As String)
+    Public Sub LoadInventoryWindowGUI(ByVal jsonfile As String)
         Form1.StatusText("[MAIN]     Opening " & jsonfile)
         Form1.jsonValue.Text = ""
         Form1.jsonType.Text = ""
         Form1.jsonTypeCombo.Text = ""
-        Form1.MainBagWindowPanel.Visible = True
+        Form1.MainInventoryWindowPanel.Visible = True
         Form1.RefreshBtn.Visible = True
         Form1.gridToggle.Visible = True
         Form1.toolSplitContainer.Panel2.BackColor = Color.Gray
@@ -141,22 +141,22 @@ Module BagWindowGUI
         Form1.JTokenTreeUserControl1.SetJsonSource(Form1.fullJson.Text)
         sr.Close()
         Dim imgResources As String = Application.StartupPath & "\gui\"
-        Dim infoPull As New BagWindow
-        infoPull = JsonConvert.DeserializeObject(Of BagWindow)(Form1.fullJson.Text)
-        Form1.StatusText("[MAIN]     BagWindow.json Deserialized")
+        Dim infoPull As New InventoryWindow
+        infoPull = JsonConvert.DeserializeObject(Of InventoryWindow)(Form1.fullJson.Text)
+        Form1.StatusText("[MAIN]     InventoryWindow.json Deserialized")
 
         Dim mainwindowbounds As String() = infoPull.Bounds.Split(",")
         Dim TitleBounds As String() = infoPull.Title.Padding.Split(",")
         Dim CloseButtonBounds As String() = infoPull.CloseButton.Bounds.Split(",")
 
-        Form1.MainBagWindowPanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
-        Form1.MainBagWindowPanel.Width = mainwindowbounds(2)
-        Form1.MainBagWindowPanel.Height = mainwindowbounds(3)
-        Form1.MainBagWindowPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.ActiveImage)
-        Form1.BagWindowTitle.Location = New Point(TitleBounds(0), TitleBounds(1))
-        Form1.BagWindowCloseButton.Location = New Point(CloseButtonBounds(0), CloseButtonBounds(1))
-        Form1.BagWindowCloseButton.Width = CloseButtonBounds(2)
-        Form1.BagWindowCloseButton.Height = CloseButtonBounds(3)
-        Form1.BagWindowCloseButton.BackgroundImage = Image.FromFile(imgResources & infoPull.CloseButton.NormalImage)
+        Form1.MainInventoryWindowPanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
+        Form1.MainInventoryWindowPanel.Width = mainwindowbounds(2)
+        Form1.MainInventoryWindowPanel.Height = mainwindowbounds(3)
+        Form1.MainInventoryWindowPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.ActiveImage)
+        Form1.InventoryWindowTitle.Location = New Point(TitleBounds(0), TitleBounds(1))
+        Form1.InventoryWindowCloseButton.Location = New Point(CloseButtonBounds(0), CloseButtonBounds(1))
+        Form1.InventoryWindowCloseButton.Width = CloseButtonBounds(2)
+        Form1.InventoryWindowCloseButton.Height = CloseButtonBounds(3)
+        Form1.InventoryWindowCloseButton.BackgroundImage = Image.FromFile(imgResources & infoPull.CloseButton.NormalImage)
     End Sub
 End Module

@@ -587,7 +587,13 @@ Module OptionsWindowGUI
         Form1.MainOptionsWindowPanel.Visible = True
         Form1.RefreshBtn.Visible = True
         Form1.gridToggle.Visible = True
-        Form1.toolSplitContainer.Panel2.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\background.png")
+        Select Case Form1.guitype
+            Case "menu"
+                Form1.toolSplitContainer.Panel2.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\background.png")
+            Case "game"
+                Form1.toolSplitContainer.Panel2.BackColor = Color.Gray
+                Form1.toolSplitContainer.Panel2.BackgroundImage = Nothing
+        End Select
 
         Dim sr As StreamReader = New StreamReader(jsonfile)
         Form1.fullJson.Text = sr.ReadToEnd()

@@ -1,4 +1,25 @@
 ﻿Module CommonControlsGUI
+    Public Class IntersectBase
+        Public Property Bounds As String
+        Public Property Padding As String
+        Public Property AlignmentEdgeDistances As String
+        Public Property AlignmentTransform As String
+        Public Property Margin As String
+        Public Property RenderColor As String
+        Public Property Alignments As String
+        Public Property DrawBackground As Boolean
+        Public Property MinimumSize As String
+        Public Property MaximumSize As String
+        Public Property Disabled As Boolean
+        Public Property Hidden As Boolean
+        Public Property RestrictToParent As Boolean
+        Public Property MouseInputEnabled As Boolean
+        Public Property HideToolTip As Boolean
+        Public Property ToolTipBackground As String
+        Public Property ToolTipFont As String
+        Public Property ToolTipTextColor As String
+    End Class
+
     Public Class IntersectLabel
         Public Property Bounds As String
         Public Property Padding As String
@@ -433,5 +454,78 @@
         Public Property LeftMouseClickSound As String
         Public Property RightMouseClickSound As String
         Public Property HotbarEquipedIcon As IntersectIcon
+    End Class
+
+    Public Class IntersectMenuContainer
+        Public Property Bounds As String
+        Public Property Padding As String
+        Public Property AlignmentEdgeDistances As String
+        Public Property AlignmentTransform As String
+        Public Property Margin As String
+        Public Property RenderColor As String
+        Public Property Alignments As String
+        Public Property DrawBackground As Boolean
+        Public Property MinimumSize As String
+        Public Property MaximumSize As String
+        Public Property Disabled As Boolean
+        Public Property Hidden As Boolean
+        Public Property RestrictToParent As Boolean
+        Public Property MouseInputEnabled As Boolean
+        Public Property HideToolTip As Boolean
+        Public Property ToolTipBackground As String
+        Public Property ToolTipFont As String
+        Public Property ToolTipTextColor As String
+        Public Property Texture As String
+        Public Property HoverSound As String
+        Public Property LeftMouseClickSound As String
+        Public Property RightMouseClickSound As String
+        Public Property Children As IntersectMenuContainerChildren
+    End Class
+
+    Public Class IntersectMenuContainerChildren
+        Public Property InventoryButton As IntersectButton
+        Public Property SpellsButton As IntersectButton
+        Public Property CharacterButton As IntersectButton
+        Public Property QuestsButton As IntersectButton
+        Public Property FriendsButton As IntersectButton
+        Public Property PartyButton As IntersectButton
+        Public Property MenuButton As IntersectButton
+    End Class
+
+    Public Class IntersectStatusBarContainer
+        Public Property Bounds As String
+        Public Property Padding As String
+        Public Property AlignmentEdgeDistances As String
+        Public Property AlignmentTransform As String
+        Public Property Margin As String
+        Public Property RenderColor As String
+        Public Property Alignments As String
+        Public Property DrawBackground As Boolean
+        Public Property MinimumSize As String
+        Public Property MaximumSize As String
+        Public Property Disabled As Boolean
+        Public Property Hidden As Boolean
+        Public Property RestrictToParent As Boolean
+        Public Property MouseInputEnabled As Boolean
+        Public Property HideToolTip As Boolean
+        Public Property ToolTipBackground As String
+        Public Property ToolTipFont As String
+        Public Property ToolTipTextColor As String
+        Public Property Texture As String
+        Public Property HoverSound As String
+        Public Property LeftMouseClickSound As String
+        Public Property RightMouseClickSound As String
+        Public Property Children As IntersectStatusBarContainerChildren
+    End Class
+
+    Public Class IntersectStatusBarContainerChildren
+        Public Property HealthBar0 As IntersectIcon
+        Public Property HealthBar1 As IntersectIcon
+        Public Property HealthBar2 As IntersectIcon
+        Public Property HealthBar3 As IntersectIcon
+        Public Property ManaBar0 As IntersectIcon
+        Public Property ManaBar1 As IntersectIcon
+        Public Property ManaBar2 As IntersectIcon
+        Public Property ManaBar3 As IntersectIcon
     End Class
 End Module

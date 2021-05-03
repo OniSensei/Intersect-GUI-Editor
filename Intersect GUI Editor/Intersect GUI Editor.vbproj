@@ -107,6 +107,12 @@
     <Compile Include="JSON Deserializers\game\HotbarWindowGUI.vb" />
     <Compile Include="JSON Deserializers\game\GameInputBoxGUI.vb" />
     <Compile Include="JSON Deserializers\game\InventoryItemGUI.vb" />
+    <Compile Include="JSON Deserializers\game\InventoryWindowGUI.vb" />
+    <Compile Include="JSON Deserializers\game\ItemDescWindowExpandedGUI.vb" />
+    <Compile Include="JSON Deserializers\game\ItemDescWindowGUI.vb" />
+    <Compile Include="JSON Deserializers\game\MenuContainerGUI.vb" />
+    <Compile Include="JSON Deserializers\game\PartyWindowGUI.vb" />
+    <Compile Include="JSON Deserializers\game\PlayerBoxGUI.vb" />
     <Compile Include="JSON Deserializers\menu\CharacterCreationWindowGUI.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
