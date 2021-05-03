@@ -35,6 +35,59 @@ Partial Class Form1
         Me.jsonType = New System.Windows.Forms.TextBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.fullJson = New System.Windows.Forms.RichTextBox()
+        Me.MainSpellPanel = New System.Windows.Forms.Panel()
+        Me.SpellCooldownLabel = New System.Windows.Forms.Label()
+        Me.SpellIcon = New System.Windows.Forms.PictureBox()
+        Me.MainShopWindowPanel = New System.Windows.Forms.Panel()
+        Me.ShopWindowCloseButton = New System.Windows.Forms.PictureBox()
+        Me.ShopWindowTitle = New System.Windows.Forms.Label()
+        Me.MainShopItemPanel = New System.Windows.Forms.Panel()
+        Me.ShopItemIcon = New System.Windows.Forms.PictureBox()
+        Me.MainQuestsWindowPanel = New System.Windows.Forms.Panel()
+        Me.QuestsWindowQuestList = New System.Windows.Forms.Panel()
+        Me.QuestsWindowQuestTitle = New System.Windows.Forms.Label()
+        Me.QuestsWindowAbandonQuestButton = New System.Windows.Forms.PictureBox()
+        Me.QuestsWindowQuestStatus = New System.Windows.Forms.Label()
+        Me.QuestsWindowQuestDescription = New System.Windows.Forms.Panel()
+        Me.QuestsWindowQuestDescriptionTemplate = New System.Windows.Forms.Label()
+        Me.QuestsWindowBackButton = New System.Windows.Forms.PictureBox()
+        Me.QuestsWindowCloseButton = New System.Windows.Forms.PictureBox()
+        Me.QuestsWindowTitle = New System.Windows.Forms.Label()
+        Me.MainQuestOfferWindowPanel = New System.Windows.Forms.Panel()
+        Me.QuestOfferCloseButton = New System.Windows.Forms.PictureBox()
+        Me.QuestOfferTitle = New System.Windows.Forms.Label()
+        Me.QuestOfferInnerPanel = New System.Windows.Forms.Panel()
+        Me.QuestOfferArea = New System.Windows.Forms.Panel()
+        Me.QuestOfferTemplate = New System.Windows.Forms.Label()
+        Me.QuestOfferDeclineButton = New System.Windows.Forms.PictureBox()
+        Me.QuestOfferAcceptButton = New System.Windows.Forms.PictureBox()
+        Me.QuestTitle = New System.Windows.Forms.Label()
+        Me.MainPlayerStatusIconPanel = New System.Windows.Forms.Panel()
+        Me.DurationLabel = New System.Windows.Forms.Label()
+        Me.StatusIcon = New System.Windows.Forms.PictureBox()
+        Me.MainPlayerBoxPanel = New System.Windows.Forms.Panel()
+        Me.PlayerBoxFriendButton = New System.Windows.Forms.PictureBox()
+        Me.PlayerBoxPartyButton = New System.Windows.Forms.PictureBox()
+        Me.PlayerBoxTradeButton = New System.Windows.Forms.PictureBox()
+        Me.EntityInfoPanel = New System.Windows.Forms.Panel()
+        Me.EXPLabel = New System.Windows.Forms.Label()
+        Me.EXPTitle = New System.Windows.Forms.Label()
+        Me.EXPBar = New System.Windows.Forms.PictureBox()
+        Me.EXPBackground = New System.Windows.Forms.PictureBox()
+        Me.MPLabel = New System.Windows.Forms.Label()
+        Me.MPTitle = New System.Windows.Forms.Label()
+        Me.MPBar = New System.Windows.Forms.PictureBox()
+        Me.MPBackground = New System.Windows.Forms.PictureBox()
+        Me.HPLabel = New System.Windows.Forms.Label()
+        Me.HPTitle = New System.Windows.Forms.Label()
+        Me.ShieldBar = New System.Windows.Forms.PictureBox()
+        Me.HPBar = New System.Windows.Forms.PictureBox()
+        Me.HPBarBackground = New System.Windows.Forms.PictureBox()
+        Me.EntityGraphicContainer = New System.Windows.Forms.PictureBox()
+        Me.EntityMapLabel = New System.Windows.Forms.Label()
+        Me.NameAndLevelLabel = New System.Windows.Forms.Label()
+        Me.EntityLevelLabel = New System.Windows.Forms.Label()
+        Me.EntityNameLabel = New System.Windows.Forms.Label()
         Me.MainPartyWindowPanel = New System.Windows.Forms.Panel()
         Me.PartyInnerPanel = New System.Windows.Forms.Panel()
         Me.KickButton3 = New System.Windows.Forms.PictureBox()
@@ -121,7 +174,7 @@ Partial Class Form1
         Me.InventoryItemValue = New System.Windows.Forms.Label()
         Me.InventoryItemIcon = New System.Windows.Forms.PictureBox()
         Me.MainGameInputBoxPanel = New System.Windows.Forms.Panel()
-        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.GameInputBoxInnerPanel = New System.Windows.Forms.Panel()
         Me.GameInputOkayButton = New System.Windows.Forms.PictureBox()
         Me.GameInputBoxTextBox = New System.Windows.Forms.Panel()
         Me.GameInputBoxTextboxText = New System.Windows.Forms.PictureBox()
@@ -242,7 +295,6 @@ Partial Class Form1
         Me.MainChatboxWindowPanel = New System.Windows.Forms.Panel()
         Me.ChatboxInputField = New System.Windows.Forms.PictureBox()
         Me.Chatbar = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.ChatboxTitle = New System.Windows.Forms.Label()
         Me.MainCharacterWindowPanel = New System.Windows.Forms.Panel()
         Me.CharacterWindowInnerPanel = New System.Windows.Forms.Panel()
@@ -491,307 +543,312 @@ Partial Class Form1
         Me.RefreshBtn = New System.Windows.Forms.ToolStripMenuItem()
         Me.gridToggle = New System.Windows.Forms.ToolStripMenuItem()
         Me.AppSettings = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MainPlayerBoxPanel = New System.Windows.Forms.Panel()
-        Me.EntityInfoPanel = New System.Windows.Forms.Panel()
-        Me.EntityNameLabel = New System.Windows.Forms.Label()
-        Me.EntityLevelLabel = New System.Windows.Forms.Label()
-        Me.NameAndLevelLabel = New System.Windows.Forms.Label()
-        Me.EntityMapLabel = New System.Windows.Forms.Label()
-        Me.EntityGraphicContainer = New System.Windows.Forms.PictureBox()
-        Me.HPBarBackground = New System.Windows.Forms.PictureBox()
-        Me.HPBar = New System.Windows.Forms.PictureBox()
-        Me.ShieldBar = New System.Windows.Forms.PictureBox()
-        Me.HPTitle = New System.Windows.Forms.Label()
-        Me.HPLabel = New System.Windows.Forms.Label()
-        Me.MPBackground = New System.Windows.Forms.PictureBox()
-        Me.MPBar = New System.Windows.Forms.PictureBox()
-        Me.MPTitle = New System.Windows.Forms.Label()
-        Me.MPLabel = New System.Windows.Forms.Label()
-        Me.EXPBackground = New System.Windows.Forms.PictureBox()
-        Me.EXPBar = New System.Windows.Forms.PictureBox()
-        Me.EXPLabel = New System.Windows.Forms.Label()
-        Me.EXPTitle = New System.Windows.Forms.Label()
-        Me.PlayerBoxTradeButton = New System.Windows.Forms.PictureBox()
-        Me.PlayerBoxPartyButton = New System.Windows.Forms.PictureBox()
-        Me.PlayerBoxFriendButton = New System.Windows.Forms.PictureBox()
-        CType(Me.mainSplitContainer, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.mainSplitContainer.Panel1.SuspendLayout()
-        Me.mainSplitContainer.Panel2.SuspendLayout()
-        Me.mainSplitContainer.SuspendLayout()
-        CType(Me.toolSplitContainer, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.toolSplitContainer.Panel1.SuspendLayout()
-        Me.toolSplitContainer.Panel2.SuspendLayout()
-        Me.toolSplitContainer.SuspendLayout()
-        Me.TabControl1.SuspendLayout()
-        Me.TabPage1.SuspendLayout()
-        CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SplitContainer1.Panel1.SuspendLayout()
-        Me.SplitContainer1.Panel2.SuspendLayout()
-        Me.SplitContainer1.SuspendLayout()
-        Me.TabPage2.SuspendLayout()
-        Me.MainPartyWindowPanel.SuspendLayout()
-        Me.PartyInnerPanel.SuspendLayout()
-        CType(Me.KickButton3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.KickButton2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.KickButton1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LeavePartyButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.ManaBarContainer3.SuspendLayout()
-        CType(Me.ManaBar3, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.HealthBarContainer3.SuspendLayout()
-        CType(Me.HealthBar3, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.ManaBarContainer2.SuspendLayout()
-        CType(Me.ManaBar2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.HealthBarContainer2.SuspendLayout()
-        CType(Me.HealthBar2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.ManaBarContainer1.SuspendLayout()
-        CType(Me.ManaBar1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.HealthBarContainer1.SuspendLayout()
-        CType(Me.HealthBar1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.ManaBarContainer0.SuspendLayout()
-        CType(Me.ManaBar0, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LeaderIcon, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.HealthBarContainer0.SuspendLayout()
-        CType(Me.HealthBar0, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PartyCloseButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MainMenuContainerPanel.SuspendLayout()
-        Me.MenuContainer.SuspendLayout()
-        CType(Me.MenuButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.PartyContainer.SuspendLayout()
-        CType(Me.PartyButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.FriendsContainer.SuspendLayout()
-        CType(Me.FriendsButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.QuestsContainer.SuspendLayout()
-        CType(Me.QuestsButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MenuCharacterContainer.SuspendLayout()
-        CType(Me.CharacterButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SpellsContainer.SuspendLayout()
-        CType(Me.SpellsButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.InventoryContainer.SuspendLayout()
-        CType(Me.InventoryButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MainItemDescWindowExpandedPanel.SuspendLayout()
-        Me.ItemDescExpandedItemStats.SuspendLayout()
-        CType(Me.ItemDescExpandedItemIcon, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MainItemDescWindowPanel.SuspendLayout()
-        CType(Me.ItemDescItemIcon, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MainInventoryWindowPanel.SuspendLayout()
-        CType(Me.InventoryWindowCloseButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MainInventoryItemPanel.SuspendLayout()
-        CType(Me.InventoryItemIcon, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MainGameInputBoxPanel.SuspendLayout()
-        Me.Panel2.SuspendLayout()
-        CType(Me.GameInputOkayButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GameInputBoxTextBox.SuspendLayout()
-        CType(Me.GameInputBoxTextboxText, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GameInputNoButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GameInputYesButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GameInputBoxCloseButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MainHotbarWindowPanel.SuspendLayout()
-        Me.HotbarContainer9.SuspendLayout()
-        CType(Me.HotbarIcon9, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.HotbarContainer8.SuspendLayout()
-        CType(Me.HotbarIcon8, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.HotbarContainer7.SuspendLayout()
-        CType(Me.HotbarIcon7, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.HotbarContainer6.SuspendLayout()
-        CType(Me.HotbarIcon6, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.HotbarContainer5.SuspendLayout()
-        CType(Me.HotbarIcon5, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.HotbarContainer4.SuspendLayout()
-        CType(Me.HotbarIcon4, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.HotbarContainer3.SuspendLayout()
-        CType(Me.HotbarIcon3, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.HotbarContainer2.SuspendLayout()
-        CType(Me.HotbarIcon2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.HotbarContainer1.SuspendLayout()
-        CType(Me.HotbarIcon1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.HotbarContainer0.SuspendLayout()
-        CType(Me.HotbarIcon0, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MainFriendsWindowPanel.SuspendLayout()
-        CType(Me.AddFriendPopupButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.FriendsWindowCloseButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MainEventDialogWindow4ResponsePanel.SuspendLayout()
-        CType(Me.Dialog4Response4Button, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Dialog4Response3Button, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Dialog4Response2Button, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Dialog4EventDialogArea.SuspendLayout()
-        Me.Dialog4EventDialogAreaInnerPanel.SuspendLayout()
-        CType(Me.Dialog4Response1Button, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MainEventDialogWindow3ResponsePanel.SuspendLayout()
-        CType(Me.Dialog3Response3Button, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Dialog3Response2Button, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Dialog3EventDialogArea.SuspendLayout()
-        Me.Dialog3EventDialogAreaInnerPanel.SuspendLayout()
-        CType(Me.Dialog3Response1Button, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MainEventDialogWindow2ResponsePanel.SuspendLayout()
-        CType(Me.Dialog2Response2Button, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Dialog2EventDialogArea.SuspendLayout()
-        Me.Dialog2EventDialogAreaInnerPanel.SuspendLayout()
-        CType(Me.Dialog2Response1Button, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MainEventDialogWindow1ResponsePanel.SuspendLayout()
-        Me.Dialog1EventDialogArea.SuspendLayout()
-        Me.Dialog1EventDialogAreaInnerPanel.SuspendLayout()
-        CType(Me.Dialog1Response1Button, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MainEscapeMenuPanel.SuspendLayout()
-        CType(Me.EscapeMenuLogoutButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.EscapeMenuCloseButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.EscapeMenuExitToDesktopButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.EscapeMenuCharacterSelectButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.EscapeMenuOptionsButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MainEquipmentItemPanel.SuspendLayout()
-        CType(Me.EquipmentIcon, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MainCraftingWindowPanel.SuspendLayout()
-        CType(Me.CraftButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.CraftingWindowCloseButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MainCraftingIngredientPanel.SuspendLayout()
-        CType(Me.IngredientItemIcon, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MainCraftedItemPanel.SuspendLayout()
-        CType(Me.CraftedItemIcon, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MainChatboxWindowPanel.SuspendLayout()
-        CType(Me.ChatboxInputField, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MainCharacterWindowPanel.SuspendLayout()
-        Me.CharacterWindowInnerPanel.SuspendLayout()
-        Me.EquipmentItem4.SuspendLayout()
-        CType(Me.Equipment4Icon, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.EquipmentItem3.SuspendLayout()
-        CType(Me.Equipment3Icon, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.EquipmentItem2.SuspendLayout()
-        CType(Me.Equipment2Icon, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.EquipmentItem1.SuspendLayout()
-        CType(Me.Equipment1Icon, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.EquipmentItem0.SuspendLayout()
-        CType(Me.Equipment0Icon, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.IncreaseMagicResistButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.IncreaseAbilityPowerButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.IncreaseSpeedButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.IncreaseDefenseButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.IncreaseAttackButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.CharacterWindowCharacterContainer, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.CharacterWindowCloseButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MainBankWindowPanel.SuspendLayout()
-        CType(Me.BankWindowCloseButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MainBankItemPanel.SuspendLayout()
-        CType(Me.BankItemIcon, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MainBagWindowPanel.SuspendLayout()
-        CType(Me.BagWindowCloseButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MainBagItemPanel.SuspendLayout()
-        CType(Me.BagItemIcon, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MainControlPanelsWindow.SuspendLayout()
-        CType(Me.RestoreControlsButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ExitControlsButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.CancelControlsButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MainServerStatusAreaPanel.SuspendLayout()
-        Me.MainResetPasswordWindowPanel.SuspendLayout()
-        Me.ResetPassword2Panel.SuspendLayout()
-        CType(Me.ResetPassword2Field, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.ResetPassword1Panel.SuspendLayout()
-        CType(Me.ResetPassword1Field, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ResetBackButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ResetSubmitButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.CodePanel.SuspendLayout()
-        CType(Me.CodeField, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MainRegistrationWindowPanel.SuspendLayout()
-        Me.Password2Panel.SuspendLayout()
-        CType(Me.Password2Field, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Password1Panel.SuspendLayout()
-        CType(Me.Password1Field, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RegistrationBackButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.RegistrationUsernamePanel.SuspendLayout()
-        CType(Me.RegistrationUsernameField, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RegistrationRegisterButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.EmailPanel.SuspendLayout()
-        CType(Me.EmailField, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MainOptionsWindowPanel.SuspendLayout()
-        Me.OptionsContainer.SuspendLayout()
-        CType(Me.OptionsCancelButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.OptionsApplyButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MusicSlider.SuspendLayout()
-        CType(Me.MusicSliderBar, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SoundSlider.SuspendLayout()
-        CType(Me.SoundSliderBar, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.KeybindingsButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.AutocloseWindowsCheckboxPanel.SuspendLayout()
-        CType(Me.AutocloseWindowsCheckboxCheckbox, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.FullscreenCheckboxPanel.SuspendLayout()
-        CType(Me.FullscreenCheckboxCheckbox, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.FPSPanel.SuspendLayout()
-        CType(Me.FPSCombobox, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.ResolutionPanel.SuspendLayout()
-        CType(Me.ResolutionCombobox, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MainMenuWindowPanel.SuspendLayout()
-        CType(Me.MainMenuOptionsButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MainMenuExitButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MainMenuCreditsButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MainMenuRegisterButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MainMenuLoginButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MainLogoPanel, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MainInputBoxPanel.SuspendLayout()
-        Me.InputBoxInnerPanel.SuspendLayout()
-        CType(Me.OkayButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.InputBoxTextBox.SuspendLayout()
-        CType(Me.InputBoxTextboxText, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NoButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.YesButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.InputBoxCloseButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MainForgotPasswordWindowPanel.SuspendLayout()
-        CType(Me.ForgotPasswordBackButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ForgotPasswordSubmitButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.ForgotPasswordInputPanel.SuspendLayout()
-        CType(Me.ForgotPasswordInputField, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MainCreditsPanel.SuspendLayout()
-        CType(Me.CreditsBackButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.CreditsScrollview.SuspendLayout()
-        Me.CreditsInnerPanel.SuspendLayout()
-        Me.MainCharSelectionPanel.SuspendLayout()
-        CType(Me.LogoutButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NewButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DeleteButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PlayButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SelectCharCharacterContainer.SuspendLayout()
-        CType(Me.PreviousCharacterButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NextCharacterButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.SelectCharCharacterPortrait, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MainCharacterCreationPanel.SuspendLayout()
-        Me.GenderPanel.SuspendLayout()
-        Me.FemaleCheckboxPanel.SuspendLayout()
-        CType(Me.FemaleCheckbox, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MaleCheckboxPanel.SuspendLayout()
-        CType(Me.MaleCheckbox, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.CharCreateBackButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.CreateButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.CharacterContainer.SuspendLayout()
-        CType(Me.PreviousSpriteButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NextSpriteButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.CharacterPortait, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.ClassPanel.SuspendLayout()
-        CType(Me.ClassCombobox, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.CharacterNamePanel.SuspendLayout()
-        CType(Me.CharacterNameField, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MainLoginWindowPanel.SuspendLayout()
-        CType(Me.BackButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LoginButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SavePassPanel.SuspendLayout()
-        CType(Me.SavePassCheckbox, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.PasswordPanel.SuspendLayout()
-        CType(Me.PasswordField, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.UsernamePanel.SuspendLayout()
-        CType(Me.UsernameFieldPB, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.StatusStrip1.SuspendLayout()
-        Me.MenuStrip1.SuspendLayout()
-        Me.MainPlayerBoxPanel.SuspendLayout()
-        Me.EntityInfoPanel.SuspendLayout()
-        CType(Me.EntityGraphicContainer, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.HPBarBackground, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.HPBar, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ShieldBar, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MPBackground, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MPBar, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.EXPBackground, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.EXPBar, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PlayerBoxTradeButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PlayerBoxPartyButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PlayerBoxFriendButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SuspendLayout()
+        Me.MainSpellDescWindowPanel = New System.Windows.Forms.Panel()
+        Me.SpellDescSpellDescText = New System.Windows.Forms.Label()
+        Me.SpellDescSpellType = New System.Windows.Forms.Label()
+        Me.SpellDescSpellName = New System.Windows.Forms.Label()
+        Me.SpellDescSpellIcon = New System.Windows.Forms.PictureBox()
+        Me.SpellDescSpellDesc = New System.Windows.Forms.Panel()
+        CType(Me.mainSplitContainer, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.mainSplitContainer.Panel1.SuspendLayout
+        Me.mainSplitContainer.Panel2.SuspendLayout
+        Me.mainSplitContainer.SuspendLayout
+        CType(Me.toolSplitContainer, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.toolSplitContainer.Panel1.SuspendLayout
+        Me.toolSplitContainer.Panel2.SuspendLayout
+        Me.toolSplitContainer.SuspendLayout
+        Me.TabControl1.SuspendLayout
+        Me.TabPage1.SuspendLayout
+        CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.SplitContainer1.Panel1.SuspendLayout
+        Me.SplitContainer1.Panel2.SuspendLayout
+        Me.SplitContainer1.SuspendLayout
+        Me.TabPage2.SuspendLayout
+        Me.MainSpellPanel.SuspendLayout
+        CType(Me.SpellIcon, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainShopWindowPanel.SuspendLayout
+        CType(Me.ShopWindowCloseButton, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainShopItemPanel.SuspendLayout
+        CType(Me.ShopItemIcon, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainQuestsWindowPanel.SuspendLayout
+        Me.QuestsWindowQuestList.SuspendLayout
+        CType(Me.QuestsWindowAbandonQuestButton, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.QuestsWindowQuestDescription.SuspendLayout
+        CType(Me.QuestsWindowBackButton, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.QuestsWindowCloseButton, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainQuestOfferWindowPanel.SuspendLayout
+        CType(Me.QuestOfferCloseButton, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.QuestOfferInnerPanel.SuspendLayout
+        Me.QuestOfferArea.SuspendLayout
+        CType(Me.QuestOfferDeclineButton, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.QuestOfferAcceptButton, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainPlayerStatusIconPanel.SuspendLayout
+        CType(Me.StatusIcon, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainPlayerBoxPanel.SuspendLayout
+        CType(Me.PlayerBoxFriendButton, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PlayerBoxPartyButton, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PlayerBoxTradeButton, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.EntityInfoPanel.SuspendLayout
+        CType(Me.EXPBar, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.EXPBackground, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.MPBar, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.MPBackground, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.ShieldBar, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.HPBar, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.HPBarBackground, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.EntityGraphicContainer, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainPartyWindowPanel.SuspendLayout
+        Me.PartyInnerPanel.SuspendLayout
+        CType(Me.KickButton3, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.KickButton2, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.KickButton1, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.LeavePartyButton, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.ManaBarContainer3.SuspendLayout
+        CType(Me.ManaBar3, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.HealthBarContainer3.SuspendLayout
+        CType(Me.HealthBar3, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.ManaBarContainer2.SuspendLayout
+        CType(Me.ManaBar2, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.HealthBarContainer2.SuspendLayout
+        CType(Me.HealthBar2, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.ManaBarContainer1.SuspendLayout
+        CType(Me.ManaBar1, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.HealthBarContainer1.SuspendLayout
+        CType(Me.HealthBar1, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.ManaBarContainer0.SuspendLayout
+        CType(Me.ManaBar0, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.LeaderIcon, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.HealthBarContainer0.SuspendLayout
+        CType(Me.HealthBar0, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PartyCloseButton, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainMenuContainerPanel.SuspendLayout
+        Me.MenuContainer.SuspendLayout
+        CType(Me.MenuButton, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.PartyContainer.SuspendLayout
+        CType(Me.PartyButton, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.FriendsContainer.SuspendLayout
+        CType(Me.FriendsButton, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.QuestsContainer.SuspendLayout
+        CType(Me.QuestsButton, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MenuCharacterContainer.SuspendLayout
+        CType(Me.CharacterButton, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.SpellsContainer.SuspendLayout
+        CType(Me.SpellsButton, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.InventoryContainer.SuspendLayout
+        CType(Me.InventoryButton, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainItemDescWindowExpandedPanel.SuspendLayout
+        Me.ItemDescExpandedItemStats.SuspendLayout
+        CType(Me.ItemDescExpandedItemIcon, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainItemDescWindowPanel.SuspendLayout
+        CType(Me.ItemDescItemIcon, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainInventoryWindowPanel.SuspendLayout
+        CType(Me.InventoryWindowCloseButton, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainInventoryItemPanel.SuspendLayout
+        CType(Me.InventoryItemIcon, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainGameInputBoxPanel.SuspendLayout
+        Me.GameInputBoxInnerPanel.SuspendLayout
+        CType(Me.GameInputOkayButton, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.GameInputBoxTextBox.SuspendLayout
+        CType(Me.GameInputBoxTextboxText, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.GameInputNoButton, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.GameInputYesButton, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.GameInputBoxCloseButton, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainHotbarWindowPanel.SuspendLayout
+        Me.HotbarContainer9.SuspendLayout
+        CType(Me.HotbarIcon9, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.HotbarContainer8.SuspendLayout
+        CType(Me.HotbarIcon8, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.HotbarContainer7.SuspendLayout
+        CType(Me.HotbarIcon7, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.HotbarContainer6.SuspendLayout
+        CType(Me.HotbarIcon6, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.HotbarContainer5.SuspendLayout
+        CType(Me.HotbarIcon5, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.HotbarContainer4.SuspendLayout
+        CType(Me.HotbarIcon4, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.HotbarContainer3.SuspendLayout
+        CType(Me.HotbarIcon3, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.HotbarContainer2.SuspendLayout
+        CType(Me.HotbarIcon2, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.HotbarContainer1.SuspendLayout
+        CType(Me.HotbarIcon1, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.HotbarContainer0.SuspendLayout
+        CType(Me.HotbarIcon0, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainFriendsWindowPanel.SuspendLayout
+        CType(Me.AddFriendPopupButton, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.FriendsWindowCloseButton, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainEventDialogWindow4ResponsePanel.SuspendLayout
+        CType(Me.Dialog4Response4Button, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Dialog4Response3Button, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Dialog4Response2Button, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Dialog4EventDialogArea.SuspendLayout
+        Me.Dialog4EventDialogAreaInnerPanel.SuspendLayout
+        CType(Me.Dialog4Response1Button, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainEventDialogWindow3ResponsePanel.SuspendLayout
+        CType(Me.Dialog3Response3Button, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Dialog3Response2Button, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Dialog3EventDialogArea.SuspendLayout
+        Me.Dialog3EventDialogAreaInnerPanel.SuspendLayout
+        CType(Me.Dialog3Response1Button, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainEventDialogWindow2ResponsePanel.SuspendLayout
+        CType(Me.Dialog2Response2Button, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Dialog2EventDialogArea.SuspendLayout
+        Me.Dialog2EventDialogAreaInnerPanel.SuspendLayout
+        CType(Me.Dialog2Response1Button, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainEventDialogWindow1ResponsePanel.SuspendLayout
+        Me.Dialog1EventDialogArea.SuspendLayout
+        Me.Dialog1EventDialogAreaInnerPanel.SuspendLayout
+        CType(Me.Dialog1Response1Button, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainEscapeMenuPanel.SuspendLayout
+        CType(Me.EscapeMenuLogoutButton, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.EscapeMenuCloseButton, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.EscapeMenuExitToDesktopButton, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.EscapeMenuCharacterSelectButton, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.EscapeMenuOptionsButton, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainEquipmentItemPanel.SuspendLayout
+        CType(Me.EquipmentIcon, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainCraftingWindowPanel.SuspendLayout
+        CType(Me.CraftButton, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.CraftingWindowCloseButton, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainCraftingIngredientPanel.SuspendLayout
+        CType(Me.IngredientItemIcon, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainCraftedItemPanel.SuspendLayout
+        CType(Me.CraftedItemIcon, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainChatboxWindowPanel.SuspendLayout
+        CType(Me.ChatboxInputField, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainCharacterWindowPanel.SuspendLayout
+        Me.CharacterWindowInnerPanel.SuspendLayout
+        Me.EquipmentItem4.SuspendLayout
+        CType(Me.Equipment4Icon, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.EquipmentItem3.SuspendLayout
+        CType(Me.Equipment3Icon, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.EquipmentItem2.SuspendLayout
+        CType(Me.Equipment2Icon, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.EquipmentItem1.SuspendLayout
+        CType(Me.Equipment1Icon, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.EquipmentItem0.SuspendLayout
+        CType(Me.Equipment0Icon, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.IncreaseMagicResistButton, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.IncreaseAbilityPowerButton, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.IncreaseSpeedButton, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.IncreaseDefenseButton, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.IncreaseAttackButton, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.CharacterWindowCharacterContainer, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.CharacterWindowCloseButton, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainBankWindowPanel.SuspendLayout
+        CType(Me.BankWindowCloseButton, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainBankItemPanel.SuspendLayout
+        CType(Me.BankItemIcon, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainBagWindowPanel.SuspendLayout
+        CType(Me.BagWindowCloseButton, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainBagItemPanel.SuspendLayout
+        CType(Me.BagItemIcon, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainControlPanelsWindow.SuspendLayout
+        CType(Me.RestoreControlsButton, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.ExitControlsButton, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.CancelControlsButton, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainServerStatusAreaPanel.SuspendLayout
+        Me.MainResetPasswordWindowPanel.SuspendLayout
+        Me.ResetPassword2Panel.SuspendLayout
+        CType(Me.ResetPassword2Field, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.ResetPassword1Panel.SuspendLayout
+        CType(Me.ResetPassword1Field, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.ResetBackButton, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.ResetSubmitButton, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.CodePanel.SuspendLayout
+        CType(Me.CodeField, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainRegistrationWindowPanel.SuspendLayout
+        Me.Password2Panel.SuspendLayout
+        CType(Me.Password2Field, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Password1Panel.SuspendLayout
+        CType(Me.Password1Field, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.RegistrationBackButton, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.RegistrationUsernamePanel.SuspendLayout
+        CType(Me.RegistrationUsernameField, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.RegistrationRegisterButton, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.EmailPanel.SuspendLayout
+        CType(Me.EmailField, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainOptionsWindowPanel.SuspendLayout
+        Me.OptionsContainer.SuspendLayout
+        CType(Me.OptionsCancelButton, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.OptionsApplyButton, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MusicSlider.SuspendLayout
+        CType(Me.MusicSliderBar, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.SoundSlider.SuspendLayout
+        CType(Me.SoundSliderBar, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.KeybindingsButton, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.AutocloseWindowsCheckboxPanel.SuspendLayout
+        CType(Me.AutocloseWindowsCheckboxCheckbox, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.FullscreenCheckboxPanel.SuspendLayout
+        CType(Me.FullscreenCheckboxCheckbox, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.FPSPanel.SuspendLayout
+        CType(Me.FPSCombobox, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.ResolutionPanel.SuspendLayout
+        CType(Me.ResolutionCombobox, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainMenuWindowPanel.SuspendLayout
+        CType(Me.MainMenuOptionsButton, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.MainMenuExitButton, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.MainMenuCreditsButton, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.MainMenuRegisterButton, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.MainMenuLoginButton, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.MainLogoPanel, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainInputBoxPanel.SuspendLayout
+        Me.InputBoxInnerPanel.SuspendLayout
+        CType(Me.OkayButton, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.InputBoxTextBox.SuspendLayout
+        CType(Me.InputBoxTextboxText, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.NoButton, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.YesButton, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.InputBoxCloseButton, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainForgotPasswordWindowPanel.SuspendLayout
+        CType(Me.ForgotPasswordBackButton, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.ForgotPasswordSubmitButton, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.ForgotPasswordInputPanel.SuspendLayout
+        CType(Me.ForgotPasswordInputField, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainCreditsPanel.SuspendLayout
+        CType(Me.CreditsBackButton, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.CreditsScrollview.SuspendLayout
+        Me.CreditsInnerPanel.SuspendLayout
+        Me.MainCharSelectionPanel.SuspendLayout
+        CType(Me.LogoutButton, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.NewButton, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.DeleteButton, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PlayButton, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.SelectCharCharacterContainer.SuspendLayout
+        CType(Me.PreviousCharacterButton, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.NextCharacterButton, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.SelectCharCharacterPortrait, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainCharacterCreationPanel.SuspendLayout
+        Me.GenderPanel.SuspendLayout
+        Me.FemaleCheckboxPanel.SuspendLayout
+        CType(Me.FemaleCheckbox, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MaleCheckboxPanel.SuspendLayout
+        CType(Me.MaleCheckbox, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.CharCreateBackButton, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.CreateButton, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.CharacterContainer.SuspendLayout
+        CType(Me.PreviousSpriteButton, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.NextSpriteButton, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.CharacterPortait, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.ClassPanel.SuspendLayout
+        CType(Me.ClassCombobox, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.CharacterNamePanel.SuspendLayout
+        CType(Me.CharacterNameField, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainLoginWindowPanel.SuspendLayout
+        CType(Me.BackButton, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.LoginButton, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.SavePassPanel.SuspendLayout
+        CType(Me.SavePassCheckbox, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.PasswordPanel.SuspendLayout
+        CType(Me.PasswordField, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.UsernamePanel.SuspendLayout
+        CType(Me.UsernameFieldPB, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.StatusStrip1.SuspendLayout
+        Me.MenuStrip1.SuspendLayout
+        Me.MainSpellDescWindowPanel.SuspendLayout
+        CType(Me.SpellDescSpellIcon, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.SpellDescSpellDesc.SuspendLayout
+        Me.SuspendLayout
         '
         'mainSplitContainer
         '
@@ -824,6 +881,13 @@ Partial Class Form1
         'toolSplitContainer.Panel2
         '
         Me.toolSplitContainer.Panel2.AutoScroll = True
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainSpellDescWindowPanel)
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainSpellPanel)
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainShopWindowPanel)
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainShopItemPanel)
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainQuestsWindowPanel)
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainQuestOfferWindowPanel)
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainPlayerStatusIconPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainPlayerBoxPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainPartyWindowPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainMenuContainerPanel)
@@ -984,6 +1048,635 @@ Partial Class Form1
         Me.fullJson.Size = New System.Drawing.Size(268, 575)
         Me.fullJson.TabIndex = 0
         Me.fullJson.Text = ""
+        '
+        'MainSpellPanel
+        '
+        Me.MainSpellPanel.BackColor = System.Drawing.Color.Transparent
+        Me.MainSpellPanel.BackgroundImage = CType(resources.GetObject("MainSpellPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainSpellPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainSpellPanel.Controls.Add(Me.SpellCooldownLabel)
+        Me.MainSpellPanel.Controls.Add(Me.SpellIcon)
+        Me.MainSpellPanel.Location = New System.Drawing.Point(3, 859)
+        Me.MainSpellPanel.Name = "MainSpellPanel"
+        Me.MainSpellPanel.Size = New System.Drawing.Size(34, 35)
+        Me.MainSpellPanel.TabIndex = 51
+        Me.MainSpellPanel.Visible = False
+        '
+        'SpellCooldownLabel
+        '
+        Me.SpellCooldownLabel.AutoSize = True
+        Me.SpellCooldownLabel.BackColor = System.Drawing.Color.Transparent
+        Me.SpellCooldownLabel.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SpellCooldownLabel.ForeColor = System.Drawing.Color.White
+        Me.SpellCooldownLabel.Location = New System.Drawing.Point(13, 10)
+        Me.SpellCooldownLabel.Name = "SpellCooldownLabel"
+        Me.SpellCooldownLabel.Size = New System.Drawing.Size(12, 14)
+        Me.SpellCooldownLabel.TabIndex = 6
+        Me.SpellCooldownLabel.Text = "0"
+        '
+        'SpellIcon
+        '
+        Me.SpellIcon.BackgroundImage = CType(resources.GetObject("SpellIcon.BackgroundImage"), System.Drawing.Image)
+        Me.SpellIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.SpellIcon.Location = New System.Drawing.Point(1, 1)
+        Me.SpellIcon.Name = "SpellIcon"
+        Me.SpellIcon.Size = New System.Drawing.Size(32, 32)
+        Me.SpellIcon.TabIndex = 0
+        Me.SpellIcon.TabStop = False
+        '
+        'MainShopWindowPanel
+        '
+        Me.MainShopWindowPanel.BackgroundImage = CType(resources.GetObject("MainShopWindowPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainShopWindowPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainShopWindowPanel.Controls.Add(Me.ShopWindowCloseButton)
+        Me.MainShopWindowPanel.Controls.Add(Me.ShopWindowTitle)
+        Me.MainShopWindowPanel.Location = New System.Drawing.Point(825, 1137)
+        Me.MainShopWindowPanel.Name = "MainShopWindowPanel"
+        Me.MainShopWindowPanel.Size = New System.Drawing.Size(442, 469)
+        Me.MainShopWindowPanel.TabIndex = 50
+        Me.MainShopWindowPanel.Visible = False
+        '
+        'ShopWindowCloseButton
+        '
+        Me.ShopWindowCloseButton.BackColor = System.Drawing.Color.Transparent
+        Me.ShopWindowCloseButton.BackgroundImage = CType(resources.GetObject("ShopWindowCloseButton.BackgroundImage"), System.Drawing.Image)
+        Me.ShopWindowCloseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ShopWindowCloseButton.Location = New System.Drawing.Point(408, 0)
+        Me.ShopWindowCloseButton.Name = "ShopWindowCloseButton"
+        Me.ShopWindowCloseButton.Size = New System.Drawing.Size(34, 32)
+        Me.ShopWindowCloseButton.TabIndex = 19
+        Me.ShopWindowCloseButton.TabStop = False
+        '
+        'ShopWindowTitle
+        '
+        Me.ShopWindowTitle.AutoSize = True
+        Me.ShopWindowTitle.BackColor = System.Drawing.Color.Transparent
+        Me.ShopWindowTitle.Font = New System.Drawing.Font("Source Sans Pro SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ShopWindowTitle.ForeColor = System.Drawing.Color.White
+        Me.ShopWindowTitle.Location = New System.Drawing.Point(32, 6)
+        Me.ShopWindowTitle.Name = "ShopWindowTitle"
+        Me.ShopWindowTitle.Size = New System.Drawing.Size(79, 20)
+        Me.ShopWindowTitle.TabIndex = 3
+        Me.ShopWindowTitle.Text = "Shop Title"
+        '
+        'MainShopItemPanel
+        '
+        Me.MainShopItemPanel.BackColor = System.Drawing.Color.Transparent
+        Me.MainShopItemPanel.BackgroundImage = CType(resources.GetObject("MainShopItemPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainShopItemPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainShopItemPanel.Controls.Add(Me.ShopItemIcon)
+        Me.MainShopItemPanel.Location = New System.Drawing.Point(42, 820)
+        Me.MainShopItemPanel.Name = "MainShopItemPanel"
+        Me.MainShopItemPanel.Size = New System.Drawing.Size(34, 35)
+        Me.MainShopItemPanel.TabIndex = 49
+        Me.MainShopItemPanel.Visible = False
+        '
+        'ShopItemIcon
+        '
+        Me.ShopItemIcon.BackgroundImage = CType(resources.GetObject("ShopItemIcon.BackgroundImage"), System.Drawing.Image)
+        Me.ShopItemIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ShopItemIcon.Location = New System.Drawing.Point(1, 1)
+        Me.ShopItemIcon.Name = "ShopItemIcon"
+        Me.ShopItemIcon.Size = New System.Drawing.Size(32, 32)
+        Me.ShopItemIcon.TabIndex = 0
+        Me.ShopItemIcon.TabStop = False
+        '
+        'MainQuestsWindowPanel
+        '
+        Me.MainQuestsWindowPanel.BackgroundImage = CType(resources.GetObject("MainQuestsWindowPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainQuestsWindowPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainQuestsWindowPanel.Controls.Add(Me.QuestsWindowQuestList)
+        Me.MainQuestsWindowPanel.Controls.Add(Me.QuestsWindowCloseButton)
+        Me.MainQuestsWindowPanel.Controls.Add(Me.QuestsWindowTitle)
+        Me.MainQuestsWindowPanel.Location = New System.Drawing.Point(110, 1164)
+        Me.MainQuestsWindowPanel.Name = "MainQuestsWindowPanel"
+        Me.MainQuestsWindowPanel.Size = New System.Drawing.Size(220, 342)
+        Me.MainQuestsWindowPanel.TabIndex = 48
+        Me.MainQuestsWindowPanel.Visible = False
+        '
+        'QuestsWindowQuestList
+        '
+        Me.QuestsWindowQuestList.BackColor = System.Drawing.Color.Transparent
+        Me.QuestsWindowQuestList.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.QuestsWindowQuestList.Controls.Add(Me.QuestsWindowQuestTitle)
+        Me.QuestsWindowQuestList.Controls.Add(Me.QuestsWindowAbandonQuestButton)
+        Me.QuestsWindowQuestList.Controls.Add(Me.QuestsWindowQuestStatus)
+        Me.QuestsWindowQuestList.Controls.Add(Me.QuestsWindowQuestDescription)
+        Me.QuestsWindowQuestList.Controls.Add(Me.QuestsWindowBackButton)
+        Me.QuestsWindowQuestList.Location = New System.Drawing.Point(1, 0)
+        Me.QuestsWindowQuestList.Name = "QuestsWindowQuestList"
+        Me.QuestsWindowQuestList.Size = New System.Drawing.Size(218, 310)
+        Me.QuestsWindowQuestList.TabIndex = 31
+        '
+        'QuestsWindowQuestTitle
+        '
+        Me.QuestsWindowQuestTitle.AutoSize = True
+        Me.QuestsWindowQuestTitle.BackColor = System.Drawing.Color.Transparent
+        Me.QuestsWindowQuestTitle.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.QuestsWindowQuestTitle.ForeColor = System.Drawing.Color.White
+        Me.QuestsWindowQuestTitle.Location = New System.Drawing.Point(3, 9)
+        Me.QuestsWindowQuestTitle.Name = "QuestsWindowQuestTitle"
+        Me.QuestsWindowQuestTitle.Size = New System.Drawing.Size(72, 17)
+        Me.QuestsWindowQuestTitle.TabIndex = 23
+        Me.QuestsWindowQuestTitle.Text = "Hunt Slimes"
+        Me.QuestsWindowQuestTitle.Visible = False
+        '
+        'QuestsWindowAbandonQuestButton
+        '
+        Me.QuestsWindowAbandonQuestButton.BackColor = System.Drawing.Color.Transparent
+        Me.QuestsWindowAbandonQuestButton.BackgroundImage = CType(resources.GetObject("QuestsWindowAbandonQuestButton.BackgroundImage"), System.Drawing.Image)
+        Me.QuestsWindowAbandonQuestButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.QuestsWindowAbandonQuestButton.Location = New System.Drawing.Point(114, 268)
+        Me.QuestsWindowAbandonQuestButton.Name = "QuestsWindowAbandonQuestButton"
+        Me.QuestsWindowAbandonQuestButton.Size = New System.Drawing.Size(96, 35)
+        Me.QuestsWindowAbandonQuestButton.TabIndex = 30
+        Me.QuestsWindowAbandonQuestButton.TabStop = False
+        '
+        'QuestsWindowQuestStatus
+        '
+        Me.QuestsWindowQuestStatus.AutoSize = True
+        Me.QuestsWindowQuestStatus.BackColor = System.Drawing.Color.Transparent
+        Me.QuestsWindowQuestStatus.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.QuestsWindowQuestStatus.ForeColor = System.Drawing.Color.White
+        Me.QuestsWindowQuestStatus.Location = New System.Drawing.Point(3, 27)
+        Me.QuestsWindowQuestStatus.Name = "QuestsWindowQuestStatus"
+        Me.QuestsWindowQuestStatus.Size = New System.Drawing.Size(68, 17)
+        Me.QuestsWindowQuestStatus.TabIndex = 24
+        Me.QuestsWindowQuestStatus.Text = "In Progress"
+        Me.QuestsWindowQuestStatus.Visible = False
+        '
+        'QuestsWindowQuestDescription
+        '
+        Me.QuestsWindowQuestDescription.BackColor = System.Drawing.Color.Transparent
+        Me.QuestsWindowQuestDescription.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.QuestsWindowQuestDescription.Controls.Add(Me.QuestsWindowQuestDescriptionTemplate)
+        Me.QuestsWindowQuestDescription.Location = New System.Drawing.Point(15, 51)
+        Me.QuestsWindowQuestDescription.Name = "QuestsWindowQuestDescription"
+        Me.QuestsWindowQuestDescription.Size = New System.Drawing.Size(211, 212)
+        Me.QuestsWindowQuestDescription.TabIndex = 28
+        '
+        'QuestsWindowQuestDescriptionTemplate
+        '
+        Me.QuestsWindowQuestDescriptionTemplate.AutoSize = True
+        Me.QuestsWindowQuestDescriptionTemplate.BackColor = System.Drawing.Color.Transparent
+        Me.QuestsWindowQuestDescriptionTemplate.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.QuestsWindowQuestDescriptionTemplate.ForeColor = System.Drawing.Color.White
+        Me.QuestsWindowQuestDescriptionTemplate.Location = New System.Drawing.Point(0, 0)
+        Me.QuestsWindowQuestDescriptionTemplate.Name = "QuestsWindowQuestDescriptionTemplate"
+        Me.QuestsWindowQuestDescriptionTemplate.Size = New System.Drawing.Size(209, 17)
+        Me.QuestsWindowQuestDescriptionTemplate.TabIndex = 24
+        Me.QuestsWindowQuestDescriptionTemplate.Text = "Go hunt and kill 10 slimes? K thanks..."
+        '
+        'QuestsWindowBackButton
+        '
+        Me.QuestsWindowBackButton.BackColor = System.Drawing.Color.Transparent
+        Me.QuestsWindowBackButton.BackgroundImage = CType(resources.GetObject("QuestsWindowBackButton.BackgroundImage"), System.Drawing.Image)
+        Me.QuestsWindowBackButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.QuestsWindowBackButton.Location = New System.Drawing.Point(9, 268)
+        Me.QuestsWindowBackButton.Name = "QuestsWindowBackButton"
+        Me.QuestsWindowBackButton.Size = New System.Drawing.Size(96, 35)
+        Me.QuestsWindowBackButton.TabIndex = 29
+        Me.QuestsWindowBackButton.TabStop = False
+        '
+        'QuestsWindowCloseButton
+        '
+        Me.QuestsWindowCloseButton.BackColor = System.Drawing.Color.Transparent
+        Me.QuestsWindowCloseButton.BackgroundImage = CType(resources.GetObject("QuestsWindowCloseButton.BackgroundImage"), System.Drawing.Image)
+        Me.QuestsWindowCloseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.QuestsWindowCloseButton.Location = New System.Drawing.Point(194, 8)
+        Me.QuestsWindowCloseButton.Name = "QuestsWindowCloseButton"
+        Me.QuestsWindowCloseButton.Size = New System.Drawing.Size(26, 25)
+        Me.QuestsWindowCloseButton.TabIndex = 19
+        Me.QuestsWindowCloseButton.TabStop = False
+        '
+        'QuestsWindowTitle
+        '
+        Me.QuestsWindowTitle.AutoSize = True
+        Me.QuestsWindowTitle.BackColor = System.Drawing.Color.Transparent
+        Me.QuestsWindowTitle.Font = New System.Drawing.Font("Source Sans Pro SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.QuestsWindowTitle.ForeColor = System.Drawing.Color.White
+        Me.QuestsWindowTitle.Location = New System.Drawing.Point(40, 7)
+        Me.QuestsWindowTitle.Name = "QuestsWindowTitle"
+        Me.QuestsWindowTitle.Size = New System.Drawing.Size(57, 20)
+        Me.QuestsWindowTitle.TabIndex = 3
+        Me.QuestsWindowTitle.Text = "Quests"
+        '
+        'MainQuestOfferWindowPanel
+        '
+        Me.MainQuestOfferWindowPanel.BackgroundImage = CType(resources.GetObject("MainQuestOfferWindowPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainQuestOfferWindowPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainQuestOfferWindowPanel.Controls.Add(Me.QuestOfferCloseButton)
+        Me.MainQuestOfferWindowPanel.Controls.Add(Me.QuestOfferTitle)
+        Me.MainQuestOfferWindowPanel.Controls.Add(Me.QuestOfferInnerPanel)
+        Me.MainQuestOfferWindowPanel.Location = New System.Drawing.Point(354, 1095)
+        Me.MainQuestOfferWindowPanel.Name = "MainQuestOfferWindowPanel"
+        Me.MainQuestOfferWindowPanel.Size = New System.Drawing.Size(442, 469)
+        Me.MainQuestOfferWindowPanel.TabIndex = 47
+        Me.MainQuestOfferWindowPanel.Visible = False
+        '
+        'QuestOfferCloseButton
+        '
+        Me.QuestOfferCloseButton.BackColor = System.Drawing.Color.Transparent
+        Me.QuestOfferCloseButton.BackgroundImage = CType(resources.GetObject("QuestOfferCloseButton.BackgroundImage"), System.Drawing.Image)
+        Me.QuestOfferCloseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.QuestOfferCloseButton.Location = New System.Drawing.Point(408, 0)
+        Me.QuestOfferCloseButton.Name = "QuestOfferCloseButton"
+        Me.QuestOfferCloseButton.Size = New System.Drawing.Size(34, 32)
+        Me.QuestOfferCloseButton.TabIndex = 19
+        Me.QuestOfferCloseButton.TabStop = False
+        '
+        'QuestOfferTitle
+        '
+        Me.QuestOfferTitle.AutoSize = True
+        Me.QuestOfferTitle.BackColor = System.Drawing.Color.Transparent
+        Me.QuestOfferTitle.Font = New System.Drawing.Font("Source Sans Pro SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.QuestOfferTitle.ForeColor = System.Drawing.Color.White
+        Me.QuestOfferTitle.Location = New System.Drawing.Point(32, 6)
+        Me.QuestOfferTitle.Name = "QuestOfferTitle"
+        Me.QuestOfferTitle.Size = New System.Drawing.Size(88, 20)
+        Me.QuestOfferTitle.TabIndex = 3
+        Me.QuestOfferTitle.Text = "Quest Offer"
+        '
+        'QuestOfferInnerPanel
+        '
+        Me.QuestOfferInnerPanel.BackColor = System.Drawing.Color.Transparent
+        Me.QuestOfferInnerPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.QuestOfferInnerPanel.Controls.Add(Me.QuestOfferArea)
+        Me.QuestOfferInnerPanel.Controls.Add(Me.QuestOfferDeclineButton)
+        Me.QuestOfferInnerPanel.Controls.Add(Me.QuestOfferAcceptButton)
+        Me.QuestOfferInnerPanel.Controls.Add(Me.QuestTitle)
+        Me.QuestOfferInnerPanel.Location = New System.Drawing.Point(0, 38)
+        Me.QuestOfferInnerPanel.Name = "QuestOfferInnerPanel"
+        Me.QuestOfferInnerPanel.Size = New System.Drawing.Size(442, 431)
+        Me.QuestOfferInnerPanel.TabIndex = 20
+        '
+        'QuestOfferArea
+        '
+        Me.QuestOfferArea.BackColor = System.Drawing.Color.Transparent
+        Me.QuestOfferArea.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.QuestOfferArea.Controls.Add(Me.QuestOfferTemplate)
+        Me.QuestOfferArea.Location = New System.Drawing.Point(39, 52)
+        Me.QuestOfferArea.Name = "QuestOfferArea"
+        Me.QuestOfferArea.Size = New System.Drawing.Size(370, 318)
+        Me.QuestOfferArea.TabIndex = 27
+        '
+        'QuestOfferTemplate
+        '
+        Me.QuestOfferTemplate.AutoSize = True
+        Me.QuestOfferTemplate.BackColor = System.Drawing.Color.Transparent
+        Me.QuestOfferTemplate.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.QuestOfferTemplate.ForeColor = System.Drawing.Color.White
+        Me.QuestOfferTemplate.Location = New System.Drawing.Point(0, 0)
+        Me.QuestOfferTemplate.Name = "QuestOfferTemplate"
+        Me.QuestOfferTemplate.Size = New System.Drawing.Size(209, 17)
+        Me.QuestOfferTemplate.TabIndex = 23
+        Me.QuestOfferTemplate.Text = "Go hunt and kill 10 slimes? K thanks..."
+        '
+        'QuestOfferDeclineButton
+        '
+        Me.QuestOfferDeclineButton.BackColor = System.Drawing.Color.Transparent
+        Me.QuestOfferDeclineButton.BackgroundImage = CType(resources.GetObject("QuestOfferDeclineButton.BackgroundImage"), System.Drawing.Image)
+        Me.QuestOfferDeclineButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.QuestOfferDeclineButton.Location = New System.Drawing.Point(288, 393)
+        Me.QuestOfferDeclineButton.Name = "QuestOfferDeclineButton"
+        Me.QuestOfferDeclineButton.Size = New System.Drawing.Size(96, 35)
+        Me.QuestOfferDeclineButton.TabIndex = 26
+        Me.QuestOfferDeclineButton.TabStop = False
+        '
+        'QuestOfferAcceptButton
+        '
+        Me.QuestOfferAcceptButton.BackColor = System.Drawing.Color.Transparent
+        Me.QuestOfferAcceptButton.BackgroundImage = CType(resources.GetObject("QuestOfferAcceptButton.BackgroundImage"), System.Drawing.Image)
+        Me.QuestOfferAcceptButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.QuestOfferAcceptButton.Location = New System.Drawing.Point(54, 393)
+        Me.QuestOfferAcceptButton.Name = "QuestOfferAcceptButton"
+        Me.QuestOfferAcceptButton.Size = New System.Drawing.Size(96, 35)
+        Me.QuestOfferAcceptButton.TabIndex = 25
+        Me.QuestOfferAcceptButton.TabStop = False
+        '
+        'QuestTitle
+        '
+        Me.QuestTitle.AutoSize = True
+        Me.QuestTitle.BackColor = System.Drawing.Color.Transparent
+        Me.QuestTitle.Font = New System.Drawing.Font("Source Sans Pro SemiBold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.QuestTitle.ForeColor = System.Drawing.Color.White
+        Me.QuestTitle.Location = New System.Drawing.Point(0, 10)
+        Me.QuestTitle.Name = "QuestTitle"
+        Me.QuestTitle.Size = New System.Drawing.Size(150, 31)
+        Me.QuestTitle.TabIndex = 22
+        Me.QuestTitle.Text = "Kill 10 Slimes"
+        '
+        'MainPlayerStatusIconPanel
+        '
+        Me.MainPlayerStatusIconPanel.BackColor = System.Drawing.Color.Transparent
+        Me.MainPlayerStatusIconPanel.BackgroundImage = CType(resources.GetObject("MainPlayerStatusIconPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainPlayerStatusIconPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainPlayerStatusIconPanel.Controls.Add(Me.DurationLabel)
+        Me.MainPlayerStatusIconPanel.Controls.Add(Me.StatusIcon)
+        Me.MainPlayerStatusIconPanel.Location = New System.Drawing.Point(3, 820)
+        Me.MainPlayerStatusIconPanel.Name = "MainPlayerStatusIconPanel"
+        Me.MainPlayerStatusIconPanel.Size = New System.Drawing.Size(34, 35)
+        Me.MainPlayerStatusIconPanel.TabIndex = 46
+        Me.MainPlayerStatusIconPanel.Visible = False
+        '
+        'DurationLabel
+        '
+        Me.DurationLabel.AutoSize = True
+        Me.DurationLabel.BackColor = System.Drawing.Color.Transparent
+        Me.DurationLabel.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DurationLabel.ForeColor = System.Drawing.Color.White
+        Me.DurationLabel.Location = New System.Drawing.Point(1, 1)
+        Me.DurationLabel.Name = "DurationLabel"
+        Me.DurationLabel.Size = New System.Drawing.Size(12, 14)
+        Me.DurationLabel.TabIndex = 6
+        Me.DurationLabel.Text = "0"
+        '
+        'StatusIcon
+        '
+        Me.StatusIcon.BackgroundImage = CType(resources.GetObject("StatusIcon.BackgroundImage"), System.Drawing.Image)
+        Me.StatusIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.StatusIcon.Location = New System.Drawing.Point(1, 1)
+        Me.StatusIcon.Name = "StatusIcon"
+        Me.StatusIcon.Size = New System.Drawing.Size(32, 32)
+        Me.StatusIcon.TabIndex = 0
+        Me.StatusIcon.TabStop = False
+        '
+        'MainPlayerBoxPanel
+        '
+        Me.MainPlayerBoxPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainPlayerBoxPanel.Controls.Add(Me.PlayerBoxFriendButton)
+        Me.MainPlayerBoxPanel.Controls.Add(Me.PlayerBoxPartyButton)
+        Me.MainPlayerBoxPanel.Controls.Add(Me.PlayerBoxTradeButton)
+        Me.MainPlayerBoxPanel.Controls.Add(Me.EntityInfoPanel)
+        Me.MainPlayerBoxPanel.Location = New System.Drawing.Point(2034, 844)
+        Me.MainPlayerBoxPanel.Name = "MainPlayerBoxPanel"
+        Me.MainPlayerBoxPanel.Size = New System.Drawing.Size(314, 208)
+        Me.MainPlayerBoxPanel.TabIndex = 45
+        Me.MainPlayerBoxPanel.Visible = False
+        '
+        'PlayerBoxFriendButton
+        '
+        Me.PlayerBoxFriendButton.BackColor = System.Drawing.Color.Transparent
+        Me.PlayerBoxFriendButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PlayerBoxFriendButton.Location = New System.Drawing.Point(0, 0)
+        Me.PlayerBoxFriendButton.Name = "PlayerBoxFriendButton"
+        Me.PlayerBoxFriendButton.Size = New System.Drawing.Size(100, 20)
+        Me.PlayerBoxFriendButton.TabIndex = 58
+        Me.PlayerBoxFriendButton.TabStop = False
+        Me.PlayerBoxFriendButton.Visible = False
+        '
+        'PlayerBoxPartyButton
+        '
+        Me.PlayerBoxPartyButton.BackColor = System.Drawing.Color.Transparent
+        Me.PlayerBoxPartyButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PlayerBoxPartyButton.Location = New System.Drawing.Point(165, 89)
+        Me.PlayerBoxPartyButton.Name = "PlayerBoxPartyButton"
+        Me.PlayerBoxPartyButton.Size = New System.Drawing.Size(100, 20)
+        Me.PlayerBoxPartyButton.TabIndex = 57
+        Me.PlayerBoxPartyButton.TabStop = False
+        Me.PlayerBoxPartyButton.Visible = False
+        '
+        'PlayerBoxTradeButton
+        '
+        Me.PlayerBoxTradeButton.BackColor = System.Drawing.Color.Transparent
+        Me.PlayerBoxTradeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PlayerBoxTradeButton.Location = New System.Drawing.Point(117, 89)
+        Me.PlayerBoxTradeButton.Name = "PlayerBoxTradeButton"
+        Me.PlayerBoxTradeButton.Size = New System.Drawing.Size(100, 20)
+        Me.PlayerBoxTradeButton.TabIndex = 56
+        Me.PlayerBoxTradeButton.TabStop = False
+        Me.PlayerBoxTradeButton.Visible = False
+        '
+        'EntityInfoPanel
+        '
+        Me.EntityInfoPanel.BackColor = System.Drawing.Color.Transparent
+        Me.EntityInfoPanel.BackgroundImage = CType(resources.GetObject("EntityInfoPanel.BackgroundImage"), System.Drawing.Image)
+        Me.EntityInfoPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.EntityInfoPanel.Controls.Add(Me.EXPLabel)
+        Me.EntityInfoPanel.Controls.Add(Me.EXPTitle)
+        Me.EntityInfoPanel.Controls.Add(Me.EXPBar)
+        Me.EntityInfoPanel.Controls.Add(Me.EXPBackground)
+        Me.EntityInfoPanel.Controls.Add(Me.MPLabel)
+        Me.EntityInfoPanel.Controls.Add(Me.MPTitle)
+        Me.EntityInfoPanel.Controls.Add(Me.MPBar)
+        Me.EntityInfoPanel.Controls.Add(Me.MPBackground)
+        Me.EntityInfoPanel.Controls.Add(Me.HPLabel)
+        Me.EntityInfoPanel.Controls.Add(Me.HPTitle)
+        Me.EntityInfoPanel.Controls.Add(Me.ShieldBar)
+        Me.EntityInfoPanel.Controls.Add(Me.HPBar)
+        Me.EntityInfoPanel.Controls.Add(Me.HPBarBackground)
+        Me.EntityInfoPanel.Controls.Add(Me.EntityGraphicContainer)
+        Me.EntityInfoPanel.Controls.Add(Me.EntityMapLabel)
+        Me.EntityInfoPanel.Controls.Add(Me.NameAndLevelLabel)
+        Me.EntityInfoPanel.Controls.Add(Me.EntityLevelLabel)
+        Me.EntityInfoPanel.Controls.Add(Me.EntityNameLabel)
+        Me.EntityInfoPanel.Location = New System.Drawing.Point(0, 0)
+        Me.EntityInfoPanel.Name = "EntityInfoPanel"
+        Me.EntityInfoPanel.Size = New System.Drawing.Size(314, 126)
+        Me.EntityInfoPanel.TabIndex = 7
+        '
+        'EXPLabel
+        '
+        Me.EXPLabel.AutoSize = True
+        Me.EXPLabel.BackColor = System.Drawing.Color.Transparent
+        Me.EXPLabel.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EXPLabel.ForeColor = System.Drawing.Color.White
+        Me.EXPLabel.Location = New System.Drawing.Point(130, 95)
+        Me.EXPLabel.Name = "EXPLabel"
+        Me.EXPLabel.Size = New System.Drawing.Size(67, 17)
+        Me.EXPLabel.TabIndex = 33
+        Me.EXPLabel.Text = "9999 / 9999"
+        '
+        'EXPTitle
+        '
+        Me.EXPTitle.AutoSize = True
+        Me.EXPTitle.BackColor = System.Drawing.Color.Transparent
+        Me.EXPTitle.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EXPTitle.ForeColor = System.Drawing.Color.White
+        Me.EXPTitle.Location = New System.Drawing.Point(95, 95)
+        Me.EXPTitle.Name = "EXPTitle"
+        Me.EXPTitle.Size = New System.Drawing.Size(32, 17)
+        Me.EXPTitle.TabIndex = 32
+        Me.EXPTitle.Text = "EXP:"
+        '
+        'EXPBar
+        '
+        Me.EXPBar.BackgroundImage = CType(resources.GetObject("EXPBar.BackgroundImage"), System.Drawing.Image)
+        Me.EXPBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.EXPBar.Location = New System.Drawing.Point(130, 97)
+        Me.EXPBar.Name = "EXPBar"
+        Me.EXPBar.Size = New System.Drawing.Size(168, 14)
+        Me.EXPBar.TabIndex = 31
+        Me.EXPBar.TabStop = False
+        '
+        'EXPBackground
+        '
+        Me.EXPBackground.BackgroundImage = CType(resources.GetObject("EXPBackground.BackgroundImage"), System.Drawing.Image)
+        Me.EXPBackground.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.EXPBackground.Location = New System.Drawing.Point(130, 96)
+        Me.EXPBackground.Name = "EXPBackground"
+        Me.EXPBackground.Size = New System.Drawing.Size(168, 14)
+        Me.EXPBackground.TabIndex = 30
+        Me.EXPBackground.TabStop = False
+        '
+        'MPLabel
+        '
+        Me.MPLabel.AutoSize = True
+        Me.MPLabel.BackColor = System.Drawing.Color.Transparent
+        Me.MPLabel.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MPLabel.ForeColor = System.Drawing.Color.White
+        Me.MPLabel.Location = New System.Drawing.Point(130, 69)
+        Me.MPLabel.Name = "MPLabel"
+        Me.MPLabel.Size = New System.Drawing.Size(67, 17)
+        Me.MPLabel.TabIndex = 29
+        Me.MPLabel.Text = "9999 / 9999"
+        '
+        'MPTitle
+        '
+        Me.MPTitle.AutoSize = True
+        Me.MPTitle.BackColor = System.Drawing.Color.Transparent
+        Me.MPTitle.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MPTitle.ForeColor = System.Drawing.Color.White
+        Me.MPTitle.Location = New System.Drawing.Point(100, 69)
+        Me.MPTitle.Name = "MPTitle"
+        Me.MPTitle.Size = New System.Drawing.Size(27, 17)
+        Me.MPTitle.TabIndex = 28
+        Me.MPTitle.Text = "MP:"
+        '
+        'MPBar
+        '
+        Me.MPBar.BackgroundImage = CType(resources.GetObject("MPBar.BackgroundImage"), System.Drawing.Image)
+        Me.MPBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MPBar.Location = New System.Drawing.Point(130, 71)
+        Me.MPBar.Name = "MPBar"
+        Me.MPBar.Size = New System.Drawing.Size(168, 14)
+        Me.MPBar.TabIndex = 27
+        Me.MPBar.TabStop = False
+        '
+        'MPBackground
+        '
+        Me.MPBackground.BackgroundImage = CType(resources.GetObject("MPBackground.BackgroundImage"), System.Drawing.Image)
+        Me.MPBackground.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MPBackground.Location = New System.Drawing.Point(130, 70)
+        Me.MPBackground.Name = "MPBackground"
+        Me.MPBackground.Size = New System.Drawing.Size(168, 14)
+        Me.MPBackground.TabIndex = 26
+        Me.MPBackground.TabStop = False
+        '
+        'HPLabel
+        '
+        Me.HPLabel.AutoSize = True
+        Me.HPLabel.BackColor = System.Drawing.Color.Transparent
+        Me.HPLabel.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HPLabel.ForeColor = System.Drawing.Color.White
+        Me.HPLabel.Location = New System.Drawing.Point(130, 43)
+        Me.HPLabel.Name = "HPLabel"
+        Me.HPLabel.Size = New System.Drawing.Size(67, 17)
+        Me.HPLabel.TabIndex = 25
+        Me.HPLabel.Text = "9999 / 9999"
+        '
+        'HPTitle
+        '
+        Me.HPTitle.AutoSize = True
+        Me.HPTitle.BackColor = System.Drawing.Color.Transparent
+        Me.HPTitle.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HPTitle.ForeColor = System.Drawing.Color.White
+        Me.HPTitle.Location = New System.Drawing.Point(100, 43)
+        Me.HPTitle.Name = "HPTitle"
+        Me.HPTitle.Size = New System.Drawing.Size(26, 17)
+        Me.HPTitle.TabIndex = 24
+        Me.HPTitle.Text = "HP:"
+        '
+        'ShieldBar
+        '
+        Me.ShieldBar.BackgroundImage = CType(resources.GetObject("ShieldBar.BackgroundImage"), System.Drawing.Image)
+        Me.ShieldBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ShieldBar.Location = New System.Drawing.Point(130, 45)
+        Me.ShieldBar.Name = "ShieldBar"
+        Me.ShieldBar.Size = New System.Drawing.Size(168, 14)
+        Me.ShieldBar.TabIndex = 23
+        Me.ShieldBar.TabStop = False
+        '
+        'HPBar
+        '
+        Me.HPBar.BackgroundImage = CType(resources.GetObject("HPBar.BackgroundImage"), System.Drawing.Image)
+        Me.HPBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.HPBar.Location = New System.Drawing.Point(130, 45)
+        Me.HPBar.Name = "HPBar"
+        Me.HPBar.Size = New System.Drawing.Size(168, 14)
+        Me.HPBar.TabIndex = 22
+        Me.HPBar.TabStop = False
+        '
+        'HPBarBackground
+        '
+        Me.HPBarBackground.BackgroundImage = CType(resources.GetObject("HPBarBackground.BackgroundImage"), System.Drawing.Image)
+        Me.HPBarBackground.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.HPBarBackground.Location = New System.Drawing.Point(130, 45)
+        Me.HPBarBackground.Name = "HPBarBackground"
+        Me.HPBarBackground.Size = New System.Drawing.Size(168, 14)
+        Me.HPBarBackground.TabIndex = 21
+        Me.HPBarBackground.TabStop = False
+        '
+        'EntityGraphicContainer
+        '
+        Me.EntityGraphicContainer.BackColor = System.Drawing.Color.Transparent
+        Me.EntityGraphicContainer.BackgroundImage = CType(resources.GetObject("EntityGraphicContainer.BackgroundImage"), System.Drawing.Image)
+        Me.EntityGraphicContainer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.EntityGraphicContainer.Location = New System.Drawing.Point(18, 39)
+        Me.EntityGraphicContainer.Name = "EntityGraphicContainer"
+        Me.EntityGraphicContainer.Size = New System.Drawing.Size(64, 64)
+        Me.EntityGraphicContainer.TabIndex = 20
+        Me.EntityGraphicContainer.TabStop = False
+        '
+        'EntityMapLabel
+        '
+        Me.EntityMapLabel.AutoSize = True
+        Me.EntityMapLabel.BackColor = System.Drawing.Color.Transparent
+        Me.EntityMapLabel.Font = New System.Drawing.Font("Source Sans Pro SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EntityMapLabel.ForeColor = System.Drawing.Color.White
+        Me.EntityMapLabel.Location = New System.Drawing.Point(100, 6)
+        Me.EntityMapLabel.Name = "EntityMapLabel"
+        Me.EntityMapLabel.Size = New System.Drawing.Size(78, 20)
+        Me.EntityMapLabel.TabIndex = 7
+        Me.EntityMapLabel.Text = "MapName"
+        '
+        'NameAndLevelLabel
+        '
+        Me.NameAndLevelLabel.AutoSize = True
+        Me.NameAndLevelLabel.BackColor = System.Drawing.Color.Transparent
+        Me.NameAndLevelLabel.Font = New System.Drawing.Font("Source Sans Pro SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NameAndLevelLabel.ForeColor = System.Drawing.Color.White
+        Me.NameAndLevelLabel.Location = New System.Drawing.Point(32, 6)
+        Me.NameAndLevelLabel.Name = "NameAndLevelLabel"
+        Me.NameAndLevelLabel.Size = New System.Drawing.Size(136, 20)
+        Me.NameAndLevelLabel.TabIndex = 6
+        Me.NameAndLevelLabel.Text = "EntityName Lvl. 99"
+        '
+        'EntityLevelLabel
+        '
+        Me.EntityLevelLabel.AutoSize = True
+        Me.EntityLevelLabel.BackColor = System.Drawing.Color.Transparent
+        Me.EntityLevelLabel.Font = New System.Drawing.Font("Source Sans Pro SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EntityLevelLabel.ForeColor = System.Drawing.Color.White
+        Me.EntityLevelLabel.Location = New System.Drawing.Point(16, 7)
+        Me.EntityLevelLabel.Name = "EntityLevelLabel"
+        Me.EntityLevelLabel.Size = New System.Drawing.Size(46, 20)
+        Me.EntityLevelLabel.TabIndex = 5
+        Me.EntityLevelLabel.Text = "Lv. 99"
+        Me.EntityLevelLabel.Visible = False
+        '
+        'EntityNameLabel
+        '
+        Me.EntityNameLabel.AutoSize = True
+        Me.EntityNameLabel.BackColor = System.Drawing.Color.Transparent
+        Me.EntityNameLabel.Font = New System.Drawing.Font("Source Sans Pro SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EntityNameLabel.ForeColor = System.Drawing.Color.White
+        Me.EntityNameLabel.Location = New System.Drawing.Point(76, 7)
+        Me.EntityNameLabel.Name = "EntityNameLabel"
+        Me.EntityNameLabel.Size = New System.Drawing.Size(91, 20)
+        Me.EntityNameLabel.TabIndex = 4
+        Me.EntityNameLabel.Text = "EntityName"
+        Me.EntityNameLabel.Visible = False
         '
         'MainPartyWindowPanel
         '
@@ -1991,7 +2684,7 @@ Partial Class Form1
         '
         Me.MainGameInputBoxPanel.BackgroundImage = CType(resources.GetObject("MainGameInputBoxPanel.BackgroundImage"), System.Drawing.Image)
         Me.MainGameInputBoxPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.MainGameInputBoxPanel.Controls.Add(Me.Panel2)
+        Me.MainGameInputBoxPanel.Controls.Add(Me.GameInputBoxInnerPanel)
         Me.MainGameInputBoxPanel.Controls.Add(Me.GameInputBoxCloseButton)
         Me.MainGameInputBoxPanel.Controls.Add(Me.GameInputboxTitle)
         Me.MainGameInputBoxPanel.Location = New System.Drawing.Point(-122, 619)
@@ -2000,18 +2693,18 @@ Partial Class Form1
         Me.MainGameInputBoxPanel.TabIndex = 39
         Me.MainGameInputBoxPanel.Visible = False
         '
-        'Panel2
+        'GameInputBoxInnerPanel
         '
-        Me.Panel2.BackColor = System.Drawing.Color.Transparent
-        Me.Panel2.Controls.Add(Me.GameInputOkayButton)
-        Me.Panel2.Controls.Add(Me.GameInputBoxTextBox)
-        Me.Panel2.Controls.Add(Me.GameInputNoButton)
-        Me.Panel2.Controls.Add(Me.GameInputPromptLabel)
-        Me.Panel2.Controls.Add(Me.GameInputYesButton)
-        Me.Panel2.Location = New System.Drawing.Point(3, 39)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(449, 156)
-        Me.Panel2.TabIndex = 12
+        Me.GameInputBoxInnerPanel.BackColor = System.Drawing.Color.Transparent
+        Me.GameInputBoxInnerPanel.Controls.Add(Me.GameInputOkayButton)
+        Me.GameInputBoxInnerPanel.Controls.Add(Me.GameInputBoxTextBox)
+        Me.GameInputBoxInnerPanel.Controls.Add(Me.GameInputNoButton)
+        Me.GameInputBoxInnerPanel.Controls.Add(Me.GameInputPromptLabel)
+        Me.GameInputBoxInnerPanel.Controls.Add(Me.GameInputYesButton)
+        Me.GameInputBoxInnerPanel.Location = New System.Drawing.Point(3, 39)
+        Me.GameInputBoxInnerPanel.Name = "GameInputBoxInnerPanel"
+        Me.GameInputBoxInnerPanel.Size = New System.Drawing.Size(449, 156)
+        Me.GameInputBoxInnerPanel.TabIndex = 12
         '
         'GameInputOkayButton
         '
@@ -3397,7 +4090,6 @@ Partial Class Form1
         Me.MainChatboxWindowPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.MainChatboxWindowPanel.Controls.Add(Me.ChatboxInputField)
         Me.MainChatboxWindowPanel.Controls.Add(Me.Chatbar)
-        Me.MainChatboxWindowPanel.Controls.Add(Me.PictureBox1)
         Me.MainChatboxWindowPanel.Controls.Add(Me.ChatboxTitle)
         Me.MainChatboxWindowPanel.Location = New System.Drawing.Point(1270, 0)
         Me.MainChatboxWindowPanel.Name = "MainChatboxWindowPanel"
@@ -3423,17 +4115,6 @@ Partial Class Form1
         Me.Chatbar.Name = "Chatbar"
         Me.Chatbar.Size = New System.Drawing.Size(386, 25)
         Me.Chatbar.TabIndex = 20
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(408, 0)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(34, 32)
-        Me.PictureBox1.TabIndex = 19
-        Me.PictureBox1.TabStop = False
         '
         'ChatboxTitle
         '
@@ -5948,6 +6629,7 @@ Partial Class Form1
         Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
         Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(43, 20)
         Me.SaveToolStripMenuItem.Text = "Save"
+        Me.SaveToolStripMenuItem.Visible = False
         '
         'RefreshBtn
         '
@@ -5973,282 +6655,76 @@ Partial Class Form1
         Me.AppSettings.Name = "AppSettings"
         Me.AppSettings.Size = New System.Drawing.Size(28, 20)
         '
-        'MainPlayerBoxPanel
+        'MainSpellDescWindowPanel
         '
-        Me.MainPlayerBoxPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.MainPlayerBoxPanel.Controls.Add(Me.PlayerBoxFriendButton)
-        Me.MainPlayerBoxPanel.Controls.Add(Me.PlayerBoxPartyButton)
-        Me.MainPlayerBoxPanel.Controls.Add(Me.PlayerBoxTradeButton)
-        Me.MainPlayerBoxPanel.Controls.Add(Me.EntityInfoPanel)
-        Me.MainPlayerBoxPanel.Location = New System.Drawing.Point(2034, 844)
-        Me.MainPlayerBoxPanel.Name = "MainPlayerBoxPanel"
-        Me.MainPlayerBoxPanel.Size = New System.Drawing.Size(314, 208)
-        Me.MainPlayerBoxPanel.TabIndex = 45
-        Me.MainPlayerBoxPanel.Visible = False
+        Me.MainSpellDescWindowPanel.BackgroundImage = CType(resources.GetObject("MainSpellDescWindowPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainSpellDescWindowPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainSpellDescWindowPanel.Controls.Add(Me.SpellDescSpellType)
+        Me.MainSpellDescWindowPanel.Controls.Add(Me.SpellDescSpellName)
+        Me.MainSpellDescWindowPanel.Controls.Add(Me.SpellDescSpellIcon)
+        Me.MainSpellDescWindowPanel.Controls.Add(Me.SpellDescSpellDesc)
+        Me.MainSpellDescWindowPanel.Location = New System.Drawing.Point(1283, 1039)
+        Me.MainSpellDescWindowPanel.Name = "MainSpellDescWindowPanel"
+        Me.MainSpellDescWindowPanel.Size = New System.Drawing.Size(185, 244)
+        Me.MainSpellDescWindowPanel.TabIndex = 52
+        Me.MainSpellDescWindowPanel.Visible = False
         '
-        'EntityInfoPanel
+        'SpellDescSpellDescText
         '
-        Me.EntityInfoPanel.BackColor = System.Drawing.Color.Transparent
-        Me.EntityInfoPanel.BackgroundImage = CType(resources.GetObject("EntityInfoPanel.BackgroundImage"), System.Drawing.Image)
-        Me.EntityInfoPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.EntityInfoPanel.Controls.Add(Me.EXPLabel)
-        Me.EntityInfoPanel.Controls.Add(Me.EXPTitle)
-        Me.EntityInfoPanel.Controls.Add(Me.EXPBar)
-        Me.EntityInfoPanel.Controls.Add(Me.EXPBackground)
-        Me.EntityInfoPanel.Controls.Add(Me.MPLabel)
-        Me.EntityInfoPanel.Controls.Add(Me.MPTitle)
-        Me.EntityInfoPanel.Controls.Add(Me.MPBar)
-        Me.EntityInfoPanel.Controls.Add(Me.MPBackground)
-        Me.EntityInfoPanel.Controls.Add(Me.HPLabel)
-        Me.EntityInfoPanel.Controls.Add(Me.HPTitle)
-        Me.EntityInfoPanel.Controls.Add(Me.ShieldBar)
-        Me.EntityInfoPanel.Controls.Add(Me.HPBar)
-        Me.EntityInfoPanel.Controls.Add(Me.HPBarBackground)
-        Me.EntityInfoPanel.Controls.Add(Me.EntityGraphicContainer)
-        Me.EntityInfoPanel.Controls.Add(Me.EntityMapLabel)
-        Me.EntityInfoPanel.Controls.Add(Me.NameAndLevelLabel)
-        Me.EntityInfoPanel.Controls.Add(Me.EntityLevelLabel)
-        Me.EntityInfoPanel.Controls.Add(Me.EntityNameLabel)
-        Me.EntityInfoPanel.Location = New System.Drawing.Point(0, 0)
-        Me.EntityInfoPanel.Name = "EntityInfoPanel"
-        Me.EntityInfoPanel.Size = New System.Drawing.Size(314, 126)
-        Me.EntityInfoPanel.TabIndex = 7
+        Me.SpellDescSpellDescText.AutoSize = True
+        Me.SpellDescSpellDescText.BackColor = System.Drawing.Color.Transparent
+        Me.SpellDescSpellDescText.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SpellDescSpellDescText.ForeColor = System.Drawing.Color.White
+        Me.SpellDescSpellDescText.Location = New System.Drawing.Point(88, 0)
+        Me.SpellDescSpellDescText.Name = "SpellDescSpellDescText"
+        Me.SpellDescSpellDescText.Size = New System.Drawing.Size(172, 17)
+        Me.SpellDescSpellDescText.TabIndex = 26
+        Me.SpellDescSpellDescText.Text = "Rains down arrows in an area."
         '
-        'EntityNameLabel
+        'SpellDescSpellType
         '
-        Me.EntityNameLabel.AutoSize = True
-        Me.EntityNameLabel.BackColor = System.Drawing.Color.Transparent
-        Me.EntityNameLabel.Font = New System.Drawing.Font("Source Sans Pro SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.EntityNameLabel.ForeColor = System.Drawing.Color.White
-        Me.EntityNameLabel.Location = New System.Drawing.Point(76, 7)
-        Me.EntityNameLabel.Name = "EntityNameLabel"
-        Me.EntityNameLabel.Size = New System.Drawing.Size(91, 20)
-        Me.EntityNameLabel.TabIndex = 4
-        Me.EntityNameLabel.Text = "EntityName"
-        Me.EntityNameLabel.Visible = False
+        Me.SpellDescSpellType.AutoSize = True
+        Me.SpellDescSpellType.BackColor = System.Drawing.Color.Transparent
+        Me.SpellDescSpellType.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SpellDescSpellType.ForeColor = System.Drawing.Color.White
+        Me.SpellDescSpellType.Location = New System.Drawing.Point(4, 92)
+        Me.SpellDescSpellType.Name = "SpellDescSpellType"
+        Me.SpellDescSpellType.Size = New System.Drawing.Size(31, 17)
+        Me.SpellDescSpellType.TabIndex = 24
+        Me.SpellDescSpellType.Text = "AOE"
         '
-        'EntityLevelLabel
+        'SpellDescSpellName
         '
-        Me.EntityLevelLabel.AutoSize = True
-        Me.EntityLevelLabel.BackColor = System.Drawing.Color.Transparent
-        Me.EntityLevelLabel.Font = New System.Drawing.Font("Source Sans Pro SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.EntityLevelLabel.ForeColor = System.Drawing.Color.White
-        Me.EntityLevelLabel.Location = New System.Drawing.Point(16, 7)
-        Me.EntityLevelLabel.Name = "EntityLevelLabel"
-        Me.EntityLevelLabel.Size = New System.Drawing.Size(46, 20)
-        Me.EntityLevelLabel.TabIndex = 5
-        Me.EntityLevelLabel.Text = "Lv. 99"
-        Me.EntityLevelLabel.Visible = False
+        Me.SpellDescSpellName.AutoSize = True
+        Me.SpellDescSpellName.BackColor = System.Drawing.Color.Transparent
+        Me.SpellDescSpellName.Font = New System.Drawing.Font("Source Sans Pro", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SpellDescSpellName.ForeColor = System.Drawing.Color.White
+        Me.SpellDescSpellName.Location = New System.Drawing.Point(4, 8)
+        Me.SpellDescSpellName.Name = "SpellDescSpellName"
+        Me.SpellDescSpellName.Size = New System.Drawing.Size(90, 20)
+        Me.SpellDescSpellName.TabIndex = 23
+        Me.SpellDescSpellName.Text = "Rain Arrows"
         '
-        'NameAndLevelLabel
+        'SpellDescSpellIcon
         '
-        Me.NameAndLevelLabel.AutoSize = True
-        Me.NameAndLevelLabel.BackColor = System.Drawing.Color.Transparent
-        Me.NameAndLevelLabel.Font = New System.Drawing.Font("Source Sans Pro SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NameAndLevelLabel.ForeColor = System.Drawing.Color.White
-        Me.NameAndLevelLabel.Location = New System.Drawing.Point(32, 6)
-        Me.NameAndLevelLabel.Name = "NameAndLevelLabel"
-        Me.NameAndLevelLabel.Size = New System.Drawing.Size(136, 20)
-        Me.NameAndLevelLabel.TabIndex = 6
-        Me.NameAndLevelLabel.Text = "EntityName Lvl. 99"
+        Me.SpellDescSpellIcon.BackColor = System.Drawing.Color.Transparent
+        Me.SpellDescSpellIcon.BackgroundImage = CType(resources.GetObject("SpellDescSpellIcon.BackgroundImage"), System.Drawing.Image)
+        Me.SpellDescSpellIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.SpellDescSpellIcon.Location = New System.Drawing.Point(68, 38)
+        Me.SpellDescSpellIcon.Name = "SpellDescSpellIcon"
+        Me.SpellDescSpellIcon.Size = New System.Drawing.Size(48, 48)
+        Me.SpellDescSpellIcon.TabIndex = 19
+        Me.SpellDescSpellIcon.TabStop = False
         '
-        'EntityMapLabel
+        'SpellDescSpellDesc
         '
-        Me.EntityMapLabel.AutoSize = True
-        Me.EntityMapLabel.BackColor = System.Drawing.Color.Transparent
-        Me.EntityMapLabel.Font = New System.Drawing.Font("Source Sans Pro SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.EntityMapLabel.ForeColor = System.Drawing.Color.White
-        Me.EntityMapLabel.Location = New System.Drawing.Point(100, 6)
-        Me.EntityMapLabel.Name = "EntityMapLabel"
-        Me.EntityMapLabel.Size = New System.Drawing.Size(78, 20)
-        Me.EntityMapLabel.TabIndex = 7
-        Me.EntityMapLabel.Text = "MapName"
-        '
-        'EntityGraphicContainer
-        '
-        Me.EntityGraphicContainer.BackColor = System.Drawing.Color.Transparent
-        Me.EntityGraphicContainer.BackgroundImage = CType(resources.GetObject("EntityGraphicContainer.BackgroundImage"), System.Drawing.Image)
-        Me.EntityGraphicContainer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.EntityGraphicContainer.Location = New System.Drawing.Point(18, 39)
-        Me.EntityGraphicContainer.Name = "EntityGraphicContainer"
-        Me.EntityGraphicContainer.Size = New System.Drawing.Size(64, 64)
-        Me.EntityGraphicContainer.TabIndex = 20
-        Me.EntityGraphicContainer.TabStop = False
-        '
-        'HPBarBackground
-        '
-        Me.HPBarBackground.BackgroundImage = CType(resources.GetObject("HPBarBackground.BackgroundImage"), System.Drawing.Image)
-        Me.HPBarBackground.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.HPBarBackground.Location = New System.Drawing.Point(130, 45)
-        Me.HPBarBackground.Name = "HPBarBackground"
-        Me.HPBarBackground.Size = New System.Drawing.Size(168, 14)
-        Me.HPBarBackground.TabIndex = 21
-        Me.HPBarBackground.TabStop = False
-        '
-        'HPBar
-        '
-        Me.HPBar.BackgroundImage = CType(resources.GetObject("HPBar.BackgroundImage"), System.Drawing.Image)
-        Me.HPBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.HPBar.Location = New System.Drawing.Point(130, 45)
-        Me.HPBar.Name = "HPBar"
-        Me.HPBar.Size = New System.Drawing.Size(168, 14)
-        Me.HPBar.TabIndex = 22
-        Me.HPBar.TabStop = False
-        '
-        'ShieldBar
-        '
-        Me.ShieldBar.BackgroundImage = CType(resources.GetObject("ShieldBar.BackgroundImage"), System.Drawing.Image)
-        Me.ShieldBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ShieldBar.Location = New System.Drawing.Point(130, 45)
-        Me.ShieldBar.Name = "ShieldBar"
-        Me.ShieldBar.Size = New System.Drawing.Size(168, 14)
-        Me.ShieldBar.TabIndex = 23
-        Me.ShieldBar.TabStop = False
-        '
-        'HPTitle
-        '
-        Me.HPTitle.AutoSize = True
-        Me.HPTitle.BackColor = System.Drawing.Color.Transparent
-        Me.HPTitle.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HPTitle.ForeColor = System.Drawing.Color.White
-        Me.HPTitle.Location = New System.Drawing.Point(100, 43)
-        Me.HPTitle.Name = "HPTitle"
-        Me.HPTitle.Size = New System.Drawing.Size(26, 17)
-        Me.HPTitle.TabIndex = 24
-        Me.HPTitle.Text = "HP:"
-        '
-        'HPLabel
-        '
-        Me.HPLabel.AutoSize = True
-        Me.HPLabel.BackColor = System.Drawing.Color.Transparent
-        Me.HPLabel.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HPLabel.ForeColor = System.Drawing.Color.White
-        Me.HPLabel.Location = New System.Drawing.Point(130, 43)
-        Me.HPLabel.Name = "HPLabel"
-        Me.HPLabel.Size = New System.Drawing.Size(67, 17)
-        Me.HPLabel.TabIndex = 25
-        Me.HPLabel.Text = "9999 / 9999"
-        '
-        'MPBackground
-        '
-        Me.MPBackground.BackgroundImage = CType(resources.GetObject("MPBackground.BackgroundImage"), System.Drawing.Image)
-        Me.MPBackground.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.MPBackground.Location = New System.Drawing.Point(130, 70)
-        Me.MPBackground.Name = "MPBackground"
-        Me.MPBackground.Size = New System.Drawing.Size(168, 14)
-        Me.MPBackground.TabIndex = 26
-        Me.MPBackground.TabStop = False
-        '
-        'MPBar
-        '
-        Me.MPBar.BackgroundImage = CType(resources.GetObject("MPBar.BackgroundImage"), System.Drawing.Image)
-        Me.MPBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.MPBar.Location = New System.Drawing.Point(130, 71)
-        Me.MPBar.Name = "MPBar"
-        Me.MPBar.Size = New System.Drawing.Size(168, 14)
-        Me.MPBar.TabIndex = 27
-        Me.MPBar.TabStop = False
-        '
-        'MPTitle
-        '
-        Me.MPTitle.AutoSize = True
-        Me.MPTitle.BackColor = System.Drawing.Color.Transparent
-        Me.MPTitle.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MPTitle.ForeColor = System.Drawing.Color.White
-        Me.MPTitle.Location = New System.Drawing.Point(100, 69)
-        Me.MPTitle.Name = "MPTitle"
-        Me.MPTitle.Size = New System.Drawing.Size(27, 17)
-        Me.MPTitle.TabIndex = 28
-        Me.MPTitle.Text = "MP:"
-        '
-        'MPLabel
-        '
-        Me.MPLabel.AutoSize = True
-        Me.MPLabel.BackColor = System.Drawing.Color.Transparent
-        Me.MPLabel.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MPLabel.ForeColor = System.Drawing.Color.White
-        Me.MPLabel.Location = New System.Drawing.Point(130, 69)
-        Me.MPLabel.Name = "MPLabel"
-        Me.MPLabel.Size = New System.Drawing.Size(67, 17)
-        Me.MPLabel.TabIndex = 29
-        Me.MPLabel.Text = "9999 / 9999"
-        '
-        'EXPBackground
-        '
-        Me.EXPBackground.BackgroundImage = CType(resources.GetObject("EXPBackground.BackgroundImage"), System.Drawing.Image)
-        Me.EXPBackground.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.EXPBackground.Location = New System.Drawing.Point(130, 96)
-        Me.EXPBackground.Name = "EXPBackground"
-        Me.EXPBackground.Size = New System.Drawing.Size(168, 14)
-        Me.EXPBackground.TabIndex = 30
-        Me.EXPBackground.TabStop = False
-        '
-        'EXPBar
-        '
-        Me.EXPBar.BackgroundImage = CType(resources.GetObject("EXPBar.BackgroundImage"), System.Drawing.Image)
-        Me.EXPBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.EXPBar.Location = New System.Drawing.Point(130, 97)
-        Me.EXPBar.Name = "EXPBar"
-        Me.EXPBar.Size = New System.Drawing.Size(168, 14)
-        Me.EXPBar.TabIndex = 31
-        Me.EXPBar.TabStop = False
-        '
-        'EXPLabel
-        '
-        Me.EXPLabel.AutoSize = True
-        Me.EXPLabel.BackColor = System.Drawing.Color.Transparent
-        Me.EXPLabel.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.EXPLabel.ForeColor = System.Drawing.Color.White
-        Me.EXPLabel.Location = New System.Drawing.Point(130, 95)
-        Me.EXPLabel.Name = "EXPLabel"
-        Me.EXPLabel.Size = New System.Drawing.Size(67, 17)
-        Me.EXPLabel.TabIndex = 33
-        Me.EXPLabel.Text = "9999 / 9999"
-        '
-        'EXPTitle
-        '
-        Me.EXPTitle.AutoSize = True
-        Me.EXPTitle.BackColor = System.Drawing.Color.Transparent
-        Me.EXPTitle.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.EXPTitle.ForeColor = System.Drawing.Color.White
-        Me.EXPTitle.Location = New System.Drawing.Point(95, 95)
-        Me.EXPTitle.Name = "EXPTitle"
-        Me.EXPTitle.Size = New System.Drawing.Size(32, 17)
-        Me.EXPTitle.TabIndex = 32
-        Me.EXPTitle.Text = "EXP:"
-        '
-        'PlayerBoxTradeButton
-        '
-        Me.PlayerBoxTradeButton.BackColor = System.Drawing.Color.Transparent
-        Me.PlayerBoxTradeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PlayerBoxTradeButton.Location = New System.Drawing.Point(117, 89)
-        Me.PlayerBoxTradeButton.Name = "PlayerBoxTradeButton"
-        Me.PlayerBoxTradeButton.Size = New System.Drawing.Size(100, 20)
-        Me.PlayerBoxTradeButton.TabIndex = 56
-        Me.PlayerBoxTradeButton.TabStop = False
-        Me.PlayerBoxTradeButton.Visible = False
-        '
-        'PlayerBoxPartyButton
-        '
-        Me.PlayerBoxPartyButton.BackColor = System.Drawing.Color.Transparent
-        Me.PlayerBoxPartyButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PlayerBoxPartyButton.Location = New System.Drawing.Point(165, 89)
-        Me.PlayerBoxPartyButton.Name = "PlayerBoxPartyButton"
-        Me.PlayerBoxPartyButton.Size = New System.Drawing.Size(100, 20)
-        Me.PlayerBoxPartyButton.TabIndex = 57
-        Me.PlayerBoxPartyButton.TabStop = False
-        Me.PlayerBoxPartyButton.Visible = False
-        '
-        'PlayerBoxFriendButton
-        '
-        Me.PlayerBoxFriendButton.BackColor = System.Drawing.Color.Transparent
-        Me.PlayerBoxFriendButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PlayerBoxFriendButton.Location = New System.Drawing.Point(0, 0)
-        Me.PlayerBoxFriendButton.Name = "PlayerBoxFriendButton"
-        Me.PlayerBoxFriendButton.Size = New System.Drawing.Size(100, 20)
-        Me.PlayerBoxFriendButton.TabIndex = 58
-        Me.PlayerBoxFriendButton.TabStop = False
-        Me.PlayerBoxFriendButton.Visible = False
+        Me.SpellDescSpellDesc.BackColor = System.Drawing.Color.Transparent
+        Me.SpellDescSpellDesc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.SpellDescSpellDesc.Controls.Add(Me.SpellDescSpellDescText)
+        Me.SpellDescSpellDesc.Location = New System.Drawing.Point(4, 120)
+        Me.SpellDescSpellDesc.Name = "SpellDescSpellDesc"
+        Me.SpellDescSpellDesc.Size = New System.Drawing.Size(177, 130)
+        Me.SpellDescSpellDesc.TabIndex = 7
         '
         'Form1
         '
@@ -6263,358 +6739,391 @@ Partial Class Form1
         Me.Text = "IGE"
         Me.mainSplitContainer.Panel1.ResumeLayout(False)
         Me.mainSplitContainer.Panel2.ResumeLayout(False)
-        Me.mainSplitContainer.Panel2.PerformLayout()
-        CType(Me.mainSplitContainer, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.mainSplitContainer.Panel2.PerformLayout
+        CType(Me.mainSplitContainer, System.ComponentModel.ISupportInitialize).EndInit
         Me.mainSplitContainer.ResumeLayout(False)
         Me.toolSplitContainer.Panel1.ResumeLayout(False)
         Me.toolSplitContainer.Panel2.ResumeLayout(False)
-        CType(Me.toolSplitContainer, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.toolSplitContainer, System.ComponentModel.ISupportInitialize).EndInit
         Me.toolSplitContainer.ResumeLayout(False)
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.SplitContainer1.Panel1.ResumeLayout(False)
         Me.SplitContainer1.Panel2.ResumeLayout(False)
-        Me.SplitContainer1.Panel2.PerformLayout()
-        CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.SplitContainer1.Panel2.PerformLayout
+        CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).EndInit
         Me.SplitContainer1.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
+        Me.MainSpellPanel.ResumeLayout(False)
+        Me.MainSpellPanel.PerformLayout
+        CType(Me.SpellIcon, System.ComponentModel.ISupportInitialize).EndInit
+        Me.MainShopWindowPanel.ResumeLayout(False)
+        Me.MainShopWindowPanel.PerformLayout
+        CType(Me.ShopWindowCloseButton, System.ComponentModel.ISupportInitialize).EndInit
+        Me.MainShopItemPanel.ResumeLayout(False)
+        CType(Me.ShopItemIcon, System.ComponentModel.ISupportInitialize).EndInit
+        Me.MainQuestsWindowPanel.ResumeLayout(False)
+        Me.MainQuestsWindowPanel.PerformLayout
+        Me.QuestsWindowQuestList.ResumeLayout(False)
+        Me.QuestsWindowQuestList.PerformLayout
+        CType(Me.QuestsWindowAbandonQuestButton, System.ComponentModel.ISupportInitialize).EndInit
+        Me.QuestsWindowQuestDescription.ResumeLayout(False)
+        Me.QuestsWindowQuestDescription.PerformLayout
+        CType(Me.QuestsWindowBackButton, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.QuestsWindowCloseButton, System.ComponentModel.ISupportInitialize).EndInit
+        Me.MainQuestOfferWindowPanel.ResumeLayout(False)
+        Me.MainQuestOfferWindowPanel.PerformLayout
+        CType(Me.QuestOfferCloseButton, System.ComponentModel.ISupportInitialize).EndInit
+        Me.QuestOfferInnerPanel.ResumeLayout(False)
+        Me.QuestOfferInnerPanel.PerformLayout
+        Me.QuestOfferArea.ResumeLayout(False)
+        Me.QuestOfferArea.PerformLayout
+        CType(Me.QuestOfferDeclineButton, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.QuestOfferAcceptButton, System.ComponentModel.ISupportInitialize).EndInit
+        Me.MainPlayerStatusIconPanel.ResumeLayout(False)
+        Me.MainPlayerStatusIconPanel.PerformLayout
+        CType(Me.StatusIcon, System.ComponentModel.ISupportInitialize).EndInit
+        Me.MainPlayerBoxPanel.ResumeLayout(False)
+        CType(Me.PlayerBoxFriendButton, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PlayerBoxPartyButton, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PlayerBoxTradeButton, System.ComponentModel.ISupportInitialize).EndInit
+        Me.EntityInfoPanel.ResumeLayout(False)
+        Me.EntityInfoPanel.PerformLayout
+        CType(Me.EXPBar, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.EXPBackground, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.MPBar, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.MPBackground, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.ShieldBar, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.HPBar, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.HPBarBackground, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.EntityGraphicContainer, System.ComponentModel.ISupportInitialize).EndInit
         Me.MainPartyWindowPanel.ResumeLayout(False)
-        Me.MainPartyWindowPanel.PerformLayout()
+        Me.MainPartyWindowPanel.PerformLayout
         Me.PartyInnerPanel.ResumeLayout(False)
-        Me.PartyInnerPanel.PerformLayout()
-        CType(Me.KickButton3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.KickButton2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.KickButton1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LeavePartyButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PartyInnerPanel.PerformLayout
+        CType(Me.KickButton3, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.KickButton2, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.KickButton1, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.LeavePartyButton, System.ComponentModel.ISupportInitialize).EndInit
         Me.ManaBarContainer3.ResumeLayout(False)
-        CType(Me.ManaBar3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ManaBar3, System.ComponentModel.ISupportInitialize).EndInit
         Me.HealthBarContainer3.ResumeLayout(False)
-        CType(Me.HealthBar3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.HealthBar3, System.ComponentModel.ISupportInitialize).EndInit
         Me.ManaBarContainer2.ResumeLayout(False)
-        CType(Me.ManaBar2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ManaBar2, System.ComponentModel.ISupportInitialize).EndInit
         Me.HealthBarContainer2.ResumeLayout(False)
-        CType(Me.HealthBar2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.HealthBar2, System.ComponentModel.ISupportInitialize).EndInit
         Me.ManaBarContainer1.ResumeLayout(False)
-        CType(Me.ManaBar1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ManaBar1, System.ComponentModel.ISupportInitialize).EndInit
         Me.HealthBarContainer1.ResumeLayout(False)
-        CType(Me.HealthBar1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.HealthBar1, System.ComponentModel.ISupportInitialize).EndInit
         Me.ManaBarContainer0.ResumeLayout(False)
-        CType(Me.ManaBar0, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LeaderIcon, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ManaBar0, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.LeaderIcon, System.ComponentModel.ISupportInitialize).EndInit
         Me.HealthBarContainer0.ResumeLayout(False)
-        CType(Me.HealthBar0, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PartyCloseButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.HealthBar0, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PartyCloseButton, System.ComponentModel.ISupportInitialize).EndInit
         Me.MainMenuContainerPanel.ResumeLayout(False)
         Me.MenuContainer.ResumeLayout(False)
-        CType(Me.MenuButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MenuButton, System.ComponentModel.ISupportInitialize).EndInit
         Me.PartyContainer.ResumeLayout(False)
-        CType(Me.PartyButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PartyButton, System.ComponentModel.ISupportInitialize).EndInit
         Me.FriendsContainer.ResumeLayout(False)
-        CType(Me.FriendsButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.FriendsButton, System.ComponentModel.ISupportInitialize).EndInit
         Me.QuestsContainer.ResumeLayout(False)
-        CType(Me.QuestsButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.QuestsButton, System.ComponentModel.ISupportInitialize).EndInit
         Me.MenuCharacterContainer.ResumeLayout(False)
-        CType(Me.CharacterButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CharacterButton, System.ComponentModel.ISupportInitialize).EndInit
         Me.SpellsContainer.ResumeLayout(False)
-        CType(Me.SpellsButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SpellsButton, System.ComponentModel.ISupportInitialize).EndInit
         Me.InventoryContainer.ResumeLayout(False)
-        CType(Me.InventoryButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.InventoryButton, System.ComponentModel.ISupportInitialize).EndInit
         Me.MainItemDescWindowExpandedPanel.ResumeLayout(False)
-        Me.MainItemDescWindowExpandedPanel.PerformLayout()
+        Me.MainItemDescWindowExpandedPanel.PerformLayout
         Me.ItemDescExpandedItemStats.ResumeLayout(False)
-        Me.ItemDescExpandedItemStats.PerformLayout()
-        CType(Me.ItemDescExpandedItemIcon, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ItemDescExpandedItemStats.PerformLayout
+        CType(Me.ItemDescExpandedItemIcon, System.ComponentModel.ISupportInitialize).EndInit
         Me.MainItemDescWindowPanel.ResumeLayout(False)
-        Me.MainItemDescWindowPanel.PerformLayout()
-        CType(Me.ItemDescItemIcon, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainItemDescWindowPanel.PerformLayout
+        CType(Me.ItemDescItemIcon, System.ComponentModel.ISupportInitialize).EndInit
         Me.MainInventoryWindowPanel.ResumeLayout(False)
-        Me.MainInventoryWindowPanel.PerformLayout()
-        CType(Me.InventoryWindowCloseButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainInventoryWindowPanel.PerformLayout
+        CType(Me.InventoryWindowCloseButton, System.ComponentModel.ISupportInitialize).EndInit
         Me.MainInventoryItemPanel.ResumeLayout(False)
-        Me.MainInventoryItemPanel.PerformLayout()
-        CType(Me.InventoryItemIcon, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainInventoryItemPanel.PerformLayout
+        CType(Me.InventoryItemIcon, System.ComponentModel.ISupportInitialize).EndInit
         Me.MainGameInputBoxPanel.ResumeLayout(False)
-        Me.MainGameInputBoxPanel.PerformLayout()
-        Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
-        CType(Me.GameInputOkayButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainGameInputBoxPanel.PerformLayout
+        Me.GameInputBoxInnerPanel.ResumeLayout(False)
+        Me.GameInputBoxInnerPanel.PerformLayout
+        CType(Me.GameInputOkayButton, System.ComponentModel.ISupportInitialize).EndInit
         Me.GameInputBoxTextBox.ResumeLayout(False)
-        CType(Me.GameInputBoxTextboxText, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GameInputNoButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GameInputYesButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GameInputBoxCloseButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GameInputBoxTextboxText, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.GameInputNoButton, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.GameInputYesButton, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.GameInputBoxCloseButton, System.ComponentModel.ISupportInitialize).EndInit
         Me.MainHotbarWindowPanel.ResumeLayout(False)
         Me.HotbarContainer9.ResumeLayout(False)
-        Me.HotbarContainer9.PerformLayout()
-        CType(Me.HotbarIcon9, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.HotbarContainer9.PerformLayout
+        CType(Me.HotbarIcon9, System.ComponentModel.ISupportInitialize).EndInit
         Me.HotbarContainer8.ResumeLayout(False)
-        Me.HotbarContainer8.PerformLayout()
-        CType(Me.HotbarIcon8, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.HotbarContainer8.PerformLayout
+        CType(Me.HotbarIcon8, System.ComponentModel.ISupportInitialize).EndInit
         Me.HotbarContainer7.ResumeLayout(False)
-        Me.HotbarContainer7.PerformLayout()
-        CType(Me.HotbarIcon7, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.HotbarContainer7.PerformLayout
+        CType(Me.HotbarIcon7, System.ComponentModel.ISupportInitialize).EndInit
         Me.HotbarContainer6.ResumeLayout(False)
-        Me.HotbarContainer6.PerformLayout()
-        CType(Me.HotbarIcon6, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.HotbarContainer6.PerformLayout
+        CType(Me.HotbarIcon6, System.ComponentModel.ISupportInitialize).EndInit
         Me.HotbarContainer5.ResumeLayout(False)
-        Me.HotbarContainer5.PerformLayout()
-        CType(Me.HotbarIcon5, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.HotbarContainer5.PerformLayout
+        CType(Me.HotbarIcon5, System.ComponentModel.ISupportInitialize).EndInit
         Me.HotbarContainer4.ResumeLayout(False)
-        Me.HotbarContainer4.PerformLayout()
-        CType(Me.HotbarIcon4, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.HotbarContainer4.PerformLayout
+        CType(Me.HotbarIcon4, System.ComponentModel.ISupportInitialize).EndInit
         Me.HotbarContainer3.ResumeLayout(False)
-        Me.HotbarContainer3.PerformLayout()
-        CType(Me.HotbarIcon3, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.HotbarContainer3.PerformLayout
+        CType(Me.HotbarIcon3, System.ComponentModel.ISupportInitialize).EndInit
         Me.HotbarContainer2.ResumeLayout(False)
-        Me.HotbarContainer2.PerformLayout()
-        CType(Me.HotbarIcon2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.HotbarContainer2.PerformLayout
+        CType(Me.HotbarIcon2, System.ComponentModel.ISupportInitialize).EndInit
         Me.HotbarContainer1.ResumeLayout(False)
-        Me.HotbarContainer1.PerformLayout()
-        CType(Me.HotbarIcon1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.HotbarContainer1.PerformLayout
+        CType(Me.HotbarIcon1, System.ComponentModel.ISupportInitialize).EndInit
         Me.HotbarContainer0.ResumeLayout(False)
-        Me.HotbarContainer0.PerformLayout()
-        CType(Me.HotbarIcon0, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.HotbarContainer0.PerformLayout
+        CType(Me.HotbarIcon0, System.ComponentModel.ISupportInitialize).EndInit
         Me.MainFriendsWindowPanel.ResumeLayout(False)
-        Me.MainFriendsWindowPanel.PerformLayout()
-        CType(Me.AddFriendPopupButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.FriendsWindowCloseButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainFriendsWindowPanel.PerformLayout
+        CType(Me.AddFriendPopupButton, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.FriendsWindowCloseButton, System.ComponentModel.ISupportInitialize).EndInit
         Me.MainEventDialogWindow4ResponsePanel.ResumeLayout(False)
-        CType(Me.Dialog4Response4Button, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Dialog4Response3Button, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Dialog4Response2Button, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Dialog4Response4Button, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Dialog4Response3Button, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Dialog4Response2Button, System.ComponentModel.ISupportInitialize).EndInit
         Me.Dialog4EventDialogArea.ResumeLayout(False)
         Me.Dialog4EventDialogAreaInnerPanel.ResumeLayout(False)
-        Me.Dialog4EventDialogAreaInnerPanel.PerformLayout()
-        CType(Me.Dialog4Response1Button, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Dialog4EventDialogAreaInnerPanel.PerformLayout
+        CType(Me.Dialog4Response1Button, System.ComponentModel.ISupportInitialize).EndInit
         Me.MainEventDialogWindow3ResponsePanel.ResumeLayout(False)
-        CType(Me.Dialog3Response3Button, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Dialog3Response2Button, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Dialog3Response3Button, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Dialog3Response2Button, System.ComponentModel.ISupportInitialize).EndInit
         Me.Dialog3EventDialogArea.ResumeLayout(False)
         Me.Dialog3EventDialogAreaInnerPanel.ResumeLayout(False)
-        Me.Dialog3EventDialogAreaInnerPanel.PerformLayout()
-        CType(Me.Dialog3Response1Button, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Dialog3EventDialogAreaInnerPanel.PerformLayout
+        CType(Me.Dialog3Response1Button, System.ComponentModel.ISupportInitialize).EndInit
         Me.MainEventDialogWindow2ResponsePanel.ResumeLayout(False)
-        CType(Me.Dialog2Response2Button, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Dialog2Response2Button, System.ComponentModel.ISupportInitialize).EndInit
         Me.Dialog2EventDialogArea.ResumeLayout(False)
         Me.Dialog2EventDialogAreaInnerPanel.ResumeLayout(False)
-        Me.Dialog2EventDialogAreaInnerPanel.PerformLayout()
-        CType(Me.Dialog2Response1Button, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Dialog2EventDialogAreaInnerPanel.PerformLayout
+        CType(Me.Dialog2Response1Button, System.ComponentModel.ISupportInitialize).EndInit
         Me.MainEventDialogWindow1ResponsePanel.ResumeLayout(False)
         Me.Dialog1EventDialogArea.ResumeLayout(False)
         Me.Dialog1EventDialogAreaInnerPanel.ResumeLayout(False)
-        Me.Dialog1EventDialogAreaInnerPanel.PerformLayout()
-        CType(Me.Dialog1Response1Button, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Dialog1EventDialogAreaInnerPanel.PerformLayout
+        CType(Me.Dialog1Response1Button, System.ComponentModel.ISupportInitialize).EndInit
         Me.MainEscapeMenuPanel.ResumeLayout(False)
-        Me.MainEscapeMenuPanel.PerformLayout()
-        CType(Me.EscapeMenuLogoutButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.EscapeMenuCloseButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.EscapeMenuExitToDesktopButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.EscapeMenuCharacterSelectButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.EscapeMenuOptionsButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainEscapeMenuPanel.PerformLayout
+        CType(Me.EscapeMenuLogoutButton, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.EscapeMenuCloseButton, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.EscapeMenuExitToDesktopButton, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.EscapeMenuCharacterSelectButton, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.EscapeMenuOptionsButton, System.ComponentModel.ISupportInitialize).EndInit
         Me.MainEquipmentItemPanel.ResumeLayout(False)
-        CType(Me.EquipmentIcon, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EquipmentIcon, System.ComponentModel.ISupportInitialize).EndInit
         Me.MainCraftingWindowPanel.ResumeLayout(False)
-        Me.MainCraftingWindowPanel.PerformLayout()
-        CType(Me.CraftButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.CraftingWindowCloseButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainCraftingWindowPanel.PerformLayout
+        CType(Me.CraftButton, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.CraftingWindowCloseButton, System.ComponentModel.ISupportInitialize).EndInit
         Me.MainCraftingIngredientPanel.ResumeLayout(False)
-        Me.MainCraftingIngredientPanel.PerformLayout()
-        CType(Me.IngredientItemIcon, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainCraftingIngredientPanel.PerformLayout
+        CType(Me.IngredientItemIcon, System.ComponentModel.ISupportInitialize).EndInit
         Me.MainCraftedItemPanel.ResumeLayout(False)
-        Me.MainCraftedItemPanel.PerformLayout()
-        CType(Me.CraftedItemIcon, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainCraftedItemPanel.PerformLayout
+        CType(Me.CraftedItemIcon, System.ComponentModel.ISupportInitialize).EndInit
         Me.MainChatboxWindowPanel.ResumeLayout(False)
-        Me.MainChatboxWindowPanel.PerformLayout()
-        CType(Me.ChatboxInputField, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainChatboxWindowPanel.PerformLayout
+        CType(Me.ChatboxInputField, System.ComponentModel.ISupportInitialize).EndInit
         Me.MainCharacterWindowPanel.ResumeLayout(False)
-        Me.MainCharacterWindowPanel.PerformLayout()
+        Me.MainCharacterWindowPanel.PerformLayout
         Me.CharacterWindowInnerPanel.ResumeLayout(False)
-        Me.CharacterWindowInnerPanel.PerformLayout()
+        Me.CharacterWindowInnerPanel.PerformLayout
         Me.EquipmentItem4.ResumeLayout(False)
-        CType(Me.Equipment4Icon, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Equipment4Icon, System.ComponentModel.ISupportInitialize).EndInit
         Me.EquipmentItem3.ResumeLayout(False)
-        CType(Me.Equipment3Icon, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Equipment3Icon, System.ComponentModel.ISupportInitialize).EndInit
         Me.EquipmentItem2.ResumeLayout(False)
-        CType(Me.Equipment2Icon, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Equipment2Icon, System.ComponentModel.ISupportInitialize).EndInit
         Me.EquipmentItem1.ResumeLayout(False)
-        CType(Me.Equipment1Icon, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Equipment1Icon, System.ComponentModel.ISupportInitialize).EndInit
         Me.EquipmentItem0.ResumeLayout(False)
-        CType(Me.Equipment0Icon, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.IncreaseMagicResistButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.IncreaseAbilityPowerButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.IncreaseSpeedButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.IncreaseDefenseButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.IncreaseAttackButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.CharacterWindowCharacterContainer, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.CharacterWindowCloseButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Equipment0Icon, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.IncreaseMagicResistButton, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.IncreaseAbilityPowerButton, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.IncreaseSpeedButton, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.IncreaseDefenseButton, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.IncreaseAttackButton, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.CharacterWindowCharacterContainer, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.CharacterWindowCloseButton, System.ComponentModel.ISupportInitialize).EndInit
         Me.MainBankWindowPanel.ResumeLayout(False)
-        Me.MainBankWindowPanel.PerformLayout()
-        CType(Me.BankWindowCloseButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainBankWindowPanel.PerformLayout
+        CType(Me.BankWindowCloseButton, System.ComponentModel.ISupportInitialize).EndInit
         Me.MainBankItemPanel.ResumeLayout(False)
-        Me.MainBankItemPanel.PerformLayout()
-        CType(Me.BankItemIcon, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainBankItemPanel.PerformLayout
+        CType(Me.BankItemIcon, System.ComponentModel.ISupportInitialize).EndInit
         Me.MainBagWindowPanel.ResumeLayout(False)
-        Me.MainBagWindowPanel.PerformLayout()
-        CType(Me.BagWindowCloseButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainBagWindowPanel.PerformLayout
+        CType(Me.BagWindowCloseButton, System.ComponentModel.ISupportInitialize).EndInit
         Me.MainBagItemPanel.ResumeLayout(False)
-        Me.MainBagItemPanel.PerformLayout()
-        CType(Me.BagItemIcon, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainBagItemPanel.PerformLayout
+        CType(Me.BagItemIcon, System.ComponentModel.ISupportInitialize).EndInit
         Me.MainControlPanelsWindow.ResumeLayout(False)
-        Me.MainControlPanelsWindow.PerformLayout()
-        CType(Me.RestoreControlsButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ExitControlsButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.CancelControlsButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainControlPanelsWindow.PerformLayout
+        CType(Me.RestoreControlsButton, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.ExitControlsButton, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.CancelControlsButton, System.ComponentModel.ISupportInitialize).EndInit
         Me.MainServerStatusAreaPanel.ResumeLayout(False)
-        Me.MainServerStatusAreaPanel.PerformLayout()
+        Me.MainServerStatusAreaPanel.PerformLayout
         Me.MainResetPasswordWindowPanel.ResumeLayout(False)
-        Me.MainResetPasswordWindowPanel.PerformLayout()
+        Me.MainResetPasswordWindowPanel.PerformLayout
         Me.ResetPassword2Panel.ResumeLayout(False)
-        Me.ResetPassword2Panel.PerformLayout()
-        CType(Me.ResetPassword2Field, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResetPassword2Panel.PerformLayout
+        CType(Me.ResetPassword2Field, System.ComponentModel.ISupportInitialize).EndInit
         Me.ResetPassword1Panel.ResumeLayout(False)
-        Me.ResetPassword1Panel.PerformLayout()
-        CType(Me.ResetPassword1Field, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ResetBackButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ResetSubmitButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResetPassword1Panel.PerformLayout
+        CType(Me.ResetPassword1Field, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.ResetBackButton, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.ResetSubmitButton, System.ComponentModel.ISupportInitialize).EndInit
         Me.CodePanel.ResumeLayout(False)
-        Me.CodePanel.PerformLayout()
-        CType(Me.CodeField, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.CodePanel.PerformLayout
+        CType(Me.CodeField, System.ComponentModel.ISupportInitialize).EndInit
         Me.MainRegistrationWindowPanel.ResumeLayout(False)
-        Me.MainRegistrationWindowPanel.PerformLayout()
+        Me.MainRegistrationWindowPanel.PerformLayout
         Me.Password2Panel.ResumeLayout(False)
-        Me.Password2Panel.PerformLayout()
-        CType(Me.Password2Field, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Password2Panel.PerformLayout
+        CType(Me.Password2Field, System.ComponentModel.ISupportInitialize).EndInit
         Me.Password1Panel.ResumeLayout(False)
-        Me.Password1Panel.PerformLayout()
-        CType(Me.Password1Field, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RegistrationBackButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Password1Panel.PerformLayout
+        CType(Me.Password1Field, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.RegistrationBackButton, System.ComponentModel.ISupportInitialize).EndInit
         Me.RegistrationUsernamePanel.ResumeLayout(False)
-        Me.RegistrationUsernamePanel.PerformLayout()
-        CType(Me.RegistrationUsernameField, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RegistrationRegisterButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.RegistrationUsernamePanel.PerformLayout
+        CType(Me.RegistrationUsernameField, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.RegistrationRegisterButton, System.ComponentModel.ISupportInitialize).EndInit
         Me.EmailPanel.ResumeLayout(False)
-        Me.EmailPanel.PerformLayout()
-        CType(Me.EmailField, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.EmailPanel.PerformLayout
+        CType(Me.EmailField, System.ComponentModel.ISupportInitialize).EndInit
         Me.MainOptionsWindowPanel.ResumeLayout(False)
-        Me.MainOptionsWindowPanel.PerformLayout()
+        Me.MainOptionsWindowPanel.PerformLayout
         Me.OptionsContainer.ResumeLayout(False)
-        Me.OptionsContainer.PerformLayout()
-        CType(Me.OptionsCancelButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.OptionsApplyButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.OptionsContainer.PerformLayout
+        CType(Me.OptionsCancelButton, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.OptionsApplyButton, System.ComponentModel.ISupportInitialize).EndInit
         Me.MusicSlider.ResumeLayout(False)
-        CType(Me.MusicSliderBar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MusicSliderBar, System.ComponentModel.ISupportInitialize).EndInit
         Me.SoundSlider.ResumeLayout(False)
-        CType(Me.SoundSliderBar, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.KeybindingsButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SoundSliderBar, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.KeybindingsButton, System.ComponentModel.ISupportInitialize).EndInit
         Me.AutocloseWindowsCheckboxPanel.ResumeLayout(False)
-        Me.AutocloseWindowsCheckboxPanel.PerformLayout()
-        CType(Me.AutocloseWindowsCheckboxCheckbox, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.AutocloseWindowsCheckboxPanel.PerformLayout
+        CType(Me.AutocloseWindowsCheckboxCheckbox, System.ComponentModel.ISupportInitialize).EndInit
         Me.FullscreenCheckboxPanel.ResumeLayout(False)
-        Me.FullscreenCheckboxPanel.PerformLayout()
-        CType(Me.FullscreenCheckboxCheckbox, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.FullscreenCheckboxPanel.PerformLayout
+        CType(Me.FullscreenCheckboxCheckbox, System.ComponentModel.ISupportInitialize).EndInit
         Me.FPSPanel.ResumeLayout(False)
-        Me.FPSPanel.PerformLayout()
-        CType(Me.FPSCombobox, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.FPSPanel.PerformLayout
+        CType(Me.FPSCombobox, System.ComponentModel.ISupportInitialize).EndInit
         Me.ResolutionPanel.ResumeLayout(False)
-        Me.ResolutionPanel.PerformLayout()
-        CType(Me.ResolutionCombobox, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResolutionPanel.PerformLayout
+        CType(Me.ResolutionCombobox, System.ComponentModel.ISupportInitialize).EndInit
         Me.MainMenuWindowPanel.ResumeLayout(False)
-        Me.MainMenuWindowPanel.PerformLayout()
-        CType(Me.MainMenuOptionsButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MainMenuExitButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MainMenuCreditsButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MainMenuRegisterButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MainMenuLoginButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MainLogoPanel, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainMenuWindowPanel.PerformLayout
+        CType(Me.MainMenuOptionsButton, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.MainMenuExitButton, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.MainMenuCreditsButton, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.MainMenuRegisterButton, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.MainMenuLoginButton, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.MainLogoPanel, System.ComponentModel.ISupportInitialize).EndInit
         Me.MainInputBoxPanel.ResumeLayout(False)
-        Me.MainInputBoxPanel.PerformLayout()
+        Me.MainInputBoxPanel.PerformLayout
         Me.InputBoxInnerPanel.ResumeLayout(False)
-        Me.InputBoxInnerPanel.PerformLayout()
-        CType(Me.OkayButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.InputBoxInnerPanel.PerformLayout
+        CType(Me.OkayButton, System.ComponentModel.ISupportInitialize).EndInit
         Me.InputBoxTextBox.ResumeLayout(False)
-        CType(Me.InputBoxTextboxText, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NoButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.YesButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.InputBoxCloseButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.InputBoxTextboxText, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.NoButton, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.YesButton, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.InputBoxCloseButton, System.ComponentModel.ISupportInitialize).EndInit
         Me.MainForgotPasswordWindowPanel.ResumeLayout(False)
-        Me.MainForgotPasswordWindowPanel.PerformLayout()
-        CType(Me.ForgotPasswordBackButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ForgotPasswordSubmitButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainForgotPasswordWindowPanel.PerformLayout
+        CType(Me.ForgotPasswordBackButton, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.ForgotPasswordSubmitButton, System.ComponentModel.ISupportInitialize).EndInit
         Me.ForgotPasswordInputPanel.ResumeLayout(False)
-        Me.ForgotPasswordInputPanel.PerformLayout()
-        CType(Me.ForgotPasswordInputField, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ForgotPasswordInputPanel.PerformLayout
+        CType(Me.ForgotPasswordInputField, System.ComponentModel.ISupportInitialize).EndInit
         Me.MainCreditsPanel.ResumeLayout(False)
-        Me.MainCreditsPanel.PerformLayout()
-        CType(Me.CreditsBackButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainCreditsPanel.PerformLayout
+        CType(Me.CreditsBackButton, System.ComponentModel.ISupportInitialize).EndInit
         Me.CreditsScrollview.ResumeLayout(False)
         Me.CreditsInnerPanel.ResumeLayout(False)
-        Me.CreditsInnerPanel.PerformLayout()
+        Me.CreditsInnerPanel.PerformLayout
         Me.MainCharSelectionPanel.ResumeLayout(False)
-        Me.MainCharSelectionPanel.PerformLayout()
-        CType(Me.LogoutButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NewButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DeleteButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PlayButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainCharSelectionPanel.PerformLayout
+        CType(Me.LogoutButton, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.NewButton, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.DeleteButton, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PlayButton, System.ComponentModel.ISupportInitialize).EndInit
         Me.SelectCharCharacterContainer.ResumeLayout(False)
-        CType(Me.PreviousCharacterButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NextCharacterButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.SelectCharCharacterPortrait, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PreviousCharacterButton, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.NextCharacterButton, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.SelectCharCharacterPortrait, System.ComponentModel.ISupportInitialize).EndInit
         Me.MainCharacterCreationPanel.ResumeLayout(False)
-        Me.MainCharacterCreationPanel.PerformLayout()
+        Me.MainCharacterCreationPanel.PerformLayout
         Me.GenderPanel.ResumeLayout(False)
-        Me.GenderPanel.PerformLayout()
+        Me.GenderPanel.PerformLayout
         Me.FemaleCheckboxPanel.ResumeLayout(False)
-        Me.FemaleCheckboxPanel.PerformLayout()
-        CType(Me.FemaleCheckbox, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.FemaleCheckboxPanel.PerformLayout
+        CType(Me.FemaleCheckbox, System.ComponentModel.ISupportInitialize).EndInit
         Me.MaleCheckboxPanel.ResumeLayout(False)
-        Me.MaleCheckboxPanel.PerformLayout()
-        CType(Me.MaleCheckbox, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.CharCreateBackButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.CreateButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MaleCheckboxPanel.PerformLayout
+        CType(Me.MaleCheckbox, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.CharCreateBackButton, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.CreateButton, System.ComponentModel.ISupportInitialize).EndInit
         Me.CharacterContainer.ResumeLayout(False)
-        CType(Me.PreviousSpriteButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NextSpriteButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.CharacterPortait, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PreviousSpriteButton, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.NextSpriteButton, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.CharacterPortait, System.ComponentModel.ISupportInitialize).EndInit
         Me.ClassPanel.ResumeLayout(False)
-        Me.ClassPanel.PerformLayout()
-        CType(Me.ClassCombobox, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ClassPanel.PerformLayout
+        CType(Me.ClassCombobox, System.ComponentModel.ISupportInitialize).EndInit
         Me.CharacterNamePanel.ResumeLayout(False)
-        Me.CharacterNamePanel.PerformLayout()
-        CType(Me.CharacterNameField, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.CharacterNamePanel.PerformLayout
+        CType(Me.CharacterNameField, System.ComponentModel.ISupportInitialize).EndInit
         Me.MainLoginWindowPanel.ResumeLayout(False)
-        Me.MainLoginWindowPanel.PerformLayout()
-        CType(Me.BackButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LoginButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MainLoginWindowPanel.PerformLayout
+        CType(Me.BackButton, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.LoginButton, System.ComponentModel.ISupportInitialize).EndInit
         Me.SavePassPanel.ResumeLayout(False)
-        Me.SavePassPanel.PerformLayout()
-        CType(Me.SavePassCheckbox, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.SavePassPanel.PerformLayout
+        CType(Me.SavePassCheckbox, System.ComponentModel.ISupportInitialize).EndInit
         Me.PasswordPanel.ResumeLayout(False)
-        Me.PasswordPanel.PerformLayout()
-        CType(Me.PasswordField, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PasswordPanel.PerformLayout
+        CType(Me.PasswordField, System.ComponentModel.ISupportInitialize).EndInit
         Me.UsernamePanel.ResumeLayout(False)
-        Me.UsernamePanel.PerformLayout()
-        CType(Me.UsernameFieldPB, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.UsernamePanel.PerformLayout
+        CType(Me.UsernameFieldPB, System.ComponentModel.ISupportInitialize).EndInit
         Me.StatusStrip1.ResumeLayout(False)
-        Me.StatusStrip1.PerformLayout()
+        Me.StatusStrip1.PerformLayout
         Me.MenuStrip1.ResumeLayout(False)
-        Me.MenuStrip1.PerformLayout()
-        Me.MainPlayerBoxPanel.ResumeLayout(False)
-        Me.EntityInfoPanel.ResumeLayout(False)
-        Me.EntityInfoPanel.PerformLayout()
-        CType(Me.EntityGraphicContainer, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.HPBarBackground, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.HPBar, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ShieldBar, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MPBackground, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MPBar, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.EXPBackground, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.EXPBar, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PlayerBoxTradeButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PlayerBoxPartyButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PlayerBoxFriendButton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MenuStrip1.PerformLayout
+        Me.MainSpellDescWindowPanel.ResumeLayout(False)
+        Me.MainSpellDescWindowPanel.PerformLayout
+        CType(Me.SpellDescSpellIcon, System.ComponentModel.ISupportInitialize).EndInit
+        Me.SpellDescSpellDesc.ResumeLayout(False)
+        Me.SpellDescSpellDesc.PerformLayout
         Me.ResumeLayout(False)
-        Me.PerformLayout()
+        Me.PerformLayout
 
     End Sub
 
@@ -6880,7 +7389,6 @@ Partial Class Form1
     Friend WithEvents MainChatboxWindowPanel As Panel
     Friend WithEvents ChatboxInputField As PictureBox
     Friend WithEvents Chatbar As Panel
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents ChatboxTitle As Label
     Friend WithEvents MainCraftedItemPanel As Panel
     Friend WithEvents CraftedItemQuantity As Label
@@ -6992,7 +7500,7 @@ Partial Class Form1
     Friend WithEvents HotbarEquippedLabel0 As Label
     Friend WithEvents HotbarIcon0 As PictureBox
     Friend WithEvents MainGameInputBoxPanel As Panel
-    Friend WithEvents Panel2 As Panel
+    Friend WithEvents GameInputBoxInnerPanel As Panel
     Friend WithEvents GameInputOkayButton As PictureBox
     Friend WithEvents GameInputBoxTextBox As Panel
     Friend WithEvents GameInputBoxTextboxText As PictureBox
@@ -7109,4 +7617,40 @@ Partial Class Form1
     Friend WithEvents NameAndLevelLabel As Label
     Friend WithEvents EntityLevelLabel As Label
     Friend WithEvents EntityNameLabel As Label
+    Friend WithEvents MainPlayerStatusIconPanel As Panel
+    Friend WithEvents DurationLabel As Label
+    Friend WithEvents StatusIcon As PictureBox
+    Friend WithEvents QuestOfferInnerPanel As Panel
+    Friend WithEvents QuestOfferAcceptButton As PictureBox
+    Friend WithEvents QuestTitle As Label
+    Friend WithEvents MainQuestOfferWindowPanel As Panel
+    Friend WithEvents QuestOfferCloseButton As PictureBox
+    Friend WithEvents QuestOfferTitle As Label
+    Friend WithEvents QuestOfferArea As Panel
+    Friend WithEvents QuestOfferTemplate As Label
+    Friend WithEvents QuestOfferDeclineButton As PictureBox
+    Friend WithEvents MainQuestsWindowPanel As Panel
+    Friend WithEvents QuestsWindowAbandonQuestButton As PictureBox
+    Friend WithEvents QuestsWindowBackButton As PictureBox
+    Friend WithEvents QuestsWindowQuestDescription As Panel
+    Friend WithEvents QuestsWindowQuestDescriptionTemplate As Label
+    Friend WithEvents QuestsWindowQuestStatus As Label
+    Friend WithEvents QuestsWindowQuestTitle As Label
+    Friend WithEvents QuestsWindowCloseButton As PictureBox
+    Friend WithEvents QuestsWindowTitle As Label
+    Friend WithEvents QuestsWindowQuestList As Panel
+    Friend WithEvents MainShopItemPanel As Panel
+    Friend WithEvents ShopItemIcon As PictureBox
+    Friend WithEvents MainShopWindowPanel As Panel
+    Friend WithEvents ShopWindowCloseButton As PictureBox
+    Friend WithEvents ShopWindowTitle As Label
+    Friend WithEvents MainSpellPanel As Panel
+    Friend WithEvents SpellCooldownLabel As Label
+    Friend WithEvents SpellIcon As PictureBox
+    Friend WithEvents MainSpellDescWindowPanel As Panel
+    Friend WithEvents SpellDescSpellType As Label
+    Friend WithEvents SpellDescSpellName As Label
+    Friend WithEvents SpellDescSpellIcon As PictureBox
+    Friend WithEvents SpellDescSpellDesc As Panel
+    Friend WithEvents SpellDescSpellDescText As Label
 End Class

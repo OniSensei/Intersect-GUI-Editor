@@ -168,6 +168,7 @@ Module EventDialogWindow1ResonseGUI
         Form1.MainEventDialogWindow1ResponsePanel.Visible = True
         Form1.RefreshBtn.Visible = True
         Form1.gridToggle.Visible = True
+        Form1.SaveToolStripMenuItem.Visible = True
         Form1.toolSplitContainer.Panel2.BackColor = Color.Gray
         Form1.toolSplitContainer.Panel2.BackgroundImage = Nothing
 
@@ -206,7 +207,5 @@ Module EventDialogWindow1ResonseGUI
         Form1.Dialog1EventDialogAreaInnerPanel.Location = New Point(InnerPanelBounds(0), InnerPanelBounds(1))
         Form1.Dialog1EventDialogAreaInnerPanel.Width = InnerPanelBounds(2)
         Form1.Dialog1EventDialogAreaInnerPanel.Height = InnerPanelBounds(3)
-
-        
     End Sub
 End Module

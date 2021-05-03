@@ -49,6 +49,7 @@ Module HotbarWindowGUI
         Form1.MainHotbarWindowPanel.Visible = True
         Form1.RefreshBtn.Visible = True
         Form1.gridToggle.Visible = True
+        Form1.SaveToolStripMenuItem.Visible = True
         Form1.toolSplitContainer.Panel2.BackColor = Color.Gray
         Form1.toolSplitContainer.Panel2.BackgroundImage = Nothing
 
@@ -227,7 +228,5 @@ Module HotbarWindowGUI
         Form1.HotbarEquippedLabel9.Location = New Point(HotbarEquippedLabel9Bounds(0), HotbarEquippedLabel9Bounds(1))
         Form1.HotbarCooldownLabel9.Location = New Point(HotbarCooldownLabel9Bounds(0), HotbarCooldownLabel9Bounds(1))
         Form1.HotbarLabel9.Location = New Point(HotbarLabel1Bounds(0), HotbarLabel9Bounds(1))
-
-        
     End Sub
 End Module

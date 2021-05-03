@@ -41,6 +41,7 @@ Module CraftingIngredientGUI
         Form1.MainCraftingIngredientPanel.Visible = True
         Form1.RefreshBtn.Visible = True
         Form1.gridToggle.Visible = True
+        Form1.SaveToolStripMenuItem.Visible = True
         Form1.toolSplitContainer.Panel2.BackColor = Color.Gray
         Form1.toolSplitContainer.Panel2.BackgroundImage = Nothing
 
@@ -68,7 +69,5 @@ Module CraftingIngredientGUI
         Form1.IngredientItemValue.Location = New Point(IngredientItemValueBounds(0), IngredientItemValueBounds(1))
         Form1.IngredientItemValue.Width = IngredientItemValueBounds(2)
         Form1.IngredientItemValue.Height = IngredientItemValueBounds(3)
-
-        
     End Sub
 End Module

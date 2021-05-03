@@ -343,6 +343,7 @@ Module CharacterCreationWindowGUI
         Form1.MainCharacterCreationPanel.Visible = True
         Form1.RefreshBtn.Visible = True
         Form1.gridToggle.Visible = True
+        Form1.SaveToolStripMenuItem.Visible = True
         Form1.toolSplitContainer.Panel2.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\background.png")
 
         Dim sr As StreamReader = New StreamReader(jsonfile)
@@ -446,7 +447,5 @@ Module CharacterCreationWindowGUI
         Form1.CharCreateBackButton.Width = BackButtonBounds(2)
         Form1.CharCreateBackButton.Height = BackButtonBounds(3)
         Form1.CharCreateBackButton.BackgroundImage = Image.FromFile(imgResources & infoPull.Children.BackButton.NormalImage)
-
-        Form1.StatusText("[MAIN]     GUI Window Updated")
     End Sub
 End Module

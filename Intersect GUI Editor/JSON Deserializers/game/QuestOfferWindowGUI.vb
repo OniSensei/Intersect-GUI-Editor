@@ -1,8 +1,8 @@
 ﻿Imports System.IO
 Imports Newtonsoft.Json
 
-Module CraftingWindowGUI
-    Public Class CraftingWindow
+Module QuestOfferWindowGUI
+    Public Class QuestOfferWindow
         Public Property Bounds As String
         Public Property Padding As String
         Public Property AlignmentEdgeDistances As String
@@ -27,13 +27,13 @@ Module CraftingWindowGUI
         Public Property ActiveColor As String
         Public Property InactiveColor As String
         Public Property Closable As Boolean
-        Public Property Titlebar As CraftingWindowTitleBar
+        Public Property Titlebar As QuestOfferWindowTitleBar
         Public Property Title As IntersectLabel
         Public Property CloseButton As IntersectButton
-        Public Property InnerPanel As CraftingWindowInnerPanel
+        Public Property InnerPanel As QuestOfferWindowInnerPanel
     End Class
 
-    Public Class CraftingWindowTitleBar
+    Public Class QuestOfferWindowTitleBar
         Public Property Bounds As String
         Public Property Padding As String
         Public Property AlignmentEdgeDistances As String
@@ -61,7 +61,7 @@ Module CraftingWindowGUI
         Public Property MouseDownSound As String
     End Class
 
-    Public Class CraftingWindowInnerPanel
+    Public Class QuestOfferWindowInnerPanel
         Public Property Bounds As String
         Public Property Padding As String
         Public Property AlignmentEdgeDistances As String
@@ -80,20 +80,17 @@ Module CraftingWindowGUI
         Public Property ToolTipBackground As String
         Public Property ToolTipFont As String
         Public Property ToolTipTextColor As String
-        Public Property Children As Children
+        Public Property Children As InnerPanelChildren
     End Class
 
-    Public Class Children
-        Public Property IngredientsContainer As IntersectContainer
-        Public Property RecipesTitle As IntersectLabel
-        Public Property IngredientsTitle As IntersectLabel
-        Public Property ProductLabel As IntersectLabel
-        Public Property RecipesList As RecipesList
-        Public Property ProgressBarContainer As ProgressBarContainer
-        Public Property CraftButton As IntersectButton
+    Public Class InnerPanelChildren
+        Public Property QuestTitle As IntersectLabel
+        Public Property QuestOfferArea As QuestOfferArea
+        Public Property AcceptButton As IntersectButton
+        Public Property DeclineButton As IntersectButton
     End Class
 
-    Public Class RecipesList
+    Public Class QuestOfferArea
         Public Property Bounds As String
         Public Property Padding As String
         Public Property AlignmentEdgeDistances As String
@@ -115,19 +112,12 @@ Module CraftingWindowGUI
         Public Property CanScrollH As Boolean
         Public Property CanScrollV As Boolean
         Public Property AutoHideBars As Boolean
-        Public Property InnerPanel As IntersectInnerPanel
+        Public Property InnerPanel As QuestOfferAreaInnerPanel
         Public Property HorizontalScrollBar As IntersectScrollBar
         Public Property VerticalScrollBar As IntersectScrollBar
-        Public Property SizeToContents As Boolean
-        Public Property MultiSelect As Boolean
-        Public Property IsToggle As Boolean
-        Public Property Font As String
-        Public Property ItemHoverSound As String
-        Public Property ItemClickSound As String
-        Public Property ItemRightClickSound As String
     End Class
 
-    Public Class ProgressBarContainer
+    Public Class QuestOfferAreaInnerPanel
         Public Property Bounds As String
         Public Property Padding As String
         Public Property AlignmentEdgeDistances As String
@@ -146,23 +136,19 @@ Module CraftingWindowGUI
         Public Property ToolTipBackground As String
         Public Property ToolTipFont As String
         Public Property ToolTipTextColor As String
-        Public Property Texture As String
-        Public Property HoverSound As String
-        Public Property LeftMouseClickSound As String
-        Public Property RightMouseClickSound As String
-        Public Property Children As ProgressBarContainerChildren
+        Public Property Children As QuestOfferAreaInnerPanelChildren
     End Class
 
-    Public Class ProgressBarContainerChildren
-        Public Property ProgressBar As IntersectIcon
+    Public Class QuestOfferAreaInnerPanelChildren
+        Public Property QuestOfferTemplate As IntersectLabel
     End Class
 
-    Public Sub LoadCraftingWindowGUI(ByVal jsonfile As String)
+    Public Sub LoadQuestOfferWindowGUI(ByVal jsonfile As String)
         Form1.StatusText("[MAIN]     Opening " & jsonfile)
         Form1.jsonValue.Text = ""
         Form1.jsonType.Text = ""
         Form1.jsonTypeCombo.Text = ""
-        Form1.MainCraftingWindowPanel.Visible = True
+        Form1.MainQuestOfferWindowPanel.Visible = True
         Form1.RefreshBtn.Visible = True
         Form1.gridToggle.Visible = True
         Form1.SaveToolStripMenuItem.Visible = True
@@ -174,39 +160,40 @@ Module CraftingWindowGUI
         Form1.JTokenTreeUserControl1.SetJsonSource(Form1.fullJson.Text)
         sr.Close()
         Dim imgResources As String = Application.StartupPath & "\gui\"
-        Dim infoPull As New CraftingWindow
-        infoPull = JsonConvert.DeserializeObject(Of CraftingWindow)(Form1.fullJson.Text)
-        Form1.StatusText("[MAIN]     CraftingWindow.json Deserialized")
+        Dim infoPull As New QuestOfferWindow
+        infoPull = JsonConvert.DeserializeObject(Of QuestOfferWindow)(Form1.fullJson.Text)
+        Form1.StatusText("[MAIN]     QuestOfferWindow.json Deserialized")
 
         Dim mainwindowbounds As String() = infoPull.Bounds.Split(",")
         Dim TitleBounds As String() = infoPull.Title.Padding.Split(",")
         Dim CloseButtonBounds As String() = infoPull.CloseButton.Bounds.Split(",")
-        Dim IngredientsContainerBounds As String() = infoPull.InnerPanel.Children.IngredientsContainer.Bounds.Split(",")
-        Dim RecipesTitleBounds As String() = infoPull.InnerPanel.Children.RecipesTitle.Bounds.Split(",")
-        Dim IngredientsTitleBounds As String() = infoPull.InnerPanel.Children.IngredientsTitle.Bounds.Split(",")
-        Dim ProductLabelBounds As String() = infoPull.InnerPanel.Children.ProductLabel.Bounds.Split(",")
-        Dim ProgressBarContainerBounds As String() = infoPull.InnerPanel.Children.ProgressBarContainer.Bounds.Split(",")
-        Dim CraftButtonBounds As String() = infoPull.InnerPanel.Children.CraftButton.Bounds.Split(",")
+        Dim QuestTitleBounds As String() = infoPull.InnerPanel.Children.QuestTitle.Bounds.Split(",")
+        Dim QuestOfferAreaBounds As String() = infoPull.InnerPanel.Children.QuestOfferArea.Bounds.Split(",")
+        Dim QuestOfferTemplateBounds As String() = infoPull.InnerPanel.Children.QuestOfferArea.InnerPanel.Children.QuestOfferTemplate.Bounds.Split(",")
+        Dim AcceptButtonBounds As String() = infoPull.InnerPanel.Children.AcceptButton.Bounds.Split(",")
+        Dim DeclineButtonBounds As String() = infoPull.InnerPanel.Children.DeclineButton.Bounds.Split(",")
 
-        Form1.MainCraftingWindowPanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
-        Form1.MainCraftingWindowPanel.Width = mainwindowbounds(2)
-        Form1.MainCraftingWindowPanel.Height = mainwindowbounds(3)
-        Form1.MainCraftingWindowPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.ActiveImage)
-        Form1.CraftingWindowTitle.Location = New Point(TitleBounds(0), TitleBounds(1))
-        Form1.CraftingWindowCloseButton.Location = New Point(CloseButtonBounds(0), CloseButtonBounds(1))
-        Form1.CraftingWindowCloseButton.Width = CloseButtonBounds(2)
-        Form1.CraftingWindowCloseButton.Height = CloseButtonBounds(3)
-        Form1.CraftingWindowCloseButton.BackgroundImage = Image.FromFile(imgResources & infoPull.CloseButton.NormalImage)
-        Form1.IngredientsContainer.Location = New Point(IngredientsContainerBounds(0), IngredientsContainerBounds(1))
-        Form1.IngredientsContainer.Width = IngredientsContainerBounds(2)
-        Form1.IngredientsContainer.Height = IngredientsContainerBounds(3)
-        Form1.CraftingWindowTitle.Location = New Point(TitleBounds(0), TitleBounds(1))
-        Form1.RecipesTitle.Location = New Point(RecipesTitleBounds(0), RecipesTitleBounds(1))
-        Form1.IngredientsTitle.Location = New Point(IngredientsTitleBounds(0), IngredientsTitleBounds(1))
-        Form1.ProductLabel.Location = New Point(ProductLabelBounds(0), ProductLabelBounds(1))
-        Form1.CraftingWindowProgressBar.Location = New Point(ProgressBarContainerBounds(0), ProgressBarContainerBounds(1))
-        Form1.CraftingWindowProgressBar.Width = ProgressBarContainerBounds(2)
-        Form1.CraftingWindowProgressBar.Height = ProgressBarContainerBounds(3)
-        Form1.CraftingWindowProgressBar.BackgroundImage = Image.FromFile(imgResources & infoPull.InnerPanel.Children.ProgressBarContainer.Children.ProgressBar.Texture)
+        Form1.MainQuestOfferWindowPanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
+        Form1.MainQuestOfferWindowPanel.Width = mainwindowbounds(2)
+        Form1.MainQuestOfferWindowPanel.Height = mainwindowbounds(3)
+        Form1.MainQuestOfferWindowPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.ActiveImage)
+        Form1.QuestOfferTitle.Location = New Point(TitleBounds(0), TitleBounds(1))
+        Form1.QuestOfferCloseButton.Location = New Point(CloseButtonBounds(0), CloseButtonBounds(1))
+        Form1.QuestOfferCloseButton.Width = CloseButtonBounds(2)
+        Form1.QuestOfferCloseButton.Height = CloseButtonBounds(3)
+        Form1.QuestOfferCloseButton.BackgroundImage = Image.FromFile(imgResources & infoPull.CloseButton.NormalImage)
+        Form1.QuestTitle.Location = New Point(QuestTitleBounds(0), QuestTitleBounds(1))
+        Form1.QuestOfferArea.Location = New Point(QuestOfferAreaBounds(0), QuestOfferAreaBounds(1))
+        Form1.QuestOfferArea.Width = QuestOfferAreaBounds(2)
+        Form1.QuestOfferArea.Height = QuestOfferAreaBounds(3)
+        Form1.QuestOfferTemplate.Location = New Point(QuestOfferTemplateBounds(0), QuestOfferTemplateBounds(1))
+        Form1.QuestOfferAcceptButton.Location = New Point(AcceptButtonBounds(0), AcceptButtonBounds(1))
+        Form1.QuestOfferAcceptButton.Width = AcceptButtonBounds(2)
+        Form1.QuestOfferAcceptButton.Height = AcceptButtonBounds(3)
+        Form1.QuestOfferAcceptButton.BackgroundImage = Image.FromFile(imgResources & infoPull.InnerPanel.Children.AcceptButton.NormalImage)
+        Form1.QuestOfferDeclineButton.Location = New Point(DeclineButtonBounds(0), DeclineButtonBounds(1))
+        Form1.QuestOfferDeclineButton.Width = DeclineButtonBounds(2)
+        Form1.QuestOfferDeclineButton.Height = DeclineButtonBounds(3)
+        Form1.QuestOfferDeclineButton.BackgroundImage = Image.FromFile(imgResources & infoPull.InnerPanel.Children.DeclineButton.NormalImage)
     End Sub
 End Module

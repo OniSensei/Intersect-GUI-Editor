@@ -35,6 +35,7 @@ Module LogoGUI
         Form1.MainLogoPanel.Visible = True
         Form1.RefreshBtn.Visible = True
         Form1.gridToggle.Visible = True
+        Form1.SaveToolStripMenuItem.Visible = True
         Form1.toolSplitContainer.Panel2.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\background.png")
 
         Dim sr As StreamReader = New StreamReader(jsonfile)
@@ -52,7 +53,5 @@ Module LogoGUI
         Form1.MainLogoPanel.Width = mainwindowbounds(2)
         Form1.MainLogoPanel.Height = mainwindowbounds(3)
         Form1.MainLogoPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.Texture)
-
-        
     End Sub
 End Module

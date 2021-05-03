@@ -45,6 +45,7 @@ Module EscapeMenuGUI
         Form1.MainEscapeMenuPanel.Visible = True
         Form1.RefreshBtn.Visible = True
         Form1.gridToggle.Visible = True
+        Form1.SaveToolStripMenuItem.Visible = True
         Form1.toolSplitContainer.Panel2.BackColor = Color.Gray
         Form1.toolSplitContainer.Panel2.BackgroundImage = Nothing
 
@@ -90,7 +91,5 @@ Module EscapeMenuGUI
         Form1.EscapeMenuCloseButton.Width = CloseButtonBounds(2)
         Form1.EscapeMenuCloseButton.Height = CloseButtonBounds(3)
         Form1.EscapeMenuCloseButton.BackgroundImage = Image.FromFile(imgResources & infoPull.Children.CloseButton.NormalImage)
-
-        
     End Sub
 End Module

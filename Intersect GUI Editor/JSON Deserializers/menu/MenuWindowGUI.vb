@@ -46,6 +46,7 @@ Module MenuWindowGUI
         Form1.MainMenuWindowPanel.Visible = True
         Form1.RefreshBtn.Visible = True
         Form1.gridToggle.Visible = True
+        Form1.SaveToolStripMenuItem.Visible = True
         Form1.toolSplitContainer.Panel2.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\background.png")
 
         Dim sr As StreamReader = New StreamReader(jsonfile)
@@ -91,7 +92,5 @@ Module MenuWindowGUI
         Form1.MainMenuOptionsButton.Width = MenuWindowOptionsButtonBounds(2)
         Form1.MainMenuOptionsButton.Height = MenuWindowOptionsButtonBounds(3)
         Form1.MainMenuOptionsButton.BackgroundImage = Image.FromFile(imgResources & infoPull.Children.OptionsButton.NormalImage)
-
-        
     End Sub
 End Module

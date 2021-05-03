@@ -1,8 +1,8 @@
 ﻿Imports System.IO
 Imports Newtonsoft.Json
 
-Module InventoryItemGUI
-    Public Class InventoryItem
+Module SpellGUI
+    Public Class Spell
         Public Property Bounds As String
         Public Property Padding As String
         Public Property AlignmentEdgeDistances As String
@@ -29,11 +29,10 @@ Module InventoryItemGUI
     End Class
 
     Public Class Children
-        Public Property InventoryItemIcon As InventoryItemIcon
-        Public Property InventoryItemValue As IntersectLabel
+        Public Property SpellIcon As SpellIcon
     End Class
 
-    Public Class InventoryItemIcon
+    Public Class SpellIcon
         Public Property Bounds As String
         Public Property Padding As String
         Public Property AlignmentEdgeDistances As String
@@ -56,22 +55,19 @@ Module InventoryItemGUI
         Public Property HoverSound As String
         Public Property LeftMouseClickSound As String
         Public Property RightMouseClickSound As String
-        Public Property Children As InventoryItemIconChildren
+        Public Property Children As SpellIconChildren
     End Class
 
-    Public Class InventoryItemIconChildren
-        Public Property InventoryItemEquippedIcon As IntersectIcon
-        Public Property InventoryItemEquippedLabel As IntersectLabel
-        Public Property InventoryItemCooldownLabel As IntersectLabel
+    Public Class SpellIconChildren
+        Public Property SpellCooldownLabel As IntersectLabel
     End Class
 
-
-    Public Sub LoadInventoryItemGUI(ByVal jsonfile As String)
+    Public Sub LoadSpellGUI(ByVal jsonfile As String)
         Form1.StatusText("[MAIN]     Opening " & jsonfile)
         Form1.jsonValue.Text = ""
         Form1.jsonType.Text = ""
         Form1.jsonTypeCombo.Text = ""
-        Form1.MainInventoryItemPanel.Visible = True
+        Form1.MainSpellPanel.Visible = True
         Form1.RefreshBtn.Visible = True
         Form1.gridToggle.Visible = True
         Form1.SaveToolStripMenuItem.Visible = True
@@ -83,26 +79,22 @@ Module InventoryItemGUI
         Form1.JTokenTreeUserControl1.SetJsonSource(Form1.fullJson.Text)
         sr.Close()
         Dim imgResources As String = Application.StartupPath & "\gui\"
-        Dim infoPull As New InventoryItem
-        infoPull = JsonConvert.DeserializeObject(Of InventoryItem)(Form1.fullJson.Text)
-        Form1.StatusText("[MAIN]     InventoryItem.json Deserialized")
+        Dim infoPull As New Spell
+        infoPull = JsonConvert.DeserializeObject(Of Spell)(Form1.fullJson.Text)
+        Form1.StatusText("[MAIN]     Spell.json Deserialized")
 
         Dim mainwindowbounds As String() = infoPull.Bounds.Split(",")
-        Dim InventoryItemIconBounds As String() = infoPull.Children.InventoryItemIcon.Bounds.Split(",")
-        Dim InventoryItemEquippedLabelBounds As String() = infoPull.Children.InventoryItemIcon.Children.InventoryItemEquippedLabel.Bounds.Split(",")
-        Dim InventoryItemCooldownLabelBounds As String() = infoPull.Children.InventoryItemIcon.Children.InventoryItemCooldownLabel.Bounds.Split(",")
-        Dim InventoryItemValueBounds As String() = infoPull.Children.InventoryItemValue.Bounds.Split(",")
+        Dim SpellIconBounds As String() = infoPull.Children.SpellIcon.Bounds.Split(",")
+        Dim SpellCooldownLabelBounds As String() = infoPull.Children.SpellIcon.Children.SpellCooldownLabel.Bounds.Split(",")
 
-        Form1.MainInventoryItemPanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
-        Form1.MainBagItemPanel.Width = mainwindowbounds(2)
-        Form1.MainBagItemPanel.Height = mainwindowbounds(3)
-        Form1.MainBagItemPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.Texture)
-        Form1.InventoryItemIcon.Location = New Point(InventoryItemIconBounds(0), InventoryItemIconBounds(1))
-        Form1.InventoryItemIcon.Width = InventoryItemIconBounds(2)
-        Form1.InventoryItemIcon.Height = InventoryItemIconBounds(3)
-        Form1.InventoryItemIcon.BackgroundImage = Image.FromFile(Application.StartupPath & "\resources\itemIcon.png")
-        Form1.InventoryItemValue.Location = New Point(InventoryItemValueBounds(0), InventoryItemValueBounds(1))
-        Form1.InventoryItemEquippedLabel.Location = New Point(InventoryItemEquippedLabelBounds(0), InventoryItemEquippedLabelBounds(1))
-        Form1.InventoryItemCooldownLabel.Location = New Point(InventoryItemCooldownLabelBounds(0), InventoryItemCooldownLabelBounds(1))
+        Form1.MainSpellPanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
+        Form1.MainSpellPanel.Width = mainwindowbounds(2)
+        Form1.MainSpellPanel.Height = mainwindowbounds(3)
+        Form1.MainSpellPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.Texture)
+        Form1.SpellIcon.Location = New Point(SpellIconBounds(0), SpellIconBounds(1))
+        Form1.SpellIcon.Width = SpellIconBounds(2)
+        Form1.SpellIcon.Height = SpellIconBounds(3)
+        Form1.SpellIcon.BackgroundImage = Image.FromFile(Application.StartupPath & "\resources\spell.png")
+        Form1.SpellCooldownLabel.Location = New Point(SpellCooldownLabelBounds(0), SpellCooldownLabelBounds(1))
     End Sub
 End Module

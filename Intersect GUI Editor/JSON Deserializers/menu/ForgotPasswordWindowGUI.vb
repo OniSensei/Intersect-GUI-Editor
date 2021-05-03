@@ -75,6 +75,7 @@ Module ForgotPasswordWindowGUI
         Form1.MainForgotPasswordWindowPanel.Visible = True
         Form1.RefreshBtn.Visible = True
         Form1.gridToggle.Visible = True
+        Form1.SaveToolStripMenuItem.Visible = True
         Form1.toolSplitContainer.Panel2.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\background.png")
 
         Dim sr As StreamReader = New StreamReader(jsonfile)
@@ -117,7 +118,5 @@ Module ForgotPasswordWindowGUI
         Form1.ForgotPasswordBackButton.Width = ForgotPasswordWindowBackButtonBounds(2)
         Form1.ForgotPasswordBackButton.Height = ForgotPasswordWindowBackButtonBounds(3)
         Form1.ForgotPasswordBackButton.BackgroundImage = Image.FromFile(imgResources & infoPull.Children.BackButton.NormalImage)
-
-        
     End Sub
 End Module

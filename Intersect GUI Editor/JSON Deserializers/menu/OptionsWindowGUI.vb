@@ -587,6 +587,7 @@ Module OptionsWindowGUI
         Form1.MainOptionsWindowPanel.Visible = True
         Form1.RefreshBtn.Visible = True
         Form1.gridToggle.Visible = True
+        Form1.SaveToolStripMenuItem.Visible = True
         Select Case Form1.guitype
             Case "menu"
                 Form1.toolSplitContainer.Panel2.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\background.png")
@@ -723,7 +724,5 @@ Module OptionsWindowGUI
         Form1.ControlsHeader.Location = New Point(OptionsHeaderBounds(0), OptionsHeaderBounds(1))
         Form1.ControlsHeader.Width = OptionsHeaderBounds(2)
         Form1.ControlsHeader.Height = OptionsHeaderBounds(3)
-
-        
     End Sub
 End Module

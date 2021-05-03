@@ -170,6 +170,7 @@ Module EventDialogWindow3ResonsesGUI
         Form1.MainEventDialogWindow3ResponsePanel.Visible = True
         Form1.RefreshBtn.Visible = True
         Form1.gridToggle.Visible = True
+        Form1.SaveToolStripMenuItem.Visible = True
         Form1.toolSplitContainer.Panel2.BackColor = Color.Gray
         Form1.toolSplitContainer.Panel2.BackgroundImage = Nothing
 
@@ -218,7 +219,5 @@ Module EventDialogWindow3ResonsesGUI
         Form1.Dialog3EventDialogAreaInnerPanel.Location = New Point(InnerPanelBounds(0), InnerPanelBounds(1))
         Form1.Dialog3EventDialogAreaInnerPanel.Width = InnerPanelBounds(2)
         Form1.Dialog3EventDialogAreaInnerPanel.Height = InnerPanelBounds(3)
-
-        
     End Sub
 End Module

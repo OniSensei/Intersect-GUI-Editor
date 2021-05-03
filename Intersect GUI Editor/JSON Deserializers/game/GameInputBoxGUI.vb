@@ -138,6 +138,7 @@ Module GameInputBoxGUI
         Form1.MainGameInputBoxPanel.Visible = True
         Form1.RefreshBtn.Visible = True
         Form1.gridToggle.Visible = True
+        Form1.SaveToolStripMenuItem.Visible = True
         Form1.toolSplitContainer.Panel2.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\background.png")
 
         Dim sr As StreamReader = New StreamReader(jsonfile)
@@ -190,7 +191,5 @@ Module GameInputBoxGUI
         Form1.GameInputPromptLabel.Location = New Point(InputBoxInnerPanelPromptLabelBounds(0), InputBoxInnerPanelPromptLabelBounds(1))
         Form1.GameInputPromptLabel.Width = InputBoxInnerPanelPromptLabelBounds(2)
         Form1.GameInputPromptLabel.Height = InputBoxInnerPanelPromptLabelBounds(3)
-
-        
     End Sub
 End Module

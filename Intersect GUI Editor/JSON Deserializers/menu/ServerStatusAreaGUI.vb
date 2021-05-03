@@ -59,6 +59,5 @@ Module ServerStatusAreaGUI
         Form1.MainServerStatusAreaPanel.Height = mainwindowbounds(3)
         Form1.MainServerStatusAreaPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.Texture)
         Form1.ServerStatusAreaServerStatusLabel.Location = New Point(ServerStatusLabelBounds(0), ServerStatusLabelBounds(1))
-        
     End Sub
 End Module

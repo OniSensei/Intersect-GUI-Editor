@@ -1,8 +1,8 @@
 ﻿Imports System.IO
 Imports Newtonsoft.Json
 
-Module CraftedItemGUI
-    Public Class CraftedItem
+Module PlayerStatusIconGUI
+    Public Class PlayerStatusIcon
         Public Property Bounds As String
         Public Property Padding As String
         Public Property AlignmentEdgeDistances As String
@@ -29,18 +29,20 @@ Module CraftedItemGUI
     End Class
 
     Public Class Children
-        Public Property CraftedItemIcon As IntersectIcon
-        Public Property CraftedItemQuantity As IntersectLabel
+        Public Property StatusIcon As IntersectIcon
+        Public Property DurationLabel As IntersectLabel
     End Class
 
-    Public Sub LoadCraftedItemGUI(ByVal jsonfile As String)
+    Public Sub LoadPlayerStatusIconGUI(ByVal jsonfile As String)
         Form1.StatusText("[MAIN]     Opening " & jsonfile)
         Form1.jsonValue.Text = ""
         Form1.jsonType.Text = ""
         Form1.jsonTypeCombo.Text = ""
-        Form1.MainCraftedItemPanel.Visible = True
+        Form1.MainPlayerStatusIconPanel.Visible = True
         Form1.RefreshBtn.Visible = True
         Form1.gridToggle.Visible = True
+        Form1.SaveToolStripMenuItem.Visible = True
+
         Form1.SaveToolStripMenuItem.Visible = True
         Form1.toolSplitContainer.Panel2.BackColor = Color.Gray
         Form1.toolSplitContainer.Panel2.BackgroundImage = Nothing
@@ -50,22 +52,22 @@ Module CraftedItemGUI
         Form1.JTokenTreeUserControl1.SetJsonSource(Form1.fullJson.Text)
         sr.Close()
         Dim imgResources As String = Application.StartupPath & "\gui\"
-        Dim infoPull As New CraftedItem
-        infoPull = JsonConvert.DeserializeObject(Of CraftedItem)(Form1.fullJson.Text)
-        Form1.StatusText("[MAIN]     CraftedItem.json Deserialized")
+        Dim infoPull As New PlayerStatusIcon
+        infoPull = JsonConvert.DeserializeObject(Of PlayerStatusIcon)(Form1.fullJson.Text)
+        Form1.StatusText("[MAIN]     PlayerStatusIcon.json Deserialized")
 
         Dim mainwindowbounds As String() = infoPull.Bounds.Split(",")
-        Dim CraftedItemIconBounds As String() = infoPull.Children.CraftedItemIcon.Bounds.Split(",")
-        Dim CraftedItemQuantityBounds As String() = infoPull.Children.CraftedItemQuantity.Bounds.Split(",")
+        Dim StatusIconBounds As String() = infoPull.Children.StatusIcon.Bounds.Split(",")
+        Dim DurationLabelBounds As String() = infoPull.Children.DurationLabel.Bounds.Split(",")
 
-        Form1.MainCraftedItemPanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
-        Form1.MainCraftedItemPanel.Width = mainwindowbounds(2)
-        Form1.MainCraftedItemPanel.Height = mainwindowbounds(3)
-        Form1.MainCraftedItemPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.Texture)
-        Form1.CraftedItemIcon.Location = New Point(CraftedItemIconBounds(0), CraftedItemIconBounds(1))
-        Form1.CraftedItemIcon.Width = CraftedItemIconBounds(2)
-        Form1.CraftedItemIcon.Height = CraftedItemIconBounds(3)
-        Form1.CraftedItemIcon.BackgroundImage = Image.FromFile(Application.StartupPath & "\resources\itemIcon.png")
-        Form1.CraftedItemQuantity.Location = New Point(CraftedItemQuantityBounds(0), CraftedItemQuantityBounds(1))
+        Form1.MainPlayerStatusIconPanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
+        Form1.MainPlayerStatusIconPanel.Width = mainwindowbounds(2)
+        Form1.MainPlayerStatusIconPanel.Height = mainwindowbounds(3)
+        Form1.MainPlayerStatusIconPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.Texture)
+        Form1.StatusIcon.Location = New Point(StatusIconBounds(0), StatusIconBounds(1))
+        Form1.StatusIcon.Width = StatusIconBounds(2)
+        Form1.StatusIcon.Height = StatusIconBounds(3)
+        Form1.StatusIcon.BackgroundImage = Image.FromFile(Application.StartupPath & "\resources\poison.png")
+        Form1.DurationLabel.Location = New Point(DurationLabelBounds(0), DurationLabelBounds(1))
     End Sub
 End Module

@@ -259,6 +259,7 @@ Module CharacterWindowGUI
         Form1.MainCharacterWindowPanel.Visible = True
         Form1.RefreshBtn.Visible = True
         Form1.gridToggle.Visible = True
+        Form1.SaveToolStripMenuItem.Visible = True
         Form1.toolSplitContainer.Panel2.BackColor = Color.Gray
         Form1.toolSplitContainer.Panel2.BackgroundImage = Nothing
 
@@ -384,7 +385,5 @@ Module CharacterWindowGUI
         Form1.Equipment4Icon.Width = EquipmentIcon4Bounds(2)
         Form1.Equipment4Icon.Height = EquipmentIcon4Bounds(3)
         Form1.Equipment4Icon.BackgroundImage = Image.FromFile(Application.StartupPath & "\resources\boots.png")
-
-        
     End Sub
 End Module

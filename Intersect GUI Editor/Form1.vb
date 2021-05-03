@@ -63,6 +63,13 @@ Public Class Form1
         MainMenuContainerPanel.Visible = False
         MainPartyWindowPanel.Visible = False
         MainPlayerBoxPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
 
         LoadLoginGUI(menuGuiPath & "LoginWindow.json")
         openFile = menuGuiPath & "LoginWindow.json"
@@ -107,6 +114,13 @@ Public Class Form1
         MainMenuContainerPanel.Visible = False
         MainPartyWindowPanel.Visible = False
         MainPlayerBoxPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
 
         LoadCharacterCreationGUI(menuGuiPath & "CharacterCreationWindow.json")
         openFile = menuGuiPath & "CharacterCreationWindow.json"
@@ -151,6 +165,13 @@ Public Class Form1
         MainMenuContainerPanel.Visible = False
         MainPartyWindowPanel.Visible = False
         MainPlayerBoxPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
 
         LoadCharacterSelectionGUI(menuGuiPath & "CharacterSelectionWindow.json")
         openFile = menuGuiPath & "CharacterSelectionWindow.json"
@@ -195,6 +216,13 @@ Public Class Form1
         MainMenuContainerPanel.Visible = False
         MainPartyWindowPanel.Visible = False
         MainPlayerBoxPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
 
         LoadCreditsGUI(menuGuiPath & "CreditsWindow.json")
         openFile = menuGuiPath & "CreditsWindow.json"
@@ -239,6 +267,13 @@ Public Class Form1
         MainMenuContainerPanel.Visible = False
         MainPartyWindowPanel.Visible = False
         MainPlayerBoxPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
 
         LoadForgotPasswordGUI(menuGuiPath & "ForgotPasswordWindow.json")
         openFile = menuGuiPath & "ForgotPasswordWindow.json"
@@ -283,6 +318,13 @@ Public Class Form1
         MainMenuContainerPanel.Visible = False
         MainPartyWindowPanel.Visible = False
         MainPlayerBoxPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
 
         LoadInputBoxGUI(menuGuiPath & "InputBox.json")
         openFile = menuGuiPath & "InputBox.json"
@@ -327,6 +369,13 @@ Public Class Form1
         MainMenuContainerPanel.Visible = False
         MainPartyWindowPanel.Visible = False
         MainPlayerBoxPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
 
         LoadLogoGUI(menuGuiPath & "Logo.json")
         openFile = menuGuiPath & "Logo.json"
@@ -371,6 +420,13 @@ Public Class Form1
         MainMenuContainerPanel.Visible = False
         MainPartyWindowPanel.Visible = False
         MainPlayerBoxPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
 
         LoadMenuWindow(menuGuiPath & "MenuWindow.json")
         openFile = menuGuiPath & "MenuWindow.json"
@@ -415,6 +471,13 @@ Public Class Form1
         MainMenuContainerPanel.Visible = False
         MainPartyWindowPanel.Visible = False
         MainPlayerBoxPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
 
         LoadOptionsWindowGUI(menuGuiPath & "OptionsWindow.json")
         openFile = menuGuiPath & "OptionsWindow.json"
@@ -459,6 +522,13 @@ Public Class Form1
         MainMenuContainerPanel.Visible = False
         MainPartyWindowPanel.Visible = False
         MainPlayerBoxPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
 
         LoadRegistrationWindowGUI(menuGuiPath & "RegistrationWindow.json")
         openFile = menuGuiPath & "RegistrationWindow.json"
@@ -503,6 +573,13 @@ Public Class Form1
         MainMenuContainerPanel.Visible = False
         MainPartyWindowPanel.Visible = False
         MainPlayerBoxPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
 
         LoadResetPasswordWindowGUI(menuGuiPath & "ResetPasswordWindow.json")
         openFile = menuGuiPath & "ResetPasswordWindow.json"
@@ -547,6 +624,13 @@ Public Class Form1
         MainMenuContainerPanel.Visible = False
         MainPartyWindowPanel.Visible = False
         MainPlayerBoxPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
 
         LoadServerStatusAreaGUI(menuGuiPath & "ServerStatusArea.json")
         openFile = menuGuiPath & "ServerStatusArea.json"
@@ -591,6 +675,13 @@ Public Class Form1
         MainMenuContainerPanel.Visible = False
         MainPartyWindowPanel.Visible = False
         MainPlayerBoxPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
 
         LoadBagItemGUI(gameGuiPath & "BagItem.json")
         openFile = gameGuiPath & "BagItem.json"
@@ -635,7 +726,15 @@ Public Class Form1
         MainMenuContainerPanel.Visible = False
         MainPartyWindowPanel.Visible = False
         MainPlayerBoxPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
 
+        LoadBagWindowGUI(gameGuiPath & "BagWindow.json")
         openFile = gameGuiPath & "BagWindow.json"
     End Sub
 
@@ -678,6 +777,13 @@ Public Class Form1
         MainMenuContainerPanel.Visible = False
         MainPartyWindowPanel.Visible = False
         MainPlayerBoxPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
 
         LoadBankItemGUI(gameGuiPath & "BankItem.json")
         openFile = gameGuiPath & "BankItem.json"
@@ -722,6 +828,13 @@ Public Class Form1
         MainMenuContainerPanel.Visible = False
         MainPartyWindowPanel.Visible = False
         MainPlayerBoxPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
 
         LoadBankWindowGUI(gameGuiPath & "BankWindow.json")
         openFile = gameGuiPath & "BankWindow.json"
@@ -766,6 +879,13 @@ Public Class Form1
         MainMenuContainerPanel.Visible = False
         MainPartyWindowPanel.Visible = False
         MainPlayerBoxPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
 
         LoadCharacterWindowGUI(gameGuiPath & "CharacterWindow.json")
         openFile = gameGuiPath & "CharacterWindow.json"
@@ -810,6 +930,13 @@ Public Class Form1
         MainMenuContainerPanel.Visible = False
         MainPartyWindowPanel.Visible = False
         MainPlayerBoxPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
 
         LoadChatboxWindowGUI(gameGuiPath & "ChatboxWindow.json")
         openFile = gameGuiPath & "ChatboxWindow.json"
@@ -854,6 +981,13 @@ Public Class Form1
         MainMenuContainerPanel.Visible = False
         MainPartyWindowPanel.Visible = False
         MainPlayerBoxPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
 
         LoadCraftedItemGUI(gameGuiPath & "CraftedItem.json")
         openFile = gameGuiPath & "CraftedItem.json"
@@ -898,6 +1032,13 @@ Public Class Form1
         MainMenuContainerPanel.Visible = False
         MainPartyWindowPanel.Visible = False
         MainPlayerBoxPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
 
         LoadCraftingIngredientGUI(gameGuiPath & "CraftingIngredient.json")
         openFile = gameGuiPath & "CraftingIngredient.json"
@@ -942,6 +1083,13 @@ Public Class Form1
         MainMenuContainerPanel.Visible = False
         MainPartyWindowPanel.Visible = False
         MainPlayerBoxPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
 
         LoadCraftingWindowGUI(gameGuiPath & "CraftingWindow.json")
         openFile = gameGuiPath & "CraftingWindow.json"
@@ -986,6 +1134,13 @@ Public Class Form1
         MainMenuContainerPanel.Visible = False
         MainPartyWindowPanel.Visible = False
         MainPlayerBoxPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
 
         LoadEquipmentItemGUI(gameGuiPath & "EquipmentItem.json")
         openFile = gameGuiPath & "EquipmentItem.json"
@@ -1030,6 +1185,13 @@ Public Class Form1
         MainMenuContainerPanel.Visible = False
         MainPartyWindowPanel.Visible = False
         MainPlayerBoxPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
 
         LoadEscapeMenuGUI(gameGuiPath & "EscapeMenu.json")
         openFile = gameGuiPath & "EscapeMenu.json"
@@ -1074,6 +1236,13 @@ Public Class Form1
         MainMenuContainerPanel.Visible = False
         MainPartyWindowPanel.Visible = False
         MainPlayerBoxPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
 
         LoadEventDialogWindow1ResponseGUI(gameGuiPath & "EventDialogWindow_1Response.json")
         openFile = gameGuiPath & "EventDialogWindow_1Response.json"
@@ -1118,6 +1287,13 @@ Public Class Form1
         MainMenuContainerPanel.Visible = False
         MainPartyWindowPanel.Visible = False
         MainPlayerBoxPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
 
         LoadEventDialogWindow2ResponseGUI(gameGuiPath & "EventDialogWindow_2Responses.json")
         openFile = gameGuiPath & "EventDialogWindow_2Responses.json"
@@ -1162,6 +1338,13 @@ Public Class Form1
         MainMenuContainerPanel.Visible = False
         MainPartyWindowPanel.Visible = False
         MainPlayerBoxPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
 
         LoadEventDialogWindow3ResponseGUI(gameGuiPath & "EventDialogWindow_3Responses.json")
         openFile = gameGuiPath & "EventDialogWindow_3Responses.json"
@@ -1206,6 +1389,13 @@ Public Class Form1
         MainMenuContainerPanel.Visible = False
         MainPartyWindowPanel.Visible = False
         MainPlayerBoxPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
 
         LoadEventDialogWindow4ResponseGUI(gameGuiPath & "EventDialogWindow_4Responses.json")
         openFile = gameGuiPath & "EventDialogWindow_4Responses.json"
@@ -1250,6 +1440,13 @@ Public Class Form1
         MainMenuContainerPanel.Visible = False
         MainPartyWindowPanel.Visible = False
         MainPlayerBoxPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
 
         LoadFriendsWindowGUI(gameGuiPath & "FriendsWindow.json")
         openFile = gameGuiPath & "FriendsWindow.json"
@@ -1294,6 +1491,13 @@ Public Class Form1
         MainMenuContainerPanel.Visible = False
         MainPartyWindowPanel.Visible = False
         MainPlayerBoxPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
 
         LoadHotbarWindowGUI(gameGuiPath & "HotbarWindow.json")
         openFile = gameGuiPath & "HotbarWindow.json"
@@ -1338,6 +1542,13 @@ Public Class Form1
         MainMenuContainerPanel.Visible = False
         MainPartyWindowPanel.Visible = False
         MainPlayerBoxPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
 
         LoadGameInputBoxGUI(gameGuiPath & "InputBox.json")
         openFile = gameGuiPath & "InputBox.json"
@@ -1382,6 +1593,13 @@ Public Class Form1
         MainMenuContainerPanel.Visible = False
         MainPartyWindowPanel.Visible = False
         MainPlayerBoxPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
 
         LoadInventoryItemGUI(gameGuiPath & "InventoryItem.json")
         openFile = gameGuiPath & "InventoryItem.json"
@@ -1426,6 +1644,13 @@ Public Class Form1
         MainMenuContainerPanel.Visible = False
         MainPartyWindowPanel.Visible = False
         MainPlayerBoxPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
 
         LoadInventoryWindowGUI(gameGuiPath & "InventoryWindow.json")
         openFile = gameGuiPath & "InventoryWindow.json"
@@ -1469,6 +1694,13 @@ Public Class Form1
         MainMenuContainerPanel.Visible = False
         MainPartyWindowPanel.Visible = False
         MainPlayerBoxPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
 
         LoadItemDescWindowGUI(gameGuiPath & "ItemDescWindow.json")
         openFile = gameGuiPath & "ItemDescWindow.json"
@@ -1512,6 +1744,13 @@ Public Class Form1
         MainMenuContainerPanel.Visible = False
         MainPartyWindowPanel.Visible = False
         MainPlayerBoxPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
 
         LoadItemDescWindowExpandedGUI(gameGuiPath & "ItemDescWindowExpanded.json")
         openFile = gameGuiPath & "ItemDescWindowExpanded.json"
@@ -1555,6 +1794,14 @@ Public Class Form1
         MainMenuContainerPanel.Visible = False
         MainPartyWindowPanel.Visible = False
         MainPlayerBoxPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
 
         LoadMenuContainerGUI(gameGuiPath & "MenuContainer.json")
         openFile = gameGuiPath & "MenuContainer.json"
@@ -1598,6 +1845,14 @@ Public Class Form1
         MainMenuContainerPanel.Visible = False
         MainPartyWindowPanel.Visible = False
         MainPlayerBoxPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
 
         LoadOptionsWindowGUI(gameGuiPath & "OptionsWindow.json")
         openFile = gameGuiPath & "OptionsWindow.json"
@@ -1641,6 +1896,14 @@ Public Class Form1
         MainMenuContainerPanel.Visible = False
         MainOptionsWindowPanel.Visible = False
         MainPlayerBoxPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
 
         LoadPartyWindowGUI(gameGuiPath & "PartyWindow.json")
         openFile = gameGuiPath & "PartyWindow.json"
@@ -1684,9 +1947,374 @@ Public Class Form1
         MainMenuContainerPanel.Visible = False
         MainOptionsWindowPanel.Visible = False
         MainPartyWindowPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
 
         LoadPlayerBoxGUI(gameGuiPath & "PlayerBox.json")
         openFile = gameGuiPath & "PlayerBox.json"
+    End Sub
+
+    Private Sub PlayerStatusIconToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PlayerStatusIconToolStripMenuItem.Click
+        gridoverlay = False
+        guitype = "game"
+        MainLoginWindowPanel.Visible = False
+        MainCharacterCreationPanel.Visible = False
+        MainCharSelectionPanel.Visible = False
+        MainCreditsPanel.Visible = False
+        MainForgotPasswordWindowPanel.Visible = False
+        MainLogoPanel.Visible = False
+        MainInputBoxPanel.Visible = False
+        MainMenuWindowPanel.Visible = False
+        MainOptionsWindowPanel.Visible = False
+        MainRegistrationWindowPanel.Visible = False
+        MainResetPasswordWindowPanel.Visible = False
+        MainServerStatusAreaPanel.Visible = False
+        MainBagItemPanel.Visible = False
+        MainBagWindowPanel.Visible = False
+        MainBankItemPanel.Visible = False
+        MainBankWindowPanel.Visible = False
+        MainCharacterWindowPanel.Visible = False
+        MainChatboxWindowPanel.Visible = False
+        MainCraftedItemPanel.Visible = False
+        MainCraftingWindowPanel.Visible = False
+        MainEquipmentItemPanel.Visible = False
+        MainEquipmentItemPanel.Visible = False
+        MainEscapeMenuPanel.Visible = False
+        MainEventDialogWindow1ResponsePanel.Visible = False
+        MainEventDialogWindow2ResponsePanel.Visible = False
+        MainEventDialogWindow3ResponsePanel.Visible = False
+        MainEventDialogWindow4ResponsePanel.Visible = False
+        MainFriendsWindowPanel.Visible = False
+        MainHotbarWindowPanel.Visible = False
+        MainInputBoxPanel.Visible = False
+        MainInventoryItemPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainOptionsWindowPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
+
+        LoadPlayerStatusIconGUI(gameGuiPath & "PlayerStatusIcon.json")
+        openFile = gameGuiPath & "PlayerStatusIcon.json"
+    End Sub
+
+    Private Sub QuestOfferWindowToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles QuestOfferWindowToolStripMenuItem.Click
+        gridoverlay = False
+        guitype = "game"
+        MainLoginWindowPanel.Visible = False
+        MainCharacterCreationPanel.Visible = False
+        MainCharSelectionPanel.Visible = False
+        MainCreditsPanel.Visible = False
+        MainForgotPasswordWindowPanel.Visible = False
+        MainLogoPanel.Visible = False
+        MainInputBoxPanel.Visible = False
+        MainMenuWindowPanel.Visible = False
+        MainOptionsWindowPanel.Visible = False
+        MainRegistrationWindowPanel.Visible = False
+        MainResetPasswordWindowPanel.Visible = False
+        MainServerStatusAreaPanel.Visible = False
+        MainBagItemPanel.Visible = False
+        MainBagWindowPanel.Visible = False
+        MainBankItemPanel.Visible = False
+        MainBankWindowPanel.Visible = False
+        MainCharacterWindowPanel.Visible = False
+        MainChatboxWindowPanel.Visible = False
+        MainCraftedItemPanel.Visible = False
+        MainCraftingWindowPanel.Visible = False
+        MainEquipmentItemPanel.Visible = False
+        MainEquipmentItemPanel.Visible = False
+        MainEscapeMenuPanel.Visible = False
+        MainEventDialogWindow1ResponsePanel.Visible = False
+        MainEventDialogWindow2ResponsePanel.Visible = False
+        MainEventDialogWindow3ResponsePanel.Visible = False
+        MainEventDialogWindow4ResponsePanel.Visible = False
+        MainFriendsWindowPanel.Visible = False
+        MainHotbarWindowPanel.Visible = False
+        MainInputBoxPanel.Visible = False
+        MainInventoryItemPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainOptionsWindowPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
+
+        LoadQuestOfferWindowGUI(gameGuiPath & "QuestOfferWindow.json")
+        openFile = gameGuiPath & "QuestOfferWindow.json"
+    End Sub
+
+    Private Sub QuestWindowToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles QuestWindowToolStripMenuItem.Click
+        gridoverlay = False
+        guitype = "game"
+        MainLoginWindowPanel.Visible = False
+        MainCharacterCreationPanel.Visible = False
+        MainCharSelectionPanel.Visible = False
+        MainCreditsPanel.Visible = False
+        MainForgotPasswordWindowPanel.Visible = False
+        MainLogoPanel.Visible = False
+        MainInputBoxPanel.Visible = False
+        MainMenuWindowPanel.Visible = False
+        MainOptionsWindowPanel.Visible = False
+        MainRegistrationWindowPanel.Visible = False
+        MainResetPasswordWindowPanel.Visible = False
+        MainServerStatusAreaPanel.Visible = False
+        MainBagItemPanel.Visible = False
+        MainBagWindowPanel.Visible = False
+        MainBankItemPanel.Visible = False
+        MainBankWindowPanel.Visible = False
+        MainCharacterWindowPanel.Visible = False
+        MainChatboxWindowPanel.Visible = False
+        MainCraftedItemPanel.Visible = False
+        MainCraftingWindowPanel.Visible = False
+        MainEquipmentItemPanel.Visible = False
+        MainEquipmentItemPanel.Visible = False
+        MainEscapeMenuPanel.Visible = False
+        MainEventDialogWindow1ResponsePanel.Visible = False
+        MainEventDialogWindow2ResponsePanel.Visible = False
+        MainEventDialogWindow3ResponsePanel.Visible = False
+        MainEventDialogWindow4ResponsePanel.Visible = False
+        MainFriendsWindowPanel.Visible = False
+        MainHotbarWindowPanel.Visible = False
+        MainInputBoxPanel.Visible = False
+        MainInventoryItemPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainOptionsWindowPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
+
+        LoadQuestsWindowGUI(gameGuiPath & "QuestsWindow.json")
+        openFile = gameGuiPath & "QuestsWindow.json"
+    End Sub
+
+    Private Sub ShopItemToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ShopItemToolStripMenuItem.Click
+        gridoverlay = False
+        guitype = "game"
+        MainLoginWindowPanel.Visible = False
+        MainCharacterCreationPanel.Visible = False
+        MainCharSelectionPanel.Visible = False
+        MainCreditsPanel.Visible = False
+        MainForgotPasswordWindowPanel.Visible = False
+        MainLogoPanel.Visible = False
+        MainInputBoxPanel.Visible = False
+        MainMenuWindowPanel.Visible = False
+        MainOptionsWindowPanel.Visible = False
+        MainRegistrationWindowPanel.Visible = False
+        MainResetPasswordWindowPanel.Visible = False
+        MainServerStatusAreaPanel.Visible = False
+        MainBagItemPanel.Visible = False
+        MainBagWindowPanel.Visible = False
+        MainBankItemPanel.Visible = False
+        MainBankWindowPanel.Visible = False
+        MainCharacterWindowPanel.Visible = False
+        MainChatboxWindowPanel.Visible = False
+        MainCraftedItemPanel.Visible = False
+        MainCraftingWindowPanel.Visible = False
+        MainEquipmentItemPanel.Visible = False
+        MainEquipmentItemPanel.Visible = False
+        MainEscapeMenuPanel.Visible = False
+        MainEventDialogWindow1ResponsePanel.Visible = False
+        MainEventDialogWindow2ResponsePanel.Visible = False
+        MainEventDialogWindow3ResponsePanel.Visible = False
+        MainEventDialogWindow4ResponsePanel.Visible = False
+        MainFriendsWindowPanel.Visible = False
+        MainHotbarWindowPanel.Visible = False
+        MainInputBoxPanel.Visible = False
+        MainInventoryItemPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainOptionsWindowPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
+
+        LoadShopItemGUI(gameGuiPath & "ShopItem.json")
+        openFile = gameGuiPath & "ShopItem.json"
+    End Sub
+
+    Private Sub ShopWindowToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ShopWindowToolStripMenuItem.Click
+        gridoverlay = False
+        guitype = "game"
+        MainLoginWindowPanel.Visible = False
+        MainCharacterCreationPanel.Visible = False
+        MainCharSelectionPanel.Visible = False
+        MainCreditsPanel.Visible = False
+        MainForgotPasswordWindowPanel.Visible = False
+        MainLogoPanel.Visible = False
+        MainInputBoxPanel.Visible = False
+        MainMenuWindowPanel.Visible = False
+        MainOptionsWindowPanel.Visible = False
+        MainRegistrationWindowPanel.Visible = False
+        MainResetPasswordWindowPanel.Visible = False
+        MainServerStatusAreaPanel.Visible = False
+        MainBagItemPanel.Visible = False
+        MainBagWindowPanel.Visible = False
+        MainBankItemPanel.Visible = False
+        MainBankWindowPanel.Visible = False
+        MainCharacterWindowPanel.Visible = False
+        MainChatboxWindowPanel.Visible = False
+        MainCraftedItemPanel.Visible = False
+        MainCraftingWindowPanel.Visible = False
+        MainEquipmentItemPanel.Visible = False
+        MainEquipmentItemPanel.Visible = False
+        MainEscapeMenuPanel.Visible = False
+        MainEventDialogWindow1ResponsePanel.Visible = False
+        MainEventDialogWindow2ResponsePanel.Visible = False
+        MainEventDialogWindow3ResponsePanel.Visible = False
+        MainEventDialogWindow4ResponsePanel.Visible = False
+        MainFriendsWindowPanel.Visible = False
+        MainHotbarWindowPanel.Visible = False
+        MainInputBoxPanel.Visible = False
+        MainInventoryItemPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainOptionsWindowPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainSpellPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
+
+        LoadShopWindowGUI(gameGuiPath & "ShopWindow.json")
+        openFile = gameGuiPath & "ShopWindow.json"
+    End Sub
+
+    Private Sub SpellMenuItem_Click(sender As Object, e As EventArgs) Handles SpellMenuItem.Click
+        gridoverlay = False
+        guitype = "game"
+        MainLoginWindowPanel.Visible = False
+        MainCharacterCreationPanel.Visible = False
+        MainCharSelectionPanel.Visible = False
+        MainCreditsPanel.Visible = False
+        MainForgotPasswordWindowPanel.Visible = False
+        MainLogoPanel.Visible = False
+        MainInputBoxPanel.Visible = False
+        MainMenuWindowPanel.Visible = False
+        MainOptionsWindowPanel.Visible = False
+        MainRegistrationWindowPanel.Visible = False
+        MainResetPasswordWindowPanel.Visible = False
+        MainServerStatusAreaPanel.Visible = False
+        MainBagItemPanel.Visible = False
+        MainBagWindowPanel.Visible = False
+        MainBankItemPanel.Visible = False
+        MainBankWindowPanel.Visible = False
+        MainCharacterWindowPanel.Visible = False
+        MainChatboxWindowPanel.Visible = False
+        MainCraftedItemPanel.Visible = False
+        MainCraftingWindowPanel.Visible = False
+        MainEquipmentItemPanel.Visible = False
+        MainEquipmentItemPanel.Visible = False
+        MainEscapeMenuPanel.Visible = False
+        MainEventDialogWindow1ResponsePanel.Visible = False
+        MainEventDialogWindow2ResponsePanel.Visible = False
+        MainEventDialogWindow3ResponsePanel.Visible = False
+        MainEventDialogWindow4ResponsePanel.Visible = False
+        MainFriendsWindowPanel.Visible = False
+        MainHotbarWindowPanel.Visible = False
+        MainInputBoxPanel.Visible = False
+        MainInventoryItemPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainOptionsWindowPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellDescWindowPanel.Visible = False
+
+        LoadSpellGUI(gameGuiPath & "Spell.json")
+        openFile = gameGuiPath & "Spell.json"
+    End Sub
+
+    Private Sub SpellDescWindowMenuItem_Click(sender As Object, e As EventArgs) Handles SpellDescWindowMenuItem.Click
+        gridoverlay = False
+        guitype = "game"
+        MainLoginWindowPanel.Visible = False
+        MainCharacterCreationPanel.Visible = False
+        MainCharSelectionPanel.Visible = False
+        MainCreditsPanel.Visible = False
+        MainForgotPasswordWindowPanel.Visible = False
+        MainLogoPanel.Visible = False
+        MainInputBoxPanel.Visible = False
+        MainMenuWindowPanel.Visible = False
+        MainOptionsWindowPanel.Visible = False
+        MainRegistrationWindowPanel.Visible = False
+        MainResetPasswordWindowPanel.Visible = False
+        MainServerStatusAreaPanel.Visible = False
+        MainBagItemPanel.Visible = False
+        MainBagWindowPanel.Visible = False
+        MainBankItemPanel.Visible = False
+        MainBankWindowPanel.Visible = False
+        MainCharacterWindowPanel.Visible = False
+        MainChatboxWindowPanel.Visible = False
+        MainCraftedItemPanel.Visible = False
+        MainCraftingWindowPanel.Visible = False
+        MainEquipmentItemPanel.Visible = False
+        MainEquipmentItemPanel.Visible = False
+        MainEscapeMenuPanel.Visible = False
+        MainEventDialogWindow1ResponsePanel.Visible = False
+        MainEventDialogWindow2ResponsePanel.Visible = False
+        MainEventDialogWindow3ResponsePanel.Visible = False
+        MainEventDialogWindow4ResponsePanel.Visible = False
+        MainFriendsWindowPanel.Visible = False
+        MainHotbarWindowPanel.Visible = False
+        MainInputBoxPanel.Visible = False
+        MainInventoryItemPanel.Visible = False
+        MainItemDescWindowPanel.Visible = False
+        MainMenuContainerPanel.Visible = False
+        MainOptionsWindowPanel.Visible = False
+        MainPartyWindowPanel.Visible = False
+        MainItemDescWindowExpandedPanel.Visible = False
+        MainPlayerBoxPanel.Visible = False
+        MainPlayerStatusIconPanel.Visible = False
+        MainQuestOfferWindowPanel.Visible = False
+        MainQuestsWindowPanel.Visible = False
+        MainShopItemPanel.Visible = False
+        MainShopWindowPanel.Visible = False
+        MainSpellPanel.Visible = False
+
+        LoadSpellDescWindowGUI(gameGuiPath & "SpellDescWindow.json")
+        openFile = gameGuiPath & "SpellDescWindow.json"
     End Sub
 
     Private Sub JTokenTreeUserControl1_AfterSelect(sender As Object, e As ZTn.Json.JsonTreeView.AfterSelectEventArgs) Handles JTokenTreeUserControl1.AfterSelect
@@ -1718,80 +2346,94 @@ Public Class Form1
             End Using
 
             Using reader = New StreamReader(tempPath & "tmp_" & tempFileName & ".json")
-                If openFile.Contains("LoginWindow") Then
+                If openFile.Contains("LoginWindow.json") Then
                     LoadLoginGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("CharacterCreationWindow") Then
+                ElseIf openFile.Contains("CharacterCreationWindow.json") Then
                     LoadCharacterCreationGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("CharacterSelectionWindow") Then
+                ElseIf openFile.Contains("CharacterSelectionWindow.json") Then
                     LoadCharacterSelectionGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("CreditsWindow") Then
+                ElseIf openFile.Contains("CreditsWindow.json") Then
                     LoadCreditsGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("ForgotPasswordWindow") Then
+                ElseIf openFile.Contains("ForgotPasswordWindow.json") Then
                     LoadForgotPasswordGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("InputBox") Then
+                ElseIf openFile.Contains("InputBox.json") Then
                     LoadInputBoxGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("Logo") Then
+                ElseIf openFile.Contains("Logo.json") Then
                     LoadLogoGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("MenuWindow") Then
+                ElseIf openFile.Contains("MenuWindow.json") Then
                     LoadMenuWindow(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("OptionsWindow") Then
+                ElseIf openFile.Contains("OptionsWindow.json") Then
                     LoadOptionsWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("RegistrationWindow") Then
+                ElseIf openFile.Contains("RegistrationWindow.json") Then
                     LoadRegistrationWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("ResetPasswordWindow") Then
+                ElseIf openFile.Contains("ResetPasswordWindow.json") Then
                     LoadResetPasswordWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("ServerStatusArea") Then
+                ElseIf openFile.Contains("ServerStatusArea.json") Then
                     LoadServerStatusAreaGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("BagItem") Then
+                ElseIf openFile.Contains("BagItem.json") Then
                     LoadBagItemGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("BagWindow") Then
+                ElseIf openFile.Contains("BagWindow.json") Then
                     LoadBagWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("BankItem") Then
+                ElseIf openFile.Contains("BankItem.json") Then
                     LoadBankItemGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("BankWindow") Then
+                ElseIf openFile.Contains("BankWindow.json") Then
                     LoadBankWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("CharacterWindow") Then
+                ElseIf openFile.Contains("CharacterWindow.json") Then
                     LoadCharacterWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("ChatboxWindow") Then
+                ElseIf openFile.Contains("ChatboxWindow.json") Then
                     LoadChatboxWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("CraftedItem") Then
+                ElseIf openFile.Contains("CraftedItem.json") Then
                     LoadCraftedItemGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("CraftingIngredient") Then
+                ElseIf openFile.Contains("CraftingIngredient.json") Then
                     LoadCraftingIngredientGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("CraftingWindow") Then
+                ElseIf openFile.Contains("CraftingWindow.json") Then
                     LoadCraftingWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("EquipmentItem") Then
+                ElseIf openFile.Contains("EquipmentItem.json") Then
                     LoadEquipmentItemGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("EscapeMenu") Then
+                ElseIf openFile.Contains("EscapeMenu.json") Then
                     LoadEscapeMenuGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("EventDialogWindow_1Response") Then
+                ElseIf openFile.Contains("EventDialogWindow_1Response.json") Then
                     LoadEventDialogWindow1ResponseGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("EventDialogWindow_2Responses") Then
+                ElseIf openFile.Contains("EventDialogWindow_2Responses.json") Then
                     LoadEventDialogWindow2ResponseGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("EventDialogWindow_3Responses") Then
+                ElseIf openFile.Contains("EventDialogWindow_3Responses.json") Then
                     LoadEventDialogWindow3ResponseGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("EventDialogWindow_4Responses") Then
+                ElseIf openFile.Contains("EventDialogWindow_4Responses.json") Then
                     LoadEventDialogWindow4ResponseGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("FriendsWindow") Then
+                ElseIf openFile.Contains("FriendsWindow.json") Then
                     LoadFriendsWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("HotbarWindow") Then
+                ElseIf openFile.Contains("HotbarWindow.json") Then
                     LoadHotbarWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("InputBox") Then
+                ElseIf openFile.Contains("InputBox.json") Then
                     LoadGameInputBoxGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("InventoryItem") Then
+                ElseIf openFile.Contains("InventoryItem.json") Then
                     LoadInventoryItemGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("InventoryWindow") Then
+                ElseIf openFile.Contains("InventoryWindow.json") Then
                     LoadInventoryWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("ItemDescWindow") Then
+                ElseIf openFile.Contains("ItemDescWindow.json") Then
                     LoadItemDescWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("ItemDescWindowExpanded") Then
+                ElseIf openFile.Contains("ItemDescWindowExpanded.json") Then
                     LoadItemDescWindowExpandedGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("MenuContainer") Then
+                ElseIf openFile.Contains("MenuContainer.json") Then
                     LoadMenuContainerGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("PartyWindow") Then
+                ElseIf openFile.Contains("PartyWindow.json") Then
                     LoadPartyWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("PlayerBox") Then
+                ElseIf openFile.Contains("PlayerBox.json") Then
                     LoadPlayerBoxGUI(tempPath & "tmp_" & tempFileName & ".json")
+                ElseIf openFile.Contains("PlayerStatusIcon.json") Then
+                    LoadPlayerStatusIconGUI(tempPath & "tmp_" & tempFileName & ".json")
+                ElseIf openFile.Contains("QuestOfferWindow.json") Then
+                    LoadQuestOfferWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
+                ElseIf openFile.Contains("QuestsWindow.json") Then
+                    LoadQuestsWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
+                ElseIf openFile.Contains("ShopItem.json") Then
+                    LoadShopItemGUI(tempPath & "tmp_" & tempFileName & ".json")
+                ElseIf openFile.Contains("ShopWindow.json") Then
+                    LoadShopWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
+                ElseIf openFile.Contains("Spell.json") Then
+                    LoadSpellGUI(tempPath & "tmp_" & tempFileName & ".json")
+                ElseIf openFile.Contains("SpellDescWindow.json") Then
+                    LoadSpellDescWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
                 End If
             End Using
 
@@ -1802,80 +2444,94 @@ Public Class Form1
     Private Sub RefreshBtn_Click(sender As Object, e As EventArgs) Handles RefreshBtn.Click
         StatusText("[MAIN]     Refreshing")
         gridoverlay = False
-        If openFile.Contains("LoginWindow") Then
+        If openFile.Contains("LoginWindow.json") Then
             LoadLoginGUI(openFile)
-        ElseIf openFile.Contains("CharacterCreationWindow") Then
+        ElseIf openFile.Contains("CharacterCreationWindow.json") Then
             LoadCharacterCreationGUI(openFile)
-        ElseIf openFile.Contains("CharacterSelectionWindow") Then
+        ElseIf openFile.Contains("CharacterSelectionWindow.json") Then
             LoadCharacterSelectionGUI(openFile)
-        ElseIf openFile.Contains("CreditsWindow") Then
+        ElseIf openFile.Contains("CreditsWindow.json") Then
             LoadCreditsGUI(openFile)
-        ElseIf openFile.Contains("ForgotPasswordWindow") Then
+        ElseIf openFile.Contains("ForgotPasswordWindow.json") Then
             LoadForgotPasswordGUI(openFile)
-        ElseIf openFile.Contains("InputBox") Then
+        ElseIf openFile.Contains("InputBox.json") Then
             LoadInputBoxGUI(openFile)
-        ElseIf openFile.Contains("Logo") Then
+        ElseIf openFile.Contains("Logo.json") Then
             LoadLogoGUI(openFile)
-        ElseIf openFile.Contains("MenuWindow") Then
+        ElseIf openFile.Contains("MenuWindow.json") Then
             LoadMenuWindow(openFile)
-        ElseIf openFile.Contains("OptionsWindow") Then
+        ElseIf openFile.Contains("OptionsWindow.json") Then
             LoadOptionsWindowGUI(openFile)
-        ElseIf openFile.Contains("RegistrationWindow") Then
+        ElseIf openFile.Contains("RegistrationWindow.json") Then
             LoadRegistrationWindowGUI(openFile)
-        ElseIf openFile.Contains("ResetPasswordWindow") Then
+        ElseIf openFile.Contains("ResetPasswordWindow.json") Then
             LoadResetPasswordWindowGUI(openFile)
-        ElseIf openFile.Contains("ServerStatusArea") Then
+        ElseIf openFile.Contains("ServerStatusArea.json") Then
             LoadServerStatusAreaGUI(openFile)
-        ElseIf openFile.Contains("BagItem") Then
+        ElseIf openFile.Contains("BagItem.json") Then
             LoadBagItemGUI(openFile)
-        ElseIf openFile.Contains("BagWindow") Then
+        ElseIf openFile.Contains("BagWindow.json") Then
             LoadBagWindowGUI(openFile)
-        ElseIf openFile.Contains("BankItem") Then
+        ElseIf openFile.Contains("BankItem.json") Then
             LoadBankItemGUI(openFile)
-        ElseIf openFile.Contains("BankWindow") Then
+        ElseIf openFile.Contains("BankWindow.json") Then
             LoadBankWindowGUI(openFile)
-        ElseIf openFile.Contains("CharacterWindow") Then
+        ElseIf openFile.Contains("CharacterWindow.json") Then
             LoadCharacterWindowGUI(openFile)
-        ElseIf openFile.Contains("ChatboxWindow") Then
+        ElseIf openFile.Contains("ChatboxWindow.json") Then
             LoadChatboxWindowGUI(openFile)
-        ElseIf openFile.Contains("CraftedItem") Then
+        ElseIf openFile.Contains("CraftedItem.json") Then
             LoadCraftedItemGUI(openFile)
-        ElseIf openFile.Contains("CraftingIngredient") Then
+        ElseIf openFile.Contains("CraftingIngredient.json") Then
             LoadCraftingIngredientGUI(openFile)
-        ElseIf openFile.Contains("CraftingWindow") Then
+        ElseIf openFile.Contains("CraftingWindow.json") Then
             LoadCraftingWindowGUI(openFile)
-        ElseIf openFile.Contains("EquipmentItem") Then
+        ElseIf openFile.Contains("EquipmentItem.json") Then
             LoadEquipmentItemGUI(openFile)
-        ElseIf openFile.Contains("EscapeMenu") Then
+        ElseIf openFile.Contains("EscapeMenu.json") Then
             LoadEscapeMenuGUI(openFile)
-        ElseIf openFile.Contains("EventDialogWindow_1Response") Then
+        ElseIf openFile.Contains("EventDialogWindow_1Response.json") Then
             LoadEventDialogWindow1ResponseGUI(openFile)
-        ElseIf openFile.Contains("EventDialogWindow_2Responses") Then
+        ElseIf openFile.Contains("EventDialogWindow_2Responses.json") Then
             LoadEventDialogWindow2ResponseGUI(openFile)
-        ElseIf openFile.Contains("EventDialogWindow_3Responses") Then
+        ElseIf openFile.Contains("EventDialogWindow_3Responses.json") Then
             LoadEventDialogWindow3ResponseGUI(openFile)
-        ElseIf openFile.Contains("EventDialogWindow_4Responses") Then
+        ElseIf openFile.Contains("EventDialogWindow_4Responses.json") Then
             LoadEventDialogWindow4ResponseGUI(openFile)
-        ElseIf openFile.Contains("FriendsWindow") Then
+        ElseIf openFile.Contains("FriendsWindow.json") Then
             LoadFriendsWindowGUI(openFile)
-        ElseIf openFile.Contains("HotbarWindow") Then
+        ElseIf openFile.Contains("HotbarWindow.json") Then
             LoadHotbarWindowGUI(openFile)
-        ElseIf openFile.Contains("InputBox") Then
+        ElseIf openFile.Contains("InputBox.json") Then
             LoadGameInputBoxGUI(openFile)
-        ElseIf openFile.Contains("InventoryItem") Then
+        ElseIf openFile.Contains("InventoryItem.json") Then
             LoadInventoryItemGUI(openFile)
-        ElseIf openFile.Contains("InventoryWindow") Then
+        ElseIf openFile.Contains("InventoryWindow.json") Then
             LoadInventoryWindowGUI(openFile)
-        ElseIf openFile.Contains("ItemDescWindow") Then
+        ElseIf openFile.Contains("ItemDescWindow.json") Then
             LoadItemDescWindowGUI(openFile)
-        ElseIf openFile.Contains("ItemDescWindowExpanded") Then
+        ElseIf openFile.Contains("ItemDescWindowExpanded.json") Then
             LoadItemDescWindowExpandedGUI(openFile)
-        ElseIf openFile.Contains("MenuContainer") Then
+        ElseIf openFile.Contains("MenuContainer.json") Then
             LoadMenuContainerGUI(openFile)
-        ElseIf openFile.Contains("PartyWindow") Then
+        ElseIf openFile.Contains("PartyWindow.json") Then
             LoadPartyWindowGUI(openFile)
-        ElseIf openFile.Contains("PlayerBox") Then
+        ElseIf openFile.Contains("PlayerBox.json") Then
             LoadPlayerBoxGUI(openFile)
+        ElseIf openFile.Contains("PlayerStatusIcon.json") Then
+            LoadPlayerStatusIconGUI(openFile)
+        ElseIf openFile.Contains("QuestOfferWindow.json") Then
+            LoadQuestOfferWindowGUI(openFile)
+        ElseIf openFile.Contains("QuestsWindow.json") Then
+            LoadQuestsWindowGUI(openFile)
+        ElseIf openFile.Contains("ShopItem.json") Then
+            LoadShopItemGUI(openFile)
+        ElseIf openFile.Contains("ShopWindow.json") Then
+            LoadShopWindowGUI(openFile)
+        ElseIf openFile.Contains("Spell.json") Then
+            LoadSpellGUI(openFile)
+        ElseIf openFile.Contains("SpellDescWindow.json") Then
+            LoadSpellDescWindowGUI(openFile)
         End If
     End Sub
 
@@ -3928,5 +4584,215 @@ Public Class Form1
         Dim infoPull As PartyWindow
         infoPull = JsonConvert.DeserializeObject(Of PartyWindow)(fullJson.Text)
         LeavePartyButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.LeavePartyButton.NormalImage)
+    End Sub
+
+    Private Sub QuestOfferAcceptButton_Click(sender As Object, e As EventArgs) Handles QuestOfferAcceptButton.Click
+        Dim infoPull As QuestOfferWindow
+        infoPull = JsonConvert.DeserializeObject(Of QuestOfferWindow)(fullJson.Text)
+        QuestOfferAcceptButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.AcceptButton.ClickedImage)
+    End Sub
+
+    Private Sub QuestOfferAcceptButton_MouseDown(sender As Object, e As MouseEventArgs) Handles QuestOfferAcceptButton.MouseDown
+        Dim infoPull As QuestOfferWindow
+        infoPull = JsonConvert.DeserializeObject(Of QuestOfferWindow)(fullJson.Text)
+        QuestOfferAcceptButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.AcceptButton.ClickedImage)
+    End Sub
+
+    Private Sub QuestOfferAcceptButton_MouseUp(sender As Object, e As MouseEventArgs) Handles QuestOfferAcceptButton.MouseUp
+        Dim infoPull As QuestOfferWindow
+        infoPull = JsonConvert.DeserializeObject(Of QuestOfferWindow)(fullJson.Text)
+        QuestOfferAcceptButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.AcceptButton.HoveredImage)
+    End Sub
+
+    Private Sub QuestOfferAcceptButton_MouseHover(sender As Object, e As EventArgs) Handles QuestOfferAcceptButton.MouseHover
+        Dim infoPull As QuestOfferWindow
+        infoPull = JsonConvert.DeserializeObject(Of QuestOfferWindow)(fullJson.Text)
+        QuestOfferAcceptButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.AcceptButton.HoveredImage)
+    End Sub
+
+    Private Sub QuestOfferAcceptButton_MouseLeave(sender As Object, e As EventArgs) Handles QuestOfferAcceptButton.MouseLeave
+        Dim infoPull As QuestOfferWindow
+        infoPull = JsonConvert.DeserializeObject(Of QuestOfferWindow)(fullJson.Text)
+        QuestOfferAcceptButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.AcceptButton.NormalImage)
+    End Sub
+
+    Private Sub QuestOfferDeclineButton_Click(sender As Object, e As EventArgs) Handles QuestOfferDeclineButton.Click
+        Dim infoPull As QuestOfferWindow
+        infoPull = JsonConvert.DeserializeObject(Of QuestOfferWindow)(fullJson.Text)
+        QuestOfferDeclineButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.DeclineButton.ClickedImage)
+    End Sub
+
+    Private Sub QuestOfferDeclineButton_MouseDown(sender As Object, e As MouseEventArgs) Handles QuestOfferDeclineButton.MouseDown
+        Dim infoPull As QuestOfferWindow
+        infoPull = JsonConvert.DeserializeObject(Of QuestOfferWindow)(fullJson.Text)
+        QuestOfferDeclineButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.DeclineButton.ClickedImage)
+    End Sub
+
+    Private Sub QuestOfferDeclineButton_MouseUp(sender As Object, e As MouseEventArgs) Handles QuestOfferDeclineButton.MouseUp
+        Dim infoPull As QuestOfferWindow
+        infoPull = JsonConvert.DeserializeObject(Of QuestOfferWindow)(fullJson.Text)
+        QuestOfferDeclineButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.DeclineButton.HoveredImage)
+    End Sub
+
+    Private Sub QuestOfferDeclineButton_MouseHover(sender As Object, e As EventArgs) Handles QuestOfferDeclineButton.MouseHover
+        Dim infoPull As QuestOfferWindow
+        infoPull = JsonConvert.DeserializeObject(Of QuestOfferWindow)(fullJson.Text)
+        QuestOfferDeclineButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.DeclineButton.HoveredImage)
+    End Sub
+
+    Private Sub QuestOfferDeclineButton_MouseLeave(sender As Object, e As EventArgs) Handles QuestOfferDeclineButton.MouseLeave
+        Dim infoPull As QuestOfferWindow
+        infoPull = JsonConvert.DeserializeObject(Of QuestOfferWindow)(fullJson.Text)
+        QuestOfferDeclineButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.DeclineButton.NormalImage)
+    End Sub
+
+    Private Sub QuestOfferCloseButton_Click(sender As Object, e As EventArgs) Handles QuestOfferCloseButton.Click
+        Dim infoPull As QuestOfferWindow
+        infoPull = JsonConvert.DeserializeObject(Of QuestOfferWindow)(fullJson.Text)
+        QuestOfferCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.CloseButton.ClickedImage)
+    End Sub
+
+    Private Sub QuestOfferCloseButton_MouseDown(sender As Object, e As MouseEventArgs) Handles QuestOfferCloseButton.MouseDown
+        Dim infoPull As QuestOfferWindow
+        infoPull = JsonConvert.DeserializeObject(Of QuestOfferWindow)(fullJson.Text)
+        QuestOfferCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.CloseButton.ClickedImage)
+    End Sub
+
+    Private Sub QuestOfferCloseButton_MouseUp(sender As Object, e As MouseEventArgs) Handles QuestOfferCloseButton.MouseUp
+        Dim infoPull As QuestOfferWindow
+        infoPull = JsonConvert.DeserializeObject(Of QuestOfferWindow)(fullJson.Text)
+        QuestOfferCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.CloseButton.HoveredImage)
+    End Sub
+
+    Private Sub QuestOfferCloseButton_MouseHover(sender As Object, e As EventArgs) Handles QuestOfferCloseButton.MouseHover
+        Dim infoPull As QuestOfferWindow
+        infoPull = JsonConvert.DeserializeObject(Of QuestOfferWindow)(fullJson.Text)
+        QuestOfferCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.CloseButton.HoveredImage)
+    End Sub
+
+    Private Sub QuestOfferCloseButton_MouseLeave(sender As Object, e As EventArgs) Handles QuestOfferCloseButton.MouseLeave
+        Dim infoPull As QuestOfferWindow
+        infoPull = JsonConvert.DeserializeObject(Of QuestOfferWindow)(fullJson.Text)
+        QuestOfferCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.CloseButton.NormalImage)
+    End Sub
+
+    Private Sub QuestsWindowCloseButton_Click(sender As Object, e As EventArgs) Handles QuestsWindowCloseButton.Click
+        Dim infoPull As QuestsWindow
+        infoPull = JsonConvert.DeserializeObject(Of QuestsWindow)(fullJson.Text)
+        QuestsWindowCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.CloseButton.ClickedImage)
+    End Sub
+
+    Private Sub QuestsWindowCloseButton_MouseCaptureChanged(sender As Object, e As EventArgs) Handles QuestsWindowCloseButton.MouseCaptureChanged
+        Dim infoPull As QuestsWindow
+        infoPull = JsonConvert.DeserializeObject(Of QuestsWindow)(fullJson.Text)
+        QuestsWindowCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.CloseButton.ClickedImage)
+    End Sub
+
+    Private Sub QuestsWindowCloseButton_MouseUp(sender As Object, e As MouseEventArgs) Handles QuestsWindowCloseButton.MouseUp
+        Dim infoPull As QuestsWindow
+        infoPull = JsonConvert.DeserializeObject(Of QuestsWindow)(fullJson.Text)
+        QuestsWindowCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.CloseButton.HoveredImage)
+    End Sub
+
+    Private Sub QuestsWindowCloseButton_MouseHover(sender As Object, e As EventArgs) Handles QuestsWindowCloseButton.MouseHover
+        Dim infoPull As QuestsWindow
+        infoPull = JsonConvert.DeserializeObject(Of QuestsWindow)(fullJson.Text)
+        QuestsWindowCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.CloseButton.HoveredImage)
+    End Sub
+
+    Private Sub QuestsWindowCloseButton_MouseLeave(sender As Object, e As EventArgs) Handles QuestsWindowCloseButton.MouseLeave
+        Dim infoPull As QuestsWindow
+        infoPull = JsonConvert.DeserializeObject(Of QuestsWindow)(fullJson.Text)
+        QuestsWindowCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.CloseButton.NormalImage)
+    End Sub
+
+    Private Sub QuestsWindowAbandonQuestButton_Click(sender As Object, e As EventArgs) Handles QuestsWindowAbandonQuestButton.Click
+        Dim infoPull As QuestsWindow
+        infoPull = JsonConvert.DeserializeObject(Of QuestsWindow)(fullJson.Text)
+        QuestsWindowAbandonQuestButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.AbandonQuestButton.ClickedImage)
+    End Sub
+
+    Private Sub QuestsWindowAbandonQuestButton_MouseDown(sender As Object, e As MouseEventArgs) Handles QuestsWindowAbandonQuestButton.MouseDown
+        Dim infoPull As QuestsWindow
+        infoPull = JsonConvert.DeserializeObject(Of QuestsWindow)(fullJson.Text)
+        QuestsWindowAbandonQuestButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.AbandonQuestButton.ClickedImage)
+    End Sub
+
+    Private Sub QuestsWindowAbandonQuestButton_MouseUp(sender As Object, e As MouseEventArgs) Handles QuestsWindowAbandonQuestButton.MouseUp
+        Dim infoPull As QuestsWindow
+        infoPull = JsonConvert.DeserializeObject(Of QuestsWindow)(fullJson.Text)
+        QuestsWindowAbandonQuestButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.AbandonQuestButton.HoveredImage)
+    End Sub
+
+    Private Sub QuestsWindowAbandonQuestButton_MouseHover(sender As Object, e As EventArgs) Handles QuestsWindowAbandonQuestButton.MouseHover
+        Dim infoPull As QuestsWindow
+        infoPull = JsonConvert.DeserializeObject(Of QuestsWindow)(fullJson.Text)
+        QuestsWindowAbandonQuestButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.AbandonQuestButton.HoveredImage)
+    End Sub
+
+    Private Sub QuestsWindowAbandonQuestButton_MouseLeave(sender As Object, e As EventArgs) Handles QuestsWindowAbandonQuestButton.MouseLeave
+        Dim infoPull As QuestsWindow
+        infoPull = JsonConvert.DeserializeObject(Of QuestsWindow)(fullJson.Text)
+        QuestsWindowAbandonQuestButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.AbandonQuestButton.NormalImage)
+    End Sub
+
+    Private Sub QuestsWindowBackButton_Click(sender As Object, e As EventArgs) Handles QuestsWindowBackButton.Click
+        Dim infoPull As QuestsWindow
+        infoPull = JsonConvert.DeserializeObject(Of QuestsWindow)(fullJson.Text)
+        QuestsWindowBackButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.BackButton.ClickedImage)
+    End Sub
+
+    Private Sub QuestsWindowBackButton_MouseDown(sender As Object, e As MouseEventArgs) Handles QuestsWindowBackButton.MouseDown
+        Dim infoPull As QuestsWindow
+        infoPull = JsonConvert.DeserializeObject(Of QuestsWindow)(fullJson.Text)
+        QuestsWindowBackButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.BackButton.ClickedImage)
+    End Sub
+
+    Private Sub QuestsWindowBackButton_MouseUp(sender As Object, e As MouseEventArgs) Handles QuestsWindowBackButton.MouseUp
+        Dim infoPull As QuestsWindow
+        infoPull = JsonConvert.DeserializeObject(Of QuestsWindow)(fullJson.Text)
+        QuestsWindowBackButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.BackButton.HoveredImage)
+    End Sub
+
+    Private Sub QuestsWindowBackButton_MouseHover(sender As Object, e As EventArgs) Handles QuestsWindowBackButton.MouseHover
+        Dim infoPull As QuestsWindow
+        infoPull = JsonConvert.DeserializeObject(Of QuestsWindow)(fullJson.Text)
+        QuestsWindowBackButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.BackButton.HoveredImage)
+    End Sub
+
+    Private Sub QuestsWindowBackButton_MouseLeave(sender As Object, e As EventArgs) Handles QuestsWindowBackButton.MouseLeave
+        Dim infoPull As QuestsWindow
+        infoPull = JsonConvert.DeserializeObject(Of QuestsWindow)(fullJson.Text)
+        QuestsWindowBackButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.InnerPanel.Children.BackButton.NormalImage)
+    End Sub
+
+    Private Sub ShopWindowCloseButton_Click(sender As Object, e As EventArgs) Handles ShopWindowCloseButton.Click
+        Dim infoPull As ShopWindow
+        infoPull = JsonConvert.DeserializeObject(Of ShopWindow)(fullJson.Text)
+        ShopWindowCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.CloseButton.ClickedImage)
+    End Sub
+
+    Private Sub ShopWindowCloseButton_MouseDown(sender As Object, e As MouseEventArgs) Handles ShopWindowCloseButton.MouseDown
+        Dim infoPull As ShopWindow
+        infoPull = JsonConvert.DeserializeObject(Of ShopWindow)(fullJson.Text)
+        ShopWindowCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.CloseButton.ClickedImage)
+    End Sub
+
+    Private Sub ShopWindowCloseButton_MouseUp(sender As Object, e As MouseEventArgs) Handles ShopWindowCloseButton.MouseUp
+        Dim infoPull As ShopWindow
+        infoPull = JsonConvert.DeserializeObject(Of ShopWindow)(fullJson.Text)
+        ShopWindowCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.CloseButton.HoveredImage)
+    End Sub
+
+    Private Sub ShopWindowCloseButton_MouseHover(sender As Object, e As EventArgs) Handles ShopWindowCloseButton.MouseHover
+        Dim infoPull As ShopWindow
+        infoPull = JsonConvert.DeserializeObject(Of ShopWindow)(fullJson.Text)
+        ShopWindowCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.CloseButton.HoveredImage)
+    End Sub
+
+    Private Sub ShopWindowCloseButton_MouseLeave(sender As Object, e As EventArgs) Handles ShopWindowCloseButton.MouseLeave
+        Dim infoPull As ShopWindow
+        infoPull = JsonConvert.DeserializeObject(Of ShopWindow)(fullJson.Text)
+        ShopWindowCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.CloseButton.NormalImage)
     End Sub
 End Class

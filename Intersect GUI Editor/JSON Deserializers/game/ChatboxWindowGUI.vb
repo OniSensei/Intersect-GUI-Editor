@@ -3,7 +3,6 @@ Imports Newtonsoft.Json
 
 Module ChatboxWindowGUI
     Public Class ChatboxWindow
-
         Public Property Bounds As String
         Public Property Padding As String
         Public Property AlignmentEdgeDistances As String
@@ -153,6 +152,7 @@ Module ChatboxWindowGUI
         Form1.MainChatboxWindowPanel.Visible = True
         Form1.RefreshBtn.Visible = True
         Form1.gridToggle.Visible = True
+        Form1.SaveToolStripMenuItem.Visible = True
         Form1.toolSplitContainer.Panel2.BackColor = Color.Gray
         Form1.toolSplitContainer.Panel2.BackgroundImage = Nothing
 
@@ -180,7 +180,5 @@ Module ChatboxWindowGUI
         Form1.ChatboxInputField.Location = New Point(ChatboxInputFieldBounds(0), ChatboxInputFieldBounds(1))
         Form1.ChatboxInputField.Width = ChatboxInputFieldBounds(2)
         Form1.ChatboxInputField.Height = ChatboxInputFieldBounds(3)
-
-        
     End Sub
 End Module

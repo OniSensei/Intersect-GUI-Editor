@@ -94,6 +94,7 @@ Module CreditsWindowGUI
         Form1.MainCreditsPanel.Visible = True
         Form1.RefreshBtn.Visible = True
         Form1.gridToggle.Visible = True
+        Form1.SaveToolStripMenuItem.Visible = True
         Form1.toolSplitContainer.Panel2.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\background.png")
 
         Dim sr As StreamReader = New StreamReader(jsonfile)
@@ -128,7 +129,5 @@ Module CreditsWindowGUI
         Form1.CreditsBackButton.Width = BackButtonBounds(2)
         Form1.CreditsBackButton.Height = BackButtonBounds(3)
         Form1.CreditsBackButton.BackgroundImage = Image.FromFile(imgResources & infoPull.Children.BackButton.NormalImage)
-
-        
     End Sub
 End Module

@@ -34,6 +34,7 @@ Module EquipmentItemGUI
         Form1.MainEquipmentItemPanel.Visible = True
         Form1.RefreshBtn.Visible = True
         Form1.gridToggle.Visible = True
+        Form1.SaveToolStripMenuItem.Visible = True
         Form1.toolSplitContainer.Panel2.BackColor = Color.Gray
         Form1.toolSplitContainer.Panel2.BackgroundImage = Nothing
 
@@ -57,7 +58,5 @@ Module EquipmentItemGUI
         Form1.EquipmentIcon.Width = EquipmentIconBounds(2)
         Form1.EquipmentIcon.Height = EquipmentIconBounds(3)
         Form1.EquipmentIcon.BackgroundImage = Image.FromFile(Application.StartupPath & "\resources\weapon.png")
-
-        
     End Sub
 End Module
