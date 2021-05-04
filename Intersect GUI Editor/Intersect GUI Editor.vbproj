@@ -118,8 +118,14 @@
     <Compile Include="JSON Deserializers\game\QuestsWindowGUI.vb" />
     <Compile Include="JSON Deserializers\game\ShopItemGUI.vb" />
     <Compile Include="JSON Deserializers\game\ShopWindowGUI.vb" />
+    <Compile Include="JSON Deserializers\game\SpellDescWindowExpandedGUI.vb" />
     <Compile Include="JSON Deserializers\game\SpellDescWindowGUI.vb" />
     <Compile Include="JSON Deserializers\game\SpellGUI.vb" />
+    <Compile Include="JSON Deserializers\game\SpellsWindowGUI.vb" />
+    <Compile Include="JSON Deserializers\game\TargetStatusIconGUI.vb" />
+    <Compile Include="JSON Deserializers\game\TheirTradeItemGUI.vb" />
+    <Compile Include="JSON Deserializers\game\TradeWindowGUI.vb" />
+    <Compile Include="JSON Deserializers\game\YourTradeItemGUI.vb" />
     <Compile Include="JSON Deserializers\menu\CharacterCreationWindowGUI.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>

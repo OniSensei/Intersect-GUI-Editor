@@ -118,6 +118,34 @@
         Public Property VerticalScrollBar As IntersectScrollBar
     End Class
 
+    Public Class IntersectTitlebar
+        Public Property Bounds As String
+        Public Property Padding As String
+        Public Property AlignmentEdgeDistances As String
+        Public Property AlignmentTransform As String
+        Public Property Margin As String
+        Public Property RenderColor As String
+        Public Property Alignments As String
+        Public Property DrawBackground As Boolean
+        Public Property MinimumSize As String
+        Public Property MaximumSize As String
+        Public Property Disabled As Boolean
+        Public Property Hidden As Boolean
+        Public Property RestrictToParent As Boolean
+        Public Property MouseInputEnabled As Boolean
+        Public Property HideToolTip As Boolean
+        Public Property ToolTipBackground As String
+        Public Property ToolTipFont As String
+        Public Property ToolTipTextColor As String
+        Public Property NormalImage As String
+        Public Property HoveredImage As String
+        Public Property ClickedImage As String
+        Public Property DisabledImage As String
+        Public Property HoverSound As String
+        Public Property MouseUpSound As String
+        Public Property MouseDownSound As String
+    End Class
+
     Public Class IntersectScrollBar
         Public Property Bounds As String
         Public Property Padding As String

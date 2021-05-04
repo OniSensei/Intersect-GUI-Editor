@@ -103,7 +103,11 @@ Module PlayerBoxGUI
         Dim imgResources As String = Application.StartupPath & "\gui\"
         Dim infoPull As New PlayerBox
         infoPull = JsonConvert.DeserializeObject(Of PlayerBox)(Form1.fullJson.Text)
-        Form1.StatusText("[MAIN]     PlayerBox.json Deserialized")
+        If jsonfile.Contains("TargetBox.json") Then
+            Form1.StatusText("[MAIN]     TargetBox.json Deserialized")
+        Else
+            Form1.StatusText("[MAIN]     PlayerBox.json Deserialized")
+        End If
 
         Dim mainwindowbounds As String() = infoPull.Bounds.Split(",")
         Dim EntityInfoPanelBounds As String() = infoPull.Children.EntityInfoPanel.Bounds.Split(",")

@@ -1,8 +1,8 @@
 ﻿Imports System.IO
 Imports Newtonsoft.Json
 
-Module ShopWindowGUI
-    Public Class ShopWindow
+Module TargetStatusIconGUI
+    Public Class TargetStatusIcon
         Public Property Bounds As String
         Public Property Padding As String
         Public Property AlignmentEdgeDistances As String
@@ -21,19 +21,16 @@ Module ShopWindowGUI
         Public Property ToolTipBackground As String
         Public Property ToolTipFont As String
         Public Property ToolTipTextColor As String
-        Public Property ClampMovement As Boolean
-        Public Property ActiveImage As String
-        Public Property InactiveImage As String
-        Public Property ActiveColor As String
-        Public Property InactiveColor As String
-        Public Property Closable As Boolean
-        Public Property Titlebar As IntersectTitlebar
-        Public Property Title As IntersectLabel
-        Public Property CloseButton As IntersectButton
-        Public Property InnerPanel As ShopWindowInnerPanel
+        Public Property Texture As String
+        Public Property Children As Children
     End Class
 
-    Public Class ShopWindowInnerPanel
+    Public Class Children
+        Public Property StatusIcon As StatusIcon
+        Public Property DurationLabel As IntersectLabel
+    End Class
+
+    Public Class StatusIcon
         Public Property Bounds As String
         Public Property Padding As String
         Public Property AlignmentEdgeDistances As String
@@ -52,19 +49,15 @@ Module ShopWindowGUI
         Public Property ToolTipBackground As String
         Public Property ToolTipFont As String
         Public Property ToolTipTextColor As String
-        Public Property Children As ShopWindowInnerPanelChildren
+        Public Property Texture As String
     End Class
 
-    Public Class ShopWindowInnerPanelChildren
-        Public Property ItemContainer As IntersectContainer
-    End Class
-
-    Public Sub LoadShopWindowGUI(ByVal jsonfile As String)
+    Public Sub LoadTargetStatusIconGUI(ByVal jsonfile As String)
         Form1.StatusText("[MAIN]     Opening " & jsonfile)
         Form1.jsonValue.Text = ""
         Form1.jsonType.Text = ""
         Form1.jsonTypeCombo.Text = ""
-        Form1.MainShopWindowPanel.Visible = True
+        Form1.MainTargetStatusIconPanel.Visible = True
         Form1.RefreshBtn.Visible = True
         Form1.gridToggle.Visible = True
         Form1.SaveToolStripMenuItem.Visible = True
@@ -76,22 +69,22 @@ Module ShopWindowGUI
         Form1.JTokenTreeUserControl1.SetJsonSource(Form1.fullJson.Text)
         sr.Close()
         Dim imgResources As String = Application.StartupPath & "\gui\"
-        Dim infoPull As New ShopWindow
-        infoPull = JsonConvert.DeserializeObject(Of ShopWindow)(Form1.fullJson.Text)
-        Form1.StatusText("[MAIN]     ShopWindow.json Deserialized")
+        Dim infoPull As New TargetStatusIcon
+        infoPull = JsonConvert.DeserializeObject(Of TargetStatusIcon)(Form1.fullJson.Text)
+        Form1.StatusText("[MAIN]     TargetStatusIcon.json Deserialized")
 
         Dim mainwindowbounds As String() = infoPull.Bounds.Split(",")
-        Dim TitleBounds As String() = infoPull.Title.Padding.Split(",")
-        Dim CloseButtonBounds As String() = infoPull.CloseButton.Bounds.Split(",")
+        Dim StatusIconBounds As String() = infoPull.Children.StatusIcon.Bounds.Split(",")
+        Dim DurationLabelBounds As String() = infoPull.Children.DurationLabel.Bounds.Split(",")
 
-        Form1.MainShopWindowPanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
-        Form1.MainShopWindowPanel.Width = mainwindowbounds(2)
-        Form1.MainShopWindowPanel.Height = mainwindowbounds(3)
-        Form1.MainShopWindowPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.ActiveImage)
-        Form1.ShopWindowTitle.Location = New Point(TitleBounds(0), TitleBounds(1))
-        Form1.ShopWindowCloseButton.Location = New Point(CloseButtonBounds(0), CloseButtonBounds(1))
-        Form1.ShopWindowCloseButton.Width = CloseButtonBounds(2)
-        Form1.ShopWindowCloseButton.Height = CloseButtonBounds(3)
-        Form1.ShopWindowCloseButton.BackgroundImage = Image.FromFile(imgResources & infoPull.CloseButton.NormalImage)
+        Form1.MainTargetStatusIconPanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
+        Form1.MainTargetStatusIconPanel.Width = mainwindowbounds(2)
+        Form1.MainTargetStatusIconPanel.Height = mainwindowbounds(3)
+        Form1.MainTargetStatusIconPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.Texture)
+        Form1.TargetStatusIconStatusIcon.Location = New Point(StatusIconBounds(0), StatusIconBounds(1))
+        Form1.TargetStatusIconStatusIcon.Width = StatusIconBounds(2)
+        Form1.TargetStatusIconStatusIcon.Height = StatusIconBounds(3)
+        Form1.TargetStatusIconStatusIcon.BackgroundImage = Image.FromFile(Application.StartupPath & "\resources\poison.png")
+        Form1.TargetStatusIconDurationLabel.Location = New Point(DurationLabelBounds(0), DurationLabelBounds(1))
     End Sub
 End Module

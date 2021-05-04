@@ -1,8 +1,8 @@
 ﻿Imports System.IO
 Imports Newtonsoft.Json
 
-Module BankWindowGUI
-    Public Class BankWindow
+Module SpellsWindowGUI
+    Public Class SpellsWindow
         Public Property Bounds As String
         Public Property Padding As String
         Public Property AlignmentEdgeDistances As String
@@ -30,10 +30,10 @@ Module BankWindowGUI
         Public Property Titlebar As IntersectTitlebar
         Public Property Title As IntersectLabel
         Public Property CloseButton As IntersectButton
-        Public Property InnerPanel As BankWindowInnerPanel
+        Public Property InnerPanel As SpellsWindowInnerPanel
     End Class
 
-    Public Class BankWindowInnerPanel
+    Public Class SpellsWindowInnerPanel
         Public Property Bounds As String
         Public Property Padding As String
         Public Property AlignmentEdgeDistances As String
@@ -52,14 +52,14 @@ Module BankWindowGUI
         Public Property ToolTipBackground As String
         Public Property ToolTipFont As String
         Public Property ToolTipTextColor As String
-        Public Property Children As BankWindowInnerPanelChildren
+        Public Property Children As SpellsWindowInnerPanelChildren
     End Class
 
-    Public Class BankWindowInnerPanelChildren
-        Public Property Children As ItemContainer
+    Public Class SpellsWindowInnerPanelChildren
+        Public Property SpellsContainer As SpellsContainer
     End Class
 
-    Public Class ItemContainer
+    Public Class SpellsContainer
         Public Property Bounds As String
         Public Property Padding As String
         Public Property AlignmentEdgeDistances As String
@@ -86,12 +86,12 @@ Module BankWindowGUI
         Public Property VerticalScrollBar As IntersectScrollBar
     End Class
 
-    Public Sub LoadBankWindowGUI(ByVal jsonfile As String)
+    Public Sub LoadSpellsWindowGUI(ByVal jsonfile As String)
         Form1.StatusText("[MAIN]     Opening " & jsonfile)
         Form1.jsonValue.Text = ""
         Form1.jsonType.Text = ""
         Form1.jsonTypeCombo.Text = ""
-        Form1.MainBankWindowPanel.Visible = True
+        Form1.MainSpellsWindowPanel.Visible = True
         Form1.RefreshBtn.Visible = True
         Form1.gridToggle.Visible = True
         Form1.SaveToolStripMenuItem.Visible = True
@@ -103,22 +103,22 @@ Module BankWindowGUI
         Form1.JTokenTreeUserControl1.SetJsonSource(Form1.fullJson.Text)
         sr.Close()
         Dim imgResources As String = Application.StartupPath & "\gui\"
-        Dim infoPull As New BankWindow
-        infoPull = JsonConvert.DeserializeObject(Of BankWindow)(Form1.fullJson.Text)
-        Form1.StatusText("[MAIN]     BankWindow.json Deserialized")
+        Dim infoPull As New SpellsWindow
+        infoPull = JsonConvert.DeserializeObject(Of SpellsWindow)(Form1.fullJson.Text)
+        Form1.StatusText("[MAIN]     SpellsWindow.json Deserialized")
 
         Dim mainwindowbounds As String() = infoPull.Bounds.Split(",")
         Dim TitleBounds As String() = infoPull.Title.Padding.Split(",")
         Dim CloseButtonBounds As String() = infoPull.CloseButton.Bounds.Split(",")
 
-        Form1.MainBankWindowPanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
-        Form1.MainBankWindowPanel.Width = mainwindowbounds(2)
-        Form1.MainBankWindowPanel.Height = mainwindowbounds(3)
-        Form1.MainBankWindowPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.ActiveImage)
-        Form1.BankWindowTitle.Location = New Point(TitleBounds(0), TitleBounds(1))
-        Form1.BankWindowCloseButton.Location = New Point(CloseButtonBounds(0), CloseButtonBounds(1))
-        Form1.BankWindowCloseButton.Width = CloseButtonBounds(2)
-        Form1.BankWindowCloseButton.Height = CloseButtonBounds(3)
-        Form1.BankWindowCloseButton.BackgroundImage = Image.FromFile(imgResources & infoPull.CloseButton.NormalImage)
+        Form1.MainSpellsWindowPanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
+        Form1.MainSpellsWindowPanel.Width = mainwindowbounds(2)
+        Form1.MainSpellsWindowPanel.Height = mainwindowbounds(3)
+        Form1.MainSpellsWindowPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.ActiveImage)
+        Form1.SpellsWindowTitle.Location = New Point(TitleBounds(0), TitleBounds(1))
+        Form1.SpellsWindowCloseButton.Location = New Point(CloseButtonBounds(0), CloseButtonBounds(1))
+        Form1.SpellsWindowCloseButton.Width = CloseButtonBounds(2)
+        Form1.SpellsWindowCloseButton.Height = CloseButtonBounds(3)
+        Form1.SpellsWindowCloseButton.BackgroundImage = Image.FromFile(imgResources & infoPull.CloseButton.NormalImage)
     End Sub
 End Module

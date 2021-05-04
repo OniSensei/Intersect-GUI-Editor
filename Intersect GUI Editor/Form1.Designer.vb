@@ -35,6 +35,43 @@ Partial Class Form1
         Me.jsonType = New System.Windows.Forms.TextBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.fullJson = New System.Windows.Forms.RichTextBox()
+        Me.MainYourTradeItem = New System.Windows.Forms.Panel()
+        Me.YourTradeItemTradeValue = New System.Windows.Forms.Label()
+        Me.YourTradeItemTradeIcon = New System.Windows.Forms.PictureBox()
+        Me.MainTradeWindowPanel = New System.Windows.Forms.Panel()
+        Me.TradeWindowTheirGoldValue = New System.Windows.Forms.Label()
+        Me.TradeWindowTheirItemContainer = New System.Windows.Forms.Panel()
+        Me.TradeWindowYourGoldValue = New System.Windows.Forms.Label()
+        Me.TradeWindowTradeButton = New System.Windows.Forms.PictureBox()
+        Me.TradeWindowTheirOfferLabel = New System.Windows.Forms.Label()
+        Me.TradeWindowYourOfferLabel = New System.Windows.Forms.Label()
+        Me.TradeWindowYourItemContainer = New System.Windows.Forms.Panel()
+        Me.TradeWindowCloseButton = New System.Windows.Forms.PictureBox()
+        Me.TradeWindowTitle = New System.Windows.Forms.Label()
+        Me.MainTheirTradeItemPanel = New System.Windows.Forms.Panel()
+        Me.TheirTradeItemTradeValue = New System.Windows.Forms.Label()
+        Me.TheirTradeItemTradeIcon = New System.Windows.Forms.PictureBox()
+        Me.MainTargetStatusIconPanel = New System.Windows.Forms.Panel()
+        Me.TargetStatusIconDurationLabel = New System.Windows.Forms.Label()
+        Me.TargetStatusIconStatusIcon = New System.Windows.Forms.PictureBox()
+        Me.MainSpellsWindowPanel = New System.Windows.Forms.Panel()
+        Me.SpellsWindowSpellsContainer = New System.Windows.Forms.Panel()
+        Me.SpellsWindowCloseButton = New System.Windows.Forms.PictureBox()
+        Me.SpellsWindowTitle = New System.Windows.Forms.Label()
+        Me.MainSpellDescWindowExpandedPanel = New System.Windows.Forms.Panel()
+        Me.SpellDescExpandedStats = New System.Windows.Forms.Panel()
+        Me.SpellDescExpandedStatsText = New System.Windows.Forms.Label()
+        Me.SpellDescExpandedSpellType = New System.Windows.Forms.Label()
+        Me.SpellDescExpandedSpellName = New System.Windows.Forms.Label()
+        Me.SpellDescExpandedSpellIcon = New System.Windows.Forms.PictureBox()
+        Me.SpellDescExpandedSpellDesc = New System.Windows.Forms.Panel()
+        Me.SpellDescExpandedSpellDescText = New System.Windows.Forms.Label()
+        Me.MainSpellDescWindowPanel = New System.Windows.Forms.Panel()
+        Me.SpellDescSpellType = New System.Windows.Forms.Label()
+        Me.SpellDescSpellName = New System.Windows.Forms.Label()
+        Me.SpellDescSpellIcon = New System.Windows.Forms.PictureBox()
+        Me.SpellDescSpellDesc = New System.Windows.Forms.Panel()
+        Me.SpellDescSpellDescText = New System.Windows.Forms.Label()
         Me.MainSpellPanel = New System.Windows.Forms.Panel()
         Me.SpellCooldownLabel = New System.Windows.Forms.Label()
         Me.SpellIcon = New System.Windows.Forms.PictureBox()
@@ -543,12 +580,6 @@ Partial Class Form1
         Me.RefreshBtn = New System.Windows.Forms.ToolStripMenuItem()
         Me.gridToggle = New System.Windows.Forms.ToolStripMenuItem()
         Me.AppSettings = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MainSpellDescWindowPanel = New System.Windows.Forms.Panel()
-        Me.SpellDescSpellDescText = New System.Windows.Forms.Label()
-        Me.SpellDescSpellType = New System.Windows.Forms.Label()
-        Me.SpellDescSpellName = New System.Windows.Forms.Label()
-        Me.SpellDescSpellIcon = New System.Windows.Forms.PictureBox()
-        Me.SpellDescSpellDesc = New System.Windows.Forms.Panel()
         CType(Me.mainSplitContainer, System.ComponentModel.ISupportInitialize).BeginInit
         Me.mainSplitContainer.Panel1.SuspendLayout
         Me.mainSplitContainer.Panel2.SuspendLayout
@@ -564,6 +595,24 @@ Partial Class Form1
         Me.SplitContainer1.Panel2.SuspendLayout
         Me.SplitContainer1.SuspendLayout
         Me.TabPage2.SuspendLayout
+        Me.MainYourTradeItem.SuspendLayout
+        CType(Me.YourTradeItemTradeIcon, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainTradeWindowPanel.SuspendLayout
+        CType(Me.TradeWindowTradeButton, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.TradeWindowCloseButton, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainTheirTradeItemPanel.SuspendLayout
+        CType(Me.TheirTradeItemTradeIcon, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainTargetStatusIconPanel.SuspendLayout
+        CType(Me.TargetStatusIconStatusIcon, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainSpellsWindowPanel.SuspendLayout
+        CType(Me.SpellsWindowCloseButton, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MainSpellDescWindowExpandedPanel.SuspendLayout
+        Me.SpellDescExpandedStats.SuspendLayout
+        CType(Me.SpellDescExpandedSpellIcon, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.SpellDescExpandedSpellDesc.SuspendLayout
+        Me.MainSpellDescWindowPanel.SuspendLayout
+        CType(Me.SpellDescSpellIcon, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.SpellDescSpellDesc.SuspendLayout
         Me.MainSpellPanel.SuspendLayout
         CType(Me.SpellIcon, System.ComponentModel.ISupportInitialize).BeginInit
         Me.MainShopWindowPanel.SuspendLayout
@@ -845,13 +894,11 @@ Partial Class Form1
         CType(Me.UsernameFieldPB, System.ComponentModel.ISupportInitialize).BeginInit
         Me.StatusStrip1.SuspendLayout
         Me.MenuStrip1.SuspendLayout
-        Me.MainSpellDescWindowPanel.SuspendLayout
-        CType(Me.SpellDescSpellIcon, System.ComponentModel.ISupportInitialize).BeginInit
-        Me.SpellDescSpellDesc.SuspendLayout
         Me.SuspendLayout
         '
         'mainSplitContainer
         '
+        Me.mainSplitContainer.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(36, Byte), Integer), CType(CType(49, Byte), Integer))
         Me.mainSplitContainer.Dock = System.Windows.Forms.DockStyle.Fill
         Me.mainSplitContainer.Location = New System.Drawing.Point(0, 24)
         Me.mainSplitContainer.Name = "mainSplitContainer"
@@ -870,6 +917,7 @@ Partial Class Form1
         '
         'toolSplitContainer
         '
+        Me.toolSplitContainer.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(36, Byte), Integer), CType(CType(49, Byte), Integer))
         Me.toolSplitContainer.Dock = System.Windows.Forms.DockStyle.Fill
         Me.toolSplitContainer.Location = New System.Drawing.Point(0, 0)
         Me.toolSplitContainer.Name = "toolSplitContainer"
@@ -881,6 +929,12 @@ Partial Class Form1
         'toolSplitContainer.Panel2
         '
         Me.toolSplitContainer.Panel2.AutoScroll = True
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainYourTradeItem)
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainTradeWindowPanel)
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainTheirTradeItemPanel)
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainTargetStatusIconPanel)
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainSpellsWindowPanel)
+        Me.toolSplitContainer.Panel2.Controls.Add(Me.MainSpellDescWindowExpandedPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainSpellDescWindowPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainSpellPanel)
         Me.toolSplitContainer.Panel2.Controls.Add(Me.MainShopWindowPanel)
@@ -944,6 +998,7 @@ Partial Class Form1
         '
         'TabPage1
         '
+        Me.TabPage1.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(36, Byte), Integer), CType(CType(49, Byte), Integer))
         Me.TabPage1.Controls.Add(Me.SplitContainer1)
         Me.TabPage1.Location = New System.Drawing.Point(4, 4)
         Me.TabPage1.Name = "TabPage1"
@@ -951,10 +1006,10 @@ Partial Class Form1
         Me.TabPage1.Size = New System.Drawing.Size(274, 581)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Tree"
-        Me.TabPage1.UseVisualStyleBackColor = True
         '
         'SplitContainer1
         '
+        Me.SplitContainer1.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(36, Byte), Integer), CType(CType(49, Byte), Integer))
         Me.SplitContainer1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SplitContainer1.Location = New System.Drawing.Point(3, 3)
         Me.SplitContainer1.Name = "SplitContainer1"
@@ -966,6 +1021,7 @@ Partial Class Form1
         '
         'SplitContainer1.Panel2
         '
+        Me.SplitContainer1.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(36, Byte), Integer), CType(CType(49, Byte), Integer))
         Me.SplitContainer1.Panel2.Controls.Add(Me.updateBtn)
         Me.SplitContainer1.Panel2.Controls.Add(Me.jsonValue)
         Me.SplitContainer1.Panel2.Controls.Add(Me.jsonTypeCombo)
@@ -1030,6 +1086,7 @@ Partial Class Form1
         '
         'TabPage2
         '
+        Me.TabPage2.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(36, Byte), Integer), CType(CType(49, Byte), Integer))
         Me.TabPage2.Controls.Add(Me.fullJson)
         Me.TabPage2.Location = New System.Drawing.Point(4, 4)
         Me.TabPage2.Name = "TabPage2"
@@ -1037,7 +1094,6 @@ Partial Class Form1
         Me.TabPage2.Size = New System.Drawing.Size(274, 581)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Text"
-        Me.TabPage2.UseVisualStyleBackColor = True
         '
         'fullJson
         '
@@ -1048,6 +1104,440 @@ Partial Class Form1
         Me.fullJson.Size = New System.Drawing.Size(268, 575)
         Me.fullJson.TabIndex = 0
         Me.fullJson.Text = ""
+        '
+        'MainYourTradeItem
+        '
+        Me.MainYourTradeItem.BackColor = System.Drawing.Color.Transparent
+        Me.MainYourTradeItem.BackgroundImage = CType(resources.GetObject("MainYourTradeItem.BackgroundImage"), System.Drawing.Image)
+        Me.MainYourTradeItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainYourTradeItem.Controls.Add(Me.YourTradeItemTradeValue)
+        Me.MainYourTradeItem.Controls.Add(Me.YourTradeItemTradeIcon)
+        Me.MainYourTradeItem.Location = New System.Drawing.Point(43, 898)
+        Me.MainYourTradeItem.Name = "MainYourTradeItem"
+        Me.MainYourTradeItem.Size = New System.Drawing.Size(34, 35)
+        Me.MainYourTradeItem.TabIndex = 58
+        Me.MainYourTradeItem.Visible = False
+        '
+        'YourTradeItemTradeValue
+        '
+        Me.YourTradeItemTradeValue.AutoSize = True
+        Me.YourTradeItemTradeValue.BackColor = System.Drawing.Color.Transparent
+        Me.YourTradeItemTradeValue.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.YourTradeItemTradeValue.ForeColor = System.Drawing.Color.White
+        Me.YourTradeItemTradeValue.Location = New System.Drawing.Point(29, 24)
+        Me.YourTradeItemTradeValue.Name = "YourTradeItemTradeValue"
+        Me.YourTradeItemTradeValue.Size = New System.Drawing.Size(12, 14)
+        Me.YourTradeItemTradeValue.TabIndex = 6
+        Me.YourTradeItemTradeValue.Text = "0"
+        '
+        'YourTradeItemTradeIcon
+        '
+        Me.YourTradeItemTradeIcon.BackgroundImage = CType(resources.GetObject("YourTradeItemTradeIcon.BackgroundImage"), System.Drawing.Image)
+        Me.YourTradeItemTradeIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.YourTradeItemTradeIcon.Location = New System.Drawing.Point(1, 1)
+        Me.YourTradeItemTradeIcon.Name = "YourTradeItemTradeIcon"
+        Me.YourTradeItemTradeIcon.Size = New System.Drawing.Size(32, 32)
+        Me.YourTradeItemTradeIcon.TabIndex = 0
+        Me.YourTradeItemTradeIcon.TabStop = False
+        '
+        'MainTradeWindowPanel
+        '
+        Me.MainTradeWindowPanel.BackgroundImage = CType(resources.GetObject("MainTradeWindowPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainTradeWindowPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainTradeWindowPanel.Controls.Add(Me.TradeWindowTheirGoldValue)
+        Me.MainTradeWindowPanel.Controls.Add(Me.TradeWindowTheirItemContainer)
+        Me.MainTradeWindowPanel.Controls.Add(Me.TradeWindowYourGoldValue)
+        Me.MainTradeWindowPanel.Controls.Add(Me.TradeWindowTradeButton)
+        Me.MainTradeWindowPanel.Controls.Add(Me.TradeWindowTheirOfferLabel)
+        Me.MainTradeWindowPanel.Controls.Add(Me.TradeWindowYourOfferLabel)
+        Me.MainTradeWindowPanel.Controls.Add(Me.TradeWindowYourItemContainer)
+        Me.MainTradeWindowPanel.Controls.Add(Me.TradeWindowCloseButton)
+        Me.MainTradeWindowPanel.Controls.Add(Me.TradeWindowTitle)
+        Me.MainTradeWindowPanel.Location = New System.Drawing.Point(1881, 1113)
+        Me.MainTradeWindowPanel.Name = "MainTradeWindowPanel"
+        Me.MainTradeWindowPanel.Size = New System.Drawing.Size(442, 469)
+        Me.MainTradeWindowPanel.TabIndex = 57
+        Me.MainTradeWindowPanel.Visible = False
+        '
+        'TradeWindowTheirGoldValue
+        '
+        Me.TradeWindowTheirGoldValue.AutoSize = True
+        Me.TradeWindowTheirGoldValue.BackColor = System.Drawing.Color.Transparent
+        Me.TradeWindowTheirGoldValue.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TradeWindowTheirGoldValue.ForeColor = System.Drawing.Color.White
+        Me.TradeWindowTheirGoldValue.Location = New System.Drawing.Point(235, 357)
+        Me.TradeWindowTheirGoldValue.Name = "TradeWindowTheirGoldValue"
+        Me.TradeWindowTheirGoldValue.Size = New System.Drawing.Size(50, 17)
+        Me.TradeWindowTheirGoldValue.TabIndex = 31
+        Me.TradeWindowTheirGoldValue.Text = "Value: 0"
+        '
+        'TradeWindowTheirItemContainer
+        '
+        Me.TradeWindowTheirItemContainer.BackColor = System.Drawing.Color.Transparent
+        Me.TradeWindowTheirItemContainer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.TradeWindowTheirItemContainer.Location = New System.Drawing.Point(235, 38)
+        Me.TradeWindowTheirItemContainer.Name = "TradeWindowTheirItemContainer"
+        Me.TradeWindowTheirItemContainer.Size = New System.Drawing.Size(190, 315)
+        Me.TradeWindowTheirItemContainer.TabIndex = 30
+        '
+        'TradeWindowYourGoldValue
+        '
+        Me.TradeWindowYourGoldValue.AutoSize = True
+        Me.TradeWindowYourGoldValue.BackColor = System.Drawing.Color.Transparent
+        Me.TradeWindowYourGoldValue.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TradeWindowYourGoldValue.ForeColor = System.Drawing.Color.White
+        Me.TradeWindowYourGoldValue.Location = New System.Drawing.Point(17, 357)
+        Me.TradeWindowYourGoldValue.Name = "TradeWindowYourGoldValue"
+        Me.TradeWindowYourGoldValue.Size = New System.Drawing.Size(50, 17)
+        Me.TradeWindowYourGoldValue.TabIndex = 29
+        Me.TradeWindowYourGoldValue.Text = "Value: 0"
+        '
+        'TradeWindowTradeButton
+        '
+        Me.TradeWindowTradeButton.BackColor = System.Drawing.Color.Transparent
+        Me.TradeWindowTradeButton.BackgroundImage = CType(resources.GetObject("TradeWindowTradeButton.BackgroundImage"), System.Drawing.Image)
+        Me.TradeWindowTradeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.TradeWindowTradeButton.Location = New System.Drawing.Point(330, 394)
+        Me.TradeWindowTradeButton.Name = "TradeWindowTradeButton"
+        Me.TradeWindowTradeButton.Size = New System.Drawing.Size(96, 35)
+        Me.TradeWindowTradeButton.TabIndex = 28
+        Me.TradeWindowTradeButton.TabStop = False
+        '
+        'TradeWindowTheirOfferLabel
+        '
+        Me.TradeWindowTheirOfferLabel.AutoSize = True
+        Me.TradeWindowTheirOfferLabel.BackColor = System.Drawing.Color.Transparent
+        Me.TradeWindowTheirOfferLabel.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TradeWindowTheirOfferLabel.ForeColor = System.Drawing.Color.White
+        Me.TradeWindowTheirOfferLabel.Location = New System.Drawing.Point(235, 14)
+        Me.TradeWindowTheirOfferLabel.Name = "TradeWindowTheirOfferLabel"
+        Me.TradeWindowTheirOfferLabel.Size = New System.Drawing.Size(70, 17)
+        Me.TradeWindowTheirOfferLabel.TabIndex = 27
+        Me.TradeWindowTheirOfferLabel.Text = "Their Offer:"
+        '
+        'TradeWindowYourOfferLabel
+        '
+        Me.TradeWindowYourOfferLabel.AutoSize = True
+        Me.TradeWindowYourOfferLabel.BackColor = System.Drawing.Color.Transparent
+        Me.TradeWindowYourOfferLabel.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TradeWindowYourOfferLabel.ForeColor = System.Drawing.Color.White
+        Me.TradeWindowYourOfferLabel.Location = New System.Drawing.Point(17, 14)
+        Me.TradeWindowYourOfferLabel.Name = "TradeWindowYourOfferLabel"
+        Me.TradeWindowYourOfferLabel.Size = New System.Drawing.Size(66, 17)
+        Me.TradeWindowYourOfferLabel.TabIndex = 26
+        Me.TradeWindowYourOfferLabel.Text = "Your Offer:"
+        '
+        'TradeWindowYourItemContainer
+        '
+        Me.TradeWindowYourItemContainer.BackColor = System.Drawing.Color.Transparent
+        Me.TradeWindowYourItemContainer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.TradeWindowYourItemContainer.Location = New System.Drawing.Point(17, 38)
+        Me.TradeWindowYourItemContainer.Name = "TradeWindowYourItemContainer"
+        Me.TradeWindowYourItemContainer.Size = New System.Drawing.Size(190, 315)
+        Me.TradeWindowYourItemContainer.TabIndex = 26
+        '
+        'TradeWindowCloseButton
+        '
+        Me.TradeWindowCloseButton.BackColor = System.Drawing.Color.Transparent
+        Me.TradeWindowCloseButton.BackgroundImage = CType(resources.GetObject("TradeWindowCloseButton.BackgroundImage"), System.Drawing.Image)
+        Me.TradeWindowCloseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.TradeWindowCloseButton.Location = New System.Drawing.Point(408, 0)
+        Me.TradeWindowCloseButton.Name = "TradeWindowCloseButton"
+        Me.TradeWindowCloseButton.Size = New System.Drawing.Size(34, 32)
+        Me.TradeWindowCloseButton.TabIndex = 19
+        Me.TradeWindowCloseButton.TabStop = False
+        '
+        'TradeWindowTitle
+        '
+        Me.TradeWindowTitle.AutoSize = True
+        Me.TradeWindowTitle.BackColor = System.Drawing.Color.Transparent
+        Me.TradeWindowTitle.Font = New System.Drawing.Font("Source Sans Pro SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TradeWindowTitle.ForeColor = System.Drawing.Color.White
+        Me.TradeWindowTitle.Location = New System.Drawing.Point(76, 7)
+        Me.TradeWindowTitle.Name = "TradeWindowTitle"
+        Me.TradeWindowTitle.Size = New System.Drawing.Size(48, 20)
+        Me.TradeWindowTitle.TabIndex = 3
+        Me.TradeWindowTitle.Text = "Trade"
+        '
+        'MainTheirTradeItemPanel
+        '
+        Me.MainTheirTradeItemPanel.BackColor = System.Drawing.Color.Transparent
+        Me.MainTheirTradeItemPanel.BackgroundImage = CType(resources.GetObject("MainTheirTradeItemPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainTheirTradeItemPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainTheirTradeItemPanel.Controls.Add(Me.TheirTradeItemTradeValue)
+        Me.MainTheirTradeItemPanel.Controls.Add(Me.TheirTradeItemTradeIcon)
+        Me.MainTheirTradeItemPanel.Location = New System.Drawing.Point(4, 898)
+        Me.MainTheirTradeItemPanel.Name = "MainTheirTradeItemPanel"
+        Me.MainTheirTradeItemPanel.Size = New System.Drawing.Size(34, 35)
+        Me.MainTheirTradeItemPanel.TabIndex = 56
+        Me.MainTheirTradeItemPanel.Visible = False
+        '
+        'TheirTradeItemTradeValue
+        '
+        Me.TheirTradeItemTradeValue.AutoSize = True
+        Me.TheirTradeItemTradeValue.BackColor = System.Drawing.Color.Transparent
+        Me.TheirTradeItemTradeValue.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TheirTradeItemTradeValue.ForeColor = System.Drawing.Color.White
+        Me.TheirTradeItemTradeValue.Location = New System.Drawing.Point(29, 24)
+        Me.TheirTradeItemTradeValue.Name = "TheirTradeItemTradeValue"
+        Me.TheirTradeItemTradeValue.Size = New System.Drawing.Size(12, 14)
+        Me.TheirTradeItemTradeValue.TabIndex = 6
+        Me.TheirTradeItemTradeValue.Text = "0"
+        '
+        'TheirTradeItemTradeIcon
+        '
+        Me.TheirTradeItemTradeIcon.BackgroundImage = CType(resources.GetObject("TheirTradeItemTradeIcon.BackgroundImage"), System.Drawing.Image)
+        Me.TheirTradeItemTradeIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.TheirTradeItemTradeIcon.Location = New System.Drawing.Point(1, 1)
+        Me.TheirTradeItemTradeIcon.Name = "TheirTradeItemTradeIcon"
+        Me.TheirTradeItemTradeIcon.Size = New System.Drawing.Size(32, 32)
+        Me.TheirTradeItemTradeIcon.TabIndex = 0
+        Me.TheirTradeItemTradeIcon.TabStop = False
+        '
+        'MainTargetStatusIconPanel
+        '
+        Me.MainTargetStatusIconPanel.BackColor = System.Drawing.Color.Transparent
+        Me.MainTargetStatusIconPanel.BackgroundImage = CType(resources.GetObject("MainTargetStatusIconPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainTargetStatusIconPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainTargetStatusIconPanel.Controls.Add(Me.TargetStatusIconDurationLabel)
+        Me.MainTargetStatusIconPanel.Controls.Add(Me.TargetStatusIconStatusIcon)
+        Me.MainTargetStatusIconPanel.Location = New System.Drawing.Point(43, 859)
+        Me.MainTargetStatusIconPanel.Name = "MainTargetStatusIconPanel"
+        Me.MainTargetStatusIconPanel.Size = New System.Drawing.Size(34, 35)
+        Me.MainTargetStatusIconPanel.TabIndex = 55
+        Me.MainTargetStatusIconPanel.Visible = False
+        '
+        'TargetStatusIconDurationLabel
+        '
+        Me.TargetStatusIconDurationLabel.AutoSize = True
+        Me.TargetStatusIconDurationLabel.BackColor = System.Drawing.Color.Transparent
+        Me.TargetStatusIconDurationLabel.Font = New System.Drawing.Font("Source Sans Pro", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TargetStatusIconDurationLabel.ForeColor = System.Drawing.Color.White
+        Me.TargetStatusIconDurationLabel.Location = New System.Drawing.Point(29, 24)
+        Me.TargetStatusIconDurationLabel.Name = "TargetStatusIconDurationLabel"
+        Me.TargetStatusIconDurationLabel.Size = New System.Drawing.Size(12, 14)
+        Me.TargetStatusIconDurationLabel.TabIndex = 6
+        Me.TargetStatusIconDurationLabel.Text = "0"
+        '
+        'TargetStatusIconStatusIcon
+        '
+        Me.TargetStatusIconStatusIcon.BackgroundImage = CType(resources.GetObject("TargetStatusIconStatusIcon.BackgroundImage"), System.Drawing.Image)
+        Me.TargetStatusIconStatusIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.TargetStatusIconStatusIcon.Location = New System.Drawing.Point(1, 1)
+        Me.TargetStatusIconStatusIcon.Name = "TargetStatusIconStatusIcon"
+        Me.TargetStatusIconStatusIcon.Size = New System.Drawing.Size(32, 32)
+        Me.TargetStatusIconStatusIcon.TabIndex = 0
+        Me.TargetStatusIconStatusIcon.TabStop = False
+        '
+        'MainSpellsWindowPanel
+        '
+        Me.MainSpellsWindowPanel.BackgroundImage = CType(resources.GetObject("MainSpellsWindowPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainSpellsWindowPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainSpellsWindowPanel.Controls.Add(Me.SpellsWindowSpellsContainer)
+        Me.MainSpellsWindowPanel.Controls.Add(Me.SpellsWindowCloseButton)
+        Me.MainSpellsWindowPanel.Controls.Add(Me.SpellsWindowTitle)
+        Me.MainSpellsWindowPanel.Location = New System.Drawing.Point(1654, 1113)
+        Me.MainSpellsWindowPanel.Name = "MainSpellsWindowPanel"
+        Me.MainSpellsWindowPanel.Size = New System.Drawing.Size(220, 340)
+        Me.MainSpellsWindowPanel.TabIndex = 54
+        Me.MainSpellsWindowPanel.Visible = False
+        '
+        'SpellsWindowSpellsContainer
+        '
+        Me.SpellsWindowSpellsContainer.BackColor = System.Drawing.Color.Transparent
+        Me.SpellsWindowSpellsContainer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.SpellsWindowSpellsContainer.Location = New System.Drawing.Point(3, 30)
+        Me.SpellsWindowSpellsContainer.Name = "SpellsWindowSpellsContainer"
+        Me.SpellsWindowSpellsContainer.Size = New System.Drawing.Size(218, 310)
+        Me.SpellsWindowSpellsContainer.TabIndex = 26
+        '
+        'SpellsWindowCloseButton
+        '
+        Me.SpellsWindowCloseButton.BackColor = System.Drawing.Color.Transparent
+        Me.SpellsWindowCloseButton.BackgroundImage = CType(resources.GetObject("SpellsWindowCloseButton.BackgroundImage"), System.Drawing.Image)
+        Me.SpellsWindowCloseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.SpellsWindowCloseButton.Location = New System.Drawing.Point(194, 6)
+        Me.SpellsWindowCloseButton.Name = "SpellsWindowCloseButton"
+        Me.SpellsWindowCloseButton.Size = New System.Drawing.Size(26, 25)
+        Me.SpellsWindowCloseButton.TabIndex = 19
+        Me.SpellsWindowCloseButton.TabStop = False
+        '
+        'SpellsWindowTitle
+        '
+        Me.SpellsWindowTitle.AutoSize = True
+        Me.SpellsWindowTitle.BackColor = System.Drawing.Color.Transparent
+        Me.SpellsWindowTitle.Font = New System.Drawing.Font("Source Sans Pro SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SpellsWindowTitle.ForeColor = System.Drawing.Color.White
+        Me.SpellsWindowTitle.Location = New System.Drawing.Point(40, 7)
+        Me.SpellsWindowTitle.Name = "SpellsWindowTitle"
+        Me.SpellsWindowTitle.Size = New System.Drawing.Size(50, 20)
+        Me.SpellsWindowTitle.TabIndex = 3
+        Me.SpellsWindowTitle.Text = "Spells"
+        '
+        'MainSpellDescWindowExpandedPanel
+        '
+        Me.MainSpellDescWindowExpandedPanel.BackgroundImage = CType(resources.GetObject("MainSpellDescWindowExpandedPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainSpellDescWindowExpandedPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainSpellDescWindowExpandedPanel.Controls.Add(Me.SpellDescExpandedStats)
+        Me.MainSpellDescWindowExpandedPanel.Controls.Add(Me.SpellDescExpandedSpellType)
+        Me.MainSpellDescWindowExpandedPanel.Controls.Add(Me.SpellDescExpandedSpellName)
+        Me.MainSpellDescWindowExpandedPanel.Controls.Add(Me.SpellDescExpandedSpellIcon)
+        Me.MainSpellDescWindowExpandedPanel.Controls.Add(Me.SpellDescExpandedSpellDesc)
+        Me.MainSpellDescWindowExpandedPanel.Location = New System.Drawing.Point(1283, 1289)
+        Me.MainSpellDescWindowExpandedPanel.Name = "MainSpellDescWindowExpandedPanel"
+        Me.MainSpellDescWindowExpandedPanel.Size = New System.Drawing.Size(364, 244)
+        Me.MainSpellDescWindowExpandedPanel.TabIndex = 53
+        Me.MainSpellDescWindowExpandedPanel.Visible = False
+        '
+        'SpellDescExpandedStats
+        '
+        Me.SpellDescExpandedStats.BackColor = System.Drawing.Color.Transparent
+        Me.SpellDescExpandedStats.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.SpellDescExpandedStats.Controls.Add(Me.SpellDescExpandedStatsText)
+        Me.SpellDescExpandedStats.Location = New System.Drawing.Point(192, 8)
+        Me.SpellDescExpandedStats.Name = "SpellDescExpandedStats"
+        Me.SpellDescExpandedStats.Size = New System.Drawing.Size(173, 228)
+        Me.SpellDescExpandedStats.TabIndex = 25
+        '
+        'SpellDescExpandedStatsText
+        '
+        Me.SpellDescExpandedStatsText.AutoSize = True
+        Me.SpellDescExpandedStatsText.BackColor = System.Drawing.Color.Transparent
+        Me.SpellDescExpandedStatsText.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SpellDescExpandedStatsText.ForeColor = System.Drawing.Color.White
+        Me.SpellDescExpandedStatsText.Location = New System.Drawing.Point(0, 0)
+        Me.SpellDescExpandedStatsText.Name = "SpellDescExpandedStatsText"
+        Me.SpellDescExpandedStatsText.Size = New System.Drawing.Size(80, 17)
+        Me.SpellDescExpandedStatsText.TabIndex = 26
+        Me.SpellDescExpandedStatsText.Text = "Hit Radius: 10"
+        '
+        'SpellDescExpandedSpellType
+        '
+        Me.SpellDescExpandedSpellType.AutoSize = True
+        Me.SpellDescExpandedSpellType.BackColor = System.Drawing.Color.Transparent
+        Me.SpellDescExpandedSpellType.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SpellDescExpandedSpellType.ForeColor = System.Drawing.Color.White
+        Me.SpellDescExpandedSpellType.Location = New System.Drawing.Point(4, 92)
+        Me.SpellDescExpandedSpellType.Name = "SpellDescExpandedSpellType"
+        Me.SpellDescExpandedSpellType.Size = New System.Drawing.Size(31, 17)
+        Me.SpellDescExpandedSpellType.TabIndex = 24
+        Me.SpellDescExpandedSpellType.Text = "AOE"
+        '
+        'SpellDescExpandedSpellName
+        '
+        Me.SpellDescExpandedSpellName.AutoSize = True
+        Me.SpellDescExpandedSpellName.BackColor = System.Drawing.Color.Transparent
+        Me.SpellDescExpandedSpellName.Font = New System.Drawing.Font("Source Sans Pro", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SpellDescExpandedSpellName.ForeColor = System.Drawing.Color.White
+        Me.SpellDescExpandedSpellName.Location = New System.Drawing.Point(4, 8)
+        Me.SpellDescExpandedSpellName.Name = "SpellDescExpandedSpellName"
+        Me.SpellDescExpandedSpellName.Size = New System.Drawing.Size(90, 20)
+        Me.SpellDescExpandedSpellName.TabIndex = 23
+        Me.SpellDescExpandedSpellName.Text = "Rain Arrows"
+        '
+        'SpellDescExpandedSpellIcon
+        '
+        Me.SpellDescExpandedSpellIcon.BackColor = System.Drawing.Color.Transparent
+        Me.SpellDescExpandedSpellIcon.BackgroundImage = CType(resources.GetObject("SpellDescExpandedSpellIcon.BackgroundImage"), System.Drawing.Image)
+        Me.SpellDescExpandedSpellIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.SpellDescExpandedSpellIcon.Location = New System.Drawing.Point(68, 38)
+        Me.SpellDescExpandedSpellIcon.Name = "SpellDescExpandedSpellIcon"
+        Me.SpellDescExpandedSpellIcon.Size = New System.Drawing.Size(48, 48)
+        Me.SpellDescExpandedSpellIcon.TabIndex = 19
+        Me.SpellDescExpandedSpellIcon.TabStop = False
+        '
+        'SpellDescExpandedSpellDesc
+        '
+        Me.SpellDescExpandedSpellDesc.BackColor = System.Drawing.Color.Transparent
+        Me.SpellDescExpandedSpellDesc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.SpellDescExpandedSpellDesc.Controls.Add(Me.SpellDescExpandedSpellDescText)
+        Me.SpellDescExpandedSpellDesc.Location = New System.Drawing.Point(4, 120)
+        Me.SpellDescExpandedSpellDesc.Name = "SpellDescExpandedSpellDesc"
+        Me.SpellDescExpandedSpellDesc.Size = New System.Drawing.Size(177, 130)
+        Me.SpellDescExpandedSpellDesc.TabIndex = 7
+        '
+        'SpellDescExpandedSpellDescText
+        '
+        Me.SpellDescExpandedSpellDescText.AutoSize = True
+        Me.SpellDescExpandedSpellDescText.BackColor = System.Drawing.Color.Transparent
+        Me.SpellDescExpandedSpellDescText.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SpellDescExpandedSpellDescText.ForeColor = System.Drawing.Color.White
+        Me.SpellDescExpandedSpellDescText.Location = New System.Drawing.Point(177, 0)
+        Me.SpellDescExpandedSpellDescText.Name = "SpellDescExpandedSpellDescText"
+        Me.SpellDescExpandedSpellDescText.Size = New System.Drawing.Size(172, 17)
+        Me.SpellDescExpandedSpellDescText.TabIndex = 26
+        Me.SpellDescExpandedSpellDescText.Text = "Rains down arrows in an area."
+        '
+        'MainSpellDescWindowPanel
+        '
+        Me.MainSpellDescWindowPanel.BackgroundImage = CType(resources.GetObject("MainSpellDescWindowPanel.BackgroundImage"), System.Drawing.Image)
+        Me.MainSpellDescWindowPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainSpellDescWindowPanel.Controls.Add(Me.SpellDescSpellType)
+        Me.MainSpellDescWindowPanel.Controls.Add(Me.SpellDescSpellName)
+        Me.MainSpellDescWindowPanel.Controls.Add(Me.SpellDescSpellIcon)
+        Me.MainSpellDescWindowPanel.Controls.Add(Me.SpellDescSpellDesc)
+        Me.MainSpellDescWindowPanel.Location = New System.Drawing.Point(1283, 1039)
+        Me.MainSpellDescWindowPanel.Name = "MainSpellDescWindowPanel"
+        Me.MainSpellDescWindowPanel.Size = New System.Drawing.Size(185, 244)
+        Me.MainSpellDescWindowPanel.TabIndex = 52
+        Me.MainSpellDescWindowPanel.Visible = False
+        '
+        'SpellDescSpellType
+        '
+        Me.SpellDescSpellType.AutoSize = True
+        Me.SpellDescSpellType.BackColor = System.Drawing.Color.Transparent
+        Me.SpellDescSpellType.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SpellDescSpellType.ForeColor = System.Drawing.Color.White
+        Me.SpellDescSpellType.Location = New System.Drawing.Point(4, 92)
+        Me.SpellDescSpellType.Name = "SpellDescSpellType"
+        Me.SpellDescSpellType.Size = New System.Drawing.Size(31, 17)
+        Me.SpellDescSpellType.TabIndex = 24
+        Me.SpellDescSpellType.Text = "AOE"
+        '
+        'SpellDescSpellName
+        '
+        Me.SpellDescSpellName.AutoSize = True
+        Me.SpellDescSpellName.BackColor = System.Drawing.Color.Transparent
+        Me.SpellDescSpellName.Font = New System.Drawing.Font("Source Sans Pro", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SpellDescSpellName.ForeColor = System.Drawing.Color.White
+        Me.SpellDescSpellName.Location = New System.Drawing.Point(4, 8)
+        Me.SpellDescSpellName.Name = "SpellDescSpellName"
+        Me.SpellDescSpellName.Size = New System.Drawing.Size(90, 20)
+        Me.SpellDescSpellName.TabIndex = 23
+        Me.SpellDescSpellName.Text = "Rain Arrows"
+        '
+        'SpellDescSpellIcon
+        '
+        Me.SpellDescSpellIcon.BackColor = System.Drawing.Color.Transparent
+        Me.SpellDescSpellIcon.BackgroundImage = CType(resources.GetObject("SpellDescSpellIcon.BackgroundImage"), System.Drawing.Image)
+        Me.SpellDescSpellIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.SpellDescSpellIcon.Location = New System.Drawing.Point(68, 38)
+        Me.SpellDescSpellIcon.Name = "SpellDescSpellIcon"
+        Me.SpellDescSpellIcon.Size = New System.Drawing.Size(48, 48)
+        Me.SpellDescSpellIcon.TabIndex = 19
+        Me.SpellDescSpellIcon.TabStop = False
+        '
+        'SpellDescSpellDesc
+        '
+        Me.SpellDescSpellDesc.BackColor = System.Drawing.Color.Transparent
+        Me.SpellDescSpellDesc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.SpellDescSpellDesc.Controls.Add(Me.SpellDescSpellDescText)
+        Me.SpellDescSpellDesc.Location = New System.Drawing.Point(4, 120)
+        Me.SpellDescSpellDesc.Name = "SpellDescSpellDesc"
+        Me.SpellDescSpellDesc.Size = New System.Drawing.Size(177, 130)
+        Me.SpellDescSpellDesc.TabIndex = 7
+        '
+        'SpellDescSpellDescText
+        '
+        Me.SpellDescSpellDescText.AutoSize = True
+        Me.SpellDescSpellDescText.BackColor = System.Drawing.Color.Transparent
+        Me.SpellDescSpellDescText.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SpellDescSpellDescText.ForeColor = System.Drawing.Color.White
+        Me.SpellDescSpellDescText.Location = New System.Drawing.Point(88, 0)
+        Me.SpellDescSpellDescText.Name = "SpellDescSpellDescText"
+        Me.SpellDescSpellDescText.Size = New System.Drawing.Size(172, 17)
+        Me.SpellDescSpellDescText.TabIndex = 26
+        Me.SpellDescSpellDescText.Text = "Rains down arrows in an area."
         '
         'MainSpellPanel
         '
@@ -6262,6 +6752,7 @@ Partial Class Form1
         '
         'StatusStrip1
         '
+        Me.StatusStrip1.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.StatusStrip1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.statusTxtBox})
         Me.StatusStrip1.Location = New System.Drawing.Point(0, 0)
@@ -6272,12 +6763,14 @@ Partial Class Form1
         '
         'statusTxtBox
         '
+        Me.statusTxtBox.ForeColor = System.Drawing.Color.White
         Me.statusTxtBox.Name = "statusTxtBox"
         Me.statusTxtBox.Size = New System.Drawing.Size(51, 21)
         Me.statusTxtBox.Text = "Ready...."
         '
         'MenuStrip1
         '
+        Me.MenuStrip1.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.SaveToolStripMenuItem, Me.RefreshBtn, Me.gridToggle, Me.AppSettings})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
@@ -6288,344 +6781,456 @@ Partial Class Form1
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GameToolStripMenuItem, Me.MenuToolStripMenuItem})
+        Me.FileToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(48, 20)
         Me.FileToolStripMenuItem.Text = "Open"
         '
         'GameToolStripMenuItem
         '
+        Me.GameToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.GameToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BagItemToolStripMenuItem, Me.BagWindowToolStripMenuItem, Me.BankItemToolStripMenuItem, Me.BankWindowToolStripMenuItem, Me.CharacterWindowToolStripMenuItem, Me.ChatboxWindowToolStripMenuItem, Me.CraftedItemToolStripMenuItem, Me.CraftingIngredientToolStripMenuItem, Me.CraftingWindowToolStripMenuItem, Me.DraggableToolStripMenuItem, Me.EquipmentItemToolStripMenuItem, Me.EscapeMenuToolStripMenuItem, Me.EventDialogWindow1ResponseToolStripMenuItem, Me.EventDialogWindow2ResponseToolStripMenuItem, Me.EventDialogWindow3ResponseToolStripMenuItem, Me.EventDialogWindow4ResponseToolStripMenuItem, Me.FriendsWindowToolStripMenuItem, Me.HotbarWindowToolStripMenuItem, Me.InputBoxToolStripMenuItem1, Me.InventoryItemToolStripMenuItem, Me.InventoryWindowToolStripMenuItem, Me.ItemDescWindowToolStripMenuItem, Me.ItemDescWindowExpandedToolStripMenuItem, Me.MenuContainerToolStripMenuItem, Me.OptionsWindowToolStripMenuItem1, Me.PartyWindowToolStripMenuItem, Me.PlayerBoxToolStripMenuItem, Me.PlayerStatusIconToolStripMenuItem, Me.QuestOfferWindowToolStripMenuItem, Me.QuestWindowToolStripMenuItem, Me.ShopItemToolStripMenuItem, Me.ShopWindowToolStripMenuItem, Me.SpellMenuItem, Me.SpellDescWindowMenuItem, Me.SpellDescWindowExpandedMenuItem, Me.SpellsWindowMenuItem, Me.TargetBoxMenuItem, Me.TargetStatusIconMenuItem, Me.TheirTradeItemMenuItem, Me.TradeWindowMenuItem, Me.YourTradeItemMenuItem})
+        Me.GameToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.GameToolStripMenuItem.Name = "GameToolStripMenuItem"
         Me.GameToolStripMenuItem.Size = New System.Drawing.Size(105, 22)
         Me.GameToolStripMenuItem.Text = "game"
         '
         'BagItemToolStripMenuItem
         '
+        Me.BagItemToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.BagItemToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.BagItemToolStripMenuItem.Name = "BagItemToolStripMenuItem"
         Me.BagItemToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.BagItemToolStripMenuItem.Text = "BagItem"
         '
         'BagWindowToolStripMenuItem
         '
+        Me.BagWindowToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.BagWindowToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.BagWindowToolStripMenuItem.Name = "BagWindowToolStripMenuItem"
         Me.BagWindowToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.BagWindowToolStripMenuItem.Text = "BagWindow"
         '
         'BankItemToolStripMenuItem
         '
+        Me.BankItemToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.BankItemToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.BankItemToolStripMenuItem.Name = "BankItemToolStripMenuItem"
         Me.BankItemToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.BankItemToolStripMenuItem.Text = "BankItem"
         '
         'BankWindowToolStripMenuItem
         '
+        Me.BankWindowToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.BankWindowToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.BankWindowToolStripMenuItem.Name = "BankWindowToolStripMenuItem"
         Me.BankWindowToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.BankWindowToolStripMenuItem.Text = "BankWindow"
         '
         'CharacterWindowToolStripMenuItem
         '
+        Me.CharacterWindowToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.CharacterWindowToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.CharacterWindowToolStripMenuItem.Name = "CharacterWindowToolStripMenuItem"
         Me.CharacterWindowToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.CharacterWindowToolStripMenuItem.Text = "CharacterWindow"
         '
         'ChatboxWindowToolStripMenuItem
         '
+        Me.ChatboxWindowToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.ChatboxWindowToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.ChatboxWindowToolStripMenuItem.Name = "ChatboxWindowToolStripMenuItem"
         Me.ChatboxWindowToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.ChatboxWindowToolStripMenuItem.Text = "ChatboxWindow"
         '
         'CraftedItemToolStripMenuItem
         '
+        Me.CraftedItemToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.CraftedItemToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.CraftedItemToolStripMenuItem.Name = "CraftedItemToolStripMenuItem"
         Me.CraftedItemToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.CraftedItemToolStripMenuItem.Text = "CraftedItem"
         '
         'CraftingIngredientToolStripMenuItem
         '
+        Me.CraftingIngredientToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.CraftingIngredientToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.CraftingIngredientToolStripMenuItem.Name = "CraftingIngredientToolStripMenuItem"
         Me.CraftingIngredientToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.CraftingIngredientToolStripMenuItem.Text = "CraftingIngredient"
         '
         'CraftingWindowToolStripMenuItem
         '
+        Me.CraftingWindowToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.CraftingWindowToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.CraftingWindowToolStripMenuItem.Name = "CraftingWindowToolStripMenuItem"
         Me.CraftingWindowToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.CraftingWindowToolStripMenuItem.Text = "CraftingWindow"
         '
         'DraggableToolStripMenuItem
         '
+        Me.DraggableToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.DraggableToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.DraggableToolStripMenuItem.Name = "DraggableToolStripMenuItem"
         Me.DraggableToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.DraggableToolStripMenuItem.Text = "Draggable"
         '
         'EquipmentItemToolStripMenuItem
         '
+        Me.EquipmentItemToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.EquipmentItemToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.EquipmentItemToolStripMenuItem.Name = "EquipmentItemToolStripMenuItem"
         Me.EquipmentItemToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.EquipmentItemToolStripMenuItem.Text = "EquipmentItem"
         '
         'EscapeMenuToolStripMenuItem
         '
+        Me.EscapeMenuToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.EscapeMenuToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.EscapeMenuToolStripMenuItem.Name = "EscapeMenuToolStripMenuItem"
         Me.EscapeMenuToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.EscapeMenuToolStripMenuItem.Text = "EscapeMenu"
         '
         'EventDialogWindow1ResponseToolStripMenuItem
         '
+        Me.EventDialogWindow1ResponseToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.EventDialogWindow1ResponseToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.EventDialogWindow1ResponseToolStripMenuItem.Name = "EventDialogWindow1ResponseToolStripMenuItem"
         Me.EventDialogWindow1ResponseToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.EventDialogWindow1ResponseToolStripMenuItem.Text = "EventDialogWindow_1Response"
         '
         'EventDialogWindow2ResponseToolStripMenuItem
         '
+        Me.EventDialogWindow2ResponseToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.EventDialogWindow2ResponseToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.EventDialogWindow2ResponseToolStripMenuItem.Name = "EventDialogWindow2ResponseToolStripMenuItem"
         Me.EventDialogWindow2ResponseToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.EventDialogWindow2ResponseToolStripMenuItem.Text = "EventDialogWindow_2Responses"
         '
         'EventDialogWindow3ResponseToolStripMenuItem
         '
+        Me.EventDialogWindow3ResponseToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.EventDialogWindow3ResponseToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.EventDialogWindow3ResponseToolStripMenuItem.Name = "EventDialogWindow3ResponseToolStripMenuItem"
         Me.EventDialogWindow3ResponseToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.EventDialogWindow3ResponseToolStripMenuItem.Text = "EventDialogWindow_3Responses"
         '
         'EventDialogWindow4ResponseToolStripMenuItem
         '
+        Me.EventDialogWindow4ResponseToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.EventDialogWindow4ResponseToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.EventDialogWindow4ResponseToolStripMenuItem.Name = "EventDialogWindow4ResponseToolStripMenuItem"
         Me.EventDialogWindow4ResponseToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.EventDialogWindow4ResponseToolStripMenuItem.Text = "EventDialogWindow_4Responses"
         '
         'FriendsWindowToolStripMenuItem
         '
+        Me.FriendsWindowToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.FriendsWindowToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.FriendsWindowToolStripMenuItem.Name = "FriendsWindowToolStripMenuItem"
         Me.FriendsWindowToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.FriendsWindowToolStripMenuItem.Text = "FriendsWindow"
         '
         'HotbarWindowToolStripMenuItem
         '
+        Me.HotbarWindowToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.HotbarWindowToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.HotbarWindowToolStripMenuItem.Name = "HotbarWindowToolStripMenuItem"
         Me.HotbarWindowToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.HotbarWindowToolStripMenuItem.Text = "HotbarWindow"
         '
         'InputBoxToolStripMenuItem1
         '
+        Me.InputBoxToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.InputBoxToolStripMenuItem1.ForeColor = System.Drawing.Color.White
         Me.InputBoxToolStripMenuItem1.Name = "InputBoxToolStripMenuItem1"
         Me.InputBoxToolStripMenuItem1.Size = New System.Drawing.Size(247, 22)
         Me.InputBoxToolStripMenuItem1.Text = "InputBox"
         '
         'InventoryItemToolStripMenuItem
         '
+        Me.InventoryItemToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.InventoryItemToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.InventoryItemToolStripMenuItem.Name = "InventoryItemToolStripMenuItem"
         Me.InventoryItemToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.InventoryItemToolStripMenuItem.Text = "InventoryItem"
         '
         'InventoryWindowToolStripMenuItem
         '
+        Me.InventoryWindowToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.InventoryWindowToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.InventoryWindowToolStripMenuItem.Name = "InventoryWindowToolStripMenuItem"
         Me.InventoryWindowToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.InventoryWindowToolStripMenuItem.Text = "InventoryWindow"
         '
         'ItemDescWindowToolStripMenuItem
         '
+        Me.ItemDescWindowToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.ItemDescWindowToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.ItemDescWindowToolStripMenuItem.Name = "ItemDescWindowToolStripMenuItem"
         Me.ItemDescWindowToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.ItemDescWindowToolStripMenuItem.Text = "ItemDescWindow"
         '
         'ItemDescWindowExpandedToolStripMenuItem
         '
+        Me.ItemDescWindowExpandedToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.ItemDescWindowExpandedToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.ItemDescWindowExpandedToolStripMenuItem.Name = "ItemDescWindowExpandedToolStripMenuItem"
         Me.ItemDescWindowExpandedToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.ItemDescWindowExpandedToolStripMenuItem.Text = "ItemDescWindowExpanded"
         '
         'MenuContainerToolStripMenuItem
         '
+        Me.MenuContainerToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.MenuContainerToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.MenuContainerToolStripMenuItem.Name = "MenuContainerToolStripMenuItem"
         Me.MenuContainerToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.MenuContainerToolStripMenuItem.Text = "MenuContainer"
         '
         'OptionsWindowToolStripMenuItem1
         '
+        Me.OptionsWindowToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.OptionsWindowToolStripMenuItem1.ForeColor = System.Drawing.Color.White
         Me.OptionsWindowToolStripMenuItem1.Name = "OptionsWindowToolStripMenuItem1"
         Me.OptionsWindowToolStripMenuItem1.Size = New System.Drawing.Size(247, 22)
         Me.OptionsWindowToolStripMenuItem1.Text = "OptionsWindow"
         '
         'PartyWindowToolStripMenuItem
         '
+        Me.PartyWindowToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.PartyWindowToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.PartyWindowToolStripMenuItem.Name = "PartyWindowToolStripMenuItem"
         Me.PartyWindowToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.PartyWindowToolStripMenuItem.Text = "PartyWindow"
         '
         'PlayerBoxToolStripMenuItem
         '
+        Me.PlayerBoxToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.PlayerBoxToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.PlayerBoxToolStripMenuItem.Name = "PlayerBoxToolStripMenuItem"
         Me.PlayerBoxToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.PlayerBoxToolStripMenuItem.Text = "PlayerBox"
         '
         'PlayerStatusIconToolStripMenuItem
         '
+        Me.PlayerStatusIconToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.PlayerStatusIconToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.PlayerStatusIconToolStripMenuItem.Name = "PlayerStatusIconToolStripMenuItem"
         Me.PlayerStatusIconToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.PlayerStatusIconToolStripMenuItem.Text = "PlayerStatusIcon"
         '
         'QuestOfferWindowToolStripMenuItem
         '
+        Me.QuestOfferWindowToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.QuestOfferWindowToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.QuestOfferWindowToolStripMenuItem.Name = "QuestOfferWindowToolStripMenuItem"
         Me.QuestOfferWindowToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.QuestOfferWindowToolStripMenuItem.Text = "QuestOfferWindow"
         '
         'QuestWindowToolStripMenuItem
         '
+        Me.QuestWindowToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.QuestWindowToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.QuestWindowToolStripMenuItem.Name = "QuestWindowToolStripMenuItem"
         Me.QuestWindowToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.QuestWindowToolStripMenuItem.Text = "QuestWindow"
         '
         'ShopItemToolStripMenuItem
         '
+        Me.ShopItemToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.ShopItemToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.ShopItemToolStripMenuItem.Name = "ShopItemToolStripMenuItem"
         Me.ShopItemToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.ShopItemToolStripMenuItem.Text = "ShopItem"
         '
         'ShopWindowToolStripMenuItem
         '
+        Me.ShopWindowToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.ShopWindowToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.ShopWindowToolStripMenuItem.Name = "ShopWindowToolStripMenuItem"
         Me.ShopWindowToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.ShopWindowToolStripMenuItem.Text = "ShopWindow"
         '
         'SpellMenuItem
         '
+        Me.SpellMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.SpellMenuItem.ForeColor = System.Drawing.Color.White
         Me.SpellMenuItem.Name = "SpellMenuItem"
         Me.SpellMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.SpellMenuItem.Text = "Spell"
         '
         'SpellDescWindowMenuItem
         '
+        Me.SpellDescWindowMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.SpellDescWindowMenuItem.ForeColor = System.Drawing.Color.White
         Me.SpellDescWindowMenuItem.Name = "SpellDescWindowMenuItem"
         Me.SpellDescWindowMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.SpellDescWindowMenuItem.Text = "SpellDescWindow"
         '
         'SpellDescWindowExpandedMenuItem
         '
+        Me.SpellDescWindowExpandedMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.SpellDescWindowExpandedMenuItem.ForeColor = System.Drawing.Color.White
         Me.SpellDescWindowExpandedMenuItem.Name = "SpellDescWindowExpandedMenuItem"
         Me.SpellDescWindowExpandedMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.SpellDescWindowExpandedMenuItem.Text = "SpellDescWindowExpanded"
         '
         'SpellsWindowMenuItem
         '
+        Me.SpellsWindowMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.SpellsWindowMenuItem.ForeColor = System.Drawing.Color.White
         Me.SpellsWindowMenuItem.Name = "SpellsWindowMenuItem"
         Me.SpellsWindowMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.SpellsWindowMenuItem.Text = "SpellsWindow"
         '
         'TargetBoxMenuItem
         '
+        Me.TargetBoxMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.TargetBoxMenuItem.ForeColor = System.Drawing.Color.White
         Me.TargetBoxMenuItem.Name = "TargetBoxMenuItem"
         Me.TargetBoxMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.TargetBoxMenuItem.Text = "TargetBox"
         '
         'TargetStatusIconMenuItem
         '
+        Me.TargetStatusIconMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.TargetStatusIconMenuItem.ForeColor = System.Drawing.Color.White
         Me.TargetStatusIconMenuItem.Name = "TargetStatusIconMenuItem"
         Me.TargetStatusIconMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.TargetStatusIconMenuItem.Text = "TargetStatusIcon"
         '
         'TheirTradeItemMenuItem
         '
+        Me.TheirTradeItemMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.TheirTradeItemMenuItem.ForeColor = System.Drawing.Color.White
         Me.TheirTradeItemMenuItem.Name = "TheirTradeItemMenuItem"
         Me.TheirTradeItemMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.TheirTradeItemMenuItem.Text = "TheirTradeItem"
         '
         'TradeWindowMenuItem
         '
+        Me.TradeWindowMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.TradeWindowMenuItem.ForeColor = System.Drawing.Color.White
         Me.TradeWindowMenuItem.Name = "TradeWindowMenuItem"
         Me.TradeWindowMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.TradeWindowMenuItem.Text = "TradeWindow"
         '
         'YourTradeItemMenuItem
         '
+        Me.YourTradeItemMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.YourTradeItemMenuItem.ForeColor = System.Drawing.Color.White
         Me.YourTradeItemMenuItem.Name = "YourTradeItemMenuItem"
         Me.YourTradeItemMenuItem.Size = New System.Drawing.Size(247, 22)
         Me.YourTradeItemMenuItem.Text = "YourTradeItem"
         '
         'MenuToolStripMenuItem
         '
+        Me.MenuToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.MenuToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CharacterCreationWindowToolStripMenuItem, Me.CharacterSelectionWindowToolStripMenuItem, Me.CreditsWindowToolStripMenuItem, Me.ForgotPasswordWindowToolStripMenuItem, Me.InputBoxToolStripMenuItem, Me.LoginWindowToolStripMenuItem, Me.LogoToolStripMenuItem, Me.MenuWindowToolStripMenuItem, Me.OptionsWindowToolStripMenuItem, Me.RegistrationWindowToolStripMenuItem, Me.ResetPasswordWindowToolStripMenuItem, Me.ServerStatusAreaToolStripMenuItem})
+        Me.MenuToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.MenuToolStripMenuItem.Name = "MenuToolStripMenuItem"
         Me.MenuToolStripMenuItem.Size = New System.Drawing.Size(105, 22)
         Me.MenuToolStripMenuItem.Text = "menu"
         '
         'CharacterCreationWindowToolStripMenuItem
         '
+        Me.CharacterCreationWindowToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.CharacterCreationWindowToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.CharacterCreationWindowToolStripMenuItem.Name = "CharacterCreationWindowToolStripMenuItem"
         Me.CharacterCreationWindowToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
         Me.CharacterCreationWindowToolStripMenuItem.Text = "CharacterCreationWindow"
         '
         'CharacterSelectionWindowToolStripMenuItem
         '
+        Me.CharacterSelectionWindowToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.CharacterSelectionWindowToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.CharacterSelectionWindowToolStripMenuItem.Name = "CharacterSelectionWindowToolStripMenuItem"
         Me.CharacterSelectionWindowToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
         Me.CharacterSelectionWindowToolStripMenuItem.Text = "CharacterSelectionWindow"
         '
         'CreditsWindowToolStripMenuItem
         '
+        Me.CreditsWindowToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.CreditsWindowToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.CreditsWindowToolStripMenuItem.Name = "CreditsWindowToolStripMenuItem"
         Me.CreditsWindowToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
         Me.CreditsWindowToolStripMenuItem.Text = "CreditsWindow"
         '
         'ForgotPasswordWindowToolStripMenuItem
         '
+        Me.ForgotPasswordWindowToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.ForgotPasswordWindowToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.ForgotPasswordWindowToolStripMenuItem.Name = "ForgotPasswordWindowToolStripMenuItem"
         Me.ForgotPasswordWindowToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
         Me.ForgotPasswordWindowToolStripMenuItem.Text = "ForgotPasswordWindow"
         '
         'InputBoxToolStripMenuItem
         '
+        Me.InputBoxToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.InputBoxToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.InputBoxToolStripMenuItem.Name = "InputBoxToolStripMenuItem"
         Me.InputBoxToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
         Me.InputBoxToolStripMenuItem.Text = "InputBox"
         '
         'LoginWindowToolStripMenuItem
         '
+        Me.LoginWindowToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.LoginWindowToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.LoginWindowToolStripMenuItem.Name = "LoginWindowToolStripMenuItem"
         Me.LoginWindowToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
         Me.LoginWindowToolStripMenuItem.Text = "LoginWindow"
         '
         'LogoToolStripMenuItem
         '
+        Me.LogoToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.LogoToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.LogoToolStripMenuItem.Name = "LogoToolStripMenuItem"
         Me.LogoToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
         Me.LogoToolStripMenuItem.Text = "Logo"
         '
         'MenuWindowToolStripMenuItem
         '
+        Me.MenuWindowToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.MenuWindowToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.MenuWindowToolStripMenuItem.Name = "MenuWindowToolStripMenuItem"
         Me.MenuWindowToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
         Me.MenuWindowToolStripMenuItem.Text = "MenuWindow"
         '
         'OptionsWindowToolStripMenuItem
         '
+        Me.OptionsWindowToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.OptionsWindowToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.OptionsWindowToolStripMenuItem.Name = "OptionsWindowToolStripMenuItem"
         Me.OptionsWindowToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
         Me.OptionsWindowToolStripMenuItem.Text = "OptionsWindow"
         '
         'RegistrationWindowToolStripMenuItem
         '
+        Me.RegistrationWindowToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.RegistrationWindowToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.RegistrationWindowToolStripMenuItem.Name = "RegistrationWindowToolStripMenuItem"
         Me.RegistrationWindowToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
         Me.RegistrationWindowToolStripMenuItem.Text = "RegistrationWindow"
         '
         'ResetPasswordWindowToolStripMenuItem
         '
+        Me.ResetPasswordWindowToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.ResetPasswordWindowToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.ResetPasswordWindowToolStripMenuItem.Name = "ResetPasswordWindowToolStripMenuItem"
         Me.ResetPasswordWindowToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
         Me.ResetPasswordWindowToolStripMenuItem.Text = "ResetPasswordWindow"
         '
         'ServerStatusAreaToolStripMenuItem
         '
+        Me.ServerStatusAreaToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.ServerStatusAreaToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.ServerStatusAreaToolStripMenuItem.Name = "ServerStatusAreaToolStripMenuItem"
         Me.ServerStatusAreaToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
         Me.ServerStatusAreaToolStripMenuItem.Text = "ServerStatusArea"
         '
         'SaveToolStripMenuItem
         '
+        Me.SaveToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
         Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(43, 20)
         Me.SaveToolStripMenuItem.Text = "Save"
@@ -6655,77 +7260,6 @@ Partial Class Form1
         Me.AppSettings.Name = "AppSettings"
         Me.AppSettings.Size = New System.Drawing.Size(28, 20)
         '
-        'MainSpellDescWindowPanel
-        '
-        Me.MainSpellDescWindowPanel.BackgroundImage = CType(resources.GetObject("MainSpellDescWindowPanel.BackgroundImage"), System.Drawing.Image)
-        Me.MainSpellDescWindowPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.MainSpellDescWindowPanel.Controls.Add(Me.SpellDescSpellType)
-        Me.MainSpellDescWindowPanel.Controls.Add(Me.SpellDescSpellName)
-        Me.MainSpellDescWindowPanel.Controls.Add(Me.SpellDescSpellIcon)
-        Me.MainSpellDescWindowPanel.Controls.Add(Me.SpellDescSpellDesc)
-        Me.MainSpellDescWindowPanel.Location = New System.Drawing.Point(1283, 1039)
-        Me.MainSpellDescWindowPanel.Name = "MainSpellDescWindowPanel"
-        Me.MainSpellDescWindowPanel.Size = New System.Drawing.Size(185, 244)
-        Me.MainSpellDescWindowPanel.TabIndex = 52
-        Me.MainSpellDescWindowPanel.Visible = False
-        '
-        'SpellDescSpellDescText
-        '
-        Me.SpellDescSpellDescText.AutoSize = True
-        Me.SpellDescSpellDescText.BackColor = System.Drawing.Color.Transparent
-        Me.SpellDescSpellDescText.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SpellDescSpellDescText.ForeColor = System.Drawing.Color.White
-        Me.SpellDescSpellDescText.Location = New System.Drawing.Point(88, 0)
-        Me.SpellDescSpellDescText.Name = "SpellDescSpellDescText"
-        Me.SpellDescSpellDescText.Size = New System.Drawing.Size(172, 17)
-        Me.SpellDescSpellDescText.TabIndex = 26
-        Me.SpellDescSpellDescText.Text = "Rains down arrows in an area."
-        '
-        'SpellDescSpellType
-        '
-        Me.SpellDescSpellType.AutoSize = True
-        Me.SpellDescSpellType.BackColor = System.Drawing.Color.Transparent
-        Me.SpellDescSpellType.Font = New System.Drawing.Font("Source Sans Pro", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SpellDescSpellType.ForeColor = System.Drawing.Color.White
-        Me.SpellDescSpellType.Location = New System.Drawing.Point(4, 92)
-        Me.SpellDescSpellType.Name = "SpellDescSpellType"
-        Me.SpellDescSpellType.Size = New System.Drawing.Size(31, 17)
-        Me.SpellDescSpellType.TabIndex = 24
-        Me.SpellDescSpellType.Text = "AOE"
-        '
-        'SpellDescSpellName
-        '
-        Me.SpellDescSpellName.AutoSize = True
-        Me.SpellDescSpellName.BackColor = System.Drawing.Color.Transparent
-        Me.SpellDescSpellName.Font = New System.Drawing.Font("Source Sans Pro", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SpellDescSpellName.ForeColor = System.Drawing.Color.White
-        Me.SpellDescSpellName.Location = New System.Drawing.Point(4, 8)
-        Me.SpellDescSpellName.Name = "SpellDescSpellName"
-        Me.SpellDescSpellName.Size = New System.Drawing.Size(90, 20)
-        Me.SpellDescSpellName.TabIndex = 23
-        Me.SpellDescSpellName.Text = "Rain Arrows"
-        '
-        'SpellDescSpellIcon
-        '
-        Me.SpellDescSpellIcon.BackColor = System.Drawing.Color.Transparent
-        Me.SpellDescSpellIcon.BackgroundImage = CType(resources.GetObject("SpellDescSpellIcon.BackgroundImage"), System.Drawing.Image)
-        Me.SpellDescSpellIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.SpellDescSpellIcon.Location = New System.Drawing.Point(68, 38)
-        Me.SpellDescSpellIcon.Name = "SpellDescSpellIcon"
-        Me.SpellDescSpellIcon.Size = New System.Drawing.Size(48, 48)
-        Me.SpellDescSpellIcon.TabIndex = 19
-        Me.SpellDescSpellIcon.TabStop = False
-        '
-        'SpellDescSpellDesc
-        '
-        Me.SpellDescSpellDesc.BackColor = System.Drawing.Color.Transparent
-        Me.SpellDescSpellDesc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.SpellDescSpellDesc.Controls.Add(Me.SpellDescSpellDescText)
-        Me.SpellDescSpellDesc.Location = New System.Drawing.Point(4, 120)
-        Me.SpellDescSpellDesc.Name = "SpellDescSpellDesc"
-        Me.SpellDescSpellDesc.Size = New System.Drawing.Size(177, 130)
-        Me.SpellDescSpellDesc.TabIndex = 7
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -6754,6 +7288,34 @@ Partial Class Form1
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).EndInit
         Me.SplitContainer1.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
+        Me.MainYourTradeItem.ResumeLayout(False)
+        Me.MainYourTradeItem.PerformLayout
+        CType(Me.YourTradeItemTradeIcon, System.ComponentModel.ISupportInitialize).EndInit
+        Me.MainTradeWindowPanel.ResumeLayout(False)
+        Me.MainTradeWindowPanel.PerformLayout
+        CType(Me.TradeWindowTradeButton, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.TradeWindowCloseButton, System.ComponentModel.ISupportInitialize).EndInit
+        Me.MainTheirTradeItemPanel.ResumeLayout(False)
+        Me.MainTheirTradeItemPanel.PerformLayout
+        CType(Me.TheirTradeItemTradeIcon, System.ComponentModel.ISupportInitialize).EndInit
+        Me.MainTargetStatusIconPanel.ResumeLayout(False)
+        Me.MainTargetStatusIconPanel.PerformLayout
+        CType(Me.TargetStatusIconStatusIcon, System.ComponentModel.ISupportInitialize).EndInit
+        Me.MainSpellsWindowPanel.ResumeLayout(False)
+        Me.MainSpellsWindowPanel.PerformLayout
+        CType(Me.SpellsWindowCloseButton, System.ComponentModel.ISupportInitialize).EndInit
+        Me.MainSpellDescWindowExpandedPanel.ResumeLayout(False)
+        Me.MainSpellDescWindowExpandedPanel.PerformLayout
+        Me.SpellDescExpandedStats.ResumeLayout(False)
+        Me.SpellDescExpandedStats.PerformLayout
+        CType(Me.SpellDescExpandedSpellIcon, System.ComponentModel.ISupportInitialize).EndInit
+        Me.SpellDescExpandedSpellDesc.ResumeLayout(False)
+        Me.SpellDescExpandedSpellDesc.PerformLayout
+        Me.MainSpellDescWindowPanel.ResumeLayout(False)
+        Me.MainSpellDescWindowPanel.PerformLayout
+        CType(Me.SpellDescSpellIcon, System.ComponentModel.ISupportInitialize).EndInit
+        Me.SpellDescSpellDesc.ResumeLayout(False)
+        Me.SpellDescSpellDesc.PerformLayout
         Me.MainSpellPanel.ResumeLayout(False)
         Me.MainSpellPanel.PerformLayout
         CType(Me.SpellIcon, System.ComponentModel.ISupportInitialize).EndInit
@@ -7117,11 +7679,6 @@ Partial Class Form1
         Me.StatusStrip1.PerformLayout
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout
-        Me.MainSpellDescWindowPanel.ResumeLayout(False)
-        Me.MainSpellDescWindowPanel.PerformLayout
-        CType(Me.SpellDescSpellIcon, System.ComponentModel.ISupportInitialize).EndInit
-        Me.SpellDescSpellDesc.ResumeLayout(False)
-        Me.SpellDescSpellDesc.PerformLayout
         Me.ResumeLayout(False)
         Me.PerformLayout
 
@@ -7653,4 +8210,35 @@ Partial Class Form1
     Friend WithEvents SpellDescSpellIcon As PictureBox
     Friend WithEvents SpellDescSpellDesc As Panel
     Friend WithEvents SpellDescSpellDescText As Label
+    Friend WithEvents MainSpellDescWindowExpandedPanel As Panel
+    Friend WithEvents SpellDescExpandedStats As Panel
+    Friend WithEvents SpellDescExpandedStatsText As Label
+    Friend WithEvents SpellDescExpandedSpellType As Label
+    Friend WithEvents SpellDescExpandedSpellName As Label
+    Friend WithEvents SpellDescExpandedSpellIcon As PictureBox
+    Friend WithEvents SpellDescExpandedSpellDesc As Panel
+    Friend WithEvents SpellDescExpandedSpellDescText As Label
+    Friend WithEvents MainSpellsWindowPanel As Panel
+    Friend WithEvents SpellsWindowSpellsContainer As Panel
+    Friend WithEvents SpellsWindowCloseButton As PictureBox
+    Friend WithEvents SpellsWindowTitle As Label
+    Friend WithEvents MainTargetStatusIconPanel As Panel
+    Friend WithEvents TargetStatusIconDurationLabel As Label
+    Friend WithEvents TargetStatusIconStatusIcon As PictureBox
+    Friend WithEvents MainTheirTradeItemPanel As Panel
+    Friend WithEvents TheirTradeItemTradeValue As Label
+    Friend WithEvents TheirTradeItemTradeIcon As PictureBox
+    Friend WithEvents MainTradeWindowPanel As Panel
+    Friend WithEvents TradeWindowTheirGoldValue As Label
+    Friend WithEvents TradeWindowTheirItemContainer As Panel
+    Friend WithEvents TradeWindowYourGoldValue As Label
+    Friend WithEvents TradeWindowTradeButton As PictureBox
+    Friend WithEvents TradeWindowTheirOfferLabel As Label
+    Friend WithEvents TradeWindowYourOfferLabel As Label
+    Friend WithEvents TradeWindowYourItemContainer As Panel
+    Friend WithEvents TradeWindowCloseButton As PictureBox
+    Friend WithEvents TradeWindowTitle As Label
+    Friend WithEvents MainYourTradeItem As Panel
+    Friend WithEvents YourTradeItemTradeValue As Label
+    Friend WithEvents YourTradeItemTradeIcon As PictureBox
 End Class
