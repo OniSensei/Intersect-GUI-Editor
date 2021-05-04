@@ -117,4 +117,4 @@ OniSensei - [OniSensei#0420](https://discord.com/users/542094478513668176/)
 [stars-url]: https://github.com/OniSensei/Intersect-GUI-Editor/stargazers
 [forks-shield]: https://img.shields.io/github/forks/OniSensei/Intersect-GUI-Editor?style=for-the-badge
 [forks-url]: https://github.com/OniSensei/Intersect-GUI-Editor/network/members
-[product-screenshot]: https://imgur.com/69O1CMQ.gif
+[product-screenshot]: https://imgur.com/aiYpKiI.gif
