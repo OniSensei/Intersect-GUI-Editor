@@ -86,6 +86,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Functions.vb" />
     <Compile Include="JSON Deserializers\CommonControlsGUI.vb" />
     <Compile Include="JSON Deserializers\game\BagItemGUI.vb" />
     <Compile Include="JSON Deserializers\game\BagWindowGUI.vb" />

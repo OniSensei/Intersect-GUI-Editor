@@ -59,4 +59,26 @@ Module EquipmentItemGUI
         Form1.EquipmentIcon.Height = EquipmentIconBounds(3)
         Form1.EquipmentIcon.BackgroundImage = Image.FromFile(Application.StartupPath & "\resources\weapon.png")
     End Sub
+
+    Public Sub UpdateEquipmentItemGUI(ByVal jsonfile As String)
+        Dim sr As StreamReader = New StreamReader(jsonfile)
+        Form1.fullJson.Text = sr.ReadToEnd()
+        sr.Close()
+        Dim imgResources As String = Application.StartupPath & "\gui\"
+        Dim infoPull As New EquipmentItem
+        infoPull = JsonConvert.DeserializeObject(Of EquipmentItem)(Form1.fullJson.Text)
+        Form1.StatusText("[MAIN]     EquipmentItem.json Deserialized")
+
+        Dim mainwindowbounds As String() = infoPull.Bounds.Split(",")
+        Dim EquipmentIconBounds As String() = infoPull.Children.EquipmentIcon.Bounds.Split(",")
+
+        Form1.MainEquipmentItemPanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
+        Form1.MainEquipmentItemPanel.Width = mainwindowbounds(2)
+        Form1.MainEquipmentItemPanel.Height = mainwindowbounds(3)
+        Form1.MainEquipmentItemPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.Texture)
+        Form1.EquipmentIcon.Location = New Point(EquipmentIconBounds(0), EquipmentIconBounds(1))
+        Form1.EquipmentIcon.Width = EquipmentIconBounds(2)
+        Form1.EquipmentIcon.Height = EquipmentIconBounds(3)
+        Form1.EquipmentIcon.BackgroundImage = Image.FromFile(Application.StartupPath & "\resources\weapon.png")
+    End Sub
 End Module

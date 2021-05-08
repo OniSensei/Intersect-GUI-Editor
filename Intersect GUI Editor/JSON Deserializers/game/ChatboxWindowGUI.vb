@@ -181,4 +181,30 @@ Module ChatboxWindowGUI
         Form1.ChatboxInputField.Width = ChatboxInputFieldBounds(2)
         Form1.ChatboxInputField.Height = ChatboxInputFieldBounds(3)
     End Sub
+
+    Public Sub UpdateChatboxWindowGUI(ByVal jsonfile As String)
+        Dim sr As StreamReader = New StreamReader(jsonfile)
+        Form1.fullJson.Text = sr.ReadToEnd()
+        sr.Close()
+        Dim imgResources As String = Application.StartupPath & "\gui\"
+        Dim infoPull As New ChatboxWindow
+        infoPull = JsonConvert.DeserializeObject(Of ChatboxWindow)(Form1.fullJson.Text)
+        Form1.StatusText("[MAIN]     ChatboxWindow.json Deserialized")
+
+        Dim mainwindowbounds As String() = infoPull.Bounds.Split(",")
+        Dim ChatbarBounds As String() = infoPull.Children.Chatbar.Bounds.Split(",")
+        Dim ChatboxInputFieldBounds As String() = infoPull.Children.ChatboxInputField.Bounds.Split(",")
+
+        Form1.MainChatboxWindowPanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
+        Form1.MainChatboxWindowPanel.Width = mainwindowbounds(2)
+        Form1.MainChatboxWindowPanel.Height = mainwindowbounds(3)
+        Form1.MainChatboxWindowPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.Texture)
+        Form1.Chatbar.Location = New Point(ChatbarBounds(0), ChatbarBounds(1))
+        Form1.Chatbar.Width = ChatbarBounds(2)
+        Form1.Chatbar.Height = ChatbarBounds(3)
+        Form1.Chatbar.BackgroundImage = Image.FromFile(imgResources & infoPull.Children.Chatbar.Texture)
+        Form1.ChatboxInputField.Location = New Point(ChatboxInputFieldBounds(0), ChatboxInputFieldBounds(1))
+        Form1.ChatboxInputField.Width = ChatboxInputFieldBounds(2)
+        Form1.ChatboxInputField.Height = ChatboxInputFieldBounds(3)
+    End Sub
 End Module

@@ -181,4 +181,45 @@ Module CraftingWindowGUI
         Form1.CraftingWindowProgressBar.Height = ProgressBarContainerBounds(3)
         Form1.CraftingWindowProgressBar.BackgroundImage = Image.FromFile(imgResources & infoPull.InnerPanel.Children.ProgressBarContainer.Children.ProgressBar.Texture)
     End Sub
+
+    Public Sub UpdateCraftingWindowGUI(ByVal jsonfile As String)
+        Dim sr As StreamReader = New StreamReader(jsonfile)
+        Form1.fullJson.Text = sr.ReadToEnd()
+        sr.Close()
+        Dim imgResources As String = Application.StartupPath & "\gui\"
+        Dim infoPull As New CraftingWindow
+        infoPull = JsonConvert.DeserializeObject(Of CraftingWindow)(Form1.fullJson.Text)
+        Form1.StatusText("[MAIN]     CraftingWindow.json Deserialized")
+
+        Dim mainwindowbounds As String() = infoPull.Bounds.Split(",")
+        Dim TitleBounds As String() = infoPull.Title.Padding.Split(",")
+        Dim CloseButtonBounds As String() = infoPull.CloseButton.Bounds.Split(",")
+        Dim IngredientsContainerBounds As String() = infoPull.InnerPanel.Children.IngredientsContainer.Bounds.Split(",")
+        Dim RecipesTitleBounds As String() = infoPull.InnerPanel.Children.RecipesTitle.Bounds.Split(",")
+        Dim IngredientsTitleBounds As String() = infoPull.InnerPanel.Children.IngredientsTitle.Bounds.Split(",")
+        Dim ProductLabelBounds As String() = infoPull.InnerPanel.Children.ProductLabel.Bounds.Split(",")
+        Dim ProgressBarContainerBounds As String() = infoPull.InnerPanel.Children.ProgressBarContainer.Bounds.Split(",")
+        Dim CraftButtonBounds As String() = infoPull.InnerPanel.Children.CraftButton.Bounds.Split(",")
+
+        Form1.MainCraftingWindowPanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
+        Form1.MainCraftingWindowPanel.Width = mainwindowbounds(2)
+        Form1.MainCraftingWindowPanel.Height = mainwindowbounds(3)
+        Form1.MainCraftingWindowPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.ActiveImage)
+        Form1.CraftingWindowTitle.Location = New Point(TitleBounds(0), TitleBounds(1))
+        Form1.CraftingWindowCloseButton.Location = New Point(CloseButtonBounds(0), CloseButtonBounds(1))
+        Form1.CraftingWindowCloseButton.Width = CloseButtonBounds(2)
+        Form1.CraftingWindowCloseButton.Height = CloseButtonBounds(3)
+        Form1.CraftingWindowCloseButton.BackgroundImage = Image.FromFile(imgResources & infoPull.CloseButton.NormalImage)
+        Form1.IngredientsContainer.Location = New Point(IngredientsContainerBounds(0), IngredientsContainerBounds(1))
+        Form1.IngredientsContainer.Width = IngredientsContainerBounds(2)
+        Form1.IngredientsContainer.Height = IngredientsContainerBounds(3)
+        Form1.CraftingWindowTitle.Location = New Point(TitleBounds(0), TitleBounds(1))
+        Form1.RecipesTitle.Location = New Point(RecipesTitleBounds(0), RecipesTitleBounds(1))
+        Form1.IngredientsTitle.Location = New Point(IngredientsTitleBounds(0), IngredientsTitleBounds(1))
+        Form1.ProductLabel.Location = New Point(ProductLabelBounds(0), ProductLabelBounds(1))
+        Form1.CraftingWindowProgressBar.Location = New Point(ProgressBarContainerBounds(0), ProgressBarContainerBounds(1))
+        Form1.CraftingWindowProgressBar.Width = ProgressBarContainerBounds(2)
+        Form1.CraftingWindowProgressBar.Height = ProgressBarContainerBounds(3)
+        Form1.CraftingWindowProgressBar.BackgroundImage = Image.FromFile(imgResources & infoPull.InnerPanel.Children.ProgressBarContainer.Children.ProgressBar.Texture)
+    End Sub
 End Module

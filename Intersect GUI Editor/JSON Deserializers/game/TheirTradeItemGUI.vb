@@ -88,4 +88,28 @@ Module TheirTradeItemGUI
         Form1.TheirTradeItemTradeIcon.BackgroundImage = Image.FromFile(Application.StartupPath & "\resources\armor.png")
         Form1.TheirTradeItemTradeValue.Location = New Point(TradeValueBounds(0), TradeValueBounds(1))
     End Sub
+
+    Public Sub UpdateTheirTradeItemGUI(ByVal jsonfile As String)
+        Dim sr As StreamReader = New StreamReader(jsonfile)
+        Form1.fullJson.Text = sr.ReadToEnd()
+        sr.Close()
+        Dim imgResources As String = Application.StartupPath & "\gui\"
+        Dim infoPull As New TheirTradeItem
+        infoPull = JsonConvert.DeserializeObject(Of TheirTradeItem)(Form1.fullJson.Text)
+        Form1.StatusText("[MAIN]     TheirTradeItem.json Deserialized")
+
+        Dim mainwindowbounds As String() = infoPull.Bounds.Split(",")
+        Dim TradeIconBounds As String() = infoPull.Children.TradeIcon.Bounds.Split(",")
+        Dim TradeValueBounds As String() = infoPull.Children.TradeValue.Bounds.Split(",")
+
+        Form1.MainTheirTradeItemPanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
+        Form1.MainTheirTradeItemPanel.Width = mainwindowbounds(2)
+        Form1.MainTheirTradeItemPanel.Height = mainwindowbounds(3)
+        Form1.MainTheirTradeItemPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.Texture)
+        Form1.TheirTradeItemTradeIcon.Location = New Point(TradeIconBounds(0), TradeIconBounds(1))
+        Form1.TheirTradeItemTradeIcon.Width = TradeIconBounds(2)
+        Form1.TheirTradeItemTradeIcon.Height = TradeIconBounds(3)
+        Form1.TheirTradeItemTradeIcon.BackgroundImage = Image.FromFile(Application.StartupPath & "\resources\armor.png")
+        Form1.TheirTradeItemTradeValue.Location = New Point(TradeValueBounds(0), TradeValueBounds(1))
+    End Sub
 End Module

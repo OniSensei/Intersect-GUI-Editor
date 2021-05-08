@@ -121,4 +121,28 @@ Module BankWindowGUI
         Form1.BankWindowCloseButton.Height = CloseButtonBounds(3)
         Form1.BankWindowCloseButton.BackgroundImage = Image.FromFile(imgResources & infoPull.CloseButton.NormalImage)
     End Sub
+
+    Public Sub UpdateBankWindowGUI(ByVal jsonfile As String)
+        Dim sr As StreamReader = New StreamReader(jsonfile)
+        Form1.fullJson.Text = sr.ReadToEnd()
+        sr.Close()
+        Dim imgResources As String = Application.StartupPath & "\gui\"
+        Dim infoPull As New BankWindow
+        infoPull = JsonConvert.DeserializeObject(Of BankWindow)(Form1.fullJson.Text)
+        Form1.StatusText("[MAIN]     BankWindow.json Deserialized")
+
+        Dim mainwindowbounds As String() = infoPull.Bounds.Split(",")
+        Dim TitleBounds As String() = infoPull.Title.Padding.Split(",")
+        Dim CloseButtonBounds As String() = infoPull.CloseButton.Bounds.Split(",")
+
+        Form1.MainBankWindowPanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
+        Form1.MainBankWindowPanel.Width = mainwindowbounds(2)
+        Form1.MainBankWindowPanel.Height = mainwindowbounds(3)
+        Form1.MainBankWindowPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.ActiveImage)
+        Form1.BankWindowTitle.Location = New Point(TitleBounds(0), TitleBounds(1))
+        Form1.BankWindowCloseButton.Location = New Point(CloseButtonBounds(0), CloseButtonBounds(1))
+        Form1.BankWindowCloseButton.Width = CloseButtonBounds(2)
+        Form1.BankWindowCloseButton.Height = CloseButtonBounds(3)
+        Form1.BankWindowCloseButton.BackgroundImage = Image.FromFile(imgResources & infoPull.CloseButton.NormalImage)
+    End Sub
 End Module

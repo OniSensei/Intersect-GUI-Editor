@@ -65,4 +65,26 @@ Module ShopItemGUI
         Form1.ShopItemIcon.Height = ShopItemIconBounds(3)
         Form1.ShopItemIcon.BackgroundImage = Image.FromFile(Application.StartupPath & "\resources\potion.png")
     End Sub
+
+    Public Sub UpdateShopItemGUI(ByVal jsonfile As String)
+        Dim sr As StreamReader = New StreamReader(jsonfile)
+        Form1.fullJson.Text = sr.ReadToEnd()
+        sr.Close()
+        Dim imgResources As String = Application.StartupPath & "\gui\"
+        Dim infoPull As New ShopItem
+        infoPull = JsonConvert.DeserializeObject(Of ShopItem)(Form1.fullJson.Text)
+        Form1.StatusText("[MAIN]     ShopItem.json Deserialized")
+
+        Dim mainwindowbounds As String() = infoPull.Bounds.Split(",")
+        Dim ShopItemIconBounds As String() = infoPull.Children.ShopItemIcon.Bounds.Split(",")
+
+        Form1.MainShopItemPanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
+        Form1.MainShopItemPanel.Width = mainwindowbounds(2)
+        Form1.MainShopItemPanel.Height = mainwindowbounds(3)
+        Form1.MainShopItemPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.Texture)
+        Form1.ShopItemIcon.Location = New Point(ShopItemIconBounds(0), ShopItemIconBounds(1))
+        Form1.ShopItemIcon.Width = ShopItemIconBounds(2)
+        Form1.ShopItemIcon.Height = ShopItemIconBounds(3)
+        Form1.ShopItemIcon.BackgroundImage = Image.FromFile(Application.StartupPath & "\resources\potion.png")
+    End Sub
 End Module

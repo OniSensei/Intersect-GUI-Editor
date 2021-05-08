@@ -208,4 +208,41 @@ Module EventDialogWindow1ResonseGUI
         Form1.Dialog1EventDialogAreaInnerPanel.Width = InnerPanelBounds(2)
         Form1.Dialog1EventDialogAreaInnerPanel.Height = InnerPanelBounds(3)
     End Sub
+
+    Public Sub UpdateEventDialogWindow1ResponseGUI(ByVal jsonfile As String)
+        Dim sr As StreamReader = New StreamReader(jsonfile)
+        Form1.fullJson.Text = sr.ReadToEnd()
+        sr.Close()
+        Dim imgResources As String = Application.StartupPath & "\gui\"
+        Dim infoPull As New EventDialogWindow1Resonse
+        infoPull = JsonConvert.DeserializeObject(Of EventDialogWindow1Resonse)(Form1.fullJson.Text)
+        Form1.StatusText("[MAIN]     EventDialogWindow_1Response.json Deserialized")
+
+        Dim mainwindowbounds As String() = infoPull.Bounds.Split(",")
+        Dim EventFacePanelBounds As String() = infoPull.Children.EventFacePanel.Bounds.Split(",")
+        Dim EventDialogAreaBounds As String() = infoPull.Children.EventDialogArea.Bounds.Split(",")
+        Dim InnerPanelBounds As String() = infoPull.Children.EventDialogArea.InnerPanel.Bounds.Split(",")
+        Dim EventDialogLabelBounds As String() = infoPull.Children.EventDialogArea.InnerPanel.Children.EventDialogLabel.Bounds.Split(",")
+        Dim Response1ButtonBounds As String() = infoPull.Children.Response1Button.Bounds.Split(",")
+
+        Form1.MainEventDialogWindow1ResponsePanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
+        Form1.MainEventDialogWindow1ResponsePanel.Width = mainwindowbounds(2)
+        Form1.MainEventDialogWindow1ResponsePanel.Height = mainwindowbounds(3)
+        Form1.MainEventDialogWindow1ResponsePanel.BackgroundImage = Image.FromFile(imgResources & infoPull.Texture)
+        Form1.Dialog1EventDialogLabel.Location = New Point(EventDialogLabelBounds(0), EventDialogLabelBounds(1))
+        Form1.Dialog1Response1Button.Location = New Point(Response1ButtonBounds(0), Response1ButtonBounds(1))
+        Form1.Dialog1Response1Button.Width = Response1ButtonBounds(2)
+        Form1.Dialog1Response1Button.Height = Response1ButtonBounds(3)
+        Form1.Dialog1Response1Button.BackgroundImage = Image.FromFile(imgResources & infoPull.Children.Response1Button.NormalImage)
+        Form1.Dialog1EventFacePanel.Location = New Point(EventFacePanelBounds(0), EventFacePanelBounds(1))
+        Form1.Dialog1EventFacePanel.Width = EventFacePanelBounds(2)
+        Form1.Dialog1EventFacePanel.Height = EventFacePanelBounds(3)
+        Form1.Dialog1EventFacePanel.BackgroundImage = Image.FromFile(Application.StartupPath & "\resources\face.png")
+        Form1.Dialog1EventDialogArea.Location = New Point(EventDialogAreaBounds(0), EventDialogAreaBounds(1))
+        Form1.Dialog1EventDialogArea.Width = EventDialogAreaBounds(2)
+        Form1.Dialog1EventDialogArea.Height = EventDialogAreaBounds(3)
+        Form1.Dialog1EventDialogAreaInnerPanel.Location = New Point(InnerPanelBounds(0), InnerPanelBounds(1))
+        Form1.Dialog1EventDialogAreaInnerPanel.Width = InnerPanelBounds(2)
+        Form1.Dialog1EventDialogAreaInnerPanel.Height = InnerPanelBounds(3)
+    End Sub
 End Module

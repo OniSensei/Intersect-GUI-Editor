@@ -99,7 +99,6 @@ Module QuestsWindowGUI
         Public Property ItemRightClickSound As String
     End Class
 
-
     Public Sub LoadQuestsWindowGUI(ByVal jsonfile As String)
         Form1.StatusText("[MAIN]     Opening " & jsonfile)
         Form1.jsonValue.Text = ""
@@ -115,6 +114,54 @@ Module QuestsWindowGUI
         Dim sr As StreamReader = New StreamReader(jsonfile)
         Form1.fullJson.Text = sr.ReadToEnd()
         Form1.JTokenTreeUserControl1.SetJsonSource(Form1.fullJson.Text)
+        sr.Close()
+        Dim imgResources As String = Application.StartupPath & "\gui\"
+        Dim infoPull As New QuestsWindow
+        infoPull = JsonConvert.DeserializeObject(Of QuestsWindow)(Form1.fullJson.Text)
+        Form1.StatusText("[MAIN]     QuestsWindow.json Deserialized")
+
+        Dim mainwindowbounds As String() = infoPull.Bounds.Split(",")
+        Dim TitleBounds As String() = infoPull.Title.Padding.Split(",")
+        Dim CloseButtonBounds As String() = infoPull.CloseButton.Bounds.Split(",")
+        Dim QuestListBounds As String() = infoPull.InnerPanel.Children.QuestList.Bounds.Split(",")
+        Dim QuestTitleBounds As String() = infoPull.InnerPanel.Children.QuestTitle.Bounds.Split(",")
+        Dim QuestStatusBounds As String() = infoPull.InnerPanel.Children.QuestStatus.Bounds.Split(",")
+        Dim QuestDescriptionBounds As String() = infoPull.InnerPanel.Children.QuestDescription.Bounds.Split(",")
+        Dim QuestDescriptionTemplateBounds As String() = infoPull.InnerPanel.Children.QuestDescriptionTemplate.Bounds.Split(",")
+        Dim BackButtonBounds As String() = infoPull.InnerPanel.Children.BackButton.Bounds.Split(",")
+        Dim AbandonQuestButtonBounds As String() = infoPull.InnerPanel.Children.AbandonQuestButton.Bounds.Split(",")
+
+        Form1.MainQuestsWindowPanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
+        Form1.MainQuestsWindowPanel.Width = mainwindowbounds(2)
+        Form1.MainQuestsWindowPanel.Height = mainwindowbounds(3)
+        Form1.MainQuestsWindowPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.ActiveImage)
+        Form1.QuestsWindowTitle.Location = New Point(TitleBounds(0), TitleBounds(1))
+        Form1.QuestsWindowCloseButton.Location = New Point(CloseButtonBounds(0), CloseButtonBounds(1))
+        Form1.QuestsWindowCloseButton.Width = CloseButtonBounds(2)
+        Form1.QuestsWindowCloseButton.Height = CloseButtonBounds(3)
+        Form1.QuestsWindowCloseButton.BackgroundImage = Image.FromFile(imgResources & infoPull.CloseButton.NormalImage)
+        Form1.QuestsWindowQuestList.Location = New Point(QuestListBounds(0), QuestListBounds(1))
+        Form1.QuestsWindowQuestList.Width = QuestListBounds(2)
+        Form1.QuestsWindowQuestList.Height = QuestListBounds(3)
+        Form1.QuestsWindowQuestTitle.Location = New Point(QuestTitleBounds(0), QuestTitleBounds(1))
+        Form1.QuestsWindowQuestStatus.Location = New Point(QuestStatusBounds(0), QuestStatusBounds(1))
+        Form1.QuestsWindowQuestDescription.Location = New Point(QuestDescriptionBounds(0), QuestDescriptionBounds(1))
+        Form1.QuestsWindowQuestDescription.Width = QuestDescriptionBounds(2)
+        Form1.QuestsWindowQuestDescription.Height = QuestDescriptionBounds(3)
+        Form1.QuestsWindowQuestDescriptionTemplate.Location = New Point(QuestDescriptionTemplateBounds(0), QuestDescriptionTemplateBounds(1))
+        Form1.QuestsWindowBackButton.Location = New Point(BackButtonBounds(0), BackButtonBounds(1))
+        Form1.QuestsWindowBackButton.Width = BackButtonBounds(2)
+        Form1.QuestsWindowBackButton.Height = BackButtonBounds(3)
+        Form1.QuestsWindowBackButton.BackgroundImage = Image.FromFile(imgResources & infoPull.InnerPanel.Children.BackButton.NormalImage)
+        Form1.QuestsWindowAbandonQuestButton.Location = New Point(AbandonQuestButtonBounds(0), AbandonQuestButtonBounds(1))
+        Form1.QuestsWindowAbandonQuestButton.Width = AbandonQuestButtonBounds(2)
+        Form1.QuestsWindowAbandonQuestButton.Height = AbandonQuestButtonBounds(3)
+        Form1.QuestsWindowAbandonQuestButton.BackgroundImage = Image.FromFile(imgResources & infoPull.InnerPanel.Children.AbandonQuestButton.NormalImage)
+    End Sub
+
+    Public Sub UpdateQuestsWindowGUI(ByVal jsonfile As String)
+        Dim sr As StreamReader = New StreamReader(jsonfile)
+        Form1.fullJson.Text = sr.ReadToEnd()
         sr.Close()
         Dim imgResources As String = Application.StartupPath & "\gui\"
         Dim infoPull As New QuestsWindow

@@ -98,4 +98,36 @@ Module SpellDescWindowGUI
         Form1.SpellDescSpellDesc.Width = SpellDescBounds(2)
         Form1.SpellDescSpellDesc.Height = SpellDescBounds(3)
     End Sub
+
+    Public Sub UpdateSpellDescWindowGUI(ByVal jsonfile As String)
+        Dim sr As StreamReader = New StreamReader(jsonfile)
+        Form1.fullJson.Text = sr.ReadToEnd()
+        sr.Close()
+        Dim imgResources As String = Application.StartupPath & "\gui\"
+        Dim infoPull As New SpellDescWindow
+        infoPull = JsonConvert.DeserializeObject(Of SpellDescWindow)(Form1.fullJson.Text)
+        Form1.StatusText("[MAIN]     SpellDescWindow.json Deserialized")
+
+        Dim mainwindowbounds As String() = infoPull.Bounds.Split(",")
+        Dim SpellIconBounds As String() = infoPull.Children.SpellIcon.Bounds.Split(",")
+        Dim SpellNameBounds As String() = infoPull.Children.SpellName.Bounds.Split(",")
+        Dim SpellTypeBounds As String() = infoPull.Children.SpellType.Bounds.Split(",")
+        Dim SpellDescBounds As String() = infoPull.Children.SpellDesc.Bounds.Split(",")
+        Dim SpellDescTextBounds As String() = infoPull.Children.SpellDescText.Bounds.Split(",")
+
+        Form1.MainSpellDescWindowPanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
+        Form1.MainSpellDescWindowPanel.Width = mainwindowbounds(2)
+        Form1.MainSpellDescWindowPanel.Height = mainwindowbounds(3)
+        Form1.MainSpellDescWindowPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.Texture)
+        Form1.SpellDescSpellIcon.Location = New Point(SpellIconBounds(0), SpellIconBounds(1))
+        Form1.SpellDescSpellIcon.Width = SpellIconBounds(2)
+        Form1.SpellDescSpellIcon.Height = SpellIconBounds(3)
+        Form1.SpellDescSpellIcon.BackgroundImage = Image.FromFile(Application.StartupPath & "\resources\spell.png")
+        Form1.SpellDescSpellName.Location = New Point(SpellNameBounds(0), SpellNameBounds(1))
+        Form1.SpellDescSpellType.Location = New Point(SpellTypeBounds(0), SpellTypeBounds(1))
+        Form1.SpellDescSpellDescText.Location = New Point(SpellDescTextBounds(0), SpellDescTextBounds(1))
+        Form1.SpellDescSpellDesc.Location = New Point(SpellDescBounds(0), SpellDescBounds(1))
+        Form1.SpellDescSpellDesc.Width = SpellDescBounds(2)
+        Form1.SpellDescSpellDesc.Height = SpellDescBounds(3)
+    End Sub
 End Module

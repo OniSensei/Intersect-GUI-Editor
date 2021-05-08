@@ -166,4 +166,33 @@ Module FriendsWindowGUI
         Form1.AddFriendPopupButton.Height = AddFriendPopupButtonBounds(3)
         Form1.AddFriendPopupButton.BackgroundImage = Image.FromFile(imgResources & infoPull.InnerPanel.Children.AddFriendPopupButton.NormalImage)
     End Sub
+
+    Public Sub UpdateFriendsWindowGUI(ByVal jsonfile As String)
+        Dim sr As StreamReader = New StreamReader(jsonfile)
+        Form1.fullJson.Text = sr.ReadToEnd()
+        sr.Close()
+        Dim imgResources As String = Application.StartupPath & "\gui\"
+        Dim infoPull As New FriendsWindow
+        infoPull = JsonConvert.DeserializeObject(Of FriendsWindow)(Form1.fullJson.Text)
+        Form1.StatusText("[MAIN]     FriendsWindow.json Deserialized")
+
+        Dim mainwindowbounds As String() = infoPull.Bounds.Split(",")
+        Dim TitleBounds As String() = infoPull.Title.Padding.Split(",")
+        Dim CloseButtonBounds As String() = infoPull.CloseButton.Bounds.Split(",")
+        Dim AddFriendPopupButtonBounds As String() = infoPull.InnerPanel.Children.AddFriendPopupButton.Bounds.Split(",")
+
+        Form1.MainFriendsWindowPanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
+        Form1.MainFriendsWindowPanel.Width = mainwindowbounds(2)
+        Form1.MainFriendsWindowPanel.Height = mainwindowbounds(3)
+        Form1.MainFriendsWindowPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.ActiveImage)
+        Form1.FriendsWindowTitle.Location = New Point(TitleBounds(0), TitleBounds(1))
+        Form1.FriendsWindowCloseButton.Location = New Point(CloseButtonBounds(0), CloseButtonBounds(1))
+        Form1.FriendsWindowCloseButton.Width = CloseButtonBounds(2)
+        Form1.FriendsWindowCloseButton.Height = CloseButtonBounds(3)
+        Form1.FriendsWindowCloseButton.BackgroundImage = Image.FromFile(imgResources & infoPull.CloseButton.NormalImage)
+        Form1.AddFriendPopupButton.Location = New Point(AddFriendPopupButtonBounds(0), AddFriendPopupButtonBounds(1))
+        Form1.AddFriendPopupButton.Width = AddFriendPopupButtonBounds(2)
+        Form1.AddFriendPopupButton.Height = AddFriendPopupButtonBounds(3)
+        Form1.AddFriendPopupButton.BackgroundImage = Image.FromFile(imgResources & infoPull.InnerPanel.Children.AddFriendPopupButton.NormalImage)
+    End Sub
 End Module

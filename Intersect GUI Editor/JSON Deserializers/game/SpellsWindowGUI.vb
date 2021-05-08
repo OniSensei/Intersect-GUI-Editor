@@ -121,4 +121,28 @@ Module SpellsWindowGUI
         Form1.SpellsWindowCloseButton.Height = CloseButtonBounds(3)
         Form1.SpellsWindowCloseButton.BackgroundImage = Image.FromFile(imgResources & infoPull.CloseButton.NormalImage)
     End Sub
+
+    Public Sub UpdateSpellsWindowGUI(ByVal jsonfile As String)
+        Dim sr As StreamReader = New StreamReader(jsonfile)
+        Form1.fullJson.Text = sr.ReadToEnd()
+        sr.Close()
+        Dim imgResources As String = Application.StartupPath & "\gui\"
+        Dim infoPull As New SpellsWindow
+        infoPull = JsonConvert.DeserializeObject(Of SpellsWindow)(Form1.fullJson.Text)
+        Form1.StatusText("[MAIN]     SpellsWindow.json Deserialized")
+
+        Dim mainwindowbounds As String() = infoPull.Bounds.Split(",")
+        Dim TitleBounds As String() = infoPull.Title.Padding.Split(",")
+        Dim CloseButtonBounds As String() = infoPull.CloseButton.Bounds.Split(",")
+
+        Form1.MainSpellsWindowPanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
+        Form1.MainSpellsWindowPanel.Width = mainwindowbounds(2)
+        Form1.MainSpellsWindowPanel.Height = mainwindowbounds(3)
+        Form1.MainSpellsWindowPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.ActiveImage)
+        Form1.SpellsWindowTitle.Location = New Point(TitleBounds(0), TitleBounds(1))
+        Form1.SpellsWindowCloseButton.Location = New Point(CloseButtonBounds(0), CloseButtonBounds(1))
+        Form1.SpellsWindowCloseButton.Width = CloseButtonBounds(2)
+        Form1.SpellsWindowCloseButton.Height = CloseButtonBounds(3)
+        Form1.SpellsWindowCloseButton.BackgroundImage = Image.FromFile(imgResources & infoPull.CloseButton.NormalImage)
+    End Sub
 End Module

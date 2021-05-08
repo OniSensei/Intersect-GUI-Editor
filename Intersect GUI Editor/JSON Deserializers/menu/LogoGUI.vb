@@ -54,4 +54,22 @@ Module LogoGUI
         Form1.MainLogoPanel.Height = mainwindowbounds(3)
         Form1.MainLogoPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.Texture)
     End Sub
+
+    Public Sub UpdateLogoGUI(ByVal jsonfile As String)
+        Dim sr As StreamReader = New StreamReader(jsonfile)
+        Form1.fullJson.Text = sr.ReadToEnd()
+        Form1.JTokenTreeUserControl1.SetJsonSource(Form1.fullJson.Text)
+        sr.Close()
+        Dim imgResources As String = Application.StartupPath & "\gui\"
+        Dim infoPull As New Logo
+        infoPull = JsonConvert.DeserializeObject(Of Logo)(Form1.fullJson.Text)
+        Form1.StatusText("[MAIN]     Logo.json Deserialized")
+
+        Dim mainwindowbounds As String() = infoPull.Bounds.Split(",")
+
+        Form1.MainLogoPanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
+        Form1.MainLogoPanel.Width = mainwindowbounds(2)
+        Form1.MainLogoPanel.Height = mainwindowbounds(3)
+        Form1.MainLogoPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.Texture)
+    End Sub
 End Module

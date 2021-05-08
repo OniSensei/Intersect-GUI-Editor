@@ -580,6 +580,7 @@ Partial Class Form1
         Me.RefreshBtn = New System.Windows.Forms.ToolStripMenuItem()
         Me.gridToggle = New System.Windows.Forms.ToolStripMenuItem()
         Me.AppSettings = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.mainSplitContainer, System.ComponentModel.ISupportInitialize).BeginInit
         Me.mainSplitContainer.Panel1.SuspendLayout
         Me.mainSplitContainer.Panel2.SuspendLayout
@@ -1087,6 +1088,7 @@ Partial Class Form1
         'TabPage2
         '
         Me.TabPage2.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(36, Byte), Integer), CType(CType(49, Byte), Integer))
+        Me.TabPage2.Controls.Add(Me.Button1)
         Me.TabPage2.Controls.Add(Me.fullJson)
         Me.TabPage2.Location = New System.Drawing.Point(4, 4)
         Me.TabPage2.Name = "TabPage2"
@@ -1097,11 +1099,12 @@ Partial Class Form1
         '
         'fullJson
         '
-        Me.fullJson.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.fullJson.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.fullJson.Location = New System.Drawing.Point(3, 3)
         Me.fullJson.Name = "fullJson"
-        Me.fullJson.ReadOnly = True
-        Me.fullJson.Size = New System.Drawing.Size(268, 575)
+        Me.fullJson.Size = New System.Drawing.Size(268, 544)
         Me.fullJson.TabIndex = 0
         Me.fullJson.Text = ""
         '
@@ -7260,6 +7263,17 @@ Partial Class Form1
         Me.AppSettings.Name = "AppSettings"
         Me.AppSettings.Size = New System.Drawing.Size(28, 20)
         '
+        'Button1
+        '
+        Me.Button1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button1.Location = New System.Drawing.Point(6, 552)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(262, 23)
+        Me.Button1.TabIndex = 1
+        Me.Button1.Text = "Update"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -8241,4 +8255,5 @@ Partial Class Form1
     Friend WithEvents MainYourTradeItem As Panel
     Friend WithEvents YourTradeItemTradeValue As Label
     Friend WithEvents YourTradeItemTradeIcon As PictureBox
+    Friend WithEvents Button1 As Button
 End Class

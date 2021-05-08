@@ -70,4 +70,30 @@ Module CraftingIngredientGUI
         Form1.IngredientItemValue.Width = IngredientItemValueBounds(2)
         Form1.IngredientItemValue.Height = IngredientItemValueBounds(3)
     End Sub
+
+    Public Sub UpdateCraftingIngredientGUI(ByVal jsonfile As String)
+        Dim sr As StreamReader = New StreamReader(jsonfile)
+        Form1.fullJson.Text = sr.ReadToEnd()
+        sr.Close()
+        Dim imgResources As String = Application.StartupPath & "\gui\"
+        Dim infoPull As New CraftingIngredient
+        infoPull = JsonConvert.DeserializeObject(Of CraftingIngredient)(Form1.fullJson.Text)
+        Form1.StatusText("[MAIN]     CraftingIngredient.json Deserialized")
+
+        Dim mainwindowbounds As String() = infoPull.Bounds.Split(",")
+        Dim IngredientItemIconBounds As String() = infoPull.Children.IngredientItemIcon.Bounds.Split(",")
+        Dim IngredientItemValueBounds As String() = infoPull.Children.IngredientItemValue.Bounds.Split(",")
+
+        Form1.MainCraftingIngredientPanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
+        Form1.MainCraftingIngredientPanel.Width = mainwindowbounds(2)
+        Form1.MainCraftingIngredientPanel.Height = mainwindowbounds(3)
+        Form1.MainCraftingIngredientPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.Texture)
+        Form1.IngredientItemIcon.Location = New Point(IngredientItemIconBounds(0), IngredientItemIconBounds(1))
+        Form1.IngredientItemIcon.Width = IngredientItemIconBounds(2)
+        Form1.IngredientItemIcon.Height = IngredientItemIconBounds(3)
+        Form1.IngredientItemIcon.BackgroundImage = Image.FromFile(Application.StartupPath & "\resources\itemIcon.png")
+        Form1.IngredientItemValue.Location = New Point(IngredientItemValueBounds(0), IngredientItemValueBounds(1))
+        Form1.IngredientItemValue.Width = IngredientItemValueBounds(2)
+        Form1.IngredientItemValue.Height = IngredientItemValueBounds(3)
+    End Sub
 End Module

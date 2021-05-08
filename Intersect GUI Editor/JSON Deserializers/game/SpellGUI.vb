@@ -97,4 +97,28 @@ Module SpellGUI
         Form1.SpellIcon.BackgroundImage = Image.FromFile(Application.StartupPath & "\resources\spell.png")
         Form1.SpellCooldownLabel.Location = New Point(SpellCooldownLabelBounds(0), SpellCooldownLabelBounds(1))
     End Sub
+
+    Public Sub UpdateSpellGUI(ByVal jsonfile As String)
+        Dim sr As StreamReader = New StreamReader(jsonfile)
+        Form1.fullJson.Text = sr.ReadToEnd()
+        sr.Close()
+        Dim imgResources As String = Application.StartupPath & "\gui\"
+        Dim infoPull As New Spell
+        infoPull = JsonConvert.DeserializeObject(Of Spell)(Form1.fullJson.Text)
+        Form1.StatusText("[MAIN]     Spell.json Deserialized")
+
+        Dim mainwindowbounds As String() = infoPull.Bounds.Split(",")
+        Dim SpellIconBounds As String() = infoPull.Children.SpellIcon.Bounds.Split(",")
+        Dim SpellCooldownLabelBounds As String() = infoPull.Children.SpellIcon.Children.SpellCooldownLabel.Bounds.Split(",")
+
+        Form1.MainSpellPanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
+        Form1.MainSpellPanel.Width = mainwindowbounds(2)
+        Form1.MainSpellPanel.Height = mainwindowbounds(3)
+        Form1.MainSpellPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.Texture)
+        Form1.SpellIcon.Location = New Point(SpellIconBounds(0), SpellIconBounds(1))
+        Form1.SpellIcon.Width = SpellIconBounds(2)
+        Form1.SpellIcon.Height = SpellIconBounds(3)
+        Form1.SpellIcon.BackgroundImage = Image.FromFile(Application.StartupPath & "\resources\spell.png")
+        Form1.SpellCooldownLabel.Location = New Point(SpellCooldownLabelBounds(0), SpellCooldownLabelBounds(1))
+    End Sub
 End Module

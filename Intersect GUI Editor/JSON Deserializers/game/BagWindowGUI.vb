@@ -121,4 +121,28 @@ Module BagWindowGUI
         Form1.BagWindowCloseButton.Height = CloseButtonBounds(3)
         Form1.BagWindowCloseButton.BackgroundImage = Image.FromFile(imgResources & infoPull.CloseButton.NormalImage)
     End Sub
+
+    Public Sub UpdateBagWindowGUI(ByVal jsonfile As String)
+        Dim sr As StreamReader = New StreamReader(jsonfile)
+        Form1.fullJson.Text = sr.ReadToEnd()
+        sr.Close()
+        Dim imgResources As String = Application.StartupPath & "\gui\"
+        Dim infoPull As New BagWindow
+        infoPull = JsonConvert.DeserializeObject(Of BagWindow)(Form1.fullJson.Text)
+        Form1.StatusText("[MAIN]     BagWindow.json Deserialized")
+
+        Dim mainwindowbounds As String() = infoPull.Bounds.Split(",")
+        Dim TitleBounds As String() = infoPull.Title.Padding.Split(",")
+        Dim CloseButtonBounds As String() = infoPull.CloseButton.Bounds.Split(",")
+
+        Form1.MainBagWindowPanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
+        Form1.MainBagWindowPanel.Width = mainwindowbounds(2)
+        Form1.MainBagWindowPanel.Height = mainwindowbounds(3)
+        Form1.MainBagWindowPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.ActiveImage)
+        Form1.BagWindowTitle.Location = New Point(TitleBounds(0), TitleBounds(1))
+        Form1.BagWindowCloseButton.Location = New Point(CloseButtonBounds(0), CloseButtonBounds(1))
+        Form1.BagWindowCloseButton.Width = CloseButtonBounds(2)
+        Form1.BagWindowCloseButton.Height = CloseButtonBounds(3)
+        Form1.BagWindowCloseButton.BackgroundImage = Image.FromFile(imgResources & infoPull.CloseButton.NormalImage)
+    End Sub
 End Module

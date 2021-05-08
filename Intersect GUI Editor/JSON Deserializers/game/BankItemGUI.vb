@@ -68,4 +68,28 @@ Module BankItemGUI
         Form1.BankItemIcon.BackgroundImage = Image.FromFile(Application.StartupPath & "\resources\itemIcon.png")
         Form1.BankItemValue.Location = New Point(BankItemValueBounds(0), BankItemValueBounds(1))
     End Sub
+
+    Public Sub UpdateBankItemGUI(ByVal jsonfile As String)
+        Dim sr As StreamReader = New StreamReader(jsonfile)
+        Form1.fullJson.Text = sr.ReadToEnd()
+        sr.Close()
+        Dim imgResources As String = Application.StartupPath & "\gui\"
+        Dim infoPull As New BankItem
+        infoPull = JsonConvert.DeserializeObject(Of BankItem)(Form1.fullJson.Text)
+        Form1.StatusText("[MAIN]     BankItem.json Deserialized")
+
+        Dim mainwindowbounds As String() = infoPull.Bounds.Split(",")
+        Dim BankItemIconBounds As String() = infoPull.Children.BankItemIcon.Bounds.Split(",")
+        Dim BankItemValueBounds As String() = infoPull.Children.BankItemValue.Bounds.Split(",")
+
+        Form1.MainBankItemPanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
+        Form1.MainBankItemPanel.Width = mainwindowbounds(2)
+        Form1.MainBankItemPanel.Height = mainwindowbounds(3)
+        Form1.MainBankItemPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.Texture)
+        Form1.BankItemIcon.Location = New Point(BankItemIconBounds(0), BankItemIconBounds(1))
+        Form1.BankItemIcon.Width = BankItemIconBounds(2)
+        Form1.BankItemIcon.Height = BankItemIconBounds(3)
+        Form1.BankItemIcon.BackgroundImage = Image.FromFile(Application.StartupPath & "\resources\itemIcon.png")
+        Form1.BankItemValue.Location = New Point(BankItemValueBounds(0), BankItemValueBounds(1))
+    End Sub
 End Module

@@ -68,4 +68,28 @@ Module BagItemGUI
         Form1.BagItemIcon.BackgroundImage = Image.FromFile(Application.StartupPath & "\resources\itemIcon.png")
         Form1.BagItemValue.Location = New Point(BagItemValueBounds(0), BagItemValueBounds(1))
     End Sub
+
+    Public Sub UpdateBagItemGUI(ByVal jsonfile As String)
+        Dim sr As StreamReader = New StreamReader(jsonfile)
+        Form1.fullJson.Text = sr.ReadToEnd()
+        sr.Close()
+        Dim imgResources As String = Application.StartupPath & "\gui\"
+        Dim infoPull As New BagItem
+        infoPull = JsonConvert.DeserializeObject(Of BagItem)(Form1.fullJson.Text)
+        Form1.StatusText("[MAIN]     BagItem.json Deserialized")
+
+        Dim mainwindowbounds As String() = infoPull.Bounds.Split(",")
+        Dim BagItemIconBounds As String() = infoPull.Children.BagItemIcon.Bounds.Split(",")
+        Dim BagItemValueBounds As String() = infoPull.Children.BagItemValue.Bounds.Split(",")
+
+        Form1.MainBagItemPanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
+        Form1.MainBagItemPanel.Width = mainwindowbounds(2)
+        Form1.MainBagItemPanel.Height = mainwindowbounds(3)
+        Form1.MainBagItemPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.Texture)
+        Form1.BagItemIcon.Location = New Point(BagItemIconBounds(0), BagItemIconBounds(1))
+        Form1.BagItemIcon.Width = BagItemIconBounds(2)
+        Form1.BagItemIcon.Height = BagItemIconBounds(3)
+        Form1.BagItemIcon.BackgroundImage = Image.FromFile(Application.StartupPath & "\resources\itemIcon.png")
+        Form1.BagItemValue.Location = New Point(BagItemValueBounds(0), BagItemValueBounds(1))
+    End Sub
 End Module

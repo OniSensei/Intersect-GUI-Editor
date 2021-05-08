@@ -130,4 +130,38 @@ Module CreditsWindowGUI
         Form1.CreditsBackButton.Height = BackButtonBounds(3)
         Form1.CreditsBackButton.BackgroundImage = Image.FromFile(imgResources & infoPull.Children.BackButton.NormalImage)
     End Sub
+
+    Public Sub UpdateCreditsGUI(ByVal jsonfile As String)
+        Dim sr As StreamReader = New StreamReader(jsonfile)
+        Form1.fullJson.Text = sr.ReadToEnd()
+        sr.Close()
+        Dim imgResources As String = Application.StartupPath & "\gui\"
+        Dim infoPull As New CreditsWindow
+        infoPull = JsonConvert.DeserializeObject(Of CreditsWindow)(Form1.fullJson.Text)
+        Form1.StatusText("[MAIN]     CreditsWindow.json Deserialized")
+
+        Dim mainwindowbounds As String() = infoPull.Bounds.Split(",")
+        Dim CreditsHeaderBounds As String() = infoPull.Children.CreditsHeader.TextPadding.Split(",")
+        Dim CreditsScrollviewBounds As String() = infoPull.Children.CreditsScrollview.Bounds.Split(",")
+        Dim CreditsInnerPanelBounds As String() = infoPull.Children.CreditsScrollview.InnerPanel.Bounds.Split(",")
+        Dim CreditsLabelBounds As String() = infoPull.Children.CreditsScrollview.InnerPanel.Children.CreditsLabel.Bounds.Split(",")
+        Dim BackButtonBounds As String() = infoPull.Children.BackButton.Bounds.Split(",")
+
+        Form1.MainCreditsPanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
+        Form1.MainCreditsPanel.Width = mainwindowbounds(2)
+        Form1.MainCreditsPanel.Height = mainwindowbounds(3)
+        Form1.MainCreditsPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.Texture)
+        Form1.CreditsHeader.Location = New Point(CreditsHeaderBounds(0), CreditsHeaderBounds(1))
+        Form1.CreditsScrollview.Location = New Point(CreditsScrollviewBounds(0), CreditsScrollviewBounds(1))
+        Form1.CreditsScrollview.Width = CreditsScrollviewBounds(2)
+        Form1.CreditsScrollview.Height = CreditsScrollviewBounds(3)
+        Form1.CreditsInnerPanel.Location = New Point(CreditsInnerPanelBounds(0), CreditsInnerPanelBounds(1))
+        Form1.CreditsInnerPanel.Width = CreditsInnerPanelBounds(2)
+        Form1.CreditsInnerPanel.Height = CreditsInnerPanelBounds(3)
+        Form1.CreditsLabel.Location = New Point(CreditsLabelBounds(0), CreditsLabelBounds(1))
+        Form1.CreditsBackButton.Location = New Point(BackButtonBounds(0), BackButtonBounds(1))
+        Form1.CreditsBackButton.Width = BackButtonBounds(2)
+        Form1.CreditsBackButton.Height = BackButtonBounds(3)
+        Form1.CreditsBackButton.BackgroundImage = Image.FromFile(imgResources & infoPull.Children.BackButton.NormalImage)
+    End Sub
 End Module

@@ -89,7 +89,6 @@ Module InputBoxGUI
         Public Property TextboxText As IntersectField
     End Class
 
-
     Public Sub LoadInputBoxGUI(ByVal jsonfile As String)
         Form1.StatusText("[MAIN]     Opening " & jsonfile)
         Form1.jsonValue.Text = ""
@@ -104,6 +103,62 @@ Module InputBoxGUI
         Dim sr As StreamReader = New StreamReader(jsonfile)
         Form1.fullJson.Text = sr.ReadToEnd()
         Form1.JTokenTreeUserControl1.SetJsonSource(Form1.fullJson.Text)
+        sr.Close()
+        Dim imgResources As String = Application.StartupPath & "\gui\"
+        Dim infoPull As New InputBox
+        infoPull = JsonConvert.DeserializeObject(Of InputBox)(Form1.fullJson.Text)
+        Form1.StatusText("[MAIN]     InputBox.json Deserialized")
+
+        Dim mainwindowbounds As String() = infoPull.Bounds.Split(",")
+        Dim InputBoxTitleBounds As String() = infoPull.Title.TextPadding.Split(",")
+        Dim InputBoxCloseButtonBounds As String() = infoPull.Closebutton.Bounds.Split(",")
+        Dim InputBoxInnerPanelBounds As String() = infoPull.InnerPanel.Bounds.Split(",")
+        Dim InputBoxInnerPanelTextboxBounds As String() = infoPull.InnerPanel.Children.Textbox.Bounds.Split(",")
+        Dim InputBoxInnerPanelTextboxTextBounds As String() = infoPull.InnerPanel.Children.Textbox.Children.TextboxText.Bounds.Split(",")
+        Dim InputBoxInnerPanelYesButtonBounds As String() = infoPull.InnerPanel.Children.YesButton.Bounds.Split(",")
+        Dim InputBoxInnerPanelNoButtonBounds As String() = infoPull.InnerPanel.Children.NoButton.Bounds.Split(",")
+        Dim InputBoxInnerPanelOkayButtonBounds As String() = infoPull.InnerPanel.Children.OkayButton.Bounds.Split(",")
+        Dim InputBoxInnerPanelPromptLabelBounds As String() = infoPull.InnerPanel.Children.PromptLabel.Bounds.Split(",")
+
+        Form1.MainInputBoxPanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
+        Form1.MainInputBoxPanel.Width = mainwindowbounds(2)
+        Form1.MainInputBoxPanel.Height = mainwindowbounds(3)
+        Form1.MainInputBoxPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.ActiveImage)
+        Form1.InputBoxTitle.Location = New Point(InputBoxTitleBounds(0), InputBoxTitleBounds(1))
+        Form1.InputBoxCloseButton.Location = New Point(InputBoxCloseButtonBounds(0), InputBoxCloseButtonBounds(1))
+        Form1.InputBoxCloseButton.Width = InputBoxCloseButtonBounds(2)
+        Form1.InputBoxCloseButton.Height = InputBoxCloseButtonBounds(3)
+        Form1.InputBoxCloseButton.BackgroundImage = Image.FromFile(imgResources & infoPull.Closebutton.NormalImage)
+        Form1.InputBoxInnerPanel.Location = New Point(InputBoxInnerPanelBounds(0), InputBoxInnerPanelBounds(1))
+        Form1.InputBoxInnerPanel.Width = InputBoxInnerPanelBounds(2)
+        Form1.InputBoxInnerPanel.Height = InputBoxInnerPanelBounds(3)
+        Form1.InputBoxTextBox.Location = New Point(InputBoxInnerPanelTextboxBounds(0), InputBoxInnerPanelTextboxBounds(1))
+        Form1.InputBoxTextBox.Width = InputBoxInnerPanelTextboxBounds(2)
+        Form1.InputBoxTextBox.Height = InputBoxInnerPanelTextboxBounds(3)
+        Form1.InputBoxTextBox.BackgroundImage = Image.FromFile(imgResources & infoPull.InnerPanel.Children.Textbox.Texture)
+        Form1.InputBoxTextboxText.Location = New Point(InputBoxInnerPanelTextboxTextBounds(0), InputBoxInnerPanelTextboxTextBounds(1))
+        Form1.InputBoxTextboxText.Width = InputBoxInnerPanelTextboxTextBounds(2)
+        Form1.InputBoxTextboxText.Height = InputBoxInnerPanelTextboxTextBounds(3)
+        Form1.YesButton.Location = New Point(InputBoxInnerPanelYesButtonBounds(0), InputBoxInnerPanelYesButtonBounds(1))
+        Form1.YesButton.Width = InputBoxInnerPanelYesButtonBounds(2)
+        Form1.YesButton.Height = InputBoxInnerPanelYesButtonBounds(3)
+        Form1.YesButton.BackgroundImage = Image.FromFile(imgResources & infoPull.InnerPanel.Children.YesButton.NormalImage)
+        Form1.NoButton.Location = New Point(InputBoxInnerPanelNoButtonBounds(0), InputBoxInnerPanelNoButtonBounds(1))
+        Form1.NoButton.Width = InputBoxInnerPanelNoButtonBounds(2)
+        Form1.NoButton.Height = InputBoxInnerPanelNoButtonBounds(3)
+        Form1.NoButton.BackgroundImage = Image.FromFile(imgResources & infoPull.InnerPanel.Children.NoButton.NormalImage)
+        Form1.OkayButton.Location = New Point(InputBoxInnerPanelOkayButtonBounds(0), InputBoxInnerPanelOkayButtonBounds(1))
+        Form1.OkayButton.Width = InputBoxInnerPanelOkayButtonBounds(2)
+        Form1.OkayButton.Height = InputBoxInnerPanelOkayButtonBounds(3)
+        Form1.OkayButton.BackgroundImage = Image.FromFile(imgResources & infoPull.InnerPanel.Children.OkayButton.NormalImage)
+        Form1.PromptLabel.Location = New Point(InputBoxInnerPanelPromptLabelBounds(0), InputBoxInnerPanelPromptLabelBounds(1))
+        Form1.PromptLabel.Width = InputBoxInnerPanelPromptLabelBounds(2)
+        Form1.PromptLabel.Height = InputBoxInnerPanelPromptLabelBounds(3)
+    End Sub
+
+    Public Sub UpdateInputBoxGUI(ByVal jsonfile As String)
+        Dim sr As StreamReader = New StreamReader(jsonfile)
+        Form1.fullJson.Text = sr.ReadToEnd()
         sr.Close()
         Dim imgResources As String = Application.StartupPath & "\gui\"
         Dim infoPull As New InputBox

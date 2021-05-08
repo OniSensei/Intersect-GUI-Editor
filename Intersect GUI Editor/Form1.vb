@@ -1,5 +1,4 @@
 ﻿Imports System.IO
-Imports System.Text
 Imports Newtonsoft.Json
 
 Public Class Form1
@@ -8,10 +7,8 @@ Public Class Form1
         Return _rnd.Next(low, high)
     End Function
 
-    Public tempPath As String = Application.StartupPath & "\temp\"
     Public menuGuiPath As String = Application.StartupPath & "\gui\layouts\menu\"
     Public gameGuiPath As String = Application.StartupPath & "\gui\layouts\game\"
-    Public tempFileName As String
     Public openFile As String
     Dim loginchecked As Boolean = False
     Dim malechecked As Boolean = False
@@ -2989,132 +2986,31 @@ Public Class Form1
             Else
                 jsonValue.Text = """" & JTokenTreeUserControl1.jsonTreeView.SelectedNode.Text & """"
             End If
+
+            If JTokenTreeUserControl1.jsonTreeView.SelectedNode.Text.Contains("Bounds") Then
+                StatusText("Bounds: 'Position X, Position Y, Width, Height'")
+            ElseIf JTokenTreeUserControl1.jsonTreeView.SelectedNode.Text.Contains("Padding") Then
+                StatusText("Padding: 'X1, Y1, X2, Y2'")
+            ElseIf JTokenTreeUserControl1.jsonTreeView.SelectedNode.Text.Contains("AlignmentEdgeDistances") Then
+                StatusText("AlignmentEdgeDistances: 'X1, Y1, X2, Y2'")
+            ElseIf JTokenTreeUserControl1.jsonTreeView.SelectedNode.Text.Contains("Margin") Then
+                StatusText("Margin: 'X1, Y1, X2, Y2'")
+            ElseIf JTokenTreeUserControl1.jsonTreeView.SelectedNode.Text.Contains("AlignmentTransform") Then
+                StatusText("Margin: 'X, Y'")
+            ElseIf JTokenTreeUserControl1.jsonTreeView.SelectedNode.Text.Contains("RenderColor") Then
+                StatusText("RenderColor: 'RED, BLUE, GREEN, ALPHA'")
+            End If
         End If
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles updateBtn.Click
-        If jsonType.Text <> "Object" AndAlso jsonType.Text <> "Property" Then
-            gridoverlay = False
-
-            StatusText("[MAIN]     Updating TreeView")
+        If jsonType.Text <> "Object" Then
             JTokenTreeUserControl1.UpdateSelected(jsonValue.Text)
-            jsonValue.Text = JsonConvert.SerializeObject(
-                JsonConvert.DeserializeObject(jsonValue.Text),
-                Formatting.Indented)
 
-            tempFileName = RandomNumber(10000, 10000000)
+            gridoverlay = False
+            StatusText("[MAIN]     Updating TreeView")
 
-            Using writer = New FileStream(tempPath & "tmp_" & tempFileName & ".json", FileMode.Create)
-                JTokenTreeUserControl1.SaveJson(writer)
-            End Using
-
-            Using reader = New StreamReader(tempPath & "tmp_" & tempFileName & ".json")
-                If openFile.Contains("LoginWindow.json") Then
-                    LoadLoginGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("CharacterCreationWindow.json") Then
-                    LoadCharacterCreationGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("CharacterSelectionWindow.json") Then
-                    LoadCharacterSelectionGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("CreditsWindow.json") Then
-                    LoadCreditsGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("ForgotPasswordWindow.json") Then
-                    LoadForgotPasswordGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("InputBox.json") Then
-                    LoadInputBoxGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("Logo.json") Then
-                    LoadLogoGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("MenuWindow.json") Then
-                    LoadMenuWindow(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("OptionsWindow.json") Then
-                    LoadOptionsWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("RegistrationWindow.json") Then
-                    LoadRegistrationWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("ResetPasswordWindow.json") Then
-                    LoadResetPasswordWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("ServerStatusArea.json") Then
-                    LoadServerStatusAreaGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("BagItem.json") Then
-                    LoadBagItemGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("BagWindow.json") Then
-                    LoadBagWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("BankItem.json") Then
-                    LoadBankItemGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("BankWindow.json") Then
-                    LoadBankWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("CharacterWindow.json") Then
-                    LoadCharacterWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("ChatboxWindow.json") Then
-                    LoadChatboxWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("CraftedItem.json") Then
-                    LoadCraftedItemGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("CraftingIngredient.json") Then
-                    LoadCraftingIngredientGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("CraftingWindow.json") Then
-                    LoadCraftingWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("EquipmentItem.json") Then
-                    LoadEquipmentItemGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("EscapeMenu.json") Then
-                    LoadEscapeMenuGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("EventDialogWindow_1Response.json") Then
-                    LoadEventDialogWindow1ResponseGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("EventDialogWindow_2Responses.json") Then
-                    LoadEventDialogWindow2ResponseGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("EventDialogWindow_3Responses.json") Then
-                    LoadEventDialogWindow3ResponseGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("EventDialogWindow_4Responses.json") Then
-                    LoadEventDialogWindow4ResponseGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("FriendsWindow.json") Then
-                    LoadFriendsWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("HotbarWindow.json") Then
-                    LoadHotbarWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("InputBox.json") Then
-                    LoadGameInputBoxGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("InventoryItem.json") Then
-                    LoadInventoryItemGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("InventoryWindow.json") Then
-                    LoadInventoryWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("ItemDescWindow.json") Then
-                    LoadItemDescWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("ItemDescWindowExpanded.json") Then
-                    LoadItemDescWindowExpandedGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("MenuContainer.json") Then
-                    LoadMenuContainerGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("PartyWindow.json") Then
-                    LoadPartyWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("PlayerBox.json") Then
-                    LoadPlayerBoxGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("PlayerStatusIcon.json") Then
-                    LoadPlayerStatusIconGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("QuestOfferWindow.json") Then
-                    LoadQuestOfferWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("QuestsWindow.json") Then
-                    LoadQuestsWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("ShopItem.json") Then
-                    LoadShopItemGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("ShopWindow.json") Then
-                    LoadShopWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("Spell.json") Then
-                    LoadSpellGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("SpellDescWindow.json") Then
-                    LoadSpellDescWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("SpellDescWindowExpanded.json") Then
-                    LoadSpellDescWindowExpandedGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("SpellsWindow.json") Then
-                    LoadSpellsWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("TargetBox.json") Then
-                    LoadPlayerBoxGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("TargetStatusIcon.json") Then
-                    LoadTargetStatusIconGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("TheirTradeItem.json") Then
-                    LoadTheirTradeItemGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("TradeWindow.json") Then
-                    LoadTradeWindowGUI(tempPath & "tmp_" & tempFileName & ".json")
-                ElseIf openFile.Contains("YourTradeItem.json") Then
-                    LoadYourTradeItemGUI(tempPath & "tmp_" & tempFileName & ".json")
-                End If
-            End Using
-
-            My.Computer.FileSystem.DeleteFile(tempPath & "tmp_" & tempFileName & ".json")
+            ReloadText(openFile, "treeview")
         End If
     End Sub
 
@@ -5575,5 +5471,18 @@ Public Class Form1
         Dim infoPull As TradeWindow
         infoPull = JsonConvert.DeserializeObject(Of TradeWindow)(fullJson.Text)
         TradeWindowCloseButton.BackgroundImage = Image.FromFile(Application.StartupPath & "\gui\" & infoPull.CloseButton.NormalImage)
+    End Sub
+
+    Private Sub TabControl1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles TabControl1.SelectedIndexChanged
+        If openFile <> "" Then
+            ReloadText(openFile, "text")
+        End If
+    End Sub
+
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
+        If jsonType.Text <> "Object" Then
+            gridoverlay = False
+            ReloadText(openFile, "text")
+        End If
     End Sub
 End Class

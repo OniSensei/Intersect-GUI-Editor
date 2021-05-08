@@ -60,4 +60,23 @@ Module ServerStatusAreaGUI
         Form1.MainServerStatusAreaPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.Texture)
         Form1.ServerStatusAreaServerStatusLabel.Location = New Point(ServerStatusLabelBounds(0), ServerStatusLabelBounds(1))
     End Sub
+
+    Public Sub UpdateServerStatusAreaGUI(ByVal jsonfile As String)
+        Dim sr As StreamReader = New StreamReader(jsonfile)
+        Form1.fullJson.Text = sr.ReadToEnd()
+        sr.Close()
+        Dim imgResources As String = Application.StartupPath & "\gui\"
+        Dim infoPull As New ServerStatusArea
+        infoPull = JsonConvert.DeserializeObject(Of ServerStatusArea)(Form1.fullJson.Text)
+        Form1.StatusText("[MAIN]     ServerStatusArea.json Deserialized")
+
+        Dim mainwindowbounds As String() = infoPull.Bounds.Split(",")
+        Dim ServerStatusLabelBounds As String() = infoPull.Children.ServerStatusLabel.Bounds.Split(",")
+
+        Form1.MainServerStatusAreaPanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
+        Form1.MainServerStatusAreaPanel.Width = mainwindowbounds(2)
+        Form1.MainServerStatusAreaPanel.Height = mainwindowbounds(3)
+        Form1.MainServerStatusAreaPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.Texture)
+        Form1.ServerStatusAreaServerStatusLabel.Location = New Point(ServerStatusLabelBounds(0), ServerStatusLabelBounds(1))
+    End Sub
 End Module

@@ -70,4 +70,28 @@ Module PlayerStatusIconGUI
         Form1.StatusIcon.BackgroundImage = Image.FromFile(Application.StartupPath & "\resources\poison.png")
         Form1.DurationLabel.Location = New Point(DurationLabelBounds(0), DurationLabelBounds(1))
     End Sub
+
+    Public Sub UpdatePlayerStatusIconGUI(ByVal jsonfile As String)
+        Dim sr As StreamReader = New StreamReader(jsonfile)
+        Form1.fullJson.Text = sr.ReadToEnd()
+        sr.Close()
+        Dim imgResources As String = Application.StartupPath & "\gui\"
+        Dim infoPull As New PlayerStatusIcon
+        infoPull = JsonConvert.DeserializeObject(Of PlayerStatusIcon)(Form1.fullJson.Text)
+        Form1.StatusText("[MAIN]     PlayerStatusIcon.json Deserialized")
+
+        Dim mainwindowbounds As String() = infoPull.Bounds.Split(",")
+        Dim StatusIconBounds As String() = infoPull.Children.StatusIcon.Bounds.Split(",")
+        Dim DurationLabelBounds As String() = infoPull.Children.DurationLabel.Bounds.Split(",")
+
+        Form1.MainPlayerStatusIconPanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
+        Form1.MainPlayerStatusIconPanel.Width = mainwindowbounds(2)
+        Form1.MainPlayerStatusIconPanel.Height = mainwindowbounds(3)
+        Form1.MainPlayerStatusIconPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.Texture)
+        Form1.StatusIcon.Location = New Point(StatusIconBounds(0), StatusIconBounds(1))
+        Form1.StatusIcon.Width = StatusIconBounds(2)
+        Form1.StatusIcon.Height = StatusIconBounds(3)
+        Form1.StatusIcon.BackgroundImage = Image.FromFile(Application.StartupPath & "\resources\poison.png")
+        Form1.DurationLabel.Location = New Point(DurationLabelBounds(0), DurationLabelBounds(1))
+    End Sub
 End Module

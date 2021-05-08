@@ -65,7 +65,6 @@ Module InventoryItemGUI
         Public Property InventoryItemCooldownLabel As IntersectLabel
     End Class
 
-
     Public Sub LoadInventoryItemGUI(ByVal jsonfile As String)
         Form1.StatusText("[MAIN]     Opening " & jsonfile)
         Form1.jsonValue.Text = ""
@@ -81,6 +80,34 @@ Module InventoryItemGUI
         Dim sr As StreamReader = New StreamReader(jsonfile)
         Form1.fullJson.Text = sr.ReadToEnd()
         Form1.JTokenTreeUserControl1.SetJsonSource(Form1.fullJson.Text)
+        sr.Close()
+        Dim imgResources As String = Application.StartupPath & "\gui\"
+        Dim infoPull As New InventoryItem
+        infoPull = JsonConvert.DeserializeObject(Of InventoryItem)(Form1.fullJson.Text)
+        Form1.StatusText("[MAIN]     InventoryItem.json Deserialized")
+
+        Dim mainwindowbounds As String() = infoPull.Bounds.Split(",")
+        Dim InventoryItemIconBounds As String() = infoPull.Children.InventoryItemIcon.Bounds.Split(",")
+        Dim InventoryItemEquippedLabelBounds As String() = infoPull.Children.InventoryItemIcon.Children.InventoryItemEquippedLabel.Bounds.Split(",")
+        Dim InventoryItemCooldownLabelBounds As String() = infoPull.Children.InventoryItemIcon.Children.InventoryItemCooldownLabel.Bounds.Split(",")
+        Dim InventoryItemValueBounds As String() = infoPull.Children.InventoryItemValue.Bounds.Split(",")
+
+        Form1.MainInventoryItemPanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
+        Form1.MainBagItemPanel.Width = mainwindowbounds(2)
+        Form1.MainBagItemPanel.Height = mainwindowbounds(3)
+        Form1.MainBagItemPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.Texture)
+        Form1.InventoryItemIcon.Location = New Point(InventoryItemIconBounds(0), InventoryItemIconBounds(1))
+        Form1.InventoryItemIcon.Width = InventoryItemIconBounds(2)
+        Form1.InventoryItemIcon.Height = InventoryItemIconBounds(3)
+        Form1.InventoryItemIcon.BackgroundImage = Image.FromFile(Application.StartupPath & "\resources\itemIcon.png")
+        Form1.InventoryItemValue.Location = New Point(InventoryItemValueBounds(0), InventoryItemValueBounds(1))
+        Form1.InventoryItemEquippedLabel.Location = New Point(InventoryItemEquippedLabelBounds(0), InventoryItemEquippedLabelBounds(1))
+        Form1.InventoryItemCooldownLabel.Location = New Point(InventoryItemCooldownLabelBounds(0), InventoryItemCooldownLabelBounds(1))
+    End Sub
+
+    Public Sub UpdateInventoryItemGUI(ByVal jsonfile As String)
+        Dim sr As StreamReader = New StreamReader(jsonfile)
+        Form1.fullJson.Text = sr.ReadToEnd()
         sr.Close()
         Dim imgResources As String = Application.StartupPath & "\gui\"
         Dim infoPull As New InventoryItem

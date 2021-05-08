@@ -121,4 +121,29 @@ Module InventoryWindowGUI
         Form1.InventoryWindowCloseButton.Height = CloseButtonBounds(3)
         Form1.InventoryWindowCloseButton.BackgroundImage = Image.FromFile(imgResources & infoPull.CloseButton.NormalImage)
     End Sub
+
+    Public Sub UpdateInventoryWindowGUI(ByVal jsonfile As String)
+
+        Dim sr As StreamReader = New StreamReader(jsonfile)
+        Form1.fullJson.Text = sr.ReadToEnd()
+        sr.Close()
+        Dim imgResources As String = Application.StartupPath & "\gui\"
+        Dim infoPull As New InventoryWindow
+        infoPull = JsonConvert.DeserializeObject(Of InventoryWindow)(Form1.fullJson.Text)
+        Form1.StatusText("[MAIN]     InventoryWindow.json Deserialized")
+
+        Dim mainwindowbounds As String() = infoPull.Bounds.Split(",")
+        Dim TitleBounds As String() = infoPull.Title.Padding.Split(",")
+        Dim CloseButtonBounds As String() = infoPull.CloseButton.Bounds.Split(",")
+
+        Form1.MainInventoryWindowPanel.Location = New Point(mainwindowbounds(0), mainwindowbounds(1))
+        Form1.MainInventoryWindowPanel.Width = mainwindowbounds(2)
+        Form1.MainInventoryWindowPanel.Height = mainwindowbounds(3)
+        Form1.MainInventoryWindowPanel.BackgroundImage = Image.FromFile(imgResources & infoPull.ActiveImage)
+        Form1.InventoryWindowTitle.Location = New Point(TitleBounds(0), TitleBounds(1))
+        Form1.InventoryWindowCloseButton.Location = New Point(CloseButtonBounds(0), CloseButtonBounds(1))
+        Form1.InventoryWindowCloseButton.Width = CloseButtonBounds(2)
+        Form1.InventoryWindowCloseButton.Height = CloseButtonBounds(3)
+        Form1.InventoryWindowCloseButton.BackgroundImage = Image.FromFile(imgResources & infoPull.CloseButton.NormalImage)
+    End Sub
 End Module
