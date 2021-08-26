@@ -2,14 +2,18 @@
 
 Module Functions
     Private _rnd As New Random()
+
     Function RandomNumber(ByVal low As Integer, ByVal high As Integer) As Integer
         Return _rnd.Next(low, high)
     End Function
+
     Public Sub ReloadText(ByVal windowname As String, ByVal type As String)
         Dim tempPath As String = Application.StartupPath & "\temp\"
         Dim tempFileName As String
 
         tempFileName = RandomNumber(10000, 10000000)
+
+        Directory.CreateDirectory(tempPath)
 
         Select Case type
             Case "treeview"
@@ -17,7 +21,8 @@ Module Functions
                     Form1.JTokenTreeUserControl1.SaveJson(writer)
                 End Using
             Case "text"
-                My.Computer.FileSystem.WriteAllText(tempPath & "tmp_" & tempFileName & ".json", Form1.fullJson.Text, False)
+                My.Computer.FileSystem.WriteAllText(tempPath & "tmp_" & tempFileName & ".json", Form1.fullJson.Text,
+                                                    False)
                 Form1.JTokenTreeUserControl1.SetJsonSource(Form1.fullJson.Text)
         End Select
 
