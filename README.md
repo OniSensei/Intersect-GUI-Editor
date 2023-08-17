@@ -89,7 +89,11 @@ Of course, nothing is perfect and I will be trying to make it better with every 
 
 See the [projects tab](https://github.com/OniSensei/Intersect-GUI-Editor/projects/1) for a list of proposed features (and known issues).
 
+## Compiling from Source
 
+1. Clone the repository
+2. Run `nuget restore`
+3. Open the solution in your preferred IDE and build
 
 <!-- CONTRIBUTING -->
 ## Contributing
